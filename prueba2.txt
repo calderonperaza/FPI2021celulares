@@ -1,2 +1,8 @@
-hola
-que tal
+ <div class="nav-wrapper  yellow accent-4">
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" class="waves-effect waves-light btn amber accent-4">Inicio</a></li>
+                <li><a href="#" class="waves-effect waves-light btn  amber accent-4">Estadisticas</a></li>
+                <li><a href="#"><i class="large material-icons">add_circle_outline</i></a></li>
+                <li><a href="#"><i class="large material-icons">add_shopping_cart</i></a></li>
+            </ul>
+        </div>
