@@ -13,16 +13,17 @@
 
 <body>
     <!-- Navbar goes here -->
-    <nav>
-        <div class="nav-wrapper yellow accent-4">
-            <ul class="center hide-on-med-and-down">
+    <nav class="yellow darken-4">
+        <div class="nav-wrapper container">
+            <ul class="left hide-on-med-and-down">
                 <li><a href="#"><i class="large material-icons">store</i></a></li>
-                <li><a href="#">Tienda Cellphone</a></li>
-                <li><i class="material-icons col s1 prefix">search</i>
-                <form class="col s10 prefix">
+                <li><a href="#">Tienda Cellphone</a></li> 
+            </ul>
+            <ul class="center hide-on-med-only">
+                <li><i class="large material-icons col s1">search</i></li>
+                <li><form class="row col s10 prefix">
                     <input type="search" placeholder="Buscar..." class="white-text">
-                </form>
-                </li>
+                </form></li>
             </ul>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#" class="waves-effect waves-light btn amber accent-4">Inicio</a></li>
@@ -32,6 +33,27 @@
             </ul>
         </div>
     </nav>
+    <!--Navbar slide-->
+    <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+
+
+
     <!-- Page Layout here -->
     <div class="row">
         <div class="col s3">
