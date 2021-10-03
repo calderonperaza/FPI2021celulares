@@ -1,0 +1,14 @@
+  .colorInput{
+    color: aquamarine;
+  }
+  .container {
+    width: 100% !important;
+    max-width:initial;
+  }
+/* 
+  .container .row {
+    margin: 0;
+  }
+  .container .row .col {
+    padding: 0;
+  } */
