@@ -1,27 +1,35 @@
-.contenedor{
-    width: 90%;
-    margin: 0 auto;
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
 }
 
-.contenedor-seccion{
-    width: 100% !important;
-    max-width: initial;
-    padding-top: 1rem;
+.contenedor-seccion {
+  width: 100% !important;
+  max-width: initial;
+  padding-top: 1rem;
 }
 
-form span{
-    color:black;
+form span {
+  color: black;
 }
 
-form fieldset{
-    border: 1px solid black;
+form fieldset {
+  border: 1px solid rgba(60, 64, 67, 0.3);
+  padding-left: 2rem;
+  margin-bottom: 1.3rem;
 }
 
 
-
-.separacion-abajo{
-    padding-bottom: 1rem;
+.separacion-abajo {
+  padding-bottom: 1.5rem;
 }
-.separacion-arriba{
-    padding-top: 1rem;
+.separacion-arriba {
+  padding-top: 2rem;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
