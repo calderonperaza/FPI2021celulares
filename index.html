@@ -8,45 +8,69 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Venta de celulares</title>
 </head>
 
 <body>
     <!-- Navbar goes here -->
     <nav class="yellow darken-4">
-        <div class="nav-wrapper container">
-            <ul class="left hide-on-med-and-down">
-                <li><a href="#"><i class="large material-icons">store</i></a></li>
-                <li><a href="#">Tienda Cellphone</a></li>
-            </ul>
-            <ul class="center hide-on-med-only">
-                <!--Para que aparezca el menu de hamburguesa solo para celulares-->
-                <div class="show-on-small">
-                    <!--Generando el icono de menu-->
-                    <a href="#" class="sidenav-trigger" data-target="menu-side">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="side-nav" id="menu-side">
-                        <li>
+        <div class="nav-wrapper">
 
+            <!--Diseno para pantallas grandes tablet y escritorio-->
+            <div class="container">
+                <ul class="hide-on-med-and-down">
+                    <li><a href="#"><i class="large material-icons">store</i></a></li>
+                    <li><a href="#" class="flow-text waves-effect">Tienda CellPhone</a></li>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><i class="large material-icons">search</i></li>
+                    <li>
+                        <form class="">
+                            <input type="search" placeholder="Buscar..." class="white-text">
+                        </form>
+                    </li>
+                    <li><a href="#" class="waves-effect waves-light btn amber accent-4">Inicio</a></li>
+                    <li><a href="#" class="waves-effect waves-light btn  amber accent-4">Estadisticas</a></li>
+                    <li><a href="#"><i class="large material-icons">add_circle_outline</i></a></li>
+                    <li><a href="#"><i class="large material-icons">add_shopping_cart</i></a></li>
+                </ul>
+            </div>
+
+
+            <!--Diseno para celulares-->
+            <ul class="center">
+                <!--Para que aparezca el menu de hamburguesa  y buscador solo para celulares y tablets-->
+                <div class="show-on-med-and-down hide-on-large-only left">
+                    <!--Generando el icono de menu-->
+                    <ul>
+                        <li>
+                            <a href="#" class="sidenav-trigger no-padding" data-target="menu-side">
+                                <i class="material-icons">menu</i>
+                            </a>
                         </li>
 
+                        <li><i class="large material-icons col s1">search</i></li>
+                        <li>
+                            <form class="">
+                                <input type="search" placeholder="Buscar..." class="white-text">
+                            </form>
+                        </li>
+                    </ul>
+                    <!--Generando los elementos del menu-->
+                    <ul class="sidenav amber lighten-2" id="menu-side">
+                        <div class="row container align-center">
+                            <li><i class="col s3 material-icons">store</i>
+                                <h5 class="col s9 flow-text text-left">Tienda CellPhone</h5>
+                            </li>
+                            <li></li>
+                        </div>
                     </ul>
                 </div>
-                
-                <li><i class="large material-icons col s1">search</i></li>
-                <li>
-                    <form class="row col s10 prefix">
-                        <input type="search" placeholder="Buscar..." class="white-text">
-                    </form>
-                </li>
+
+
             </ul>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#" class="waves-effect waves-light btn amber accent-4">Inicio</a></li>
-                <li><a href="#" class="waves-effect waves-light btn  amber accent-4">Estadisticas</a></li>
-                <li><a href="#"><i class="large material-icons">add_circle_outline</i></a></li>
-                <li><a href="#"><i class="large material-icons">add_shopping_cart</i></a></li>
-            </ul>
+
         </div>
         <!--Navbar slide-->
 
@@ -78,7 +102,8 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
