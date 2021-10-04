@@ -1,0 +1,9 @@
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-seccion{
+    width: 100% !important;
+    max-width: initial;
+}
