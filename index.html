@@ -44,23 +44,27 @@
     </a>
 
      <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control me-2 d-block" type="search" placeholder="Search" aria-label="Search">
     </form>
     <form class='d-flex'><form class='d-flex'>
-    <button type="button" class="btn secundario btn-sm">Inicio</button>
+    <button type="button" class="btn secundario btn-sm d-none d-lg-block d-xl-block d-sm-none d-md-none">Inicio</button>
     </form>
     <form class='d-flex'>
-    <button type="button" class="btn secundario btn-sm">Estadisticas</button>
+    <button type="button" class="btn secundario btn-sm d-none d-lg-block d-xl-block d-sm-none d-md-none">Estadisticas</button>
     </form>
+    <a class="d-none d-lg-block d-xl-block d-sm-none d-md-none">
     <ion-icon name="add-circle" size="large"></ion-icon>
+    </a>
+    <a class="d-none d-lg-block d-xl-block d-sm-none d-md-none">
     <ion-icon name="cart" size="large"></ion-icon>
+    </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <ion-icon name="menu" size="large"></ion-icon>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample01">
-       <ul class="navbar-nav me-auto mb-2">
+       <ul class="navbar-nav me-auto mb-2 d-lg-block d-xl-block d-sm-none d-md-none">
           <li class="nav-item">
          <a class="nav-link text-light" href="#">Inicio</a>
           </li>
@@ -85,10 +89,10 @@
 <!--Cuerpo principal-->
 
   <div class="row">
-    <div class="col col-md-3  col-sm-0 exito">
+    <div class="col col-md-3 advertencia d-none d-lg-block d-xl-block d-sm-none d-md-none">
       Column
     </div>
-    <div class="col col-md-9 col-sm-3 advertencia">
+    <div class="col col-md-9 col-sm-3 exito">
       Column
     </div>
   </div>
