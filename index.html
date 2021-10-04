@@ -14,8 +14,8 @@
 <body>
 
   <!-- navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light d-fixed">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid"> 
       <a class="navbar-brand" href="#">
         <img src="assets/Group.png" alt="" width="40">
       </a>
@@ -50,11 +50,11 @@
     </div>
   </nav>
 
-  <div class="container mt-5">
-    <div class="row">
+  <div class="container mt-4" style="padding-top: 4rem; padding-bottom: 4rem;">
 
+    <div class="row">
       <div class="col-3 ">
-        <div class="container-fluid row" style="overflow-x: hidden; overflow-y: auto; height: 25em; border: 0px; padding: 10px; border-radius: 10px; position: fixed; width: 15rem;">
+        <div class="container-fluid row" style="overflow-x: hidden; overflow-y: auto; height: 28em; border: 0px; padding: 10px; border-radius: 10px; position: fixed; width: 15rem;">
           <div class="col-12 m-0">
             <div class="form-check form-switch ">
               <label class="form-check-label" for="flexSwitchCheckChecked">Nuevo</label>
@@ -62,7 +62,8 @@
             </div>
           </div>
 
-          <ul class="list-group mt-3">
+          <label for="marca" style="margin-top: 10px;">Marca</label>
+          <ul class="list-group" id="marca">
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
               Samsung
@@ -85,7 +86,8 @@
             </li>
           </ul>
 
-          <ul class="list-group mt-3">
+          <label for="sistema" style="margin-top: 15px;">Sistema</label>
+          <ul class="list-group " id="sistema">
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
               Android
@@ -100,7 +102,8 @@
             </li>
           </ul>
 
-          <ul class="list-group mt-3">
+          <label for="pantalla" style="margin-top: 15px;">Pantalla</label>
+          <ul class="list-group " id="pantalla">
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
               6.0
@@ -121,164 +124,181 @@
         <div class="container" style="height: 25em;">
           <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
             <!--card 1-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
                   <a href="#" class="btn btn-primary">Ir al producto</a>
                 </div>
               </div>
             </div>
 
             <!--card 2-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
                   <a href="#" class="btn btn-primary">Ir al producto</a>
                 </div>
               </div>
             </div>
-
 
             <!--card 3-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
                   <a href="#" class="btn btn-primary">Ir al producto</a>
                 </div>
               </div>
             </div>
-
 
             <!--card 4-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Ir al producto</a>
-                </div>
-              </div>
-            </div>
-
-
-            <!--card 5-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Ir al producto</a>
-                </div>
-              </div>
-            </div>
-
-
-            <!--card 6-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Ir al producto</a>
-                </div>
-              </div>
-            </div>
-
-
-            <!--card 7-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Ir al producto</a>
-                </div>
-              </div>
-            </div>
-
-
-            <!--card 8-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
                   <a href="#" class="btn btn-primary">Ir al producto</a>
                 </div>
               </div>
             </div>
 
             <!--card 5-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
                   <a href="#" class="btn btn-primary">Ir al producto</a>
                 </div>
               </div>
             </div>
-
 
             <!--card 6-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
                   <a href="#" class="btn btn-primary">Ir al producto</a>
                 </div>
               </div>
             </div>
-
 
             <!--card 7-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
                   <a href="#" class="btn btn-primary">Ir al producto</a>
                 </div>
               </div>
             </div>
-
 
             <!--card 8-->
-            <div class="col-3">
-              <div class="card" style="width: 12rem; height: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick examp up the bulk of the card's content.</p>
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
                   <a href="#" class="btn btn-primary">Ir al producto</a>
                 </div>
               </div>
             </div>
 
+            <!--card 5-->
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
+                  <a href="#" class="btn btn-primary">Ir al producto</a>
+                </div>
+              </div>
+            </div>
 
+            <!--card 6-->
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
+                  <a href="#" class="btn btn-primary">Ir al producto</a>
+                </div>
+              </div>
+            </div>
+
+            <!--card 7-->
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
+                  <a href="#" class="btn btn-primary">Ir al producto</a>
+                </div>
+              </div>
+            </div>
+
+            <!--card 8-->
+            <div class="col-3 ">
+              <div class="card p-2" style="width: 12rem;">
+                <img src="assets/13pro" class="card-img-top" alt="..." height="50%" width="50%">
+                <div class="card-body">
+                  <h5 class="card-title">iPhone 13 pro</h5>
+                  <p class="card-text">Some quick examp up the</p>
+                  <a href="#" class="btn btn-primary">Ir al producto</a>
+                </div>
+              </div>
+
+              
           </div>
         </div>
-      </div>
+        <div class="row mt-4 align-items-cente">
+          <div class="col-12">
+
+            <nav aria-label="Page navigation example bg-secondary">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+
     </div>
+    
   </div>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
