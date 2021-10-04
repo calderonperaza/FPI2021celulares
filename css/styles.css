@@ -6,4 +6,22 @@
 .contenedor-seccion{
     width: 100% !important;
     max-width: initial;
+    padding-top: 1rem;
+}
+
+form span{
+    color:black;
+}
+
+form fieldset{
+    border: 1px solid black;
+}
+
+
+
+.separacion-abajo{
+    padding-bottom: 1rem;
+}
+.separacion-arriba{
+    padding-top: 1rem;
 }
