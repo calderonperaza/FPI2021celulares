@@ -23,6 +23,7 @@
 
    .exito{
      background-color: #bd8e62;
+     
    }
 
    .advertencia{
@@ -42,7 +43,7 @@
     </a>
 
      <form class="d-flex">
-      <input class="form-control me-2 d-block" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control me-2 d-block" type="search" placeholder="Buscar" aria-label="Search">
     </form>
     <form class='d-flex'><form class='d-flex'>
     <button type="button" class="btn secundario btn-sm d-none d-lg-block d-xl-block d-sm-none d-md-none">Inicio</button>
@@ -93,7 +94,10 @@
 
                 <div class="list-group list-group-flush">
                 <div class="list-group-item exito p-3 border-light">
-                nuevo
+                <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Nuevo</label>
+                </div>
                 </div>
 
 
@@ -157,9 +161,126 @@
 
     </div>
     </div>
-
+<!--Principal-->
     <div class="col-9">
-      Column
+      <div class="container">
+      <div class="row d-flex">
+       <div class="col d-none d-lg-block d-xl-block d-sm-none d-md-none  w-25 p-1 justify-content-start align-items-center border border-2 border-warning">
+      <label for="ex1">Precio</label>
+       <input id='ex1' type="text" class="form-control" placeholder="$" aria-label="First name">
+       <label for="ex2">Hasta:</label>
+        <input id='ex2' type="text" class="form-control" placeholder="$" aria-label="Last name">
+    </div>
+    <div class="col d-none d-lg-block d-xl-block d-sm-none d-md-none w-25 p-2 justify-content-start align-items-center border border-2 border-warning">
+      <label for="sprecio">Ordenar por:</label>
+      <select id='sprecio' class="form-select secundario" aria-label="Default select example">
+  <option selected>Precio</option>
+  <option value="1">5</option>
+  <option value="2">10</option>
+  <option value="3">15</option>
+</select>
+<select class="form-select secundario" aria-label="Default select example">
+  <option selected>Fecha</option>
+  <option value="1">5</option>
+  <option value="2">10</option>
+  <option value="3">15</option>
+</select>
+    </div>
+    
+      </div>
+  <div class="row border border-2 border-secondary">
+    <div class="col p-3">
+      <div class="card" style="width: 18rem;">
+  <img src="cell.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <a href="#" class="btn secundario text-light">Ver mas</a>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card" style="width: 18rem;">
+  <img src="cell.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <a href="#" class="btn secundario text-light">Ver mas</a>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card" style="width: 18rem;">
+  <img src="cell.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text text-center">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <a href="#" class="btn secundario text-light">Ver mas</a>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card" style="width: 18rem;">
+  <img src="cell.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <a href="#" class="btn secundario text-light">Ver mas</a>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card" style="width: 18rem;">
+  <img src="cell.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <a href="#" class="btn secundario text-light">Ver mas</a>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card" style="width: 18rem;">
+  <img src="cell.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <a href="#" class="btn secundario text-light">Ver mas</a>
+  </div>
+</div>
+    </div>
+
+
+  </div>
+
+  <!--Paginacion-->
+  <div class='row p-3'>
+  <div class='col'>
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+</div>
+<div class='col d-none d-lg-block d-xl-block d-sm-none d-md-none'>
+<select class="form-select secundario" aria-label="Default select example">
+  <option selected>Articulos por pagina</option>
+  <option value="1">5</option>
+  <option value="2">10</option>
+  <option value="3">15</option>
+</select>
+</div>
+</div>
+  </div>
+</div>
+
+
     </div>
     
   </div>
