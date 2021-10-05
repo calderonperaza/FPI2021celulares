@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Ventas celulares</title>
+</head>
+
+<body>
+  <!--Menu, navbar-->
+
+  <nav class="red z-depth-3" style="padding: 2px 100px; position: fixed">
+    <div class="nav-wrapper">
+
+      <a href="#" class="brand-logo right"><i class="material-icons" style="font-size: 3.5rem;">smartphone</i> Tienda
+        Cellphone</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class=" hide-on-med-and-down ">
+        <li class="left" style="width: 43%; margin-bottom: 0px">
+          <form class="row">
+            <div class="input-field col s10">
+              <input id="search " class="red lighten-2 black-text" id="search" type="text" class="validate"
+                placeholder="Search..." style="padding-left:7px;">
+            </div>
+            <div class="input-field col s1">
+              <a class="btn-floating btn-medium waves-effect waves-light black"><i class="material-icons">search</i></a>
+            </div>
+          </form>
+        </li>
+        <li class="active" style="margin-left: 0px"><a href="#">Inicio</a></li>
+        <li><a href="#">Estadisticas</a></li>
+        <a class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">add</i></a>
+        <a class="btn-floating btn-medium waves-effect waves-light grey darken-4"><i
+            class="material-icons">add_shopping_cart</i></a>
+
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-nav">
+    <div class="center-align"> <i class="large material-icons">smartphone</i></div>
+    <h4 class="center-align">Tienda Cellphone</h4>
+    <li class="active><a href=" #"><i class=" small material-icons">home</i> Inicio</a></li>
+    <li><a href="#"><i class=" small material-icons"></i> Estadisticas</a></li>
+  </ul>
+  <!-- Final Menu, navbar-->
+
+
+  <div class="section" style="position: relative; z-index: -100;">
+    <div class="row" style="padding: 0px 50px; margin-top: 70px; ">
+
+      <div class="col s2 red scrolling" style="min-height: 90rem; z-index: -100; ">
+        <!-- Filtros celulares -->
+        <div class="switch">
+          <label>
+            Off
+            <input type="checkbox">
+            <span class="lever"></span>
+            Nuevo
+          </label>
+        </div>
+        <!-- Cards Filtros -->
+        <div class="row " >
+          <div class="col s12">
+            <div class="card blue-grey white">
+              <div class="card-content black-text">
+                <span class="card-title">Marca</span>
+                <div class="card-action"></div>
+                <form action="#">
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>Samsumg</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>Huawei</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" />
+                      <span>Nokia</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" " />
+                                <span>iPhone</span>
+                              </label>
+                            </p>
+                            <p>
+                                <label>
+                                  <input name=" group1" type="radio" " />
+                                  <span>Xiaomi</span>
+                                </label>
+                              </p>
+                          </form>
+                        </div>                       
+                      </div>
+                    </div>                    
+                  </div>
+                </div>            
+                
+          
+                <div class=" col s10 blue">
+                      <!-- Card Articulos  -->
+                      <div class="row">
+                        <div class="col s12 m6">
+                          <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                              <span class="card-title">Card Title</span>
+                              <p>I am a very simple card. I am good at containing small bits of information.
+                              I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">This is a link</a>
+                              <a href="#">This is a link</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                                
+              </div>
+            </div>
+
+            <!-- Page Layout here -->
+
+
+          </div>
+
+
+
+
+
+
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="navbar.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
