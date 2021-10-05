@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="blue">
+    <div class="nav-wrapper">
+      <div></div>
+      <a href="#" class="brand-logo" style="margin-left: 1rem;">
+        <i class="material-icons">favorite</i>Tienda CellPhone
+      </a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+          <div class="input-field white-text">
+            <i class="white-text material-icons prefix">search</i>
+            <input type="text" placeholder="search" class="autocomplete white-text" />
+          </div>
+        </li>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="badges.html">Estadisticas</a></li>
+        <li>
+          <a href="plus.html"><i class="material-icons">add_circle_outline</i>
+          </a>
+        </li>
+        <li>
+          <a href="shop.html"><i class="material-icons">shopping_cart</i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row" style="margin-top: 1rem">
+    <div class="col s2 hide-on-med-and-down" style="margin-top: 20px;">
+      <!--Switch-->
+      <div class="switch" style="margin-bottom: 2rem;">
+        <label>
+          <input type="checkbox" />
+          <span class="lever"></span>
+          Nuevos
+        </label>
+      </div>
+      <!--Marca-->
+      <div class="card-panel">
+        <h5>Marca</h5>
+        <form action="">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Samsung</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Huawei</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Nokia</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>iPhone</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Xiaomi</span>
+            </label>
+          </p>
+        </form>
+      </div>
+      <!--Sistema-->
+      <div class="card-panel">
+        <h5>Sistema</h5>
+        <form action="">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Android</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Windows</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>ios</span>
+            </label>
+          </p>
+        </form>
+      </div>
+      <!--Pantalla-->
+      <div class="card-panel">
+        <h5>Pantalla</h5>
+        <form action="">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>6</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>5.5</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>5</span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="col s10">
+      <!-- Teal page content  -->
+      <div class="row center-align">
+        <div class="card-panel col s3" style=" height: 4rem;">
+
+          Precio:
+          <div class="input-field inline">
+            <input id="email_inline" type="number" style="width: 4rem; height: 1rem;">
+          </div>
+          Hasta:
+          <div class="input-field inline">
+            <input id="email_inline" type="number" style="width: 4rem; height: 1rem;">
+          </div>
+        </div>
+
+        <div class="card-panel col s4" style=" margin-left: 10%; height: 4rem;">
+
+          Ordenar por:
+          <a class="waves-effect waves-teal btn-flat"><i class="material-icons left">arrow_upward</i>Precio</a>
+          Fecha:
+          <input type="text" class="datepicker" style="width: 4rem;">
+        </div>
+
+      </div>
+      <div class="row">
+          <div class="card col s2">
+            <div class="card-image">
+              <img
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+            </div>
+            <div class="card-content">
+              <span class="card-title">$635</span>
+              <h6>Samsung S20-Ultra</h6>
+            </div>
+            <div class="card-action">
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.datepicker');
+      var instances = M.Datepicker.init(elems, options);
+    });
+  </script>
+</body>
+
+</html>
