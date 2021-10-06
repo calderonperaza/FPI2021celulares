@@ -1,0 +1,27 @@
+#search {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+}
+.icono {
+    line-height: 40px !important;
+}
+.logotienda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#icon_precio {
+    width: 80%;    
+}
+#icon_hasta {
+    width: 80%;
+}
+
+#card_Filtro {
+   width: 400px;
+   height: 100px; 
+    
+}
+
+

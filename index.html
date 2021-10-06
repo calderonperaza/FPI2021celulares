@@ -17,27 +17,72 @@
 <body>
   <!--Menu, navbar-->
 
-  <nav class="red z-depth-3" style="padding: 2px 100px; position: fixed">
-    <div class="nav-wrapper">
+  <nav class="red z-depth-3" style="padding: 1px 50px; position: fixed">
+    <div class="nav-wrapper"> 
+      <div
+          style="display: inline-block; width: calc(100% - 400px)"
+          class="hide-on-med-and-down"
+        >
+          <div class="logotienda">
+            <div>
+              <a href="#" class="brand-logo hide-on-med-and-down"><i class="material-icons" style="font-size: 3.5rem;">smartphone</i> Tienda
+                Cellphone</a>
+            </div>
+            <div>
+              <form class="row" style="width: 100%">
+                <div class="input-field col s11">
+                  <input
+                    id="search"
+                    class="header-search-input red lighten-3"
+                    type="text"
+                    class="validate"
+                    placeholder="Search..."/>
+                </div>
+                <div class="input-field col s1">
+                  <a
+                    class="
+                      btn-floating btn-medium
+                      waves-effect waves-light
+                      black
+                    "
+                    ><i class="material-icons icono">search</i></a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      
 
-      <a href="#" class="brand-logo right"><i class="material-icons" style="font-size: 3.5rem;">smartphone</i> Tienda
-        Cellphone</a>
       <a href="#" class="sidenav-trigger" data-target="mobile-nav">
         <i class="material-icons">menu</i>
-      </a>
-      <ul class=" hide-on-med-and-down ">
-        <li class="left" style="width: 43%; margin-bottom: 0px">
-          <form class="row">
-            <div class="input-field col s10">
-              <input id="search " class="red lighten-2 black-text" id="search" type="text" class="validate"
-                placeholder="Search..." style="padding-left:7px;">
-            </div>
-            <div class="input-field col s1">
-              <a class="btn-floating btn-medium waves-effect waves-light black"><i class="material-icons">search</i></a>
-            </div>
-          </form>
-        </li>
-        <li class="active" style="margin-left: 0px"><a href="#">Inicio</a></li>
+      </a> 
+
+      
+      <li class="hide-on-large-only" id="search" style="list-style: none">
+        <form class="row">
+          <div class="input-field col s8">
+            <input
+              class="header-search-input red lighten-3"
+              id="search"
+              type="text"
+              class="validate"
+              placeholder="Search..."
+            />
+          </div>
+          <div class="input-field col s1">
+            <a class="btn-floating btn-medium waves-effect waves-light black"
+              ><i class="material-icons icono">search</i></a
+            >
+          </div>
+        </form>
+      </li>    
+
+
+
+      <ul class="right hide-on-med-and-down">
+      
+        <li class="active"><a href="#">Inicio</a></li>
         <li><a href="#">Estadisticas</a></li>
         <a class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">add</i></a>
         <a class="btn-floating btn-medium waves-effect waves-light grey darken-4"><i
@@ -46,6 +91,8 @@
       </ul>
     </div>
   </nav>
+
+  <!--Fin navbar-->
 
   <ul class="sidenav" id="mobile-nav">
     <div class="center-align"> <i class="large material-icons">smartphone</i></div>
@@ -56,100 +103,304 @@
   <!-- Final Menu, navbar-->
 
 
-  <div class="section" style="position: relative; z-index: -100;">
-    <div class="row" style="padding: 0px 50px; margin-top: 70px; ">
+  <div class="section" style="position: relative; z-index: -100;"></div>
+  <div class="row" style="padding: 1px 20px; margin-top: 70px; ">
 
-      <div class="col s2 red scrolling" style="min-height: 90rem; z-index: -100; ">
-        <!-- Filtros celulares -->
-        <div class="switch">
-          <label>
-            Off
-            <input type="checkbox">
-            <span class="lever"></span>
-            Nuevo
-          </label>
+    <div class="col s2" style="min-height: 90rem; z-index: -100;">
+      <!-- Filtros celulares -->
+
+      <!-- Cards Filtros -->
+      <div class="row ">
+        <div class="col s12">
+          <div class="card blue-grey white z-depth-2">
+            <div class="switch center-align" style="padding-top:20px">
+              <label>
+
+                <input type="checkbox">
+                <span class="lever"></span>
+                Nuevo
+              </label>
+            </div>
+            <div class="card-content black-text">
+              <span class="card-title">Marca</span>
+              <div class="card-action"></div>
+
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Samsumg</span>
+                  </label>
+                </p>
+
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Huawei</span>
+                  </label>
+                </p>
+
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Nokia</span>
+                  </label>
+                </p>
+
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Iphone</span>
+                  </label>
+                </p>
+
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Xiaomi</span>
+                  </label>
+                </p>
+              </form>
+              <span class="card-title" style="padding-top: 15px;">Sistema</span>
+              <div class="card-action"></div>
+
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Android</span>
+                  </label>
+                </p>
+
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Windows</span>
+                  </label>
+                </p>
+
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>IOS</span>
+                  </label>
+                </p>
+
+              </form>
+
+              <span class="card-title" style="padding-top: 15px;">Pantalla</span>
+              <div class="card-action"></div>
+
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>6.0</span>
+                  </label>
+                </p>
+
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>5.5</span>
+                  </label>
+                </p>
+
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>5</span>
+                  </label>
+                </p>
+
+              </form>
+            </div>
+          </div>
         </div>
-        <!-- Cards Filtros -->
-        <div class="row " >
-          <div class="col s12">
-            <div class="card blue-grey white">
-              <div class="card-content black-text">
-                <span class="card-title">Marca</span>
-                <div class="card-action"></div>
-                <form action="#">
-                  <p>
-                    <label>
-                      <input name="group1" type="radio" />
-                      <span>Samsumg</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input name="group1" type="radio" />
-                      <span>Huawei</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input name="group1" type="radio" />
-                      <span>Nokia</span>
-                    </label>
-                  </p>
-                  <p>
-                    <label>
-                      <input name="group1" type="radio" " />
-                                <span>iPhone</span>
-                              </label>
-                            </p>
-                            <p>
-                                <label>
-                                  <input name=" group1" type="radio" " />
-                                  <span>Xiaomi</span>
-                                </label>
-                              </p>
-                          </form>
-                        </div>                       
-                      </div>
-                    </div>                    
+      </div>
+    </div>
+    <!-- Final columna S2 FILTROS  -->
+
+
+    <div class=" col s10 blue" style="min-height: 90rem;">
+      <!-- Filtros panel s10  -->
+
+      <div class="row">
+        <div class="col s6 m6">
+          <div id="card_Filtro" class="card horizontal grey lighten-3 right">
+            <div class="row">
+              <h6 class="center-align black-text" style="margin: 1px;">Ordenar por precio</h6>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s4 center-align">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="icon_precio" type="text" class="validate">
+                    <label for="icon_precio">Precio</label>
                   </div>
-                </div>            
-                
+                  <div id="" class="input-field col s4 center-align">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="icon_hasta" type="tel" class="validate">
+                    <label for="icon_hasta">Hasta</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!---   Nueva columna s6-->
+        <div class="col s6 m6">
+          <div id="card_Filtro" class="card horizontal grey lighten-3">
+            <div class="row">
+              <h6 class="center-align black-text" style="margin: 1px;">Ordenar por:</h6>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s4 center-align">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="icon_precio" type="text" class="validate">
+                    <label for="icon_precio">Precio</label>
+                  </div>
+                  <div id="" class="input-field col s4 center-align">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="icon_hasta" type="tel" class="validate">
+                    <label for="icon_hasta">Hasta</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card Articulos  -->
+      <div class="row">       
           
-                <div class=" col s10 blue">
-                      <!-- Card Articulos  -->
-                      <div class="row">
-                        <div class="col s12 m6">
-                          <div class="card blue-grey darken-1">
-                            <div class="card-content white-text">
-                              <span class="card-title">Card Title</span>
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">This is a link</a>
-                              <a href="#">This is a link</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                                
+
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/redmi8.jpg">
+              <span class="card-title">Card Title</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>        
+
+          <div class="col s6 m3">
+            
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                  <a href="#">This is a link</a>
+                </div>
+              </div>        
+
+
+          </div>        
+
+            <div class="col s12 m3">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>       
+          
+
+            <div class="col s12 m3">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col s12 m3">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                  <a href="#">This is a link</a>
+                </div>
               </div>
             </div>
 
-            <!-- Page Layout here -->
+            <div class="col s12 m3">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m3">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m3">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Card Title</span>
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>     
+  
+
+      </div>
+
+      <!-- Page Layout here -->
 
 
-          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>           
+    
+    <script src="navbar.js"></script>
 
-
-
-
-
-
-
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="navbar.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
