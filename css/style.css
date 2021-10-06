@@ -1,0 +1,111 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Filtros */
+.filtro-input,
+.precio,
+.ordenar,
+.ordenar-responsive {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.precio,
+.ordenar,
+.ordenar-responsive {
+    margin: 10px 0;
+}
+.filtro-input,
+.ordenar-responsive {
+    grid-template-columns: repeat(2, 1fr);
+}
+.precio {
+    grid-template-columns: repeat(4, 1fr);
+}
+.ordenar {
+    grid-template-columns: repeat(3, 1fr);
+}
+.filtro-input span{
+    text-align: right;
+}
+.filtro-input fieldset {
+    height: 70px;
+}
+/* Contenedor */
+@media (max-width: 972px) {
+    .contenedor {
+        width: 100% !important;
+    }
+}
+/* Sidebar */
+.switch {
+    margin: 10px;
+}
+
+/* Seccion productos */
+.detalles,
+.descripcion {
+    display: flex;
+}
+.detalles {
+    justify-content: center;
+    align-items: center;
+}
+.detalles-texto span,
+.detalles-texto a {
+    margin: 10px 0;
+}
+.borde {
+    border: groove;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.detalles-texto-a {
+    margin-left: 20px;
+}
+
+/* Responsive productos */
+@media (max-width: 768px) {
+    .descripcion {
+        display: grid;
+    }
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    gap: 5px;
+}
+.botonesmodal {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.botonesmodal a {
+    background-color: rgb(28, 134, 255);
+    padding: 5px;
+    border-radius: 5%;
+    color: white;
+}
+
+/* Modal */
+.modal {
+    width: 85%;
+    height: 90% !important;
+}
+
+/* Buscador */
+#search {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+}
+.icono {
+    line-height: 40px !important;
+}
+.logotienda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

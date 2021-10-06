@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tienda Cellphone</title>
+  </head>
+
+  <body>
+    <!-- Inicio nav -->
+    <nav class="#64b5f6 blue lighten-2">
+      <div class="nav-wrapper" style="margin: 0 20px">
+        <div
+          style="display: inline-block; width: calc(100% - 400px)"
+          class="hide-on-med-and-down"
+        >
+          <div class="logotienda">
+            <div>
+              <a href="index.html" class="brand-logo"
+                ><i class="material-icons">store</i>Tienda Cellphone</a
+              >
+            </div>
+            <div>
+              <form class="row" style="width: 100%">
+                <div class="input-field col s11">
+                  <input
+                    id="search"
+                    class="header-search-input blue lighten-3"
+                    type="text"
+                    class="validate"
+                    placeholder="Search..."/>
+                </div>
+                <div class="input-field col s1">
+                  <a
+                    class="
+                      btn-floating btn-medium
+                      waves-effect waves-light
+                      black
+                    "
+                    ><i class="material-icons icono">search</i></a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+        <li class="hide-on-large-only" id="search" style="list-style: none">
+          <form class="row">
+            <div class="input-field col s8">
+              <input
+                class="header-search-input blue lighten-3"
+                id="search"
+                type="text"
+                class="validate"
+                placeholder="Search..."
+              />
+            </div>
+            <div class="input-field col s1">
+              <a class="btn-floating btn-medium waves-effect waves-light black"
+                ><i class="material-icons icono">search</i></a
+              >
+            </div>
+          </form>
+        </li>
+        <ul class="right hide-on-med-and-down">
+          <li class="hide-on-med-and-down"></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="uppercase">Estadísticas</a></li>
+          <li>
+            <a
+              class="waves-effect waves-light btn modal-trigger"
+              href="#agregarproducto"
+            >
+              <i class="material-icons">add_circle_outline</i></a
+            >
+          </li>
+          <li>
+            <a href="mobile.html"
+              ><i class="material-icons">add_shopping_cart</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Fin nav -->
+
+    <!-- Agregar Producto -->
+    <div id="agregarproducto" class="modal modal-lg">
+      <div class="modal-content center" style="padding: 5 px 0">
+        <h4 class="center">Nuevo Anuncio</h4>
+        <div class="row">
+          <form class="col s12">
+            <div class="col s12 m7">
+              <div class="card-panel">
+                <!-- Panel Foto Responsive -->
+                <div class="carousel hide-on-med-and-up">
+                  <a class="carousel-item" href="#one!"
+                    ><img src="img/portfolio1.jpg"
+                  /></a>
+                  <a class="carousel-item" href="#two!"
+                    ><img src="img/portfolio1.jpg"
+                  /></a>
+                  <a class="carousel-item" href="#three!"
+                    ><img src="img/portfolio1.jpg"
+                  /></a>
+                  <a class="carousel-item" href="#four!"
+                    ><img src="img/portfolio1.jpg"
+                  /></a>
+                  <a class="carousel-item" href="#five!"
+                    ><img src="img/portfolio1.jpg"
+                  /></a>
+                </div>
+                <!-- Fin Panel Foto -->
+
+                <!-- Panel Titulo Responsive -->
+                <table class="hide-on-med-and-up">
+                  <tr>
+                    <td colspan="2">
+                      <fieldset>
+                        <legend>Titulo</legend>
+                        <input
+                          placeholder="Iphone 6 pantalla de 8 pulgadas, 64Gb internos,"
+                          id="titulo"
+                          type="text"
+                          class="validate"
+                        />
+                      </fieldset>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Precio:</td>
+                    <td>
+                      <input type="number" placeholder="$" min="1" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Vendedor:</td>
+                    <td>
+                      <input
+                        placeholder="Juan Perez"
+                        id="nombre"
+                        type="text"
+                        class="validate"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Telefono:</td>
+                    <td>
+                      <input
+                        placeholder="21213-1212"
+                        id="apellido"
+                        type="text"
+                        class="validate"
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <!-- Fin Panel Titulo Responsive -->
+
+                <!-- Modal Estado -->
+                <table>
+                  <tr>
+                    <td>Estado:</td>
+                    <td>
+                      <label
+                        ><input name="estado" type="radio" checked />
+                        <span>Nuevo</span></label
+                      >
+                    </td>
+                    <td>
+                      <label
+                        ><input name="estado" type="radio" checked />
+                        <span>Usado</span></label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Marca:</td>
+                    <td>
+                      <input
+                        placeholder="Iphone"
+                        type="text"
+                        class="validate"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Modelo:</td>
+                    <td>
+                      <input
+                        placeholder="6 plus"
+                        type="text"
+                        class="validate"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Pantalla:</td>
+                    <td>
+                      <input placeholder="5.5" type="text" class="validate" />
+                    </td>
+                    <td>Pulgadas</td>
+                  </tr>
+                  <tr>
+                    <td>Sistema:</td>
+                    <td>
+                      <select>
+                        <option value="" disabled selected>Seleccionar</option>
+                        <option value="1">IOS</option>
+                        <option value="1">Android</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>ROM:</td>
+                    <td>
+                      <input placeholder="64 GB" type="text" class="validate" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>RAM:</td>
+                    <td>
+                      <input placeholder="2 GB" type="text" class="validate" />
+                    </td>
+                  </tr>
+                </table>
+                <table class="hide-on-med-and-up">
+                  <tr>
+                    <td colspan="3">
+                      <label for="first_name">Descripción</label>
+                      <textarea
+                        id="textarea1"
+                        class="materialize-textarea"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <div class="botonesmodal">
+                        <a href="#">Cancelar</a>
+                        <a href="#">Crear</a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Fin Modal Estado -->
+              </div>
+              <div class="card-panel hide-on-med-and-down">
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>+</span>
+                    <input type="file" />
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" />
+                  </div>
+                </div>
+                <table>
+                  <tr>
+                    <th>N</th>
+                    <th>Tamaño</th>
+                    <th>Tipo</th>
+                    <th>Previa</th>
+                    <th>-</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>145 kb</td>
+                    <td>jpg</td>
+                    <td>
+                      <img width="100px" src="img/portfolio1.jpg" alt="" />
+                    </td>
+                    <td>
+                      <a href="#"><i class="material-icons">delete</i></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="col s12 m5">
+              <div class="card-panel hide-on-med-and-down">
+                <table>
+                  <tr>
+                    <td colspan="2">
+                      <label for="first_name">Titulo Breve del anuncio</label>
+                      <input
+                        placeholder="Iphone 6 pantalla de 8 pulgadas, 64Gb internos,"
+                        id="titulo"
+                        type="text"
+                        class="validate"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Vendedor:</td>
+                    <td>
+                      <input
+                        placeholder="Juan Perez"
+                        id="nombre"
+                        type="text"
+                        class="validate"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Telefono:</td>
+                    <td>
+                      <input
+                        placeholder="21213-1212"
+                        id="apellido"
+                        type="text"
+                        class="validate"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <label for="first_name">Descripción</label>
+                      <textarea
+                        id="textarea1"
+                        class="materialize-textarea"
+                      ></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <fieldset>
+                        <legend>Precio</legend>
+                        <input type="number" placeholder="$" min="1" />
+                      </fieldset>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <div class="botonesmodal">
+                        <a href="#">Cancelar</a>
+                        <a href="#">Crear</a>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >Agree</a
+        >
+      </div>
+    </div>
+    <!-- Fin Agregar Producto -->
+
+    <!-- Menus Responsivos -->
+
+    <ul class="sidenav center" id="mobile-links">
+      <li>
+        <a href="#!" class="brand-logo">
+          <i class="material-icons">store</i>
+          Tienda Cellphone</a
+        >
+      </li>
+      <li><a>Inicio</a></li>
+      <li>
+        <a
+          class="waves-effect waves-light btn modal-trigger"
+          href="#agregarproducto"
+          >Nuevo Anuncio</a
+        >
+      </li>
+      <li><a href="collapsible.html">Carrito</a></li>
+      <li><a href="mobile.html">Estadísticas</a></li>
+    </ul>
+
+    <ul class="sidenav" id="categorias-links">
+      <div class="switch">
+        <label>
+          <input type="checkbox" />
+          <span class="lever"></span>
+          Nuevo
+        </label>
+      </div>
+      <!-- Marca -->
+      <fieldset>
+        <legend>Marca</legend>
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Samsung <sup>15</sup></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Huawei <sup>10</sup></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Nokia <sup>56</sup></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Iphone <sup>4</sup></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Xiaomi <sup>4</sup></span>
+            </label>
+          </p>
+        </form>
+      </fieldset>
+      <!-- Fin Marca -->
+      <!-- Sistema -->
+      <fieldset>
+        <legend>Sistema</legend>
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Android <sup>15</sup></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Windows <sup>10</sup></span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>IOS <sup>56</sup></span>
+            </label>
+          </p>
+        </form>
+      </fieldset>
+      <!-- Fin Sistema -->
+      <!-- Pantalla -->
+      <fieldset>
+        <legend>Marca</legend>
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>6.0</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>5.5</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>5</span>
+            </label>
+          </p>
+        </form>
+      </fieldset>
+      <!-- Fin Pantalla -->
+    </ul>
+
+    <!-- Fin Menu Responsivos -->
+
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col m2 hide-on-med-and-down">
+        <div class="switch">
+          <label>
+            <input type="checkbox" />
+            <span class="lever"></span>
+            Nuevo
+          </label>
+        </div>
+        <fieldset>
+          <legend>Marca</legend>
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Samsung <sup>15</sup></span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Huawei <sup>10</sup></span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Nokia <sup>56</sup></span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Iphone <sup>4</sup></span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Xiaomi <sup>4</sup></span>
+              </label>
+            </p>
+          </form>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sistema</legend>
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Android <sup>15</sup></span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Windows <sup>10</sup></span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>IOS <sup>56</sup></span>
+              </label>
+            </p>
+          </form>
+        </fieldset>
+
+        <fieldset>
+          <legend>Marca</legend>
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>6.0</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>5.5</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>5</span>
+              </label>
+            </p>
+          </form>
+        </fieldset>
+      </div>
+      <!-- Fin Sidebar -->
+
+      <!-- Contenido -->
+      <div class="col m10 s12 contenedor">
+        <div class="container">
+          <!-- Filtros -->
+          <form class="col m12" style="padding: 0; width: 100%">
+            <div class="filtro-input hide-on-med-and-down">
+              <fieldset class="precio">
+                <span>Precio:</span>
+                <input type="number" placeholder="$" min="0" />
+                <span>Hasta:</span>
+                <input type="number" placeholder="$" min="0" />
+              </fieldset>
+              <fieldset class="ordenar">
+                <span>Ordenar por:</span>
+                <a class="waves-effect waves-light btn">Precio</a>
+                <a class="waves-effect waves-light btn">Fecha</a>
+              </fieldset>
+            </div>
+            <div
+              class="filtro-input hide-on-large-only center"
+              style="display: block ruby; margin: 10px"
+            >
+              <fieldset style="display: block ruby; margin-right: 20px">
+                <span>Ordenar por:</span>
+                <select>
+                  <option value="1">Precio</option>
+                  <option value="2">Fecha</option>
+                </select>
+              </fieldset>
+              <a
+                href="#"
+                class="sidenav-trigger"
+                data-target="categorias-links"
+              >
+                <i class="material-icons">filter_list</i>
+              </a>
+            </div>
+          </form>
+          <!-- Fin filtros -->
+        </div>
+        <!-- Productos -->
+        <div class="col m3 s6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <a href="producto.html"
+                ><img class="activator" src="img/portfolio1.jpg"
+              /></a>
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 center"
+                >$132.00</span
+              >
+              <p>Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/portfolio1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 center"
+                >$132.00</span
+              >
+              <p>Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/portfolio1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 center"
+                >$132.00</span
+              >
+              <p>Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/portfolio1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 center"
+                >$132.00</span
+              >
+              <p>Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/portfolio1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 center"
+                >$132.00</span
+              >
+              <p>Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/portfolio1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 center"
+                >$132.00</span
+              >
+              <p>Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/portfolio1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 center"
+                >$132.00</span
+              >
+              <p>Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col m3 s6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/portfolio1.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4 center"
+                >$132.00</span
+              >
+              <p>Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Productos -->
+
+        <!-- Paginador -->
+        <div class="center col s12">
+          <ul class="pagination">
+            <li class="disabled">
+              <a href="#!"><i class="material-icons">chevron_left</i></a>
+            </li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!">6</a></li>
+            <li class="waves-effect"><a href="#!">7</a></li>
+            <li class="waves-effect"><a href="#!">8</a></li>
+            <li class="waves-effect">
+              <a href="#!"><i class="material-icons">chevron_right</i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Fin Paginador -->
+      </div>
+      <!-- Fin Contenido -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+      $(document).ready(function () {
+        $("select").formSelect();
+      });
+      $(document).ready(function () {
+        $(".modal").modal();
+      });
+      $(document).ready(function () {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems, {
+          onOpenEnd: initCarouselModal,
+        });
+
+        function initCarouselModal() {
+          var elems = document.querySelectorAll(".carousel");
+          var instances = M.Carousel.init(elems, { fullWidth: true });
+          instances[0].set(2);
+        }
+      });
+    </script>
+  </body>
+</html>
