@@ -1,0 +1,32 @@
+body{
+    background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#search {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 10px 150px 8px 100px;
+    border-radius: 10px;
+    margin: 6px
+}
+
+.color0 {background-color: #001526;}
+.color1 {background-color: #003b58;}
+.color2 {background-color: #006b96;}
+.color3 {background-color: #00a8df;}
+.color4 {background-color: #94bee0;}
+
+.color5 {background-color: #102b50;}
+.color6 {background-color: #0c5484;}
+.color7 {background-color: #088dc1;}
+.color8 {background-color: #03d7fb;}
+.color9 {background-color: #0ffff8;}
+.blanco {background-color: #eef2f3;}
