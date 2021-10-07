@@ -6,25 +6,41 @@
   
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  </head>
 
+  </head>
   <body>
-    
     <nav>
       <div class="nav-wrapper #ff1744 red accent-3">
-        <span class="material-icons">
-          campaign
-          </span>
-        <a href="" class="brand-logo">Tienda CellPhone</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <div class="left container-section"><i class="left material-icons">campaign</i></div>
+        <div><a href="#!" class="left brand-logo">Tienda CellPhone</a></div>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down ">
           <li><button class="btn waves-effect waves-light #b71c1c red darken-4">Inicio</button></li>
           <li><a href="" class="btn waves-effect waves-light #b71c1c red darken-4">Estadisticas</a></li>
           <!--<li><a href="">Estadisticas  <span class="new badge">4</span></a></li>--->
           <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
           <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">shopping_cart</i></a>
         </ul>
+        <!--<div class="section">
+          <ul>
+            <li class="search">
+              <div class="search-wrapper">
+                <input id="search" placeholder="Search"><i class="material-icons">search</i>
+                <div class="search-results"></div>
+              </div>
+            </li>
+          </ul>
+        </div>-->
+        <ul id="mobile-demo" class="sidenav">
+          <li><button class="btn waves-effect waves-light #b71c1c red darken-4">Inicio</button></li>
+          <li><a href="" class="btn waves-effect waves-light #b71c1c red darken-4">Estadisticas</a></li>
+          <!--<li><a href="">Estadisticas  <span class="new badge">4</span></a></li>--->
+          <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
+          <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">shopping_cart</i></a>
+        </ul>
+        
         <ul class="right">
-          <li><input id="search" type="text" placeholder="Search" autocomplete="off" class="left"></li>
+          <li><input id="search" type="text" placeholder="Search" autocomplete="off" class="search-wrapper"></li>
         </ul>
       </div>
     </nav>
@@ -32,17 +48,13 @@
       <div class="row">
         <div class="col s2"></div>
         <div class="col s9 ">
-          <h1 class="#e57373 red lighten-2">Hola mundo</h1>
-          <div class="card-panel #ffebee red lighten-5">Lorem ipsum dolor sit amet</div>
-          <div class="card-panel">
-            <span class="red-text text-darken-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, voluptate, blanditiis, corporis praesentium minima ipsum sed ducimus commodi ut ad hic eveniet fuga at? Vitae, quibusdam? Ex, cupiditate maxime. Nihil.</span>
-          </div>
+          <h1 class="#e57373 red lighten-2">Tienda</h1>
           <div class="container-section">
             <div class="row">
               <div class="col s6 l3 m3">
                 <div class="card">
                   <div class="card-image">
-                    <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+                    <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                   </div>
                   <div class="card-content">
                     <h5 class="center">$132.00</h5>
@@ -53,33 +65,33 @@
               <div class="col s6 l3 m3">
                 <div class="card">
                   <div class="card-image">
-                    <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+                    <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                   </div>
                   <div class="card-content">
                     <h5 class="center">$132.00</h5>
-                    <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+                    <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
                   </div>
                 </div>
               </div>
               <div class="col s6 l3 m3">
                 <div class="card">
                   <div class="card-image">
-                    <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+                    <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                   </div>
                   <div class="card-content">
                     <h5 class="center">$132.00</h5>
-                    <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+                    <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
                   </div>
                 </div>
               </div>
               <div class="col s6 l3 m3">
                 <div class="card">
                   <div class="card-image">
-                    <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+                    <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                   </div>
                   <div class="card-content">
                     <h5 class="center">$132.00</h5>
-                    <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+                    <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
                   </div>
                 </div>
               </div>
@@ -88,44 +100,44 @@
             <div class="col s6 l3 m3">
               <div class="card">
                 <div class="card-image">
-                  <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+                  <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                 </div>
                 <div class="card-content">
                   <h5 class="center">$132.00</h5>
-                  <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+                  <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
                 </div>
               </div>
             </div>
             <div class="col s6 l3 m3">
               <div class="card">
                 <div class="card-image">
-                  <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+                  <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                 </div>
                 <div class="card-content">
                   <h5 class="center">$132.00</h5>
-                  <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+                  <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
                 </div>
               </div>
             </div>
             <div class="col s6 l3 m3">
               <div class="card">
                 <div class="card-image">
-                  <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+                  <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                 </div>
                 <div class="card-content">
                   <h5 class="center">$132.00</h5>
-                  <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+                  <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
                 </div>
               </div>
             </div>
             <div class="col s6 l3 m3">
               <div class="card">
                 <div class="card-image">
-                  <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+                  <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                 </div>
                 <div class="card-content">
                   <h5 class="center">$132.00</h5>
-                  <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+                  <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
                 </div>
               </div>
             </div>
@@ -134,53 +146,75 @@
         <div class="col s6 l3 m3">
           <div class="card">
             <div class="card-image">
-              <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+              <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
             </div>
             <div class="card-content">
               <h5 class="center">$132.00</h5>
-              <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+              <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
             </div>
           </div>
         </div>
         <div class="col s6 l3 m3">
           <div class="card">
             <div class="card-image">
-              <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+              <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
             </div>
             <div class="card-content">
               <h5 class="center">$132.00</h5>
-              <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+              <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
             </div>
           </div>
         </div>
         <div class="col s6 l3 m3">
           <div class="card">
             <div class="card-image">
-              <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+              <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
             </div>
             <div class="card-content">
               <h5 class="center">$132.00</h5>
-              <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+              <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
             </div>
           </div>
         </div>
         <div class="col s6 l3 m3">
           <div class="card">
             <div class="card-image">
-              <img src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
+              <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
             </div>
             <div class="card-content">
               <h5 class="center">$132.00</h5>
-              <h7>Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h7>
+              <h6 class="center">Samsung J6, Pantalla de 5.5 64 GB, 2GB de ram, Color Negro</h6>
             </div>
           </div>
         </div>
       </div>
+      <div class="row center">
+        <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="active"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!">6</a></li>
+          <li class="waves-effect"><a href="#!">7</a></li>
+          <li class="waves-effect"><a href="#!">8</a></li>
+          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+      </div>
+
     </div>            
   </div>  
 </div>    
 
    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+    </script>
   </body>
 </html>
