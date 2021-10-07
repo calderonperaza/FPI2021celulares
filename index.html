@@ -28,6 +28,11 @@
 
    .advertencia{
      background-color: #d5d2c1;
+   }
+   .altura-img {
+    width:100%;
+    height: 230px;
+   }
     </style>
 
     <title>ventas celulares</title>
@@ -35,9 +40,9 @@
   <body>
 
 <!--navbar-->
-  <nav class="navbar navbar-light" style='background: linear-gradient(0.25turn, #370d00, #d5d2c1, #a46843);'>
+  <nav class="navbar navbar-light border-bottom border-5 border-dark" style='background-color: #dfbf9f;'>
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold text-uppercase fs-3 text-light" href="#">
+    <a class="navbar-brand fw-bold text-uppercase fs-3 text-dark" href="#">
       <ion-icon name="home"></ion-icon>
      Tienda Cellphone
     </a>
@@ -126,14 +131,14 @@
 <!--Live Toast-->
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      <img src="..." class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
+    <div class="toast-header exito">
+      <ion-icon name="happy"></ion-icon>
+      <strong class="me-auto">Nuevo Anuncio Creado</strong>
+      <small>Ahora</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body">
-      Hello, world! This is a toast message.
+      Usted ha creado un nuevo anuncio.
     </div>
   </div>
 </div>
@@ -224,32 +229,35 @@
       <div class="row">
        <div class="col d-none  d-lg-block d-xl-block d-sm-none d-md-none  w-25 p-1 justify-content-start align-items-center border border-light">
       
-      <label for="ex1" >Precio</label>
+      <label for="ex1" >Precio: </label>
        <input id='ex1' type="text" class="form-control w-25 d-inline" placeholder="$" aria-label="First name">
        <label for="ex2">Hasta:</label>
         <input id='ex2' type="text" class="form-control w-25 d-inline" placeholder="$" aria-label="Last name">
     </div>
-    <div class="col d-none d-lg-block d-xl-block d-sm-none d-md-none w-25 p-1 justify-content-start align-items-center border border-light">
+    <div class="col  w-25 p-1 justify-content-start align-items-center border border-light">
       <label for="sprecio">Ordenar por:</label>
-      <select id='sprecio' class="form-select w-25 secundario d-inline" aria-label="Default select example">
-  <option selected>Precio</option>
-  <option value="1">5</option>
-  <option value="2">10</option>
-  <option value="3">15</option>
-</select>
-<select class="form-select w-25 secundario d-inline" aria-label="Default select example">
-  <option selected>Fecha</option>
-  <option value="1">5</option>
-  <option value="2">10</option>
-  <option value="3">15</option>
-</select>
+      <select id='sprecio' class="form-select d-inline d-lg-inline d-xl-inline d-sm-inline d-md-inline w-25 secundario" aria-label="Default select example">
+          <option selected>Precio</option>
+         <option value="1">$60</option>
+         <option value="2">$70</option>
+         <option value="3">$80</option>
+      </select>
+      <select class="form-select d-none d-lg-inline d-xl-inline d-sm-none d-md-none w-25 secundario" aria-label="Default select example">
+        <option selected>Fecha</option>
+        <option value="1">ultimas 24 horas</option>
+        <option value="2">ultimos 2 dias</option>
+        <option value="3">la ultima semana</option>
+      </select>
+      <button class="btn secundario d-lg-none" type="button">
+       <ion-icon name="funnel" size='small'></ion-icon>
+      </button>
     </div>
     
       </div>
   <div class="row border border-1 border-ligth">
     <div class="col p-3">
       <div class="card advertencia" style="width: 18rem;">
-  <img src="cell.png" class="card-img-top" alt="...">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">$132.00</h5>
     <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
@@ -260,8 +268,8 @@
 </div>
     </div>
     <div class="col p-3">
-      <div class="card" style="width: 18rem;">
-  <img src="cell.png" class="card-img-top" alt="...">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">$132.00</h5>
     <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
@@ -272,8 +280,8 @@
 </div>
     </div>
     <div class="col p-3">
-      <div class="card" style="width: 18rem;">
-  <img src="cell.png" class="card-img-top" alt="...">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">$132.00</h5>
     <p class="card-text text-center">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
@@ -284,8 +292,8 @@
 </div>
     </div>
     <div class="col p-3">
-      <div class="card" style="width: 18rem;">
-  <img src="cell.png" class="card-img-top" alt="...">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">$132.00</h5>
     <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
@@ -296,8 +304,8 @@
 </div>
     </div>
     <div class="col p-3">
-      <div class="card" style="width: 18rem;">
-  <img src="cell.png" class="card-img-top" alt="...">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">$132.00</h5>
     <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
@@ -308,8 +316,8 @@
 </div>
     </div>
     <div class="col p-3">
-      <div class="card" style="width: 18rem;">
-  <img src="cell.png" class="card-img-top" alt="...">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
   <div class="card-body">
     <h5 class="card-title text-center">$132.00</h5>
     <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
