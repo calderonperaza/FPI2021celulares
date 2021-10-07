@@ -1,14 +1,11 @@
 /* Paleta de colores {
     colo primario: red accent-4 ;
     color secundario: red lighten-4;
-    color terciario: ;
+    color terciario: grey darken-3;
 } */
-.nav{
-color: #C3073F;
 
-}
 #search {
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border-radius: 10px;
     width: 100%;
@@ -35,7 +32,4 @@ ul.dropdown-content.select-dropdown li span {
     color: red; /* no need for !important :) */
 }
 
-#filtro_input {
-    border-bottom: 1px solid #C3073F !important;
-}
 
