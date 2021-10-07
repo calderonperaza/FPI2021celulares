@@ -16,7 +16,7 @@
 
 <body>
   <!--Menu, navbar-->
-  <nav class="red z-depth-3" style="padding: 1px 75px; position: fixed">
+  <nav class="red accent-4" style="padding: 1px 75px; position: fixed">
     <div class="nav-wrapper">
       <div style="display: inline-block; width: calc(100% - 400px)" class="hide-on-med-and-down">
         <div class="logotienda">
@@ -29,8 +29,7 @@
           <div>
             <form class="row" style="width: 100%">
               <div class="input-field col s11">
-                <input id="search" class="header-search-input red lighten-3" type="text" class="validate"
-                  placeholder="Search" />
+                <input id="search" class="header-search-input red lighten-4" type="text" class="validate" />
               </div>
               <div class="input-field col s1">
                 <a class="
@@ -62,9 +61,10 @@
       </li>
       <!--Lista menu pantallas grandes-->
       <ul class="right hide-on-med-and-down">
-        <li class="active"><a href="#">Inicio</a></li>
-        <li><a href="#">Estadisticas</a></li>
-        <a class="btn-floating btn-small waves-effect waves-light grey darken-4"><i class="material-icons">add</i></a>
+        <li class="active"><a href="#" style="font-size: 20px;">Inicio</a></li>
+        <li><a href="#" style="font-size: 20px;">Estadisticas</a></li>
+        <a class="btn-floating btn-small waves-effect waves-light tooltipped grey darken-4" data-position="bottom"
+          data-tooltip="Crear anuncio"><i class="material-icons">add</i></a>
         <a class="btn-floating btn-medium waves-effect waves-light grey darken-4"><i
             class="material-icons">add_shopping_cart</i></a>
       </ul>
@@ -80,395 +80,536 @@
     <li><a href="#"><i class=" small material-icons"></i> Estadisticas</a></li>
   </ul>
   <!-- Final Menu, navbar-->
+  <div class="fixed-action-btn hide-on-large-only">
+    <a class="btn-floating btn-large red sidenav-trigger" data-target='slide-out'>
+      <i class="large material-icons">filter_alt</i>
+    </a>
+  </div>
+
+  <ul class="collection sidenav" id="slide-out">
+    <li class="collection-item">
+      <div class="switch center-align">
+        <label>
+          <input type="checkbox">
+          <span class="lever"></span>
+          <h6>Nuevo</h6>
+        </label>
+      </div>
+    </li>
+    <li class="collection-item">
+      <div class="black-text">
+        <span class="card-title">Marca</span>
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Samsumg</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Huawei</span>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Nokia</span>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Iphone</span>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Xiaomi</span>
+            </label>
+          </p>
+        </form>
+    </li>
+    <li class="collection-item">
+      <span class="card-title" style="padding-top: 15px;">Sistema</span>
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Android</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>Windows</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>IOS</span>
+          </label>
+        </p>
+      </form>
+    </li>
+    <li class="collection-item">
+      <span class="card-title">Pantalla</span>
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>6.0</span>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>5.5</span>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span>5</span>
+          </label>
+        </p>
+
+      </form>
+    </li>
+    <li class="collection-item">
+      <span class="card-title">Precio</span>
+      <div class="row">
+        <form>
+          <div class="input-field ">
+            <i class="material-icons prefix">attach_money</i>
+            <input id="icon_precio" type="number" class="validate">
+            <label for="icon_precio">Min.</label>
+
+            <div class="input-field ">
+              <i class="material-icons prefix">attach_money</i>
+              <input id="icon_hasta" type="number" class="validate">
+              <label for="icon_hasta">Max.</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </li>
+  </ul>
 
   <!-- Grid 1 fila- 2 columnas Padre -->
   <div class="section" style="position: absolute; z-index: -100;">
     <div class="row" style="padding: 1px 20px; margin-top: 70px; ">
-      <div class="col s2" style="min-height: 90rem; z-index: -100;">
+
+      <div class="col s2 hide-on-med-and-down" style="min-height: 90rem; z-index: -100;">
 
         <!-- Cards Filtros -->
         <div class="row ">
           <div class="col s12">
             <div class="card blue-grey white z-depth-2">
-              <div class="switch center-align" style="padding-top:20px">
-                <label>
-                  <input type="checkbox">
-                  <span class="lever"></span>
-                  <h6>Nuevo</h6>
-                </label>
-              </div>
-              <!--Inicio de Filtros por marca, Sistema y Pantalla-->
-              <div class="card-content black-text">
-                <span class="card-title">Marca</span>
-                <div class="card-action"></div>
-                <form action="#">
-                  <p>
+              <ul class="collection">
+                <li class="collection-item">
+                  <div class="switch center-align">
                     <label>
-                      <input type="checkbox" />
-                      <span>Samsumg</span>
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      <h6>Nuevo</h6>
                     </label>
-                  </p>
+                  </div>
+                </li>
+                <li class="collection-item">
+                  <div class="black-text">
+                    <span class="card-title">Marca</span>
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Samsumg</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Huawei</span>
+                        </label>
+                      </p>
 
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>Huawei</span>
-                    </label>
-                  </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Nokia</span>
+                        </label>
+                      </p>
 
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>Nokia</span>
-                    </label>
-                  </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Iphone</span>
+                        </label>
+                      </p>
 
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>Iphone</span>
-                    </label>
-                  </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span>Xiaomi</span>
+                        </label>
+                      </p>
+                    </form>
+                </li>
+                <li class="collection-item">
+                  <span class="card-title" style="padding-top: 15px;">Sistema</span>
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Android</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Windows</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>IOS</span>
+                      </label>
+                    </p>
+                  </form>
+                </li>
+                <li class="collection-item">
+                  <span class="card-title">Pantalla</span>
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>6.0</span>
+                      </label>
+                    </p>
 
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>Xiaomi</span>
-                    </label>
-                  </p>
-                </form>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>5.5</span>
+                      </label>
+                    </p>
 
-                <span class="card-title" style="padding-top: 15px;">Sistema</span>
-                <div class="card-action"></div>
-                <form action="#">
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>Android</span>
-                    </label>
-                  </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>5</span>
+                      </label>
+                    </p>
 
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>Windows</span>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>IOS</span>
-                    </label>
-                  </p>
-
-                </form>
-
-                <span class="card-title" style="padding-top: 15px;">Pantalla</span>
-                <div class="card-action"></div>
-                <form action="#">
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>6.0</span>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>5.5</span>
-                    </label>
-                  </p>
-
-                  <p>
-                    <label>
-                      <input type="checkbox" />
-                      <span>5</span>
-                    </label>
-                  </p>
-
-                </form>
-
-                <span class="card-title" style="padding-top: 15px;">Precio</span>
-                <div class="card-action"></div>
-                <div class="row">
-                  <form class="col s12">
-                    <div class="row">
-                      <div class="input-field col s6">
+                  </form>
+                </li>
+                <li class="collection-item">
+                  <span class="card-title">Precio</span>
+                  <div class="row">
+                    <form>
+                      <div class="input-field ">
                         <i class="material-icons prefix">attach_money</i>
                         <input id="icon_precio" type="number" class="validate">
                         <label for="icon_precio">Min.</label>
-                      </div>
-                      <div class="input-field col s6">
-                        <i class="material-icons prefix">attach_money</i>
-                        <input id="icon_hasta" type="number" class="validate">
-                        <label for="icon_hasta">Max.</label>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
 
+                        <div class="input-field ">
+                          <i class="material-icons prefix">attach_money</i>
+                          <input id="icon_hasta" type="number" class="validate">
+                          <label for="icon_hasta">Max.</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
       <!-- Final columna S2 FILTROS  -->
 
-      <div class=" col s10" style="min-height: 90rem;">
-        <!-- Filtro 1  panel s6-->
+      <div class=" col s12 l10" style="min-height: 90rem;">
+
+
         <div class="row">
+          <!--- Filtros-->
 
-          <!--- Filtro 2 s6-->
-
-          <div class="col s9">
-            <div class="col s8">              
-              <select class="browser-default">
+          <div class="col s9 m8 l9 hide-on-small-only">
+            <div class="col s8">
+              <select class="browser-default red lighten-4 hide-on-small-only">
                 <option value="" disabled selected>Elegir categoria para ordenar</option>
                 <option value="1">Marca</option>
                 <option value="2">Sistema</option>
                 <option value="3">Pantalla</option>
                 <option value="3">Precio</option>
-              </select>
+              </select>             
             </div>
-          <div class="col s4" style="padding-top: 6px;">
-            <a class="waves-effect waves-light btn-small"><i class="material-icons center">arrow_upward</i></a>
-            <a class="waves-effect waves-light btn-small"><i class="material-icons center">arrow_downward</i></a>
-          </div>
-          </div>
-
-
-          <div class="col s2  right-align ">
-            <div>
-              <h6>Articulos por página:</h6>
+            <div class="col s4" style="padding-top: 6px;">
+              <a class="waves-effect waves-light btn-small grey darken-3"><i
+                  class="material-icons center">arrow_upward</i></a>
+              <a class="waves-effect waves-light btn-small"><i class="material-icons center">arrow_downward</i></a>
             </div>
           </div>
 
-          <div class="col s1 ">           
-            <select class="browser-default" style="width: 60%;">
-              <option value="" disabled selected>4</option>
-              <option value="1">4</option>
-              <option value="2">8</option>
-              <option value="3">12</option>              
-            </select>           
-          </div>
-          <!-- Card Articulos  -->
-          <div class="row" style="padding-top:100px;">
-            <div class="col s12 m4 l3">
-              <div class="card z-depth-2">
-                <div class="card-image">
-                  <img src="images/redmi8.jpg">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                      class="large material-icons">add_shopping_cart</i></a>
-                </div>
-                <div class="card-content">
-                  <div class="card-action"></div>
-                  <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
-                  <div class="center-align">
-                    <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
-                    <p>Redmi Note Pro 8, Pantalla 5.5</p>
-                    <p>128 GB, 2 GB Ram, Color verde claro</p>
-                  </div>
-                  <div class="center-align" style="margin-top: 10px;">
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
-                      producto</a>
-                  </div>
-                </div>
-              </div>
+          <!-- Mobile-->
+          <div class="col s8 m8 l9 hide-on-med-and-up">
+            <div class="col s7">
+              <select class="browser-default red lighten-4 hide-on-med-and-up">
+                <option value="" disabled selected>Ordenar/categorias</option>
+                <option value="1">Marca</option>
+                <option value="2">Sistema</option>
+                <option value="3">Pantalla</option>
+                <option value="3">Precio</option>
+              </select>             
             </div>
-
-
-            <div class="col s12 m4 l3">
-              <div class="card z-depth-2">
-                <div class="card-image">
-                  <img src="images/redmi8.jpg">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                      class="large material-icons">add_shopping_cart</i></a>
-                </div>
-                <div class="card-content">
-                  <div class="card-action"></div>
-                  <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
-                  <div class="center-align">
-                    <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
-                    <p>Redmi Note Pro 8, Pantalla 5.5</p>
-                    <p>128 GB, 2 GB Ram, Color verde claro</p>
-                  </div>
-                  <div class="center-align" style="margin-top: 10px;">
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
-                      producto</a>
-                  </div>
-                </div>
-              </div>
+            <div class="col s5" style="padding-top: 6px;">
+              <a class="waves-effect waves-light btn-small grey darken-3"><i
+                  class="material-icons center">arrow_upward</i></a>
+              <a class="waves-effect waves-light btn-small"><i class="material-icons center">arrow_downward</i></a>
             </div>
-
-
-            <div class="col s12 m4 l3">
-              <div class="card z-depth-2">
-                <div class="card-image">
-                  <img src="images/redmi8.jpg">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                      class="large material-icons">add_shopping_cart</i></a>
-                </div>
-                <div class="card-content">
-                  <div class="card-action"></div>
-                  <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
-                  <div class="center-align">
-                    <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
-                    <p>Redmi Note Pro 8, Pantalla 5.5</p>
-                    <p>128 GB, 2 GB Ram, Color verde claro</p>
-                  </div>
-                  <div class="center-align" style="margin-top: 10px;">
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
-                      producto</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col s12 m4 l3">
-              <div class="card z-depth-2">
-                <div class="card-image">
-                  <img src="images/redmi8.jpg">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                      class="large material-icons">add_shopping_cart</i></a>
-                </div>
-                <div class="card-content">
-                  <div class="card-action"></div>
-                  <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
-                  <div class="center-align">
-                    <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
-                    <p>Redmi Note Pro 8, Pantalla 5.5</p>
-                    <p>128 GB, 2 GB Ram, Color verde claro</p>
-                  </div>
-                  <div class="center-align" style="margin-top: 10px;">
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
-                      producto</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col s12 m4 l3">
-              <div class="card z-depth-2">
-                <div class="card-image">
-                  <img src="images/redmi8.jpg">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                      class="large material-icons">add_shopping_cart</i></a>
-                </div>
-                <div class="card-content">
-                  <div class="card-action"></div>
-                  <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
-                  <div class="center-align">
-                    <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
-                    <p>Redmi Note Pro 8, Pantalla 5.5</p>
-                    <p>128 GB, 2 GB Ram, Color verde claro</p>
-                  </div>
-                  <div class="center-align" style="margin-top: 10px;">
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
-                      producto</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col s12 m4 l3">
-              <div class="card z-depth-2">
-                <div class="card-image">
-                  <img src="images/redmi8.jpg">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                      class="large material-icons">add_shopping_cart</i></a>
-                </div>
-                <div class="card-content">
-                  <div class="card-action"></div>
-                  <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
-                  <div class="center-align">
-                    <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
-                    <p>Redmi Note Pro 8, Pantalla 5.5</p>
-                    <p>128 GB, 2 GB Ram, Color verde claro</p>
-                  </div>
-                  <div class="center-align" style="margin-top: 10px;">
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
-                      producto</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col s12 m4 l3">
-              <div class="card z-depth-2">
-                <div class="card-image">
-                  <img src="images/redmi8.jpg">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                      class="large material-icons">add_shopping_cart</i></a>
-                </div>
-                <div class="card-content">
-                  <div class="card-action"></div>
-                  <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
-                  <div class="center-align">
-                    <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
-                    <p>Redmi Note Pro 8, Pantalla 5.5</p>
-                    <p>128 GB, 2 GB Ram, Color verde claro</p>
-                  </div>
-                  <div class="center-align" style="margin-top: 10px;">
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
-                      producto</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="col s12 m4 l3">
-              <div class="card z-depth-2">
-                <div class="card-image">
-                  <img src="images/redmi8.jpg">
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                      class="large material-icons">add_shopping_cart</i></a>
-                </div>
-                <div class="card-content">
-                  <div class="card-action"></div>
-                  <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
-                  <div class="center-align">
-                    <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
-                    <p>Redmi Note Pro 8, Pantalla 5.5</p>
-                    <p>128 GB, 2 GB Ram, Color verde claro</p>
-                  </div>
-                  <div class="center-align" style="margin-top: 10px;">
-                    <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
-                      producto</a>
-                    Precio </div>
-                </div>
-              </div>
-            </div>
-
-
-            <!--Pagination-->
-            <div class="col s12 center">
-              <ul class="pagination">
-                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                <li class="active"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-              </ul>
-            </div>
-
           </div>
 
-          <!-- Page Layout here -->
-
+            <div class="col s4 m4 l3 right-align ">
+            <div class="row">
+              <div class="col s8">
+                <h6 class="hide-on-small-only">Articulos por página:</h6>
+                <h6 class="hide-on-med-and-up">Art/pag.:</h6>
+              </div>
+              <div class="col s4">
+                <select id="filtro_input" class="input-field">
+                  <option value="" disabled selected>4</option>
+                  <option value="1">4</option>
+                  <option value="2">8</option>
+                  <option value="3">12</option>
+                </select>
+              </div>
+            </div>
+          </div>
 
         </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="navbar.js"></script>
+        <!-- Card Articulos  -->
+        <div class="row">
+          <div class="col s12 m4 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/redmi8.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                    class="large material-icons">add_shopping_cart</i></a>
+              </div>
+              <div class="card-content">
+                <div class="card-action"></div>
+                <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
+                <div class="center-align">
+                  <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
+                  <p>Redmi Note Pro 8, Pantalla 5.5</p>
+                  <p>128 GB, 2 GB Ram, Color verde claro</p>
+                </div>
+                <div class="center-align" style="margin-top: 10px;">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
+                    producto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/redmi8.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                    class="large material-icons">add_shopping_cart</i></a>
+              </div>
+              <div class="card-content">
+                <div class="card-action"></div>
+                <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
+                <div class="center-align">
+                  <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
+                  <p>Redmi Note Pro 8, Pantalla 5.5</p>
+                  <p>128 GB, 2 GB Ram, Color verde claro</p>
+                </div>
+                <div class="center-align" style="margin-top: 10px;">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
+                    producto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/redmi8.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                    class="large material-icons">add_shopping_cart</i></a>
+              </div>
+              <div class="card-content">
+                <div class="card-action"></div>
+                <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
+                <div class="center-align">
+                  <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
+                  <p>Redmi Note Pro 8, Pantalla 5.5</p>
+                  <p>128 GB, 2 GB Ram, Color verde claro</p>
+                </div>
+                <div class="center-align" style="margin-top: 10px;">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
+                    producto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/redmi8.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                    class="large material-icons">add_shopping_cart</i></a>
+              </div>
+              <div class="card-content">
+                <div class="card-action"></div>
+                <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
+                <div class="center-align">
+                  <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
+                  <p>Redmi Note Pro 8, Pantalla 5.5</p>
+                  <p>128 GB, 2 GB Ram, Color verde claro</p>
+                </div>
+                <div class="center-align" style="margin-top: 10px;">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
+                    producto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/redmi8.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                    class="large material-icons">add_shopping_cart</i></a>
+              </div>
+              <div class="card-content">
+                <div class="card-action"></div>
+                <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
+                <div class="center-align">
+                  <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
+                  <p>Redmi Note Pro 8, Pantalla 5.5</p>
+                  <p>128 GB, 2 GB Ram, Color verde claro</p>
+                </div>
+                <div class="center-align" style="margin-top: 10px;">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
+                    producto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/redmi8.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                    class="large material-icons">add_shopping_cart</i></a>
+              </div>
+              <div class="card-content">
+                <div class="card-action"></div>
+                <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
+                <div class="center-align">
+                  <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
+                  <p>Redmi Note Pro 8, Pantalla 5.5</p>
+                  <p>128 GB, 2 GB Ram, Color verde claro</p>
+                </div>
+                <div class="center-align" style="margin-top: 10px;">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
+                    producto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/redmi8.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                    class="large material-icons">add_shopping_cart</i></a>
+              </div>
+              <div class="card-content">
+                <div class="card-action"></div>
+                <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
+                <div class="center-align">
+                  <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
+                  <p>Redmi Note Pro 8, Pantalla 5.5</p>
+                  <p>128 GB, 2 GB Ram, Color verde claro</p>
+                </div>
+                <div class="center-align" style="margin-top: 10px;">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
+                    producto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4 l3">
+            <div class="card z-depth-2">
+              <div class="card-image">
+                <img src="images/redmi8.jpg">
+                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                    class="large material-icons">add_shopping_cart</i></a>
+              </div>
+              <div class="card-content">
+                <div class="card-action"></div>
+                <span class="card-title center-align" style="font-weight: bold;">$ 132.00</span>
+                <div class="center-align">
+                  <h6 style="font-weight: bold;">Se vende Redmi 8 pro, Precio nego....</h6>
+                  <p>Redmi Note Pro 8, Pantalla 5.5</p>
+                  <p>128 GB, 2 GB Ram, Color verde claro</p>
+                </div>
+                <div class="center-align" style="margin-top: 10px;">
+                  <a class="waves-effect waves-light btn-small"><i class="material-icons left">visibility</i>Ver
+                    producto</a>
+                  Precio </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Pagination-->
+          <div class="col s12 center">
+            <ul class="pagination">
+              <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+              <li class="active"><a href="#!">1</a></li>
+              <li class="waves-effect"><a href="#!">2</a></li>
+              <li class="waves-effect"><a href="#!">3</a></li>
+              <li class="waves-effect"><a href="#!">4</a></li>
+              <li class="waves-effect"><a href="#!">5</a></li>
+              <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Page Layout here -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="navbar.js"></script>
 
 </body>
 

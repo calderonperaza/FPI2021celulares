@@ -1,3 +1,12 @@
+/* Paleta de colores {
+    colo primario: red accent-4 ;
+    color secundario: red lighten-4;
+    color terciario: ;
+} */
+.nav{
+color: #C3073F;
+
+}
 #search {
     justify-content: center;
     align-items: center;
@@ -13,23 +22,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-/* #icon_precio {
-    
-    
+.card {
+    margin: 15px;
 }
-#icon_hasta {
-   
-  
-} */
-
 #card_Filtro {
    width: 400px;
    height: 100px; 
     
 }
 
+ul.dropdown-content.select-dropdown li span {
+    color: red; /* no need for !important :) */
+}
 
-
-
-
+#filtro_input {
+    border-bottom: 1px solid #C3073F !important;
+}
 
