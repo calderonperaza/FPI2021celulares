@@ -34,18 +34,33 @@ body{
 #filtro{
     margin-left: 5px; 
     width: 14%;
+    /* position: fixed; */
+}
+
+.contenido{
+    
 }
 
 .rounded{
     border-radius: 2.5px;
 }
 
+.rounded0{
+    border-radius: 5px;
+}
+
 .rounded1{
     border-radius: 10px;
 }
 
+.vertical-centro{
+    display: flex;
+    align-items: center;
+    height: 92px;
+}
+
 .color0 {background-color: #001526;}
-.color1 {background-color: #003b58;}
+.color1 {background-color: #0a4563;}
 .color2 {background-color: #006b96;}
 .color3 {background-color: #00a8df;}
 .color4 {background-color: #94bee0;}
