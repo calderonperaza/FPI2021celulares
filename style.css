@@ -1,7 +1,7 @@
 body{
     background: #8e9eab;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #cddfe4, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #cddfe4, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -9,13 +9,39 @@ background: linear-gradient(to left, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Fi
     font-size: 16px;
     font-weight: 400;
     text-align: left;
-    display: block;
+    display: flex;
     box-sizing: border-box;
     width: 100%;
-    margin-bottom: 0;
-    padding: 10px 150px 8px 100px;
-    border-radius: 10px;
+    padding: 10px 75px 8px 10px;
+    border-radius: 5px;
     margin: 6px
+}
+#search-movil {
+    font-size: 14px;
+    font-weight: 350;
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+    padding: 10px 10px 8px 15px;
+    border-radius: 5px;
+    margin: 6px
+}
+
+#cont2{
+    border-radius: 2.5px;
+}
+
+#filtro{
+    margin-left: 5px; 
+    width: 14%;
+}
+
+.rounded{
+    border-radius: 2.5px;
+}
+
+.rounded1{
+    border-radius: 10px;
 }
 
 .color0 {background-color: #001526;}
