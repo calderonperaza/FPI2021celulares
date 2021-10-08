@@ -8,18 +8,21 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
 </head>
 
 <body>
   <nav class="blue">
     <div class="nav-wrapper">
       <!--Menu movil-->
-      <a href="#" class="sidenav-trigger white-text" data-target="mobile-nav" style="font-size: 20px; padding: 0px;">
+      <a href="#" class="sidenav-trigger white-text" data-target="mobile-nav" style="font-size: 20px; padding: 0px">
         <i class="material-icons">menu</i>
       </a>
-      <a href="#" class="brand-logo" style="margin-left: 1rem;">
+      <a href="#" class="brand-logo hide-on-small-only" style="margin-left: 1rem">
         <i class="material-icons">favorite</i>Tienda CellPhone
+      </a>
+
+      <a href="#" class="brand-logo hide-on-med-and-up">
+        <i class="material-icons">favorite</i>
       </a>
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -39,22 +42,36 @@
           <a href="shop.html"><i class="material-icons">shopping_cart</i></a>
         </li>
       </ul>
+      <div class="input-field right hide-on-large-only" style="width: 23%; margin-right: 1rem">
+        <i class="material-icons prefix">search</i>
+        <input type="text" id="autocomplete-input" class="autocomplete" />
+      </div>
     </div>
   </nav>
   <ul class="sidenav lighten-3 light-blue" id="mobile-nav">
-    <div class="center-align" style="margin-top: 50px;"> <i class="large material-icons">smartphone</i></div>
+    <div class="center-align" style="margin-top: 50px">
+      <i class="large material-icons">smartphone</i>
+    </div>
     <h4 class="center-align">Tienda Cellphone</h4>
 
-    <li class="active"><a href="#" style="font-size: 20px;"> <i class="material-icons left">home</i> Inicio</a></li>
-    <li><a href="#" style="font-size: 20px;"><i class="material-icons left">add</i>Nuevo anuncio</a></li>
-    <li><a href="#" style="font-size: 20px;"><i class="material-icons left">shopping_cart</i>Carrito</a></li>
-    <li><a href="#" style="font-size: 20px;"><i class="material-icons left">bar_chart</i>Estadisticas</a></li>
-
+    <li class="active">
+      <a href="#" style="font-size: 20px">
+        <i class="material-icons left">home</i> Inicio</a>
+    </li>
+    <li>
+      <a href="#" style="font-size: 20px"><i class="material-icons left">add</i>Nuevo anuncio</a>
+    </li>
+    <li>
+      <a href="#" style="font-size: 20px"><i class="material-icons left">shopping_cart</i>Carrito</a>
+    </li>
+    <li>
+      <a href="#" style="font-size: 20px"><i class="material-icons left">bar_chart</i>Estadisticas</a>
+    </li>
   </ul>
   <div class="row" style="margin-top: 1rem">
-    <div class="col l2 hide-on-med-and-down" style="margin-top: 20px;">
+    <div class="col l2 hide-on-med-and-down" style="margin-top: 20px">
       <!--Switch-->
-      <div class="switch" style="margin-bottom: 2rem;">
+      <div class="switch" style="margin-bottom: 2rem">
         <label>
           <input type="checkbox" />
           <span class="lever"></span>
@@ -147,38 +164,35 @@
       </div>
     </div>
 
-    <div class="col s12 m12 l10">
+    <div class="col s12 m12 l10 xl10">
       <!-- Teal page content  -->
-      <div class="row hide-on-small-only">
-
-        <div class="col s6 right-align ">
-
-
-          <div style="margin-right: 10%;">
+      <div class="row hide-on-med-and-down">
+        <div class="col s6 right-align">
+          <div style="margin-right: 10%">
             Precio:
-            <div class="input-field inline ">
-              <input id="email_inline" type="number" style="width: 4rem; height: 1rem;">
+            <div class="input-field inline">
+              <input id="email_inline" type="number" style="width: 4rem; height: 1rem" />
             </div>
             Hasta:
             <div class="input-field inline">
-              <input id="email_inline" type="number" style="width: 4rem; height: 1rem;">
+              <input id="email_inline" type="number" style="width: 4rem; height: 1rem" />
             </div>
           </div>
-
         </div>
-        <div class="col s6 ">
-          <div style="  margin-left: 10%;">
+        <div class="col s6">
+          <div style="margin-left: 10%">
             Ordenar por:
-            <a class="waves-effect btn-flat"><i class="material-icons left">arrow_upward</i>Precio</a> Fecha:
-            <input type="text" class="datepicker" style="width: 4rem;">
+            <a class="waves-effect btn-flat"><i class="material-icons left">arrow_upward</i>Precio</a>
+            Fecha:
+            <input type="text" class="datepicker" style="width: 4rem" />
           </div>
         </div>
       </div>
-      <div class="show-on-small hide-on-med-and-up row ">
-        
+      <div class="show-on-small hide-on-large-only row">
         <div class="col s6 right-align">
           <div>
-            <select style="width: 30%;">
+            <label for="filtro">Ordenar por</label>
+            <select id="filtro" style="width: 30%">
               <option value="" disabled selected>Fecha</option>
               <option value="1">Fecha</option>
               <option value="2">Precio</option>
@@ -188,14 +202,13 @@
         <div class="col s6">
           <a class="waves-effect waves-light btn blue col 3"><i class="material-icons">filter_alt</i></a>
         </div>
-
       </div>
       <div class="row">
-        <div class="col s6 m4 l3">
-          <div class="card ">
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
             <div class="card-image">
               <img
-                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
             </div>
             <div class="card-content">
               <span class="card-title">$635</span>
@@ -206,11 +219,11 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m4 l3">
-          <div class="card ">
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
             <div class="card-image">
               <img
-                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
             </div>
             <div class="card-content">
               <span class="card-title">$635</span>
@@ -221,11 +234,12 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m4 l3">
-          <div class="card ">
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
             <div class="card-image">
               <img
-                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
             </div>
             <div class="card-content">
               <span class="card-title">$635</span>
@@ -236,11 +250,12 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m4 l3">
-          <div class="card ">
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
             <div class="card-image">
               <img
-                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
             </div>
             <div class="card-content">
               <span class="card-title">$635</span>
@@ -251,11 +266,12 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m4 l3">
-          <div class="card ">
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
             <div class="card-image">
               <img
-                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
             </div>
             <div class="card-content">
               <span class="card-title">$635</span>
@@ -266,11 +282,12 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m4 l3">
-          <div class="card ">
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
             <div class="card-image">
               <img
-                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
             </div>
             <div class="card-content">
               <span class="card-title">$635</span>
@@ -281,11 +298,12 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m4 l3">
-          <div class="card ">
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
             <div class="card-image">
               <img
-                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
             </div>
             <div class="card-content">
               <span class="card-title">$635</span>
@@ -296,11 +314,76 @@
             </div>
           </div>
         </div>
-        <div class="col s6 m4 l3">
-          <div class="card ">
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
             <div class="card-image">
               <img
-                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$">
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">$635</span>
+              <h6>Samsung S20-Ultra</h6>
+            </div>
+            <div class="card-action">
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">$635</span>
+              <h6>Samsung S20-Ultra</h6>
+            </div>
+            <div class="card-action">
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">$635</span>
+              <h6>Samsung S20-Ultra</h6>
+            </div>
+            <div class="card-action">
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
+            </div>
+            <div class="card-content">
+              <span class="card-title">$635</span>
+              <h6>Samsung S20-Ultra</h6>
+            </div>
+            <div class="card-action">
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4 l3 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.samsung.com/is/image/samsung/latin-galaxy-note20-ultra-n985-sm-n985fznkgto-frontmysticbronze-thumb-320814311?$320_320_PNG$" />
             </div>
             <div class="card-content">
               <span class="card-title">$635</span>
@@ -315,30 +398,48 @@
       <div class="row">
         <div class="col s12 m10 center-align">
           <ul class="pagination">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="disabled">
+              <a href="#!"><i class="material-icons">chevron_left</i></a>
+            </li>
             <li class="active blue"><a href="#!">1</a></li>
             <li class="waves-effect"><a href="#!">2</a></li>
             <li class="waves-effect"><a href="#!">3</a></li>
             <li class="waves-effect"><a href="#!">4</a></li>
             <li class="waves-effect"><a href="#!">5</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            <li class="waves-effect">
+              <a href="#!"><i class="material-icons">chevron_right</i></a>
+            </li>
           </ul>
         </div>
-        <div class="col m2 hide-on-small-only ">
-          <div style="width: 8rem;">
+        <div class="col m2 hide-on-small-only">
+          <div style="width: 8rem">
             <label>Articulos por pagina</label>
             <select>
               <option value="" disabled selected>25</option>
               <option value="1">25</option>
               <option value="2">30</option>
             </select>
-
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+
+  <footer class="page-footer blue">
+    <div class="container">
+      <h5 class="white-text">Tienda CellPhone</h5>
+      <p class="grey-text text-lighten-4">
+        Tienda en linea para venta de dispositivos moviles.
+      </p>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright CellPhone
+        <a class="grey-text text-lighten-4 right" href="#!">Rafa's Studios</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
     const options = () => {};
@@ -351,10 +452,11 @@
       var instances = M.FormSelect.init(elems, options);
     });
     $(document).ready(function () {
-      $('.sidenav').sidenav();
+      $(".sidenav").sidenav();
     });
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
 </body>
 
 </html>
