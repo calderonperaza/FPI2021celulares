@@ -1,0 +1,14 @@
+.btn-outline-cancel {
+    color: #ff7402 !important; 
+    border-color: #ff7402 !important;
+  }
+
+  .btn-outline-cancel:hover {
+    color: #fff !important;
+    background-color: #ff7402 !important;
+    border-color: #ff7402 !important;
+  }
+
+  .btn-outline-cancel:focus, .btn-outline-cancel.focus {
+    box-shadow: 0 0 0 0.2rem rgba(43, 147, 72, 0.5) !important;
+  }
