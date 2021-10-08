@@ -109,7 +109,7 @@
 
                         <li class="nav-item">
                             <a href="#" class="nav-link text-black border-bottom border-1 border-dark"
-                                style="border-radius: 0px;"><i class="fa fa-plus-circle"></i> Nuevo Anuncio</a>
+                                style="border-radius: 0px;" data-bs-target="#nuevoAnuncio" data-bs-toggle="modal"><i class="fa fa-plus-circle"></i> Nuevo Anuncio</a>
                         </li>
 
                         <li class="nav-item">
@@ -237,7 +237,7 @@
                                                 <div class="col-3">
                                                     <label>Titulo:</label>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col-12 col-sm">
                                                     <input id="title" type="text" class="form-control" required>
                                                     <small id="titleHelp" class="form-text text-muted">
                                                         Marca y Modelo.
@@ -248,7 +248,7 @@
                                                 <div class="col-3">
                                                     <label>Subtitulo:</label>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col-12 col-sm">
                                                     <input id="subTitle" type="text" class="form-control" required>
                                                     <small id="subTitleHelp" class="form-text text-muted">
                                                         Inf. General: RAM, ROM, Tipo de Pantalla, etc.
@@ -259,7 +259,7 @@
                                                 <div class="col-3">
                                                     <label>Vendedor:</label>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col-12 col-sm">
                                                     <input id="seller" type="text" class="form-control" required>
                                                 </div>
                                             </div>
@@ -267,22 +267,26 @@
                                                 <div class="col-3">
                                                     <label>Telefono:</label>
                                                 </div>
-                                                <div class="col">
+                                                <div class="col-12 col-sm">
                                                     <input id="tel" type="tel" class="form-control" required>
                                                     <small id="telHelp" class="form-text text-muted">
                                                         Region + telefono.
                                                     </small>
                                                 </div>
                                             </div>
-                                            <div class="form-group my-2">
-                                                <label>Descripcion:</label>
-                                                <textarea id="descripcion" class="form-control" required></textarea>
+                                            <div class="row form-group my-2">
+                                                <div class="col-3">
+                                                    <label>Descripcion:</label>
+                                                </div>
+                                                <div class="col-12 col-sm">
+                                                    <textarea id="descripcion" class="form-control" required></textarea>
+                                                </div>
                                             </div>
                                             <div class="row my-2">
                                                 <div class="col-3">
                                                     <label>Precio:</label>
                                                 </div>
-                                                <div class="col-4 col-lg-3">
+                                                <div class="col-auto col-lg-3">
                                                     <input type="number" step="0.001" required class="form-control">
                                                 </div>
                                             </div>
@@ -454,7 +458,7 @@
                 </div>
             </div>
             <!--toast-->
-            <div style="position: fixed; top:4rem; right:1rem;z-index:1;">
+            <div style="position: fixed; top:4rem; right:0.5rem; z-index:1;" class="col-11 col-sm-auto">
                 <div id="published" class="toast  collapse" data-delay="10000">
                     <div class="toast-header bg-success">
                         <strong class="mr-auto text-light">Nuevo Anuncio</strong>
