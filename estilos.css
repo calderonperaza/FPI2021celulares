@@ -13,6 +13,11 @@ div label span {
   font-size: 16px !important;
 }
 
+/* barra de busqueda */
+#search {
+  width: 250px !important;
+}
+
 #precio {
   width: 100px !important;
 }
@@ -48,4 +53,14 @@ div label span {
 
 #nuevoProducto {
   padding: 30px !important;
+}
+
+/* estilos de "Descripcion del producto" */
+
+.carousel {
+  height: 750px !important;
+}
+
+#detalle_producto {
+  padding: 50px !important;
 }
