@@ -24,3 +24,24 @@ div label span {
 #ordenar_por {
   height: 100px;
 }
+
+#label_modal {
+  font-size: 16px;
+}
+
+#nombre_vendedor {
+  width: 300px !important;
+}
+
+#telefono {
+  width: 200px !important;
+}
+
+#text_descrip {
+  height: 150px !important;
+  width: 300px !important;
+}
+
+#nuevo_precio {
+  width: 100px !important;
+}

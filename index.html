@@ -23,7 +23,7 @@
     <!-- Menu principal -->
     <nav class="nav-wrapper red darken-4">
       <div class="row">
-        <div class="col s2">
+        <div class="col m2">
           <!-- Logo de la empresa -->
           <a href="#" class="brand-logo">
             <i class="material-icons">phone_iphone</i>
@@ -53,302 +53,475 @@
         </div>
 
         <!-- Opciones de sitio -->
-        <div class="col s6">
+        <div class="col m6">
           <ul class="hide-on-med-and-down">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Estadisticas</a></li>
+            <li>
+              <!-- Modal Trigger -->
+              <a
+                class="waves-effect waves-light btn modal-trigger"
+                href="#modal1"
+                ><i class="material-icons">add</i></a
+              >
+
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4 class="black-text center">Nuevo producto</h4>
+                  <div class="row">
+                    <div class="col m6">
+                      <div class="row">
+                        <div class="card">
+                          <div class="card-content">
+                            <form action="#">
+                              <!-- Formulario de nuevo producto -->
+                              <table>
+                                <!-- Estado del nuevo producto -->
+                                <tr>
+                                  <td>
+                                    <label class="black-text" id="label_modal"
+                                      >Estado:
+                                    </label>
+                                  </td>
+                                  <td>
+                                    <label>
+                                      <input
+                                        name="group1"
+                                        type="radio"
+                                        checked
+                                      />
+                                      <span>Nuevo</span>
+                                    </label>
+                                    <label>
+                                      <input name="group1" type="radio" />
+                                      <span>Usado</span>
+                                    </label>
+                                  </td>
+                                </tr>
+                                <!-- marca del nuevo producto -->
+                                <tr>
+                                  <td>
+                                    <label class="black-text" id="label_modal"
+                                      >Marca:
+                                    </label>
+                                  </td>
+                                  <td>
+                                    <select>
+                                      <option value="1">Iphone</option>
+                                      <option value="2">Samsung</option>
+                                      <option value="3">Motorola</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                                <!-- modelo del nuevo producto -->
+                                <tr>
+                                  <td>
+                                    <label class="black-text" id="label_modal"
+                                      >Modelo:
+                                    </label>
+                                  </td>
+                                  <td>
+                                    <select>
+                                      <option value="1">6 plus</option>
+                                      <option value="2">7 plus</option>
+                                      <option value="3">8 plus</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                                <!-- Pantalla del nuevo producto -->
+                                <tr>
+                                  <td>
+                                    <label class="black-text" id="label_modal"
+                                      >Pantalla:
+                                    </label>
+                                  </td>
+                                  <td>
+                                    <select>
+                                      <option value="1">5.5</option>
+                                      <option value="2">6.0</option>
+                                      <option value="3">6.5</option>
+                                    </select>
+                                  </td>
+                                  <td><label>pulgadas</label></td>
+                                </tr>
+                                <!-- Sistema del nuevo producto -->
+                                <tr>
+                                  <td>
+                                    <label class="black-text" id="label_modal"
+                                      >Sistema:
+                                    </label>
+                                  </td>
+                                  <td>
+                                    <select>
+                                      <option value="1">Ios</option>
+                                      <option value="2">Android</option>
+                                      <option value="3">Windows</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                                <!-- ROM del nuevo producto -->
+                                <tr>
+                                  <td>
+                                    <label class="black-text" id="label_modal"
+                                      >ROM:
+                                    </label>
+                                  </td>
+                                  <td>
+                                    <select>
+                                      <option value="1">64 GB</option>
+                                      <option value="2">70 GB</option>
+                                      <option value="3">80 GB</option>
+                                    </select>
+                                  </td>
+                                  <td>
+                                    <label>Alm. Interno</label>
+                                  </td>
+                                </tr>
+                                <!-- RAM del producto -->
+                                <tr>
+                                  <td>
+                                    <label class="black-text" id="label_modal"
+                                      >RAM:
+                                    </label>
+                                  </td>
+                                  <td>
+                                    <select>
+                                      <option value="1">2 GB</option>
+                                      <option value="2">4 GB</option>
+                                      <option value="3">8 GB</option>
+                                    </select>
+                                  </td>
+                                </tr>
+                              </table>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- info del producto -->
+                    <div class="col m6">
+                      <div class="row center">
+                        <h5 class="black-text">Titulo breve del producto</h5>
+                      </div>
+                      <!-- nombre del vendedor -->
+                      <div class="row center">
+                        <label class="black-text" id="label_modal"
+                          >Vendedor:
+                        </label>
+                        <input
+                          type="text"
+                          class="validate"
+                          placeholder="Nombre Apellido"
+                          id="nombre_vendedor"
+                        />
+                      </div>
+                      <!-- Telefono del vendedor -->
+                      <div class="row center">
+                        <label class="black-text" id="label_modal"
+                          >Telefono:
+                        </label>
+                        <input
+                          type="tel"
+                          class="validate"
+                          placeholder="0000-0000"
+                          id="telefono"
+                        />
+                      </div>
+                      <!-- Decripcion del nuevo producto -->
+                      <div class="row center">
+                        <label class="black-text" id="label_modal"
+                          >Descripcion:
+                        </label>
+                      </div>
+                      <div class="row center">
+                        <textarea
+                          id="text_descrip"
+                          cols="30"
+                          rows="10"
+                        ></textarea>
+                      </div>
+                      <!-- precio del nuevo producto -->
+                      <div class="row">
+                        <div class="col m1"></div>
+                        <div class="card col m5">
+                          <div class="card-content">
+                            <h5 class="black-text">Precio</h5>
+                            <input
+                              type="text"
+                              class="validate"
+                              placeholder="$"
+                              id="nuevo_precio"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <a class="waves-effect waves-light btn"
+                          ><i class="material-icons left">cancel</i>cancelar</a
+                        >
+                        <a class="waves-effect waves-light btn"
+                          ><i class="material-icons left">save</i>crear</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="#!"
+                    class="modal-close waves-effect waves-green btn-flat"
+                    >Agree</a
+                  >
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="row">
-      <div class="col s2">
+      <div class="col m2">
         <div class="card">
-          <div class="card">
-            <!-- Switch de Nuevo -->
-            <div class="switch">
-              <div class="card-content">
+          <!-- Switch de Nuevo -->
+          <div class="switch">
+            <div class="card-content">
+              <label>
+                <input type="checkbox" />
+                <span class="lever"></span>
+                <span class="black-text">Nuevo</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Menu de Marcas -->
+        <div class="card">
+          <div class="card-content black-text">
+            <h6>Marcas</h6>
+            <form action="#">
+              <p>
                 <label>
-                  <input type="checkbox" />
-                  <span class="lever"></span>
-                  <span class="black-text">Nuevo</span>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Samsung</span>
                 </label>
-              </div>
-            </div>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Huawei</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Nokia</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>¡Phone</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Xiomi</span>
+                </label>
+              </p>
+            </form>
           </div>
-          <!-- Menu de Marcas -->
-          <div class="card">
-            <div class="card-content black-text">
-              <h6>Marcas</h6>
-              <form action="#">
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>Samsung</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>Huawei</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>Nokia</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>¡Phone</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>Xiomi</span>
-                  </label>
-                </p>
-              </form>
-            </div>
+        </div>
+        <!-- Menu de Sistema -->
+        <div class="card">
+          <div class="card-content">
+            <h6>Sistema</h6>
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Android</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Windows</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Ios</span>
+                </label>
+              </p>
+            </form>
           </div>
-          <!-- Menu de Sistema -->
-          <div class="card">
-            <div class="card-content">
-              <h6>Sistema</h6>
-              <form action="#">
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>Android</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>Windows</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>Ios</span>
-                  </label>
-                </p>
-              </form>
-            </div>
-          </div>
-          <!-- Menu de Pantalla -->
-          <div class="card">
-            <div class="card-content">
-              <h6>Pantalla</h6>
-              <form action="#">
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>6.0</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>5.5</span>
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    <input
-                      type="checkbox"
-                      class="filled-in"
-                      checked="checked"
-                    />
-                    <span>5</span>
-                  </label>
-                </p>
-              </form>
-            </div>
+        </div>
+        <!-- Menu de Pantalla -->
+        <div class="card">
+          <div class="card-content">
+            <h6>Pantalla</h6>
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>6.0</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>5.5</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>5</span>
+                </label>
+              </p>
+            </form>
           </div>
         </div>
       </div>
       <!-- menu de precio y orden de productos -->
 
-      <div class="col s10">
-        <!-- precio y hasta -->
-        <div class="col s6">
-          <div class="card">
-            <div class="card-content">
-              <label for="precio">Precio</label>
-              <input id="precio" type="text" class="validate" placeholder="$" />
-              <label for="hasta">Hasta</label>
-              <input id="hasta" type="text" class="validate" placeholder="$" />
+      <div class="col m10">
+        <div class="row">
+          <!-- precio y hasta -->
+          <div class="col m6">
+            <div class="card">
+              <div class="card-content center">
+                <label for="precio">Precio</label>
+                <input
+                  id="precio"
+                  type="text"
+                  class="validate"
+                  placeholder="$"
+                />
+                <label for="hasta">Hasta</label>
+                <input
+                  id="hasta"
+                  type="text"
+                  class="validate"
+                  placeholder="$"
+                />
+              </div>
             </div>
           </div>
-          <div class="row"></div>
-        </div>
-        <!-- ordenar por -->
-        <div class="col s6">
-          <div class="card">
-            <div class="card-content" id="ordenar_por">
-              <span>Ordenar por:</span>
-              <a class="waves-effect waves-light btn"
-                ><i class="material-icons left">arrow_upward</i>precio</a
-              >
-              <a class="waves-effect waves-light btn">fecha</a>
+          <!-- ordenar por -->
+          <div class="col m6">
+            <div class="card">
+              <div class="card-content center" id="ordenar_por">
+                <span>Ordenar por:</span>
+                <a class="waves-effect waves-light btn"
+                  ><i class="material-icons left">arrow_upward</i>precio</a
+                >
+                <a class="waves-effect waves-light btn">fecha</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="row">
+          <!-- productos de la pagina -->
 
-      <!-- productos de la pagina -->
-      <div class="row">
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
+          <div class="col m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/img1.jpeg" />
+              </div>
+              <div class="card-content">
+                <h6>Celular a32 6.5" 4gb ram - 128gb negro</h6>
+                <br />
+                <p>Samsung</p>
+                <p>Precio: $315.00</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
+          <div class="col m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/img2.jpeg" />
+              </div>
+              <div class="card-content">
+                <h6>Samsung Galaxy A02 rojo dual sim</h6>
+                <br />
+                <p>Samsung</p>
+                <p>Precio: $125.00</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
+          <div class="col m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/img3.jpeg" />
+              </div>
+              <div class="card-content">
+                <h6>Celular 6.5" e7 2gb ram 32gb rom gris</h6>
+                <br />
+                <p>Motorola</p>
+                <p>Precio: $149.00</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
+          <div class="col m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/img4.jpeg" />
+              </div>
+              <div class="card-content">
+                <h6>Celular 6.5" e7 2gb ram 32gb rom azul</h6>
+                <br />
+                <p>Motorola</p>
+                <p>Precio: $149.00</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
+          <div class="col m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/img1.jpeg" />
+              </div>
+              <div class="card-content">
+                <h6>Celular a32 6.5" 4gb ram - 128gb negro</h6>
+                <br />
+                <p>Samsung</p>
+                <p>Precio: $315.00</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col s3">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
-                corrupti sit amet ullam repudiandae vitae odit neque assumenda
-                perspiciatis! Quis accusamus itaque, placeat fugiat quibusdam
-                ratione iure iste dolor doloremque?
-              </p>
+          <div class="col m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/img1.jpeg" />
+              </div>
+              <div class="card-content">
+                <h6>Celular a32 6.5" 4gb ram - 128gb negro</h6>
+                <br />
+                <p>Samsung</p>
+                <p>Precio: $315.00</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
             </div>
           </div>
         </div>
