@@ -107,11 +107,12 @@
                                     </label>
                                   </td>
                                   <td>
-                                    <select>
-                                      <option value="1">Iphone</option>
-                                      <option value="2">Samsung</option>
-                                      <option value="3">Motorola</option>
-                                    </select>
+                                    <input
+                                      type="text"
+                                      class="validate"
+                                      placeholder="Marca"
+                                      id="form_nuevoproducto"
+                                    />
                                   </td>
                                 </tr>
                                 <!-- modelo del nuevo producto -->
@@ -122,11 +123,12 @@
                                     </label>
                                   </td>
                                   <td>
-                                    <select>
-                                      <option value="1">6 plus</option>
-                                      <option value="2">7 plus</option>
-                                      <option value="3">8 plus</option>
-                                    </select>
+                                    <input
+                                      type="text"
+                                      class="validate"
+                                      placeholder="Modelo"
+                                      id="form_nuevoproducto"
+                                    />
                                   </td>
                                 </tr>
                                 <!-- Pantalla del nuevo producto -->
@@ -137,11 +139,12 @@
                                     </label>
                                   </td>
                                   <td>
-                                    <select>
-                                      <option value="1">5.5</option>
-                                      <option value="2">6.0</option>
-                                      <option value="3">6.5</option>
-                                    </select>
+                                    <input
+                                      type="text"
+                                      class="validate"
+                                      placeholder="Pantalla"
+                                      id="form_nuevoproducto"
+                                    />
                                   </td>
                                   <td><label>pulgadas</label></td>
                                 </tr>
@@ -168,11 +171,12 @@
                                     </label>
                                   </td>
                                   <td>
-                                    <select>
-                                      <option value="1">64 GB</option>
-                                      <option value="2">70 GB</option>
-                                      <option value="3">80 GB</option>
-                                    </select>
+                                    <input
+                                      type="text"
+                                      class="validate"
+                                      placeholder="ROM"
+                                      id="form_nuevoproducto"
+                                    />
                                   </td>
                                   <td>
                                     <label>Alm. Interno</label>
@@ -186,11 +190,12 @@
                                     </label>
                                   </td>
                                   <td>
-                                    <select>
-                                      <option value="1">2 GB</option>
-                                      <option value="2">4 GB</option>
-                                      <option value="3">8 GB</option>
-                                    </select>
+                                    <input
+                                      type="text"
+                                      class="validate"
+                                      placeholder="RAM"
+                                      id="form_nuevoproducto"
+                                    />
                                   </td>
                                 </tr>
                               </table>
@@ -308,20 +313,22 @@
                         <a class="waves-effect waves-light btn"
                           ><i class="material-icons left">cancel</i>cancelar</a
                         >
-                        <a class="waves-effect waves-light btn"
+                        <a
+                          class="waves-effect waves-light btn"
+                          onclick="M.toast({html: 'Se a guardado el producto'})"
                           ><i class="material-icons left">save</i>crear</a
                         >
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                   <a
                     href="#!"
                     class="modal-close waves-effect waves-green btn-flat"
                     >Agree</a
                   >
-                </div>
+                </div> -->
               </div>
             </li>
             <li>
@@ -595,6 +602,18 @@
       document.addEventListener("DOMContentLoaded", function () {
         var elems = document.querySelectorAll(".sidenav");
         var instances = M.Sidenav.init(elems);
+      });
+
+      //   opciones del modal
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems);
+      });
+
+      // opciones de los select
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll("select");
+        var instances = M.FormSelect.init(elems);
       });
     </script>
   </body>

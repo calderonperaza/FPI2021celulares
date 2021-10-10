@@ -55,6 +55,11 @@ div label span {
   padding: 30px !important;
 }
 
+/* inputs del form de nuevo producto */
+#form_nuevoproducto {
+  width: 150px !important;
+}
+
 /* estilos de "Descripcion del producto" */
 
 .carousel {
