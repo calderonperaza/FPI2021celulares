@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+  <title>CellPhone</title>
   </head>
   <body>
     <nav>
       <div class="nav-wrapper #ff1744 red accent-3">
-        <div class="left container-section"><i class="left material-icons">campaign</i></div>
-        <div><a href="#!" class="left brand-logo">Tienda CellPhone</a></div>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down ">
-          <li><button class="btn waves-effect waves-light #b71c1c red darken-4">Inicio</button></li>
-          <li><a href="" class="btn waves-effect waves-light #b71c1c red darken-4">Estadisticas</a></li>
-          <!--<li><a href="">Estadisticas  <span class="new badge">4</span></a></li>--->
-          <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
-          <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">shopping_cart</i></a>
-        </ul>
-        <!--<div class="section">
-          <ul>
-            <li class="search">
-              <div class="search-wrapper">
-                <input id="search" placeholder="Search"><i class="material-icons">search</i>
-                <div class="search-results"></div>
-              </div>
-            </li>
+
+        <div class="container left">
+          <div class="left container-section"><i class="left material-icons">campaign</i></div>
+          <div class="left container-section"><a href="#!" class="left brand-logo">Tienda CellPhone</a></div>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <div class="right container-section">
+            <ul class="right hide-on-med-and-down ">
+              <li><button class="btn waves-effect waves-light #b71c1c red darken-4">Inicio</button></li>
+              <li><a href="" class="btn waves-effect waves-light #b71c1c red darken-4">Estadisticas</a></li>
+              <!--<li><a href="">Estadisticas  <span class="new badge">4</span></a></li>--->
+              <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
+              <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">shopping_cart</i></a>
+            </ul>
+            <ul id="mobile-demo" class="right sidenav hide-on-med-and-down">
+              <li><button class="btn waves-effect waves-light #b71c1c red darken-4">Inicio</button></li>
+              <li><a href="" class="btn waves-effect waves-light #b71c1c red darken-4">Estadisticas</a></li>
+              <!--<li><a href="">Estadisticas  <span class="new badge">4</span></a></li>--->
+              <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
+              <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">shopping_cart</i></a>
+            </ul>
+          </div>
+          <div class="right container-section"><ul class="right">
+            <li><input id="search" type="text" placeholder="Search" autocomplete="off" class="search-wrapper"></li>
           </ul>
-        </div>-->
-        <ul id="mobile-demo" class="sidenav">
-          <li><button class="btn waves-effect waves-light #b71c1c red darken-4">Inicio</button></li>
-          <li><a href="" class="btn waves-effect waves-light #b71c1c red darken-4">Estadisticas</a></li>
-          <!--<li><a href="">Estadisticas  <span class="new badge">4</span></a></li>--->
-          <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
-          <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">shopping_cart</i></a>
-        </ul>
-        
-        <ul class="right">
-          <li><input id="search" type="text" placeholder="Search" autocomplete="off" class="search-wrapper"></li>
-        </ul>
-      </div>
-    </nav>
+        </div>
+        </div>
+      </nav>
+        </div>
 
       <div class="row">
         <div class="col s2"></div>
-        <div class="col s9 ">
+        <div class="col s9 p6">
           <h1 class="#e57373 red lighten-2">Tienda</h1>
           <div class="container-section">
             <div class="row">
               <div class="col s6 l3 m3">
                 <div class="card">
+                  <a href="#anuncio.html"></a>
                   <div class="card-image">
                     <img class="responsive-img" src="https://i.blogs.es/214b05/samsung-galaxy-j6-specifications/1366_2000.jpg">
                   </div>
@@ -176,9 +176,8 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
+      M.AutoInit();
+    });
     </script>
   </body>
 </html>
