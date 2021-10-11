@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+    <title>Detalles del producto</title>
+</head>
+<body>
+    <!--Menu, navbar-->
+  <nav class="red accent-4" style="padding: 1px 40px; position: fixed">
+    <div class="nav-wrapper">
+      <div style="display: inline-block; width: calc(100% - 400px)" class="hide-on-med-and-down">
+        <div class="logotienda">
+          <div>
+            <a href="index.html" class="brand-logo hide-on-med-and-down"><i class="material-icons"
+                style="font-size: 3.5rem;">smartphone</i>
+              Cellphone </a>
+          </div>
+          <!--Search bar Pantallas grandes-->
+          <div>
+            <form class="row" style="width: 100%">
+              <div class="input-field col s10">
+                <input id="search" class="header-search-input red lighten-4" type="text" class="validate" />
+              </div>
+              <div class="input-field col s2">
+                <a class="
+                      btn-floating btn-medium
+                      waves-effect waves-light
+                      black
+                    "><i class="material-icons icono">search</i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--Menu icon mobile-->
+      <a href="#" class="sidenav-trigger white-text" data-target="mobile-nav" style="font-size: 20px; padding: 0px;">
+        <i class="material-icons">menu</i>
+      </a>
+      <!--Search bar pantallas medianas y pequeñas-->
+      <li class="hide-on-large-only" id="search" style="list-style: none">
+        <form class="row">
+          <div class="input-field col s8">
+            <input class="header-search-input red lighten-4" id="search" type="text" class="validate" />
+          </div>
+          <div class="input-field col s1">
+            <a class="btn-floating btn-medium waves-effect waves-light black"><i
+                class="material-icons icono">search</i></a>
+          </div>
+        </form>
+      </li>
+      <!--Lista menu pantallas grandes-->
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="index.html" style="font-size: 20px;">Inicio</a></li>
+        <li><a href="#" style="font-size: 20px;">Estadisticas</a></li>
+        <a class="btn-floating btn-small waves-effect waves-light tooltipped grey darken-4 modal-trigger"
+          data-position="bottom" data-tooltip="Crear anuncio" href="#modal1"><i class="material-icons">add</i></a>
+        <a class="btn-floating btn-medium waves-effect waves-light grey darken-4"><i
+            class="material-icons">add_shopping_cart</i></a>
+      </ul>
+    </div>
+  </nav>
+  <!-- Sidenav para mobile-->
+  <ul class="sidenav red lighten-3" id="mobile-nav">
+    <div class="center-align" style="margin-top: 50px;"> <i class="large material-icons">smartphone</i></div>
+    <h4 class="center-align">Cellphone</h4>
+    <li class="active"><a href="index.html" style="font-size: 20px;"> <i class="material-icons left">home</i> Inicio</a>
+    </li>
+    <li><a href="#" style="font-size: 20px;"><i class="material-icons left">bar_chart</i>Estadisticas</a></li>
+    <li><a href="#modal2" class="modal-trigger" style="font-size: 20px;" onclick="cerrarSidenav()" type="submit"><i class="material-icons left">add</i>Nuevo
+        anuncio</a></li>
+    <li><a href="#" style="font-size: 20px;"><i class="material-icons left">add_shopping_cart</i>Carrito</a></li>
+  </ul>
+
+
+<!--Scrips, Jquery dependencias-->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/navbar.js"></script>
+</body>
+</html>

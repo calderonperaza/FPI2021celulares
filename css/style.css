@@ -19,9 +19,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.card {
-    margin: 15px;
-}
+
 #card_Filtro {
    width: 400px;
    height: 100px; 
