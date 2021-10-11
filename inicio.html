@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="purple darken-2">
+    <div class="container">
+        <div class="row">
+            <nav>
+                <div class="nav-wrapper purple lighten-5">
+                    <a href="#!" class="brand-logo col l6 hide-on-small-only black-text"><i class=" medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="black-text purple lighten-3 btn" href="inicio.html">Inicio</a></li>
+                        <li><a class="black-text purple lighten-3 btn" href="estadisticas.html">Estadisticas</a></li>
+                        <li><a href="agregar.html"><i class="medium material-icons btn-flat">add_circle_outline</i></a></li>
+                        <li><a href="carrito.html"><i class="medium material-icons btn-flat">local_grocery_store</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+                
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="#!"><i class="medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a></li><hr width="75%"/>
+                    <li><a class="center-align" href="inicio.html">Inicio</a></li><hr width="75%"/>
+                    <li><a class="center-align" href="agregar.html">Nuevo anuncio</a></li><hr width="75%"/>
+                    <li><a class="center-align" href="carrito.html">Carrito</a></li><hr width="75%"/>
+                    <li><a class="center-align" href="estadisticas.html">Estadisticas</a></li><hr width="75%"/>
+                </ul>
+        </div>
+    </div>
+    
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+          });        
+    </script>
+</body>
+</html>
