@@ -1,70 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CellPhone</title>
-	<!-- Compiled and minified CSS -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-</head>
-<body>
-	<nav class="red darken-4">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CellPhone</title>
+		<!-- Compiled and minified CSS -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="shortcut icon" href="img/icono2.png" type="image/x-icon">
+	</head>
+
+	<body>
+		<nav class="red darken-4">
 			<div class="row">
-					<div class="col s4">
-						<a href="index.html">
-							<i class="material-icons col s1">phone_iphone</i>
-							<h6 class="col s3">CellPhone Store</h6>
-						</a>		
+				<div class="col s4 hide-on-med-and-down">
+					<!--Bueno este se vera en tablet-->
+					<a href="index.html">
+						<i class="material-icons col s1">phone_iphone</i>
+						<h6 class="col s3" style="padding-top: 0.4rem;">CellPhone</h6>
+					</a>
+				</div>
+				<!-- Este contendra el menu para celulares -->
+				<div class="col s2 hide-on-med-and-up show-on-medium">
+					<ul id="slide-out" class="sidenav row center-align red lighten-1" style="max-height: 20rem;">
+						<li style=""><a href="#!"><i class=" large material-icons col s1">phone_iphone</i>
+								<h6 class="col s8 white-text" style="padding-top: 0.3rem;">CellPhone Store</h6>
+							</a></li>
+							<li>
+								<div class="divider"></div>
+							</li>
+							<li class="center-align"><a href="index.html"><span class="white-text">Inicio</span></a></li>
+							<li>
+								<div class="divider"></div>
+							</li>
+							<li class="center-align"><a href="#"><span class="white-text">Nuevo Anuncio</span></a></li>
+							<li>
+								<div class="divider"></div>
+							</li>
+							<li class="center-align"><a href="#"><span class="white-text">Carrito</span></a></li>
+							<li>
+								<div class="divider"></div>
+							</li>
+							<li class="center-align"><a href="#"><span class="white-text">Stats</span></a></li>
+					</ul>
+					<a href="#" data-target="slide-out" class="sidenav-trigger"><i
+																				 class="material-icons col s12">menu</i></a>
+
+				</div>
+				<!-- Este es para la barra buscadora de tablets en adelante -->
+				<div class="col s4 hide-on-med-and-down ">
+					<i class="material-icons col s1 prefix">search</i>
+					<form class="col s11">
+						<input type="search" placeholder="Buscar..." class="white-text">
+					</form>
+				</div>
+				<!-- Este es para la barra buscadora de los celulares -->
+				<div class="col s10 hide-on-med-and-up show-on-medium">
+					<i class="material-icons col s1 prefix">search</i>
+					<form class="col s10">
+						<input type="search" placeholder="Buscar..." class="white-text">
+					</form>
+				</div>
+
+				<div class="col s4 ">
+					<div class="col s6">
+						<ul id="nav-mobile" class="hide-on-med-and-down">
+							<li><a href="#">Inicio</a></li>
+							<li><a href="#">Stats</a></li>
+						</ul>
 					</div>
-					<div class="col s4">
-						<i class="material-icons col s1 prefix">search</i>
-						<form class="col s10" >
-							<input type="search" placeholder="Buscar..." class="white-text">
+					<div class="col s6">
+						<ul id="nav-mobile" class="hide-on-med-and-down ">
+							<li><a href="#"><i class="material-icons ">add</i></a></li>
+							<li><a href="#" class="valign-wrapper"><i class="material-icons">add_shopping_cart</i>0</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="row">
+				<!-- Esta va a ser la barra de la izquierda -->
+				<div class="col l3 m3 hide-on-med-and-down" >
+					<br>
+					<div class="switch center-align">
+						<label class="">
+							<input type="checkbox" class="red">
+							<span class="lever"></span>
+							Nuevo
+						</label>
+					</div>
+					<br>
+					<div class="col s12 center-align">
+						<div class="card white col s12 left-align">
+							<div class="card-content black-text">
+								<span class="card-title">Marca</span>
+								<form>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>Samsung</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>Huawei</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>Nokia</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>iPhone</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>Xiaomi</span>
+										</label>
+									</p>
+								</form>
+							</div>
+						</div>
+						<div class="card white col s12 left-align">
+							<div class="card-content black-text">
+								<span class="card-title">Sistema</span>
+								<form>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>Windows</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>Android</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>iOS</span>
+										</label>
+									</p>
+								</form>
+							</div>
+						</div>
+						<div class="card white col s12 left-align">
+							<div class="card-content black-text">
+								<span class="card-title">Pantalla</span>
+								<form>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>5,5"</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>6,0"</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>6,5"</span>
+										</label>
+									</p>
+									<p>
+										<label>
+											<input type="checkbox" />
+											<span>7,0"</span>
+										</label>
+									</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Y esta sera la barra de la derecha -->
+				<div class="col s12 m12 l9">
+					<div class="col m6 l6 hide-on-med-and-down">
+						<form action="" class="col l12 m12" style="display: flex; justify-content: space-between;">
+							<label for="" class="col l3 m3 center-align">Precio:</label>
+							<input type="text" placeholder="$" class="validate col l3 m3">
+							<label for="" class="col l3 m3 center-align">Hasta:</label>
+							<input type="text" placeholder="$" class="validate col l3 m3 left-align">
 						</form>
 					</div>
-					<div class="col s4">
-						<div class="col s6">
-							<ul id="nav-mobile" class="hide-on-med-and-down">
-								<li><a href="#">Inicio</a></li>
-								<li><a href="#">Estadisticas</a></li>
-						  	</ul>
+					<div class="col m6 l6 hide-on-med-and-down">
+						<p class="col l2 m2 right-align">
+							Ordenar por:
+						</p>
+						<form action="#" class="col l10 m10">
+							<p class="col l6 m6">
+								<label>
+									<input name="group1" type="radio" checked class="with-gap" />
+									<span>Precio</span>
+								</label>
+							</p>
+							<p class="l6 m6">
+								<label>
+									<input name="group1" type="radio" class="with-gap" />
+									<span>Fecha</span>
+								</label>
+							</p>
+						</form>
+					</div>
+					<div class="col s12 hide-on-med-and-up show-on-medium">
+						<br>
+						<div class="col s10">
+							<div class="input-field col s12">
+								<select>
+									<option value="" disabled selected>Filtrar</option>
+									<option value="1" name="op">Precio</option>
+									<option value="2" name="op">Fecha</option>
+								</select>
+								<label>Ordenar Por:</label>
+							</div>
+
 						</div>
-						<div class="col s6">
-							<ul id="nav-mobile" class="">
-								<li><a href="#"><i class="material-icons">add</i></a></li>
-								<li><a href="#" class="valign-wrapper"><i class="medium material-icons">add_shopping_cart</i>0</a></li>
+						<div class="col s2 m2 center-align">
+							<ul id="slide-phones" class="sidenav row center-align red lighten-2" style="max-height: 80%;">
+								<li><h6 class="white-text">Filtrar</h6></li>
+								<li style="">
+									<div class="card red lighten-1 col s12 left-align">
+										<div class="card-content black-text">
+											<span class="card-title white-text">Marca</span>
+											<form>
+												<p>
+													<label>
+														<input type="checkbox" />
+														<span class="white-text">Samsung</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input type="checkbox" />
+														<span class="white-text">Huawei</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input type="checkbox" />
+														<span class="white-text">Nokia</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input type="checkbox" />
+														<span class="white-text">iPhone</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input type="checkbox" />
+														<span class="white-text">Xiaomi</span>
+													</label>
+												</p>
+											</form>
+										</div>
+									</div>
+
+								</li>
+								<li>
+									<div class="divider"></div>
+								</li>
+								<div class="card red lighten-1 col s12 left-align">
+									<div class="card-content black-text">
+										<span class="card-title white-text">Sistema</span>
+										<form>
+											<p>
+												<label>
+													<input type="checkbox" />
+													<span class="white-text">Windows</span>
+												</label>
+											</p>
+											<p>
+												<label>
+													<input type="checkbox" />
+													<span class="white-text">Android</span>
+												</label>
+											</p>
+											<p>
+												<label>
+													<input type="checkbox" />
+													<span class="white-text">iOS</span>
+												</label>
+											</p>
+										</form>
+									</div>
+								</div>
+								<li>
+									<div class="divider"></div>
+								</li>
+								<li class="center-align">
+									<div class="card red lighten-1 col s12 left-align">
+										<div class="card-content black-text">
+											<span class="card-title white-text">Sistema</span>
+											<form>
+												<p>
+													<label class="">
+														<input type="checkbox" />
+														<span class="white-text">Windows</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input type="checkbox" />
+														<span class="white-text">Android</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input type="checkbox" />
+														<span class="white-text">iOS</span>
+													</label>
+												</p>
+											</form>
+										</div>
+									</div></li>
+									<li>
+										<div class="divider"></div>
+									</li>
+									<li><span class="white-text">&copy CellPhone2021</span></li>
 							</ul>
+							<a href="#" class="btn red darken-4 sidenav-trigger" style="margin-top: 1.4rem;" data-target="slide-phones"><i class="material-icons">storage</i></a>
 						</div>
 					</div>
-			</div>
-	</nav>
-	<main>
-		<div class="row">
-			<!-- Esta va a ser la barra de la izquierda -->
-			<div class="col s2">
-				<br>
-				<div class="switch center-align">
-					<label class="">
-						<input type="checkbox" class="red">
-						<span class="lever"></span>
-						Nuevo
-					</label>
+					<!-- contenido de la tienda -->
+					<div class="row">
+						<div class="col s6 m4 l3 " style="min-height: 20%; min-height: 20%; ">
+							<div class="card white" style="" >
+								<div class="card-content">
+									<img src="/img/iPhone1.jpg" alt="" class="imagen">
+									<span class="card-title black-text">iPhone 11 Pro Max</span>
+									<span class="card-title red-text darken-4">$756</span>
+									<p>Descripcion del telefono</p>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l3" style="min-height: 20%; min-height: 20%; ">
+							<div class="card white" >
+								<div class="card-content">
+									<img src="/img/oneplus1.jpg" alt="" class="imagen">
+									<span class="card-title black-text">Oneplus 8T Pro <span class="hide-on-med-and-down show-on-medium">Cyan</span></span>
+									<span class="card-title red-text darken-4">$546</span>
+									<p>Descripcion del telefono</p>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l3" style="min-height: 20%; min-height: 20%; ">
+							<div class="card white" style="">
+								<div class="card-content">
+									<img src="/img/s21ultra.jpg" alt="" class="imagen">
+									<span class="card-title black-text">Samsung Galaxy s21</span>
+									<span class="card-title red-text darken-4">$1500</span>
+									<p>Descripcion del telefono</p>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l3" style="min-height: 20%; min-height: 20%; ">
+							<div class="card white"  >
+								<div class="card-content">
+									<img src="/img/iPhone1.jpg" alt="" class="imagen">
+									<span class="card-title black-text">iPhone 11 Pro Max</span>
+									<span class="card-title red-text darken-4">$756</span>
+									<p>Descripcion del telefono</p>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l3" style="min-height: 20%; min-height: 20%; ">
+							<div class="card white" >
+								<div class="card-content">
+									<img src="/img/oneplus1.jpg" alt="" class="imagen">
+									<span class="card-title black-text">Oneplus 8T Pro Cyan</span>
+									<span class="card-title red-text darken-4">$546</span>
+									<p>Descripcion del telefono</p>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l3" style="min-height: 20%; min-height: 20%; ">
+							<div class="card white" >
+								<div class="card-content">
+									<img src="/img/s21ultra.jpg" alt="" class="imagen">
+									<span class="card-title black-text">Samsung Galaxy s21</span>
+									<span class="card-title red-text darken-4">$1500</span>
+									<p>Descripcion del telefono</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
 				</div>
-				<br>
 			</div>
-			<!-- Y esta sera la barra de la derecha -->
-			<div class="col s10">
-
-			</div>
-		</div>	
-	</main>
+		</main>
 
 
 
 
 
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-</body>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var elems = document.querySelectorAll('.sidenav');
+				var instances = M.Sidenav.init(elems);
+			});
+
+			// Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+			// var collapsibleElem = document.querySelector('.collapsible');
+			// var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+			// Or with jQuery
+
+			$(document).ready(function () {
+				$('.sidenav').sidenav();
+			});
+			// end of jQuery name space
+			document.addEventListener('DOMContentLoaded', function () {
+				var elems = document.querySelectorAll('select');
+				var instances = M.FormSelect.init(elems);
+			});
+
+			// Or with jQuery
+
+			$(document).ready(function () {
+				$('select').formSelect();
+			});
+		</script>
+	</body>
+
 </html>
