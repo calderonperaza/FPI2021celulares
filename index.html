@@ -77,7 +77,7 @@
          <a class="nav-link text-secondary" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-secondary" href="#">Nuevo Anuncio</a>
+            <a class="nav-link text-secondary" href="#" data-bs-toggle="modal" data-bs-target="#modalNuevoAnuncio">Nuevo Anuncio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-secondary" href="#">Carrito</a>
@@ -288,9 +288,72 @@
         <option value="2">ultimos 2 dias</option>
         <option value="3">la ultima semana</option>
       </select>
-      <button class="btn secundario d-lg-none" type="button">
+      <button class="btn navbar-toggler secundario d-lg-none" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
        <ion-icon name="funnel" size='small'></ion-icon>
       </button>
+
+
+      <div class="collapse navbar-collapse d-lg-none" id="navbarsExample02">
+       <ul class="navbar-nav me-auto mb-2 d-lg-block d-xl-block d-sm-none d-md-none">
+          <li class="nav-item advertencia border-dark">
+             <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1">
+                <label class="form-check-label" for="flexSwitchCheckDefault1">Nuevo</label>
+             </div>
+          </li>
+          <li class="nav-item advertencia border-dark">
+            <h5>Marca</h5>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="samsung1">
+                     <label class="form-check-label" for="samsung1">Samsung</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="Iphone1">
+                     <label class="form-check-label" for="Iphone1">Iphone</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="huawei1">
+                     <label class="form-check-label" for="huawei1">Huawei</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="xiaomi1">
+                     <label class="form-check-label" for="xiaomi1">Xiaomi</label>
+             </div>
+          </li>
+          <li class="nav-item advertencia border-dark">
+            <h5>Sistema</h5>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="Android1">
+                     <label class="form-check-label" for="Android1">Android</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="IOS1">
+                     <label class="form-check-label" for="IOS1">IOS</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="Windows1">
+                     <label class="form-check-label" for="Windows1">Windows</label>
+             </div>
+          </li>
+          <li class="nav-item advertencia border-dark">
+            <h5>pantalla</h5>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="6.01">
+                     <label class="form-check-label" for="6.01">6.0</label>
+             </div>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="5.51">
+                     <label class="form-check-label" for="5.51">5.5</label>
+             </div>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="5.01">
+                     <label class="form-check-label" for="5.01">5.0</label>
+             </div>
+          </li>
+          </ul>
+      
+      </div>
+
     </div>
     
       </div>
