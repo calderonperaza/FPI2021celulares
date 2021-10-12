@@ -8,12 +8,11 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Producto</title>
 </head>
 <body">
-
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper #ff1744 red accent-3">
@@ -26,13 +25,13 @@
               <li><a href=inicio.html class="btn waves-effect waves-light #b71c1c red darken-4">Inicio</a></li>
               <li><a href="" class="btn waves-effect waves-light #b71c1c red darken-4">Estadisticas</a></li>
               <!--<li><a href="">Estadisticas  <span class="new badge">4</span></a></li>--->
-              <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
-              <a class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">shopping_cart</i></a>
+              <a href= "nuevo.html" class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
+              <a href="" class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">shopping_cart</i></a>
             </ul>
             <ul id="menu-responsive" class="right sidenav collection">
-              <li class="collection-item"><a href="inicio.html" class="waves-effect"><i class="material-icons">campaign</i><h6><strong>Tienda CellPhone</strong></h6></strong></a></li>
-              <li class="collection-item"><a href="" class="center waves-effect">Inicio</a></li>
-              <li class="collection-item"><a href="" class="center waves-effect">Nuevo Anuncio</a></li>
+              <li class="collection-item"><a class="waves-effect"><i class="material-icons">campaign</i><h6><strong>Tienda CellPhone</strong></h6></strong></a></li>
+              <li class="collection-item"><a href="inicio.html" class="center waves-effect">Inicio</a></li>
+              <li class="collection-item"><a href="anuncio.html" class="center waves-effect">Nuevo Anuncio</a></li>
               <li class="collection-item"><a href="" class="center waves-effect">Carrito</a></li>
               <li class="collection-item"><a href="" class="center waves-effect">Estadisticas</a></li>
             </ul>
@@ -70,7 +69,7 @@
   </div>-->
 
   <div class="container section">
-    <div class="row #ffebee red lighten-5">
+    <div class="row #ffebee red lighten-5 m6 p12">
       <div class="col m6 p12">
         <div class="carousel">
           <a href="" class="carousel-item">
@@ -105,8 +104,8 @@
         <h5 class="center"><strong>DESCRIPCION</strong></h5>
       </div>
     </div>
-    <div class="row">
-      <div class="col m3">
+    <div class="row m6 p12">
+      <div class="col m3 p12">
         <div class="container right">
           <h7>Estado: Nuevo</h7><br>
           <h7>Marca: Iphone</h7><br>
@@ -117,7 +116,7 @@
           <h7>RAM: 2 GB</h7>
         </div>
       </div>
-      <div class="col m9">
+      <div class="col m9 p12">
         <div class="container right">
           <h7>Telefono en muy buenas condiciones, tiene
             dos cámaras, la caja esta abierta, pero con
@@ -132,8 +131,7 @@
   </div>
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -141,6 +139,7 @@
   //    var intances = M.Slider.init(eles);
 
       var elems=document.querySelectorAll('.carousel');
+      M.AutoInit();
       var instances = M.Carousel.init(elems,{
         duration:500,
         indicators:true 
