@@ -83,7 +83,12 @@
                     </li>
                     <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
                         <a class="btn btn-dark btn-sm" href="#">
-                            <i class=" material-icons">add_shopping_cart</i> 0
+                            <i class=" material-icons">add_shopping_cart</i>
+                            <span
+                                class="position-absolute mt-3 me-0 translate-middle badge rounded-pill bg-light text-black">
+                                99+
+                                <span class="visually-hidden"></span>
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -109,7 +114,8 @@
 
                         <li class="nav-item">
                             <a href="#" class="nav-link text-black border-bottom border-1 border-dark"
-                                style="border-radius: 0px;" data-bs-target="#nuevoAnuncio" data-bs-toggle="modal"><i class="fa fa-plus-circle"></i> Nuevo Anuncio</a>
+                                style="border-radius: 0px;" data-bs-target="#nuevoAnuncio" data-bs-toggle="modal"><i
+                                    class="fa fa-plus-circle"></i> Nuevo Anuncio</a>
                         </li>
 
                         <li class="nav-item">
@@ -129,10 +135,10 @@
     </nav>
     <!-- NAVEGACION -->
 
-    <!--Modal y toast-->
+    <!-- MODAL Y TOAST -->
     <div class="row">
         <div class="col">
-            <!--Modal-->
+            <!--MODAL-->
             <div class="modal fade" data-backdrop="static" id="nuevoAnuncio" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -160,7 +166,7 @@
                                                         <label class="form-check-label" for="stateNew">Nuevo</label>
                                                     </div>
 
-                                                    <div class="form-check form-check-inline">
+                                                    <div class="form-check form-check-inline ">
                                                         <input class="form-check-input" type="radio" name="state"
                                                             id="stateOld" value="2" required>
                                                         <label class="form-check-label" for="stateOld">Usado</label>
@@ -457,7 +463,9 @@
                     </div>
                 </div>
             </div>
-            <!--toast-->
+            <!-- MODAL -->
+
+            <!--TOAST-->
             <div style="position: fixed; top:4rem; right:0.5rem; z-index:1;" class="col-11 col-sm-auto">
                 <div id="published" class="toast  collapse" data-delay="10000">
                     <div class="toast-header bg-success">
@@ -479,8 +487,7 @@
                                 d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm.354-7.646a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                         </svg>
                         <strong class="mr-auto text-light">Carrito</strong>
-                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close">                            
                         </button>
                     </div>
                     <div class="toast-body">
@@ -488,9 +495,451 @@
                     </div>
                 </div>
             </div>
+            <!-- TOAST -->
         </div>
     </div>
+    <!-- MODAL Y TOAST -->
 
+    <!-- MAIN -->
+    <main class="container-fluid" id="main">
+        <!-- FILTROS DE PRECIO Y FECHA -->
+        <div class="row col-12 mt-5 pt-4 ms-auto">
+            <div class="col col-lg-4 offset-lg-3 col-xl-5 offset-xl-2">
+                <div class="d-none d-lg-inline">
+                    <div class="row my-auto">
+                        <div class="col-2 my-auto">
+                            <label for="lowest">Precio:</label>
+                        </div>
+                        <div class="col-4" style="margin-left: 0px;">
+                            <input type="number" id="lowest"
+                                class="form-control border border-1 border-secondary rounded-pill w-75" placeholder="$">
+                        </div>
+                        <div class="col-2 my-auto">
+                            <label for="lowest">Hasta:</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" id="lowest"
+                                class="form-control border border-1 border-secondary rounded-pill w-75" placeholder="$">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SELECT QUE SE DESPLEGARA EN MOVIL -->
+                <div class="d-lg-none">
+                    <div class="row my-auto align-items-center">
+                        <div class="col">
+                            <label for="atributo">Ordenar por: </label>
+                        </div>
+                        <div class="col">
+                            <select id="atributo" class="form-select">
+                                <option selected>Precio</option>
+                                <option value="1">Fecha</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- SELECT QUE SE DESPLEGARA EN MOVIL -->
+            </div>
+
+            <div class="col-5 col-lg-5 text-center">
+                <div class="d-none d-lg-inline">
+                    <div class="row align-items-center">
+                        <div class="col-4 my-auto">
+                            <label>Ordenar por:</label>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-outline-dark d-inline" type="button">
+                                <i class="fa fa-arrow-up"></i>
+                                Precio
+                            </button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-outline-dark d-inline" type="button">
+                                <i class="fa fa-calendar"></i>
+                                Fecha
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- FILTER BUTTON -->
+                <button class="btn btn-dark d-lg-none mt-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#filtros" aria-expanded="false" aria-controls="filtros">
+                    <i class="bi bi-filter"></i>
+                </button>
+                <!-- FILTER BUTTON -->
+            </div>
+        </div>
+        <!-- FILTROS DE PRECIO Y FECHA -->
+
+        <div class="row mt-2">
+            <!-- FILTROS -->
+            <div class="col-lg-3 col-xl-2">
+                <div id="filtros" class="collapse d-lg-block">
+                    <div class="card w100">
+                        <div class="card-header">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="estado">
+                                <label class="form-check-label" for="estado">Nuevo</label>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush w-100">
+                            <li class="list-group-item">
+                                <h5 class="card-title">Marca</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="samsung">
+                                    <label class="form-check-label" for="samsung">
+                                        Samsung <span class="badge bg-dark">15</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="huawei">
+                                    <label class="form-check-label" for="huawei">
+                                        Huawei <span class="badge bg-dark">10</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="nokia">
+                                    <label class="form-check-label" for="nokia">
+                                        Nokia <span class="badge bg-dark">56</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="iphone">
+                                    <label class="form-check-label" for="iphone">
+                                        iPhone <span class="badge bg-dark">4</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="xiaomi">
+                                    <label class="form-check-label" for="xiaomi">
+                                        Xiaomi <span class="badge bg-dark">4</span>
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                <h5 class="card-title">Sistema</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="android">
+                                    <label class="form-check-label" for="android">
+                                        Android <span class="badge bg-dark">15</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="windows">
+                                    <label class="form-check-label" for="windows">
+                                        Windows <span class="badge bg-dark">10</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ios">
+                                    <label class="form-check-label" for="ios">
+                                        IOS <span class="badge bg-dark">56</span>
+                                    </label>
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                <h5 class="card-title">Pantalla</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="six">
+                                    <label class="form-check-label" for="six">
+                                        6.00''
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="fiveFive">
+                                    <label class="form-check-label" for="fiveFive">
+                                        5.5''
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="five">
+                                    <label class="form-check-label" for="five">
+                                        5''
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- FILTROS -->
+
+            <!-- PRODUCTOS -->
+            <div class="col-12 col-lg-9 col-xl-10">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 my-3">
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <div class="card">
+                            <a href="detalles.html" target="_blank" class="">
+                                <img src="assets/img/a51.jpg" class="card-img-top" alt="Samsung A70">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="detalles.html" class="text-black">
+                                    <h6 class="card-title">Samsung Galaxy J6</h6>
+                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-danger btn btn-block mb-2" type="button"
+                                        onclick="toastAnuncio('#cartAdded')">
+                                        <i class="fas fa-cart-plus"></i>Agregar al carrito
+                                    </button>
+                                </div>
+                                <div class="card-footer text-muted text-center h3">
+                                    <span class="badge bg-dark">$ 777.77</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                <!-- PRODUCTOS -->
+            </div>
+    </main>
+    <!-- MAIN -->
 
 
 

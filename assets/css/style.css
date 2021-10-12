@@ -12,3 +12,7 @@
   .btn-outline-cancel:focus, .btn-outline-cancel.focus {
     box-shadow: 0 0 0 0.2rem rgba(43, 147, 72, 0.5) !important;
   }
+
+  .form-check-input:checked{
+    background-color: #ff7402;
+  }
