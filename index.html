@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
   <title>Ventas celulares</title>
 </head>
+
 <body>
   <!--Menu, navbar-->
   <nav class="red accent-4" style="padding: 1px 40px; position: fixed">
@@ -140,6 +142,15 @@
               <label>Almacenamiento</label>
             </div>
           </div>
+          <div class="row">
+            <div class="switch">
+              <label>
+                <input type="checkbox">
+                <span class="lever"></span>
+                Dispositivo Nuevo
+              </label>
+            </div>
+          </div>
         </div>
         <div class="col s7">
           <div class="row">
@@ -172,6 +183,15 @@
               <i class="material-icons prefix">attach_money</i>
               <input id="icon_precio" type="number" class="validate">
               <label for="icon_precio">Precio</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="switch">
+              <label>
+                <input type="checkbox">
+                <span class="lever"></span>
+                Aceptar terminos y condiciones
+              </label>
             </div>
           </div>
         </div>
@@ -196,7 +216,7 @@
       </button>
     </div>
   </div>
-   <!--Modal Nuevo anuncio para mobile-->
+  <!--Modal Nuevo anuncio para mobile-->
   <div id="modal2" class="modal modal-fixed-footer hide-on-large-only">
     <div class="modal-content">
       <div class="row">
@@ -210,121 +230,121 @@
         </div>
       </div>
       <div class="row">
-        <div class="container">
-          <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="images/redmi2.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="images/redmi2.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="images/redmi2.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="images/redmi2.jpg"></a>
-            <a class="carousel-item" href="#five!"><img src="images/redmi2.jpg"></a>
+        <div class="glider-contain">
+          <div class="glider">
+            <div><img src="images/redmi2.jpg" alt="imagen" style="width: 300px; height: 150px;"></div>
+            <div><img src="images/redmi8.jpg" alt="imagen" style="width: 300px; height: 150px;"></div>
+            <div><img src="images/redmi3.jpeg" alt="imagen" style="width: 300px; height: 150px;"></div>
+            <div><img src="images/redmi4.jpg" alt="imagen" style="width: 300px; height: 150px;"></div>
           </div>
+          <button role="button" aria-label="Previous" class="glider-prev"><i
+              class="material-icons">arrow_back_ios</i></button>
+          <button role="button" aria-label="Next" class="glider-next"><i
+              class="material-icons">arrow_forward_ios</i></button>
+          <div role="tablist" class="dots"></div>
         </div>
-      </div>                  
+      </div>
+      <div class="row center-align">
+        <a class="waves-effect waves-light btn-small green"><i class="material-icons right">upgrade</i>Agregar
+          imagenes</a>
+      </div>
       <div class="row">
-        <div class="col s5">
-          <div class="row">
-            <div class="input-field col s12">
-              <select>
-                <option value="" disabled selected>Marca</option>
-                <option value="1">Samsung</option>
-                <option value="2">Apple</option>
-                <option value="3">Xiaomi</option>
-              </select>
-              <label>Elegir marca del celular</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <select>
-                <option value="" disabled selected>Modelo</option>
-                <option value="1">Samsung Galaxy S10</option>
-                <option value="2">iPhone 13 </option>
-                <option value="3">Redmi Note pro 10</option>
-              </select>
-              <label>Modelo del celular</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="material-icons prefix">developer_mode</i>
-              <input id="icon_prefix" type="number" class="validate">
-              <label for="icon_prefix">Pantalla (inch)</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <select>
-                <option value="" disabled selected>RAM</option>
-                <option value="1">1 GB</option>
-                <option value="2">2 GB</option>
-                <option value="3">4 GB</option>
-                <option value="3">6 GB</option>
-                <option value="3">8 GB</option>
-                <option value="3">12 GB</option>
-                <option value="3">Otro</option>
-              </select>
-              <label>RAM</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <select>
-                <option value="" disabled selected>Almacenamiento</option>
-                <option value="1">16 GB</option>
-                <option value="2">32 GB</option>
-                <option value="3">64 GB</option>
-                <option value="3">128 GB</option>
-                <option value="3">256 GB</option>
-                <option value="3">512 GB</option>
-                <option value="3">otro</option>
-              </select>
-              <label>Almacenamiento</label>
-            </div>
-          </div>
-        </div>
-        <div class="col s7">
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="50"></textarea>
-              <label for="textarea2">Titulo del anuncio</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea2" class="materialize-textarea" data-length="20"></textarea>
-              <label for="textarea2">Vendedor</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12" style="width: 70%;">
-              <i class="material-icons prefix">tag</i>
-              <input id="icon_prefix" type="number" class="validate">
-              <label for="icon_prefix">Telefono (+503)</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Descripcion del Producto</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field" style="width: 70%;">
-              <i class="material-icons prefix">attach_money</i>
-              <input id="icon_precio" type="number" class="validate">
-              <label for="icon_precio">Precio</label>
-            </div>
-          </div>
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="50"></textarea>
+          <label for="textarea2">Titulo del anuncio</label>
         </div>
       </div>
       <div class="row">
-        <div class="container">
-          <h5>Agregar imagenes</h5>
-          <input type="file" class="dropify" .multiple />
-          <button class="btn waves-effect waves-light green" type="submit" name="action" style="margin-top:10px;">Subir
-            imagen/imagenes
-            <i class="material-icons right">publish</i>
-          </button>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">attach_money</i>
+          <input id="icon_precio" type="number" class="validate">
+          <label for="icon_precio">Precio</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <textarea id="textarea2" class="materialize-textarea" data-length="20"></textarea>
+          <label for="textarea2">Vendedor</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">tag</i>
+          <input id="icon_prefix" type="number" class="validate">
+          <label for="icon_prefix">Tel (+503)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Estado</option>
+            <option value="1">Nuevo</option>
+            <option value="2">Usado</option>
+          </select>
+          <label>Elegir estado del celular</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Marca</option>
+            <option value="1">Samsung</option>
+            <option value="2">Apple</option>
+            <option value="3">Xiaomi</option>
+          </select>
+          <label>Elegir marca del celular</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Modelo</option>
+            <option value="1">Samsung Galaxy S10</option>
+            <option value="2">iPhone 13 </option>
+            <option value="3">Redmi Note pro 10</option>
+          </select>
+          <label>Modelo del celular</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">developer_mode</i>
+          <input id="icon_prefix" type="number" class="validate">
+          <label for="icon_prefix">Pantalla (inch)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>RAM</option>
+            <option value="1">1 GB</option>
+            <option value="2">2 GB</option>
+            <option value="3">4 GB</option>
+            <option value="3">6 GB</option>
+            <option value="3">8 GB</option>
+            <option value="3">12 GB</option>
+            <option value="3">Otro</option>
+          </select>
+          <label>RAM</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Almacenamiento</option>
+            <option value="1">16 GB</option>
+            <option value="2">32 GB</option>
+            <option value="3">64 GB</option>
+            <option value="3">128 GB</option>
+            <option value="3">256 GB</option>
+            <option value="3">512 GB</option>
+            <option value="3">otro</option>
+          </select>
+          <label>Almacenamiento</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Descripcion del Producto</label>
         </div>
       </div>
     </div>
@@ -344,7 +364,8 @@
     <li class="active"><a href="index.html" style="font-size: 20px;"> <i class="material-icons left">home</i> Inicio</a>
     </li>
     <li><a href="#" style="font-size: 20px;"><i class="material-icons left">bar_chart</i>Estadisticas</a></li>
-    <li><a href="#modal2" class="modal-trigger" style="font-size: 20px;" onclick="cerrarSidenav()" type="submit"><i class="material-icons left">add</i>Nuevo
+    <li><a href="#modal2" class="modal-trigger" style="font-size: 20px;" onclick="cerrarSidenav()" type="submit"><i
+          class="material-icons left">add</i>Nuevo
         anuncio</a></li>
     <li><a href="#" style="font-size: 20px;"><i class="material-icons left">add_shopping_cart</i>Carrito</a></li>
   </ul>
@@ -355,7 +376,7 @@
       <i class="large material-icons">filter_alt</i>
     </a>
   </div>
-   <!-- Sidenav para los filtos mobile-->
+  <!-- Sidenav para los filtos mobile-->
   <ul class="collection sidenav" id="slide-out">
     <li class="collection-item">
       <div class="switch center-align">
@@ -481,7 +502,7 @@
   <div class="section" style="position: absolute; z-index: -100;">
     <div class="row" style="padding: 1px 20px; margin-top: 70px; ">
       <!--Columna para los filtros -->
-      <div class="col l3 xl2 hide-on-med-and-down" style="min-height: 90rem;">        
+      <div class="col l3 xl2 hide-on-med-and-down" style="min-height: 90rem;">
         <div class="row ">
           <div class="col s12">
             <div class="card blue-grey white z-depth-2">
@@ -611,7 +632,7 @@
         </div>
       </div>
       <!-- Final columna de filtros  -->
-       <!-- Inicio columna derecha articulos  -->
+      <!-- Inicio columna derecha articulos  -->
       <div class=" col s12 l9 xl10" style="min-height: 90rem;">
         <div class="row">
           <!--- Filtros-->
@@ -726,8 +747,8 @@
               <div class="card-action grey lighten-3" style="padding-bottom: 1px;">
                 <div class="row">
                   <div class="col m9 l10 xl10">
-                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;" href="detallesProducto.html"><i
-                        class="material-icons right">visibility</i>Detalles</a>
+                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;"
+                      href="detallesProducto.html"><i class="material-icons right">visibility</i>Detalles</a>
                   </div>
                   <div class="col m3 l2 xl2 right">
                     <a class="btn-floating waves-effect waves-light grey darken-3 right"><i
@@ -796,8 +817,8 @@
               <div class="card-action grey lighten-3" style="padding-bottom: 1px;">
                 <div class="row">
                   <div class="col m9 l10 xl10">
-                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;" href="detallesProducto.html"><i
-                        class="material-icons right">visibility</i>Detalles</a>
+                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;"
+                      href="detallesProducto.html"><i class="material-icons right">visibility</i>Detalles</a>
                   </div>
                   <div class="col m3 l2 xl2 right">
                     <a class="btn-floating waves-effect waves-light grey darken-3 right"><i
@@ -866,8 +887,8 @@
               <div class="card-action grey lighten-3" style="padding-bottom: 1px;">
                 <div class="row">
                   <div class="col m9 l10 xl10">
-                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;" href="detallesProducto.html"><i
-                        class="material-icons right">visibility</i>Detalles</a>
+                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;"
+                      href="detallesProducto.html"><i class="material-icons right">visibility</i>Detalles</a>
                   </div>
                   <div class="col m3 l2 xl2 right">
                     <a class="btn-floating waves-effect waves-light grey darken-3 right"><i
@@ -936,8 +957,8 @@
               <div class="card-action grey lighten-3" style="padding-bottom: 1px;">
                 <div class="row">
                   <div class="col m9 l10 xl10">
-                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;" href="detallesProducto.html"><i
-                        class="material-icons right">visibility</i>Detalles</a>
+                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;"
+                      href="detallesProducto.html"><i class="material-icons right">visibility</i>Detalles</a>
                   </div>
                   <div class="col m3 l2 xl2 right">
                     <a class="btn-floating waves-effect waves-light grey darken-3 right"><i
@@ -1006,8 +1027,8 @@
               <div class="card-action grey lighten-3" style="padding-bottom: 1px;">
                 <div class="row">
                   <div class="col m9 l10 xl10">
-                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;" href="detallesProducto.html"><i
-                        class="material-icons right">visibility</i>Detalles</a>
+                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;"
+                      href="detallesProducto.html"><i class="material-icons right">visibility</i>Detalles</a>
                   </div>
                   <div class="col m3 l2 xl2 right">
                     <a class="btn-floating waves-effect waves-light grey darken-3 right"><i
@@ -1076,8 +1097,8 @@
               <div class="card-action grey lighten-3" style="padding-bottom: 1px;">
                 <div class="row">
                   <div class="col m9 l10 xl10">
-                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;" href="detallesProducto.html"><i
-                        class="material-icons right">visibility</i>Detalles</a>
+                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;"
+                      href="detallesProducto.html"><i class="material-icons right">visibility</i>Detalles</a>
                   </div>
                   <div class="col m3 l2 xl2 right">
                     <a class="btn-floating waves-effect waves-light grey darken-3 right"><i
@@ -1146,8 +1167,8 @@
               <div class="card-action grey lighten-3" style="padding-bottom: 1px;">
                 <div class="row">
                   <div class="col m9 l10 xl10">
-                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;" href="detallesProducto.html"><i
-                        class="material-icons right">visibility</i>Detalles</a>
+                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;"
+                      href="detallesProducto.html"><i class="material-icons right">visibility</i>Detalles</a>
                   </div>
                   <div class="col m3 l2 xl2 right">
                     <a class="btn-floating waves-effect waves-light grey darken-3 right"><i
@@ -1216,8 +1237,8 @@
               <div class="card-action grey lighten-3" style="padding-bottom: 1px;">
                 <div class="row">
                   <div class="col m9 l10 xl10">
-                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;" href="detallesProducto.html"><i
-                        class="material-icons right">visibility</i>Detalles</a>
+                    <a class="waves-effect waves-light btn-small red accent-4" style="border-radius: 10px;"
+                      href="detallesProducto.html"><i class="material-icons right">visibility</i>Detalles</a>
                   </div>
                   <div class="col m3 l2 xl2 right">
                     <a class="btn-floating waves-effect waves-light grey darken-3 right"><i
@@ -1246,9 +1267,10 @@
   <!--Scrips, Jquery dependencias-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="js/navbar.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

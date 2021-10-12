@@ -5,29 +5,29 @@
 } */
 
 #search {
-    justify-content: left;
-    align-items: center;
-    border-radius: 10px;
-    width: 100%;
-    padding-left: 10px;
-    font-weight:500;
+  justify-content: left;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 10px;
+  font-weight: 500;
 }
 .icono {
-    line-height: 40px !important;
+  line-height: 40px !important;
 }
 .logotienda {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #card_Filtro {
-   width: 400px;
-   height: 100px; 
-    
+  width: 400px;
+  height: 100px;
 }
 
 ul.dropdown-content.select-dropdown li span {
-    color: red; /* no need for !important :) */
+  color: red; /* no need for !important :) */
 }
-
-
+.redmiPicture {
+  height: 500px;
+}

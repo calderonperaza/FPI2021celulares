@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Import Google Icon Font-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
-    <title>Detalles del producto</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <title>Detalles del producto</title>
 </head>
+
 <body>
-    <!--Menu, navbar-->
+  <!--Menu, navbar-->
   <nav class="red accent-4" style="padding: 1px 40px; position: fixed">
     <div class="nav-wrapper">
       <div style="display: inline-block; width: calc(100% - 400px)" class="hide-on-med-and-down">
@@ -75,16 +78,408 @@
     <li class="active"><a href="index.html" style="font-size: 20px;"> <i class="material-icons left">home</i> Inicio</a>
     </li>
     <li><a href="#" style="font-size: 20px;"><i class="material-icons left">bar_chart</i>Estadisticas</a></li>
-    <li><a href="#modal2" class="modal-trigger" style="font-size: 20px;" onclick="cerrarSidenav()" type="submit"><i class="material-icons left">add</i>Nuevo
+    <li><a href="#modal2" class="modal-trigger" style="font-size: 20px;" onclick="cerrarSidenav()" type="submit"><i
+          class="material-icons left">add</i>Nuevo
         anuncio</a></li>
     <li><a href="#" style="font-size: 20px;"><i class="material-icons left">add_shopping_cart</i>Carrito</a></li>
   </ul>
-
-
-<!--Scrips, Jquery dependencias-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="js/navbar.js"></script>
+  <div id="modal1" class="modal modal-fixed-footer hide-on-med-and-down">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12 red white-text z-depth-2">
+          <h5>Nuevo Anuncio</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s5">
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Marca</option>
+                <option value="1">Samsung</option>
+                <option value="2">Apple</option>
+                <option value="3">Xiaomi</option>
+              </select>
+              <label>Elegir marca del celular</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Modelo</option>
+                <option value="1">Samsung Galaxy S10</option>
+                <option value="2">iPhone 13 </option>
+                <option value="3">Redmi Note pro 10</option>
+              </select>
+              <label>Modelo del celular</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">developer_mode</i>
+              <input id="icon_prefix" type="number" class="validate">
+              <label for="icon_prefix">Pantalla (inch)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>RAM</option>
+                <option value="1">1 GB</option>
+                <option value="2">2 GB</option>
+                <option value="3">4 GB</option>
+                <option value="3">6 GB</option>
+                <option value="3">8 GB</option>
+                <option value="3">12 GB</option>
+                <option value="3">Otro</option>
+              </select>
+              <label>RAM</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Almacenamiento</option>
+                <option value="1">16 GB</option>
+                <option value="2">32 GB</option>
+                <option value="3">64 GB</option>
+                <option value="3">128 GB</option>
+                <option value="3">256 GB</option>
+                <option value="3">512 GB</option>
+                <option value="3">otro</option>
+              </select>
+              <label>Almacenamiento</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="switch">
+              <label>
+                <input type="checkbox">
+                <span class="lever"></span>
+                Dispositivo Nuevo
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col s7">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea2" class="materialize-textarea" data-length="50"></textarea>
+              <label for="textarea2">Titulo del anuncio</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea2" class="materialize-textarea" data-length="20"></textarea>
+              <label for="textarea2">Vendedor</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12" style="width: 70%;">
+              <i class="material-icons prefix">tag</i>
+              <input id="icon_prefix" type="number" class="validate">
+              <label for="icon_prefix">Telefono (+503)</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Descripcion del Producto</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field" style="width: 70%;">
+              <i class="material-icons prefix">attach_money</i>
+              <input id="icon_precio" type="number" class="validate">
+              <label for="icon_precio">Precio</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="switch">
+              <label>
+                <input type="checkbox">
+                <span class="lever"></span>
+                Aceptar terminos y condiciones
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <h5>Agregar imagenes</h5>
+          <input type="file" class="dropify" .multiple />
+          <button class="btn waves-effect waves-light green" type="submit" name="action" style="margin-top:10px;">Subir
+            imagen/imagenes
+            <i class="material-icons right">publish</i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer row">
+      <button class="btn waves-effect waves-light red" type="submit" onclick="cerrarModal()" name="action">Cancelar
+        <i class="material-icons right">do_disturb_alt</i>
+      </button>
+      <button class="btn waves-effect waves-light blue" type="submit" onclick="guardarModal()" name="action">Guardar
+        <i class="material-icons right">save</i>
+      </button>
+    </div>
+  </div>
+  <!--Modal Nuevo anuncio para mobile-->
+  <div id="modal2" class="modal modal-fixed-footer hide-on-large-only">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12 red white-text z-depth-2">
+          <h5>Nuevo Anuncio</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <h5>Agregar imagenes</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="glider-contain">
+          <div class="glider">
+            <div><img src="images/redmi2.jpg" alt="imagen" style="width: 300px; height: 150px;"></div>
+            <div><img src="images/redmi8.jpg" alt="imagen" style="width: 300px; height: 150px;"></div>
+            <div><img src="images/redmi3.jpeg" alt="imagen" style="width: 300px; height: 150px;"></div>
+            <div><img src="images/redmi4.jpg" alt="imagen" style="width: 300px; height: 150px;"></div>
+          </div>
+          <button role="button" aria-label="Previous" class="glider-prev"><i
+              class="material-icons">arrow_back_ios</i></button>
+          <button role="button" aria-label="Next" class="glider-next"><i
+              class="material-icons">arrow_forward_ios</i></button>
+          <div role="tablist" class="dots"></div>
+        </div>
+      </div>
+      <div class="row center-align">
+        <a class="waves-effect waves-light btn-small green"><i class="material-icons right">upgrade</i>Agregar
+          imagenes</a>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea2" class="materialize-textarea" data-length="50"></textarea>
+          <label for="textarea2">Titulo del anuncio</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">attach_money</i>
+          <input id="icon_precio" type="number" class="validate">
+          <label for="icon_precio">Precio</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <textarea id="textarea2" class="materialize-textarea" data-length="20"></textarea>
+          <label for="textarea2">Vendedor</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">tag</i>
+          <input id="icon_prefix" type="number" class="validate">
+          <label for="icon_prefix">Tel (+503)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Estado</option>
+            <option value="1">Nuevo</option>
+            <option value="2">Usado</option>
+          </select>
+          <label>Elegir estado del celular</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Marca</option>
+            <option value="1">Samsung</option>
+            <option value="2">Apple</option>
+            <option value="3">Xiaomi</option>
+          </select>
+          <label>Elegir marca del celular</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Modelo</option>
+            <option value="1">Samsung Galaxy S10</option>
+            <option value="2">iPhone 13 </option>
+            <option value="3">Redmi Note pro 10</option>
+          </select>
+          <label>Modelo del celular</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">developer_mode</i>
+          <input id="icon_prefix" type="number" class="validate">
+          <label for="icon_prefix">Pantalla (inch)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>RAM</option>
+            <option value="1">1 GB</option>
+            <option value="2">2 GB</option>
+            <option value="3">4 GB</option>
+            <option value="3">6 GB</option>
+            <option value="3">8 GB</option>
+            <option value="3">12 GB</option>
+            <option value="3">Otro</option>
+          </select>
+          <label>RAM</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Almacenamiento</option>
+            <option value="1">16 GB</option>
+            <option value="2">32 GB</option>
+            <option value="3">64 GB</option>
+            <option value="3">128 GB</option>
+            <option value="3">256 GB</option>
+            <option value="3">512 GB</option>
+            <option value="3">otro</option>
+          </select>
+          <label>Almacenamiento</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Descripcion del Producto</label>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer row">
+      <button class="btn waves-effect waves-light red" type="submit" onclick="cerrarModal2()" name="action">Cancelar
+        <i class="material-icons right">do_disturb_alt</i>
+      </button>
+      <button class="btn waves-effect waves-light blue" type="submit" onclick="guardarModal2()" name="action">Guardar
+        <i class="material-icons right">save</i>
+      </button>
+    </div>
+  </div>
+  <!--Botones flotantes inicio y comprar-->
+  <div class="fixed-action-btn hide-on-large-only">
+    <a class="waves-effect waves-light btn grey darken-3" href="index.html"><i
+        class="material-icons right">home</i>Inicio</a>
+    <a class="waves-effect waves-light btn grey darken-3" onclick="guardarCompra()"><i
+        class="material-icons right">add_shopping_cart</i>Comprar</a>
+  </div>
+  <!--Contenido main de la pagina-->
+  <div class="section" style="position: absolute; z-index: -100;">
+    <div class="row" style="padding: 1px 20px; margin-top: 70px; padding: 1px 100px;">
+      <div class="col s12 l6">
+        <div class="card">
+          <div class="carousel carousel-slider" data-indicators="true">
+            <div class="carousel-item" href="#">
+              <img class="redmiPicture" src="images/redmi2.jpg" />
+            </div>
+            <div class="carousel-item" href="#">
+              <img class="redmiPicture" src="images/redmi4.jpg" />
+            </div>
+            <div class="carousel-item" href="#">
+              <img class="redmiPicture" src="images/redmi8.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 l6">
+        <div class="card">
+          <div class="card-content blact-text">
+            <h4>Redmi Note 8 pro, Nuevo en caja, Precio no negociable, Liberado, ROM global</h4>
+            <div class="row center-align">
+              <div class="col s12">
+                <div id="rateYo9" style="margin: 0 auto;"></div>
+              </div>
+              <div class="col s12">
+                <h4 style="font-weight: bold;">$132.00</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s7">
+                <div class="chip truncate" style="width:100%">
+                  <img src="images/user.png" alt="Contact Person">
+                  Mario Vanegas
+                </div>
+              </div>
+              <div class="col s5">
+                <p class="truncate">Hace 4 meses</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-action s12">
+            <a class="waves-effect waves-light btn red accent-4" style="width: 100%;" onclick="guardarCompra()"><i
+                class="material-icons right">shopping_cart</i>Comprar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 flow-text center-align">
+        Especificaciones Técnicas
+      </div>
+      <div class="col s12">
+        <div class="card">
+          <div class="row">
+            <div class="col s12 m6">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">report</i>Estado</div>
+                  <div class="collapsible-body"><span>Nuevo</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">phone_android</i>Marca</div>
+                  <div class="collapsible-body"><span>Xiaomi</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">device_unknown</i>Modelo</div>
+                  <div class="collapsible-body"><span>8 note pro</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">developer_mode</i>Pantalla</div>
+                  <div class="collapsible-body"><span> 5.6"" pulgadas</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">android</i>Sistema</div>
+                  <div class="collapsible-body"><span>Android</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">sd_card</i>ROM</div>
+                  <div class="collapsible-body"><span> 128 GB</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">memory</i>RAM</div>
+                  <div class="collapsible-body"><span>4 GB</span></div>
+                </li>
+              </ul>
+            </div>
+            <div class="col s12 m6">
+              <div class=" card-content">
+                <span class="card-title">Descripción</span>
+                <p> - 128 GB. - Color Aqua verde. - Nuevo. - 5.6 pulgadas de pantalla. - Resolución 1980 x 1050. -
+                  Android
+                  10
+                  - Cargador 18 Watts carga rápida </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Scrips, Jquery dependencias-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
+
 </html>

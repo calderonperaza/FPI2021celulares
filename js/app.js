@@ -1,12 +1,15 @@
 $(document).ready(function () {
   $(".sidenav").sidenav();
 });
+
 $(document).ready(function () {
   $("select").formSelect();
 });
+
 $(document).ready(function () {
   $(".tooltipped").tooltip();
 });
+
 $(".dropdown-trigger").dropdown();
 
 $(document).ready(function () {
@@ -59,9 +62,16 @@ $(function () {
     rating: 4.0,
   });
 });
+$(function () {
+  $("#rateYo9").rateYo({
+    rating: 4.0,
+  });
+});
+
 $(document).ready(function () {
   $("input#input_text, textarea#textarea2").characterCounter();
 });
+
 $("#textarea1").val("Descripción breve...");
 M.textareaAutoResize($("#textarea1"));
 
@@ -71,28 +81,47 @@ function cerrarModal() {
   $("#modal1").modal("close");
   M.toast({ html: "Se ha cancelado la creacion del anuncio!" });
 }
+
 function guardarModal() {
   $("#modal1").modal("close");
   M.toast({ html: "Anuncio creado con exito!" });
 }
-$(document).ready(function () {
-  $(".carousel").carousel();
-});
 
 function cerrarSidenav() {
   $(".sidenav").sidenav("close");
-  
 }
+
+$(document).ready(function () {
+  $(".collapsible").collapsible();
+});
+
 function cerrarModal2() {
   $("#modal2").modal("close");
   M.toast({ html: "Se ha cancelado la creacion del anuncio!" });
 }
+
 function guardarModal2() {
   $("#modal2").modal("close");
   M.toast({ html: "Anuncio creado con exito!" });
 }
-$('.carousel.carousel-slider').carousel({
-  fullWidth: true,
-  indicators: true
+
+function guardarCompra() {
+  M.toast({ html: "Compra agregada al carrito!" });
+}
+
+$(document).ready(function () {
+  $(".carousel").carousel({ fullWidth: true, indicators: true });
 });
-      
+
+window.addEventListener("load", function () {
+  new Glider(document.querySelector(".glider"), {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: ".dots",
+    arrows: {
+      prev: ".glider-prev",
+      next: ".glider-next",
+    },
+  });
+});
