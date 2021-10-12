@@ -1,5 +1,6 @@
 .navbar{
     background-color: orange;
+    text-align: center;
 }
 .navbar a{
     color: white;
@@ -8,5 +9,8 @@
     
 }
 #numero {
+    color:black;
+}
+[hr]{
     color:black;
 }
