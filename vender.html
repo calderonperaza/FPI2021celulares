@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CellPhone</title>
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="img/icono2.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Aqui creamos el nav -->
+    <nav class="red darken-4">
+        <div class="row">
+            <div class="col s4 hide-on-med-and-down">
+                <!--Bueno este se vera en tablet-->
+                <a href="index.html">
+                    <i class="material-icons col s1">phone_iphone</i>
+                    <h6 class="col s3" style="padding-top: 0.4rem;">CellPhone</h6>
+                </a>
+            </div>
+            <!-- Este contendra el menu para celulares -->
+            <div class="col s2 hide-on-med-and-up show-on-medium">
+                <ul id="slide-out" class="sidenav row center-align red lighten-1" style="max-height: 20rem;">
+                    <li style=""><a href="#!"><i class=" large material-icons col s1">phone_iphone</i>
+                            <h6 class="col s8 white-text" style="padding-top: 0.3rem;">CellPhone Store</h6>
+                        </a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li class="center-align"><a href="index.html"><span class="white-text">Inicio</span></a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li class="center-align"><a href="#"><span class="white-text">Nuevo Anuncio</span></a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li class="center-align"><a href="#"><span class="white-text">Carrito</span></a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li class="center-align"><a href="#"><span class="white-text">Stats</span></a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                        class="material-icons col s12">menu</i></a>
+
+            </div>
+            <!-- Este es para la barra buscadora de tablets en adelante -->
+            <div class="col s4 hide-on-med-and-down ">
+                <i class="material-icons col s1 prefix">search</i>
+                <form class="col s11">
+                    <input type="search" placeholder="Buscar..." class="white-text">
+                </form>
+            </div>
+            <!-- Este es para la barra buscadora de los celulares -->
+            <div class="col s10 hide-on-med-and-up show-on-medium">
+                <i class="material-icons col s1 prefix">search</i>
+                <form class="col s10">
+                    <input type="search" placeholder="Buscar..." class="white-text">
+                </form>
+            </div>
+
+            <div class="col s4 ">
+                <div class="col s6">
+                    <ul id="nav-mobile" class="hide-on-med-and-down">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Stats</a></li>
+                    </ul>
+                </div>
+                <div class="col s6">
+                    <ul id="nav-mobile" class="hide-on-med-and-down ">
+                        <li><a href="#"><i class="material-icons ">add</i></a></li>
+                        <li><a href="#" class="valign-wrapper"><i class="material-icons">add_shopping_cart</i>0</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col l6 m12 s12">
+                <div class="carousel carousel-slider" style="margin: 1rem;">
+                    <!-- <a class="carousel-item" ><img src="/img/iPhone1.jpg"></a> -->
+                    <!-- <a class="carousel-item" ><img src="img/iPhone2.jpeg"></a> -->
+                    <a class="carousel-item" ><img  src="img/iPhone3.jpg"></a>
+                    <a class="carousel-item" ><img  src="img/iPhone115.jpg"></a>
+                </div>
+            </div>
+            <div class="col l6 m12 s12">
+                <h5 style="padding: 3rem 2rem; text-align: justify;">iPhone 11 Pro max de 6,5", 256GB de almacenamiento interno, 4GB de Ram, Liberado, Estado totalmente nuevo</h5>
+                <h4 style="padding: 0 3rem;" class="red-text darken-4">$756.00</h4>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems,{
+                duration: 500,
+                indicators: true,
+                autoplay: true,   
+            });
+            var instance = M.Carousel.getInstance(elem);
+            instance.next(1);
+            instance.set();
+        });
+    </script>
+</body>
+
+</html>
