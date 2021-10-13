@@ -24,7 +24,16 @@ form fieldset {
   padding-bottom: 1.5rem;
 }
 .separacion-arriba {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.margen-izquierda{
+  margin-left: 1rem;
+}
+
+.imagen-size{
+  max-height: 60vh;
+  min-height: 10vh;
 }
 
 .box-shadow {
