@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuevo anuncio</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="blue">
+        <div class="nav-wrapper">
+            <!--Menu movil-->
+            <a href="#" class="sidenav-trigger white-text" data-target="mobile-nav"
+                style="font-size: 20px; padding: 0px">
+                <i class="material-icons">menu</i>
+            </a>
+            <!-- Logo completo -->
+            <a href="./index.html" class="brand-logo hide-on-small-only" style="margin-left: 1rem">
+                <i class="material-icons">favorite</i>Tienda CellPhone
+            </a>
+            <!-- Logo para movil -->
+            <a href="./index.html" class="brand-logo hide-on-med-and-up">
+                <i class="material-icons">favorite</i>
+            </a>
+            <!-- Busqueda y botones completo -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <div class="input-field white-text">
+                        <i class="white-text material-icons prefix">search</i>
+                        <input type="text" placeholder="search" class="autocomplete white-text" />
+                    </div>
+                </li>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="badges.html">Estadisticas</a></li>
+                <li class="active">
+                    <a class=" modal-trigger" href="#modal1"><i class="material-icons">add_circle_outline</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html"><i class="material-icons">shopping_cart</i></a>
+                </li>
+            </ul>
+            <div class="input-field right hide-on-large-only" style="width: 23%; margin-right: 1rem">
+                <i class="material-icons prefix">search</i>
+                <input type="text" id="autocomplete-input" class="autocomplete" />
+            </div>
+        </div>
+    </nav>
+    <!-- Menu de barra lateral para movil -->
+    <ul class="sidenav lighten-3 light-blue" id="mobile-nav">
+        <div class="center-align" style="margin-top: 50px">
+            <i class="large material-icons">smartphone</i>
+        </div>
+        <h4 class="center-align">Tienda Cellphone</h4>
+        <li>
+            <a href="./index.html" style="font-size: 20px">
+                <i class="material-icons left">home</i> Inicio</a>
+        </li>
+        <li class="active">
+            <a href="./NuevoAnuncio.html" style="font-size: 20px" class="modal-trigger">
+                <i class="material-icons left">add</i>Nuevo anuncio
+            </a>
+        </li>
+        <li>
+            <a href="#" style="font-size: 20px"><i class="material-icons left">shopping_cart</i>Carrito</a>
+        </li>
+        <li>
+            <a href="#" style="font-size: 20px"><i class="material-icons left">bar_chart</i>Estadisticas</a>
+        </li>
+    </ul>
+    <!-- Contenido completo -->
+    <div class="row ">
+        <div class="col s12 m5 ">
+            <div class="carousel  center">
+                <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/300/300/cats/1"></a>
+                <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/300/300/cats/2"></a>
+                <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/300/300/cats/3"></a>
+                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/300/300/cats/4"></a>
+                <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/300/300/cats/5"></a>
+            </div>
+        </div>
+        <div class="col m1 hide-on-small-and-down  ">
+            <div class="file-field input-field">
+                <div class="btn blue darken-2" style="width: 100%;">
+                    <span>+</span>
+                    <input type="file" multiple>
+                </div>
+                <div class="file-path-wrapper">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" src="https://lorempixel.com/600/300/cats/6">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" src="https://lorempixel.com/600/300/cats/7">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" src="https://lorempixel.com/600/300/cats/8">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img class="materialboxed" src="https://lorempixel.com/600/300/cats/9">
+                </div>
+            </div>
+            <a class="waves-effect waves-light red darken-2 btn" style="width: 100%;">
+                <i class="material-icons">remove</i>
+            </a>
+        </div>
+        <div class="col m6 row ">
+            <div class="col s12 flow-text">
+                Datos del anuncio
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">text_fields</i>
+                <input id="tittle" type="text" class="validate">
+                <label class="active" for="tittle">Titulo del anuncio</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <i class="material-icons prefix">badge</i>
+                <input id="vendor" type="text" class="validate">
+                <label class="active" for="vendor">Vendedor</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <i class="material-icons prefix">phone</i>
+                <input id="phone_number" type="tel" class="validate">
+                <label for="phone_number">Telefono</label>
+            </div>
+
+            <div class="input-field col m6 s12">
+                <input id="marca" type="text" class="validate">
+                <label class="active" for="marca">Marca</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <input id="modelo" type="text" class="validate">
+                <label class="active" for="modelo">Modelo</label>
+            </div>
+            <div class="col m6 s12 center">
+                <p>
+                    Estado
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" checked />
+                        <span>Nuevo</span>
+                    </label>
+                    <label>
+                        <input class="with-gap" name="group1" type="radio" />
+                        <span>Usado</span>
+                    </label>
+
+                </p>
+            </div>
+            <div class="input-field col m6 s12">
+                <input id="pantalla" type="number" class="validate">
+                <label for="pantalla">Tamaño de pantalla</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <select>
+                    <option value="" disabled selected>Seleccione el sistema</option>
+                    <option value="1">Android</option>
+                    <option value="2">iOS</option>
+                    <option value="3">Windows</option>
+                </select>
+                <label>Sistema operativo</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <input id="rom" type="number" class="validate">
+                <label for="rom">ROM (almacenamiento interno)</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <input id="ram" type="number" class="validate">
+                <label for="ram">RAM</label>
+            </div>
+            <div class="input-field col m6 s12">
+                <i class="material-icons prefix">monetization_on</i>
+                <input id="price" type="number" class="validate">
+                <label for="price">Precio</label>
+            </div>
+            <div class="input-field col s12 ">
+                <i class="material-icons prefix">description</i>
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Descripcion</label>
+            </div>
+            <div class="col s6 center">
+                <a class="waves-effect waves-light btn-large red lighten-1" href="./index.html">
+                    <i class="material-icons left">cancel</i>Cancelar
+                </a>
+            </div>
+            <div class="col s6 center">
+                <a class="waves-effect waves-light btn-large green lighten-1 flow-text" href="./index.html">
+                    <i class="material-icons left">done</i>Publicar
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer blue">
+        <div class="container">
+            <h5 class="white-text">Tienda CellPhone</h5>
+            <p class="grey-text text-lighten-4">
+                Tienda en linea para venta de dispositivos moviles.
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Copyright CellPhone
+                <a class="grey-text text-lighten-4 right" href="https://github.com/RafaelGarcia18"
+                    target="_blank">Rafa's Studios</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Mi JavaScript -->
+    <script>
+        M.AutoInit();
+    </script>
+
+
+</body>
+
+</html>
