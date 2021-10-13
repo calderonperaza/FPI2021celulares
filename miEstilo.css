@@ -1,0 +1,18 @@
+.switch.purpl label .lever {
+    background-color: #e1bee7;
+ }
+ .switch.purpl label input[type=checkbox]:checked+.lever {
+    background-color: #ce93d8;
+ }
+ .switch.purpl label input[type=checkbox]:checked+.lever:after {
+    background-color: #9c27b0;
+ }
+
+.switch.purpl {
+    padding: 10px;
+}
+.bord{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+}

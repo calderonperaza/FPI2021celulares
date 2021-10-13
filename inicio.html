@@ -6,13 +6,14 @@
         <title>Inicio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="miEstilo.css" rel="stylesheet">
     </head>
-    <body class="purple lighten-2">
+    <body class="purple lighten-5">
         <div class="container">
             <!-- Menu principal -->
             <div class="row">
                 <nav>
-                    <div class="nav-wrapper purple lighten-5 col s12">
+                    <div class="nav-wrapper  purple col s12">
                         <a href="#!" class="brand-logo col l3 show-on-large hide-on-med-and-down black-text"><i class=" medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
                         <form class="col l4 push-l3">
@@ -22,8 +23,8 @@
                             </div>
                         </form>
                         <ul class="right hide-on-med-and-down">
-                            <li><a class="black-text purple lighten-3 btn" href="inicio.html">Inicio</a></li>
-                            <li><a class="black-text purple lighten-3 btn" href="estadisticas.html">Estadisticas</a></li>
+                            <li><a class="black-text purple lighten-4 btn" href="inicio.html">Inicio</a></li>
+                            <li><a class="black-text purple lighten-4 btn" href="estadisticas.html">Estadisticas</a></li>
                             <li><a href="agregar.html"><i class="medium material-icons btn-flat">add_circle_outline</i></a></li>
                             <li><a href="carrito.html"><i class="medium material-icons btn-flat">local_grocery_store</i></a></li>
                         </ul>
@@ -40,7 +41,7 @@
             <!-- Filtros -->
             <div class="row">
                 <div class="col m2 hide-on-med-and-down">
-                    <div class="switch">
+                    <div class="switch purpl">
                         <label class="black-text">
                             <input type="checkbox">
                             <span class="lever"></span>
@@ -50,101 +51,7 @@
                     <div style="overflow-y:scroll;">
                         <form action="#">
                             <label class="black-text">
-                                Marca
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">Samsung</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">Huawei</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">Nokia</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">iPhone</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">Xiaomi</span>
-                                    </label>
-                                </p>
-                            </label>
-                        </form>
-                        <form action="#">
-                            <label class="black-text">
-                                Sistema
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">Androi</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">Windows</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">Ios</span>
-                                    </label>
-                                </p>
-                            </label>
-                        </form>
-                        <form action="#">
-                            <label class="black-text">
-                                Pantalla
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">6.0</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">5.5</span>
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <input type="checkbox" class="filled-in"/>
-                                        <span class="black-text">5</span>
-                                    </label>
-                                </p>
-                            </label>
-                        </form>
-                    </div>
-                </div>
-                <div class="col s12 m10">
-                    <div class="hide-on-large-only right">
-                        <a class='dropdown-trigger black-text purple lighten-3 btn' href='#' data-target='dropdown1'><i class="material-icons">filter_alt</i></a>
-                        <!-- Dropdown Structure -->
-                        <div id='dropdown1' class='dropdown-content'>
-                            <div class="switch">
-                                <label class="black-text">
-                                    <input type="checkbox">
-                                    <span class="lever"></span>
-                                    Nuevo
-                                </label>
-                            </div>
-                            <form action="#">
-                                <label class="black-text">
+                                <div class="bord">
                                     Marca
                                     <p>
                                         <label>
@@ -176,10 +83,12 @@
                                             <span class="black-text">Xiaomi</span>
                                         </label>
                                     </p>
-                                </label>
-                            </form>
-                            <form action="#">
-                                <label class="black-text">
+                                </div>
+                            </label>
+                        </form>
+                        <form action="#">
+                            <label class="black-text">
+                                <div class="bord">
                                     Sistema
                                     <p>
                                         <label>
@@ -199,10 +108,12 @@
                                             <span class="black-text">Ios</span>
                                         </label>
                                     </p>
-                                </label>
-                            </form>
-                            <form action="#">
-                                <label class="black-text">
+                                </div>    
+                            </label>
+                        </form>
+                        <form action="#">
+                            <label class="black-text">
+                                <div class="bord">
                                     Pantalla
                                     <p>
                                         <label>
@@ -222,17 +133,303 @@
                                             <span class="black-text">5</span>
                                         </label>
                                     </p>
+                                </div> 
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="col s12 m10">
+                    <div class="hide-on-large-only purple lighten-4 col s9">
+                        <label for="ordenar" class="black-text col s3"><h6 style="width: 250px;">Ordenar por:</h6></label>
+                            <select id="ordenar" class=" browser-default col s8 purple lighten-4 right" style="margin-bottom: 2px; margin-top: 2px; border: 1px solid black; width: 100px;">
+                                <option value="" disabled selected>elija</option>
+                                <option value="1">Precio</option>
+                                <option value="2">Fecha</option>
+                            </select>
+                    </div>
+                    <div class="hide-on-large-only col s3">
+                        <a class='dropdown-trigger black-text purple lighten-4 btn' href='#' data-target='dropdown1'><i class="material-icons">filter_alt</i></a>
+                        <!-- Dropdown Structure -->
+                        <div id='dropdown1' class='dropdown-content'>
+                            <div class="switch purpl">
+                                <label class="black-text">
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                    Nuevo
+                                </label>
+                            </div>
+                            <form action="#">
+                                <label class="black-text">
+                                    <div class="bord">
+                                        Marca
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">Samsung</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">Huawei</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">Nokia</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">iPhone</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">Xiaomi</span>
+                                            </label>
+                                        </p>
+                                    </div>
+                                </label>
+                            </form>
+                            <form action="#">
+                                <label class="black-text">
+                                    <div class="bord">
+                                        Sistema
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">Androi</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">Windows</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">Ios</span>
+                                            </label>
+                                        </p>
+                                    </div>    
+                                </label>
+                            </form>
+                            <form action="#">
+                                <label class="black-text">
+                                    <div class="bord">
+                                        Pantalla
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">6.0</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">5.5</span>
+                                            </label>
+                                        </p>
+                                        <p>
+                                            <label>
+                                                <input type="checkbox" class="filled-in"/>
+                                                <span class="black-text">5</span>
+                                            </label>
+                                        </p>
+                                    </div> 
                                 </label>
                             </form>
                         </div>
-                        <!--ul id='dropdown1' class='dropdown-content'>
-                            <li><a href="#!">one</a></li>
-                            <li><a href="#!">two</a></li>
-                            <li class="divider" tabindex="-1"></li>
-                            <li><a href="#!">three</a></li>
-                            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-                        </ul-->
+                    </div>
+                    <div class="col m4 push-m1 purple lighten-4 hide-on-med-and-down" style="height: 70px; margin-bottom: 10px;">
+                        Precio:
+                        <div class="input-field inline">
+                            <input id="email_inline col" type="email" style="width: 70px; border: 1px solid black; height: 35px;">
+                            <label for="email_inline" class="black-text" style="margin: 2px;">$</label>
+                        </div>
+                        hasta:
+                        <div class="input-field inline">
+                            <input id="email_inline" type="email" style="width: 70px; border: 1px solid black; height: 35px;">
+                            <label for="email_inline" class="black-text" style="margin: 2px;">$</label>
+                        </div>
+                    </div>
+                    <div class="col m5 push-m2 purple lighten-4 hide-on-med-and-down" style="width: 350px; height: 70px; padding-top: 20px; margin-bottom: 10px;">
+                        Ordenar por:
+                        <a class="black-text purple lighten-4 btn inline"><i class="material-icons left">arrow_upward</i>Precio</a>
+                        <a class="black-text purple lighten-4 btn inline">Fecha</a>
+                    </div>
+                </div>
+                <div class="col s12 m10">
+                    <div class="col m2 s5">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m1 s5 push-s1">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m2 s5">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m3 s5 push-s1">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col s12 m10">
+                    <div class="col m2 s5">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m1 s5 push-s1">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m2 s5">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m3 s5 push-s1">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col s12 m10 push-m2">
+                    <div class="col m2 s5">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m1 s5 push-s1">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m2 s5">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m2 push-m3 s5 push-s1">
+                        <div class="card purple lighten-4" style="width: 200px; height:275px;">
+                            <div class="card-image bord">
+                                <img src="imagenes/Samsung.jpg">
+                            </div>
+                            <div class="card-content" style="padding: 1px;">
+                                <p class="center"><strong>$132.00</strong></p>
+                                <p class="center">Samsung J6, pantalla de 5.5<br>64 GB, 2 GB Ram, Color Negro</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col s12 m10">
+                    <ul class="pagination col m6 push-m2 s12">
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!">1</a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!">2</a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!">3</a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!">4</a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!">5</a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!">6</a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!">7</a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!">8</a></li>
+                        <li class="waves-effect"><a class="purple lighten-4" href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                    <div class="hide-on-med-and-down col m5">
+                        <label for="articulos" class="black-text col m3 push-m4">Articulos por pagina:</label>
+                        <select id="articulos" class=" browser-default col m3 push-m5 bord">
+                            <option value="" disabled selected>25</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="2">3</option>
+                            <option value="2">4</option>
+                            <option value="2">5</option>
+                            <option value="2">6</option>
+                            <option value="2">7</option>
+                            <option value="2">...</option>
+                            <option value="2">25</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -253,6 +450,13 @@
                     closeOnClick: false
                 }
                 var instances = M.Dropdown.init(elems, options);
+              });
+              document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('select');
+                var instances = M.FormSelect.init(elems);
+              });
+              $(document).ready(function() {
+                M.updateTextFields();
               });
         </script>
     </body>
