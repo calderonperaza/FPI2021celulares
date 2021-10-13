@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pruebas</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body class="purple darken-2">
-    <div class="container">
-        <div class="row">
-            <nav>
-                <div class="nav-wrapper purple lighten-5">
-                    <a href="#!" class="brand-logo col l6 hide-on-small-only black-text"><i class=" medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
-                    <form class="col l4 offset-l3">
-                        <div class="input-field">
-                          <input id="search" type="search" placeholder="search" required>
-                          <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
-                        </div>
-                      </form>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a class="black-text purple lighten-3 btn" href="inicio.html">Inicio</a></li>
-                        <li><a class="black-text purple lighten-3 btn" href="estadisticas.html">Estadisticas</a></li>
-                        <li><a href="agregar.html"><i class="medium material-icons btn-flat">add_circle_outline</i></a></li>
-                        <li><a href="carrito.html"><i class="medium material-icons btn-flat">local_grocery_store</i></a></li>
-                    </ul>
-                </div>
-            </nav>
-                
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class="purple lighten-2">
+        <div class="container">
+            <!-- Menu principal -->
+            <div class="row">
+                <nav>
+                    <div class="nav-wrapper purple lighten-5 col s12">
+                        <a href="#!" class="brand-logo col l3 show-on-large hide-on-med-and-down black-text"><i class=" medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+                        <form class="col l4 push-l3">
+                            <div class="input-field">
+                                <input id="search" type="search" placeholder="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                            </div>
+                        </form>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a class="black-text purple lighten-3 btn" href="inicio.html">Inicio</a></li>
+                            <li><a class="black-text purple lighten-3 btn" href="estadisticas.html">Estadisticas</a></li>
+                            <li><a href="agregar.html"><i class="medium material-icons btn-flat">add_circle_outline</i></a></li>
+                            <li><a href="carrito.html"><i class="medium material-icons btn-flat">local_grocery_store</i></a></li>
+                        </ul>
+                    </div>
+                </nav> 
                 <ul class="sidenav" id="mobile-demo">
                     <li><a href="#!"><i class="medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a></li><hr width="75%"/>
                     <li><a class="center-align" href="inicio.html">Inicio</a></li><hr width="75%"/>
@@ -36,16 +36,224 @@
                     <li><a class="center-align" href="carrito.html">Carrito</a></li><hr width="75%"/>
                     <li><a class="center-align" href="estadisticas.html">Estadisticas</a></li><hr width="75%"/>
                 </ul>
+            </div>
+            <!-- Filtros -->
+            <div class="row">
+                <div class="col m2 hide-on-med-and-down">
+                    <div class="switch">
+                        <label class="black-text">
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            Nuevo
+                        </label>
+                    </div>
+                    <div style="overflow-y:scroll;">
+                        <form action="#">
+                            <label class="black-text">
+                                Marca
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">Samsung</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">Huawei</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">Nokia</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">iPhone</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">Xiaomi</span>
+                                    </label>
+                                </p>
+                            </label>
+                        </form>
+                        <form action="#">
+                            <label class="black-text">
+                                Sistema
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">Androi</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">Windows</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">Ios</span>
+                                    </label>
+                                </p>
+                            </label>
+                        </form>
+                        <form action="#">
+                            <label class="black-text">
+                                Pantalla
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">6.0</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">5.5</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in"/>
+                                        <span class="black-text">5</span>
+                                    </label>
+                                </p>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="col s12 m10">
+                    <div class="hide-on-large-only right">
+                        <a class='dropdown-trigger black-text purple lighten-3 btn' href='#' data-target='dropdown1'><i class="material-icons">filter_alt</i></a>
+                        <!-- Dropdown Structure -->
+                        <div id='dropdown1' class='dropdown-content'>
+                            <div class="switch">
+                                <label class="black-text">
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                    Nuevo
+                                </label>
+                            </div>
+                            <form action="#">
+                                <label class="black-text">
+                                    Marca
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">Samsung</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">Huawei</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">Nokia</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">iPhone</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">Xiaomi</span>
+                                        </label>
+                                    </p>
+                                </label>
+                            </form>
+                            <form action="#">
+                                <label class="black-text">
+                                    Sistema
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">Androi</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">Windows</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">Ios</span>
+                                        </label>
+                                    </p>
+                                </label>
+                            </form>
+                            <form action="#">
+                                <label class="black-text">
+                                    Pantalla
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">6.0</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">5.5</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in"/>
+                                            <span class="black-text">5</span>
+                                        </label>
+                                    </p>
+                                </label>
+                            </form>
+                        </div>
+                        <!--ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a href="#!">three</a></li>
+                            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                        </ul-->
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     
-    <!-- Materialize JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-          });        
-    </script>
-</body>
+        <!-- Materialize JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems);
+            });       
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.dropdown-trigger');
+                var options = {
+                    constrainWidth: false,
+                    coverTrigger: false,
+                    closeOnClick: false
+                }
+                var instances = M.Dropdown.init(elems, options);
+              });
+        </script>
+    </body>
 </html>
