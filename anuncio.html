@@ -14,31 +14,32 @@
     <title>CellPhone Store</title>
 </head>
 
-<body>
+<body style="background-color: rgb(247, 247, 247);">
     <!--Navegacion-->
     <nav class="yellow darken-4 ">
         <div class="nav-wrapper">
-
             <!--Diseno para pantallas grandes tablet y escritorio-->
-            <div class="container">
+            <div class="contenedor">
                 <ul class="hide-on-small-only">
                     <li><a href="index.html"><i class="large material-icons">store</i></a></li>
                     <li><a href="index.html" class="flow-text waves-effect">Tienda CellPhone</a></li>
                 </ul>
-                <ul class="right hide-on-med-and-down">
-                    <li><i class="large material-icons hide-on-med-and-down">search</i></li>
+                <ul class="right hide-on-small-only">
+                    <li><i class="large material-icons">search</i></li>
                     <li>
                         <form class="">
                             <input type="search" placeholder="Buscar..." class="white-text">
                         </form>
                     </li>
-                    <li><a href="#" class="waves-effect waves-light btn amber accent-4">Inicio</a></li>
-                    <li><a href="#" class="waves-effect waves-light btn  amber accent-4">Estadisticas</a></li>
+                    <li><a href="index.html"
+                            class="waves-effect waves-light btn amber accent-4 hide-on-med-and-down">Inicio</a></li>
+                    <li><a href="#"
+                            class="waves-effect waves-light btn  amber accent-4 hide-on-med-and-down">Estadisticas</a>
+                    </li>
                     <li><a href="#"><i class="large material-icons">add_circle_outline</i></a></li>
                     <li><a href="#"><i class="large material-icons">add_shopping_cart</i></a></li>
                 </ul>
             </div>
-
 
             <!--Diseno para celulares-->
             <ul class="">
@@ -74,7 +75,7 @@
                         <div class="container center">
                             <div class="divider"></div>
                             <li>
-                                <a href="#" class="white-text">Inicio</a>
+                                <a href="index.html" class="white-text">Inicio</a>
                             </li>
                             <div class="divider"></div>
                             <li>
@@ -92,14 +93,44 @@
                         </div>
                     </ul>
                 </div>
-
-
             </ul>
-
         </div>
         <!--Navbar slide-->
     </nav>
+    <div class="contenedor-seccion">
+        <div class="row">
+            <div class="col m6 s12">
+                <!--Lado del Carrusel-->
+                <div id="carousel" class="carousel" style="border: 3px solid rgb(223, 134, 19);">
+                    <a class="carousel-item" href="#"><img src="img/iPhone.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/Xiaomi.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/Huawei.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/j2.png"></a>
+                </div>
+            </div>
+            <div class="col m5 center-align" style="padding-top: 2rem;">
+                <!--Lado de la descripcion del celular-->
+                <h4 style="font-weight: 500;">iPhone 6 Pantalla de 5.5 64GB internos,
+                    <h4 style="font-weight: 500;">2GB RAM Solo banda TIGO</h4>
+                </h4>
+                <h3 style="color: green;">$235</h3>
+                    <a class="amber accent-4 waves-effect waves-light btn-large">Comprar</a>
+                    <div class="center-align separacion-arriba container">
+                        <div class="card horizontal">
+                            <div class="card-stacked">
+                                <div class="" style="text-align: Center;">
+                                    <p><span class="amber-text">Vendedor:</span> 
+                                        Juan Martínez<span class="amber-text"> Teléfono:</span> 1234-5678</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+           
 
+        </div>
+    </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

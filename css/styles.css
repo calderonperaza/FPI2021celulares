@@ -42,3 +42,11 @@ form fieldset {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+
+.max-width{
+  width: 100%;
+}
+
+.min-width{
+  width: 70%;
+}
