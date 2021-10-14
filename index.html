@@ -14,7 +14,8 @@
   </head>
 
   <body>
-    
+    <!--Navbar de la pagina web-->
+
     <nav class="navbar navbar-expand-sm px-2">
         <button class="navbar-toggler navbar-toggler-right navbar-dark bg-dark" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
@@ -60,35 +61,47 @@
         </div>
     </nav>
 
+    <!--Cuerpo de la pagina web-->
+
     <div class="container-fluid py-3">
         <div class="row">
-            <div class="col-2 d-none d-sm-block" id="menuizq">
-                <div class="row align-items-start px-5 bg-light">
-                    <div class="col">
-                        <div class="form-check form-switch py-1 ">
-                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Nuevo</label>
+            <div class="col-lg-2 col-sm-12" style="color: black;" id="menuizq">
+                
+                <div class="navbar navbar-light navbar-expand-sm " style="background-color: #ffb27f;">
+
+                    <div class="col d-block d-sm-none" style="margin-left: 15%;">
+                        <div class="row">
+                            <label class="col col-form-label" style="padding-right: 1px; text-align: right;">Ordenar por:</label>
+                            <div class="col-6" style="margin-right: 10px;">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Precio</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <button class="navbar-toggler align-items-center" style="margin-right: 40px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <div class="navbar-nav">
+                        
+                            <div class="menu">
+                        
+                                <div class="form-check form-switch align-items-center" style="margin-left: 15px;">
+                                    <input class="form-check-input d-flex" type="checkbox" id="flexSwitchCheckDefault" />
+                                    <label class="form-check-label d-flex" for="flexSwitchCheckDefault">Nuevo</label>
+                                </div>
+
+                            </div>
+
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col p-5 bg-light">
-                        <label>Precio </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col p-5 border bg-light">
-                        <label>Precio </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col p-5 border bg-light">
-                        <label>Precio </label>
                     </div>
                 </div>
     
             </div>
-            <div class="col-10-lg col-sm" id="compras">
+            <div class="col-lg-10 col-6" id="compras">
                 <div class="row justify-content-center">
                     <div class="col-lg-3 d-none d-sm-block p-3 border bg-light">
                         <div class="input-group ">
@@ -98,7 +111,7 @@
                             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                           </div>
                     </div>
-                    <div class="col-lg-3 col-6 p-3 border bg-light">
+                    <div class="col-lg-3 d-none d-sm-block  p-3 border bg-light">
                         <label>Ordenar por: </label>
                     </div>
                 </div>
