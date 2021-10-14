@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Buy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header><!--Inicio del header-->
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bgPrimero">
+          <div class="container marginCenterNav">
+
+              <!--Titulo-->
+              <a href="index.html" class="navbar-brand d-none d-md-block"><i class="fas fa-bullhorn fa-2x"> Smart-Buy</i></a>
+            
+              
+              <!--BUSCAR-->
+              <form class="d-flex">
+                <input class="form-control rounded-pill me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
+              </form>
+            
+            
+          
+              <!--Hamburguesa-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toogle navigation">
+
+
+                <span class="navbar-toggler-icon"></span>
+
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item mt-3 d-md-none h5"><a class="nav-link" href="index.html"><i class="fas fa-bullhorn fa-1x"> Smart-Buy</i></a></li>
+                  <li class="nav-item h5 ms-lg-4 mt-lg-2 lead"><a class="nav-link" href="index.html">Inicio</a></li>
+                  <li class="nav-item d-none d-lg-block"><a class="nav-link" href="nuevoAnuncio.html"><i class="fas fa-plus-circle fa-2x ms-4"></i></a></li>
+                  <li class="nav-item d-none d-lg-block ms-2"><a class="nav-link" href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+                  <li class="nav-item h5 d-lg-none lead"><a class="nav-link" href="nuevoAnuncio.html">Nuevo Anuncio</a></li>
+                  <li class="nav-item h5 d-lg-none lead"><a class="nav-link" href="#">Carrito</a></li>
+                </ul>
+              </div>
+              
+
+
+           
+          </div><!--CONTAINER-->
+        </nav>
+
+    </header><!--Fin del header-->
+
+
+    <div class="container"> <!--Inicio contenido principal-->
+       <div class="row"> <!--ROW PRINCIPAL-->
+
+        
+        <div class="col-12 col-lg-3"> <!--Filtro por marcas-->
+
+          <!--Collapse filtro-->
+          <button class="navbar-toggler d-lg-none mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#Filtro" aria-controls="Filtro" aria-expanded="false" aria-label="Toogle navigation">
+
+
+            <span class="navbar-toggler-icon"><i class="fas fa-filter"></i></span>
+
+          </button>
+
+          <div class="collapse navbar-collapse" id="Filtro">
+            <ul class="navbar-nav">
+              
+              <aside class="container-fluid mt-5 overflow-auto" style="height: 500px;"><!--Inicio filtros aside-->
+            
+                <div class="form-check form-switch"><!--Boton nuevo-->
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Nuevo</label>
+                </div>
+    
+                <p class="lead mt-4">
+                  Marcas
+                </p>
+    
+                <div class="list-group">
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Samsumg
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Huawei
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Nokia
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    iPhone  
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Xiomi
+                  </label>
+                </div>
+    
+    
+                <p class="lead mt-4">
+                  Sistema
+                </p>
+    
+                <div class="list-group">
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Android 15
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Windows 10
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Ios 56
+                  </label>
+                </div>
+    
+                <p class="lead mt-4">
+                  Pantalla
+                </p>
+    
+                <div class="list-group">
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    6.0
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    5.5
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    5
+                  </label>
+                </div>
+    
+              </aside><!--Fin filtros aside-->
+
+            </ul>
+          </div>
+          <!--Fin collapse botton-->
+          
+
+          <aside class="container-fluid mt-5 overflow-auto d-none d-lg-block" style="height: 500px;"><!--Inicio filtros aside-->
+            
+            <div class="form-check form-switch"><!--Boton nuevo-->
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Nuevo</label>
+            </div>
+
+            <p class="lead mt-4">
+              Marcas
+            </p>
+
+            <div class="list-group">
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Samsumg
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Huawei
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Nokia
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                iPhone  
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Xiomi
+              </label>
+            </div>
+
+
+            <p class="lead mt-4">
+              Sistema
+            </p>
+
+            <div class="list-group">
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Android 15
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Windows 10
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Ios 56
+              </label>
+            </div>
+
+            <p class="lead mt-4">
+              Pantalla
+            </p>
+
+            <div class="list-group">
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                6.0
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                5.5
+              </label>
+              <label class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                5
+              </label>
+            </div>
+
+          </aside><!--Fin filtros aside-->
+
+        </div><!--FIN Filtro por marcas-->
+
+
+        <div class="col-12 col-lg-9 mt-3 "><!--Productos-->
+
+          <div class="d-none d-md-inline-flex"> <!--filtro precio en pc-->
+            
+            <div class="input-group input-group-sm mb-3 col me-2">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Precio $</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3 col me-5">
+              <span class="input-group-text" id="inputGroup-sizing-sm">Hasta $</span>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="col-2">
+              <p class="lead">
+                Ordenar por:
+              </p>
+            </div>
+
+            <div class="d-grid gap-2 d-md-block col">
+              <button class="btn btn-primary" type="button"><i class="fas fa-arrows-alt-v"></i> Precio</button>
+              <button class="btn btn-primary" type="button"><i class="fas fa-calendar"></i> Fecha</button>
+            </div>
+
+          </div> <!--filtro precio en pc-->
+
+          
+          <div class="row d-md-none"><!--filtro precio en cel-->
+            <p class="lead col-5">
+              Ordenar por:
+            </p>
+
+            <div class="dropdown col">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Filtros
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Precio</a></li>
+                <li><a class="dropdown-item" href="#">Fecha</a></li>
+              </ul>
+            </div>
+
+          </div><!--filtro precio en cel-->
+          
+          
+
+          <main class="row mt-4"><!--Inicio contenido main-->
+            
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"> <!--Carta 1-->
+              <a class="sinDecoracion" href="anuncio.html">
+                <div class="card" style="width: 11rem; height: 15.5rem;">
+                  <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 2-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 3-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 4-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--MITAD CONTENIDO TARJETAS-->
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"> <!--Carta 5-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 6-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 7-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 8-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--SEGUNDA MITAD DEL CONTENIDO-->
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"> <!--Carta 9-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 10-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 11-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 12-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--TERCERA MITAD CONTENIDO TARJETAS-->
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"> <!--Carta 13-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 14-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 15-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 16-->
+              <div class="card" style="width: 11rem; height: 15.5rem;">
+                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+
+          </main><!--Fin contenido main-->
+
+
+          <div class="text-center m-4"> <!--PAGINADOR-->
+            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-primary">1</button>
+              <button type="button" class="btn btn-primary">2</button>
+              <button type="button" class="btn btn-primary">3</button>
+            
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Articulos por pagina
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">25</a></li>
+                  <li><a class="dropdown-item" href="#">24</a></li>
+                  <li><a class="dropdown-item" href="#">23</a></li>
+                  <li><a class="dropdown-item" href="#">22</a></li>
+                  <li><a class="dropdown-item" href="#">21</a></li>
+                  <li><a class="dropdown-item" href="#">20</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!--PAGINADOR-->
+
+        </div><!--Productos-->
+
+
+       </div><!--ROW PRINCIPAL FIN-->
+    </div><!--CONTAINER FIN-->
+    
+
+    <footer class="container"><!--Inicio footer-->
+      
+    </footer><!--Fin footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>

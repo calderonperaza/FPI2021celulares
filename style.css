@@ -1,0 +1,29 @@
+.bgPrimero{
+    background-color: #552c07;
+}
+
+.bgSegundo{
+    background-color: #CF4520 ;
+}
+
+.bgTercero{
+    background-color: #F9F9F0 ;
+}
+
+.bgCuarto{
+    background-color: #D6D2C4 ;
+}
+
+.sinDecoracion{
+    text-decoration: none;
+    color: black;
+}
+
+
+.sinPadding{
+    padding: 0;
+}
+
+.sinMargenDerecho{
+    margin-right: 0 !important;
+}
