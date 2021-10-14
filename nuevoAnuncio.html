@@ -14,7 +14,287 @@
     <title>CellPhone Store</title>
 </head>
 
-<body>
+<body style="background-color: rgb(247, 247, 247);">
+    <nav class="yellow darken-4 navegacion hide-on-med-and-up">
+        <div class="nav-wrapper ">
+            <!--Diseno para pantallas grandes tablet y escritorio-->
+
+            <!--Diseno para celulares-->
+            <ul class="">
+                <!--Para que aparezca el menu de hamburguesa  y buscador solo para celulares y tablets-->
+                <div class="show-on-small-only hide-on-med-and-up left">
+                    <!--Generando el icono de menu-->
+                    <ul>
+                        <li>
+                            <a href="#" class="sidenav-trigger no-padding" data-target="menu-side">
+                                <i class="material-icons show-on-small-only hide-on-med-and-up">menu</i>
+                            </a>
+                        </li>
+
+                        <li><i class="large material-icons col s1">search</i></li>
+                        <li>
+                            <form class="">
+                                <input type="search" placeholder="Buscar..." class="white-text">
+                            </form>
+                        </li>
+                    </ul>
+                    <!--Generando los elementos del menu-->
+                    <ul class="sidenav amber lighten-2" id="menu-side" style="max-height: 100%;">
+                        <div class="row container center-align valign-wrapper" style="padding-top: 2rem; display: flex; flex-direction: row;
+                        justify-content: center;">
+                            <li><i class="col s2 large material-icons" style="width: 2.5rem;">store</i></li>
+                            <li>
+                                <h5 class="col s10 flow-text left-align" style="font-weight:bolder; width: 100%">Tienda
+                                    CellPhone
+                                </h5>
+                            </li>
+
+                        </div>
+                        <div class="container center">
+                            <div class="divider"></div>
+                            <li>
+                                <a href="index.html" class="white-text">Inicio</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="nuevoAnuncio.html" class="white-text">Nuevo Anuncio</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="#" class="white-text">Carrito</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="#" class="white-text">Estadisticas</a>
+                            </li>
+                            <div class="divider"></div>
+                        </div>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <!--Navbar slide-->
+    </nav>
+    <div class="container">
+        <h2 class="center-align amber-text hide-on-small-only" style="text-transform: uppercase;">Nuevo Anuncio</h2>
+        <h4 class="center-align amber-text hide-on-med-and-up" style="text-transform: uppercase;">Nuevo Anuncio</h4>
+
+        <div class="row">
+            <div class="col s12 m6 box-shadow hide-on-small-only">
+                <form style="padding-left: 1rem;">
+                    <h4 class="center-align black-text separacion-abajo" style="text-transform: uppercase;">
+                        caracteristicas</h4>
+                    <div class="row">
+                        <div class="col s2">
+                            <label for="" style="font-size: 1.2rem; color: black;">Estado:</label>
+                        </div>
+                        <div class="col s10">
+                            <label class="separacion-izquierda">
+                                <input name="group1" type="radio" class="with-gap" checked />
+                                <span style="font-size: 1.2rem; color: black;">Nuevo</span>
+                            </label>
+                            <label class="separacion-izquierda">
+                                <input name="group1" type="radio" class="with-gap" checked />
+                                <span style="font-size: 1.2rem; color: black;">Usado</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <i class="material-icons prefix">developer_mode</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Marca</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <i class="material-icons prefix">create</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Modelo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <i class="material-icons prefix">phone_android</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Pantalla en Pulgadas</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <select>
+                                <option value="" disabled selected>Selecciona un sistema</option>
+                                <option value="1">Android</option>
+                                <option value="2">iOS</option>
+                                <option value="3">Windows</option>
+                            </select>
+                            <label>Sistema Operativo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <i class="material-icons prefix">save</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Almacenamiento ROM</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <i class="material-icons prefix">memory</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Memoria RAM</label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col m6 s12 hide-on-small-only">
+                <form >
+                    <h4 class="center-align black-text" style="text-transform: uppercase;">resumen del anuncio</h4>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">text_format</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Título breve del anuncio</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <i class="material-icons prefix">person</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Vendedor</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <i class="material-icons prefix">contact_phone</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Teléfono</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">text_fields</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Descripción</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7">
+                            <i class="material-icons prefix">attach_money</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Precio</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 file-field input-field">
+                            <div class="btn amber">
+                              <span style="color: white;">Imagen</span>
+                              <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                              <input class="file-path validate" type="text">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row hide-on-small-only">
+                        <div class="col s4">
+                            <a href="index.html" class="waves-effect waves-light btn red"><i
+                                    class="material-icons left">cancel</i>Cancelar</a>
+                        </div>
+                        <div class="col s4">
+                            <a href="index.html" class="waves-effect waves-light btn teal darken-3"><i
+                                    class="material-icons left">save</i>Crear</a>
+                        </div>
+                    </div>
+                    <div class="row hide-on-med-and-up">
+                        <div class="col s6 m6 l6">
+                            <a href="index.html" class="waves-effect waves-light btn red"><i
+                                    class="material-icons left">cancel</i>Cancelar</a>
+                        </div>
+                        <div class="col s6 m6 l6">
+                            <a href="index.html" class="waves-effect waves-light btn teal darken-3"><i
+                                    class="material-icons left">save</i>Crear</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col m6 s12 hide-on-med-and-up">
+                <form class="box-shadow center">
+                    <div class="row">
+                        <div class="input-field col s9">
+                            <i class="material-icons prefix">text_format</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Título breve del anuncio</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s9">
+                            <i class="material-icons prefix">person</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Vendedor</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s9">
+                            <i class="material-icons prefix">contact_phone</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Teléfono</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s9">
+                            <i class="material-icons prefix">text_fields</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Descripción</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s9">
+                            <i class="material-icons prefix">attach_money</i>
+                            <input id="icon_prefix" type="text" class="">
+                            <label for="icon_prefix">Precio</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s10 file-field input-field">
+                            <div class="btn amber">
+                              <span style="color: white;">Imagen</span>
+                              <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                              <input class="file-path validate" type="text">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row hide-on-small-only">
+                        <div class="col s4">
+                            <a href="index.html" class="waves-effect waves-light btn red"><i
+                                    class="material-icons left">cancel</i>Cancelar</a>
+                        </div>
+                        <div class="col s4">
+                            <a href="index.html" class="waves-effect waves-light btn teal darken-3"><i
+                                    class="material-icons left">save</i>Crear</a>
+                        </div>
+                    </div>
+                    <div class="row hide-on-med-and-up">
+                        <div class="col s6 m6 l6">
+                            <a href="index.html" class="waves-effect waves-light btn red"><i
+                                    class="material-icons left">cancel</i>Cancelar</a>
+                        </div>
+                        <div class="col s6 m6 l6">
+                            <a href="index.html" class="waves-effect waves-light btn teal darken-3"><i
+                                    class="material-icons left">save</i>Crear</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
