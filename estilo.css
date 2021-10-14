@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #8b5e8b;
+}
+
+nav{
+    list-style: none;
+    padding: auto;
+    background: #4c2882;
+    margin: auto;
+}
+
+.nav a h6{
+    text-align: unset;
+}
+
+
+.nav li{
+    font-size: 40px;
+}
+
+.nav label{
+    text-align: center;
+}
+
+#search{
+    height: 50px;
+    background: #4c2882;
+    color: rgb(255, 255, 255);
+    padding-inline: 6px;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+#texto{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    font-family: monospace;
+}
