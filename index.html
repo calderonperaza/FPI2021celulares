@@ -16,7 +16,7 @@
   <body>
     <!--Navbar de la pagina web-->
 
-    <nav class="navbar navbar-expand-sm px-2">
+    <nav class="navbar navbar-expand-sm px-2" style="background-color: #d7722c;">
         <button class="navbar-toggler navbar-toggler-right navbar-dark bg-dark" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -36,9 +36,9 @@
             <hr>
             <input class="form-control me-2 d-none d-sm-block " type="search" placeholder="Search" aria-label="Search">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Inicio</a>
+                <a class="nav-item nav-link btn" href="index.html">Inicio</a>
                 <hr>
-                <a class="nav-item nav-link" href="#">Estadisticas</a>
+                <a class="nav-item nav-link" href="#";>Estadisticas</a>
                 <hr>
                 <div class="d-block d-sm-none">
                     <a class="nav-item nav-link" href="#">Nuevo Anuncio</a>
@@ -65,12 +65,12 @@
         </div>
     </nav>
 
-    <!--Cuerpo de la pagina web-->
+    <!--Cuerpo de la pagina web #ffcc50-->
 
-    <div class="container-fluid py-3" style="background-color: #ffcc50;">
+    <div class="container-fluid py-3 cuerpo">
         <div class="row">
             <div class="col-lg-2 col-sm-12" style="color: black;" id="menuizq">   
-                <div class="navbar navbar-light navbar-expand-sm" style="background-color: #ffcc50; border: 5px solid gray;">
+                <div class="navbar navbar-light navbar-expand-sm" style="background-color: #ffcc50; border: 5px outset gray;"><!--background-color: #ffcc50-->
 
                     <div class="col d-block d-sm-none" style="margin-left: 15%;">
                         <div class="row">
@@ -256,7 +256,7 @@
             </div>
             <div class="col-lg-10 col-12" id="compras">
                 <div class="row justify-content-center">
-                    <div class="col-lg-3 d-none d-sm-block p-3" style="background-color: #ffcc50; border: 5px solid gray; margin-right: 10px;">
+                    <div class="col-lg-3 d-none d-sm-block p-3" style="background-color:#ffcc50; border: 5px outset gray; margin-right: 10px;">
                         <div class="input-group ">
                             <span class="input-group-text">Precio: $</span>
                             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
@@ -264,7 +264,7 @@
                             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                           </div>
                     </div>
-                    <div class="col-lg-3 d-none d-sm-block  p-3"  style="background-color: #ffcc50; border: 5px solid gray;">
+                    <div class="col-lg-3 d-none d-sm-block  p-3"  style="background-color:#ffcc50; border: 5px outset gray;">
                         <div class="row">
                         <label class="col-6 col-form-label" style="padding-right: 1px; text-align: right; ">Ordenar por:</label>
                             <div class="col d-flex" style="margin-right: 10px;">
@@ -364,7 +364,7 @@
                     <div class="row py-3" style="text-align: center;">
                         <div class="row justify-content-center">
                             
-                            <div class="col-lg-2 col-9 p-3" style="background-color: #ffcc50;">
+                            <div class="col-lg-2 col-9 p-3" >
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination" style="margin-top:0;">
                                       <li class="page-item">
@@ -388,9 +388,9 @@
                                   </nav>
                             </div>
                         
-                            <div class="col-lg-6 d-none d-sm-block  p-3"  style="background-color: #ffcc50;">
+                            <div class="col-lg-6 d-none d-sm-block  p-3" >
                                 <div class="row">
-                                <label class="col-6 col-form-label" style="padding-right: 1px; text-align: right; ">Articulos por pagina</label>
+                                <label class="col-6 col-form-label" style="padding-right: 1px; text-align: right; font-size: 18px;"><strong>Articulos por pagina</strong></label>
                                     <div class="col col-3 d-flex" style="margin-right: 5px;">
                                         <select id="inputState" class="form-select">
                                             <option selected>20</option>

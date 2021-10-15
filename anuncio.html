@@ -1,22 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Style CSS -->
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Mi pagina web</title>
-  </head>
+</head>
 
-  <body>
+<body class="cuerpo">
     <!--Navbar de la pagina web-->
 
-    <nav class="navbar navbar-expand-sm px-2">
+    <nav class="navbar navbar-expand-sm px-2" style="background-color: #d7722c;">
         <button class="navbar-toggler navbar-toggler-right navbar-dark bg-dark" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -28,10 +30,10 @@
         </div>
         <div class="collapse navbar-collapse navbar-expand-lg " id="navbarTogglerDemo01">
             <div class="col py-3">
-            <a class="navbar-brand" href="Index.html ">
-                <i id="cell" class="bi bi-megaphone color-white"></i>
-                Tienda CellPhone
-            </a>
+                <a class="navbar-brand" href="Index.html ">
+                    <i id="cell" class="bi bi-megaphone color-white"></i>
+                    Tienda CellPhone
+                </a>
             </div>
             <hr>
             <input class="form-control me-2 d-none d-sm-block " type="search" placeholder="Search" aria-label="Search">
@@ -55,25 +57,90 @@
         </div>
         <div calss="col-auto" id="numero">
             <a class="navbar-brand d-none d-sm-block" href="#">
-                <i class="bi bi-cart-plus-fill" style="font-size: 2rem"></i> 
+                <i class="bi bi-cart-plus-fill" style="font-size: 2rem"></i>
                 <span class="position-absolute top-30 start-80 translate-middle badge rounded-pill">
                     10
                     <span class="visually-hidden">unread messages</span>
                 </span>
             </a>
-    
+
         </div>
     </nav>
 
     <!--Cuerpo de la pagina web-->
 
+    <div class="container" style="background-color:; margin-top: 30px;">
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/default.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/default.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/default.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card" style="margin-top: 30px; border: 5px outset gray;">
+                    <div class="card-body">
+                        <p class="card-text">Iphone 6 pantalla de 8 pulgadas, 64Gb internos,
+                            2Gb de Ram, Sólo Banda Tigo, Nuevo.</p>
+                        <h4><em>$235.00</em> </h4>
+                        <br>
+                        <a href="#" class="btn btn-primary btn-lg">Comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="border: 5px outset gray;">
+                    <div class="card-body">
+                        Vendedor: Juan Perez Teléfono: 7374-2312.
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-12">
+                    <h3 class="" style="text-align: center;">Descripcion</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
 </html>
