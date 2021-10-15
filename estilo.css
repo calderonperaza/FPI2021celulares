@@ -38,3 +38,11 @@ nav{
     text-align: justify;
     font-family: monospace;
 }
+
+#linea1{
+    margin-top: 20 px;
+    align-items: center;
+}
+#switchfont{
+    color: white;
+}

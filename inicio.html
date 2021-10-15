@@ -53,8 +53,8 @@
                 <li><i class="material-icons">search</i></li>
                 <li><input id="search" type="search" required><label class="label-icon" for="search">
                     </label></li>
-                <li><a href="sass.html" class="waves-effect waves-light btn">Inicio</a></li>
-                <li><a href="badges.html" class="waves-effect waves-light btn">Estadistica</a></li>
+                <li><a href="inicio.html" class="waves-effect waves-light deep-purple accent-1 btn">Inicio</a></li>
+                <li><a href="badges.html" class="waves-effect waves-light deep-purple accent-1 btn">Estadistica</a></li>
                 <li><a href="collapsible.html"><i class="large material-icons">add_box</i></a></li>
                 <li><a href="collapsible.html"><i class="large material-icons">shopping_cart</i></a></li>
             </ul>
@@ -74,6 +74,99 @@
         <li><a href="collapsible.html">Carrito</a></li>
     </ul>
 
+    <style media="screen">
+        #shiw {
+            width: 90%;
+            padding-top: 1%;
+            margin-left: 5%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #price{
+            padding-top: 6%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: white;
+        }
+        #sw{
+            padding-top: 2%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        
+        }
+
+        #filter{
+            padding-top:1.5% ;
+        }
+
+    </style>
+
+    <div id="shiw" class="container-fluid">
+        <div class="row">
+            <div id="sw" class="col l3">
+                <div class="switch">
+                    <label id='switchfont'>
+                        Usado
+                        <input type="checkbox">
+                        <span class="lever deep-purple accent-1"></span>
+                        Nuevo
+                    </label>
+                </div>
+            </div>
+            <div class="col l5">
+                <div class="container">
+                    <div class="row auto">
+                        <div id="price" class="col s2">
+                            Precio:
+                        </div>
+                        <div class="col s3">
+                            <div id="diner" class="input-field col auto">
+                                <input placeholder="$" id="desde" type="text" class="validate">
+                                <label for="first_name">desde</label>
+                            </div>
+                        </div>
+                        <div id="price" class="col s2">
+                            <i class="small material-icons">arrow_forward</i>
+                        </div>
+                        <div id="diner" class="col s3">
+                            <div class="input-field col auto">
+                                <input placeholder="$" id="hasta" type="text" class="validate">
+                                <label for="first_name">hasta</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="filter" class="col l4">
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-trigger deep-purple accent-1 btn' href='#' data-target='dropdown1'>filtro precios</a>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!"><i class="small material-icons inline">arrow_upward</i>Precio</a></li>
+                    <li><a href="#!"><i class="small material-icons inline">arrow_downward</i>Precio</a></li>
+                </ul>
+
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-trigger deep-purple accent-1 btn' href='#' data-target='dropdown2'>filtro fechas</a>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown2' class='dropdown-content'>
+                    <li><a href="#!">Más recientes</a></li>
+                    <li><a href="#!">Menos recientes</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    </div>
+
 
 
 
@@ -86,6 +179,13 @@
             var instances = M.Sidenav.init(elems);
         });
 
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems);
+        });
     </script>
 
 </body>
