@@ -44,7 +44,134 @@
           </nav>
       </div>
       
+      <div class="container">
+        <h3 class="center"><strong>NUEVO ANUNCIO</strong></h3>
+        <div class="row">
+          <div class="col m7">
+            <div class="col m12">
+              <form action="../FPI2021celulares/inicio.html" method="post" target="_blank">
+                <p>
+                  <strong>Estado :</strong>
+                  <label>
+                    <input class="with-gap" name="group1" type="radio"/>
+                    <span class="black-text">Nuevo</span>
+                  </label>
+                  <label>
+                    <input class="with-gap" name="group1" type="radio"/>
+                    <span class="black-text">Usado</span>
+                  </label>
+                </p>
+              <div class="row">
+                <div class="col m7">
+                  <strong>Marca :</strong>
+                  <div class="input-field inline">
+                    <input class="center" type="text" value="Iphone"/>
+                  </div>
+                  <br>
+                  <strong>Modelo :</strong>
+                  <div class="input-field inline">
+                    <input class="center" type="text" value="6 plus"/>
+                  </div>
+                  <br>
+                  <strong>Pantalla :</strong>
+                <div class="input-field inline">
+                  <input class="center" type="text" step="1" min="0" value="64"/>
+                </div>
+                GB
+                  <div class="container-section">
+                    <h7 class="left"><strong>Sistema :</strong></h7>
+                    <select class="left browser-default col s8">
+                      <option value="" disabled selected>Select OS</option>
+                      <option value="1">Android</option>
+                      <option value="2">iOS</option>
+                      <option value="3">Symbian</option>
+                      <option value="3">Windows Phone</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m7">
+                  <strong>ROM :</strong>
+                <div class="input-field inline">
+                  <input class="center" type="number" step="1" min="0" value="64"/>
+                </div>
+                GB
+                <br>
+                <strong>RAM :</strong>
+                <div class="input-field inline">
+                  <input class="center" type="number" step="1" min="0" value="2"/>
+                </div>
+                GB
+              </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="left col s4">
+                    <a href="nuevo.html" class="btn-floating btn-large waves-effect waves-light #ff1744 red accent-3 pulse"><i class="material-icons">add</i></a><br><br>
+                    <a href="nuevo.html" class="btn-floating btn-large waves-effect waves-light #ff1744 red accent-3 pulse"><i class="material-icons">remove</i></a>
+                  </div>
+                  <div class="left col s7">
+                    <table>
+                      <tr>
+                        <td>N</td>
+                        <td>Tamaño</td>
+                        <td>Tipo</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>145 kb</td>
+                        <td>png</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>145 kb</td>
+                        <td>jp  g</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>145 kb</td>
+                        <td>jpg</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>145 kb</td>
+                        <td>png</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              </form>
+            </div>
+          </div>
+          <div class="left col m5">
+            <h6>Titulo breve del anuncio</h6>
+            <input type="b  ox" class="col m10">
+            Vendedor :
+            <div class="input-field inline">
+              <input type="box" value="Juan Pérez" class="col m12"/>
+            </div><br>
+            Telefono :
+            <div class="input-field inline">
+              <input type="box" value="21213-1212" class="col m12"/>
+            </div>
+            DESCRIPCIÓN
+            <p>
+              Telefono en muy buenas condiciones, tiene dos cámaras, la caja esta abierta, pero con muy poco uso, practicamente nuevo, la compañia con la que estaba es Tigo, asi que el chip debe ser tigo, viene con su caja original y con todos sus accesorios. Puedo mandar más fotos si desea por whatsapp
+            </p>
+            Precio
+            <br><br>
+            <div>
+              <i class="material-icons">attach_money<input type="box"/></i>
+            </div>
+            <br>
+            <div class="left section"><a href="" class="btn #e53935 red darken-1">Cancelar <i class="left material-icons">highlight_off</i></a></div>
+            <div class="center section"><a class="btn #e53935 red darken-1" onclick="M.toast({html: 'Guardado', completeCallback: function(){alert('Su anuncio se ha creado correctamente')}})">Guardar<i class="left material-icons">save</i></a></div>
+          </div>
+        </div>
+      </div>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-</html>
+</html> 
