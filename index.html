@@ -157,7 +157,7 @@
                                       </label>
                                     </td>
                                     <td>
-                                      <select>
+                                      <select id="form_nuevoproducto">
                                         <option value="1">Ios</option>
                                         <option value="2">Android</option>
                                         <option value="3">Windows</option>
@@ -201,55 +201,6 @@
                                   </tr>
                                 </table>
                               </form>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- imagenes del nuevo producto -->
-                        <div class="row">
-                          <div class="card">
-                            <div class="card-content">
-                              <div class="row">
-                                <h5 class="black-text center">Imagenes</h5>
-                              </div>
-                              <div class="row">
-                                <div class="col m3">
-                                  <div class="row">
-                                    <a class="waves-effect waves-light btn"
-                                      ><i class="material-icons center"
-                                        >add</i
-                                      ></a
-                                    >
-                                  </div>
-                                  <div class="row">
-                                    <a class="waves-effect waves-light btn"
-                                      ><i class="material-icons center"
-                                        >cancel</i
-                                      ></a
-                                    >
-                                  </div>
-                                </div>
-                                <div class="col m4">
-                                  <div class="row">
-                                    <h6 class="black-text center">
-                                      N tamano Tipo
-                                    </h6>
-                                    <ol class="black-text">
-                                      <li>145 Kb jpg</li>
-                                      <li>145 Kb jpg</li>
-                                      <li>145 Kb jpg</li>
-                                    </ol>
-                                  </div>
-                                </div>
-                                <div class="col m5">
-                                  <div class="row center">
-                                    <img
-                                      class="materialboxed"
-                                      width="150"
-                                      src="./img/img1.jpeg"
-                                    />
-                                  </div>
-                                </div>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -310,7 +261,7 @@
                           <div class="col m1"></div>
                           <div class="card col m5">
                             <div class="card-content">
-                              <h5 class="black-text">Precio</h5>
+                              <h6 class="black-text">Precio</h6>
                               <input
                                 type="text"
                                 class="validate"
@@ -320,17 +271,80 @@
                             </div>
                           </div>
                         </div>
-                        <div class="row">
-                          <a class="modal-close waves-effect waves-light btn"
-                            ><i class="material-icons left">cancel</i
-                            >cancelar</a
-                          >
-                          <a
-                            class="waves-effect waves-light btn"
-                            onclick="M.toast({html: 'Se a guardado el producto'})"
-                            ><i class="material-icons left">save</i>crear</a
-                          >
+                      </div>
+                    </div>
+                    <!-- imagenes en nuevo producto -->
+                    <div class="row">
+                      <div class="card col m8">
+                        <div class="card-content">
+                          <div class="row">
+                            <h5 class="black-text center">Imagenes</h5>
+                          </div>
+                          <div class="row">
+                            <div class="col m2">
+                              <div class="row">
+                                <a class="waves-effect waves-light btn-floating"
+                                  ><i class="material-icons center">add</i></a
+                                >
+                              </div>
+                              <div class="row">
+                                <a class="waves-effect waves-light btn-floating"
+                                  ><i class="material-icons center"
+                                    >remove</i
+                                  ></a
+                                >
+                              </div>
+                            </div>
+                            <div class="col m5 push-m1">
+                              <div class="row">
+                                <table class="black-text">
+                                  <tr>
+                                    <th>N</th>
+                                    <th>Tamano</th>
+                                    <th>Tipo</th>
+                                  </tr>
+                                  <tr>
+                                    <td>1.</td>
+                                    <td>145 Kb</td>
+                                    <td>jpg</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2.</td>
+                                    <td>145 Kb</td>
+                                    <td>jpg</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3.</td>
+                                    <td>145 Kb</td>
+                                    <td>jpg</td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="col m5 push-m1">
+                              <div class="row center">
+                                <img
+                                  class="materialboxed"
+                                  width="150"
+                                  src="./img/img1.jpeg"
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                      <div class="col m4">
+                        <a
+                          class="modal-close waves-effect waves-light btn"
+                          id="btn_nuevoProduc"
+                          ><i class="material-icons left">cancel</i>cancelar</a
+                        >
+                        <a
+                          class="modal-close waves-effect waves-light btn"
+                          id="btn_nuevoProduc"
+                          onclick="M.toast({html: 'Se a guardado el producto'})"
+                          ><i class="material-icons left">save</i>crear</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -915,7 +929,12 @@
         >
       </li>
       <li><a href="#">Inicio</a></li>
-      <li><a href="#">Nuevo Anuncio</a></li>
+      <li>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1"
+          ><i class="material-icons"></i>Nuevo Producto</a
+        >
+      </li>
       <li><a href="#">Carrito</a></li>
       <li><a href="#">Estadisticas</a></li>
     </ul>

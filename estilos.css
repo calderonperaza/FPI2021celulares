@@ -40,23 +40,24 @@ div label span {
 /* formulario del nuevo producto */
 /* input del titulo del nuevo producto */
 #titulo_producto {
+  width: 95% !important;
 }
 
 #nombre_vendedor {
-  width: 300px !important;
+  width: 60% !important;
 }
 
 #telefono {
-  width: 200px !important;
+  width: 45% !important;
 }
 
 #text_descrip {
-  height: 150px !important;
-  width: 300px !important;
+  height: 50% !important;
+  width: 75% !important;
 }
 
 #nuevo_precio {
-  width: 100px !important;
+  width: 100% !important;
 }
 
 #nuevoProducto {
@@ -70,7 +71,12 @@ div label span {
 
 /* inputs del form de nuevo producto */
 #form_nuevoproducto {
-  width: 150px !important;
+  width: 75% !important;
+}
+
+/* btn cancelar y crear del nuevo producto */
+#btn_nuevoProduc {
+  font-size: 12px !important;
 }
 
 /* estilos de "Descripcion del producto" */
