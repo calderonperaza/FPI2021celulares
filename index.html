@@ -65,9 +65,8 @@
 
     <div class="container-fluid py-3">
         <div class="row">
-            <div class="col-lg-2 col-sm-12" style="color: black;" id="menuizq">
-                
-                <div class="navbar navbar-light navbar-expand-sm " style="background-color: #ffb27f;">
+            <div class="col-lg-2 col-sm-12" style="color: black;" id="menuizq">   
+                <div class="navbar navbar-light navbar-expand-sm" style="background-color: #ffb27f;">
 
                     <div class="col d-block d-sm-none" style="margin-left: 15%;">
                         <div class="row">
@@ -81,19 +80,164 @@
                         </div>    
                     </div>
 
-                    <button class="navbar-toggler align-items-center" style="margin-right: 40px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler align-items-center" style="margin-right: 40px; border: 2px solid black;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-caret-down-fill"></i>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <div class="navbar-nav">
+                        <div class="navbar-nav col d-fluid">
                         
-                            <div class="menu">
-                        
-                                <div class="form-check form-switch align-items-center" style="margin-left: 15px;">
-                                    <input class="form-check-input d-flex" type="checkbox" id="flexSwitchCheckDefault" />
-                                    <label class="form-check-label d-flex" for="flexSwitchCheckDefault">Nuevo</label>
-                                </div>
+                            <div class="menu container">
+                                <!--Primer item-->
+                                <div class="row-12 gy-5">
+                                    <div class="col-12 py-2">
+                                        <div class="form-check form-switch align-items-center">
+                                            <input class="form-check-input d-flex" type="checkbox" id="flexSwitchCheckDefault" />
+                                            <label class="form-check-label d-flex" for="flexSwitchCheckDefault">Nuevo</label>
+                                        </div>
+                                    </div>
+                                    <!--Segundo bloque-->
+                                    <div class="row justify-content-start" style="padding-left: 15px;">
+                                        Marca
+                                    </div>
+                                    <div class="col py-2"
+                                        style="border: 2px solid gray; width: 100%; margin-right: 20px; padding-left: 5px;padding-right: 5px;">
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="samsung">
+                                            <label class="form-check-label position-relative " for="samsung">
+                                                Samsung
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    10
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="huawei">
+                                            <label class="form-check-label position-relative" for="huawei">
+                                                huawei
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    8
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="nokia">
+                                            <label class="form-check-label position-relative" for="nokia">
+                                                Nokia
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    3
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
 
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="iphone">
+                                            <label class="form-check-label position-relative" for="iphone">
+                                                Nokia
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    15
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="xiomi">
+                                            <label class="form-check-label position-relative" for="xiomi">
+                                                Xiomi
+                                                <span class="align-items-start position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    8
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!--Tercer item-->
+                                    <div class="row justify-content-start" style="padding-left: 15px;">
+                                        Sistema
+                                    </div>
+                                    <div class="col py-2"
+                                        style="border: 2px solid gray; width: 100%; margin-right: 20px; padding-left: 5px;padding-right: 5px;">
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="android">
+                                            <label class="form-check-label position-relative " for="android">
+                                                Android
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    10
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="windows">
+                                            <label class="form-check-label position-relative" for="windows">
+                                                Windows
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    8
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="ios">
+                                            <label class="form-check-label position-relative" for="ios">
+                                                Ios
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    8
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!--Cuarto item-->
+                                    <div class="row justify-content-start" style="padding-left: 15px;">
+                                        Pantalla
+                                    </div>
+                                    <div class="col py-2"
+                                        style="border: 2px solid gray; width: 100%; margin-right: 20px; padding-left: 5px;padding-right: 5px;">
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="seis">
+                                            <label class="form-check-label position-relative " for="seis">
+                                                6
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    7
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="cincocinco">
+                                            <label class="form-check-label position-relative" for="cincocinco">
+                                                5.5
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                   2
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check" style="padding-bottom: 10px;">
+                                            <input class="form-check-input" type="checkbox" value="" id="cinco">
+                                            <label class="form-check-label position-relative" for="cinco">
+                                                5
+                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
+                                                    1
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
 
                         </div>
@@ -101,7 +245,7 @@
                 </div>
     
             </div>
-            <div class="col-lg-10 col-6" id="compras">
+            <div class="col-lg-10 col-12" id="compras">
                 <div class="row justify-content-center">
                     <div class="col-lg-3 d-none d-sm-block p-3 border bg-light">
                         <div class="input-group ">
@@ -112,11 +256,17 @@
                           </div>
                     </div>
                     <div class="col-lg-3 d-none d-sm-block  p-3 border bg-light">
-                        <label>Ordenar por: </label>
+                        <div class="row">
+                        <label class="col-6 col-form-label" style="padding-right: 1px; text-align: right;">Ordenar por:</label>
+                            <div class="col d-flex" style="margin-right: 10px;">
+                                <select id="inputState" class="form-select">
+                                    <option selected>Precio</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
 
 
