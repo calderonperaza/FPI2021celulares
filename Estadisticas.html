@@ -10,40 +10,47 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <nav class="nav-wrapper red darken-4">
-            <div class="container">
-                <a href="index.html" class="brand-logo hide-on-med-and-down" ><i class="material-icons">store</i>Cellphone Store</a>
-                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li class="active"><a href="Estadisticas.html">Estadisticas</a></li>
-                    <li><a href="Nuevo_Anuncio.html"><i class="material-icons">add</i></a></li>
-                    <li><a href="Carrito.html"><i class="material-icons">add_shopping_cart</i></a></li>
-                </ul>                
+        <header>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper red darken-4">
+                        <a href="index.html" class="brand-logo hide-on-med-and-down" ><i class="material-icons">store</i>Cellphone Store</a>
+                        <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li class="active"><a href="Estadisticas.html">Estadisticas</a></li>
+                            <li><a href="Nuevo_Anuncio.html"><i class="material-icons">add</i></a></li>
+                            <li><a href="Carrito.html"><i class="material-icons">add_shopping_cart</i></a></li>
+                        </ul> 
+                        <form>
+                            <div class="input-field right">
+                                <input placeholder="Buscar" id="search" type="search" >
+                                <label  class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i> 
+                            </div>                    
+                        </form>           
+                    </div>  
+                </nav>
             </div>
-            <form>
-                <div class="input-field right ">
-                    <input placeholder="Buscar" id="search" type="search">
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
-                </div>
-        </nav>
+        </header>
+        <!--sidenav pagina principal -->
         <ul class="sidenav" id="menu-responsive">
+            <li><a href="index.html"><i class="material-icons">store</i>Cellphone Store</a> </li>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="Nuevo_Anuncio.html">Nuevo Anuncio</a></li>
             <li><a href="Estadisticas.html">Estadisticas</a></li>
             <li><a href="Carrito.html">Carrito</a></li>
         </ul>
+
         
         <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function(){
                 M.AutoInit();       
-            });
-             
+            });             
         </script>
     </body>
 </html>
