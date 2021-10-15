@@ -3,11 +3,6 @@ nav div div a {
   font-size: 16px !important;
 }
 
-/* switch de Nuevo */
-.switch {
-  height: 65px !important;
-}
-
 /* tamaño de fuente de las categorias */
 div label span {
   font-size: 16px !important;
@@ -15,9 +10,10 @@ div label span {
 
 /* barra de busqueda */
 #search {
-  width: 250px !important;
+  width: 230px !important;
 }
 
+/* menu ordenar por en large y medium */
 #precio {
   width: 100px !important;
 }
@@ -26,12 +22,24 @@ div label span {
   width: 100px !important;
 }
 
+/* card ordenar por */
 #ordenar_por {
   height: 100px;
 }
 
+/* btn dropdown */
+.dropdown-trigger {
+  margin-top: 10px !important;
+}
+
+/* labels del form_modal */
 #label_modal {
   font-size: 16px;
+}
+
+/* formulario del nuevo producto */
+/* input del titulo del nuevo producto */
+#titulo_producto {
 }
 
 #nombre_vendedor {
@@ -55,6 +63,11 @@ div label span {
   padding: 30px !important;
 }
 
+/* categorias en small */
+#btn_categorias {
+  margin-top: 20px !important;
+}
+
 /* inputs del form de nuevo producto */
 #form_nuevoproducto {
   width: 150px !important;
@@ -68,4 +81,43 @@ div label span {
 
 #detalle_producto {
   padding: 50px !important;
+}
+
+/* mensaje de guardado */
+.toast {
+  background-color: floralwhite;
+}
+
+/* botones de la pagina */
+.btn {
+  background-color: green;
+}
+
+/* cambiar color de fondo */
+.dropdown-content {
+}
+
+/* cambiar color del texto */
+.dropdown-content li > a,
+.dropdown-content li > span {
+}
+
+/* color de los checkbox */
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  border: 2px solid red;
+  background-color: blue;
+}
+
+/* color del switch */
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: blue;
+}
+
+.switch label input[type="checkbox"]:checked + .lever:after {
+  background-color: brown;
+}
+
+.dropdown-content {
+  padding-top: 20px !important;
+  width: 35%;
 }
