@@ -1,5 +1,5 @@
 .navbar{
-    background-color: orange;
+    background-color: #ff9800;
     text-align: center;
     border-style: groove;
 }
@@ -23,5 +23,6 @@
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
     margin: 2px solid black;
+    background-color: #ffff89;
 }
 
