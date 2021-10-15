@@ -1,0 +1,13 @@
+{
+  "name":"proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css css/custom.css --content index.html --output css/estilos.css"
+  },
+
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  }
+}
