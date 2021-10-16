@@ -93,8 +93,16 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
+                  <div class="col">
+                    <label for="exampleFormControlInput1" class="form-label"><strong>Titulo breve del anuncio</strong></label>
+                    <input class="form-control" type="text" placeholder="Iphone 6 pantalla de 8 pulgadas, 64Gb internos," aria-label="default input example">
+                  </div>
+                  <div class="col-md-6 offset-md-4" style="padding-top: 8px; padding-bottom: 8px;">
+                    <label for="inputEmail4" class="form-label"><strong>Precio:</strong></label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
             </div>
-            <div class="col-lg-6" style="border: 5px outset gray; padding-top: 15px; padding-bottom: 15px;  background-color: #ffcc50;">
+            <div class="col-lg-6 d-none d-sm-block" style="border: 5px outset gray; padding-top: 15px; padding-bottom: 15px;  background-color: #ffcc50;">
                 <div class="col-3 d-inline">
                 <label class="form-check-label" for="inlineRadio1">Estado: </label>
             </div>
@@ -151,8 +159,9 @@
             </div>
             </div>
             <div class="col-lg-6">
+                
                 <div class="container">
-                    <div class="row">
+                    <div class="row d-none d-sm-block">
                         <label for="exampleFormControlInput1" class="form-label"><strong>Titulo breve del anuncio</strong></label>
                         <input class="form-control" type="text" placeholder="Iphone 6 pantalla de 8 pulgadas, 64Gb internos," aria-label="default input example">
                       </div>
@@ -168,16 +177,76 @@
                             <input class="form-control" type="text" placeholder="21213-1212" aria-label="default input example">
                         </div>
                     </div>
+
+                    <div class="col d-block d-sm-none" style=" padding-top: 15px; padding-bottom: 15px;">
+                        <div class="col-3 d-inline">
+                        <label class="form-check-label" for="inlineRadio1">Estado: </label>
+                    </div>
+                        <div class="col form-check form-check-inline" style="display: inline-block;">
+                            <label class="form-check-label" for="inlineRadio1">Nuevo</label>
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          </div>
+                          <div class="col form-check form-check-inline" style="display: inline-block;">
+                            <label class="form-check-label" for="inlineRadio1">Usado</label>
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          </div>
+                    <div class="row" style="padding-top: 10px;">
+                        <label for="inputPassword" class="col-auto col-form-label " style="padding-right: 25px;">Marca:</label>
+                        <div class="col-4">
+                            <input class="form-control" type="text" placeholder="Iphone" aria-label="default input example">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 10px;">
+                        <label for="inputPassword" class="col-auto col-form-label">Modelo: </label>
+                        <div class="col-4">
+                            <input class="form-control" type="text" placeholder="6 PLUS" aria-label="default input example">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 10px;">
+                        <label for="inputPassword" class="col-auto col-form-label">Pantalla: </label>
+                        <div class="col-4">
+                            <input class="form-control" type="text" placeholder="5.5" aria-label="default input example">
+                        </div>
+                        <label for="inputPassword" class="col  col-form-label" style="padding-left: 0px;">Pulgadas </label>
+                    </div>
+                    <div class="row" style="padding-top: 10px;">
+                        <label for="inputPassword" class="col-auto col-form-label">Sistema: </label>
+                        <div class="col-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Ios</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 10px;">
+                        <label for="inputPassword" class="col-auto col-form-label" style="padding-right: 30px;">RAM: </label>
+                        <div class="col-4">
+                            <input class="form-control" type="text" placeholder="64 GB" aria-label="default input example">
+                        </div>
+                        <label for="inputPassword" class="col  col-form-label" style="padding-left: 0px;">Almacenamiento</label>
+                    </div>
+                    <div class="row" style="padding-top: 10px;">
+                        <label for="inputPassword" class="col-auto col-form-label" style="padding-right: 30px;">ROM: </label>
+                        <div class="col-4">
+                            <input class="form-control" type="text" placeholder="2 GB" aria-label="default input example">
+                        </div>
+                    </div>
+                    </div>
+
+
                     <div class="row" style="padding-top: 15px;">
                         <label for="exampleFormControlInput1" class="form-label"><strong>DESCRIPCION</strong></label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
+
                 </div>
             </div>    
         </div>
 
         <div class="row " style="padding-top: 30px;">
-            <div class="col-lg-6" style="background-color: #ffcc50; border: 5px outset gray; padding-top: 15px;">
+            <div class="col-lg-6 d-none d-sm-block" style="background-color: #ffcc50; border: 5px outset gray; padding-top: 15px;">
             <div class="container">
                 <div class="row">
                   <div class="col-lg-2">
@@ -248,17 +317,18 @@
             </div>
         </div>
         <div class="col">
-            <div class="container">
-                <div class="col-md-6 offset-md-4">
+            <div class="container" style="padding-top: 15px;">
+                <div class=" col-6 d-none d-sm-block" style="text-align: center; margin: auto;">
                     <label for="inputEmail4" class="form-label"><strong>Precio:</strong></label>
                     <input type="email" class="form-control" id="inputEmail4">
                 </div>
                 
-                <div class="col offset-md-4" style="padding-top: 15px;">
-                    <a href="index.html"><button type="button" class="btn btn-primary btn-lg"><i class="bi bi-x-circle" style="padding-right: 5px;"></i>Cancelar</button>
-                    </a>
-                        <a id="redireccionar"><button type="button" class="btn btn-primary btn-lg" id="liveToastBtn" ><i class="bi bi-save" style="padding-right: 5px;"></i> Guardar</button>
+                <div class="col-12"  style="padding-top: 15px; text-align: center; margin: auto;">
+                    
+                    <button onclick="location.href='index.html'" type="button" class="btn btn-primary btn-lg"><i class="bi bi-x-circle" >Cancelar</i></button>
+                       <a id="redireccionar"><button type="button" class="btn btn-primary btn-lg" id="liveToastBtn" ><i class="bi bi-save" style="padding-right: 5px;"> Guardar</i></button>
                         </a>
+                    
                         <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                         <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
                             <div class="toast-header">
@@ -268,8 +338,11 @@
                             </div>
                             <div class="toast-body">
                                 FELICIDADES! Su anuncio ha sido publicado con exito.
-                                <a href="index.html"><button type="button" class="btn btn-primary btn-sm">Aceptar</button>
+                                <div class="mt-2 pt-2 border-top">
+                                    <button onclick="location.href='index.html'" type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Aceptar</button>
+                                  </div>
                             </div>
+                            
                         </div>
                     </div>
                 

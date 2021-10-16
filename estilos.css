@@ -1,14 +1,8 @@
 .navbar{
-    /*background-color: #ff9800;
-    background-color: #f05e23;
-    background-image: url(https://image.freepik.com/foto-gratis/marmol-amarillo-fondo-abstracto-naranja_1360-485.jpg);*/
     text-align: center;
     border: 5px outset gray;
 }
 .cuerpo{
-    /*
-    background-image: url(https://www.axioma-formacion.com/wp-content/uploads/2017/02/fondo-naranja.jpg);
-    */
     background-image: url(https://w0.peakpx.com/wallpaper/612/883/HD-wallpaper-orange-yellow-gradient-background-ultra-aero-colorful-orange-summer-yellow-color-design-shades-warmth-simple-vivid-gradient.jpg);
     background-repeat:no-repeat;
     background-size: cover;
