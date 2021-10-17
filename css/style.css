@@ -116,3 +116,21 @@
         width: 100% !important;
     }
 }
+.waves-effect a{
+    background-color: #90caf9;
+}
+.active a {
+    background-color: #42a5f5;
+}
+.checkbox-blue[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid #1976d2;
+    background-color: #1976d2;
+  }
+.radio-blue[type="radio"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid #1976d2;
+    background-color: #1976d2;
+  }  
+  .switch label input[type="checkbox"]:checked + .lever,
+  .switch label input[type="checkbox"]:checked + .lever::after {
+      background-color: #64b5f6;
+  }
