@@ -19,20 +19,31 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-success">
       <div class="container-fluid">
         
-        <a class="navbar-brand text-light" href="#"><i class="bi bi-megaphone"></i> Tienda CellPhone </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-         <!--Busqueda-->
+        <div class="w-50  d-block d-lg-none"> 
+          <form class="d-flex">
+            <input id="idSearch2" class="form-control me-2 rounded-pill w-100"  style="font-family: Arial, Helvetica, sans-serif, bootstrap-icons;" type="search" placeholder="&#xf52a  Search" aria-label="Search" >
+          </form>
+        </div>
+       
+         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="w-50"> 
+
+          <a class="navbar-brand text-light" href="#"><i class="bi bi-megaphone"></i> Tienda CellPhone </a>
+          
+          <!--Busqueda 1-->
+          <div class="w-50 d-none d-lg-block"> 
             <form class="d-flex">
-              <input id="idSearch" class="form-control me-2 rounded-pill w-100"  style="font-family: Arial, Helvetica, sans-serif, bootstrap-icons;" type="search" placeholder="&#xf52a  Search" aria-label="Search" >
+              <input id="idSearch1" class="form-control me-2 rounded-pill w-100"  style="font-family: Arial, Helvetica, sans-serif, bootstrap-icons;" type="search" placeholder="&#xf52a  Search" aria-label="Search" >
             </form>
           </div>
          
-          <!-- Lista -->
+         
+          <!-- menu 1-->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
             <li class="nav-item">
               <a class="btn btn-success me-2" href="#">Inicio</a>
@@ -48,6 +59,22 @@
             </li>
           </ul>
 
+         <!-- menu 2-->
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto d-block d-lg-none">
+          <li class="nav-item">
+            <a class="btn btn-success me-2" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success me-2" href="#">Nuevo Anuncio</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success me-2" href="#">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success me-2" href="#">Estadísticas</a>
+          </li>
+        </ul>
+
         </div>
 
       </div>
@@ -60,7 +87,7 @@
 
     <main class="row">
       
-      <aside class="col-2 overflow-auto">
+      <aside class="col-2 overflow-auto " style="height: 500px;">
         <!-- Switch -->
         <div class="form-check form-switch m-2">
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
@@ -68,7 +95,7 @@
         </div>
 
         <!--Listas-->
-        <!-- l1 -->
+        <!-- Marcas -->
         <fieldset title="Marca" class="m-2 border p-2">
           <legend>Marca</legend>
           <div class="form-check">
@@ -107,7 +134,7 @@
           </div>
         </fieldset>
 
-        <!--  l2 -->
+        <!--  Sistemas -->
         <fieldset title="Marca" class="m-2 border p-2">
           <legend class="form-label">Sistema</legend>
           <div class="form-check">
@@ -133,7 +160,7 @@
   
         </fieldset>
 
-           <!-- l3 -->
+           <!-- Pantallas-->
         <fieldset title="Marca" class="m-2 border p-2">
           <legend class="form-label">Pantalla</legend>
           <div class="form-check">
@@ -161,7 +188,7 @@
       </aside>
 
       <section class="col-10">
-        <!-- fila 0 -->
+        <!-- fila 1 -->
         <div class="row">  
           <div class="col border m-2" >
     
@@ -179,7 +206,7 @@
           </div>
         </div> 
 
-        <!-- FILA 1 -->
+        <!-- fila 2 -->
         <div class="row">
           <div class="card" style="width: 17rem;">
             <a href="#">
@@ -222,7 +249,7 @@
           </div>
         </div>
 
-        <!-- fila2 -->
+        <!-- fila 3 -->
         <div class="row">
           <div class="card" style="width: 17rem;">
             <a href="#">
