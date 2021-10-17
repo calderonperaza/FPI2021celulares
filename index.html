@@ -76,7 +76,7 @@
                           <div class="card">
                             <div class="card-content">
                               <form action="#">
-                                <!-- Formulario de nuevo producto -->
+                                <!-- Formulario de nuevo producto en large -->
                                 <table>
                                   <!-- Estado del nuevo producto -->
                                   <tr>
@@ -325,7 +325,7 @@
                               <div class="row center">
                                 <img
                                   class="materialboxed"
-                                  width="150"
+                                  width="120"
                                   src="./img/img1.jpeg"
                                 />
                               </div>
@@ -356,6 +356,273 @@
               </li>
               <li><label class="white-text">0</label></li>
             </ul>
+          </div>
+          <div class="col m6 hide-on-large-only">
+            <!-- modal en medium y small -->
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <div class="row">
+                  <h4 class="black-text center">Nuevo producto</h4>
+                </div>
+                <!-- agregar imagen en medium y small -->
+                <div class="row">
+                  <div class="col s12 m12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col s6 m6 push-s4 push-m4">
+                            <form action="#">
+                              <div class="file-field input-field">
+                                <div class="row">
+                                  <div class="btn" id="add_photo">
+                                    <span
+                                      ><i class="material-icons"
+                                        >add_to_photos</i
+                                      ></span
+                                    >
+                                    <span> Agregar foto</span>
+
+                                    <input type="file" />
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col s5 m4 push-s4 push-m4">
+                            <div class="file-path-wrapper">
+                              <input class="file-path validate" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Titulo del produc. en med. y small -->
+                <div class="row">
+                  <div class="col s12 m12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="row">
+                          <h5 class="black-text">Titulo</h5>
+                        </div>
+                        <div class="row">
+                          <input
+                            type="text"
+                            class="validate"
+                            placeholder="Titulo del producto"
+                            id="titulo_producto"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- precio en med. y small -->
+                <div class="row">
+                  <div class="col s5 push-s2 m5 push-m2">
+                    <h5 class="black-text">Precio</h5>
+                    <input
+                      type="text"
+                      class="validate"
+                      placeholder="$"
+                      id="nuevo_precio"
+                    />
+                  </div>
+                </div>
+                <!-- Vendedor en med. y small -->
+                <div class="row">
+                  <div class="col s8 m8">
+                    <label class="black-text" id="label_modal"
+                      >Vendedor:
+                    </label>
+                    <input
+                      type="text"
+                      class="validate"
+                      placeholder="Nombre Apellido"
+                      id="nombre_vendedor"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- telefono en med. y small -->
+                  <div class="col s8 m8">
+                    <label class="black-text" id="label_modal"
+                      >Telefono:
+                    </label>
+                    <input
+                      type="tel"
+                      class="validate"
+                      placeholder="0000-0000"
+                      id="telefono"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- form de nuevo producto en med. y small -->
+                  <div class="col s12 m12">
+                    <div class="card">
+                      <div class="card-content">
+                        <form action="#">
+                          <!-- Formulario de nuevo producto en large -->
+                          <table>
+                            <!-- Estado del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Estado:
+                                </label>
+                              </td>
+                              <td>
+                                <label>
+                                  <input name="group1" type="radio" checked />
+                                  <span>Nuevo</span>
+                                </label>
+                                <label>
+                                  <input name="group1" type="radio" />
+                                  <span>Usado</span>
+                                </label>
+                              </td>
+                            </tr>
+                            <!-- marca del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Marca:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="Marca"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                            </tr>
+                            <!-- modelo del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Modelo:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="Modelo"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                            </tr>
+                            <!-- Pantalla del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Pantalla:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="Pantalla"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                              <td><label>pulgadas</label></td>
+                            </tr>
+                            <!-- Sistema del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Sistema:
+                                </label>
+                              </td>
+                              <td>
+                                <select id="form_nuevoproducto">
+                                  <option value="1">Ios</option>
+                                  <option value="2">Android</option>
+                                  <option value="3">Windows</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <!-- ROM del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >ROM:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="ROM"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                              <td>
+                                <label>Alm. Interno</label>
+                              </td>
+                            </tr>
+                            <!-- RAM del producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >RAM:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="RAM"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- descripcion del produc. en med. y small -->
+                  <div class="col s12 m12">
+                    <div class="row">
+                      <label class="black-text" id="label_modal"
+                        >Descripcion:
+                      </label>
+                    </div>
+                    <div class="row center">
+                      <textarea
+                        id="text_descrip"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <a
+                    class="modal-close waves-effect waves-light btn"
+                    id="btn_nuevoProduc"
+                    >cancelar</a
+                  >
+                  <a
+                    class="modal-close waves-effect waves-light btn"
+                    id="btn_nuevoProduc"
+                    onclick="M.toast({html: 'Se a guardado el producto'})"
+                    >crear anuncio</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -920,7 +1187,7 @@
     </div>
 
     <!-- Menu de celular -->
-    <ul class="sidenav" id="mobile-menu">
+    <ul class="sidenav hide-on-large-only center-align" id="mobile-menu">
       <li>
         <!-- Logo de la empresa -->
         <a href="./index.html" class="brand-logo">
@@ -928,11 +1195,11 @@
           Tienda Cellphone</a
         >
       </li>
-      <li><a href="#">Inicio</a></li>
+      <li><a href="./index.html">Inicio</a></li>
       <li>
         <!-- Modal Trigger -->
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1"
-          ><i class="material-icons"></i>Nuevo Producto</a
+        <a class="waves-effect waves-light modal-trigger" href="#modal2"
+          >Nuevo Anuncio</a
         >
       </li>
       <li><a href="#">Carrito</a></li>
