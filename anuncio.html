@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     
     <title>Producto</title>
-</head>
+</head> 
 <body">
   <div class="navbar-fixed">
     <nav>
@@ -23,7 +23,7 @@
           <a href="#" data-target="menu-responsive" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <div class="right container-section">
             <ul class="right hide-on-med-and-down ">
-              <li><a href="inicio.html" class="btn waves-effect waves-light #b71c1c red darken-4">Inicio</a></li>
+              <li><a href="inicio.html" class="btn waves-effect waves-light #b71c1c red darken-4 enable top">Inicio</a></li>
               <li><a href="estadistica.html" class="btn waves-effect waves-light #b71c1c red darken-4">Estadisticas</a></li>
               <!--<li><a href="">Estadisticas  <span class="new badge">4</span></a></li>--->
               <a href= "nuevo.html" class="btn-floating btn-large waves-effect waves-light #b71c1c red darken-4 pulse"><i class="material-icons">add</i></a>
@@ -115,9 +115,8 @@
     document.addEventListener('DOMContentLoaded', function() {
 //      var eles = document.querySelectorAll('.slider');
   //    var intances = M.Slider.init(eles);
-
+    M.AutoInit();
       var elems=document.querySelectorAll('.carousel');
-      M.AutoInit();
       var instances = M.Carousel.init(elems,{
         duration:500,
         indicators:true 
