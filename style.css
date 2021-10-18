@@ -1,0 +1,73 @@
+body{
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #cddfe4, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #cddfe4, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#search {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 75px 8px 10px;
+    border-radius: 5px;
+    margin: 6px
+}
+#search-movil {
+    font-size: 14px;
+    font-weight: 350;
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+    padding: 10px 10px 8px 15px;
+    border-radius: 5px;
+    margin: 6px
+}
+
+#cont2{
+    border-radius: 2.5px;
+}
+
+#filtro{
+    margin-left: 5px; 
+    width: 14%;
+    /* position: fixed; */
+}
+
+.contenido{
+    
+}
+
+.rounded{
+    border-radius: 2.5px;
+}
+
+.rounded0{
+    border-radius: 5px;
+}
+
+.rounded1{
+    border-radius: 10px;
+}
+
+.vertical-centro{
+    display: flex;
+    align-items: center;
+    height: 92px;
+}
+
+.color0 {background-color: #001526;}
+.color1 {background-color: #0a4563;}
+.color2 {background-color: #006b96;}
+.color3 {background-color: #00a8df;}
+.color4 {background-color: #94bee0;}
+
+.color5 {background-color: #102b50;}
+.color6 {background-color: #0c5484;}
+.color7 {background-color: #088dc1;}
+.color8 {background-color: #03d7fb;}
+.color9 {background-color: #0ffff8;}
+.blanco {background-color: #eef2f3;}
