@@ -25,7 +25,7 @@
 
 <body>
     <!--Navegacion-->
-    <nav class="navbar navbar-light navbar-expand-md fixed-top border-bottom border-2" style="background-color: #ff7402"
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #ff7402"
         id="navegacion">
         <div class="container-fluid">
 
@@ -487,7 +487,7 @@
                                 d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm.354-7.646a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
                         </svg>
                         <strong class="mr-auto text-light">Carrito</strong>
-                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close">                            
+                        <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close">
                         </button>
                     </div>
                     <div class="toast-body">
@@ -932,15 +932,87 @@
                             </div>
                         </div>
                     </div>
-
-                    
-
                 </div>
-                <!-- PRODUCTOS -->
+
+                <!-- PAGINADOR -->
+                <div class="row">
+                    <div class="col">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col  d-none d-md-inline">
+                        <div class="d-inline justify-content-center">
+                            <div class="row my-auto align-items-center ms-auto">
+                                <div class="col-auto ms-5">
+                                    <label for="atributo">Articulos por pagina: </label>
+                                </div>
+                                <div class="col-auto">
+                                    <select id="atributo" class="form-select">
+                                        <option selected>20</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>...</option>
+                                        <option>30</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PAGINADOR -->
             </div>
+            <!-- PRODUCTOS -->
+        </div>
     </main>
     <!-- MAIN -->
 
+    <!-- FOOTER -->
+    <div class="row bg-dark text-center">        
+        <div class="col-12 order-1 col-md-6 order-md-2 my-2">
+            <div class="row row-cols-1 text-light">
+                <div class="col text-light font-weight-bolder"> Redes Sociales</div>
+                <div class="col">
+                    <a class="btn rounded-circle facebook text-light p-1" style="height: 2rem;width: 2rem;"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn rounded-circle twitter text-light p-1" style="height: 2rem;width: 2rem;"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn rounded-circle youtube text-light p-1" style="height: 2rem;width: 2rem;"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn rounded-circle instagram p-1" style="height: 2rem;width: 2rem;"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 order-2 col-md-6 order-md-3 my-2">
+            <div class="row row-cols-1 text-light">
+                <div class="col text-light font-weight-bolder">Desarrollador</div>
+                <div class="col">
+                    <p>Carlos Manuel Mendez Medina (MM18018) | mm18018@ues.edu.sv</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
 
 
     <!-- SCRIPTS -->
