@@ -55,8 +55,16 @@
           <!-- Opciones de sitio -->
           <div class="col l5 hide-on-med-and-down">
             <ul class="right">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Estadisticas</a></li>
+              <li>
+                <a href="#" class="waves-effect waves-light btn" id="btn_navbar"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="waves-effect waves-light btn" id="btn_navbar"
+                  >Estadisticas</a
+                >
+              </li>
               <li>
                 <!-- Modal Trigger -->
                 <a
@@ -324,7 +332,6 @@
                               <div class="row center">
                                 <img
                                   class="materialboxed"
-                                  width="120"
                                   src="./img/img1.jpeg"
                                 />
                               </div>
@@ -628,7 +635,7 @@
     </div>
     <div class="row">
       <!-- carousel del producto -->
-      <div class="col m6">
+      <div class="col s10 push-s1 m10 push-m1 l6">
         <div class="carousel carousel-slider">
           <a class="carousel-item" href="#one!"
             ><img src="./img/img1.jpeg"
@@ -644,12 +651,22 @@
           /></a>
         </div>
       </div>
-      <div class="col m6" id="detalle_producto">
-        <div class="row">
-          <h5>Celular a32 6.5" 4gb ram - 128gb negro</h5>
+      <div class="col s12 m12 l6" id="detalle_producto">
+        <div class="row hide-on-med-and-down">
+          <h5>
+            Samsung Galaxy A32 pantalla de 6.5 pulgadas, 128Gb internos, 4Gb de
+            Ram, Nuevo
+          </h5>
         </div>
-        <div class="row"><h4>$140.00</h4></div>
-        <div class="row">
+        <div class="row hide-on-med-and-down"><h4>$140.00</h4></div>
+        <div class="row center hide-on-large-only">
+          <h5>
+            Samsung Galaxy A32 pantalla de 6.5 pulgadas, 128Gb internos, 4Gb de
+            Ram, Nuevo
+          </h5>
+        </div>
+        <div class="row center hide-on-large-only"><h4>$140.00</h4></div>
+        <div class="row hide-on-med-and-down">
           <a class="waves-effect waves-light btn"
             ><i class="material-icons"></i>comprar</a
           >
@@ -676,7 +693,7 @@
         <h4 class="center">Descripcion</h4>
       </div>
       <div class="row">
-        <div class="col m6">
+        <div class="col s12 m12 l6">
           <div class="card">
             <div class="card-content">
               <ul>
@@ -692,7 +709,7 @@
           </div>
         </div>
         <!-- Descripcion del producto -->
-        <div class="col m6">
+        <div class="col s12 m12 l6">
           <div class="card">
             <div class="card-content">
               <p>
@@ -712,6 +729,17 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="row hide-on-large-only">
+        <a
+          href="./producto.html"
+          class="waves-effect waves-light btn"
+          id="fixed_button1"
+          ><i class="material-icons"></i>inicio</a
+        >
+        <a class="waves-effect waves-light btn" id="fixed_button2"
+          ><i class="material-icons"></i>comprar</a
+        >
       </div>
     </div>
 
