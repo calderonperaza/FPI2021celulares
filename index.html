@@ -11,23 +11,41 @@
 <body>
 
 <!----------------------------------------- NAVBAR -------------------------------->
-<nav class="navbar navbar-light bg-light navbar-expand-md border-3 border-bottom border-danger" >
-    <div class="container d-flex">
-      <a class="navbar-brand d-none d-lg-block d-md-block" href="#">
-        <i class='bx bxs-megaphone'></i>
-      </a>
-      <a class="navbar-brand d-none d-md-block d-lg-block" href="#"><span> Tienda Cellphone </span></a>
+  <nav class="navbar navbar-light bg-light border-3 border-bottom border-danger" >
+    <div class="container-fluid">
 
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+      <button type="button" class="navbar-toggler d-lg-none d-md-none" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <a class="navbar-brand d-none d-lg-block d-md-block" style="padding: 1px 1.5px;" href="#">
+        <i class='bx bxs-megaphone'></i>
+        <span> Tienda Cellphone </span>
+      </a>
+      <!-- <a class="navbar-brand d-none d-md-block d-lg-block" href="#"></a> -->
 
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       </form>
 
+      <a href="#" class="navbar-brand d-none d-lg-block d-md-block">
+        Inicio
+      </a>
+      
+      <a href="#" class="navbar-brand d-none d-lg-block d-md-block">
+        Estadisticas
+      </a>
+
+      <a href="#" class="navbar-brand d-none d-lg-block d-md-block">
+        <i class='bx bx-plus-medical'></i>
+      </a>
+
+      <a href="#" class="navbar-brand d-none d-lg-block d-md-block">
+        <i class='bx bxs-cart'></i>
+      </a>
+
       <div id="menuNavegacion" class="collapse navbar-collapse">
-        <ul class="navbar-nav ms-3">
+        <ul class="navbar-nav ms-3 d-lg-none d-md-none">
           <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Nuevo Anuncio</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Carrito</a></li>
