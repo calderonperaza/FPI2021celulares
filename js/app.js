@@ -8,3 +8,8 @@ $(document).ready(function(){
     closeOnClick: false,
     coverTrigger:false
   });
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });

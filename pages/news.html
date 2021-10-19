@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aformat_size%3A" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="light-blue darken-4" role="navigation">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo hide-on-small-only">
+        &nbsp;
+        CellPhone Store
+        <i class="right large material-icons">phone_android</i>
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="large material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <div class="input-field">
+            <i class="material-icons prefix">search</i>
+            <input type="text" id="icon_prefix" class="colorInput" placeholder="Buscar">
+          </div>
+        </li>
+        <li>
+          <a href="../" class="waves-effect waves-light btn green darken-1">
+            <i class="material-icons left">house</i>
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="sass.html" class="waves-effect waves-light btn blue darken-1">
+            <i class="material-icons left">show_chart</i>
+            Estadisticas
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating waves-effect waves-light blue darken-1">
+            <i class="material-icons">add</i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating btn-large waves-effect waves-light red darken-3">
+            <i class=" medium material-icons">add_shopping_cart</i>
+          </a>
+        </li>
+      </ul>
+      <div class="right hide-on-large-only input-field">
+        <i class="material-icons prefix">search</i>
+        <input type="text"" id=" icon_prefix" class="colorInput" placeholder="Buscar">
+      </div>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="sass.html" class="waves-effect waves-light btn btn-large dark darken-1 disabled">
+          Lista de Menu
+        </a>
+      </li>
+      <li>
+        <a href="sass.html" class="waves-effect waves-light btn btn-large green darken-1">
+          <i class="large material-icons left">house</i>
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-large waves-effect waves-light blue darken-1">
+          <i class="large material-icons">add</i>
+          Nuevo Anuncio
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-large waves-effect waves-light red darken-3">
+          <i class="large material-icons">add_shopping_cart</i>
+          Carrito
+        </a>
+      </li>
+      <li>
+        <a href="sass.html" class="waves-effect waves-light btn btn-largeblue darken-1">
+          <i class="large material-icons left">show_chart</i>
+          Estadisticas
+        </a>
+      </li>
+    </ul>
+
+    </div>
+  </nav>
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row">
+        <h3 class="center-align">NUEVO ANUNCIO</h3>
+        <div class="row">
+          <div class="col m5 l5 lx5">
+            <div class="card withe darken-1 alturaAnuncio">
+              <div class="card-action">
+              <form action="#">
+                <p>
+                  <label for="">Estado:</label>
+                  <label>
+                    <input name="group1" type="radio" checked />
+                    <span>Red</span>
+                  </label>
+                  <label>
+                    <input name="group1" type="radio" />
+                    <span>Yellow</span>
+                  </label>
+                </p>
+                <div class="input-field col s12">
+                  <input  id="marca" type="text" class="validate">
+                  <label for="marca">Marca</label>
+                </div>
+                <div class="input-field col s12">
+                  <input  id="modelo" type="text" class="validate">
+                  <label for="modelo">Modelo</label>
+                </div>
+                <div class="input-field col s12">
+                  <input  id="pantalla" type="number" step="any" class="validate">
+                  <label for="pantalla">Pantalla</label><span>Pulgadas</span>
+                </div>
+                <div class="input-field col s6">
+                  <select>
+                    <option value="" >Elige un sistema</option>
+                    <option value="1">IPhone</option>
+                    <option value="2">Android</option>
+                    <option value="3">Android AOSP</option>
+                  </select>
+                  <label>OS</label>
+                </div>
+                <div class="input-field col s12">
+                  <input  id="rom" type="number" step="any" class="validate"><span>Almacenamiento Interno</span>
+                  <label for="rom">Rom</label>
+                </div>
+                <div class="input-field col s12">
+                  <input  id="modelo" type="text" class="validate">
+                  <label for="modelo">Modelo</label>
+                </div>
+              </form>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col m7 l7 xl7"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
