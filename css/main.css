@@ -38,7 +38,7 @@
 }
 
 .text-normal{
-    color: var(--my-secondary);
+    color: var(--my-secondary) !important;
 }
 
 .text-title{
