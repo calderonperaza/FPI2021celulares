@@ -31,7 +31,7 @@
           for=""
           >Tienda CellPhone</label
         >
-        <form class="d-flex" style="width: 30rem">
+        <form class="d-flex">
           <input
             class="form-control me-2 rounded-pill mt-1 first-input input-normal"
             type="search"
@@ -106,7 +106,7 @@
         <div
           class="
             col-3
-            d-xl-block d-md-none d-sm-none d-lg-none d-xs-none
+            d-xl-block d-md-none d-sm-none d-lg-none d-xs-none d-none
             mt-5
             overflow-auto
           "
@@ -204,8 +204,7 @@
                         id="inlineFormInputName2"
                         placeholder="Ordenar por:"
                       />
-                    </div>success
-
+                    </div>
                     <div class="col-6">
                       <select class="form-select" id="inputGroupSelect01">
                         <option selected>Fecha</option>
@@ -298,7 +297,7 @@
 
           <div class="row mt-2">
             <div
-              class="col-6 d-xl-block d-md-none d-sm-none d-lg-none d-xs-none"
+              class="col-6 d-xl-block d-md-none d-sm-none d-lg-none d-none"
             >
               <div class="row">
                 <div class="col">
@@ -331,7 +330,7 @@
             </div>
 
             <div
-              class="col-6 d-xl-block d-md-none d-sm-none d-lg-none d-xs-none"
+              class="col-6 d-xl-block d-md-none d-sm-none d-lg-none d-none"
             >
               <div class="row">
                 <div class="col-5">
@@ -360,7 +359,7 @@
               v-for="(phones,id) in cellPhones" 
               class="col-sm-6 col-lg-3 col-md-4 col-xl-3 mt-2 mb-2"
             >
-              <div class="card shadow  bg-body rounded card-border" style="width: 13rem">
+              <div class="card shadow  bg-body rounded card-border" style="width: 12rem">
                 <img
                   src="assets/imagen"
                   class="card-img-top"
