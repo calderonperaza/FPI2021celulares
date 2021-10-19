@@ -26,113 +26,118 @@
 <body>
 
     <!--Navegacion-->
-    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #ff7402" id="navegacion">
-        <div class="container-fluid">
-
-            <!-- TOGGLER BUTTON -->
-            <button data-bs-toggle="offcanvas" class="navbar-toggler " data-bs-target="#menuNavegacion"
-                aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- TOGGLER BUTTON -->
-
-            <!-- NAVBAR BRAND -->
-            <a class="navbar-brand d-none d-md-inline" href="index.html">
-                <strong>CellPhone Store</strong>
-                <i class="bi bi-phone-fill h4"></i>
-            </a>
-            <!-- NAVBAR BRAND -->
-
-            <!-- BARRA DE BUSQUEDA -->
-            <form class="form-inline col-9 col-sm-auto col-md-3 col-lg-3 col-xl-5 col-xxl-6">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-dark btn-lg pb-0" style="border: 0px;" type="button">
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search h5 text-light"
-                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                                <path fill-rule="evenodd"
-                                    d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                            </svg>
-                        </button>
+    <div class="row fixed-top">
+        <div class="col">
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" style="background-color: #ff7402" id="navegacion">
+                <div class="container-fluid">
+        
+                    <!-- TOGGLER BUTTON -->
+                    <button data-bs-toggle="offcanvas" class="navbar-toggler " data-bs-target="#menuNavegacion"
+                        aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- TOGGLER BUTTON -->
+        
+                    <!-- NAVBAR BRAND -->
+                    <a class="navbar-brand d-none d-md-inline" href="index.html">
+                        <strong>CellPhone Store</strong>
+                        <i class="bi bi-phone-fill h4"></i>
+                    </a>
+                    <!-- NAVBAR BRAND -->
+        
+                    <!-- BARRA DE BUSQUEDA -->
+                    <form class="form-inline col-9 col-sm-auto col-md-3 col-lg-3 col-xl-5 col-xxl-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-dark btn-lg pb-0" style="border: 0px;" type="button">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search h5 text-light"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                        <path fill-rule="evenodd"
+                                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                        </div>
+                    </form>
+                    <!-- BARRA DE BUSQUEDA -->
+        
+                    <!-- NAVBAR ITEMS -->
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav ms-auto" data-toggle="collapse" data-target="#menuNavegacion">
+                            <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
+                                <a class="btn btn-dark" aria-current="page" href="index.html">
+                                    <i class="fas fa-home"></i> Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
+                                <a class="btn btn-dark" href="#">
+                                    <i class="fas fa-chart-line"></i> Estadisticas
+                                </a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
+                                <a class="nav-link btn d-none d-md-inline " data-bs-target="#nuevoAnuncio"
+                                    data-bs-toggle="modal">
+                                    <i class="fa fa-plus-circle" style="font-size: 35px; color: black;"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
+                                <a class="btn btn-dark btn-sm" href="#">
+                                    <i class=" material-icons">add_shopping_cart</i>
+                                    <span
+                                        class="position-absolute mt-3 me-0 translate-middle badge rounded-pill bg-light text-black">
+                                        99+
+                                        <span class="visually-hidden"></span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                    <!-- NAVBAR ITEMS -->
+        
+                    <!-- SIDEBAR -->
+                    <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="menuNavegacion"
+                        aria-labelledby="offcanvasWithBackdropLabel">
+                        <div class="offcanvas-header border-bottom border-2 border-dark" style="background-color: #ff7402;">
+                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+                                <i class="bi bi-phone-fill h1"></i> CellPhone Store
+                            </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body position-sticky bg-gradient bg-secondary bg-opacity-10">
+                            <ul class="nav nav-pills flex-column mb-auto ms-3">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link text-black border-bottom border-1 border-dark"
+                                        style="border-radius: 0px;"> <i class="fas fa-home"></i> Inicio</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-black border-bottom border-1 border-dark"
+                                        style="border-radius: 0px;" data-bs-target="#nuevoAnuncio" data-bs-toggle="modal"><i
+                                            class="fa fa-plus-circle"></i> Nuevo Anuncio</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-black border-bottom border-1 border-dark"
+                                        style="border-radius: 0px;"><i class="fas fa-cart-plus"></i> Carrito</a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-black border-bottom border-1 border-dark"
+                                        style="border-radius: 0px;"><i class="fas fa-chart-line"></i> Estadisticas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- SIDEBAR -->
                 </div>
-            </form>
-            <!-- BARRA DE BUSQUEDA -->
-
-            <!-- NAVBAR ITEMS -->
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav ms-auto" data-toggle="collapse" data-target="#menuNavegacion">
-                    <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
-                        <a class="btn btn-dark" aria-current="page" href="index.html">
-                            <i class="fas fa-home"></i> Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
-                        <a class="btn btn-dark" href="#">
-                            <i class="fas fa-chart-line"></i> Estadisticas
-                        </a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
-                        <a class="nav-link btn d-none d-md-inline " data-bs-target="#nuevoAnuncio"
-                            data-bs-toggle="modal">
-                            <i class="fa fa-plus-circle" style="font-size: 35px; color: black;"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item" style="margin-right: 2.5px; margin-left: 2.5px;">
-                        <a class="btn btn-dark btn-sm" href="#">
-                            <i class=" material-icons">add_shopping_cart</i>
-                            <span
-                                class="position-absolute mt-3 me-0 translate-middle badge rounded-pill bg-light text-black">
-                                99+
-                                <span class="visually-hidden"></span>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- NAVBAR ITEMS -->
-
-            <!-- SIDEBAR -->
-            <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="menuNavegacion"
-                aria-labelledby="offcanvasWithBackdropLabel">
-                <div class="offcanvas-header border-bottom border-2 border-dark" style="background-color: #ff7402;">
-                    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
-                        <i class="bi bi-phone-fill h1"></i> CellPhone Store
-                    </h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body position-sticky bg-gradient bg-secondary bg-opacity-10">
-                    <ul class="nav nav-pills flex-column mb-auto ms-3">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link text-black border-bottom border-1 border-dark"
-                                style="border-radius: 0px;"> <i class="fas fa-home"></i> Inicio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-black border-bottom border-1 border-dark"
-                                style="border-radius: 0px;" data-bs-target="#nuevoAnuncio" data-bs-toggle="modal"><i
-                                    class="fa fa-plus-circle"></i> Nuevo Anuncio</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-black border-bottom border-1 border-dark"
-                                style="border-radius: 0px;"><i class="fas fa-cart-plus"></i> Carrito</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link text-black border-bottom border-1 border-dark"
-                                style="border-radius: 0px;"><i class="fas fa-chart-line"></i> Estadisticas</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- SIDEBAR -->
+            </nav>
         </div>
-    </nav>
+    </div>
+    
     <!-- NAVEGACION -->
 
     <!-- MODAL Y TOAST -->
@@ -501,11 +506,11 @@
     <!-- MODAL Y TOAST -->
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="container mt-5 py-5 bg-light" id="main">
+    <main class="container-fluid" id="main">
         <!-- INFORMACION RESUMEN Y MULTIMEDIA -->
-        <div class="row" id="resumen">
+        <div class="row mt-5 pt-4" id="resumen">
             <!-- CAROUSEL -->
-            <div class="col col-12 col-md-4 offset-md-1">
+            <div class="col col-12 col-md-4 offset-md-1 shadow">
                 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" id="c1">
@@ -553,53 +558,135 @@
                                 Comprar <i class="fa fa-shopping-bag"></i>
                             </button>
                         </div>
-                        <div>
-                            <div class="col-auto d-inline">
+                        <div class="row">
+                            <div class="col-4 d-inline">
                                 <p class="font-weight-bolder col-6 d-inline">
-                                    Vendedor: <span class="text-black-50">Juan Perez</span>
-                                </p>                                
-                            </div>
-                            <div class="col-auto d-inline me-auto">
-                                <p class="font-weight-bolder col-6 d-inline">
-                                    Telefono: <span class="text-black-50">7575-7575</span>
+                                    <strong>Vendedor:</strong> <span class="text-black-50">Juan Perez</span>
                                 </p>
                             </div>
-                        </div>                        
+                            <div class="col-4 d-inline me-auto">
+                                <p class="font-weight-bolder col-6 d-inline">
+                                    <strong>Telefono:</strong> <span class="text-black-50">7575-7575</span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- IFORMACION -->
         </div>
+
+        <div class="row text-center mt-5" id="descripcion">
+            <div class="col d-none d-md -block">
+                <h1><strong>Informacion Tecnica</strong><br></h1>
+            </div>
+        </div>
+        <hr class="w-60 text-dark">
+
+        <!-- INFORMACION TECNICA -->
+        <div class="row pb-5 mb-5">
+            <!-- ESPECIFICACIONES -->
+            <div class="col col-12 col-md-5 offset-md-1">
+                <h4>Especificaciones</h4>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td>Estado:</td>
+                            <td>Nuevo</td>
+                        </tr>
+                        <tr>
+                            <td>Marca:</td>
+                            <td>Samsung</td>
+                        </tr>
+                        <tr>
+                            <td>Modelo:</td>
+                            <td>J6</td>
+                        </tr>
+                        <tr>
+                            <td>Sistema Operativo:</td>
+                            <td>Android 10.0</td>
+                        </tr>
+                        <tr>
+                            <td>Pantalla:</td>
+                            <td>5.6"</td>
+                        </tr>
+                        <tr>
+                            <td>RAM:</td>
+                            <td>4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Almacenamiento:</td>
+                            <td>64 GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- ESPECIFICACIONES -->
+
+            <!-- DESCRIPCION -->
+            <div class="col col-12 col-md-5">
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h4 class="card-title">Descripcion</h4>
+                        <p class="card-text" style="line-height: 29px;">El Samsung Galaxy J6 cuenta con una pantalla
+                            18.5:9 de 5.6 pulgadas a resolución HD+. Por dentro, está potenciado por un procesador
+                            Exynos 7870 Octa con configuraciones de 3GB de RAM y 32GB de almacenamiento o 4GB de RAM y
+                            64GB de almacenamiento. En cuanto a cámaras, el Galaxy J6 cuenta con una posterior de 13
+                            megapixels y una frontal de 8 megapixels, ambas con flash LED. El Galaxy J6 completa sus
+                            características con un lector de huellas, batería de 3000 mAh, y Android 8.0 Oreo.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- DESCRIPCION -->
+        </div>
+        <!-- INFORMACION TECNICA -->
+
+        <!-- BOTONES -->
+        <div class="row d-md-none fixed-bottom" id="comprarFixed">
+            <div class="col text-center fixed-bottom">
+                <a class="btn btn-dark mr-2 mb-2 btn-lg" href="index.html">
+                    <i class="fa fa-home"></i> Inicio
+                </a>
+                <a class="btn btn-danger mb-2 btn-lg" style="background-color: #ff7402;" href="index.html">
+                    <i class="fa fa-shopping-bag"></i> Comprar
+                </a>
+            </div>
+        </div>
+        <!-- BOTONES -->
+
         <!-- INFORMACION RESUMEN Y MULTIMEDIA -->
     </main>
     <!-- CONTENIDO PRINCIPAL -->
 
     <!-- FOOTER -->
-    <div class="row bg-dark text-center">
-        <div class="col-12 order-1 col-md-6 order-md-2 my-2">
-            <div class="row row-cols-1 text-light">
-                <div class="col text-light font-weight-bolder"> Redes Sociales</div>
-                <div class="col">
-                    <a class="btn rounded-circle facebook text-light p-1" style="height: 2rem;width: 2rem;"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a class="btn rounded-circle twitter text-light p-1" style="height: 2rem;width: 2rem;"><i
-                            class="fab fa-twitter"></i></a>
-                    <a class="btn rounded-circle youtube text-light p-1" style="height: 2rem;width: 2rem;"><i
-                            class="fab fa-youtube"></i></a>
-                    <a class="btn rounded-circle instagram p-1" style="height: 2rem;width: 2rem;"><i
-                            class="fab fa-instagram"></i></a>
+    <footer class="container-fluid">
+        <div class="row bg-dark text-center">
+            <div class="col-12 order-1 col-md-6 order-md-1">
+                <div class="row row-cols-1 text-light">
+                    <div class="col text-light font-weight-bolder"> Redes Sociales</div>
+                    <div class="col">
+                        <a class="btn rounded-circle facebook text-light p-1" style="height: 2rem;width: 2rem;"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn rounded-circle twitter text-light p-1" style="height: 2rem;width: 2rem;"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn rounded-circle youtube text-light p-1" style="height: 2rem;width: 2rem;"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn rounded-circle instagram p-1" style="height: 2rem;width: 2rem;"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 order-2 col-md-6 order-md-2">
+                <div class="row row-cols-1 text-light">
+                    <div class="col text-light font-weight-bolder">Desarrollador</div>
+                    <div class="col">
+                        <p>Carlos Manuel Mendez Medina (MM18018) | mm18018@ues.edu.sv</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-12 order-2 col-md-6 order-md-3 my-2">
-            <div class="row row-cols-1 text-light">
-                <div class="col text-light font-weight-bolder">Desarrollador</div>
-                <div class="col">
-                    <p>Carlos Manuel Mendez Medina (MM18018) | mm18018@ues.edu.sv</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
     <!-- FOOTER -->
 
     <!-- SCRIPTS -->
