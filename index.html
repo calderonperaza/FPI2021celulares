@@ -312,7 +312,7 @@
 
         <!--Paginacion-->
         <nav aria-label="Page navigation example" class="my-4">
-          <ul class="pagination">
+          <ul class="pagination ">
             <li class="page-item">
               <a class="btn btn-success" href="#" aria-label="Previous">
                 <span aria-hidden="true">&lsaquo;</span>
@@ -331,8 +331,17 @@
                 <span aria-hidden="true">&rsaquo;</span>
               </a>
             </li>
+            <div class="mx-5">
+              <label for="idSelectArticulos" class="d-none d-lg-inline">Artículos por pagina:</label>
+              <select id="idSelectArticulos" class="form-select w-auto d-none d-lg-inline" >
+                <option selected>25</option>
+                <!--option value="5">5</option-->
+              </select>
+            </div>
           </ul>
+
         </nav>
+        
       </section>
   
     </main>
