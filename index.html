@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+   
+   <!--CSS para paleta de colores-->
     <style>
     ion-icon {
   color: #d5d2c1;
@@ -42,11 +43,13 @@
 <!--navbar-->
   <nav class="navbar navbar-light border-bottom border-5 border-dark" style='background-color: #dfbf9f;'>
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold text-uppercase fs-3 text-dark" href="#">
+    <a class="navbar-brand fw-bold text-uppercase fs-3 text-dark d-none d-lg-block d-xl-block d-sm-none d-md-none" href="#">
       <ion-icon name="home"></ion-icon>
-     Tienda Cellphone
+     Tienda Cellphone FPI
     </a>
-
+     <button class="navbar-toggler d-lg-none secundario" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false">
+        <ion-icon name="menu" size="large"></ion-icon>
+      </button>
      <form class="d-flex">
       <input class="form-control me-2 d-block" type="search" placeholder="Buscar" aria-label="Search">
     </form>
@@ -67,23 +70,23 @@
 
     </button>
 
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <ion-icon name="menu" size="large"></ion-icon>
-      </button>
-
       <div class="collapse navbar-collapse" id="navbarsExample01">
+      <a class="navbar-brand fw-bold text-uppercase fs-3 text-dark " href="#">
+      <ion-icon name="home"></ion-icon>
+         Tienda Cellphone FPI
+      </a>
        <ul class="navbar-nav me-auto mb-2 d-lg-block d-xl-block d-sm-none d-md-none">
-          <li class="nav-item">
-         <a class="nav-link text-secondary" href="#">Inicio</a>
+          <li class="nav-item border">
+         <a class="nav-link text-dark" href="#">Inicio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-secondary" href="#" data-bs-toggle="modal" data-bs-target="#modalNuevoAnuncio">Nuevo Anuncio</a>
+          <li class="nav-item border">
+            <a class="nav-link text-dark" href="#" data-bs-toggle="modal" data-bs-target="#modalNuevoAnuncio">Nuevo Anuncio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-secondary" href="#">Carrito</a>
+          <li class="nav-item border">
+            <a class="nav-link text-dark" href="#">Carrito</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-secondary" href="#">Estadisticas</a>
+          <li class="nav-item border">
+            <a class="nav-link text-dark" href="#">Estadisticas</a>
           </li>
           </ul>
       
@@ -150,8 +153,41 @@
           </div>
           <div class="row bg-light">
              <div class="col">
-             <h6>Imagenes</h6>
+             <label for="formFile" class="form-label">Agregar imagen</label>
+             <input class="form-control" type="file" id="formFile">
+             <table class="table table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">N</th>
+                    <th scope="col">Tamaño</th>
+                    <th scope="col">Tipo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>  
+                    <th scope="row">1</th>
+                    <td>145 kb</td>
+                    <td>jpg</td>
+                    
+                  </tr>
+                  <tr>
+                  <th scope="row">2</th>
+                    <td>145 kb</td>
+                    <td>jpg</td>
+                   
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>145 kb</td>
+                    <td>png</td>
+                  </tr>
+              </tbody>
+            </table>
               
+             </div>
+             <div class='col'>
+             <br><br><br>
+             <img src="cell2.png" class="img-thumbnail" alt="anuncio">
              </div>         
         </div>
 
@@ -168,7 +204,7 @@
 
 </nav>
 
-<!--Live Toast-->
+<!--Live Toast Crear Anuncio-->
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header exito">
@@ -544,9 +580,9 @@
      <a href='#' class='d-sm-inline'> <ion-icon name="logo-instagram" size='large'></ion-icon></ion-icon></a>
      <a href='#' class='d-sm-inline'> <ion-icon name="logo-twitter" size='large'></ion-icon></a>
      <a href='#' class='d-sm-inline'> <ion-icon name="logo-whatsapp" size='large'></ion-icon></a>
-      <p class='fs-6 fw-light text-black-50 text-opacity-50'>Tienda Cellphone S.A de C.V.<br>Blvd de Los Próceres y Calle 1, Col. San Francisco.<br>Centro Comercial Florencia, San Salvador, El Salvador.</p>
+      <p class='fs-6 fw-light text-black-50 text-opacity-50'>Tienda Cellphone FPI S.A de C.V.<br>Blvd de Los Próceres y Calle 1, Col. San Francisco.<br>Centro Comercial Florencia, San Salvador, El Salvador.</p>
      <div class='border-top border-secondary'>
-     <p class='text-start fs-6 fw-light text-black-50 text-opacity-50'>© Tienda Cellphone 2021. Todos los derechos reservados.</p>
+     <p class='text-start fs-6 fw-light text-black-50 text-opacity-50'>© Tienda Cellphone FPI-2021. Todos los derechos reservados.</p>
     </div>
     </div>
   </div>  
@@ -555,16 +591,15 @@
 
 
  
-    <!--libreria ionicon para los iconos -->
-    <script  type= "module"  src= "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+<!--libreria ionicon para los iconos -->
+<script  type= "module"  src= "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
 <script  nomodule  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
 
 <!-- javaScript de Bootstrap-->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
   <!--javaScript para hacer funcionar algunos elementos-->
   <script>
   var toastTriggerCrear = document.getElementById('crearbtn')
