@@ -40,9 +40,95 @@ nav{
 }
 
 #linea1{
-    margin-top: 20 px;
+    margin-top: 20px;
     align-items: center;
 }
 #switchfont{
     color: white;
+}
+
+#switchfont2{
+    color: black;
+}
+
+#padswifill{
+    padding: 2%;
+    padding-left: 22%;
+}
+
+#marca{
+    padding-left: 5%;
+}
+
+#marca1{
+    color: blanchedalmond;
+    padding-left: 3%;
+    padding-bottom: 4%;
+    font-size: 20px;
+    font-family: 'Georama', sans-serif;;
+    font-weight: 900;
+}
+
+#marca2{
+    color: blanchedalmond;
+    padding-left: 3%;
+    padding-bottom: 4%;
+    font-family: 'Georama', sans-serif;;
+    font-weight: 900;
+}
+
+#letrafiller{
+    color: rgb(255, 255, 255);
+}
+
+#filler{
+    padding-left: 10%;
+}
+
+#labi{
+    margin-left:6%;
+    padding-bottom: 3%;
+}
+
+
+#noti{
+    background-color: blueviolet;
+    margin-right: 10%;
+}
+
+#noti2{
+    background-color: rgb(90, 29, 146);
+    margin-right: 10%;
+}
+#noti3{
+    background-color: rgb(26, 5, 46);
+    margin-right: 10%;
+}
+
+#noti4{
+    background-color: rgb(162, 93, 226);
+    margin-right: 10%;
+}
+
+#cont{
+    border-color: black;
+}
+
+#derecho{
+    background-color: red;
+    padding-top: 1%;
+    border-style: solid;
+    border-left: black;
+    border-bottom: black;
+    border-right: black;
+}
+
+#izquierdo{
+    border-style: solid;
+    border-left: black;
+    background-color: #4c2882;
+    padding-top: 1%;
+    overflow-y: scroll ;
+    width: 300px;
+    height: 450px;
 }

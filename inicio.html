@@ -75,47 +75,69 @@
     </ul>
 
     <style media="screen">
+        @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
         #shiw {
             width: 90%;
             padding-top: 1%;
-            margin-left: 5%;
-            justify-content: center;
-            align-items: center;
+            margin-left: 15%;
         }
 
-        #price{
+        #price {
             padding-top: 6%;
             display: flex;
             justify-content: center;
             align-content: center;
             color: white;
         }
-        #sw{
+
+        #sw {
             padding-top: 2%;
             display: flex;
             justify-content: center;
             align-content: center;
-        
+            padding-bottom: 4%;
+
         }
 
-        #filter{
-            padding-top:1.5% ;
+        #textff {
+            color: white;
+            font-size: 16px;
+            font-family: Arial;
+            padding-top: 12%;
         }
 
+        #btf {
+            padding: 3%;
+        }
+
+        #filter {
+            padding-top: 1.5%;
+        }
+
+        #celfil {
+            margin-left: 1%;
+            border-style: solid;
+            border-color: rgb(58, 58, 58);
+        }
+
+        #btfill {
+            padding: 3%;
+            padding-left: 16%;
+        }
+
+        #btfil {
+            color: white;
+            background-color: #9575cd;
+            border-style: solid;
+            border-color: rgb(58, 58, 58);
+
+        }
     </style>
 
-    <div id="shiw" class="container-fluid">
+    <div id="shiw" class="container-fluid hide-on-med-and-down">
         <div class="row">
-            <div id="sw" class="col l3">
-                <div class="switch">
-                    <label id='switchfont'>
-                        Usado
-                        <input type="checkbox">
-                        <span class="lever deep-purple accent-1"></span>
-                        Nuevo
-                    </label>
-                </div>
-            </div>
+
             <div class="col l5">
                 <div class="container">
                     <div class="row auto">
@@ -161,11 +183,281 @@
         </div>
     </div>
 
+
+    <div class="container-fluid hide-on-med-and-down">
+        <div id="izqcon" class=" container-fluid row">
+            <div id="izquierdo" class=" container-fluid col s3">
+                <!-- Grey navigation panel -->
+                <ul>
+                    <li>
+                        <div id="marca1" class="col s12">Más filtros</div>
+                    </li>
+                    <li>
+                        <div id="sw" class="col s12">
+                            <div class="switch">
+                                <label id='switchfont'>
+                                    Usado
+                                    <input type="checkbox">
+                                    <span class="lever deep-purple accent-1"></span>
+                                    Nuevo
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="marca2" class="col s12">MARCA</div>
+                    </li>
+                    <li>
+                        <ul>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7 ">Samsung</span>
+                                    <span id="noti4" class="new badge s2" data-badge-caption="">1</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Huawei</span>
+                                    <span id="noti4" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Nokia</span>
+                                    <span id="noti4" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">iPhone</span>
+                                    <span id="noti4" class="new badge s4" data-badge-caption="">3</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Xiaomi</span>
+                                    <span id="noti4" class="new badge s4" data-badge-caption="">1</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div id="marca2" class="col s12">SISTEMA</div>
+                    </li>
+                    <li>
+                        <ul>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7 ">Android</span>
+                                    <span id="noti" class="new badge s2" data-badge-caption="">1</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Windows</span>
+                                    <span id="noti" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Ios</span>
+                                    <span id="noti" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div id="marca2" class="col s12">PANTALLA</div>
+                    </li>
+                    <li>
+                        <ul>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7 ">6.0</span>
+                                    <span id="noti3" class="new badge s2" data-badge-caption="">1</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">5.5</span>
+                                    <span id="noti3" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">5.0</span>
+                                    <span id="noti3" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="derecho" class="col s9">
+                <!-- Teal page content  -->
+                its me
+            </div>
+
+        </div>
     </div>
 
 
 
+
+
+
+    <div id="filpho" class="container-fluid hide-on-med-and-up">
+        <div class="row">
+            <div id="celfil" class="col s7 deep-purple lighten-2">
+                <div id="texf" class="col auto">
+                    <label id="textff" class="col auto">Ordenar por:</label>
+                </div>
+                <div id="btf" class="col auto">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger deep-purple accent-1 btn' href='#' data-target='dropdown3'>Elije aqui</a>
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown3' class='dropdown-content'>
+                        <li><a href="#!"><i class="small material-icons inline">arrow_upward</i>Precio</a></li>
+                        <li><a href="#!"><i class="small material-icons inline">arrow_downward</i>Precio</a></li>
+                        <li><a href="#!">Más recientes</a></li>
+                        <li><a href="#!">Menos recientes</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div id="btfill" class="col s4 ">
+                <a href="#" data-target="menu-responsive2" class="sidenav-trigger">
+                    <i id="btfil" class="small material-icons">filter_alt</i>
+                </a>
+            </div>
+        </div>
+
     </div>
+
+    <ul class="sidenav deep-purple accent-1" id="menu-responsive2">
+        <li>
+            <div id="padswifill" class="switch">
+                <label id='switchfont2'>
+                    USADO
+                    <input type="checkbox">
+                    <span class="lever deep-purple accent-3"></span>
+                    NUEVO
+                </label>
+            </div>
+        </li>
+        <li>
+            <div id="marca" class="col auto disabled">MARCA</div>
+        </li>
+        <li>
+            <ul id="filler">
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Samsung</span>
+                        <span id="noti" class="new badge" data-badge-caption="">1</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Huawei</span>
+                        <span id="noti" class="new badge" data-badge-caption="">2</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Nokia</span>
+                        <span id="noti" class="new badge" data-badge-caption="">2</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Iphone</span>
+                        <span id="noti" class="new badge" data-badge-caption="">3</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Xiaomi</span>
+                        <span id="noti" class="new badge" data-badge-caption="">1</span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div id="marca" class="col auto disabled">SISTEMA</div>
+        </li>
+        <li>
+            <ul id="filler">
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Android</span>
+                        <span id="noti2" class="new badge" data-badge-caption="">4</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Windows</span>
+                        <span id="noti2" class="new badge" data-badge-caption="">2</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Ios</span>
+                        <span id="noti2" class="new badge" data-badge-caption="">3</span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li></li>
+        <li>
+            <div id="marca" class="col auto disabled">PANTALLA</div>
+        </li>
+        <li>
+            <ul id="filler">
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">6.0</span>
+                        <span id="noti3" class="new badge" data-badge-caption="">3</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">5.5</span>
+                        <span id="noti3" class="new badge" data-badge-caption="">4</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">5.0</span>
+                        <span id="noti3" class="new badge" data-badge-caption="">2</span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
 
 
 
