@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Samsung Galaxy</title>
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Mis estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="row">
+      <!-- Menu principal -->
+      <nav class="nav-wrapper red darken-4">
+        <div class="row">
+          <div class="col l2">
+            <!-- Logo de la empresa -->
+            <a href="./index.html" class="brand-logo hide-on-med-and-down">
+              <i class="material-icons">phone_iphone</i>
+              Tienda Cellphone</a
+            >
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+          </div>
+          <!-- Barra de busqueda -->
+          <div class="input-field col l5">
+            <ul>
+              <li>
+                <a class="waves-effect waves-light btn"
+                  ><i class="material-icons">search</i></a
+                >
+              </li>
+              <li>
+                <input
+                  id="search"
+                  placeholder="Search"
+                  type="text"
+                  class="white"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Opciones de sitio -->
+          <div class="col l5 hide-on-med-and-down">
+            <ul class="right">
+              <li>
+                <a href="#" class="waves-effect waves-light btn" id="btn_navbar"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="waves-effect waves-light btn" id="btn_navbar"
+                  >Estadisticas</a
+                >
+              </li>
+              <li>
+                <!-- Modal Trigger -->
+                <a
+                  class="waves-effect waves-light btn-floating modal-trigger"
+                  href="#modal1"
+                  ><i class="material-icons">add</i></a
+                >
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <h4 class="black-text center">Nuevo producto</h4>
+                    <div class="row">
+                      <div class="col m6">
+                        <div class="row">
+                          <div class="card">
+                            <div class="card-content">
+                              <form action="#">
+                                <!-- Formulario de nuevo producto en large -->
+                                <table>
+                                  <!-- Estado del nuevo producto -->
+                                  <tr>
+                                    <td>
+                                      <label class="black-text" id="label_modal"
+                                        >Estado:
+                                      </label>
+                                    </td>
+                                    <td>
+                                      <label>
+                                        <input
+                                          name="group1"
+                                          type="radio"
+                                          checked
+                                        />
+                                        <span>Nuevo</span>
+                                      </label>
+                                      <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Usado</span>
+                                      </label>
+                                    </td>
+                                  </tr>
+                                  <!-- marca del nuevo producto -->
+                                  <tr>
+                                    <td>
+                                      <label class="black-text" id="label_modal"
+                                        >Marca:
+                                      </label>
+                                    </td>
+                                    <td>
+                                      <input
+                                        type="text"
+                                        class="validate"
+                                        placeholder="Marca"
+                                        id="form_nuevoproducto"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <!-- modelo del nuevo producto -->
+                                  <tr>
+                                    <td>
+                                      <label class="black-text" id="label_modal"
+                                        >Modelo:
+                                      </label>
+                                    </td>
+                                    <td>
+                                      <input
+                                        type="text"
+                                        class="validate"
+                                        placeholder="Modelo"
+                                        id="form_nuevoproducto"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <!-- Pantalla del nuevo producto -->
+                                  <tr>
+                                    <td>
+                                      <label class="black-text" id="label_modal"
+                                        >Pantalla:
+                                      </label>
+                                    </td>
+                                    <td>
+                                      <input
+                                        type="text"
+                                        class="validate"
+                                        placeholder="Pantalla"
+                                        id="form_nuevoproducto"
+                                      />
+                                    </td>
+                                    <td><label>pulgadas</label></td>
+                                  </tr>
+                                  <!-- Sistema del nuevo producto -->
+                                  <tr>
+                                    <td>
+                                      <label class="black-text" id="label_modal"
+                                        >Sistema:
+                                      </label>
+                                    </td>
+                                    <td>
+                                      <select id="form_nuevoproducto">
+                                        <option value="1">Ios</option>
+                                        <option value="2">Android</option>
+                                        <option value="3">Windows</option>
+                                      </select>
+                                    </td>
+                                  </tr>
+                                  <!-- ROM del nuevo producto -->
+                                  <tr>
+                                    <td>
+                                      <label class="black-text" id="label_modal"
+                                        >ROM:
+                                      </label>
+                                    </td>
+                                    <td>
+                                      <input
+                                        type="text"
+                                        class="validate"
+                                        placeholder="ROM"
+                                        id="form_nuevoproducto"
+                                      />
+                                    </td>
+                                    <td>
+                                      <label>Alm. Interno</label>
+                                    </td>
+                                  </tr>
+                                  <!-- RAM del producto -->
+                                  <tr>
+                                    <td>
+                                      <label class="black-text" id="label_modal"
+                                        >RAM:
+                                      </label>
+                                    </td>
+                                    <td>
+                                      <input
+                                        type="text"
+                                        class="validate"
+                                        placeholder="RAM"
+                                        id="form_nuevoproducto"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- info del producto -->
+                      <div class="col m6" id="nuevoProducto">
+                        <div class="row">
+                          <h5 class="black-text">Titulo breve del producto</h5>
+                        </div>
+                        <div class="row">
+                          <input
+                            type="text"
+                            class="validate"
+                            placeholder="Titulo del producto"
+                            id="titulo_producto"
+                          />
+                        </div>
+                        <!-- nombre del vendedor -->
+                        <div class="row">
+                          <label class="black-text" id="label_modal"
+                            >Vendedor:
+                          </label>
+                          <input
+                            type="text"
+                            class="validate"
+                            placeholder="Nombre Apellido"
+                            id="nombre_vendedor"
+                          />
+                        </div>
+                        <!-- Telefono del vendedor -->
+                        <div class="row">
+                          <label class="black-text" id="label_modal"
+                            >Telefono:
+                          </label>
+                          <input
+                            type="tel"
+                            class="validate"
+                            placeholder="0000-0000"
+                            id="telefono"
+                          />
+                        </div>
+                        <!-- Decripcion del nuevo producto -->
+                        <div class="row">
+                          <label class="black-text" id="label_modal"
+                            >Descripcion:
+                          </label>
+                        </div>
+                        <div class="row center">
+                          <textarea
+                            id="text_descrip"
+                            cols="30"
+                            rows="10"
+                          ></textarea>
+                        </div>
+                        <!-- precio del nuevo producto -->
+                        <div class="row">
+                          <div class="col m1"></div>
+                          <div class="card col m5">
+                            <div class="card-content">
+                              <h6 class="black-text">Precio</h6>
+                              <input
+                                type="text"
+                                class="validate"
+                                placeholder="$"
+                                id="nuevo_precio"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- imagenes en nuevo producto -->
+                    <div class="row">
+                      <div class="card col m8">
+                        <div class="card-content">
+                          <div class="row">
+                            <h5 class="black-text center">Imagenes</h5>
+                          </div>
+                          <div class="row">
+                            <div class="col m2">
+                              <div class="row">
+                                <a class="waves-effect waves-light btn-floating"
+                                  ><i class="material-icons center">add</i></a
+                                >
+                              </div>
+                              <div class="row">
+                                <a class="waves-effect waves-light btn-floating"
+                                  ><i class="material-icons center"
+                                    >remove</i
+                                  ></a
+                                >
+                              </div>
+                            </div>
+                            <div class="col m5 push-m1">
+                              <div class="row">
+                                <table class="black-text">
+                                  <tr>
+                                    <th>N</th>
+                                    <th>Tamano</th>
+                                    <th>Tipo</th>
+                                  </tr>
+                                  <tr>
+                                    <td>1.</td>
+                                    <td>145 Kb</td>
+                                    <td>jpg</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2.</td>
+                                    <td>145 Kb</td>
+                                    <td>jpg</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3.</td>
+                                    <td>145 Kb</td>
+                                    <td>jpg</td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="col m5 push-m1">
+                              <div class="row center">
+                                <img
+                                  class="materialboxed"
+                                  src="./img/img1.jpeg"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col m4">
+                        <a
+                          class="modal-close waves-effect waves-light btn"
+                          id="btn_nuevoProduc"
+                          ><i class="material-icons left">cancel</i>cancelar</a
+                        >
+                        <a
+                          class="modal-close waves-effect waves-light btn"
+                          id="btn_nuevoProduc"
+                          onclick="M.toast({html: 'Se a guardado el producto'})"
+                          ><i class="material-icons left">save</i>crear</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <!-- carrito de compra -->
+                <a href="#"><i class="material-icons">shopping_cart</i></a>
+              </li>
+              <li><label class="white-text">0</label></li>
+            </ul>
+          </div>
+          <div class="col m6 hide-on-large-only">
+            <!-- modal en medium y small -->
+            <div id="modal2" class="modal">
+              <div class="modal-content">
+                <div class="row">
+                  <h4 class="black-text center">Nuevo producto</h4>
+                </div>
+                <!-- agregar imagen en medium y small -->
+                <div class="row">
+                  <div class="col s12 m12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="row">
+                          <div class="col s6 m6 push-s4 push-m4">
+                            <form action="#">
+                              <div class="file-field input-field">
+                                <div class="row">
+                                  <div class="btn" id="add_photo">
+                                    <span
+                                      ><i class="material-icons"
+                                        >add_to_photos</i
+                                      ></span
+                                    >
+                                    <span> Agregar foto</span>
+
+                                    <input type="file" />
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col s5 m4 push-s4 push-m4">
+                            <div class="file-path-wrapper">
+                              <input class="file-path validate" type="text" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Titulo del produc. en med. y small -->
+                <div class="row">
+                  <div class="col s12 m12">
+                    <div class="card">
+                      <div class="card-content">
+                        <div class="row">
+                          <h5 class="black-text">Titulo</h5>
+                        </div>
+                        <div class="row">
+                          <input
+                            type="text"
+                            class="validate"
+                            placeholder="Titulo del producto"
+                            id="titulo_producto"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- precio en med. y small -->
+                <div class="row">
+                  <div class="col s5 push-s2 m5 push-m2">
+                    <h5 class="black-text">Precio</h5>
+                    <input
+                      type="text"
+                      class="validate"
+                      placeholder="$"
+                      id="nuevo_precio"
+                    />
+                  </div>
+                </div>
+                <!-- Vendedor en med. y small -->
+                <div class="row">
+                  <div class="col s8 m8">
+                    <label class="black-text" id="label_modal"
+                      >Vendedor:
+                    </label>
+                    <input
+                      type="text"
+                      class="validate"
+                      placeholder="Nombre Apellido"
+                      id="nombre_vendedor"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- telefono en med. y small -->
+                  <div class="col s8 m8">
+                    <label class="black-text" id="label_modal"
+                      >Telefono:
+                    </label>
+                    <input
+                      type="tel"
+                      class="validate"
+                      placeholder="0000-0000"
+                      id="telefono"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- form de nuevo producto en med. y small -->
+                  <div class="col s12 m12">
+                    <div class="card">
+                      <div class="card-content">
+                        <form action="#">
+                          <!-- Formulario de nuevo producto en large -->
+                          <table>
+                            <!-- Estado del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Estado:
+                                </label>
+                              </td>
+                              <td>
+                                <label>
+                                  <input name="group1" type="radio" checked />
+                                  <span>Nuevo</span>
+                                </label>
+                                <label>
+                                  <input name="group1" type="radio" />
+                                  <span>Usado</span>
+                                </label>
+                              </td>
+                            </tr>
+                            <!-- marca del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Marca:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="Marca"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                            </tr>
+                            <!-- modelo del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Modelo:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="Modelo"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                            </tr>
+                            <!-- Pantalla del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Pantalla:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="Pantalla"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                              <td><label>pulgadas</label></td>
+                            </tr>
+                            <!-- Sistema del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >Sistema:
+                                </label>
+                              </td>
+                              <td>
+                                <select id="form_nuevoproducto">
+                                  <option value="1">Ios</option>
+                                  <option value="2">Android</option>
+                                  <option value="3">Windows</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <!-- ROM del nuevo producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >ROM:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="ROM"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                              <td>
+                                <label>Alm. Interno</label>
+                              </td>
+                            </tr>
+                            <!-- RAM del producto -->
+                            <tr>
+                              <td>
+                                <label class="black-text" id="label_modal"
+                                  >RAM:
+                                </label>
+                              </td>
+                              <td>
+                                <input
+                                  type="text"
+                                  class="validate"
+                                  placeholder="RAM"
+                                  id="form_nuevoproducto"
+                                />
+                              </td>
+                            </tr>
+                          </table>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- descripcion del produc. en med. y small -->
+                  <div class="col s12 m12">
+                    <div class="row">
+                      <label class="black-text" id="label_modal"
+                        >Descripcion:
+                      </label>
+                    </div>
+                    <div class="row center">
+                      <textarea
+                        id="text_descrip"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <a
+                    class="modal-close waves-effect waves-light btn"
+                    id="btn_nuevoProduc"
+                    >cancelar</a
+                  >
+                  <a
+                    class="modal-close waves-effect waves-light btn"
+                    id="btn_nuevoProduc"
+                    onclick="M.toast({html: 'Se a guardado el producto'})"
+                    >crear anuncio</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row">
+      <!-- carousel del producto -->
+      <div class="col s10 push-s1 m10 push-m1 l6">
+        <div class="carousel carousel-slider">
+          <a class="carousel-item" href="#one!"
+            ><img src="./img/img1.jpeg"
+          /></a>
+          <a class="carousel-item" href="#two!"
+            ><img src="./img/img2.jpeg"
+          /></a>
+          <a class="carousel-item" href="#three!"
+            ><img src="./img/img3.jpeg"
+          /></a>
+          <a class="carousel-item" href="#four!"
+            ><img src="./img/img4.jpeg"
+          /></a>
+        </div>
+      </div>
+      <div class="col s12 m12 l6" id="detalle_producto">
+        <div class="row hide-on-med-and-down">
+          <h5>
+            Samsung Galaxy A32 pantalla de 6.5 pulgadas, 128Gb internos, 4Gb de
+            Ram, Nuevo
+          </h5>
+        </div>
+        <div class="row hide-on-med-and-down"><h4>$140.00</h4></div>
+        <div class="row center hide-on-large-only">
+          <h5>
+            Samsung Galaxy A32 pantalla de 6.5 pulgadas, 128Gb internos, 4Gb de
+            Ram, Nuevo
+          </h5>
+        </div>
+        <div class="row center hide-on-large-only"><h4>$140.00</h4></div>
+        <div class="row hide-on-med-and-down">
+          <a class="waves-effect waves-light btn"
+            ><i class="material-icons"></i>comprar</a
+          >
+        </div>
+        <div class="row">
+          <div class="card">
+            <div class="card-content">
+              <div class="row center">
+                <div class="col m6">
+                  <p>Vendedor: Juan Perez</p>
+                </div>
+                <div class="col m6">
+                  <p>Telefono: 7374-2312</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Datos del producto -->
+      <div class="row">
+        <h4 class="center">Descripcion</h4>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l6">
+          <div class="card">
+            <div class="card-content">
+              <ul>
+                <li><span>Estado: Nuevo</span></li>
+                <li><span>Marca: Samsung</span></li>
+                <li><span>Modelo: Galaxy A32</span></li>
+                <li><span>Pantalla: 6.4 pulgadas</span></li>
+                <li><span>Sistema: Android</span></li>
+                <li><span>ROM: 128 GB</span></li>
+                <li><span>RAM: 4 GB</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Descripcion del producto -->
+        <div class="col s12 m12 l6">
+          <div class="card">
+            <div class="card-content">
+              <p>
+                El Samsung Galaxy A32 es la contraparte 4G del smartphone del
+                mismo nombre lanzado poco antes. El Galaxy A32 cuenta con una
+                pantalla Infinity-U Super AMOLED de 6.4 pulgadas a resolución
+                Full HD+, y potenciado por un procesador Mediatek Helio G80 con
+                4GB de memoria RAM y 128GB de almacenamiento interno expandible.
+                En cuanto a cámaras, el Galaxy A32 cuenta con una cámara
+                cuádruple en su posterior, con lentes de 64MP, 8MP, 5MP y 5MP, y
+                su cámara frontal para selfies es de 20 megapixels. Completando
+                las características del Galaxy A32 encontramos una batería de
+                5000 mAh de carga rápida, lector de huellas integrado en
+                pantalla, vidrio reforzado Gorilla Glass 5 tanto al frente como
+                en su dorsal y One UI 3.0 basado en Android 11.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row hide-on-large-only">
+        <a
+          href="./producto.html"
+          class="waves-effect waves-light btn"
+          id="fixed_button1"
+          ><i class="material-icons"></i>inicio</a
+        >
+        <a class="waves-effect waves-light btn" id="fixed_button2"
+          ><i class="material-icons"></i>comprar</a
+        >
+      </div>
+    </div>
+
+    <!-- Menu de celular -->
+    <ul class="sidenav hide-on-large-only center-align" id="mobile-menu">
+      <li>
+        <!-- Logo de la empresa -->
+        <a href="./index.html" class="brand-logo">
+          <i class="material-icons">phone_iphone</i>
+          Tienda Cellphone</a
+        >
+      </li>
+      <li><a href="./index.html">Inicio</a></li>
+      <li>
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light modal-trigger" href="#modal2"
+          >Nuevo Anuncio</a
+        >
+      </li>
+      <li><a href="#">Carrito</a></li>
+      <li><a href="#">Estadisticas</a></li>
+    </ul>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      //   opciones del sidenav
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+      });
+
+      //   opciones del modal
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems);
+      });
+
+      // opciones de los select
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll("select");
+        var instances = M.FormSelect.init(elems);
+      });
+
+      // materialbox del modal
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".materialboxed");
+        var instances = M.Materialbox.init(elems);
+      });
+
+      //   opciones del carousel
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel");
+        var instances = M.Carousel.init(elems, {
+          indicators: true,
+        });
+      });
+    </script>
+  </body>
+</html>

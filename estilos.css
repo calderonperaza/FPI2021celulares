@@ -1,0 +1,207 @@
+/* Logo */
+nav div div a {
+  font-size: 16px !important;
+}
+
+/* tamaño de fuente de las categorias */
+div label span {
+  font-size: 16px !important;
+}
+
+body {
+  background-color: #fd7b7b;
+}
+
+/* barra de busqueda */
+#search {
+  width: 100% !important;
+}
+
+/* select de productos por pagina */
+#produc_por_pagina {
+  background-color: white;
+}
+
+/* btn navbar */
+#btn_navbar {
+  font-size: 10px !important;
+}
+
+/* borde para img de productos */
+
+.card-image {
+  border: 3px solid black;
+}
+
+/* borde para card-content */
+.card-content {
+  border: 3px solid black;
+}
+
+/* menu ordenar por en large y medium */
+#precio {
+  width: 100px !important;
+}
+
+#hasta {
+  width: 100px !important;
+}
+
+/* card ordenar por */
+#ordenar_por {
+  height: 100px;
+}
+
+/* labels del form_modal */
+#label_modal {
+  font-size: 16px;
+}
+
+/* formulario del nuevo producto */
+/* input del titulo del nuevo producto */
+#titulo_producto {
+  width: 95% !important;
+}
+
+/* input del nombre vendedor */
+#nombre_vendedor {
+  width: 60% !important;
+}
+
+/* input de telefono */
+#telefono {
+  width: 45% !important;
+}
+
+/* textarea de descripcion del producto*/
+#text_descrip {
+  height: 50% !important;
+  width: 75% !important;
+}
+
+/* input de precio */
+#nuevo_precio {
+  width: 100% !important;
+}
+
+#nuevoProducto {
+  padding: 30px !important;
+}
+
+/* categorias en small */
+#btn_categorias {
+  margin-top: 20px !important;
+}
+
+/* inputs del form de nuevo producto */
+#form_nuevoproducto {
+  width: 75% !important;
+}
+
+/* btn cancelar y crear del nuevo producto */
+#btn_nuevoProduc {
+  font-size: 11px !important;
+}
+
+/* estilos de "Descripcion del producto" */
+
+/* button add photo */
+#add_photo {
+  height: 125px;
+  border: 25% !important;
+}
+
+#detalle_producto {
+  padding: 50px !important;
+}
+
+/* imagen del modal en large */
+.materialboxed {
+  width: 75%;
+}
+
+/* mensaje de guardado */
+.toast {
+  background-color: #800020;
+}
+
+/* botones de la pagina */
+.btn {
+  background-color: #dc143c;
+}
+
+.btn-floating {
+  background-color: #dc143c;
+}
+
+/* fixed buttons de comprar e inicio en celulares */
+#fixed_button1 {
+  position: fixed;
+  bottom: 0;
+  right: 50%;
+  width: 110px;
+}
+
+#fixed_button2 {
+  position: fixed;
+  bottom: 0;
+  right: 20%;
+  width: 110px;
+}
+
+/* color de los checkbox */
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  border: 2px solid #9f0a2f;
+  background-color: #9f0a2f;
+}
+
+/* color del switch */
+.switch label input[type="checkbox"]:checked + .lever {
+  background-color: #f14d6e;
+}
+
+.switch label input[type="checkbox"]:checked + .lever:after {
+  background-color: #9f0a2f;
+}
+
+/* ancho del dropdown en medium y small */
+.dropdown-content {
+  padding-top: 20px !important;
+  width: 35%;
+}
+
+/* btn dropdown */
+.dropdown-trigger {
+  margin-top: 10px !important;
+}
+
+/* borde para las categorias en med y small */
+.dropdown-content li {
+  border-bottom: 3px solid black;
+}
+
+/* pagination */
+.pagination li.active {
+  background-color: #9f0a2f;
+}
+
+/* color del radio button */
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid #9f0a2f;
+}
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: #9f0a2f;
+}
+
+.sidenav {
+  background-color: #ff7676;
+}
+
+.sidenav li {
+  float: none;
+  line-height: 48px;
+  border-bottom: 4px solid #9f0a2f;
+}
