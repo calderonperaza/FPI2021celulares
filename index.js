@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
     let cardsTelefonos = document.getElementById('cardsTelefonos');
 
     let partes = '';
@@ -13,11 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="card-text">
                     Iphone 12 Pro Max
                     Super Retina XDR
-                    OLED de 6,7"
-                    128GB
-                    FullHD+ a 2.778 x 1.184
+                    OLED de 6.7",
+                    128GB,
                     12 Megapixeles
-                    458 ppp
                     </p>
                 </div>
             </div>
@@ -27,13 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="./imagenes/iphone12pro.jpg" class="card-img-top" alt="..." style="height: 200px;">
                 <div class="card-body text-center">
                     <h5 class="card-title">$1102.00</h5>
-                    <p class="card-text">Iphone 12 Pro Max
+                    <p class="card-text">
+                    Iphone 12 Pro Max
                     Super Retina XDR
-                    OLED de 6,7"
-                    128GB
-                    FullHD+ a 2.778 x 1.184
+                    OLED de 6.7",
+                    128GB,
                     12 Megapixeles
-                    458 ppp
                     </p>
                 </div>
             </div>
@@ -41,4 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
             `
 }
 cardsTelefonos.innerHTML = partes;
-})
+});
