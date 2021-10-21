@@ -17,9 +17,9 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <div class="d-flex align-items-center w-100">
-                    <a href="#" class="d-flex d-lg-none p-2 ps-0 me-3" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <button href="#" class="btn btn-primary d-flex d-lg-none p-2 me-3" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                         <ion-icon class="fs-3" name="menu"></ion-icon>
-                    </a>
+                    </button>
                     <a class="d-none d-lg-flex me-3" href="index.html">
                         <img src="img/logo.png" width="142" alt="Cartzilla">
                     </a>
@@ -28,7 +28,7 @@
                         <ion-icon class="position-absolute top-50 end-0 translate-middle-y me-3" name="search"></ion-icon>
                     </div>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarToggler">
+                <div class="collapse navbar-collapse" id="menu">
                     <a class="d-flex my-4 d-lg-none" href="index.html">
                         <img src="img/logo.png" width="142" alt="Logo">
                     </a>
@@ -55,15 +55,58 @@
             </div>
         </nav>
 
-        <main class="mt-5">
+        <main class="mt-4">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3">
-    
-                    </div>
+                    <aside class="col-lg-3 px-lg-5">
+                        <div class="d-flex justify-content-end d-lg-none mb-2">
+                            <button href="#" class="btn btn-primary d-flex p-2" data-bs-toggle="collapse" data-bs-target="#categories-menu" aria-controls="categories-menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <ion-icon class="fs-3" name="filter"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="widget collapse d-lg-block" id="categories-menu">
+                            <h3 class="widget-title mb-3">Brands</h3>
+                            <div class="widget-list p-0 m-0">
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Apple">
+                                        <label class="form-check-label widget-item-label" for="Apple">Apple</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">425</span>
+                                </a>
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Huawei">
+                                        <label class="form-check-label widget-item-label" for="Huawei">Huawei</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">15</span>
+                                </a>
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Nokia">
+                                        <label class="form-check-label widget-item-label" for="Nokia">Nokia</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">18</span>
+                                </a>
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Samsung">
+                                        <label class="form-check-label widget-item-label" for="Samsung">Samsung</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">103</span>
+                                </a>
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Xiaomi">
+                                        <label class="form-check-label widget-item-label" for="Xiaomi">Xiaomi</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">27</span>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
                     <div class="col-lg-9">
-                        <div class="row">
-
+                        <div class="row mt-4 mt-lg-0">   
                             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                                 <div class="card card-product">
                                     <img src="img/1.jpg" class="rounded" alt="Product">

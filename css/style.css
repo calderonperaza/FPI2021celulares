@@ -7,7 +7,7 @@ a {
     text-decoration: none;
 }
 
-input.form-control:focus, select.form-select:focus, input.form-check-input:focus {
+input.form-control:focus, select.form-select:focus, input.form-check-input:focus, button.btn:focus {
     box-shadow: none;
 }
 
@@ -21,4 +21,16 @@ input.form-control:focus, select.form-select:focus, input.form-check-input:focus
 
 .card-product .product-star-rating ion-icon.active {
     color: #fea569;
+}
+
+.widget .widget-title {
+    font-size: 17px;
+}
+
+.widget-list .widget-item .widget-item-label {
+    font-size: 14px;
+}
+
+.widget-list .widget-item .widget-item-text {
+    font-size: 12px;
 }
