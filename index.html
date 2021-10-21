@@ -162,6 +162,58 @@
               <div class="row my-2 border bg-light text-dark  fw-bold">
                 <fieldset class="border">
                   <legend>Imagenes</legend>
+                  <div class="row">
+                    <div class="col-4 w-auto">
+                      <input class="form-control w-auto m-2" type="file">
+                      <button type="file" class="btn btn-primary m-2 d-block rounded-pill"><i class="bi bi-plus-circle"></i></button>
+                      <button type="file" class="btn btn-danger m-2 d-block rounded-pill"><i class="bi bi-dash-circle"></i></button>
+                      
+                    </div>
+
+                    
+
+                    <div class="col-4 w-auto">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">N</th>
+                            <th scope="col">Tamaño</th>
+                            <th scope="col">Tipo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>145 kb</td>
+                            <td>jpg</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>145 kb</td>
+                            <td>png</td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>145 kb</td>
+                            <td>png</td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>145 kb</td>
+                            <td>jpg</td>
+                          </tr>
+                         
+                        </tbody>
+                      </table>
+                    </div>
+  
+                    <div class="col-4 w-auto rounded mx-auto d-block">
+                      <img src="images/j6.jpg" class="img-thumbnail " alt="image" width="200px" height="200px">
+                    </div>
+                  </div>
 
                   
                 </fieldset>
@@ -192,7 +244,7 @@
                   <textarea id="txtDescripcion" class="form-control m-3 w-100" aria-label="With textarea"></textarea>
                 </div>
 
-                <fieldset class="row border text-dark fw-bold bg-light m-3 d-flex justify-content-center">
+                <fieldset class="row border text-dark fw-bold bg-light m-3 d-flex justify-content-center w-auto">
                   <legend>PRECIO</legend>
                   <input type="text" class="m-2" style="width: 20%;" placeholder="$" >
                   
@@ -370,7 +422,7 @@
                 <label class="form-check-label" for="flexSwitchCheckChecked">Nuevo</label>
               </div>
 
-              <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-funnel-fill"></i></button>
+              <button type="button" class="btn btn-outline-secondary  text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-funnel-fill"></i></button>
             </div>
             <div class="offcanvas-body overflow-auto">
               <!-- filtro inicio -->
