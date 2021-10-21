@@ -17,22 +17,32 @@
 
       <div class="row w-100">
 
-        <div class="col align-self-center">
-          <button type="button" class="navbar-toggler d-lg-none d-md-none" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
+        <div class="col d-lg-none d-md-none align-self-center">
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
             <span class="navbar-toggler-icon"></span>
           </button>
     
-          <a class="navbar-brand d-none d-lg-block d-md-block" style="padding: 1px 1.5px;" href="#">
+ 
+        </div>
+
+        <div class="col-1 align-self-center d-none d-md-block">
+          <a class="navbar-brand d-none d-lg-block d-md-block" href="#">
             <i class='bx bxs-megaphone bx-lg'></i>
+          </a>   
+        </div>
+
+        <div class="col d-none d-md-block align-self-center">
+          <a class="navbar-brand d-none d-lg-block d-md-block" style="padding: 1px 1.5px;" href="#">
             <b>Tienda Cellphone</b>
-          </a>    
+          </a>   
         </div>
 
         <!-- INPUT DESKTOP -->
 
-        <div class="col align-self-center d-none d-md-block">
+        <div class="col-3 align-self-center d-none d-md-block">
           <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+            style="border-radius: 25px;">
           </form> 
         </div>
 
@@ -41,7 +51,8 @@
         <div class="col-8 d-md-none">
           
             <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+              style="border-radius: 25px;">
             </form> 
           
         </div>
@@ -59,12 +70,12 @@
         </div>
 
         <div class="col d-none d-lg-block d-md-block">
-          <div class="d-flex">   
-            <a href="#" class="navbar-brand">
+          <div class="px-1">   
+            <a href="#" class="btn btn-dark" style="border-radius: 100px;">
               <i class='bx bx-plus-medical bx-lg'></i>
             </a>
       
-            <a href="#" class="navbar-brand">
+            <a href="#" class="btn btn-dark">
               <i class='bx bxs-cart bx-lg'></i>
             </a>
           </div>
@@ -98,7 +109,7 @@
           <div class="col">
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-              <label class="form-check-label" for="flexSwitchCheckChecked" style="color: white;"><b>Nuevo</b></label>
+              <label class="form-check-label" for="flexSwitchCheckChecked" style="color: white; font-size: large;"><b>Nuevo</b></label>
             </div>
           </div>
         </div>
@@ -106,39 +117,39 @@
         <div class="row mt-2">
           <div class="col">
             <div class="card border border-dark" style="background-color: #FE9E00;">
-              <div class="card-header">Marca</div>
+              <div class="card-header"><b>Marca</b></div>
               <div class="ps-4">
                 <div class="form-check mt-2">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
-                    Samsung
+                    <b>Samsung</b>
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
-                    Huawei
-                  </label>
-                </div>
-  
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                  <label class="form-check-label" for="flexCheckChecked">
-                    Nokia
+                    <b>Huawei</b>
                   </label>
                 </div>
   
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
-                    Iphone
+                    <b>Nokia</b>
+                  </label>
+                </div>
+  
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    <b>Iphone</b>
                   </label>
                 </div>
   
                 <div class="form-check pb-2">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
-                    Xiaomi
+                    <b>Xiaomi</b>
                   </label>
                 </div>
               </div>
@@ -149,25 +160,25 @@
         <div class="row mt-2">
           <div class="col">
             <div class="card border border-dark" style="background-color: #FE9E00;">
-              <div class="card-header">Sistema</div>
+              <div class="card-header"><b>Sistema</b></div>
               <div class="ps-4">
                 <div class="form-check mt-2">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
-                    Android
+                    <b>Android</b>
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
-                    Windows
+                    <b>Windows</b>
                   </label>
                 </div>
   
                 <div class="form-check pb-2">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
-                    Ios
+                    <b>Ios</b>
                   </label>
                 </div>
               </div>
@@ -178,25 +189,25 @@
         <div class="row mt-2">
           <div class="col">
             <div class="card border border-dark" style="background-color: #FE9E00;">
-              <div class="card-header">Pantalla</div>
+              <div class="card-header"><b>Pantalla</b></div>
               <div class="ps-4">
                 <div class="form-check mt-2">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
-                    6.0
+                    <b>6.0</b>
                   </label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
-                    5.5
+                    <b>5.5</b>
                   </label>
                 </div>
   
                 <div class="form-check pb-2">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                   <label class="form-check-label" for="flexCheckChecked">
-                    5
+                    <b>5</b>
                   </label>
                 </div>
               </div>
@@ -211,7 +222,7 @@
       <div class="col">
         <div class="row">
           <div class="col d-none d-lg-block d-md-block ps-5">
-            <div class="card border border-2 border-dark" style="width: 300px; background-color: #FE9E00;">
+            <div class="card border border-2 border-dark" style="width: 250px; background-color: #FE9E00;">
 
                 <div class="row g-0">
                   <div class="col">
@@ -234,14 +245,14 @@
                   <div class="col">
                     <div class="card-body">
 
-                        <input type="number" name="" id="" style="width: 90px;">
+                        <input type="number" placeholder="$" name="" id="" style="width: 90px;">
                       
                     </div>
                   </div>
                   <div class="col">
                     <div class="card-body" >
 
-                        <input type="number" name="" id="" style="width: 90px;">
+                        <input type="number" placeholder="$" name="" id="" style="width: 90px;">
 
                     </div>
                   </div>
@@ -264,7 +275,7 @@
                 <div class="col">
                   <div class="card-body d-flex justify-content-center" >
                     <div class="d-md-none">
-                      <a class="btn btn-primary" data-bs-toggle="collapse" href="#menuCondicionales1" role="button" aria-expanded="false" aria-controls="menuCondicionales1" style="color: black;"><i class='bx bxs-down-arrow bx-lg'></i></a>
+                      <a data-bs-toggle="collapse" href="#menuCondicionales1" role="button" aria-expanded="false" aria-controls="menuCondicionales1" style="color: black;"><i class='bx bxs-down-arrow bx-lg'></i></a>
                     </div>
                   </div>
                 </div>
@@ -281,47 +292,47 @@
                         <div class="col ps-4">
                           <div class="form-check form-switch">
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                            <label class="form-check-label" for="flexSwitchCheckChecked" style="color: white;"><b>Nuevo</b></label>
+                            <label class="form-check-label" for="flexSwitchCheckChecked" style="color: white; font-size: large;"><b>Nuevo</b></label>
                           </div>
                         </div>
                       </div>
               
                       <div class="row mt-2">
                         <div class="col">
-                          <div class="card border border-dark" style="background-color: #FE9E00;">
-                            <div class="card-header">Marca</div>
+                          <div class="card" style="background-color: #FE9E00;">
+                            <div class="card-header"><b>Marca</b></div>
                             <div class="ps-4">
                               <div class="form-check mt-2">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Samsung
+                                  <b>Samsung</b>
                                 </label>
                               </div>
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
-                                  Huawei
-                                </label>
-                              </div>
-                
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                  Nokia
+                                  <b>Huawei</b>
                                 </label>
                               </div>
                 
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
-                                  Iphone
+                                  <b>Nokia</b>
+                                </label>
+                              </div>
+                
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  <b>Iphone</b>
                                 </label>
                               </div>
                 
                               <div class="form-check pb-2">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
-                                  Xiaomi
+                                  <b>Xiaomi</b>
                                 </label>
                               </div>
                             </div>
@@ -331,26 +342,26 @@
               
                       <div class="row mt-2">
                         <div class="col">
-                          <div class="card border border-dark" style="background-color: #FE9E00;">
-                            <div class="card-header">Sistema</div>
+                          <div class="card" style="background-color: #FE9E00;">
+                            <div class="card-header"><b>Sistema</b></div>
                             <div class="ps-4">
                               <div class="form-check mt-2">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  Android
+                                  <b>Android</b>
                                 </label>
                               </div>
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
-                                  Windows
+                                  <b>Windows</b>
                                 </label>
                               </div>
                 
                               <div class="form-check pb-2">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
-                                  Ios
+                                  <b>Ios</b>
                                 </label>
                               </div>
                             </div>
@@ -360,26 +371,26 @@
               
                       <div class="row mt-2">
                         <div class="col">
-                          <div class="card border border-dark" style="background-color: #FE9E00;">
-                            <div class="card-header">Pantalla</div>
+                          <div class="card" style="background-color: #FE9E00;">
+                            <div class="card-header"><b>Pantalla</b></div>
                             <div class="ps-4">
                               <div class="form-check mt-2">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                  6.0
+                                  <b>6.0</b>
                                 </label>
                               </div>
                               <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
-                                  5.5
+                                  <b>5.5</b>
                                 </label>
                               </div>
                 
                               <div class="form-check pb-2">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                                 <label class="form-check-label" for="flexCheckChecked">
-                                  5
+                                  <b>5</b>
                                 </label>
                               </div>
                             </div>
@@ -396,14 +407,14 @@
                 <div class="col">
                   <div class="card-body d-flex justify-content-center">
 
-                    <button type="button" class="btn btn-warning border border-dark">Precio</button>
+                    <button type="button" class="btn btn-warning border border-dark"><i class='bx bx-up-arrow-alt'></i><b>Precio</b></button>
                     
                   </div>
                 </div>
                 <div class="col">
                   <div class="card-body d-flex justify-content-center">
 
-                    <button type="button" class="btn btn-warning border border-dark">Fecha</button>
+                    <button type="button" class="btn btn-warning border border-dark"><b>Fecha</b></button>
                     
                   </div>
                 </div>
@@ -444,8 +455,25 @@
               </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col d-none d-lg-block d-md-block">
+            <div class="row">
+              <div class="col d-flex justify-content-end">
+                <label for="" style="color: white;"><b>Artículos por pagina:</b></label>
 
+              </div>
+              <div class="col">
+                <select class="form-select form-select-sm" style="width: 60px;" aria-label=".form-select-sm example">
+                  <option selected>8</option>
+                  <option value="1">7</option>
+                  <option value="2">6</option>
+                  <option value="3">5</option>
+                  <option value="3">4</option>
+                  <option value="3">3</option>
+                  <option value="3">2</option>
+                  <option value="3">1</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
         
