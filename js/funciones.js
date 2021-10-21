@@ -1,22 +1,5 @@
 $(document).ready(function () {
     $(".sidenav").sidenav();
-
-
-/*         let menus = document.getElementsByClassName("sidenav-trigger");
-      for (let i = 0; i < menus.length; i++) {
-        menus[i].addEventListener("click", capturar);
-      }
-
-      function capturar() {
-        if (this.id == "filtro") {
-          $(".sidenav").sidenav({ edge: "left",closeOnClick  : true,
-  draggable     : true });
-          
-        } else if (this.id == "menuinicio") {
-          $(".sidenav").sidenav({ edge: "right",closeOnClick  : true,
-  draggable     : true});
-        }
-      } */ 
     });
     $(document).ready(function () {
       $("select").formSelect();
