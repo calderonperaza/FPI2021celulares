@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card" >
                 <img src="./imagenes/iphone12pro.jpg" class="card-img-top" alt="..." style="height: 200px;">
                 <div class="card-body text-center">
-                    <h5 class="card-title">$1102.00</h5>
+                    <h5 class="card-title"><b>$1102.00</b></h5>
                     <p class="card-text">
                     Iphone 12 Pro Max
                     Super Retina XDR
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card" >
                 <img src="./imagenes/iphone12pro.jpg" class="card-img-top" alt="..." style="height: 200px;">
                 <div class="card-body text-center">
-                    <h5 class="card-title">$1102.00</h5>
+                    <h5 class="card-title"><b>$1102.00</b></h5>
                     <p class="card-text">
                     Iphone 12 Pro Max
                     Super Retina XDR
