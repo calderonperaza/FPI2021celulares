@@ -3,6 +3,22 @@ body {
     color: #4b566b;
 }
 
+a {
+    text-decoration: none;
+}
+
 input.form-control:focus, select.form-select:focus, input.form-check-input:focus {
     box-shadow: none;
+}
+
+.card-product .product-category {
+    font-size: 12px;
+}
+
+.card-product .product-title {
+    font-size: 14px;
+}
+
+.card-product .product-star-rating ion-icon.active {
+    color: #fea569;
 }
