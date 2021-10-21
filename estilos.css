@@ -1,9 +1,9 @@
 .navbar{
     text-align: center;
-    border: 5px outset gray;
+    border: 10px groove #E26A2C;
 }
 .cuerpo{
-    background-image: url(https://w0.peakpx.com/wallpaper/612/883/HD-wallpaper-orange-yellow-gradient-background-ultra-aero-colorful-orange-summer-yellow-color-design-shades-warmth-simple-vivid-gradient.jpg);
+    background-color: #FDA65D;
     background-repeat:no-repeat;
     background-size: cover;
 }
@@ -23,6 +23,8 @@
     margin: 0 auto;
     float: none; 
     margin-bottom: 10px;
-    background-color: #ffcc50 ;
+    background-color: #F9D5A7;
 }
-
+.card1{
+    background-color: #F9F3DF;
+}
