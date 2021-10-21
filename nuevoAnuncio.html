@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Cellphone Ebay</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!--Navbar-->
+    <nav class="pt-1 pb-1 navbar navbar-light navbar-expand-md navigation-clean-search bg-primary">
+        <div class="col-sm-2 d-none d-md-block container-fluid">
+            <a class="navbar-brand text-dark" href="index.html">
+                <img src="Logo.png" alt="" width="40" height="40" class="d-inline-block">
+                Cellphone Ebay
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="input input-group w-50 d-flex align-items-center">
+            <span class="input-group-text" id="busqueda-cellphone">
+                <i class="bi bi-search"></i>
+            </span>
+            <input type="search" class="form-control search-field" id="search-field" name="search" />
+        </div>
+        <div></div>
+        <div class="collapse navbar-collapse pb-2 pt-2 px-3" id="navbar">
+            <div class="col-sm-1"></div>
+            <div class="d-md-none container-fluid h-50">
+                <a class="navbar-brand text-secondary" href="index.html">
+                    <img src="Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top ">
+                    Cellphone Ebay
+                </a>
+            </div>
+            <ul class="navbar-nav mx-4">
+                <li class="nav-item"><button class="btn btn-primary"><a class="nav-link active"
+                            href="index.html">Inicio</a></button></li>
+                <li class="nav-item"><button class="btn btn-primary"><a class="nav-link active"
+                            href="#">Estadisticas</a></button></li>
+                <li class="nav-item d-md-none"><a class="nav-link" href="#">Carrito</a></li>
+                <li class="nav-item d-md-none"><a class="nav-link" href="#">Nuevo Anuncio</a></li>
+            </ul>
+            <div class="navbar-nav">
+                <button class="btn btn-primary p-0">
+                    <a class="m-2 navbar-brand d-none d-md-block" href="nuevoAnuncio.html"><i
+                            class="bi-plus-square-fill"></i></a>
+                </button>
+            </div>
+            <div class="navbar-nav mx-4">
+                <button class="btn btn-primary p-0">
+                    <a class="m-2 navbar-brand d-none d-md-block" href="index.html"><i
+                            class="bi bi-bag-plus-fill"></i></a>
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="position-relative text-center">Nuevo Anuncio</h1>
+    <div class="row container-fluid my-2 row-cols-1 row-cols-md-2">
+        <!--Info principal -->
+        <div class="col order order-3 order-md-1">
+            <div class="row order order-1 order-md-2 border border-2 border-dark">
+                <div class="row container-fluid mx-2 my-2">
+                    <label class="col col-2">Estado:</label>
+                    <div class="col col-3 form-check mx-3 mx-md-0">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Nuevo
+                        </label>
+                    </div>
+                    <div class="col col-4 form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Usado
+                        </label>
+                    </div>
+                </div>
+                <div class="row container-fluid mx-2">
+                    <label class="col col-3">Marca:</label>
+                    <div class="col-5 col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row container-fluid mx-2 my-2">
+                    <label class="col col-3">Modelo:</label>
+                    <div class="col-5 col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row container-fluid mx-2 my-2">
+                    <label class="col col-3">Pantalla:</label>
+                    <div class="col-3">
+                        <input type="number" min="1" class="form-control">
+                    </div>
+                    <label class="col col-3">Pulgadas</label>
+                </div>
+                <div class="row container-fluid mx-2 my-2">
+                    <label class="col col-3">Sistema:</label>
+                    <div class="col-7 col-md-3">
+                        <select class="form-select">
+                            <option selected>Seleccionar</option>
+                            <option value="1">Ios</option>
+                            <option value="2">Android</option>
+                            <option value="3">Windows Phone</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row container-fluid mx-2 my-2">
+                    <label class="col col-5 col-md-3">Almacenamiento:</label>
+                    <div class="col-4 col-md-3">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="row container-fluid mx-2 my-2">
+                    <label class="col col-3">Ram:</label>
+                    <div class="col-3">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="d-block d-md-none">
+                    <div class="row row-cols-2 pb-2">
+                        <div class="col-5 position-relative start-25">
+                            <button class="row btn-sm">
+                                <a class="btn col-2 m-0 p-0" href="#" role="button"><i class="bi bi-x-circle-fill"
+                                        style="font-size: 25px;"></i></a>
+                                <h6 class="col pt-2">Cancelar</h6>
+                            </button>
+                        </div>
+                        <div class="col-4 position-relative start-25 mx-md-3">
+                            <button class="row btn-sm">
+                                <a class="btn col-2 m-0 p-0" href="#" role="button"><i
+                                        class="bi bi-file-earmark-plus-fill" style="font-size: 25px;"></i></a>
+                                <h6 class="col pt-2">Crear</h6>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Info Vendedor-->
+        <div class="col order order-2 order-md-2">
+            <div class="row mx-5">
+                <label class="row">
+                    <h4>Titulo Breve del Anuncio</h4>
+                </label>
+                <div class="row col-12 col-md-7 mx-3">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row my-2 mx-md-5">
+                <label class="col col-4 col-md-2">Vendedor:</label>
+                <div class="col col-7 col-md-4">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row my-2 mx-md-5">
+                <label class="col col-4 col-md-2">Telefono</label>
+                <div class="col col-7 col-md-4">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row my-2 mx-md-5">
+                <label class="col col-4 col-md-2">Descripcion</label>
+                <div class="col col-7">
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="row my-2 mx-md-5">
+                <label class="col col-4 col-md-2">Precio</label>
+                <div class="col col-7 col-md-4">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <!--Imagenes-->
+        <div class="col order order-1 order-md-3 my-3">
+            <div class="row border border-2 border-dark">
+                <div>
+                    <p class="position-relative"><span
+                            class="position-absolute mx-5 translate-middle bg-white">Imagenes<span
+                                class="visually-hidden">unread messages</span></span></p>
+                </div>
+                <div class="row mx-md-2">
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn mx-4" href="#" role="button"><i class="bi bi-plus-circle-fill"
+                                        style="font-size: 40px;"></i></a>
+                            </div>
+                            <div class="col">
+                                <a class="btn mx-4" href="#" role="button"><i class="bi bi-dash-circle-fill"
+                                        style="font-size: 40px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col overflow-auto" style="max-height: 180px;">
+                        <table class="table table-striped table-secondary text-center">
+                            <tr>
+                                <td>N</td>
+                                <td>Tamaño</td>
+                                <td>Tipo</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>145 kb</td>
+                                <td>jpg</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>145 kb</td>
+                                <td>jpg</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>145 kb</td>
+                                <td>jpg</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>145 kb</td>
+                                <td>jpg</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/Samsung.jpg" class="card-img-top" height="190" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5 order order-4 order-md-4 d-none d-md-block ">
+            <div class="row container pt-4">
+                <div class="col-4 position-relative start-25">
+                    <button class="row btn-sm">
+                        <a class="btn col m-0 p-0" href="#" role="button"><i class="bi bi-x-circle-fill"
+                                style="font-size: 25px;"></i></a>
+                        <h6 class="col pt-2">Cancelar</h6>
+                    </button>
+                </div>
+                <div class="col-4 position-relative start-25 mx-3">
+                    <button class="row btn-sm">
+                        <a class="btn col m-0 p-0" href="#" role="button"><i class="bi bi-file-earmark-plus-fill"
+                                style="font-size: 25px;"></i></a>
+                        <h6 class="col pt-2">Crear</h6>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
