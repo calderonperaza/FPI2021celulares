@@ -1,0 +1,28 @@
+body {
+    font-family: "Rubik", sans-serif;
+    color: #4b566b;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #4b566b;
+}
+
+input.form-control, select.form-select {
+    color: #4b566b;
+}
+
+input.form-control:focus, select.form-select:focus  {
+    box-shadow: none;
+    border-color: #ffb4b5;
+}
+
+input.form-check-input:focus {
+    border-color: #ffb4b5;
+    box-shadow: none;
+}
+
+input.form-check-input:checked {
+    background-color: #fe696a;
+    border-color: #fe696a;
+}
