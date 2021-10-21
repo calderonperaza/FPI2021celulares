@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: #8b5e8b;
@@ -9,11 +13,34 @@ nav{
     background: #4c2882;
     margin: auto;
 }
+#navbarcont{
+    padding-right: 16%;
+}
+
+#carro{
+    padding-top: 2%;
+    padding-left: 4%;
+}
+
+#logito{
+    padding-left: 5%;
+}
+
+#spanbar{
+    padding-top: 29%;
+}
+
+#btnbar{
+    padding-left: 10%;
+}
 
 .nav a h6{
     text-align: unset;
 }
 
+#fot{
+    background-color: transparent;
+}
 
 .nav li{
     font-size: 40px;
@@ -81,6 +108,28 @@ nav{
     color: rgb(255, 255, 255);
 }
 
+#fotie{
+    background-color: #69489b;
+}
+
+#pagina{
+    padding-left: 30%;
+    padding-top: 1.4%;
+}
+
+#pagina2{
+    padding-top: 0.7%;
+    padding-bottom: 1%;
+}
+
+#contenido{
+    width: 100%;
+}
+
+#colorselect{
+    color: aliceblue;
+}
+
 #filler{
     padding-left: 10%;
 }
@@ -115,7 +164,6 @@ nav{
 }
 
 #derecho{
-    background-color: red;
     padding-top: 1%;
     border-style: solid;
     border-left: black;
@@ -130,5 +178,92 @@ nav{
     padding-top: 1%;
     overflow-y: scroll ;
     width: 300px;
-    height: 450px;
+    height: 550px;
+}
+
+#flechasfoter{
+    background-color: rgb(162, 93, 226);
+}
+
+#titulocard{
+    font-family: 'Carter One', cursive;;
+    font-weight: 900;
+}
+
+#titulocard2{
+
+    color: aliceblue;
+    font-family: 'Carter One', cursive;;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+#vendedor{
+    color: aliceblue;
+    font-weight: 900;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #69489b;
+    margin-top: 5%;
+    font-size: 15px;
+}
+#detalles{
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 14px;
+    font-family:'Prompt', sans-serif;
+    text-align: center;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #4c2882;
+
+}
+
+#sepdescrip{
+    padding-right: 2%;
+}
+
+#sepdescri2{
+    padding-left: 2%;
+    border-style: solid;
+    border-color: #28114b;
+    text-align: justify;
+    font-size: 18px;
+    background-color: #4c2882;
+    color: aliceblue;
+    font-family:'Prompt', sans-serif;
+}
+
+#detalles2{
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #88799e;
+
+}
+
+#textanun{
+    padding-left: 4%;
+}
+
+#descri{
+    background-color: #69489b;
+    text-align: center;
+    color: rgb(229, 229, 153);
+    font-size: 25px;
+    font-family:'Prompt', sans-serif;
+}
+#colorcard{
+    background-color: #69489b;
+    
+}
+
+#coloranuncio{
+        padding-top: 5%;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 20px;
 }

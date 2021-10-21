@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CELULARES EBAY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/shopping-cart.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        
+    <nav class="nav-wrapper">
+        <div class="container-fluid">
+            <div id="logito" class=" hide-on-small-only">
+                <a href="inicio.html" class="brand-logo">
+                    <i class="large material-icons">phone_iphone</i>TIENDA IBAYPHONE</a>
+            </div>
+
+
+            <div class="container hide-on-med-and-up">
+                <div class="row">
+                    <div class="col s2">
+                        <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </div>
+                    <div class="col s3">
+                        <div class="hide-on-med-and-up">
+                            <label id="texto" for="search">Busqueda:</label>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="hide-on-med-and-up">
+
+                            <div class="input-field inline">
+                                <input id="search" type="search" required>
+                                <label for="search"><i class="large material-icons">search</i></label>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <ul id="navbarcont" class="right hide-on-med-and-down">
+
+                <li><i class="material-icons">search</i></li>
+                <li><input id="search" type="search" required><label class="label-icon" for="search">
+                    </label></li>
+                <li>
+                    <div id="btnbar"><a href="inicio.html"
+                            class="waves-effect waves-light deep-purple accent-1 btn">Inicio</a></div>
+                </li>
+                <li><a href="estadistica.html" class="waves-effect waves-light deep-purple accent-1 btn">Estadistica</a></li>
+                <li><a href="inicio.html"><i class="large material-icons">add_box</i></a></li>
+                <li><a href="inicio.html"><i class="large material-icons">shopping_cart</i></a></li>
+                <li>
+                    <div id="spanbar"><span class="new badge purple">1</span></div>
+                </li>
+            </ul>
+
+
+
+        </div>
+    </nav>
+
+
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="inicio.html" class="brand-logo">
+                <i class="small material-icons">phone_iphone</i>TIENDA IBAYPHONE</a></li>
+        <li><a href="sass.html">Inicio</a></li>
+        <li><a href="badges.html">Estadistica</a></li>
+        <li><a href="collapsible.html">Agregar anuncio</a></li>
+        <li><a href="collapsible.html">Carrito <span class="new badge">1</span></a></li>
+    </ul>
+
+    <div class="container-fluid ">
+        <div id="estad" class="row">
+            <img src="imagenes/estadisticas.PNG">
+        </div>
+
+    </div>
+
+    <style>
+        #estad{
+            padding-top: 4%;
+           padding-left: 24%;
+        }
+    </style>
+
+    </body>
+</html>

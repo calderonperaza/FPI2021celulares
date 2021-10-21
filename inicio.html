@@ -15,12 +15,13 @@
 <body>
 
     <nav class="nav-wrapper">
-        <div class="container">
-            <div class="hide-on-small-only">
+        <div class="container-fluid">
+            <div id="logito" class=" hide-on-small-only">
                 <a href="inicio.html" class="brand-logo">
                     <i class="large material-icons">phone_iphone</i>TIENDA IBAYPHONE</a>
             </div>
 
+            
             <div class="container hide-on-med-and-up">
                 <div class="row">
                     <div class="col s2">
@@ -33,7 +34,7 @@
                             <label id="texto" for="search">Busqueda:</label>
                         </div>
                     </div>
-                    <div class="col s7">
+                    <div class="col s6">
                         <div class="hide-on-med-and-up">
 
                             <div class="input-field inline">
@@ -48,15 +49,16 @@
                 </div>
             </div>
 
-            <ul class="right hide-on-med-and-down">
+            <ul id="navbarcont" class="right hide-on-med-and-down">
 
                 <li><i class="material-icons">search</i></li>
                 <li><input id="search" type="search" required><label class="label-icon" for="search">
                     </label></li>
-                <li><a href="inicio.html" class="waves-effect waves-light deep-purple accent-1 btn">Inicio</a></li>
-                <li><a href="badges.html" class="waves-effect waves-light deep-purple accent-1 btn">Estadistica</a></li>
-                <li><a href="collapsible.html"><i class="large material-icons">add_box</i></a></li>
-                <li><a href="collapsible.html"><i class="large material-icons">shopping_cart</i></a></li>
+                <li><div id="btnbar"><a href="inicio.html" class="waves-effect waves-light deep-purple accent-1 btn">Inicio</a></div></li>
+                <li><a href="estadistica.html" class="waves-effect waves-light deep-purple accent-1 btn">Estadistica</a></li>
+                <li><a href="inicio.html"><i class="large material-icons">add_box</i></a></li>
+                <li><a href="inicio.html"><i class="large material-icons">shopping_cart</i></a></li>
+                <li><div id="spanbar"><span class="new badge purple">1</span></div></li>
             </ul>
 
 
@@ -68,19 +70,30 @@
     <ul class="sidenav" id="menu-responsive">
         <li><a href="inicio.html" class="brand-logo">
                 <i class="small material-icons">phone_iphone</i>TIENDA IBAYPHONE</a></li>
-        <li><a href="sass.html">Inicio</a></li>
-        <li><a href="badges.html">Estadistica</a></li>
-        <li><a href="collapsible.html">Agregar anuncio</a></li>
-        <li><a href="collapsible.html">Carrito</a></li>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="#">Estadistica</a></li>
+        <li><a href="#">Agregar anuncio</a></li>
+        <li><a href="#">Carrito <span class="new badge">1</span></a></li>
     </ul>
 
     <style media="screen">
         @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
 
         #shiw {
-            width: 90%;
-            padding-top: 1%;
-            margin-left: 15%;
+            width: 100%;
+            padding-top: 0%;
+
+        }
+
+        #preciosss {
+            color: rgb(255, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+            padding-top: 5%;
+        }
+
+        #preciopad {
+            padding-top: 2%;
         }
 
         #price {
@@ -91,6 +104,10 @@
             color: white;
         }
 
+        #spanbarra{
+            padding-top: 2%;
+        }         
+
         #sw {
             padding-top: 2%;
             display: flex;
@@ -98,6 +115,11 @@
             align-content: center;
             padding-bottom: 4%;
 
+        }
+
+        #filtross {
+            padding-top: 1.6%;
+            padding-left: 10%;
         }
 
         #textff {
@@ -112,13 +134,23 @@
         }
 
         #filter {
-            padding-top: 1.5%;
+            padding-top: 2%;
+            color: rgb(255, 255, 255);
+            padding-right: 14%;
         }
 
         #celfil {
             margin-left: 1%;
             border-style: solid;
             border-color: rgb(58, 58, 58);
+        }
+
+        #desde {
+            padding-left: 1%;
+        }
+
+        #hasta {
+            padding-left: 1%;
         }
 
         #btfill {
@@ -136,55 +168,48 @@
     </style>
 
     <div id="shiw" class="container-fluid hide-on-med-and-down">
-        <div class="row">
-
-            <div class="col l5">
-                <div class="container">
-                    <div class="row auto">
-                        <div id="price" class="col s2">
-                            Precio:
-                        </div>
-                        <div class="col s3">
-                            <div id="diner" class="input-field col auto">
-                                <input placeholder="$" id="desde" type="text" class="validate">
-                                <label for="first_name">desde</label>
-                            </div>
-                        </div>
-                        <div id="price" class="col s2">
-                            <i class="small material-icons">arrow_forward</i>
-                        </div>
-                        <div id="diner" class="col s3">
-                            <div class="input-field col auto">
-                                <input placeholder="$" id="hasta" type="text" class="validate">
-                                <label for="first_name">hasta</label>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row ">
+            <div id="filtross" class="col s6 ">
+                <div id="preciosss" class="col s2">
+                    Precios:
+                </div>
+                <div id="desde" class="input-field col s2">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">desde $</label>
+                </div>
+                <div id="filter" class="col s1 ">
+                    <i class="medium material-icons inline">arrow_right</i>
+                </div>
+                <div id="hasta" class="input-field col s2">
+                    <input id="last_name2" type="text" class="validate">
+                    <label for="last_name2">hasta $</label>
                 </div>
             </div>
-            <div id="filter" class="col l4">
-                <!-- Dropdown Trigger -->
-                <a class='dropdown-trigger deep-purple accent-1 btn' href='#' data-target='dropdown1'>filtro precios</a>
-                <!-- Dropdown Structure -->
-                <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!"><i class="small material-icons inline">arrow_upward</i>Precio</a></li>
-                    <li><a href="#!"><i class="small material-icons inline">arrow_downward</i>Precio</a></li>
-                </ul>
+            <div id="filter" class="col s6 container center">
+                <div class="input-field col s5 ">
+                    <select>
+                        <option value="" disabled selected>Selecciona aquí</option>
+                        <option value="1">Precio mayor a menor</option>
+                        <option value="2">Precio menor a mayor</option>
+                    </select>
+                    <label>Filtrar precios</label>
+                </div>
 
-                <!-- Dropdown Trigger -->
-                <a class='dropdown-trigger deep-purple accent-1 btn' href='#' data-target='dropdown2'>filtro fechas</a>
-                <!-- Dropdown Structure -->
-                <ul id='dropdown2' class='dropdown-content'>
-                    <li><a href="#!">Más recientes</a></li>
-                    <li><a href="#!">Menos recientes</a></li>
-                </ul>
+                <div class="input-field col s5">
+                    <select>
+                        <option value="" disabled selected>Selecciona aquí</option>
+                        <option value="1">Más recientes</option>
+                        <option value="2">Menos recientes</option>
+                    </select>
+                    <label>Filtrar por fecha</label>
+                </div>
 
             </div>
         </div>
     </div>
 
 
-    <div class="container-fluid hide-on-med-and-down">
+    <div id="contenido" class="container-fluid hide-on-med-and-down">
         <div id="izqcon" class=" container-fluid row">
             <div id="izquierdo" class=" container-fluid col s3">
                 <!-- Grey navigation panel -->
@@ -306,8 +331,160 @@
             </div>
 
             <div id="derecho" class="col s9">
-                <!-- Teal page content  -->
-                its me
+                <div class="row">
+                    <div class="col s3 ">
+                        <div id="colorcard"  class="card">
+                            <div class="card-image">
+                              <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                              <div id="titulocard"><p>$132.00</p></div>
+                              <p>Samsung J6, Pantalla de 5.5
+                                64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="anuncio.html">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col s3">
+                        <div id="colorcard"  class="card">
+                            <div class="card-image">
+                              <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                              <div id="titulocard"><p>$132.00</p></div>
+                              <p>Samsung J6, Pantalla de 5.5
+                                64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="anuncio.html">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col s3">
+                        <div id="colorcard"  class="card">
+                            <div class="card-image">
+                              <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                              <div id="titulocard"><p>$132.00</p></div>
+                              <p>Samsung J6, Pantalla de 5.5
+                                64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="anuncio.html">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col s3 ">
+                        <div id="colorcard"  class="card">
+                            <div class="card-image">
+                              <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                              <div id="titulocard"><p>$132.00</p></div>
+                              <p>Samsung J6, Pantalla de 5.5
+                                64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="anuncio.html">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s3 ">
+                        <div id="colorcard"  class="card">
+                            <div class="card-image">
+                              <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                              <div id="titulocard"><p>$132.00</p></div>
+                              <p>Samsung J6, Pantalla de 5.5
+                                64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="anuncio.html">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col s3">
+                        <div id="colorcard"  class="card">
+                            <div class="card-image">
+                              <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                              <div id="titulocard"><p>$132.00</p></div>
+                              <p>Samsung J6, Pantalla de 5.5
+                                64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="anuncio.html">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col s3">
+                        <div id="colorcard"  class="card">
+                            <div class="card-image">
+                              <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                              <div id="titulocard"><p>$132.00</p></div>
+                              <p>Samsung J6, Pantalla de 5.5
+                                64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="anuncio.html">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col s3 ">
+                        <div id="colorcard"  class="card">
+                            <div class="card-image">
+                              <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                              <div id="titulocard"><p>$132.00</p></div>
+                              <p>Samsung J6, Pantalla de 5.5
+                                64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="anuncio.html">Ver Más</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <footer id="fot" class="page-footer">
+                    <div id="fotie" class="container-fluid">
+                        <div class="row ">
+                            <div id="pagina" class="col">
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                    <li class="active" id="flechasfoter"><a href="inicio.html">1</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">2</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">3</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">4</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">5</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">6</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">7</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">8</a></li>
+                                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                                </ul>
+                            </div>
+                            <div id="pagina2" class="col">
+                                <label>Artículos por pagina</label>
+                                <select class="browser-default">
+                                    <option value="1">10</option>
+                                    <option value="2">15</option>
+                                    <option value="3">20</option>
+                                    <option value="3">25</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
 
         </div>
@@ -462,6 +639,10 @@
 
 
 
+    
+
+
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
@@ -471,8 +652,17 @@
             var instances = M.Sidenav.init(elems);
         });
 
+
+
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.dropdown-trigger');
