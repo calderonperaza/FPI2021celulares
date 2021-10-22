@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
-
+<!--
+Alumno: Oscar Francisco Chacón Gómez
+DUE: CG19014
+-->
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -237,8 +240,8 @@
 
 
                     <div class="row" style="padding-top: 15px;">
-                        <label for="exampleFormControlInput1" class="form-label d-none d-sm-block"><strong>DESCRIPCION</strong></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <label for="exampleFormControlInput1" class="form-label d-none d-sm-block" ><strong>DESCRIPCION</strong></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Telefono en muy buenas condiciones, tiene dos cámaras, la caja esta abierta, pero con muy poco uso, practicamente nuevo, la compañia con la que estaba es Tigo, asi que el chip debe ser tigo, viene con su caja original y fotos si desea por whatsapp"></textarea>
                     </div>
 
                 </div>
@@ -320,12 +323,10 @@
             <div class="container" style="padding-top: 15px;">
                 <div class=" col-6 d-none d-sm-block" style="text-align: center; margin: auto; border: 10px ridge #ffcc50;">
                     <label for="inputEmail4" class="form-label"><strong>Precio:</strong></label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="$235.00">
                 </div>
                 
                 <div class="col-12 d-none d-sm-block"  style="padding-top: 15px; text-align: center; margin: auto;">
-                    <!-- onclick="location.href='index.html'"
-                    <button type="button" class="btn btn-primary btn-lg"><i class="bi bi-x-circle" ></i>Cancelar</button> -->
                     <a href="index.html"><button type="button" class="btn btn-primary btn-lg"><i class="bi bi-x-circle" ></i>Cancelar</button></a>
                        <a id="redireccionar"><button type="button" class="btn btn-primary btn-lg" id="liveToastBtn" ><label></label><i class="bi bi-save" style="padding-right: 5px;"></i>Guardar</label></button>
                         </a>
@@ -394,7 +395,7 @@ if (toastTrigger) {
     <script type="text/javascript">   
         let a=document.getElementById('redireccionar');
 a.addEventListener('click',function (event) {
-  event.preventDefault(); //esto cancela el comportamiento del click
+  event.preventDefault();
   setTimeout(()=> location.href="index.html",3000);
 });
     </script>

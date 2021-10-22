@@ -1,5 +1,9 @@
 <!doctype html>
 <html lang="en">
+<!--
+Alumno: Oscar Francisco Chacón Gómez
+DUE: CG19014
+-->
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -68,7 +72,7 @@
 
     <!--Cuerpo de la pagina web #ffcc50-->
 
-    <div class="container-fluid cuerpo"> <!--py-3 -->
+    <div class="container-fluid cuerpo">
         <div class="row">
             <div class="col-lg-2 col-sm-12 py-3 " style="color: black; background-color: #FDA65D;" id="menuizq">   
                 <div class="navbar navbar-light navbar-expand-sm" style="background-color: #ffcc50; border: 8px ridge #ffcc50;"><!--background-color: #ffcc50-->
@@ -211,11 +215,7 @@
                                         <div class="form-check" style="padding-bottom: 10px;">
                                             <input class="form-check-input" type="checkbox" value="" id="seis">
                                             <label class="form-check-label position-relative " for="seis">
-                                                6
-                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
-                                                    7
-                                                    <span class="visually-hidden">unread messages</span>
-                                                </span>
+                                                6.0
                                             </label>
                                         </div>
                                     
@@ -223,10 +223,6 @@
                                             <input class="form-check-input" type="checkbox" value="" id="cincocinco">
                                             <label class="form-check-label position-relative" for="cincocinco">
                                                 5.5
-                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
-                                                   2
-                                                    <span class="visually-hidden">unread messages</span>
-                                                </span>
                                             </label>
                                         </div>
 
@@ -234,10 +230,6 @@
                                             <input class="form-check-input" type="checkbox" value="" id="cinco">
                                             <label class="form-check-label position-relative" for="cinco">
                                                 5
-                                                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill">
-                                                    1
-                                                    <span class="visually-hidden">unread messages</span>
-                                                </span>
                                             </label>
                                         </div>
 
@@ -268,11 +260,8 @@
                     <div class="col-lg-4 d-none d-sm-block  p-3"  style="background-color:#ffcc50; border: 8px ridge #ffcc50;">
                         <div class="row">
                         <label class="col-4 col-form-label" style="padding-right: 1px; text-align: right; ">Ordenar por:</label>
-                            <div class="col de-flex" style="margin-right: 5px;">
-                                <select id="inputState" class="form-select">
-                                    <option selected>Precio</option>
-                                    <option>...</option>
-                                </select>
+                            <div class="col col-4" style="margin-left: 0px;">
+                                <button class="btn btn-light"><i class="bi bi-arrow-up" style="padding-right: 10px;"></i>Precio</button>
                             </div>
                             <div class="col col-3" style="margin-left: 0px;">
                                 <button class="btn btn-light">Fecha</button>
@@ -368,7 +357,7 @@
                     <div class="row py-3" style="text-align: center;">
                         <div class="row justify-content-center">
                             
-                            <div class="col-lg-2 col-9 p-3" >
+                            <div class="col-lg-2 col-9 p-3">
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination" style="margin-top:0;">
                                       <li class="page-item">
@@ -392,10 +381,10 @@
                                   </nav>
                             </div>
                         
-                            <div class="col-lg-6 d-none d-sm-block  p-3" >
+                            <div class="col-lg-6 d-none d-sm-block  p-3">
                                 <div class="row">
                                 <label class="col-6 col-form-label" style="padding-right: 1px; text-align: right; font-size: 18px;"><strong>Articulos por pagina</strong></label>
-                                    <div class="col col-3 d-flex" style="margin-right: 5px;">
+                                    <div class="col col-2 d-flex" style="margin-right: 5px;">
                                         <select id="inputState" class="form-select">
                                             <option selected>20</option>
                                             <option>...</option>
