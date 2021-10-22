@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+    
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <nav >
+    <div class="row nav-wrapper purple lighten-3">
+      <div class="col hide-on-small-only"><a href="#" class="brand-logo direction-left">Logo</a></div>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Inicio</a></li>
+        <li><a href="badges.html">Estadisticas</a></li>
+        
+
+        <li><a class="btn-floating btn-large waves-effect waves-light purple lighten-4"href="AnuncioNuevo.html"><i
+              class="material-icons">add</i></a></li>
+
+
+        <li><a class="btn-floating btn-large waves-effect waves-light purple lighten-4"><i
+              class="material-icons">add_shopping_cart</i></a></li>
+
+      </ul>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only left"><i
+          class="material-icons">menu</i></a>
+
+      <div class="col m4 input-field right">
+        <input id="search" type="search" placeholder="Buscar">
+        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+      </div>
+    </div>
+
+    <ul class="col s1 sidenav" id="mobile-demo">
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="AnuncioNuevo.html">Nuevo anuncio</a></li>
+      <li><a href="#">Carrito</a></li>
+      <li><a href="#">Estadisticas</a></li>
+    </ul>
+  </nav>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row left hide-on-small-only ">
+      <!--columna filtros-->
+      <div class="switch">
+        <label>
+          <input type="checkbox">
+          <span class="lever"></span>
+          Nuevo
+        </label>
+      </div>
+      <div class="row ">
+        <div class="col s12 m12">
+          <div class="card-panel purple lighten-5">
+            <span class="card-title">Marca</span>
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Samsung</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Huawei</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Nokia</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Xiaomi</span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card-panel purple lighten-5">
+            <span class="card-title">Sistema</span>
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Android</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Windows</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>IOS</span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card-panel purple lighten-5">
+            <span class="card-title">Pantalla</span>
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>6.0</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>5.5</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>5</span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row l12">
+      <div id="filtros" class="col l10 m8">
+        <!--columna contenido-->
+        <div class="row ">
+          <!--fila filtros-->
+          <div class="input-field col hide-on-small-only ">
+            <input placeholder="$" id="first_name" type="number" class="validate">
+            <label for="first_name">Precio:</label>
+          </div>
+          <div class="input-field col hide-on-small-only">
+            <input placeholder="$" id="first_name" type="number" class="validate">
+            <label for="first_name">Hasta:</label>
+          </div>
+          <div class="col ">
+            <label>Ordenar por:</label>
+
+            <select>
+              <option value="0">Precio</option>
+              <option value="1">Fecha</option>
+              <option value="2">Color</option>
+
+            </select>
+
+
+          </div>
+          <div class="col right hide-on-med-and-up">
+
+
+            <a class="btn-floating btn-large waves-effect waves-light btn modal-trigger purple lighten-3" href="#modal1"><i
+              class="material-icons">filter_list</i></a></a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <ul >
+                  <li>
+                    <div class="switch">
+                      <label>
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Nuevo
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="filtrosSmall" class="col s12 m12" >
+                      <div class="card-panel purple lighten-5">
+                        <span class="card-title">Marca</span>
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>Samsung</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>Huawei</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>Nokia</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>Xiaomi</span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="filtrosSmall" class="col s12 m12">
+                      <div class="card-panel purple lighten-5">
+                        <span class="card-title">Sistema</span>
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>Android</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>Windows</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>IOS</span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="filtrosSmall" class="col s12 m12">
+                      <div class="card-panel purple lighten-5">
+                        <span class="card-title">Pantalla</span>
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>6.0</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>5.5</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span>5</span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="divider"></div>
+                  </li>
+    
+    
+                </ul>
+               
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="imagenes\y92.jpg" class="thumnaild">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Y9 2019</span>
+              <p>Aqui van las cosas de telefono</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!--Import jQuery before materialize.js-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <script>
+    M.AutoInit();
+  </script>
+
+
+
+</body>
+
+</html>
