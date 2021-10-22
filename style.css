@@ -1,0 +1,4 @@
+#navbarBotones a:hover, a:active {
+    background-color: brown;
+    color: white;
+  }
