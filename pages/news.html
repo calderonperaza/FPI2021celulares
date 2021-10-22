@@ -72,7 +72,7 @@
         </a>
       </li>
       <li>
-        <a class="btn btn-large waves-effect waves-light blue darken-1">
+        <a class="btn btn-large waves-effect waves-light blue darken-1" href="./news.html">
           <i class="large material-icons">add</i>
           Nuevo Anuncio
         </a>
@@ -98,56 +98,173 @@
       <div class="row">
         <h3 class="center-align">NUEVO ANUNCIO</h3>
         <div class="row">
-          <div class="col m5 l5 lx5">
-            <div class="card withe darken-1 alturaAnuncio">
+          <div class="col s12 m5 l5 lx5">
+            <div class="card withe darken-1">
               <div class="card-action">
-              <form action="#">
-                <p>
-                  <label for="">Estado:</label>
-                  <label>
-                    <input name="group1" type="radio" checked />
-                    <span>Red</span>
-                  </label>
-                  <label>
-                    <input name="group1" type="radio" />
-                    <span>Yellow</span>
-                  </label>
-                </p>
-                <div class="input-field col s12">
-                  <input  id="marca" type="text" class="validate">
-                  <label for="marca">Marca</label>
-                </div>
-                <div class="input-field col s12">
-                  <input  id="modelo" type="text" class="validate">
-                  <label for="modelo">Modelo</label>
-                </div>
-                <div class="input-field col s12">
-                  <input  id="pantalla" type="number" step="any" class="validate">
-                  <label for="pantalla">Pantalla</label><span>Pulgadas</span>
-                </div>
-                <div class="input-field col s6">
-                  <select>
-                    <option value="" >Elige un sistema</option>
-                    <option value="1">IPhone</option>
-                    <option value="2">Android</option>
-                    <option value="3">Android AOSP</option>
-                  </select>
-                  <label>OS</label>
-                </div>
-                <div class="input-field col s12">
-                  <input  id="rom" type="number" step="any" class="validate"><span>Almacenamiento Interno</span>
-                  <label for="rom">Rom</label>
-                </div>
-                <div class="input-field col s12">
-                  <input  id="modelo" type="text" class="validate">
-                  <label for="modelo">Modelo</label>
-                </div>
-              </form>
+                <form action="#">
+                  <div class="row">
+                    <div class="col s4">
+                      <label for="">Estado:</label>
+                    </div>
+                    <div class="col s4">
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Red</span>
+                      </label>
+                    </div>
+                    <div class="col s4">
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Yellow</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="marca" type="text" class="validate">
+                      <label for="marca">Marca</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="modelo" type="text" class="validate">
+                      <label for="modelo">Modelo</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="pantalla" type="number" step="any" class="validate">
+                      <label for="pantalla">Pantalla</label><span>Pulgadas</span>
+                    </div>
+                    <div class="input-field col s6">
+                      <select>
+                        <option value="">Elige un sistema</option>
+                        <option value="1">IPhone</option>
+                        <option value="2">Android</option>
+                        <option value="3">Android AOSP</option>
+                      </select>
+                      <label>OS</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="rom" type="number" step="any" min="1" class="validate"><span>Almacenamiento
+                        Interno</span>
+                      <label for="rom">Rom</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="ram" type="number" step="any" min="1" class="validate"><span>Memoria</span>
+                      <label for="RAM">Rom</label>
+                    </div>
+                  </div>
+                </form>
               </div>
+              <fieldset>
+                <legend>Imagenes</legend>
+              <div class="row">
+                <div class="col s2">
+                  <div class="row">
+                    <div class="col s12 center-align">
+                      <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s2 l2">
+                      <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">remove</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s10 l4">
+                  <table class="responsive-table center-align">
+                    <thead>
+                      <tr>
+                          <th>N</th>
+                          <th>Tamano</th>
+                          <th>Tipo</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>145 kb</td>
+                        <td>jpg</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>145 kb</td>
+                        <td>png</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>145 kb</td>
+                        <td>png</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>145 kb</td>
+                        <td>png</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col l4 center-align">
+                  <img class="materialboxed anuncio" src="../img/telefonos.png">
+                </div>
               </div>
+              </fieldset>
             </div>
           </div>
-          <div class="col m7 l7 xl7"></div>
+          <div class="col s12 m7 l7 xl7 ">
+            <div class="card  darken-1 alturaAnuncio">
+              <div class="card-action ">
+                <h4 class="center-align">Informacion del anuncio</h4>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="titulo" type="text" class="validate">
+                    <label for="titulo">Titulo breve del Anuncio</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="vendedor" type="text" class="validate">
+                    <label for="vendedor">Vendedor</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s4">
+                    <input id="telefono" type="text" class="validate">
+                    <label for="telefono">Telefono</label>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Descripcion</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col l4"></div>
+                  <div class="input-field col s12 l4">
+                    <input id="precio" type="number" class="validate">
+                    <label for="precio">Precio</label>
+                  </div>
+                  <div class="col l4"></div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6 l6 right-align">
+                    <a class="waves-effect waves-light btn-large red darken-1"><i
+                        class="material-icons left">cancel</i>Cancelr</a>
+                  </div>
+                  <div class="input-field col s6 l6 left-align">
+                    <a class="waves-effect waves-light btn-large green darken-4" id="crear"><i
+                        class="material-icons left">save</i>Guardar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>

@@ -13,3 +13,16 @@ $(document).ready(function(){
     fullWidth: true,
     indicators: true
   });
+
+
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
+  btnCrear = document.getElementById('crear').addEventListener('click',()=>{
+    alert('Anuncio Guardado');
+    setTimeout(() => {
+      location.href="http://localhost:5500"
+    }, 3000);
+      
+  })

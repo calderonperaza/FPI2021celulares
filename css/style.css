@@ -15,9 +15,15 @@
 
 
   .carousel .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
+  
+}
+
+.anuncio {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  margin: auto;
+  padding: unset;
 }
 
 .altura{
@@ -25,5 +31,5 @@
 }
 
 .alturaAnuncio{
-  height: 30rem;
+  height: 50.75rem;
 }
