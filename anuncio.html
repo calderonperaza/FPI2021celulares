@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>CellPhone Store</title>
+</head>
+
+<body style="background-color: rgb(247, 247, 247);">
+    <!--Navegacion-->
+    <nav class="yellow darken-4 navegacion">
+        <div class="nav-wrapper">
+            <!--Diseno para pantallas grandes tablet y escritorio-->
+            <div class="max-width">
+                <ul class="hide-on-small-only">
+                    <li><a href="index.html"><i class="large material-icons">store</i></a></li>
+                    <li><a href="index.html" class="flow-text waves-effect">Tienda CellPhone</a></li>
+                </ul>
+                <ul class="right hide-on-small-only">
+                    <li><i class="large material-icons">search</i></li>
+                    <li>
+                        <form class="">
+                            <input type="search" placeholder="Buscar..." class="white-text">
+                        </form>
+                    </li>
+                    <li><a href="index.html"
+                            class="waves-effect waves-light btn amber accent-4 hide-on-small-only">Inicio</a></li>
+                    <li><a href="#"
+                            class="waves-effect waves-light btn  amber accent-4 hide-on-med-and-down">Estadisticas</a>
+                    </li>
+                    <li><a href="nuevoAnuncio.html"><i class="large material-icons">add_circle_outline</i></a></li>
+                    <li><a href="#"><i class="large material-icons">add_shopping_cart</i></a></li>
+                </ul>
+            </div>
+
+            <!--Diseno para celulares-->
+            <ul class="">
+                <!--Para que aparezca el menu de hamburguesa  y buscador solo para celulares y tablets-->
+                <div class="show-on-small-only hide-on-med-and-up left">
+                    <!--Generando el icono de menu-->
+                    <ul>
+                        <li>
+                            <a href="#" class="sidenav-trigger no-padding" data-target="menu-side">
+                                <i class="material-icons show-on-small-only hide-on-med-and-up">menu</i>
+                            </a>
+                        </li>
+
+                        <li><i class="large material-icons col s1">search</i></li>
+                        <li>
+                            <form class="">
+                                <input type="search" placeholder="Buscar..." class="white-text">
+                            </form>
+                        </li>
+                    </ul>
+                    <!--Generando los elementos del menu-->
+                    <ul class="sidenav amber lighten-2" id="menu-side" style="max-height: 100%;">
+                        <div class="row container center-align valign-wrapper" style="padding-top: 2rem; display: flex; flex-direction: row;
+                        justify-content: center;">
+                            <li><i class="col s2 large material-icons" style="width: 2.5rem;">store</i></li>
+                            <li>
+                                <h5 class="col s10 flow-text left-align" style="font-weight:bolder; width: 100%">Tienda
+                                    CellPhone
+                                </h5>
+                            </li>
+
+                        </div>
+                        <div class="container center">
+                            <div class="divider"></div>
+                            <li>
+                                <a href="index.html" class="white-text">Inicio</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="nuevoAnuncio.html" class="white-text">Nuevo Anuncio</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="#" class="white-text">Carrito</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="#" class="white-text">Estadisticas</a>
+                            </li>
+                            <div class="divider"></div>
+                        </div>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <!--Navbar slide-->
+    </nav>
+    <div class="contenedor-seccion">
+        <div class="row box-shadow contenedor">
+            <div class="col l12 xl6 s12 m12">
+                <!--Lado del Carrusel-->
+                <div id="carousel" class="carousel" >
+                    <a class="carousel-item" href="#"><img src="img/iPhone.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/Xiaomi.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/Huawei.png"></a>
+                    <a class="carousel-item" href="#"><img src="img/j2.png"></a>
+                </div>
+            </div>
+            <div class="col l12 s12 m12 xl5 center-align valign">
+                <!--Lado de la descripcion del celular-->
+                <h4 style="font-weight: 500;">iPhone 6 Pantalla de 5.5 64GB internos,
+                    <h4 style="font-weight: 500;">2GB RAM Solo banda TIGO</h4>
+                </h4>
+                <h3 style="color: green;">$235</h3>
+                <a class="amber accent-4 waves-effect waves-light btn-large hide-on-med-and-down">Comprar</a>
+                <div class="center-align separacion-arriba container">
+                    <div class="card horizontal">
+                        <div class="card-stacked">
+                            <div class="" style="text-align: Center;">
+                                <p><span class="amber-text">Vendedor:</span>
+                                    Juan Martínez<span class="amber-text"> Teléfono:</span> 1234-5678</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin del primer Row-->
+        <!--Titulo DESCRIPCION-->
+        <div class="center-align yellow-text text-darken-3">
+            <h2 style="text-transform: uppercase;">Descripción</h2>
+        </div>
+        <div class="row contenedor">
+            <div class="col m6 s12">
+                <!--Inicio del primer Card-->
+                <div class="card" style="height: 23rem;">
+                    <h5 class="separacion-arriba center-align amber-text">Especificaciones</h5>
+                    <div class="margen-izquierda separacion-abajo">
+                        <p>Estado: Nuevo</p>
+                        <p>Marca: Iphone</p>
+                        <p>Modelo: 6 plus</p>
+                        <p>Pantalla: 7 pulgadas</p>
+                        <p>Sistema: iOS</p>
+                        <p>Rom: 64GB</p>
+                        <p>Ram: 2GB</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col m6 s12">
+                <!--Inicio del segundo Card-->
+                <div class="card" style="height: 23rem;">
+                    <h5 class="separacion-arriba amber-text center-align">Comentarios</h5>
+                    <div class="margen-izquierda separacion-abajo" style="text-align: justify; margin-right: 1rem;">
+                        <p>
+                            Telefono en muy buenas condiciones, tiene dos cámaras, la caja esta abierta,
+                            pero con muy poco uso, practicamente nuevo, la compañia con la que estaba es Tigo,
+                            asi que elchip debe ser tigo, viene con su caja original y con todos sus accesorios.
+                            Puedo mandar más fotos si desea por whatsapp.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin del segundo Row-->
+        <div class="hide-on-med-and-up">
+            <div class="">
+                <a href="index.html" class="btn-flotante izquierdo">Inicio</a>
+            </div>
+            <div class="">
+                <a href="#" class="btn-flotante derecho amber">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

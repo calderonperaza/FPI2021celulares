@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>CellPhone Store</title>
+</head>
+
+<body style="background-color: rgb(247, 247, 247);">
+    <!-- Navbar goes here -->
+    <nav class="yellow darken-4 navegacion">
+        <div class="nav-wrapper">
+            <!--Diseno para pantallas grandes tablet y escritorio-->
+            <div class="max-width">
+                <ul class="hide-on-small-only">
+                    <li><a href="index.html"><i class="large material-icons">store</i></a></li>
+                    <li><a href="index.html" class="flow-text waves-effect">Tienda CellPhone</a></li>
+                </ul>
+                <ul class="right hide-on-small-only">
+                    <li><i class="large material-icons">search</i></li>
+                    <li>
+                        <form class="">
+                            <input type="search" placeholder="Buscar..." class="white-text">
+                        </form>
+                    </li>
+                    <li><a href="index.html"
+                            class="waves-effect waves-light btn amber accent-4 hide-on-small-only">Inicio</a></li>
+                    <li><a href="#"
+                            class="waves-effect waves-light btn  amber accent-4 hide-on-med-and-down">Estadisticas</a>
+                    </li>
+                    <li><a href="nuevoAnuncio.html"><i class="large material-icons">add_circle_outline</i></a></li>
+                    <li><a href="#"><i class="large material-icons">add_shopping_cart</i></a></li>
+                </ul>
+            </div>
+
+            <!--Diseno para celulares-->
+            <ul class="">
+                <!--Para que aparezca el menu de hamburguesa  y buscador solo para celulares y tablets-->
+                <div class="show-on-small-only hide-on-med-and-up left">
+                    <!--Generando el icono de menu-->
+                    <ul>
+                        <li>
+                            <a href="#" class="sidenav-trigger no-padding" data-target="menu-side">
+                                <i class="material-icons show-on-small-only hide-on-med-and-up">menu</i>
+                            </a>
+                        </li>
+
+                        <li><i class="large material-icons col s1">search</i></li>
+                        <li>
+                            <form class="">
+                                <input type="search" placeholder="Buscar..." class="white-text">
+                            </form>
+                        </li>
+                    </ul>
+                    <!--Generando los elementos del menu-->
+                    <ul class="sidenav amber lighten-2" id="menu-side" style="max-height: 100%;">
+                        <div class="row container center-align valign-wrapper" style="padding-top: 2rem; display: flex; flex-direction: row;
+                        justify-content: center;">
+                            <li><i class="col s2 large material-icons" style="width: 2.5rem;">store</i></li>
+                            <li>
+                                <h5 class="col s10 flow-text left-align" style="font-weight:bolder; width: 100%">Tienda
+                                    CellPhone
+                                </h5>
+                            </li>
+
+                        </div>
+                        <div class="container center">
+                            <div class="divider"></div>
+                            <li>
+                                <a href="index.html" class="white-text">Inicio</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="nuevoAnuncio.html" class="white-text">Nuevo Anuncio</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="#" class="white-text">Carrito</a>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <a href="#" class="white-text">Estadisticas</a>
+                            </li>
+                            <div class="divider"></div>
+                        </div>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <!--Navbar slide-->
+    </nav>
+    <!--Creando la vista para Desktop y Tablets-->
+    <div class="contenedor-seccion">
+        <div class="row">
+            <div class="col m12 s12">
+                <div class="col m3 s6 hide-on-small-only">
+                    <!--Lado del filtro-->
+
+
+                    <form action="#" class="box-shadow">
+                        <!-- Switch -->
+                        <div class="switch left-align separacion-abajo separacion-arriba">
+                            <label style="color: black; font-weight: 400; font-size: 1.2rem;">
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                                Nuevo
+                            </label>
+                        </div>
+
+                        <fieldset class="">
+                            <legend class="">Marca</legend>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Samsung</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Huawei</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Nokia</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>iPhone</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Xiaomi</span>
+                                </label>
+                            </p>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Sistema</legend>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Android</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>iOS</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Windows</span>
+                                </label>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Pantalla</legend>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>6.0</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>5.5</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>5.0</span>
+                                </label>
+                            </p>
+                        </fieldset>
+                    </form>
+
+
+                    <br>
+                    <!--Div que finaliza el lado del filtro-->
+                </div>
+                <!-- Lado de mostrar el producto -->
+                <div class="col m9 s12">
+                    <div class="row">
+                        <div class="col m5 s3 show-on-med-and-up">
+                            <div class="row hide-on-small-only">
+                                <div class="input-field col s5">
+                                    <input placeholder="$" id="first_name" type="text" class="validate">
+                                    <label for="first_name">Precio</label>
+                                </div>
+                                <div class="input-field col s5">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Hasta</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col m6 s12">
+                            <div class="row separacion-arriba valign-wrapper">
+                                <div class="col s4 m4 left-align">
+                                    <label style="font-size: 1.2rem;">Ordenar por:</label>
+                                </div>
+                                <div class="col s3 m4 hide-on-small-only left-align">
+                                    <a class="waves-effect waves-light btn-small amber accent-4"><i
+                                            class="material-icons left">attach_money</i>Precio</a>
+                                </div>
+                                <div class="col s3 m8 hide-on-small-only">
+                                    <a class="waves-effect waves-light btn-small amber accent-4"><i
+                                            class="material-icons left">date_range</i>Fecha</a>
+                                </div>
+                                <div class="col s5 hide-on-med-and-up">
+                                    <!--Select-->
+                                    <select class="browser-default">
+                                        <option value="" disabled selected>--Selecciona--</option>
+                                        <option value="1">Precio</option>
+                                        <option value="2">Marca</option>
+                                    </select>
+
+                                </div>
+                                <div class="col s3 hide-on-med-and-up">
+                                    <!--boton del filtro-->
+                                    <ul id="slide-out" class="sidenav">
+                                        <li>
+                                            <form action="#" class="box-shadow">
+                                                <!-- Switch -->
+
+                                                <div class="switch row center-align valign-wrapper separacion-arriba">
+                                                    <div class="col s6">
+                                                        <label
+                                                            style="color: black; font-weight: 400; font-size: 1.2rem;">
+                                                            <input type="checkbox">
+                                                            <span class="lever"></span>
+                                                            Nuevo
+                                                        </label>
+                                                    </div>
+                                                    <div class="col s6">
+                                                        <a href="#" data-target="slide-out"
+                                                            class="sidenav-trigger valign-wrapper"><i
+                                                                class="small black-text material-icons">filter_list</i></a>
+                                                    </div>
+
+                                                </div>
+
+                                                <fieldset class="">
+                                                    <legend class="">Marca</legend>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>Samsung</span>
+                                                        </label>
+                                                    </p>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>Huawei</span>
+                                                        </label>
+                                                    </p>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>Nokia</span>
+                                                        </label>
+                                                    </p>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>iPhone</span>
+                                                        </label>
+                                                    </p>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>Xiaomi</span>
+                                                        </label>
+                                                    </p>
+                                                </fieldset>
+
+                                                <fieldset>
+                                                    <legend>Sistema</legend>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>Android</span>
+                                                        </label>
+                                                    </p>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>iOS</span>
+                                                        </label>
+                                                    </p>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>Windows</span>
+                                                        </label>
+                                                    </p>
+                                                </fieldset>
+                                                <fieldset>
+                                                    <legend>Pantalla</legend>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>6.0</span>
+                                                        </label>
+                                                    </p>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>5.5</span>
+                                                        </label>
+                                                    </p>
+                                                    <p>
+                                                        <label>
+                                                            <input type="checkbox" class="filled-in"
+                                                                checked="checked" />
+                                                            <span>5.0</span>
+                                                        </label>
+                                                    </p>
+                                                </fieldset>
+                                            </form>
+
+                                        </li>
+                                    </ul>
+                                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                                            class="small amber-text material-icons">filter_list</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Div del Row que finaliza el lado del producto-->
+                    </div>
+                    <div class="row">
+                        <div class="col s6 m4">
+                            <a href="anuncio.html" style="text-decoration: none; color: black;">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/j2.png" class="imagen-size">
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="card-content center-align">
+                                        <span class="card-title center-align">$132</span>
+                                        <p>Samsung J6, Pantalla de 5.5</p>
+                                        <p>64GB, 2GB RAM, Color Negro</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col s6 m4">
+                            <a href="anuncio.html" style="text-decoration: none; color: black;">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/j2.png" class="imagen-size">
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="card-content center-align">
+                                        <span class="card-title center-align">$132</span>
+                                        <p>Samsung J6, Pantalla de 5.5</p>
+                                        <p>64GB, 2GB RAM, Color Negro</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col s6 m4">
+                            <a href="anuncio.html" style="text-decoration: none; color: black;">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/j2.png" class="imagen-size">
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="card-content center-align">
+                                        <span class="card-title center-align">$132</span>
+                                        <p>Samsung J6, Pantalla de 5.5</p>
+                                        <p>64GB, 2GB RAM, Color Negro</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col s6 m4">
+                            <a href="anuncio.html" style="text-decoration: none; color: black;">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/j2.png" class="imagen-size">
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="card-content center-align">
+                                        <span class="card-title center-align">$132</span>
+                                        <p>Samsung J6, Pantalla de 5.5</p>
+                                        <p>64GB, 2GB RAM, Color Negro</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col s6 m4">
+                            <a href="anuncio.html" style="text-decoration: none; color: black;">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/j2.png" class="imagen-size">
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="card-content center-align">
+                                        <span class="card-title center-align">$132</span>
+                                        <p>Samsung J6, Pantalla de 5.5</p>
+                                        <p>64GB, 2GB RAM, Color Negro</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col s6 m4">
+                            <a href="anuncio.html" style="text-decoration: none; color: black;">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="img/j2.png" class="imagen-size">
+                                        <div class="divider"></div>
+                                    </div>
+                                    <div class="card-content center-align">
+                                        <span class="card-title center-align">$132</span>
+                                        <p>Samsung J6, Pantalla de 5.5</p>
+                                        <p>64GB, 2GB RAM, Color Negro</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Paginacion-->
+                    <div class="row valign-wrapper center-align">
+                        <div class="col m5 s12 left-align" style="margin-left: 1rem;">
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                                <li class="active"><a href="#!">1</a></li>
+                                <li class="waves-effect"><a href="#!">2</a></li>
+                                <li class="waves-effect"><a href="#!">3</a></li>
+                                <li class="waves-effect"><a href="#!">4</a></li>
+                                <li class="waves-effect"><a href="#!">5</a></li>
+                                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="margen-izquierda col m2 hide-on-small-only left-align">
+                            <span>Articulos por pagina</span>
+                        </div>
+                        <div class="col m5 hide-on-small-only left-align">
+                            <select class="browser-default" style="width: 40%;">
+                                <option value="" disabled selected>--Selecciona--</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
