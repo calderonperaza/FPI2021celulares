@@ -174,7 +174,7 @@
                                                 <div class="modal-dialog">
                                                   <div class="modal-content">
                                                     <div class="modal-header">
-                                                      <h5 class="modal-title" id="imagenModalLabel">Modal title</h5>
+                                                      <h5 class="modal-title" id="imagenModalLabel">Imagenes</h5>
                                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
@@ -231,7 +231,7 @@
                                         </div>
               
                                         <div class="col-4 w-auto rounded d-block mx-auto">
-                                            <img src="../images/j6.jpg" class="img-thumbnail " alt="image" width="200px" height="200px">
+                                            <img src="../images/iphone8.jpg" class="img-thumbnail " alt="image" width="200px" height="200px">
                                         </div>
                                     </div>                    
                                 </fieldset>
@@ -276,6 +276,75 @@
                 
                         </div>
         
+                </div>
+
+                <div class="row d-block d-lg-none">
+                  <div class="col"> 
+
+                    <div class="row">                    
+                      <!--Carousel-->
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/iphone8.jpg" class="d-block w-100" alt="image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/iphone8.jpg" class="d-block w-100" alt="image">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/iphone8.jpg" class="d-block w-100" alt="image">
+                          </div>
+                        </div>
+
+                        <div class="carousel-caption">
+                          <button type="file" class="btn btn-primary rounded-circle w-auto"  data-bs-toggle="modal" data-bs-target="#imagen2Modal"><i class="bi bi-plus-lg"></i></button>
+                          <h3 class="fw-bold bg-dark p-2 m-2 opacity-75 rounded-pill w-auto">Agregar Foto</h3>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>  
+                    
+                    
+                    <div class="row d-flex justify-content-center">                  
+                      <!-- button type="file" class="btn btn-primary m-2 d-block rounded-circle w-auto" data-bs-toggle="modal" data-bs-target="#imagen2Modal"><i class="bi bi-plus-lg"></i></button-->
+                      
+                      <div class="d-flex justify-content-center">                      
+                        <!-- Modal -->
+                        <div class="modal fade" id="imagen2Modal" tabindex="-1" aria-labelledby="imagen2ModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="imagen2ModalLabel">Imagen</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <input class="form-control w-auto m-2" type="file">
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"> </i>Cancelar</button>
+                                <button type="button" class="btn btn-primary"><i class="bi bi-save"> </i>Guardar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div> 
+
+                      </div>
+
+                        
+                    </div>
+
+
+                  </div>
+
                 </div>
         
             </div>
