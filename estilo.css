@@ -14,7 +14,7 @@ nav{
     margin: auto;
 }
 #navbarcont{
-    padding-right: 16%;
+    padding-right: 13%;
 }
 
 #carro{
@@ -23,7 +23,7 @@ nav{
 }
 
 #logito{
-    padding-left: 5%;
+    padding-left: 7%;
 }
 
 #spanbar{
@@ -234,6 +234,10 @@ nav{
     font-family:'Prompt', sans-serif;
 }
 
+#color{
+    color: black;
+}
+
 #detalles2{
     color: aliceblue;
     font-weight: 500;
@@ -245,25 +249,153 @@ nav{
 
 }
 
+#detalles3{
+    color: aliceblue;
+    padding-top: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #4c2882;
+
+}
+
+#detalles33{
+    color: aliceblue;
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #4c2882;
+}
+
+#detalles3312{
+    color: aliceblue;
+    padding-top: 21px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #4c2882;
+}
+
+#detalles331{
+    color: aliceblue;
+    font-family:'Prompt', sans-serif;
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #4c2882;
+
+}
+
+
+#detalles4{
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #c7aaeb;
+
+}
+
 #textanun{
     padding-left: 4%;
 }
 
 #descri{
-    background-color: #69489b;
     text-align: center;
-    color: rgb(229, 229, 153);
+    color: #ffffff;
     font-size: 25px;
     font-family:'Prompt', sans-serif;
+    background-color: #4c2882;
 }
+
+#descri2{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family:'Prompt', sans-serif;
+}
+
+#rellenonuevo{
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #c7aaeb;
+}
+
+#descri3{
+    text-align: center;
+    background-color: #4c2882;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family:'Prompt', sans-serif;
+    border-color: #28114b;
+    border-style: solid;
+    background-color: #4c2882;
+
+}
+
 #colorcard{
     background-color: #69489b;
     
 }
 
 #coloranuncio{
-        padding-top: 5%;
+    padding-top: 5%;
     color: aliceblue;
     font-weight: 900;
     font-size: 20px;
+}
+
+#iconsbar{
+    padding-top: 5%;
+}
+
+#temanew{
+    justify-content: center;
+}
+
+#precionuevo{
+    padding-left: 25%;
+}
+
+#ultimosbtn{
+    background-color: #4c2882;
+}
+
+#btcolor{
+    background-color: #4c2882;
+}
+
+#color4{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#color2{
+    color: white;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#color3{
+    color: white;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#imgimg{
+    padding-top: 3%;
+    padding-left: 3%;
+
 }
