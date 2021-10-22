@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body class=" bg-success">
+  <header>
+    <!-- MENU NAVEGADOR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success w-100">
+      <div class="container-fluid">
+        
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="w-50  d-block d-lg-none"> 
+          <form class="d-flex">
+            <input id="idSearch2" class="form-control me-2 rounded-pill w-100"  style="font-family: Arial, Helvetica, sans-serif, bootstrap-icons;" type="search" placeholder="&#xf52a  Search" aria-label="Search" >
+          </form>
+        </div>
+       
+         
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+          <a class="navbar-brand text-light" href="#"><i class="bi bi-megaphone"></i> Tienda CellPhone </a>
+          
+          <!--Busqueda 1-->
+          <div class="w-50 d-none d-lg-block"> 
+            <form class="d-flex">
+              <input id="idSearch1" class="form-control me-2 rounded-pill w-100"  style="font-family: Arial, Helvetica, sans-serif, bootstrap-icons;" type="search" placeholder="&#xf52a  Search" aria-label="Search" >
+            </form>
+          </div>
+         
+         
+          <!-- menu 1-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto  d-none d-lg-block d-inline-block">
+            <li class="nav-item d-inline-block">
+              <a class="btn btn-success me-2" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item d-inline-block">
+              <a class="btn btn-success me-2" href="#">Estadísticas</a>
+            </li>
+            <li class="nav-item d-inline-block">
+              <a class="btn btn-success me-2" href="#" ><i class="bi bi-plus-circle-fill"></i></a>
+            </li>
+            <li class="nav-item d-inline-block">
+              <a class="btn btn-success me-2" href="#"><i class="bi bi-cart-plus-fill"></i> 1</a>
+            </li>
+          </ul>
+
+         <!-- menu 2-->
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto d-block d-lg-none">
+          <li class="nav-item border-bottom border-top">
+            <a class="btn btn-success me-2 d-block" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a class="btn btn-success me-2 d-block" href="#" >Nuevo Anuncio</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a class="btn btn-success me-2 d-block" href="#">Carrito</a>
+          </li>
+          <li class="nav-item border-bottom">
+            <a class="btn btn-success me-2 d-block" href="#">Estadísticas</a>
+          </li>
+        </ul>
+
+        </div>
+
+      </div>
+    </nav>
+   
+
+  </header>
+
+  
+    
+<!-- Contenido -->
+<div  class="container-fluid">
+    <main class="row">
+
+        <section class="col">
+            <div class="container-fluid">
+
+                <!--Nuevo anuncio lg -->
+                <div class="row d-none d-lg-flex">
+                    <h1 class="modal-title ms-auto fw-bold text-center text-white id="exampleModalLabel">Nuevo Anuncio</h1>
+    
+                      <!--Columna 1 -->
+                        <div class="col ">
+                            <div class="row bg-light text-dark  fw-bold">
+                                <div class="border">
+                                    <!-- fila 1 -->
+                                        <div class="row my-1">
+                                            <label class="col-4 w-auto">Estado: </label>
+                                            <div class="form-check col-4 w-auto">
+                                                <input class="form-check-input" type="radio" name="estado" id="rdNuevo">
+                                                <label class="form-check-label" for="rdNuevo">
+                                                    Nuevo
+                                                </label>
+                                            </div>
+    
+                                            <div class="form-check col-4 w-auto">
+                                                <input class="form-check-input" type="radio" name="estado" id="rdUsado">
+                                                <label class="form-check-label" for="rdUsado">
+                                                    Usado
+                                                </label>
+                                            </div>
+                                        </div>
+                  
+                                        <div class="row">
+                                            <label class="col-6 w-auto me-3" for="txtMarca">Marca:</label>
+                                            <input id="txtModelo" class="col-6 my-1 form-control w-auto " type="text" >
+                                        </div>
+          
+                                        <div class="row">
+                                            <label class="col-6 w-auto me-2" for="txtModelo">Modelo:</label>
+                                            <input id="txtModelo" class="col-6 my-1 form-control w-auto " type="text"  >
+                                        </div>
+          
+                                        <div class="row">
+                                            <label class="col-6 w-auto me-2" for="txtPantalla">Pantalla:</label>
+                                            <input id="txtPantalla" class="col-6 my-1 form-control w-auto me-2 " type="text" >Pulgadas
+                                        </div>
+          
+                                        <div class="row" >
+                                            <label for="idSistema" class="col-6 w-auto me-2">Sistema:</label>
+                                            <select id="idSistema" class="form-select col-6 w-auto" >
+                                                <option selected>Ios</option>
+                                                <option selected>Android</option>
+                                                <option selected>Windows</option>
+                                                <!--option value="5">5</option-->
+                                            </select>
+                                        </div> 
+          
+                                        <div class="row">
+                                            <label class="col-6 w-auto me-4" for="txtRom">ROM:</label>
+                                            <input id="txtRom" class="col-6 my-1 form-control w-auto me-2 " type="text" > Almacenamiento interno
+                                        </div>
+          
+                                        <div class="row">
+                                            <label class="col-6 w-auto me-4" for="txtRam">RAM:</label>
+                                            <input id="txtRam" class="col-6 my-1 form-control w-auto " type="text" >
+                                        </div>
+          
+                        
+                       
+          
+                                </div>
+                            </div>
+          
+          
+                            <div class="row my-2 border bg-light text-dark  fw-bold" >
+                                <fieldset class="border">
+                                    <legend>Imagenes</legend>
+                                    <div class="row">
+                                        <div class="col-4 w-auto mx-auto">
+                                            <!--input class="form-control w-auto m-2" type="file"-->
+                                            <button type="file" class="btn btn-primary m-2 d-block rounded-circle"><i class="bi bi-plus-lg"></i></button>
+                                            <button type="file" class="btn btn-danger m-2 d-block rounded-circle"><i class="bi bi-dash-lg"></i></button>
+                                
+                                        </div>
+              
+                            
+                                        <div class="col-4 w-auto mx-auto">
+                                            <table class="table">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col">N</th>
+                                                    <th scope="col">Tamaño</th>
+                                                    <th scope="col">Tipo</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>145 kb</td>
+                                                    <td>jpg</td>
+                                                    
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>145 kb</td>
+                                                    <td>png</td>
+                                                  </tr>
+                            
+                                                  <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>145 kb</td>
+                                                    <td>png</td>
+                                                  </tr>
+                            
+                                                  <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>145 kb</td>
+                                                    <td>jpg</td>
+                                                  </tr>
+                                                 
+                                                </tbody>
+                                              </table>
+                             
+                                        </div>
+              
+                                        <div class="col-4 w-auto rounded d-block mx-auto">
+                                            <img src="../images/j6.jpg" class="img-thumbnail " alt="image" width="200px" height="200px">
+                                        </div>
+                                    </div>                    
+                                </fieldset>
+                            </div>
+          
+                        </div>
+          
+                        <!--Columna 2 modal-->
+                        <div class="col fw-bold">
+          
+                            <div class="row">
+                              <label class="col-6 w-auto m-2" for="txtTituloAnuncio">Titulo breve del anuncio</label>
+                              <input id="txtTituloAnuncio" class="col-6 m-2 form-control wx-100" type="text" >
+                            </div>
+                
+                            <div class="row">
+                              <label class="col-6 w-auto me-2" for="txtVendedor">Vendedor:</label>
+                              <input id="txtVendedor" class="col-6 my-1 form-control w-auto " type="text" >
+                            </div>
+                
+                            <div class="row">
+                              <label class="col-6 w-auto me-3" for="txtTelefono">Telefono:</label>
+                              <input id="txtTelefono" class="col-6 my-1 form-control w-auto " type="tel" >
+                            </div>
+                
+                            <div class="row">
+                              <label class="col-6 w-auto me-3" for="txtDescripcion">DESCRIPCION:</label>
+                              <textarea id="txtDescripcion" class="form-control m-3 w-100" aria-label="With textarea"></textarea>
+                            </div>
+                
+                            <fieldset class="row border text-dark fw-bold bg-light m-3 d-flex justify-content-center w-auto">
+                              <legend>PRECIO</legend>
+                              <input type="text" class="m-2" style="width: 20%;" placeholder="$" >
+                              
+                            </fieldset>
+                
+                            <div class="row d-flex justify-content-center">
+                              <a class="btn btn-secondary col-6 w-auto m-2" href="../index.html" ><i class="bi bi-x-circle-fill"></i> Cancelar</a>
+                              <button type="button" class="btn btn-primary col-6 w-auto m-2"><i class="bi bi-save"></i> Crear</button>
+                            </div>
+                
+                
+                        </div>
+        
+                </div>
+        
+            </div>
+
+        </section>  
+    </main>
+</div>
+ 
+
+
+    
+
+
+  <!-- Bootstrap JS  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+</html>

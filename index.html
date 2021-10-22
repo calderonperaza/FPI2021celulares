@@ -52,7 +52,8 @@
               <a class="btn btn-success me-2" href="#">Estadísticas</a>
             </li>
             <li class="nav-item d-inline-block">
-              <a class="btn btn-success me-2" href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-circle-fill"></i></a>
+              <a class="btn btn-success me-2" href="pages/nuevo_anuncio.html" ><i class="bi bi-plus-circle-fill"></i></a>
+              <!--a class="btn btn-success me-2" href="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-circle-fill"></i></a-->
             </li>
             <li class="nav-item d-inline-block">
               <a class="btn btn-success me-2" href="#"><i class="bi bi-cart-plus-fill"></i> 1</a>
@@ -65,7 +66,7 @@
             <a class="btn btn-success me-2 d-block" href="#">Inicio</a>
           </li>
           <li class="nav-item border-bottom">
-            <a class="btn btn-success me-2 d-block" href="#" >Nuevo Anuncio</a>
+            <a class="btn btn-success me-2 d-block" href="pages/nuevo_anuncio.html" >Nuevo Anuncio</a>
           </li>
           <li class="nav-item border-bottom">
             <a class="btn btn-success me-2 d-block" href="#">Carrito</a>
@@ -82,199 +83,6 @@
    
 
   </header>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen d-none d-lg-block">
-      <div class="modal-content bg-success text-white">
-        <div class="modal-header">
-          <h1 class="modal-title ms-auto fw-bold" id="exampleModalLabel">Nuevo Anuncio</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="container-fluid">
-            <div class="row">
-
-              <!--Columna 1 modal-->
-              <div class="col ">
-              <div class="row bg-light text-dark  fw-bold">
-                <div class="border">
-                  
-                  <!--modal fila 1 -->
-                  <div class="row my-1">
-                    <label class="col-4 w-auto">Estado: </label>
-                    <div class="form-check col-4 w-auto">
-                      <input class="form-check-input" type="radio" name="estado" id="rdNuevo">
-                      <label class="form-check-label" for="rdNuevo">
-                        Nuevo
-                      </label>
-                    </div>
-                    <div class="form-check col-4 w-auto">
-                      <input class="form-check-input" type="radio" name="estado" id="rdUsado">
-                      <label class="form-check-label" for="rdUsado">
-                        Usado
-                      </label>
-                    </div>
-                  </div>
-            
-                  <div class="row">
-                    <label class="col-6 w-auto me-3" for="txtMarca">Marca:</label>
-                    <input id="txtModelo" class="col-6 my-1 form-control w-auto " type="text" >
-                  </div>
-
-                  <div class="row">
-                    <label class="col-6 w-auto me-2" for="txtModelo">Modelo:</label>
-                    <input id="txtModelo" class="col-6 my-1 form-control w-auto " type="text"  >
-                  </div>
-
-                  <div class="row">
-                    <label class="col-6 w-auto me-2" for="txtPantalla">Pantalla:</label>
-                    <input id="txtPantalla" class="col-6 my-1 form-control w-auto me-2 " type="text" >Pulgadas
-                  </div>
-
-                  <div class="row" >
-                    <label for="idSistema" class="col-6 w-auto me-2">Sistema:</label>
-                    <select id="idSistema" class="form-select col-6 w-auto" >
-                      <option selected>Ios</option>
-                      <option selected>Android</option>
-                      <option selected>Windows</option>
-                      <!--option value="5">5</option-->
-                    </select>
-                  </div> 
-
-                  <div class="row">
-                    <label class="col-6 w-auto me-4" for="txtRom">ROM:</label>
-                    <input id="txtRom" class="col-6 my-1 form-control w-auto me-2 " type="text" > Almacenamiento interno
-                  </div>
-
-                  <div class="row">
-                    <label class="col-6 w-auto me-4" for="txtRam">RAM:</label>
-                    <input id="txtRam" class="col-6 my-1 form-control w-auto " type="text" >
-                  </div>
-
-                  
-                 
-
-                </div>
-              </div>
-
-
-              <div class="row my-2 border bg-light text-dark  fw-bold" >
-                <fieldset class="border">
-                  <legend>Imagenes</legend>
-                  <div class="row">
-                    <div class="col-4 w-auto mx-auto">
-                      <!--input class="form-control w-auto m-2" type="file"-->
-                      <button type="file" class="btn btn-primary m-2 d-block rounded-circle"><i class="bi bi-plus-lg"></i></button>
-                      <button type="file" class="btn btn-danger m-2 d-block rounded-circle"><i class="bi bi-dash-lg"></i></button>
-                      
-                    </div>
-
-                    
-
-                    <div class="col-4 w-auto mx-auto">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">N</th>
-                            <th scope="col">Tamaño</th>
-                            <th scope="col">Tipo</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>145 kb</td>
-                            <td>jpg</td>
-                            
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>145 kb</td>
-                            <td>png</td>
-                          </tr>
-
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>145 kb</td>
-                            <td>png</td>
-                          </tr>
-
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>145 kb</td>
-                            <td>jpg</td>
-                          </tr>
-                         
-                        </tbody>
-                      </table>
-                    </div>
-  
-                    <div class="col-4 w-auto rounded d-block mx-auto">
-                      <img src="images/j6.jpg" class="img-thumbnail " alt="image" width="200px" height="200px">
-                    </div>
-                  </div>
-
-                  
-                </fieldset>
-              </div>
-
-              </div>
-
-              <!--Columna 2 modal-->
-              <div class="col fw-bold">
-
-                <div class="row">
-                  <label class="col-6 w-auto m-2" for="txtTituloAnuncio">Titulo breve del anuncio</label>
-                  <input id="txtTituloAnuncio" class="col-6 m-2 form-control wx-100" type="text" >
-                </div>
-
-                <div class="row">
-                  <label class="col-6 w-auto me-2" for="txtVendedor">Vendedor:</label>
-                  <input id="txtVendedor" class="col-6 my-1 form-control w-auto " type="text" >
-                </div>
-
-                <div class="row">
-                  <label class="col-6 w-auto me-3" for="txtTelefono">Telefono:</label>
-                  <input id="txtTelefono" class="col-6 my-1 form-control w-auto " type="tel" >
-                </div>
-
-                <div class="row">
-                  <label class="col-6 w-auto me-3" for="txtDescripcion">DESCRIPCION:</label>
-                  <textarea id="txtDescripcion" class="form-control m-3 w-100" aria-label="With textarea"></textarea>
-                </div>
-
-                <fieldset class="row border text-dark fw-bold bg-light m-3 d-flex justify-content-center w-auto">
-                  <legend>PRECIO</legend>
-                  <input type="text" class="m-2" style="width: 20%;" placeholder="$" >
-                  
-                </fieldset>
-
-                <div class="row d-flex justify-content-center">
-                  <button type="button" class="btn btn-secondary col-6 w-auto m-2" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i> Cancelar</button>
-                  <button type="button" class="btn btn-primary col-6 w-auto m-2"><i class="bi bi-save"></i> Crear</button>
-                </div>
-
-
-              </div>
-
-
-              
-
-            </div>
-
-          </div>
-        </div>
-
-        <!--div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i> Cancelar</button>
-          <button type="button" class="btn btn-primary"><i class="bi bi-save"></i> Crear</button>
-        </div-->
-
-      </div>
-
-    </div>
-  </div>
     
   <!-- Contenido -->
   <div  class="container-fluid">
