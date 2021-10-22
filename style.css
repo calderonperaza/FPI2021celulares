@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+  
+    margin: 0px;
+
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+#navbar{
+    background-color:#632A7E;
+    color: white
+}
+.modal{
+    width: 100%;
+}

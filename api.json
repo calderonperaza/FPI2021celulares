@@ -1,0 +1,102 @@
+[
+  {
+    "precio": 500,
+    "id": 1,
+    "size": "6",
+    "system": "Android",
+    "estado": "Nuevo",
+    "rom": "64 GB",
+    "ram": "2 GB",
+    "modelo": "Huawei y9",
+    "vendedor": "Juan Perez",
+    "telefono": "2113-1212",
+    "brand": "Huawei",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    "image": "https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0",
+    "images": [
+      "https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0",
+      "https://esenserio.com/wp-content/uploads/2019/03/Huawei-Y9-2019.jpg",
+      "https://th.bing.com/th/id/R.60f6e66c208803409b077e0df38fc1a8?rik=u7kDJJlVCJ0dFw&pid=ImgRaw&r=0"
+    ]
+  },
+  {
+    "precio": 250,
+    "id": 2,
+    "size": "6",
+    "system": "Android",
+    "estado": "Nuevo",
+    "rom": "64 GB",
+    "ram": "2 GB",
+    "modelo": " Samsung A10s",
+    "vendedor": "Juan Perez",
+    "telefono": "2113-1212",
+    "brand": "Samsumg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
+    "images": [
+      "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
+      "https://th.bing.com/th/id/OIP.txVhkWj5HPR7V0-mO3QqfwHaEe?pid=ImgDet&rs=1",
+      "https://phonesdata.com/files/models/Samsung--Galaxy-A10s-489.jpg"
+    ]
+  },
+  {
+    "precio": 100,
+    "id": 3,
+    "size": "6",
+    "system": "Android",
+    "estado": "Nuevo",
+    "rom": "64 GB",
+    "ram": "2 GB",
+    "modelo": "Nokia Lumia 2021",
+    "vendedor": "Juan Perez",
+    "telefono": "2113-1212",
+    "brand": "Nokia",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
+    "images": [
+      "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
+      "https://th.bing.com/th/id/OIP.txVhkWj5HPR7V0-mO3QqfwHaEe?pid=ImgDet&rs=1",
+      "https://phonesdata.com/files/models/Samsung--Galaxy-A10s-489.jpg"
+    ]
+  },
+  {
+    "precio": 850,
+    "id": 4,
+    "size": "6",
+    "system": "Ios",
+    "estado": "Nuevo",
+    "rom": "64 GB",
+    "ram": "6 GB",
+    "modelo": "Iphone X",
+    "vendedor": "Juan Perez",
+    "telefono": "2113-1212",
+    "brand": "Iphone",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    "image": "https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg",
+    "images": [
+      "https://manzanarota.com/wp-content/uploads/2019/07/iphone-x-pantalla-bateria-carga-reparacion-manzana-rota.jpg",
+      "https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg",
+      "https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/2005662230909_2.jpg"
+    ]
+  },
+  {
+    "precio": 500,
+    "id": 4,
+    "size": "6",
+    "system": "Ios",
+    "estado": "Nuevo",
+    "rom": "128 GB",
+    "ram": "8 GB",
+    "modelo": " Xiomi Note 10",
+    "vendedor": "Juan Perez",
+    "telefono": "2113-1212",
+    "brand": "Xiomi",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    "image": "https://th.bing.com/th/id/OIP.c4snyFIZACsDgAj_nVbj6QHaHa?pid=ImgDet&rs=1",
+    "images": [
+      "https://th.bing.com/th/id/R.f90c4f5f7558a2f8f62b6c8debdf93a8?rik=Y7PaCvsShg4IEQ&pid=ImgRaw&r=0",
+      "https://www.jiocorp.es/wp-content/uploads/2020/01/xiaomi-mi-note-10-negro.jpg",
+      "https://th.bing.com/th/id/OIP.c4snyFIZACsDgAj_nVbj6QHaHa?pid=ImgDet&rs=1"
+    ]
+  }
+]
