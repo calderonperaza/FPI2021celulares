@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="./unAnuncio.html">
                 <img src="./imagenes/iphone12pro.jpg" class="card-img-top" alt="..." style="height: 200px;">
             </a>
-                <div class="card-body text-center">
+                <div class="card-body text-center border border-2 border-dark">
                     <h5 class="card-title"><b>$1102.00</b></h5>
                     <p class="card-text">
                     Iphone 12 Pro Max
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="col-6 p-2 d-md-none">
             <div class="card" >
             <a href="./unAnuncio.html">
-                <img src="./imagenes/iphone12pro.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                <img src="./imagenes/iphone12pro.jpg" class="card-img-top" alt="..." style="height: 230px;">
             </a>                
-                <div class="card-body text-center">
+                <div class="card-body text-center border border-2 border-dark">
                     <h5 class="card-title"><b>$1102.00</b></h5>
                     <p class="card-text">
                     Iphone 12 Pro Max
