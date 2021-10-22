@@ -1,0 +1,4 @@
+/node_modules/
+sass/custom.scss
+css/custom.css.map
+.vscode/extensions.json
