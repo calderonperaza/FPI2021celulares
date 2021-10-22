@@ -165,9 +165,28 @@
                                     <legend>Imagenes</legend>
                                     <div class="row">
                                         <div class="col-4 w-auto mx-auto">
-                                            <!--input class="form-control w-auto m-2" type="file"-->
-                                            <button type="file" class="btn btn-primary m-2 d-block rounded-circle"><i class="bi bi-plus-lg"></i></button>
+                                        
+                                            <button type="file" class="btn btn-primary m-2 d-block rounded-circle" data-bs-toggle="modal" data-bs-target="#imagenModal"><i class="bi bi-plus-lg"></i></button>
                                             <button type="file" class="btn btn-danger m-2 d-block rounded-circle"><i class="bi bi-dash-lg"></i></button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="imagenModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="imagenModalLabel">Modal title</h5>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <input class="form-control w-auto m-2" type="file">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"> </i>Cancelar</button>
+                                                      <button type="button" class="btn btn-primary"><i class="bi bi-save"> </i>Guardar</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>                                   
                                 
                                         </div>
               
@@ -220,11 +239,11 @@
           
                         </div>
           
-                        <!--Columna 2 modal-->
-                        <div class="col fw-bold">
+                        <!--Columna 2 -->
+                        <div class="col fw-bold text-white">
           
                             <div class="row">
-                              <label class="col-6 w-auto m-2" for="txtTituloAnuncio">Titulo breve del anuncio</label>
+                              <label class="col-6 w-auto m-2" for="txtTituloAnuncio">Titulo breve del anuncio:</label>
                               <input id="txtTituloAnuncio" class="col-6 m-2 form-control wx-100" type="text" >
                             </div>
                 
