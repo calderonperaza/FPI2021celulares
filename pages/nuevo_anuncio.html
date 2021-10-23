@@ -120,7 +120,7 @@
                   
                                         <div class="row">
                                             <label class="col-6 w-auto me-3" for="txtMarca">Marca:</label>
-                                            <input id="txtModelo" class="col-6 my-1 form-control w-auto " type="text" >
+                                            <input id="txtMarca" class="col-6 my-1 form-control w-auto " type="text" >
                                         </div>
           
                                         <div class="row">
@@ -137,20 +137,20 @@
                                             <label for="idSistema" class="col-6 w-auto me-2">Sistema:</label>
                                             <select id="idSistema" class="form-select col-6 w-auto" >
                                                 <option selected>Ios</option>
-                                                <option selected>Android</option>
-                                                <option selected>Windows</option>
+                                                <option >Android</option>
+                                                <option >Windows</option>
                                                 <!--option value="5">5</option-->
                                             </select>
                                         </div> 
           
                                         <div class="row">
                                             <label class="col-6 w-auto me-4" for="txtRom">ROM:</label>
-                                            <input id="txtRom" class="col-6 my-1 form-control w-auto me-2 " type="text" > Almacenamiento interno
+                                            <input id="txtRom" class="col-6 my-1 form-control w-auto me-2 " type="text" value="64GB"> Almacenamiento interno
                                         </div>
           
                                         <div class="row">
                                             <label class="col-6 w-auto me-4" for="txtRam">RAM:</label>
-                                            <input id="txtRam" class="col-6 my-1 form-control w-auto " type="text" >
+                                            <input id="txtRam" class="col-6 my-1 form-control w-auto " type="text" value="2GB">
                                         </div>
           
                         
@@ -354,6 +354,97 @@
 
                       </fieldset>     
                     </div>
+
+                    <!-- precio -->
+                    <div class="row d-flex justify-content-center">
+                      <label class="col-6 w-auto me-3 text-white fw-bold" for="txtPrecio1">Precio:</label>
+                      <input id="txtPrecio1" class="col-6 my-1 form-control w-auto fw-bold" type="text" value="$ 235.00">
+                    </div>
+
+                    <!-- vendedor -->
+                    <div class="row bg-light p-1 my-2">
+                      <label class="col my-2 d-flex justify-content-center" for="txtVendedor1">Vendedor:</label>
+                      <input id="txtVendedor1" class="col my-2 d-flex justify-content-center " type="text" value="Juan Perez" >
+                      <label class="col my-2 d-flex justify-content-center" for="txtTelefono1">Telefono:</label>
+                      <input id="txtTelefono1" class="col my-2 d-flex justify-content-center " type="tel" value="7374-2312" >
+                    </div>
+
+                    <!-- detalles -->
+                    <div class="row bg-light text-dark  fw-bold">
+                      <div class="border">
+                          <!-- fila 1 -->
+                              <div class="row my-1">
+                                  <label class="col-4 w-auto">Estado: </label>
+                                  <div class="form-check col-4 w-auto">
+                                      <input class="form-check-input" type="radio" name="estado1" id="rdNuevo1" checked>
+                                      <label class="form-check-label" for="rdNuevo1">
+                                          Nuevo
+                                      </label>
+                                  </div>
+
+                                  <div class="form-check col-4 w-auto">
+                                      <input class="form-check-input" type="radio" name="estado1" id="rdUsado1">
+                                      <label class="form-check-label" for="rdUsado1">
+                                          Usado
+                                      </label>
+                                  </div>
+                              </div>
+        
+                              <div class="row">
+                                  <label class="col-6 w-auto me-3" for="txtMarca1">Marca:</label>
+                                  <input id="txtMarca1" class="col-6 my-1 form-control w-auto " type="text" value="Iphone">
+                              </div>
+
+                              <div class="row">
+                                  <label class="col-6 w-auto me-2" for="txtModelo1">Modelo:</label>
+                                  <input id="txtModelo1" class="col-6 my-1 form-control w-auto " type="text"  value="6 plus">
+                              </div>
+
+                              <div class="row">
+                                  <label class="col-6 w-auto me-2" for="txtPantalla1">Pantalla:</label>
+                                  <input id="txtPantalla1" class="col-6 my-1 form-control w-auto me-2 " type="text" value="7 pulgadas" >
+                              </div>
+
+                              <div class="row" >
+                                  <label for="idSistema1" class="col-6 w-auto me-2">Sistema:</label>
+                                  <select id="idSistema1" class="form-select col-6 w-auto" >
+                                      <option selected>Ios</option>
+                                      <option >Android</option>
+                                      <option >Windows</option>
+                                      <!--option value="5">5</option-->
+                                  </select>
+                              </div> 
+
+                              <div class="row">
+                                  <label class="col-6 w-auto me-4" for="txtRom1">ROM:</label>
+                                  <input id="txtRom1" class="col-6 my-1 form-control w-auto me-2 " type="text" value="64GB">
+                              </div>
+
+                              <div class="row">
+                                  <label class="col-6 w-auto me-4" for="txtRam1">RAM:</label>
+                                  <input id="txtRam1" class="col-6 my-1 form-control w-auto " type="text" value="2GB" >
+                              </div>
+
+
+                      </div>
+                   </div>
+
+                   <!-- descripcion-->
+                   <div class="row my-2 g">
+                    <label for="txtaDescripcion1" class="text-light fw-bold">Descripción:</label>
+                     <textarea id="txtaDescripcion1" class="form-control ">Telefono en muy buenas condiciones, tiene dos cámaras, la caja esta abierta, pero con muy poco uso, practicamente nuevo, la compañia con la que estaba es Tigo, asi que el chip debe ser tigo, viene con su caja original y con todos sus accesorios. Puedo mandar más fotos si desea por whatsapp</textarea>  
+                   </div>
+
+                    <!-- botones -->
+                    <div class="row d-flex justify-content-center">
+                      <a class="btn btn-secondary col-6 w-auto m-2" href="../index.html" ><i class="bi bi-x-circle-fill"></i> Cancelar</a>
+                      <button type="button" class="btn btn-primary col-6 w-auto m-2"><i class="bi bi-save"></i> Crear Anuncio</button>
+                    </div>
+
+
+
+        
+                   
 
 
                   </div>
