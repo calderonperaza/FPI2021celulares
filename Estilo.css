@@ -1,5 +1,6 @@
 .modal {
-    max-height: 80% !important;
+   max-height: 80% !important;
+   max-width: 75%;
 
  }
 
@@ -9,12 +10,28 @@
    
 
 }
+
+#inicio {
+   position: fixed;
+   margin-bottom: 0%;
+   padding-bottom: 0%;
+   margin-left: 40%;
+   margin-right: 50%;
+}
+#comprar {
+   position: fixed;
+   margin-bottom: 0%;
+   padding-bottom: 0%;
+   margin-left: 50%;
+   margin-right: 23%;
+}
 .container {
    padding: 0px;
    margin: 0px;
    border: 0px;
    padding-right: 0px;
    margin-right: 0px !important;
+   width: 100%;
 }
 
 #filtro-sidenav {
@@ -52,8 +69,8 @@ div.card-conten.red.darken-2.white-text {
    height: 50%;
 }
 
-div.col.l2.s12.center {
-   width: 50%;
+div.col.l2.center {
+   width: 25%;
  }
 
 #slide-out{
@@ -66,3 +83,7 @@ div.hide-on-med-and-down {
    height: 100%;
 }
 
+
+[id=unanuncio] {
+   height: 200px;
+}
