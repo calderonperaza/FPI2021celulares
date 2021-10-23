@@ -166,7 +166,7 @@
                 </span></div>
               </li>                
             </ul>
-      </ul>
+        </ul>
         
     
 
@@ -204,24 +204,127 @@
             </div>
                           
             <div class="col s12 m12" style="margin-top:20px;">                               
-                <div class="input-field col s8 m7 hide-on-large-only">
-                  <select>
-                    <optgroup label="team 1">
+                <div class="input-field col s8 m7 hide-on-large-only">            
+                    <select>
+                      <option value="" disabled selected>Opcion</option>
                       <option value="1">Option 1</option>
                       <option value="2">Option 2</option>
-                    </optgroup>
-                    <optgroup label="team 2">
                       <option value="3">Option 3</option>
-                      <option value="4">Option 4</option>
-                    </optgroup>
-                  </select>
-                  <label>Ordenar por</label>
-                </div>
+                      <option value="1">Option 4</option>
+                      <option value="2">Option 5</option>                      
+                    </select>
+                    <label>Ordenar por</label>
+                 </div>
 
                 <div class="col s4 m5 hide-on-large-only" style="margin-top:5px;">
-                  <button class="btn-large waves-effect waves-light " type="submit" name="action"  style="margin-left: 25px;">
-                    <i class="center material-icons">arrow_upward</i>
-                  </button>    
+                  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Filtrar</a>
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                      <div class="modal-content">
+                        <h5>Filtrar por</h5>
+
+
+                        <div class="collapsible-header">MARCA</div>
+                        <form class="container" action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span class="black-text">Samsung(15)</span>
+                            </label>
+                          </p>
+                          </form>
+                          <form class="container" action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span class="black-text">Huawei(10)</span>
+                              </label>
+                            </p>
+                            </form>
+                            <form class="container" action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span class="black-text">Nokia(56)</span>
+                                </label>
+                              </p>
+                              </form>
+                              <form class="container" action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span class="black-text">iPhone(4)</span>
+                                  </label>
+                                </p>
+                                </form>
+                                <form class="container" action="#">
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" />
+                                      <span class="black-text">Xiomi(4)</span>
+                                    </label>
+                                  </p>
+                                  </form>
+
+
+                                  <div class="collapsible-header">SISTEMA</div>
+                                    <form class="container" action="#">
+                                      <p>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span class="black-text">Android 15</span>
+                                        </label>
+                                      </p>
+                                    </form>
+                                    <form class="container" action="#">
+                                        <p>
+                                          <label>
+                                            <input type="checkbox" />
+                                            <span class="black-text">Windows 10</span>
+                                          </label>
+                                        </p>
+                                    </form>
+                                    <form class="container" action="#">
+                                          <p>
+                                            <label>
+                                              <input type="checkbox" />
+                                              <span class="black-text">IoS 56</span>
+                                            </label>
+                                          </p>
+                                    </form>
+
+
+                                    <div class="collapsible-header">PANTALLA</div>
+                                    <form class="container" action="#">
+                                      <p>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span class="black-text">6.0</span>
+                                        </label>
+                                      </p>
+                                    </form>
+                                    <form class="container" action="#">
+                                      <p>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span class="black-text">5.5</span>
+                                        </label>
+                                      </p>
+                                    </form>
+                                    <form class="container" action="#">
+                                      <p>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span class="black-text">5</span>
+                                        </label>
+                                      </p>
+                                    </form>
+                                    
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                      </div>
+                    </div>   
                 </div>                    
             </div>               
           </div>         
@@ -330,19 +433,51 @@
                   </div>                      
               </div>
             </div>
-            <div>
-              <ul class="center pagination">
-                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                <li class="active"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-              </ul>
+            
+            <div class="input-field col m9">
+              <div>
+                <ul class="center pagination">
+                  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                  <li class="active"><a href="#!">1</a></li>
+                  <li class="waves-effect"><a href="#!">2</a></li>
+                  <li class="waves-effect"><a href="#!">3</a></li>
+                  <li class="waves-effect"><a href="#!">4</a></li>
+                  <li class="waves-effect"><a href="#!">5</a></li>
+                  <li class="waves-effect"><a href="#!">6</a></li>
+                  <li class="waves-effect"><a href="#!">7</a></li>
+                  <li class="waves-effect"><a href="#!">8</a></li>
+                  <li class="waves-effect"><a href="#!">9</a></li>
+                  <li class="waves-effect"><a href="#!">10</a></li>
+                  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+                </div>
+              </div>
+              
+
+            <div class="input-field col m3 hide-on-med-and-down">
+              <select>
+                <option value="" disabled selected>Opcion</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="1">Option 4</option>
+                <option value="2">Option 5</option>
+                <option value="3">Option 6</option>
+                <option value="1">Option 7</option>
+                <option value="2">Option 8</option>
+                <option value="3">Option 9</option>
+                <option value="3">Option 10</option>
+              </select>
+              <label>Articulos por pagina</label>
             </div>
+
+
+
+
+
           </div>         
-        </div> 
+        </div>
+         
     </main>
 
 
