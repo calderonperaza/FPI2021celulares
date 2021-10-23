@@ -291,7 +291,8 @@ nav{
 
 #detalles3312{
     color: aliceblue;
-    padding-top: 21px;
+    padding-top: 11px;
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 14px;
     text-align: center;
@@ -317,6 +318,30 @@ nav{
 #detalles4{
     color: aliceblue;
     font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #c7aaeb;
+
+}
+
+#detalles44{
+    color: aliceblue;
+    font-weight: 500;
+    padding-top: 2.8px;
+    font-size: 14px;
+    text-align: left;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #c7aaeb;
+
+}
+
+#detalles444{
+    color: aliceblue;
+    font-weight: 500;
+    padding-top: 18.6px;
     font-size: 14px;
     text-align: left;
     border-style: solid;
@@ -386,6 +411,10 @@ nav{
     padding-left: 25%;
 }
 
+#precionuevo2{
+    padding-left: 5%;
+}
+
 #ultimosbtn{
     background-color: #4c2882;
 }
@@ -444,11 +473,31 @@ nav{
     background-color: #69489b;
 }
 
+#color9{
+    color: white;
+    text-align: left;
+    font-family:'Prompt', sans-serif;
+    font-size: 12px;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #69489b;
+}
+
 #color8{
     color: white;
     text-align: center;
     font-family:'Prompt', sans-serif;
     font-size: 16px;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #28114b;
+}
+
+#color10{
+    color: white;
+    text-align: center;
+    font-family:'Prompt', sans-serif;
+    font-size: 12px;
     border-style: solid;
     border-color: #28114b;
     background-color: #28114b;
