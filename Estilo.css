@@ -1,4 +1,68 @@
 .modal {
-    max-height: 100% !important;
-    border: 5px;
+    max-height: 80% !important;
+
  }
+
+#filtros {
+   padding-left: 0px;
+   margin-left: 0px !important;
+   
+
+}
+.container {
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
+   padding-right: 0px;
+   margin-right: 0px !important;
+}
+
+#filtro-sidenav {
+   padding: 0;
+   height: 100%;
+   width: 20%;
+}
+a.des {
+   color: black;
+   font-size: 85%;
+}
+div.card.shop-products {
+   height: 50%;    
+   margin-bottom: 0px;    
+}
+    
+      
+    
+img.shop-product-img {    
+   height: 25%;
+    
+}
+
+      
+    
+div.card-action.red.action-2.white-text {
+   background-color: royalblue;
+   color: white;
+   height: 50%;
+
+}
+
+
+div.card-conten.red.darken-2.white-text {
+   height: 50%;
+}
+
+div.col.l2.s12.center {
+   width: 50%;
+ }
+
+#slide-out{
+   width: 35%;
+   height: 100%;
+}
+
+div.hide-on-med-and-down {
+   width: 35%;
+   height: 100%;
+}
+
