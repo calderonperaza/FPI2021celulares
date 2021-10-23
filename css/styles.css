@@ -1,5 +1,23 @@
 .imagen{
     width: 100%;
-    height: 15vw;
+    height: 15vh;
     object-fit: scale-down;
+}
+
+.carr{
+    height: 65vh;
+    min-height: 300px;
+    background-image: no-repeat center center scroll;
+    
+    background-size: cover;
+}
+.carr-item{
+    display: inline-block;
+    width: 100%;
+}
+.carr-img{
+    min-width: 95vh !important;
+    /* height: 200px ; */
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
 }
