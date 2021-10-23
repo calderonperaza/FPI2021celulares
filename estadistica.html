@@ -86,12 +86,52 @@
 
     </div>
 
+    <div class="container-fluid hide-on-med-and-up">
+        <div class="row">
+            <div  class="col">
+                <img id="estas" src="imagenes/estadisticas.PNG">
+            </div>
+        </div>
+
+    </div>
+
     <style>
         #estad{
             padding-top: 4%;
            padding-left: 24%;
         }
+
+        #estas{
+            
+            height: 280px;
+        }
     </style>
 
     </body>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems);
+        });
+    </script>
 </html>

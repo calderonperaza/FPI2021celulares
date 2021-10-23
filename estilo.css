@@ -17,11 +17,23 @@ nav{
     padding-right: 13%;
 }
 
+#padfixed{
+    padding-right: 48%;
+}
+
+#padfixed2{
+    padding-right: 18%;
+}
+
 #carro{
     padding-top: 2%;
     padding-left: 4%;
 }
 
+#carro2{
+   width: 400px;
+   height: 500px;
+}
 #logito{
     padding-left: 7%;
 }
@@ -120,6 +132,11 @@ nav{
 #pagina2{
     padding-top: 0.7%;
     padding-bottom: 1%;
+}
+
+#pagina3{
+    padding-left: 15%;
+    padding-top: 1.4%;
 }
 
 #contenido{
@@ -398,4 +415,51 @@ nav{
     padding-top: 3%;
     padding-left: 3%;
 
+}
+
+#color4{
+    color: white;
+}
+
+#foterfix{
+    position: fixed;
+    width: 20px;
+    height: 30px;
+}
+
+#color5{
+    color: white;
+    text-align: center;
+    font-family:'Prompt', sans-serif;
+    font-size: 16px;
+}
+
+#color7{
+    color: white;
+    text-align: left;
+    font-family:'Prompt', sans-serif;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #69489b;
+}
+
+#color8{
+    color: white;
+    text-align: center;
+    font-family:'Prompt', sans-serif;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #28114b;
+}
+
+#color6{
+    color: white;
+    text-align: center;
+    font-family:'Prompt', sans-serif;
+    font-size: 22px;
+    border-style: solid;
+    border-color: #28114b;
+    background-color: #69489b;
 }
