@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>nuevoAnuncio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="miEstilo.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body class="purple lighten-1">
+        <div class="container">
+            <!-- Menu principal -->
+            <div class="row">
+                <nav class="hide-on-large-only">
+                    <div class="nav-wrapper  purple lighten-5 col s12">
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+                        <form class="col l4 push-l3 s9">
+                            <div class="input-field">
+                                <input id="search" type="search" placeholder="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                            </div>
+                        </form>
+                    </div>
+                </nav> 
+                <ul class="sidenav hide-on-large-only" id="mobile-demo">
+                    <li><a href="#!"><i class="medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a></li><hr width="75%"/>
+                    <li><a class="center-align" href="inicio.html">Inicio</a></li><hr width="75%"/>
+                    <li><a class="center-align" href="nuevoAnuncio.html">Nuevo anuncio</a></li><hr width="75%"/>
+                    <li><a class="center-align">Carrito</a></li><hr width="75%"/>
+                    <li><a class="center-align">Estadisticas</a></li><hr width="75%"/>
+                </ul>
+                <h3 class="center-align hide-on-med-and-down" style="font-style: italic;">NUEVO ANUNCIO</h3>
+            </div>
+            <div class="row hide-on-med-and-down">
+                <div class="col l7">
+                    <div class="purple lighten-5 col l10 bord">
+                        <form action="#" style="margin-top: 15px;">
+                            Estado:
+                            <span>
+                                <label class="black-text">
+                                    <input class="with-gap" name="group1" type="radio"/>
+                                    <span>Nuevo</span>
+                                </label>
+                            </span>
+                            <span>
+                                <label class="black-text">
+                                    <input class="with-gap" name="group1" type="radio"/>
+                                    <span>Usado</span>
+                                </label>
+                            </span>
+                        </form>
+                        <div>
+                            Marca:
+                            <div class="input-field inline">
+                              <input id="marca_inline" type="text">
+                              <label for="marca_inline">marca</label>
+                            </div>
+                        </div>
+                        <div>
+                            Modelo:
+                            <div class="input-field inline">
+                              <input id="modelo_inline" type="text">
+                              <label for="modelo_inline">modelo</label>
+                            </div>
+                        </div>
+                        <div>
+                            Pantalla:
+                            <div class="input-field inline">
+                              <input id="pantalla_inline" type="text">
+                              <label for="pantalla_inline">pantalla</label>
+                            </div>
+                            Pulgadas
+                        </div>
+                        <div>
+                            <span class="col l2" style="width: 50%;">Sistema:</span>
+                            <select id="sistema" class=" browser-default purple lighten-3 col l5 pull-l3" style="width: 50%">
+                                <option value="" disabled selected>Elija</option>
+                                <option value="1">Androi</option>
+                                <option value="2">Windows</option>
+                                <option value="3">Ios</option>
+                            </select>
+                        </div>
+                        <div>
+                            Rom:
+                            <div class="input-field inline">
+                              <input id="rom_inline" type="text">
+                              <label for="rom_inline">rom</label>
+                            </div>
+                            Almacenamiento interno
+                        </div>
+                        <div>
+                            Ram:
+                            <div class="input-field inline">
+                              <input id="ram_inline" type="text">
+                              <label for="ram_inline">ram</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="purple lighten-5 col l12 bord" style="margin-top: 5px;">
+                        <div class="col l2">
+                            Imagenes
+                            <div class="file-field input-field" style="margin-top: 10px;">
+                                <span><i class="medium material-icons btn-flat center-align">add_circle_outline</i></span>
+                                <input type="file" multiple>
+                            </div>    
+                            <div style="margin-top: 35px;">
+                                <span><i class="small material-icons btn-flat center-align" style="margin-left: 12px;">remove_circle_outline</i></span>
+                            </div>
+                        </div>
+                        <div class="col l5" style="margin-top: 10px;">
+                            <div class="col l3">
+                                <p><strong>N</strong><br>1<br>2<br>3<br>4</p>
+                            </div>
+                            <div class="col l4">
+                                <p><strong>Tamaño</strong><br>145 kb<br>145 kb<br>145 kb<br>145 kb</p>
+                            </div>
+                            <div class="col l4">
+                                <p><strong>Tipo</strong><br>jpg<br>png<br>png<br>jpg</p>
+                            </div>
+                        </div>
+                        <div class="col l5 pull-l1">
+                            <span class="material-icons" style="font-size: 1500%;">insert_photo</span>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col l5">
+                    <div>
+                        <span class="purple-text text-lighten-5">Titulo breve del anuncio</span>
+                        <div class="input-field inline purple lighten-5" style="width: 100%; height: 50px;">
+                          <input id="titulo_inline" type="text">
+                          <label for="titulo_inline"></label>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="purple-text text-lighten-5">Vendedor:</span> 
+                        <div class="input-field inline purple lighten-5" style="width: 75%; height: 50px;">
+                          <input id="vendedor_inline" type="text">
+                          <label for="vendedor_inline"></label>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="purple-text text-lighten-5">Telefono:</span> 
+                        <div class="input-field inline purple lighten-5" style="width: 50%; height: 50px;">
+                          <input id="telefono_inline" type="text">
+                          <label for="telefono_inline"></label>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="purple-text text-lighten-5">DESCRIPCION</span> 
+                        <div class="input-field purple lighten-5" style="width: 100%;">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Escriba aqui</label>
+                          </div>
+                    </div>
+                    <div class="col l6 push-l3 purple lighten-5">
+                        <span class="left-align">PRECIO</span>
+                        <div class="input-field purple lighten-5" style="width: 65%; height: 50px;">
+                            <input id="precio_inline" type="text">
+                            <label for="precio_inline">$</label>
+                        </div>
+                    </div>
+                    <div class="col l12 push-l2" style="margin-top: 70px;">
+                        <a class="black-text purple lighten-5 btn inline" href="inicio.html"><i class="material-icons left">cancel</i>Cancelar</a>
+                        <a class="black-text purple lighten-5 btn inline" onclick="salida()"><i class="material-icons left">save</i>Crear</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row escond">
+                <div class="carousel col l6 s12">
+                    <a class="carousel-item purple lighten-3" href="#one!">
+                        <div class="file-field input-field center">
+                            <span><i class="medium material-icons btn-flat center-align">add_circle_outline</i></span>
+                            <input type="file" multiple>
+                            <div class="file-path-wrapper" style="margin-top: 20px;">
+                                <input class="file-path validate black-text" type="text" placeholder="Agregar foto">
+                            </div>
+                        </div>
+                    </a>
+                    <a class="carousel-item purple lighten-3" href="#two!">
+                        <div class="file-field input-field center">
+                            <span><i class="medium material-icons btn-flat center-align">add_circle_outline</i></span>
+                            <input type="file" multiple>
+                            <div class="file-path-wrapper" style="margin-top: 20px;">
+                                <input class="file-path validate black-text" type="text" placeholder="Agregar foto">
+                            </div>
+                        </div>
+                    </a>
+                    <a class="carousel-item purple lighten-3" href="#three!">
+                        <div class="file-field input-field center">
+                            <span><i class="medium material-icons btn-flat center-align">add_circle_outline</i></span>
+                            <input type="file" multiple>
+                            <div class="file-path-wrapper" style="margin-top: 20px;">
+                                <input class="file-path validate black-text" type="text" placeholder="Agregar foto">
+                            </div>
+                        </div>
+                    </a>
+                    <a class="carousel-item purple lighten-3" href="#four!">
+                        <div class="file-field input-field center">
+                            <span><i class="medium material-icons btn-flat center-align">add_circle_outline</i></span>
+                            <input type="file" multiple>
+                            <div class="file-path-wrapper" style="margin-top: 20px;">
+                                <input class="file-path validate black-text" type="text" placeholder="Agregar foto">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row hide-on-large-only">
+                <div class="col s12 purple lighten-5">
+                    <span class="purple-text text-lighten-1">Titulo:</span>
+                    <div class="input-field inline" style="width: 100%; height: 50px;">
+                      <input id="titulo_inline" type="text">
+                      <label for="titulo_inline"></label>
+                    </div>
+                </div>
+                <div class="col s12 push-s3 purple lighten-5" style="width: 50%; margin-top: 15px;">
+                    <span class="left-align inline" style="width: 25%;">Precio:</span>
+                    <div class="input-field purple lighten-5 inline" style="width: 50%; height: 40px;">
+                        <input id="precio_inline" type="text">
+                        <label for="precio_inline">$</label>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="col s6">
+                        <span class="purple-text text-lighten-5">Vendedor:</span> 
+                        <div class="input-field inline purple lighten-5" style="width: 50%; height: 50px;">
+                          <input id="vendedor_inline" type="text">
+                          <label for="vendedor_inline"></label>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <span class="purple-text text-lighten-5">Telefono:</span> 
+                        <div class="input-field inline purple lighten-5" style="width: 50%; height: 50px;">
+                          <input id="telefono_inline" type="text">
+                          <label for="telefono_inline"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="purple lighten-5 col s12" style="margin-top: 15px;">
+                    <div>
+                        Estado:
+                        <div class="input-field inline">
+                          <input id="estado_inline" type="text">
+                          <label for="estado_inline">estado</label>
+                        </div>
+                    </div>
+                    <div>
+                        Marca:
+                        <div class="input-field inline">
+                          <input id="marca_inline" type="text">
+                          <label for="marca_inline">marca</label>
+                        </div>
+                    </div>
+                    <div>
+                        Modelo:
+                        <div class="input-field inline">
+                          <input id="modelo_inline" type="text">
+                          <label for="modelo_inline">modelo</label>
+                        </div>
+                    </div>
+                    <div>
+                        Pantalla:
+                        <div class="input-field inline">
+                          <input id="pantalla_inline" type="text">
+                          <label for="pantalla_inline">pantalla</label>
+                        </div>
+                        Pulgadas
+                    </div>
+                    <div>
+                        Sistema:
+                        <div class="input-field inline">
+                          <input id="sistema_inline" type="text">
+                          <label for="sistema_inline">sistema</label>
+                        </div>
+                    </div>
+                    <div>
+                        Rom:
+                        <div class="input-field inline">
+                          <input id="rom_inline" type="text">
+                          <label for="rom_inline">rom</label>
+                        </div>
+                        Almacenamiento interno
+                    </div>
+                    <div>
+                        Ram:
+                        <div class="input-field inline">
+                          <input id="ram_inline" type="text">
+                          <label for="ram_inline">ram</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 purple lighten-5" style="margin-top: 15px;">
+                    <div class="input-field purple lighten-5" style="width: 100%;">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Escriba aqui una pequeña descripcion</label>
+                    </div>
+                </div>
+                <div class="col s10 push-s2" style="margin-top: 15px;">
+                    <a class="black-text purple lighten-5 btn-small inline" href="inicio.html" style="margin-right: 10px;">Cancelar</a>
+                    <a class="black-text purple lighten-5 btn-small inline" onclick="salida()">Crear anuncio</a>
+                </div>
+            </div>
+        </div>
+        <!-- Materialize JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems);
+            });
+            function salida(){
+                var toastHTML = '<span>Anuncio guardado satisfactoriamente</span>';
+                M.toast({html: toastHTML});
+                setTimeout(abrirven,3000);
+            }
+            function abrirven(){
+                window.open("inicio.html","_self");
+            }
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.carousel');
+                var instances = M.Carousel.init(elems);
+            });
+
+        </script>
+    </body>
+</html>
