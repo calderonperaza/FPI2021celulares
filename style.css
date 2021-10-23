@@ -30,6 +30,10 @@ input[type=checkbox]:checked{
   background-color: #865105;
   
 }
+input[type=radio]:checked{
+  background-color: #865105;
+  
+}
 
 /*ESPACIADOS*/
 
