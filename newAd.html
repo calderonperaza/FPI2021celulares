@@ -8,42 +8,139 @@
     <title>ventacelulares</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <h1 class="text-center">NUEVO ANUNCIO</h1>
 
-        <div class="container-fluid">
-            <div class="d-flex p-2 bd-highlight" style="border: 3px solid #7FB174; max-width: 500px;">
-                <!--por semantica HTML pondremos para inciar la etiqueta form-->
-                <form action="">
-                    <span>Estado:</span>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="nuevo">
-                        <label class="form-check-label" for="flexRadioDefault1">Nuevo</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="usado">
-                        <label class="form-check-label" for="flexRadioDefault2">Usado</label>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="inputText" class="col-sm-2 col-form-label">Marca:</label>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>NUEVO ANUNCIO</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" style="border: 1px solid black;">
+                <div style="border: 1px solid black; margin-top: 15px;">
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Estado: </legend>
                         <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                            <label class="form-check-label" for="gridRadios1">
+                              Nuevo
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                              Usado
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <div class="row mb-3">
+                        <label for="inputText" class="col-sm-2 col-form-label">Marca: </label>
+                        <div class="col-sm-3">
                           <input type="text" class="form-control" id="inputText">
                         </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label for="inputText2" class="col-sm-2 col-form-label">Modelo</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputText2">
+                      </div>
+
+                      <div class="row mb-3">
+                        <label for="inputText1" class="col-sm-2 col-form-label">Modelo:</label>
+                        <div class="col-sm-3">
+                          <input type="text" class="form-control" id="inputText1">
                         </div>
                       </div>
-                </form> 
-            </div>   
-        </div>
-         <br>
-        <div class="container-fluid">
-            <div class="d-flex p-2 bd-highlight" style="border: 3px solid #7FB174; max-width: 500px;">
-                <h6>imagenes</h6>
 
+                      <div class="row mb-3">
+                        <label for="inputNumber" class="col-sm-2 col-form-label">Pantalla:</label>
+                        <div class="col-sm-3">
+                          <input type="number" class="form-control" id="inputNumber" placeholder="pulgadas">    
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" class="visually-hidden" for="autoSizingSelect">Sistema</label>
+                        <div class="col-sm-3">
+                            <select class="form-select" id="autoSizingSelect">
+                                <option value="1">Ios</option>
+                                <option value="2">Android</option>
+                                <option value="3">Windows Phone</option>
+                                <option value="4">Ubuntu Touch</option>
+                            </select>
+                        </div>                      
+                      </div>
+
+                      <div class="row mb-3">
+                        <label for="inputNumber1" class="col-sm-2 col-form-label">Rom:</label>
+                        <div class="col-sm-3">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="inputNumber1"  aria-describedby="inputGroupPrepend2" required>
+                                <span class="input-group-text" id="inputGroupPrepend2">Gb</span>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="row mb-3">
+                        <label for="inputNumber2" class="col-sm-2 col-form-label">RAM:</label>
+                        <div class="col-sm-3">
+                            <div class="input-group">
+                                <input type="number" class="form-control" id="inputNumber2"  aria-describedby="inputGroupPrepend2" required>
+                                <span class="input-group-text" id="inputGroupPrepend2">Gb</span>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div style="margin-top: 15px; border: 1px solid black; margin-bottom: 15px;">
+                    Imagenes   
+                </div>
+            </div>
+            <div class="col-lg-6" style="border: 1px solid black;">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="DescriptionAd" class="form-label">Titulo breve del anuncio</label>
+                        <input type="text" class="form-control" id="DescriptionAd" aria-describedby="DescriptionNewAd">
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="nameSeller" class="col-sm-2 col-form-label">Vendedor: </label>
+                        <div class="col-sm-7">
+                          <input type="text" class="form-control" id="nameSeller">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="sellerNumber" class="col-sm-2 col-form-label">Telefono</label>
+                        <div class="col-sm-4">
+                          <input type="text" class="form-control" id="sellerNumber">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="descriptionTextarea" class="form-label">Descripción:</label>
+                        <textarea class="form-control" id="descriptionTextarea" placeholder="Requires a description of the phone" style="height: 125px;"></textarea>
+                    </div>
+                    <br>
+                    <div class="container text-center" style="width: 215px; height: 50px;">
+                        <h5>precio</h5>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputNumber2"  aria-describedby="inputGroupPrepend3" required>
+                            <span class="input-group-text" id="inputGroupPrepend3">$</span>
+                        </div>
+                    </div>
+                    <br><br><br>
+
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <button class="btn btn-primary" type="submit">Cancelar</button>
+                            </div>
+
+                            <div class="col-lg-6"">
+                                <button class="btn btn-primary" type="submit">Crear</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
