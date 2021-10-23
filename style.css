@@ -1,0 +1,52 @@
+
+nav{
+    background-color: #65DF5B !important;
+    margin-bottom: 15px;
+}
+#itemnuevoswitch{
+    background-color: #B7FAB2 ;
+}
+body{
+    background-color: #d8f3d5;
+}
+#productos{
+    height: auto;
+    min-height: 500px;
+    background-color: #d8f3d5;
+}
+div[class~="card"]{
+    background: #a8c0a6;
+    height: 400px;
+    max-width: 275px;
+    
+    
+}
+#haciaitem{
+    color: black;
+    text-decoration: none;
+}
+.fit-image{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 500px; /* only if you want fixed height */
+    }
+.bg-mybgcolor{
+    background-color: #d8f3d5 !important;
+}
+.carouselTamanio{
+    width: 750px;
+    height: 500px;
+    
+    
+}
+.bg-mybgcolor2{
+    background-color: #a8c0a6;
+}
+
+footer{
+    padding-top: 10px;
+}
+a[class~="page-link"]{
+    color: rgb(5, 5, 5) ;
+}

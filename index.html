@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <title>Inicio</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse col" id="logotipo">
+                <a class="navbar-brand d-inline-block" href="./index.html" >
+                    <img  src="./src_img/unknown.png" alt="Logo" width="16" height="16">
+                    Tienda Cellphone
+                </a>
+              </div>
+              
+              <div class="col-8 input-group w-50"> 
+                <span class="input-group-text" id="busqueda-cellphone">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                  </svg>
+                </span>
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="" aria-describedby="input-busqueda">
+              </div>
+              
+              <div class="collapse navbar-collapse text-al col-4" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <div class="d-xxl-none d-xl-none d-xxl-block d-lg-none d-xl-block">
+                        <a class="navbar-brand" href="./index.html" >
+                          <img  src="./src_img/unknown.png" alt="Logo" width="16" height="16">
+                            Tienda Cellphone
+                        </a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item d-xxl-none d-xl-none d-xxl-block d-lg-none d-xl-block">
+                    <a class="nav-link" href="./nuevoitem.html">Nuevo Anuncio</a>
+                  </li>
+                  <li class="nav-item d-xxl-none d-xl-none d-xxl-block d-lg-none d-xl-block">
+                    <a class="nav-link" href="./carrito.html">Carrito</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./estadisticas.html">Estadisticas</a>
+                  </li>
+                  <li class="nav-item collapse navbar-collapse">
+                    <div>
+                    <a class="nav-link" href="./nuevoitem.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                      </svg>
+                    </a> 
+                    </div>  
+                  </li>
+                  <li class="nav-item collapse navbar-collapse">
+                    <a class="nav-link" href="./carrito.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container d-inline-block d-xxl-none d-xl-none d-xxl-block d-lg-none d-xl-block" style="text-align: center;">
+      <div class="row">
+        
+        <div class="col dropdown d-inline-block ms-5" >
+          <div class="col d-inline-block">
+            <p>Ordenar por: </p>
+          </div>
+          
+          <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuPrecio" data-bs-toggle="dropdown" aria-expanded="false">
+              Precio
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuPrecio">
+            <li><a class="dropdown-item" href="#">Ascendente</a></li>
+            <li><a class="dropdown-item" href="#">Descendente</a></li>
+          </ul>
+        </div>
+        <div class="col d-inline-block">
+          <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#menulateral" aria-controls="offcanvasExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel-fill" viewBox="0 0 16 16">
+              <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      
+      
+      <!--div para pantallas pequeñas de filtro-->
+      
+    </div>
+
+
+    <div class="d-xxl-none d-xl-none d-xxl-block d-lg-none d-xl-block">
+      <!--offcanvas-->
+      
+      <div class="col-2 overflow-auto offcanvas offcanvas-end bg-mybgcolor" tabindex="-1" aria-labelledby="offcanvasExampleLabel" id="menulateral"style="max-height: 100%;">
+        <div class="form-check form-switch" style="padding-left: 50px; padding-block-end: 10px;">
+          <input class="form-check-input" type="checkbox" id="itemnuevoswitch">
+          <label class="form-check-label" for="itemnuevoswitch">Nuevo</label>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor" style="margin-top: 12px;">Marca</span>
+          </p>
+        </div>
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption1">
+            <label class="form-check-label" for="marcaoption1">
+              Samsung
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption2">
+            <label class="form-check-label" for="marcaoption2">
+              Huawei
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption3">
+            <label class="form-check-label" for="marcaoption3">
+              Nokia
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption4">
+            <label class="form-check-label" for="marcaoption4">
+              Iphone
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption5">
+            <label class="form-check-label" for="marcaoption5">
+              Xiaomi
+            </label>
+            
+          </div>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">S.O</span>
+          </p>
+        </div>
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="soption1">
+            <label class="form-check-label" for="soption1">
+              Android
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="soption2">
+            <label class="form-check-label" for="soption2">
+              Windows
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="soption3">
+            <label class="form-check-label" for="soption3">
+              IOs
+            </label>
+          </div>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">Pantalla</span>
+          </p>
+        </div>
+
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption1">
+            <label class="form-check-label" for="screensizeoption1">
+              6.0
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption2">
+            <label class="form-check-label" for="screensizeoption2">
+              5.5
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption3">
+            <label class="form-check-label" for="screensizeoption3">
+              5
+            </label>
+          </div>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">Overflow1</span>
+          </p>
+        </div>
+
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption1">
+            <label class="form-check-label" for="screensizeoption1">
+              6.0
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption2">
+            <label class="form-check-label" for="screensizeoption2">
+              5.5
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption3">
+            <label class="form-check-label" for="screensizeoption3">
+              5
+            </label>
+          </div>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">Overflow2</span>
+          </p>
+        </div>
+
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption1">
+            <label class="form-check-label" for="screensizeoption1">
+              6.0
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption2">
+            <label class="form-check-label" for="screensizeoption2">
+              5.5
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption3">
+            <label class="form-check-label" for="screensizeoption3">
+              5
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    
+
+    
+    <div class="row container-fluid">
+      <div class="col-2 d-none d-sm-none d-lg-block overflow-auto pt-2" style="max-height: 600px;">
+        <div class="form-check form-switch" style="padding-left: 50px; padding-block-end: 10px;">
+          <input class="form-check-input" type="checkbox" id="itemnuevoswitch">
+          <label class="form-check-label" for="itemnuevoswitch">Nuevo</label>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">Marca</span>
+          </p>
+        </div>
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption1">
+            <label class="form-check-label" for="marcaoption1">
+              Samsung
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption2">
+            <label class="form-check-label" for="marcaoption2">
+              Huawei
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption3">
+            <label class="form-check-label" for="marcaoption3">
+              Nokia
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption4">
+            <label class="form-check-label" for="marcaoption4">
+              Iphone
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="marcaoption5">
+            <label class="form-check-label" for="marcaoption5">
+              Xiaomi
+            </label>
+            
+          </div>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">S.O</span>
+          </p>
+        </div>
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="soption1">
+            <label class="form-check-label" for="soption1">
+              Android
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="soption2">
+            <label class="form-check-label" for="soption2">
+              Windows
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="soption3">
+            <label class="form-check-label" for="soption3">
+              IOs
+            </label>
+          </div>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">Pantalla</span>
+          </p>
+        </div>
+
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption1">
+            <label class="form-check-label" for="screensizeoption1">
+              6.0
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption2">
+            <label class="form-check-label" for="screensizeoption2">
+              5.5
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption3">
+            <label class="form-check-label" for="screensizeoption3">
+              5
+            </label>
+          </div>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">Overflow1</span>
+          </p>
+        </div>
+
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption1">
+            <label class="form-check-label" for="screensizeoption1">
+              6.0
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption2">
+            <label class="form-check-label" for="screensizeoption2">
+              5.5
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption3">
+            <label class="form-check-label" for="screensizeoption3">
+              5
+            </label>
+          </div>
+        </div>
+        <div>
+          <p class="position-relative">
+            <span class="position-absolute mx-5 translate-middle bg-mybgcolor">Overflow2</span>
+          </p>
+        </div>
+
+        <div class="border border-dark border-2 pt-2">
+          <div class="form-check me-auto" style="padding-left: 50px; padding-block-end: 10px;">
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption1">
+            <label class="form-check-label" for="screensizeoption1">
+              6.0
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption2">
+            <label class="form-check-label" for="screensizeoption2">
+              5.5
+            </label>
+            <br>
+            <input class="form-check-input" type="checkbox" value="" id="screensizeoption3">
+            <label class="form-check-label" for="screensizeoption3">
+              5
+            </label>
+          </div>
+        </div>
+
+      </div>
+      
+      <div id="productos" class="col">
+        <!--lado derecho-->
+        <div class="col d-none d-sm-none d-lg-block" style="text-align: center;">
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="col">
+                <div class="d-inline-block" id="precio-menor">
+                  <p>Precio: <input type="text" placeholder="$" style="width: 50px; border-width: 2px;"></p> 
+                </div>
+                <div class="d-inline-block m-2" id="precio-mayor">
+                  <p>Hasta: <input type="text" placeholder="$" style="width:50px; border-width: 2px;"></p> 
+                </div>
+              </div>
+              <div class="col">
+                <div class="d-inline-block">
+                  <p>Ordenar por: </p>
+                </div>
+                <div class="btn-toolbar d-inline-block" role="toolbar" aria-label="toolbar no se estoy probando">
+                  <div class="btn-group mx-2" role="group" aria-label="grupoprecio">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuPrecio" data-bs-toggle="dropdown" aria-expanded="false">
+                        Precio
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuPrecio">
+                        <li><a class="dropdown-item" href="#">Ascendente</a></li>
+                        <li><a class="dropdown-item" href="#">Descendente</a></li>
+                      </ul>
+                    </div>
+                  <div class="btn-group mx-2" role="group" aria-label="grupofecha">
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuFecha" data-bs-toggle="dropdown" aria-expanded="false">
+                        Fecha
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuFecha">
+                        <li><a class="dropdown-item" href="#">Más antiguo</a></li>
+                        <li><a class="dropdown-item" href="#">Más nuevo</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+
+
+
+
+          
+        </div>
+        <div class="row">
+          <div class="row row-cols-2 row-cols-md-4 g-2">
+            <div class="col">
+              <a id="haciaitem" href="./items_predeterminados/lgk42.html">
+                <div class="card h-10" >
+                  <img src="./src_img/lgk42.png" class="card-img-top" style="height: 300px; " alt="LG k 42">
+                  <div class="card-body overflow-hidden" >
+                    <h5 class="card-title">$155.00</h5>
+                    <p class="card-text">LG k45, Pantalla de 6.6, 64GB, 3GB RAM, Color negro.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a id="haciaitem" href="./items_predeterminados/moto-e7.html">
+                <div class="card h-10" >
+                  <img src="./src_img/motorola-e7.jpg" class="card-img-top" style="height: 300px;" alt="moto e7">
+                  <div class="card-body overflow-hidden" >
+                    <h5 class="card-title">$115.00</h5>
+                    <p class="card-text">Motorola E7, Pantalla de 6.5, 32GB, 2GB RAM, Color gris.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a id="haciaitem" href="./items_predeterminados/lgk42.html">
+                <div class="card h-10" >
+                  <img src="./src_img/lgk42.png" class="card-img-top" style="height: 300px; " alt="LG k 42">
+                  <div class="card-body overflow-hidden" >
+                    <h5 class="card-title">$155.00</h5>
+                    <p class="card-text">LG k45, Pantalla de 6.6, 64GB, 3GB RAM, Color negro.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a id="haciaitem" href="./items_predeterminados/moto-e7.html">
+                <div class="card h-10" >
+                  <img src="./src_img/motorola-e7.jpg" class="card-img-top" style="height: 300px;" alt="moto e7">
+                  <div class="card-body overflow-hidden" >
+                    <h5 class="card-title">$115.00</h5>
+                    <p class="card-text">Motorola E7, Pantalla de 6.5, 32GB, 2GB RAM, Color gris.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a id="haciaitem" href="./items_predeterminados/lgk42.html">
+                <div class="card h-10" >
+                  <img src="./src_img/lgk42.png" class="card-img-top" style="height: 300px; " alt="LG k 42">
+                  <div class="card-body overflow-hidden" >
+                    <h5 class="card-title">$155.00</h5>
+                    <p class="card-text">LG k45, Pantalla de 6.6, 64GB, 3GB RAM, Color negro.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a id="haciaitem" href="./items_predeterminados/moto-e7.html">
+                <div class="card h-10" >
+                  <img src="./src_img/motorola-e7.jpg" class="card-img-top" style="height: 300px;" alt="moto e7">
+                  <div class="card-body overflow-hidden" >
+                    <h5 class="card-title">$115.00</h5>
+                    <p class="card-text">Motorola E7, Pantalla de 6.5, 32GB, 2GB RAM, Color gris.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a id="haciaitem" href="./items_predeterminados/lgk42.html">
+                <div class="card h-10" >
+                  <img src="./src_img/lgk42.png" class="card-img-top" style="height: 300px; " alt="LG k 42">
+                  <div class="card-body overflow-hidden" >
+                    <h5 class="card-title">$155.00</h5>
+                    <p class="card-text">LG k45, Pantalla de 6.6, 64GB, 3GB RAM, Color negro.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a id="haciaitem" href="./items_predeterminados/moto-e7.html">
+                <div class="card h-10" >
+                  <img src="./src_img/motorola-e7.jpg" class="card-img-top" style="height: 300px;" alt="moto e7">
+                  <div class="card-body overflow-hidden" >
+                    <h5 class="card-title">$115.00</h5>
+                    <p class="card-text">Motorola E7, Pantalla de 6.5, 32GB, 2GB RAM, Color gris.</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <!--contenido-->
+        </div>
+
+        
+      </div>
+      
+    </div>
+    <footer > 
+      <nav aria-label="Page navigation example" class="bg-mybgcolor">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" style="color: gray !important;">Anterior</a>
+          </li>
+          <li class="page-item" ><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Siguiente</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
