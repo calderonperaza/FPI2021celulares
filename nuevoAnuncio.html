@@ -23,7 +23,7 @@
               <!--BUSCAR-->
               <form class="d-flex">
                 <input class="form-control rounded-pill me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
+                <button class="btn btn-outline-success btnHover btnBuscarColor rounded-pill" type="submit">Buscar</button>
               </form>
             
             
@@ -57,7 +57,7 @@
 
     <main class="container">
         
-        <div class="row justify-content-center"> <!--titulo pag-->
+        <div class="row justify-content-center mt-2"> <!--titulo pag-->
             <span class="fs-1 lead text-center col-md-5">Nuevo anuncio</span>
         </div><!--titulo pag-->
 
@@ -128,8 +128,76 @@
                         <input class="form-control" type="file" id="formFileMultiple" multiple>
                     </div>
 
+                    <div class="row mt-3"> <!--Carrusel y tabla-->
+                        
+                        <div class="col-10 col-lg-5 mt-2 m-auto bordeTitulo" style="padding: 0;"><!--Carousel-->
+    
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="max-height: 600px; max-width: 600px;">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="https://holatelcel.com/wp-content/uploads/2017/01/X.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="https://tiendaenlinea.intersoftla.com/web/image/product.image/6528/image_1024/Samsung%20S20%20FE%20-%20Tel%C3%A9fono%20m%C3%B3vil%20-%204G%20-%20Android%20-%20128%20GB%20-%20Rojo%20-%20Toque?unique=7a211db" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="https://www.celularesbaratos.club/wp-content/uploads/2020/03/redmi-note-8-pro-azul.jpg" class="d-block w-100" alt="...">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                  
+                        </div><!--Carousel-->
+
+                        <div class="col col-10 col-lg-5"> <!--Tabla-->
+                            
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Tamaño</th>
+                                    <th scope="col">Tipo</th
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>145 kb</td>
+                                    <td>png</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>145 kb</td>
+                                    <td>png</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>145 kb</td>
+                                    <td>png</td>
+                                    
+
+                                  </tr>
+                                </tbody>
+                            </table>
+
+                        </div> <!--Tabla-->
+                    
+                    </div><!--Carrusel y tabla-->
+
                     <div class="my-3">
-                        <button class="btn btn-primary" style="max-height: 50px;" type="button">Eliminar imagen</button>
+                        <button class="btn btnHover btnColor" style="max-height: 50px;" type="button">Eliminar imagen</button>
                     </div>
 
 
@@ -184,8 +252,8 @@
                 </div>
 
                 <div class="d-grid gap-2 d-md-block mt-5 mb-2">
-                    <button class="btn btn-primary" type="button"><i class="fas fa-save me-2"></i>Guarda</button>
-                    <button class="btn btn-primary" type="button"><i class="fas fa-window-close me-2"></i>Cancelar</button>
+                    <button class="btn btnHover btnColor" type="button"><i class="fas fa-save me-2"></i>Guarda</button>
+                    <button class="btn btnHover btnColor" type="button"><i class="fas fa-window-close me-2"></i>Cancelar</button>
                 </div>
 
             </div>

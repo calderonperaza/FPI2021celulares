@@ -24,7 +24,7 @@
               <!--BUSCAR-->
               <form class="d-flex">
                 <input class="form-control rounded-pill me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success rounded-pill" type="submit">Buscar</button>
+                <button class="btn btn-outline-success btnHover btnBuscarColor rounded-pill" type="submit">Buscar</button>
               </form>
             
             
@@ -48,8 +48,6 @@
                 </ul>
               </div>
               
-
-
            
           </div><!--CONTAINER-->
         </nav>
@@ -62,97 +60,6 @@
 
         
         <div class="col-12 col-lg-3"> <!--Filtro por marcas-->
-
-          <!--Collapse filtro-->
-          <button class="navbar-toggler d-lg-none mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#Filtro" aria-controls="Filtro" aria-expanded="false" aria-label="Toogle navigation">
-
-
-            <span class="navbar-toggler-icon"><i class="fas fa-filter"></i></span>
-
-          </button>
-
-          <div class="collapse navbar-collapse" id="Filtro">
-            <ul class="navbar-nav">
-              
-              <aside class="container-fluid mt-5 overflow-auto" style="height: 500px;"><!--Inicio filtros aside-->
-            
-                <div class="form-check form-switch"><!--Boton nuevo-->
-                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                  <label class="form-check-label" for="flexSwitchCheckDefault">Nuevo</label>
-                </div>
-    
-                <p class="lead mt-4">
-                  Marcas
-                </p>
-    
-                <div class="list-group">
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    Samsumg
-                  </label>
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    Huawei
-                  </label>
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    Nokia
-                  </label>
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    iPhone  
-                  </label>
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    Xiomi
-                  </label>
-                </div>
-    
-    
-                <p class="lead mt-4">
-                  Sistema
-                </p>
-    
-                <div class="list-group">
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    Android 15
-                  </label>
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    Windows 10
-                  </label>
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    Ios 56
-                  </label>
-                </div>
-    
-                <p class="lead mt-4">
-                  Pantalla
-                </p>
-    
-                <div class="list-group">
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    6.0
-                  </label>
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    5.5
-                  </label>
-                  <label class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="">
-                    5
-                  </label>
-                </div>
-    
-              </aside><!--Fin filtros aside-->
-
-            </ul>
-          </div>
-          <!--Fin collapse botton-->
-          
 
           <aside class="container-fluid mt-5 overflow-auto d-none d-lg-block" style="height: 500px;"><!--Inicio filtros aside-->
             
@@ -234,6 +141,7 @@
 
         <div class="col-12 col-lg-9 mt-3 "><!--Productos-->
 
+
           <div class="d-none d-md-inline-flex"> <!--filtro precio en pc-->
             
             <div class="input-group input-group-sm mb-3 col me-2">
@@ -252,21 +160,30 @@
               </p>
             </div>
 
-            <div class="d-grid gap-2 d-md-block col">
-              <button class="btn btn-primary" type="button"><i class="fas fa-arrows-alt-v"></i> Precio</button>
-              <button class="btn btn-primary" type="button"><i class="fas fa-calendar"></i> Fecha</button>
+            <div class="d-grid gap-2 d-md-block col col-md-5">
+              <button class="btn btnHover btnColor" type="button"><i class="fas fa-arrows-alt-v"></i> Precio</button>
+              <button class="btn btnHover btnColor" type="button"><i class="fas fa-calendar"></i> Fecha</button>
+
+              <button class="navbar-toggler d-lg-none mt-0" type="button" data-bs-toggle="collapse" data-bs-target="#Filtro" aria-controls="Filtro" aria-expanded="false" aria-label="Toogle navigation">
+
+
+                <span class="navbar-toggler-icon"><i class="fas fa-filter"></i></span>
+    
+              </button>
+  
             </div>
-
           </div> <!--filtro precio en pc-->
-
           
           <div class="row d-md-none"><!--filtro precio en cel-->
+
+            
+
             <p class="lead col-5">
               Ordenar por:
             </p>
 
             <div class="dropdown col">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn btnHover btnColor  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 Filtros
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -275,161 +192,295 @@
               </ul>
             </div>
 
+            <button class="navbar-toggler d-lg-none col mt-0" type="button" data-bs-toggle="collapse" data-bs-target="#Filtro" aria-controls="Filtro" aria-expanded="false" aria-label="Toogle navigation">
+
+
+              <span class="navbar-toggler-icon"><i class="fas fa-filter"></i></span>
+  
+            </button>
+
           </div><!--filtro precio en cel-->
           
-          
+          <div class="collapse navbar-collapse" id="Filtro"><!--filtro marcas para celular-->
+            <ul class="navbar-nav">
+              
+              <aside class="container-fluid mt-5 overflow-auto" style="height: 500px;"><!--Inicio filtros aside-->
+            
+                <div class="form-check form-switch"><!--Boton nuevo-->
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                  <label class="form-check-label" for="flexSwitchCheckDefault">Nuevo</label>
+                </div>
+    
+                <p class="lead mt-4">
+                  Marcas
+                </p>
+    
+                <div class="list-group">
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Samsumg
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Huawei
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Nokia
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    iPhone  
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Xiomi
+                  </label>
+                </div>
+    
+    
+                <p class="lead mt-4">
+                  Sistema
+                </p>
+    
+                <div class="list-group">
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Android 15
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Windows 10
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Ios 56
+                  </label>
+                </div>
+    
+                <p class="lead mt-4">
+                  Pantalla
+                </p>
+    
+                <div class="list-group">
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    6.0
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    5.5
+                  </label>
+                  <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    5
+                  </label>
+                </div>
+    
+              </aside><!--Fin filtros aside-->
 
-          <main class="row mt-4"><!--Inicio contenido main-->
+            </ul>
+          </div><!--filtro marcas para celular-->
+
+          <main class="row mt-3"><!--Inicio contenido main-->
             
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"> <!--Carta 1-->
-              <a class="sinDecoracion" href="anuncio.html">
-                <div class="card" style="width: 11rem; height: 15.5rem;">
-                  <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://www.movilzona.es/app/uploads-movilzona.es/2017/08/samsung-galaxy-j7-plus.png?x=480&y=375&quality=40" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Samsung J6, Pantalla de 5.5 64GB, 2GB Ram, Color Negro </p>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 2-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://eloutput.com/app/uploads-eloutput.com/2020/02/galaxy-z-flip-foto-abierto.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Resistente al agua y con la primera pantalla flexible de 120hz.</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 3-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://www.movilzona.es/app/uploads-movilzona.es/2019/02/s10-plus.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">El Samsung Galaxy S10+ es oficial con 12 GB de RAM y acabado cerámico </p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 4-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://lamanzanamordida.net/app/uploads-lamanzanamordida.net/2019/01/Posible-dise%C3%B1o-del-Samsung-Galaxy-S10.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">El Samsung Galaxy S10 llega en el 2019 mejorando en aspectos al S9.</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <!--MITAD CONTENIDO TARJETAS-->
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"> <!--Carta 5-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://www.movilzona.es/app/uploads-movilzona.es/2019/09/iphone-11-pro-1.png?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Fabricado en acero y cristal, el primer miembro «Pro»</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 6-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://topesdegama.com/app/uploads-topesdegama.com/2018/09/iPhone-XS-Max-12.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">iPhone XS Max cuenta con un panel OLED de 6.5 pulgadas.</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 7-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://eloutput.com/app/uploads-eloutput.com/2019/06/nova5.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Nova 5i 24 MP (principal), 8MP (gran angular), 2 MP (macro)</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 8-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://eloutput.com/app/uploads-eloutput.com/2020/11/iphone-12-mini-pantalla.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">iPhone 12 es el modelo mediano de la familia.</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <!--SEGUNDA MITAD DEL CONTENIDO-->
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"> <!--Carta 9-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://eloutput.com/app/uploads-eloutput.com/2019/03/xiaomi-redmi-note-7-pro-comprar.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Xiaomi redmi note 7 procesador Snapdragon 675, 6 GB de RAM</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 10-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://www.movilzona.es/app/uploads-movilzona.es/2020/09/xiaomi-mi-10t-pro-colores.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Xiaomi Mi 10T Pro, el modelo más TOP con la tecnología 5G</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 11-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Nokia 3310 teléfono celular desbloqueado, estilo clásico, GSM.</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 12-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="http://www.incubaweb.com/wp-content/uploads/2006/09/se-w710i-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Sony Ericsson lanzó un nuevo móvil Walkman, el W710</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <!--TERCERA MITAD CONTENIDO TARJETAS-->
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"> <!--Carta 13-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://hardzone.es/app/uploads-hardzone.es/2012/04/smartandintuitive.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">el nuevo BlackBerry Bold 9790, dotado de características mejores.</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 14-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://i1.wp.com/informaticacero.com/wp-content/uploads/2018/03/Motorola-Razr2.png?fit=600%2C450&ssl=1" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Motorola RAZR V3t Teléfono, Plateado (T-Mobile)</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 15-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://i.blogs.es/b8f449/lg-chocolate-kg800/1366_2000.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">Celular LG Chocolate Mg800</p>
+                  </div>
+                </a>
               </div>
             </div>
 
             <div class="col-6 col-sm-4 col-xl-3 mb-3 sinPadding"><!--Carta 16-->
-              <div class="card" style="width: 11rem; height: 15.5rem;">
-                <img src="http://cdn2.dineroenimagen.com/media/dinero/styles/xlarge/public/images/2018/10/util-e-interesante-nokia-3310-podria-volver-n265510-624x352-344584.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+              <div class="card itemTienda" style="width: 11rem; height: 19rem;">
+                <a class="sinDecoracion" href="anuncio.html">
+                  <img src="https://lamanzanamordida.net/app/uploads-lamanzanamordida.net/2020/07/iPhone-12-render-1.jpg?x=480&y=375&quality=40" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="ms-4 lead fw-bold fst-italic text-decoration-underline fs-4">$200</span>
+                    <p class="card-text">
+                      T-Mobile
+                      Apple iPhone 12 Pro Max 4 colores en 256 GB y 128 GB T-Mobile</p>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -438,12 +489,12 @@
 
           <div class="text-center m-4"> <!--PAGINADOR-->
             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-              <button type="button" class="btn btn-primary">1</button>
-              <button type="button" class="btn btn-primary">2</button>
-              <button type="button" class="btn btn-primary">3</button>
+              <button type="button" class="btn btnHover btnColor">1</button>
+              <button type="button" class="btn btnHover btnColor">2</button>
+              <button type="button" class="btn btnHover btnColor">3</button>
             
               <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle btnHover btnColor" data-bs-toggle="dropdown" aria-expanded="false">
                   Articulos por pagina
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -464,10 +515,6 @@
        </div><!--ROW PRINCIPAL FIN-->
     </div><!--CONTAINER FIN-->
     
-
-    <footer class="container"><!--Inicio footer-->
-      
-    </footer><!--Fin footer-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
