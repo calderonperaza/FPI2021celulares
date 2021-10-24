@@ -156,7 +156,7 @@
                             <a href="estadisticas.html" class="btn btn-success">Estadisticas</a>
                         </li>
                         <li class="navbar-item " style="margin-right: 10px;">
-                            <button type="button" class="btn btn-info btn-circle btn-lg">
+                            <button type="button" class="btn btn-info btn-circle btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <i class="fa fa-plus"></i>
 
                             </li>
@@ -302,6 +302,109 @@
                     </div>
                 </div>
             </div><br>
+
+              <!-- Modal -->
+ <!-- Modal -->
+ <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <h5 class="modal-title" id="exampleModalLabel" >Nuevo Anuncio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="row">
+                    <div class="card" style="width: 100%; margin-bottom: 10px; margin-top: 10px;">
+                        <div class="card-body"> 
+                              <div class="row">
+                                  <div class="col-md-3">
+                                      <strong>Estado:</strong>
+                                  </div>
+                                  <div class="col-md-3"><input type="radio" name="" id=""> Nuevo</div>
+                                  <div class="col-md-3"><input type="radio" name="" id=""> Usado</div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-3">
+                                    <strong>Marca:</strong>
+                                </div>
+                                <div class="col-md-3"><input type="text" name="" id=""></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <strong>Modelo:</strong>
+                                </div>
+                                <div class="col-md-3"><input type="text" name="" id=""></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <strong>Pantalla:</strong>
+                                </div>
+                                <div class="col-md-2"><input type="text" name="" id="" style="width: 60px;"/> </div>
+                            
+                                <div class="col-md-3">Pulgadas</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <strong>Sistema:</strong>
+                                </div>
+                                <div class="col-md-6"><select name="" id=""><option value="">iOS</option> <option value="">Android</option></select></div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <h5>Imagenes</h5>
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+                            <input type="file" name="" id="">
+                          </div>
+                          <div class="carousel-item">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+                      
+                          </div>
+                          <div class="carousel-item ">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
+                      
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                    <h6>Titulo Breve del producto:</h6>  
+                    <input type="text" name="" id="">
+                    <h6>Vendedor:</h6>  
+                    <input type="text" name="" id="" placeholder="ej. Juan Perez">
+                    <h6>Telefono:</h6>  
+                    <input type="text" name="" id="" placeholder="ej. 123123123">
+                    <h6>Descripcion:</h6>  
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <br><br>
+                    <h6>Precio:</h6>  
+                   <input type="text" name="" id="">
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success">Crear</button>
+        </div>
+      </div>
+    </div>
+  </div>
             <script
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
