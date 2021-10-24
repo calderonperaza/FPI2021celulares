@@ -41,12 +41,10 @@
             </nav>
         </div>
     </header>
-
-
     <!--contenido principal-->
-    <div class="container">
+    <div class="container" id="contenedor">
         <div class="row">
-            <div class="col l2 " id="filtros">
+            <div class="col m3" id="filtros">
                 <!--sidenav filtros -->
                 <ul class="sidenav" id="slide-out">
                     <li>
@@ -158,8 +156,7 @@
                         </label>
                     </div>
                     <!--Cards filtros Marca-->
-                    <div class="card white">
-                        <div class="card-content black-text">
+                    <div class="card-panel black-text left">
                             <span class="card-title">Marca</span>
                             <form action="#">
                                 <p>
@@ -193,9 +190,9 @@
                                     </label>
                                 </p>
                             </form>
-                        </div>
-                        <!--Cards filtros Sistema-->
-                        <div class="card-content black-text">
+                    </div>
+                    <!--Cards filtros Sistema-->
+                    <div class="card-panel black-text left">
                             <span class="card-title">Sistema</span>
                             <form action="#">
                                 <p>
@@ -217,9 +214,9 @@
                                     </label>
                                 </p>
                             </form>
-                        </div>
-                        <!--Cards filtros Pantalla-->
-                        <div class="card-content black-text">
+                    </div>
+                    <!--Cards filtros Pantalla-->
+                    <div class="card-panel black-text left">
                             <span class="card-title">Pantalla</span>
                             <form action="#">
                                 <p>
@@ -241,19 +238,35 @@
                                     </label>
                                 </p>
                             </form>
-                        </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
-            
-            <div class="col l10">
-                <a href="#" data-target="slide-out" class="sidenav-trigger btn hide-on-med-and-up">
-                    <i class="material-icons">filter_list</i>
-                </a>
+            <div class="col m9">
                 <div class="container">
                     <div class="row">
-                        <div class="col l2 s6 center">
-                            
+                        <div class="input-field col hide-on-small-only">
+                            <input id="precio" type="number" class="validate small">
+                            <label for="precio">Precio:</label>
+                          </div>
+                          <div class="input-field col hide-on-small-only">
+                            <input id="hasta" type="number" class="validate small">
+                            <label for="hasta">Hasta:</label>
+                          </div>
+                          <div class="col ">
+                            <label>Ordenar por:</label>
+                            <select>
+                              <option value="0">Precio</option>
+                              <option value="1">Fecha</option>
+                              <option value="2">Color</option>
+                            </select>
+                          </div>
+                          <a href="#" data-target="slide-out" class="sidenav-trigger red btn hide-on-med-and-up right">
+                            <i class="material-icons">filter_list</i>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m4 s6 center">
                             <div class="card shop-products">
                                 <div class="card-image">
                                     <img src="descarga.jfif" class="shop-product-img">
@@ -283,7 +296,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l2 s6 center">
+                        <div class="col m4 s6 center">
                             <div class="card shop-products">
                                 <div class="card-image">
                                     <img src="descarga.jfif" class="shop-product-img">
@@ -313,7 +326,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l2 s6 center">
+                        <div class="col m4 s6 center">
                             <div class="card shop-products">
                                 <div class="card-image">
                                     <img src="descarga.jfif" class="shop-product-img">
@@ -343,7 +356,67 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col l2 s6 center">
+                        <div class="col m4 s6 center">
+                            <div class="card shop-products">
+                                <div class="card-image">
+                                    <img src="descarga.jfif" class="shop-product-img">
+                                </div>
+                                <div class="card-content red darken-2 white-text">
+                                    <p>
+                                        <span>$132.00</span>
+                                        <span>Samsung J6, Pantalla de 5.5 </span>
+                                        <span>64GB, 2GB Ram, Color Negro</span>
+                                    </p>
+                                </div>
+                                <div class="card-action white-text red action-2">
+                                    <a href="Un_Anuncio.html">Ver ></a>
+                                </div>
+                                <div class="card-image">
+                                    <img src="descarga.jfif" class="shop-product-img">
+                                </div>
+                                <div class="card-content red darken-2 white-text">
+                                    <p>
+                                        <span>$132.00</span>
+                                        <span>Samsung J6, Pantalla de 5.5 </span>
+                                        <span>64GB, 2GB Ram, Color Negro</span>
+                                    </p>
+                                </div>
+                                <div class="card-action red action-2  white-text">
+                                    <a href="Un_Anuncio.html">Ver ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col m4 s6 center">
+                            <div class="card shop-products">
+                                <div class="card-image">
+                                    <img src="descarga.jfif" class="shop-product-img">
+                                </div>
+                                <div class="card-content red darken-2 white-text">
+                                    <p>
+                                        <span>$132.00</span>
+                                        <span>Samsung J6, Pantalla de 5.5 </span>
+                                        <span>64GB, 2GB Ram, Color Negro</span>
+                                    </p>
+                                </div>
+                                <div class="card-action white-text red action-2">
+                                    <a href="Un_Anuncio.html">Ver ></a>
+                                </div>
+                                <div class="card-image">
+                                    <img src="descarga.jfif" class="shop-product-img">
+                                </div>
+                                <div class="card-content red darken-2 white-text">
+                                    <p>
+                                        <span>$132.00</span>
+                                        <span>Samsung J6, Pantalla de 5.5 </span>
+                                        <span>64GB, 2GB Ram, Color Negro</span>
+                                    </p>
+                                </div>
+                                <div class="card-action red action-2  white-text">
+                                    <a href="Un_Anuncio.html">Ver ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col m4 s6 center">
                             <div class="card shop-products">
                                 <div class="card-image">
                                     <img src="descarga.jfif" class="shop-product-img">

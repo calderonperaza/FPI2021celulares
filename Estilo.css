@@ -47,7 +47,10 @@ div.card.shop-products {
    height: 50%;    
    margin-bottom: 0px;    
 }
-    
+
+#contenedor {
+   padding-left: 1%;
+}
       
     
 img.shop-product-img {    
