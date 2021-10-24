@@ -1,17 +1,14 @@
-*{
-    padding: 0px;
-  
-    margin: 0px;
+body{
+  font-family: 'Roboto', sans-serif;
+ }
 
+.form-check-input:checked {
+  background-color: #632a7e;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-    color: black;
+
+
+.form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked{
+  background-color: #632a7e
 }
-#navbar{
-    background-color:#632A7E;
-    color: white
-}
-.modal{
-    width: 100%;
-}
+
+

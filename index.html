@@ -102,19 +102,19 @@
               <a class="btn btn-dark" href="#"> Estadisticas </a>
             </li>
             <li
-              class="nav-item"
+              class="nav-item btn-dark"
               style="margin-right: 2.5px; margin-left: 2.5px"
             >
               <a
-                class="nav-link btn d-none d-md-inline"
+                class="btn btn-dark btn-sm"
                 data-bs-target="#nuevoAnuncio"
                 data-bs-toggle="modal"
               >
-                <i class="fa fa-plus"></i>
+                <i class="fas fa-plus-circle"></i>
               </a>
             </li>
             <li
-              class="nav-item"
+              class="nav-item btn-dark"
               style="margin-right: 2.5px; margin-left: 2.5px"
             >
               <a
@@ -122,22 +122,9 @@
                 data-bs-toggle="modal"
                 data-bs-target="#carrito"
                 href="#"
+                style="line-height: 20px"
               >
                 <i class="fas fa-cart-plus"></i>
-                <span
-                  class="
-                    position-absolute
-                    mt-3
-                    me-0
-                    translate-middle
-                    badge
-                    rounded-pill
-                    bg-light
-                    text-black
-                  "
-                >
-                  <span class="visually-hidden"></span>
-                </span>
               </a>
             </li>
           </ul>
@@ -165,18 +152,14 @@
             ></button>
           </div>
           <div
-            class="
-              offcanvas-body
-              position-sticky
-              bg-gradient bg-secondary bg-opacity-10
-            "
+            class="offcanvas-body position-sticky bg-transparent bg-opacity-10"
           >
-            <ul class="nav nav-pills flex-column mb-auto ms-3">
+            <ul class="nav nav-pills flex-column mb-auto ms-3 bg-light">
               <li class="nav-item">
                 <a
                   href="index.html"
                   class="nav-link text-black border-bottom border-1 border-dark"
-                  style="border-radius: 0px"
+                  style="border-radius: 0px; color: black"
                 >
                   Inicio</a
                 >
@@ -186,7 +169,7 @@
                 <a
                   href="#"
                   class="nav-link text-black border-bottom border-1 border-dark"
-                  style="border-radius: 0px"
+                  style="border-radius: 0px; color: black"
                   data-bs-target="#nuevoAnuncio"
                   data-bs-toggle="modal"
                   >Nuevo Anuncio</a
@@ -199,7 +182,7 @@
                   class="nav-link text-black border-bottom border-1 border-dark"
                   data-bs-toggle="modal"
                   data-bs-target="#carrito"
-                  style="border-radius: 0px"
+                  style="border-radius: 0px; color: black"
                 >
                   Carrito</a
                 >
@@ -209,7 +192,7 @@
                 <a
                   href="#"
                   class="nav-link text-black border-bottom border-1 border-dark"
-                  style="border-radius: 0px"
+                  style="border-radius: 0px; color: black"
                 >
                   Estadisticas</a
                 >
@@ -364,7 +347,7 @@
       </div>
     </section>
 
-    <!-- Modal-detalles-->
+    <!------------------------------------------------------- Modal-detalles----------------------------------------------->
     <div
       class="modal fade"
       id="exampleModal"
@@ -499,7 +482,7 @@
       </div>
     </div>
     <!--.......................................................... MODAL CREAR ANUNCIO.............................................................. -->
-    <div class="row">
+    <div class="row modalad">
       <div class="col">
         <div
           class="modal fade"
@@ -516,14 +499,13 @@
                 </h3>
               </div>
               <div class="modal-body">
-                <div class="container">
+                <div class="container ">
                   <form class="was-validated">
                     <div class="row">
                       <!-- ESPECIFICACIONES -->
                       <div
                         class="
                           col-12 col-lg-6
-                          bg-light
                           border
                           rounded-lg
                           shadow-sm
@@ -546,7 +528,7 @@
                                 value="1"
                                 required
                               />
-                              <label class="form-check-label" for="New"
+                              <label class="form-check-label" style="color: black;" for="New"
                                 >Nuevo</label
                               >
                             </div>
@@ -560,7 +542,7 @@
                                 value="2"
                                 required
                               />
-                              <label class="form-check-label" for="Old"
+                              <label class="form-check-label" style="color: black;" for="Old"
                                 >Usado</label
                               >
                             </div>
@@ -844,7 +826,7 @@
                       >
                         <button
                           type="button"
-                          class="btn btn-outline-cancel btn-lg mr-2"
+                          class="btn-outline-danger btn-lg mr-2"
                           data-bs-dismiss="modal"
                         >
                           Cancelar
@@ -905,7 +887,7 @@
         </div>
       </div>
     </div>
-    <!-- Modal carrito -->
+    <!--........................................................... Modal carrito................................................................... -->
     <div
       class="modal fade"
       id="carrito"
@@ -959,7 +941,7 @@
         </div>
       </div>
     </div>
-    
+    <!--........................................................TEMPLATE............................................................... -->
     <template id="templatecellphone">
       <div class="col my-2 rounded">
         <div class="card border border-danger">
@@ -975,12 +957,13 @@
             <a
               href="#"
               class="text-black"
+              style="text-decoration: none"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
-              <h6 class="card-title"></h6>
+              <h6 class="card-title" style="color: black"></h6>
             </a>
-            <p class="fw-bolder" style="color: white"></p>
+            <p class="fw-bolder text-center" style="color: white"></p>
 
             <button
               class="btn btn btn-block mb-2 btn-outline-dark"
@@ -998,7 +981,29 @@
         </div>
       </div>
     </template>
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td>10</td>
+      <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+          vaciar todo
+        </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
     <!-- template carrito -->
+    <template id="template-carrito">
+      <tr>
+        <th scope="row" class="bg-dark" style="color: white">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+          <button class="btn btn-info btn-sm aumentar">+</button>
+          <button class="btn btn-danger btn-sm disminuir">-</button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
 
     <!-- template filtro marca pantalla  sistema -->
     <template id="templatebrand">
@@ -1042,14 +1047,12 @@
       </div>
     </template>
 
-    
     <template id="templatebrand2">
       <option>Samsung</option>
     </template>
     <template id="templatesystem2">
       <option>Samsung</option>
     </template>
-   
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="app.js"></script>
