@@ -11,6 +11,12 @@
 .switch.purpl {
     padding: 10px;
 }
+
+.checkbox-purple[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid #9c27b0;
+    background-color: #9c27b0;
+}
+
 .bord{
     padding: 10px;
     margin: 5px;
