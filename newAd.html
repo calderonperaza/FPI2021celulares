@@ -9,99 +9,104 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>ventacelulares</title>
 </head>
-<body>
+<body style="background-color: #7FB174;">
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-lg-12 mt-3 text-center">
                 <h1>NUEVO ANUNCIO</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div style="border: 1px solid black; margin-top: 15px;">
+        <div class="row mt-4">
+            <div class="col-lg-6 ">
+                <div style="border: 1px solid black;">
+                  <div style="margin: 30px 25px;">
                     <fieldset class="row mb-3">
-                        <legend class="col-form-label col-sm-2 pt-0">Estado: </legend>
-                        <div class="col-sm-10">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
-                            <label class="form-check-label" for="gridRadios1">
-                              Nuevo
-                            </label>
+                      <legend class="col-form-label col-sm-2 pt-0">Estado: </legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                          <label class="form-check-label" for="gridRadios1">
+                            Nuevo
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Usado
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <div class="row mb-3">
+                      <label for="inputText" class="col-sm-2 col-form-label">Marca: </label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputText">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="inputText1" class="col-sm-2 col-form-label">Modelo:</label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputText1">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="inputNumber" class="col-sm-2 col-form-label">Pantalla:</label>
+                      <div class="col-sm-3">
+                        <input type="number" class="form-control" id="inputNumber" placeholder="pulgadas">    
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label class="col-sm-2 col-form-label" class="visually-hidden" for="autoSizingSelect">Sistema</label>
+                      <div class="col-sm-3">
+                          <select class="form-select" id="autoSizingSelect">
+                              <option value="1">Ios</option>
+                              <option value="2">Android</option>
+                              <option value="3">Windows Phone</option>
+                              <option value="4">Ubuntu Touch</option>
+                          </select>
+                      </div>                      
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="inputNumber1" class="col-sm-2 col-form-label">Rom:</label>
+                      <div class="col-sm-3">
+                          <div class="input-group">
+                              <input type="number" class="form-control" id="inputNumber1"  aria-describedby="inputGroupPrepend2" required>
+                              <span class="input-group-text" id="inputGroupPrepend2">Gb</span>
                           </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                              Usado
-                            </label>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="inputNumber2" class="col-sm-2 col-form-label">RAM:</label>
+                      <div class="col-sm-3">
+                          <div class="input-group">
+                              <input type="number" class="form-control" id="inputNumber2"  aria-describedby="inputGroupPrepend2" required>
+                              <span class="input-group-text" id="inputGroupPrepend2">Gb</span>
                           </div>
-                        </div>
-                      </fieldset>
-
-                      <div class="row mb-3">
-                        <label for="inputText" class="col-sm-2 col-form-label">Marca: </label>
-                        <div class="col-sm-3">
-                          <input type="text" class="form-control" id="inputText">
-                        </div>
                       </div>
-
-                      <div class="row mb-3">
-                        <label for="inputText1" class="col-sm-2 col-form-label">Modelo:</label>
-                        <div class="col-sm-3">
-                          <input type="text" class="form-control" id="inputText1">
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputNumber" class="col-sm-2 col-form-label">Pantalla:</label>
-                        <div class="col-sm-3">
-                          <input type="number" class="form-control" id="inputNumber" placeholder="pulgadas">    
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label" class="visually-hidden" for="autoSizingSelect">Sistema</label>
-                        <div class="col-sm-3">
-                            <select class="form-select" id="autoSizingSelect">
-                                <option value="1">Ios</option>
-                                <option value="2">Android</option>
-                                <option value="3">Windows Phone</option>
-                                <option value="4">Ubuntu Touch</option>
-                            </select>
-                        </div>                      
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputNumber1" class="col-sm-2 col-form-label">Rom:</label>
-                        <div class="col-sm-3">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="inputNumber1"  aria-describedby="inputGroupPrepend2" required>
-                                <span class="input-group-text" id="inputGroupPrepend2">Gb</span>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="row mb-3">
-                        <label for="inputNumber2" class="col-sm-2 col-form-label">RAM:</label>
-                        <div class="col-sm-3">
-                            <div class="input-group">
-                                <input type="number" class="form-control" id="inputNumber2"  aria-describedby="inputGroupPrepend2" required>
-                                <span class="input-group-text" id="inputGroupPrepend2">Gb</span>
-                            </div>
-                        </div>
-                      </div>
+                    </div>
+                  </div>
+                    
                 </div>
 
-                <div style="margin-top: 15px; border: 1px solid black; margin-bottom: 15px;">
-                    <p>Imagenes</p>
+                <div style="margin-top: 15px; border: 1px solid black; height: 175px;">
+                    <div style="margin: 30px 25px;">
+                      <p>Imagenes</p>
 
-                    <i class="bi bi-plus-circle" style="font-size: 25px;"></i>
-                    <br>
-                    <i class="bi bi-dash-circle" style="font-size: 25px;"></i>
+                      <i class="bi bi-plus-circle" style="font-size: 25px;"></i>
+                      <br>
+                      <i class="bi bi-dash-circle" style="font-size: 25px;"></i>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6" style="border: 1px solid black;">
-                <form action="">
+                <form action="" style="margin: 30px 25px;">
                     <div class="mb-3">
                         <label for="DescriptionAd" class="form-label">Titulo breve del anuncio</label>
                         <input type="text" class="form-control" id="DescriptionAd" aria-describedby="DescriptionNewAd">

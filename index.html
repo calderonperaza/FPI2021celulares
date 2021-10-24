@@ -15,6 +15,9 @@
   <header class="fixed top">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7FB174;">
       <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand" href="#"><span class="material-icons">
           campaign
@@ -45,8 +48,8 @@
   <div class="container-fluid">
     <div class="row flex-nowrap">
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0" style="background-color: #7FB174;">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-black min-vh-100">
+                <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-black text-decoration-none">
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                       <label class="form-check-label" for="flexSwitchCheckDefault">Nuevo</label>
@@ -55,8 +58,8 @@
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                     <li class="nav-item">
                         <a href="#" class="nav-link align-middle px-0">
-                          <span class="ms-1 d-none d-sm-inline">Marca</span>
-                          <div class="container" style="border: 1px solid white;">
+                          <span class="ms-1 d-none d-sm-inline" style="color: black;">Marca</span>
+                          <div class="container" style="border: 1px solid white; color: black;">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                               <label class="form-check-label" for="flexCheckDefault">
@@ -69,24 +72,74 @@
                                 Huawei
                               </label>
                             </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                              <label class="form-check-label" for="flexCheckDefault2">
+                                Nokia
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                              <label class="form-check-label" for="flexCheckDefault3">
+                                iPhone
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                              <label class="form-check-label" for="flexCheckDefault4">
+                                Xiaomi
+                              </label>
+                            </div>
                           </div>
                         </a>
                     </li>
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Sistema</span> </a>
-                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                            </li>
-                        </ul>
+                        <span class="ms-1 d-none d-sm-inline" style="color: black;">Sistema</span> </a>
+                        <div class="container" style="border: 1px solid white; width: 135px;"> 
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                            <label class="form-check-label" for="flexCheckDefault5">
+                              Android 
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                            <label class="form-check-label" for="flexCheckDefault5">
+                              Windows
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                            <label class="form-check-label" for="flexCheckDefault5">
+                              Ios
+                            </label>
+                          </div>
+                        </div>
                     </li>
                     <li>
                         <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Pantalla</span></a>
+                        <span class="ms-1 d-none d-sm-inline" style="color: black;">Pantalla</span></a>
+                        <div class="container" style="border: 1px solid white; width: 135px;">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                            <label class="form-check-label" for="flexCheckDefault5">
+                              6.0
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                            <label class="form-check-label" for="flexCheckDefault6">
+                              5.0
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                            <label class="form-check-label" for="flexCheckDefault6">
+                              5
+                            </label>
+                          </div>
+                        </div>
                     </li>
                     
                 </ul>
@@ -94,15 +147,35 @@
             </div>
         </div>
         <div class="col py-3">
-          <h3>Left Sidebar with Submenus</h3>
           <section id="galery-phone" class="mt-4">
             <div class="container">
               <div class="row justify-content-evenly">
                 <div class="col-4   " style="border: 0.5px solid green;">
-                  precio:
+                  <div class="row mb-3 mt-2">
+                    <label for="inputNumber2" class="col-sm-2 col-form-label">precio:</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputNumber2"  aria-describedby="inputGroupPrepend2" required>
+                            <span class="input-group-text" id="inputGroupPrepend2">$</span>
+                        </div>
+                    </div>
+                    <label for="inputNumber3" class="col-sm-2 col-form-label">Hasta:</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="inputNumber3"  aria-describedby="inputGroupPrepend3" required>
+                            <span class="input-group-text" id="inputGroupPrepend3">$</span>
+                        </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-4"  style="border: 0.5px solid green;">
-                  ordenar por:
+                  <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">Ordenar por:</label>
+                    <div class="col-sm-8">
+                      <button type="button" class="btn btn-sm mt-3" style="background-color: #7FB174; color: white;"><i class="bi bi-arrow-up"></i> Precio</button>
+                      <button type="button" class="btn btn-sm mt-3" style="background-color: #7FB174; color: white; margin-left: 10px;">Fecha</button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <br>              
