@@ -16,11 +16,10 @@
   <header>
 
 
-  </header>
-
+ 
   <!-- Navbar goes here -->
   <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper blue darken-4">
       <a href="#!" class="brand-logo">CellPhone</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
@@ -36,6 +35,8 @@
     </div>
     </div>
   </nav>
+</header>
+
 
   <ul class="sidenav" id="mobile-demo">
     <li><a href="sass.html">Sass</a></li>
@@ -43,7 +44,7 @@
     <li><a href="collapsible.html">Javascript</a></li>
     <li><a href="mobile.html">Mobile</a></li>
   </ul>
-  <div class="miContenedor">
+  <div class="miContenedor blue lighten-1">
     <div class="row">
       <div class="col left hide-on-small-only"> <!--columna filtros-->
         <div class="switch">
@@ -58,10 +59,10 @@
 
         <div class="row">
           <div class="col l12 m12">
-            <div class="card-panel teal">
+            <div class="card-panel ">
               <form action="#">
                 <p>
-                  <label>
+                  <label class=" " >
                     <input type="checkbox" />
                     <span>Samsung</span>
                   </label>
@@ -70,21 +71,21 @@
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>Huawei</span>
                   </label>
                 </p>
 
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>LG</span>
                   </label>
                 </p>
 
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>Xiaomi</span>
                   </label>
                 </p>
 
@@ -96,35 +97,30 @@
 
         <div class="row">
           <div class="col l12 m12">
-            <div class="card-panel teal">
+            <div class="card-panel ">
               <form action="#">
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>Android</span>
                   </label>
                 </p>
               
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>!OS</span>
                   </label>
                 </p>
 
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>Windows</span>
                   </label>
                 </p>
 
-                <p>
-                  <label>
-                    <input type="checkbox" />
-                    <span>Red</span>
-                  </label>
-                </p>
+
 
                 
               </form>
@@ -134,26 +130,27 @@
 
         <div class="row">
           <div class="col l12 m12">
-            <div class="card-panel teal">
+            <div class="card-panel ">
               <form action="#">
                 <p>
+                  
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>6.0 pulgadas</span>
                   </label>
                 </p>
               
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>5.5 pulgadas</span>
                   </label>
                 </p>
 
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Red</span>
+                    <span>5 pulgadas</span>
                   </label>
                 </p>
 
@@ -175,14 +172,14 @@
         <div class="row"> <!--columna filtros-->
           <div class="input-field col hide-on-small-only ">
             <input placeholder="$" id="first_name" type="number" class="validate">
-            <label for="first_name">Precio:</label>
+            <label for="first_name" id="labelPrecio">Precio:</label>
           </div>
           <div class="input-field col hide-on-small-only">
             <input placeholder="$" id="first_name" type="number" class="validate">
-            <label for="first_name">Hasta:</label>
+            <label for="first_name" id="Labelhasta">Hasta:</label>
           </div>
           <div class="col ">
-            <label>Ordenar por:</label>
+            <label id="labelOrdenar">Ordenar por:</label>
 
             <select>
               <option value="0">Precio</option>

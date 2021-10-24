@@ -21,6 +21,29 @@
 }
 
 
+#cartaDescripcion{
+    font-family: cursive;
+    border-top-color: black;
+    border-color: aqua
+    background-color  rgb(47, 239, 253);
+    
+}
+#descripcionNuevoA{
+    font-family: cursive;
+    
+}
+#DescripcionIzquierda{
+    font-family: cursive;
+    
+}
+#DescripcionDerecha{
+    font-family: cursive;
+    
+}
+#labelOrdenar{
+    font-family: bold;
+}
+
 
   
  
