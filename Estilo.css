@@ -4,13 +4,6 @@
 
  }
 
-#filtros {
-   padding-left: 0px;
-   margin-left: 0px !important;
-   
-
-}
-
 #inicio {
    position: fixed;
    margin-bottom: 0%;
@@ -37,6 +30,7 @@
 #filtro-sidenav {
    padding: 0;
    height: 100%;
+   margin-right: 0px;
    width: 20%;
 }
 a.des {
@@ -58,7 +52,6 @@ img.shop-product-img {
     
 }
 
-      
     
 div.card-action.red.action-2.white-text {
    background-color: royalblue;
@@ -67,6 +60,10 @@ div.card-action.red.action-2.white-text {
 
 }
 
+#filtrosbtn {
+   margin-top: 15px;
+   margin-left: 25px;
+}
 
 div.card-conten.red.darken-2.white-text {
    height: 50%;
@@ -77,7 +74,7 @@ div.col.l2.center {
  }
 
 #slide-out{
-   width: 35%;
+   width: 45%;
    height: 100%;
 }
 
