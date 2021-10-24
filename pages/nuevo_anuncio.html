@@ -456,10 +456,25 @@
                     <!-- botones -->
                     <div class="row d-flex justify-content-center">
                       <a class="btn btn-secondary col-6 w-auto m-2" href="../index.html" ><i class="bi bi-x-circle-fill"></i> Cancelar</a>
-                      <button type="button" class="btn btn-primary col-6 w-auto m-2"><i class="bi bi-save"></i> Crear Anuncio</button>
+                      <button id="crearToastBtn2" type="button" class="btn btn-primary col-6 w-auto m-2"><i class="bi bi-save"></i> Crear Anuncio</button>
                     </div>            
                   </div>
 
+                </div>     
+                
+                <!-- toast 2 -->
+                <div class=" position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                  <div id="crearToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header bg-primary text-light fw-bold">
+                      <!--img src="..." class="rounded me-2" alt="..."-->
+                      <strong class="me-auto">AVISO</strong>
+                      <small>Hace unos segundos</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body bg-light fw-bold">
+                      ¡El anuncio se guardo satisfactoriamente!
+                    </div>
+                  </div>
                 </div>
         
             </div>             
@@ -479,20 +494,34 @@
 
 </html>
 
-<!-- js al crar un anuncio -->
+<!-- js al crear un anuncio -->
 <script> 
+  //btn crear desde lg
   var toastTrigger = document.getElementById('crearToastBtn');
   var toastCrear = document.getElementById('crearToast');
+  //btn crear abajo de lg
+  var toastTrigger2 = document.getElementById('crearToastBtn2');
+  var toastCrear2 = document.getElementById('crearToast2');
 
+  //funcion para redireccionar al inicio
   const redireccionar= () =>{
     window.location="../index.html";
   } 
 
+  //condicion del btn1
   if (toastTrigger) {
     toastTrigger.addEventListener('click', function () {
       var toast = new bootstrap.Toast(toastCrear)
       setTimeout ( "redireccionar()", 3000);
       toast.show()
+    })
+  }
+  //condicion del btn2
+  if (toastTrigger2) {
+    toastTrigger2.addEventListener('click', function () {
+      var toast2 = new bootstrap.Toast(toastCrear2)
+      setTimeout ( "redireccionar()", 3000);
+      toast2.show()
     })
   }
   
