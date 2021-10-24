@@ -39,9 +39,9 @@
                 font-size: 12px;
                 line-height: 1.42857;
             }
-            .carousel-indicators .active{
-    background-color: #f00;
-}
+            .carousel-indicators .active {
+                background-color: #f00;
+            }
         </style>
         <!--Appbar-->
         <nav
@@ -101,7 +101,9 @@
                         <hr>
                         <li class="nav-item d-block d-sm-none" align="center">
 
-                            <span class="h3">Inicio</span>
+                            <a href="index.html">
+                                <span class="h3">Inicio</span>
+                            </a>
                         </li>
                         <hr>
                         <li class="nav-item d-block d-sm-none" align="center">
@@ -113,7 +115,11 @@
                         </li>
                         <hr>
                         <li class="nav-item d-block d-sm-none" align="center">
-                            <span class="h3">Estadisticas</span>
+                            <a href="estadisticas.html">
+                                <a href="estadisticas.html">
+                                    <span class="h3">Estadisticas</span>
+                                </a>
+                            </a>
                         </li>
                         <hr>
                     </ul>
@@ -144,6 +150,12 @@
                     id="navbarSupportedContent">
                     <ul class="navbar-nav  mb-2 mb-lg-0 ">
                         <li class="navbar-item " style="margin-right: 10px;">
+                            <a href="index.html" class="btn btn-success">Inicio</a>
+                        </li>
+                        <li class="navbar-item " style="margin-right: 10px;">
+                            <a href="estadisticas.html" class="btn btn-success">Estadisticas</a>
+                        </li>
+                        <li class="navbar-item " style="margin-right: 10px;">
                             <button type="button" class="btn btn-info btn-circle btn-lg">
                                 <i class="fa fa-plus"></i>
 
@@ -171,25 +183,40 @@
                 <div class="row">
                     <!--El Carousel-->
                     <div class="col-md-5">
-                        <div id="carouselExampleControls" class="carousel slide"  style="width: 400px; height: 450px;" data-bs-ride="carousel">
+                        <div
+                            id="carouselExampleControls"
+                            class="carousel slide"
+                            style="width: 400px; height: 450px;"
+                            data-bs-ride="carousel">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="static/img/cellphones/iphone1.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="static/img/cellphones/iphone2.jpg" class="d-block w-100" alt="...">
-                              </div>
-                              
+                                <div class="carousel-item active">
+                                    <img src="static/img/cellphones/iphone1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="static/img/cellphones/iphone2.jpg" class="d-block w-100" alt="...">
+                                </div>
+
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" style="color: black;" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev">
+                                <span
+                                    class="carousel-control-prev-icon"
+                                    style="color: black;"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
                             </button>
-                          </div>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <h3>iPhone 13 Max</h3>
@@ -198,7 +225,9 @@
                         <br>
                         <hr>
                         <button type="button" class="btn btn-success">Comprar</button>
-                        <div class="row" style="margin-top: 50px;  height: 60px; border: 1px black solid;">
+                        <div
+                            class="row"
+                            style="margin-top: 50px;  height: 60px; border: 1px black solid;">
                             <div class="col-md-6" style="margin-top: 20px;">
                                 Vendedor: Juan Perez
                             </div>
@@ -216,43 +245,67 @@
                         <div class="col-md-4">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
-                                  <h5 class="card-title">Especificaciones</h5> 
-                                  <p class="card-text">
-                                    Estado: Nuevo <br>
-                                    Marca: Iphone <br>
-                                    Pantalla: 8 pulgadas <br>
-                                    Sistema: iOS <br>
-                                    Rom: 128GB <br>
-                                    Ram: 6GB <br>
-                                  </p>
-                                   
+                                    <h5 class="card-title">Especificaciones</h5>
+                                    <p class="card-text">
+                                        Estado: Nuevo
+                                        <br>
+                                        Marca: Iphone
+                                        <br>
+                                        Pantalla: 8 pulgadas
+                                        <br>
+                                        Sistema: iOS
+                                        <br>
+                                        Rom: 128GB
+                                        <br>
+                                        Ram: 6GB
+                                        <br>
+                                    </p>
+
                                 </div>
-                              </div>
-                           
+                            </div>
+
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-4">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body">
-                                  <h5 class="card-title">Detalles</h5> 
-                                  <p class="card-text">
-                                  iPhone en buen Estado
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quidem reprehenderit illo voluptas voluptate voluptates alias quaerat sapiente voluptatum cupiditate ratione quos eos, dicta placeat. Aut officia nesciunt cupiditate nihil?
-                                  </p>
-                                   
+                                    <h5 class="card-title">Detalles</h5>
+                                    <p class="card-text">
+                                        iPhone en buen Estado Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eius quidem reprehenderit illo voluptas voluptate voluptates alias quaerat
+                                        sapiente voluptatum cupiditate ratione quos eos, dicta placeat. Aut officia
+                                        nesciunt cupiditate nihil?
+                                    </p>
+
                                 </div>
-                              </div>
+                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
-                
-            </div>
 
+            </div>
+            <div
+                class="d-block d-sm-none"
+                style="  position:fixed;
+            bottom:0px;
+            width:100%;
+            height:50px; 
+                
+            ">
+                <div class="container">
+                    <div class="row" style="background-color: black;
+                    ;">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-3"><button  class="btn btn-lg btn-success">Inicio</button><button style="margin-left: 40px; opacity: 100% !important; height: 45px;" class="btn btn-success btn-lg">Comprar</button></div>
+                   
+                    </div>
+                </div>
+            </div><br>
             <script
                 src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
                 crossorigin="anonymous"></script>
 
         </body>
-    </html>
+    </html6
