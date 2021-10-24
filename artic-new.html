@@ -41,7 +41,19 @@
   <div class="miContenedor">
       <div class="row">
           <div class="col l6">
-            <div class="row">
+            <div class="row hide-on-med-and-up red">
+              <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+              </div>
+            </div>
+            <div class="row hide-on-med-and-up"><!--aqui van los texfield-->
+
+            </div>
+            <div class="row ">
                 <div class="col l9 ">
                     <div class="card">
                      
@@ -99,8 +111,17 @@
                     </div>
                   </div> 
             </div>
-            <div class="row">
-                <div class="col l9 ">
+            <div class="row hide-on-med-up">
+              <div class="col">
+                <div class="card">
+                  <div class="card-content">
+                    aqui va el texarea de descripccion
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row hide-on-small-only">
+                <div class="col l9  ">
                     <div class="card">
                      
                       <div class="card-content"><!--target images-->
@@ -118,7 +139,7 @@
                   </div> 
             </div>
           </div>
-          <div class="col l6">
+          <div class="col l6 hide-on-small-only">
             <div class="row">
                 <form class="col s12">
                   <div class="row">
@@ -162,6 +183,10 @@
                 </form>
               </div>
           </div>
+          <div class="row">
+            <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+<a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+          </div>
       </div>
   </div>
  
@@ -189,6 +214,7 @@
     document.addEventListener('DOMContentLoaded', function () {
       M.AutoInit();
     });
+    
   </script>
 </body>
 
