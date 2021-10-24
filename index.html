@@ -10,15 +10,34 @@
             rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <style>
-         @media (max-width:1199px) {
-            .no-mostrar-en-movil {
-                display:none;
+            @media (max-width:1199px) {
+                .no-mostrar-en-movil {
+                    display: none;
+                }
             }
-        }
+            .btn-circle.btn-xl {
+                width: 80px;
+                height: 80px;
+                padding: 10px 16px;
+                border-radius: 35px;
+                font-size: 24px;
+                line-height: 1.33;
+            }
+            .btn-circle {
+                width: 30px;
+                height: 30px;
+                padding: 6px 0px;
+                border-radius: 15px;
+                text-align: center;
+                font-size: 12px;
+                line-height: 1.42857;
+            }
+
         </style>
         <!--Appbar-->
         <nav
@@ -37,7 +56,29 @@
                 </button>
                 <!-- Arregla esto -->
                 <div class="navbar-nav d-block d-sm-none">
-                    <input type="text" class="form-control" placeholder="Buscar">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="" arsearchia-describedby="basic-addon1">
+                    
+                </div>
+                <div class="d-block d-sm-none">
+                    <button
+                        class="btn btn-success"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-funnel"
+                            viewbox="0 0 16 16">
+                            <path
+                                d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                        </svg>
+                    </button>
                 </div>
                 <!-- Arregla esto -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,6 +88,7 @@
                             <img src="static/img/speaker.png" style="width: 40px; height: 40px;" alt="">
                             <span class="h3 ml-2">Tienda Cellphone</span>
                         </li>
+                       
                         <hr>
                         <li class="nav-item d-block d-sm-none" align="center">
 
@@ -67,226 +109,242 @@
                         <hr>
                     </ul>
                 </div>
-                <div class="d-block d-sm-none">
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-               
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
-                     <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
-                   </svg>
-                   </button>
-                </div>
-              
-            
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li>Right</li>
+                    <ul class="navbar-nav d-none d-sm-block">
+                        <li class="navbar-item" style="width: 400px;">
+                            <div class="input-group mb-3" style=" margin-top: 10px;">
+                                <span class="input-group-text" id="basic-addon1"> <i class="fa fa-search"></i></span>
+                                <input type="text" class="form-control" placeholder="Search" aria-label="" sy arSearchia-describedby="basic-addon1">
+                              </div>
+                              
+                        </li>
+                        
                     </ul>
                 </div>
-                <!-- Elementos de la derecha -->
-            </div>
-        </nav>
-        <div class="container-fluid">
-            
-            <div class="row">
-                <div
-                id="collapseExample"
-                    class="collapse show no-mostrar-en-movil col-md-2 mt-1 "
-                    style="height: calc(100vh - 110px);
+                <div class="collapse navbar-collapse d-none d-sm-block" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 ">
+                        <li class="navbar-item " style="margin-right: 10px;">
+                            <button type="button" class="btn btn-info btn-circle btn-lg">
+                                <i class="fa fa-plus"></i>
+                               
+                        </li>
+                        <li class="navbar-item">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg>
+                            </a>
+                        </li>                           
+                        </ul>
+                    </div>
+                    <!-- Elementos de la derecha -->
+                </div>
+            </nav>
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div
+                        id="collapseExample"
+                        class="collapse show no-mostrar-en-movil col-md-2 mt-1 "
+                        style="height: calc(100vh - 110px);
                 overflow-y: scroll;
               ">Lorem
-                    ipsum dolor sit amet consectetur, adipisicing elit. Omnis officia assumenda
-                    beatae, veniam quidem laborum, architecto sed ut asperiores nihil maiores modi
-                    temporibus maxime molestias quam saepe, vitae consequatur qui? Quis, rem impedit
-                    accusamus aliquid iusto ex dolorum, magnam itaque libero harum officiis rerum
-                    quaerat blanditiis labore. Repellat eaque autem, soluta recusandae neque
-                    aspernatur impedit fugiat libero accusamus adipisci alias. Quas est nostrum
-                    repellendus impedit nesciunt, temporibus velit non eveniet, consequuntur
-                    doloremque facilis autem voluptas nam. Cupiditate cum fugiat numquam nisi
-                    consequuntur rerum recusandae, eveniet quia, architecto, commodi natus dicta.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ipsa ad quis
-                    necessitatibus ab eaque unde similique libero sequi? Repudiandae illum
-                    doloribus, beatae error totam nesciunt. Corporis unde soluta vero. Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Tempora hic aspernatur laborum fuga
-                    ipsa quasi rem laboriosam! Illum in architecto corrupti labore voluptas ducimus
-                    unde? Maiores blanditiis doloribus facilis enim. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Maxime magni beatae repellendus expedita delectus
-                    ratione assumenda impedit officia blanditiis quo iusto ut suscipit corporis,
-                    veritatis dolore at, modi ipsam aliquam!
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-8">
+                        ipsum dolor sit amet consectetur, adipisicing elit. Omnis officia assumenda
+                        beatae, veniam quidem laborum, architecto sed ut asperiores nihil maiores modi
+                        temporibus maxime molestias quam saepe, vitae consequatur qui? Quis, rem impedit
+                        accusamus aliquid iusto ex dolorum, magnam itaque libero harum officiis rerum
+                        quaerat blanditiis labore. Repellat eaque autem, soluta recusandae neque
+                        aspernatur impedit fugiat libero accusamus adipisci alias. Quas est nostrum
+                        repellendus impedit nesciunt, temporibus velit non eveniet, consequuntur
+                        doloremque facilis autem voluptas nam. Cupiditate cum fugiat numquam nisi
+                        consequuntur rerum recusandae, eveniet quia, architecto, commodi natus dicta.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ipsa ad quis
+                        necessitatibus ab eaque unde similique libero sequi? Repudiandae illum
+                        doloribus, beatae error totam nesciunt. Corporis unde soluta vero. Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Tempora hic aspernatur laborum fuga
+                        ipsa quasi rem laboriosam! Illum in architecto corrupti labore voluptas ducimus
+                        unde? Maiores blanditiis doloribus facilis enim. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Maxime magni beatae repellendus expedita delectus
+                        ratione assumenda impedit officia blanditiis quo iusto ut suscipit corporis,
+                        veritatis dolore at, modi ipsam aliquam!
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
 
-                    <div class="container" style="margin-top: 10px;">
-                        <div class="row">
-                            <div class="col-md-5 col-xs-3">
-                                <div class="card d-none d-sm-block">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-2">Precio:</div>
-                                            <div class="col-md-3 ">
-                                                <input type="text" class="form-control"></div>
-                                            <div class="col-md-2">Hasta:</div>
-                                            <div class="col-md-3">
-                                                <input type="text" class="form-control"></div>
+                        <div class="container" style="margin-top: 10px;">
+                            <div class="row">
+                                <div class="col-md-5 col-xs-3">
+                                    <div class="card d-none d-sm-block">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-2">Precio:</div>
+                                                <div class="col-md-3 ">
+                                                    <input type="text" class="form-control"></div>
+                                                <div class="col-md-2">Hasta:</div>
+                                                <div class="col-md-3">
+                                                    <input type="text" class="form-control"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-3">Ordenar Por:</div>
+
+                                                <div class="col-md-2 col-xs-3">
+
+                                                    <button
+                                                        class="btn d-none d-sm-block"
+                                                        style="background-color: #B1907F; color:white;">Precio</button>
+                                                </div>
+                                                <div class="col-md-1  d-none d-sm-block"></div>
+                                                <div class="col-md-2  col-xs-3">
+                                                    <button
+                                                        class="btn d-none d-sm-block"
+                                                        style="background-color: #7FA0B1; color:white;">Fecha</button>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <select name="" class="mb-2 d-block d-sm-none" id="">
+                                                        <option value="">precio</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 ">
-                                <div class="card mb-2">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-3">Ordenar Por:</div>
-
-                                            <div class="col-md-2 col-xs-3">
-                                               
-                                                 <button class="btn btn-primary d-none d-sm-block">Precio</button> 
-                                            </div>
-                                            <div class="col-md-1  d-none d-sm-block"></div>
-                                            <div class="col-md-2  col-xs-3" >
-                                                <button class="btn btn-primary d-none d-sm-block">Fecha</button>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <select name="" class="mb-2 d-block d-sm-none" id="">
-                                                    <option value="">precio</option>
-                                                </select>
-                                            </div>
-
+                            <div class="row mt-2">
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img
+                                            src="static/img/cellphones/pixel.jpg"
+                                            style="width: 200px; height: 200px;"
+                                            class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Google Pixel 5</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img
-                                        src="static/img/cellphones/pixel.jpg"
-                                        style="width: 200px; height: 200px;"
-                                        class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Google Pixel 5</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img
+                                            src="static/img/cellphones/iphone.png"
+                                            style="width: 200px; height: 200px;"
+                                            class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img
-                                        src="static/img/cellphones/iphone.png"
-                                        style="width: 200px; height: 200px;"
-                                        class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img
+                                            src="static/img/cellphones/pixel.jpg"
+                                            style="width: 200px; height: 200px;"
+                                            class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Google Pixel 5</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img
-                                        src="static/img/cellphones/pixel.jpg"
-                                        style="width: 200px; height: 200px;"
-                                        class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Google Pixel 5</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img
+                                            src="static/img/cellphones/iphone.png"
+                                            style="width: 200px; height: 200px;"
+                                            class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img
-                                        src="static/img/cellphones/iphone.png"
-                                        style="width: 200px; height: 200px;"
-                                        class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                            <div class="row mt-2">
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img
+                                            src="static/img/cellphones/pixel.jpg"
+                                            style="width: 200px; height: 200px;"
+                                            class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Google Pixel 5</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                             
-                            
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img
-                                        src="static/img/cellphones/pixel.jpg"
-                                        style="width: 200px; height: 200px;"
-                                        class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Google Pixel 5</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img
+                                            src="static/img/cellphones/iphone.png"
+                                            style="width: 200px; height: 200px;"
+                                            class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img
-                                        src="static/img/cellphones/iphone.png"
-                                        style="width: 200px; height: 200px;"
-                                        class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img
+                                            src="static/img/cellphones/pixel.jpg"
+                                            style="width: 200px; height: 200px;"
+                                            class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Google Pixel 5</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img
-                                        src="static/img/cellphones/pixel.jpg"
-                                        style="width: 200px; height: 200px;"
-                                        class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Google Pixel 5</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                <div class="col-md-3">
+                                    <div class="card" style="width: 18rem;">
+                                        <img
+                                            src="static/img/cellphones/iphone.png"
+                                            style="width: 200px; height: 200px;"
+                                            class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make
+                                                up the bulk of the card's content.</p>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img
-                                        src="static/img/cellphones/iphone.png"
-                                        style="width: 200px; height: 200px;"
-                                        class="card-img-top"
-                                        alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                             
-                            
                         </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-         
-    </body>
-</html>
+        </body>
+    </html>
