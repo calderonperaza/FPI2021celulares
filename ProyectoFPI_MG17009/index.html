@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+
+<body>
+
+<!--Navbar-->
+
+    <nav class="purple">
+        <div class="nav-wrapper container">
+            <ul id="nav-mobile" class="hide-on-med-and-down">
+          <a href="#" class="brand-logo center-left">Cellphone</a>
+        </ul>
+        <ul class="brand-logo right">
+            <li class="hide-on-large-only">
+              <a href="#" class="dropdown-trigger" data-target="id_drop">
+                    <i class="material-icons">menu</i>
+                  </a>
+                  <ul id="id_drop" class="dropdown-content  purple lighten-2" >
+                    <li><a href="#" style="color: rgb(249, 248, 250);">Tienda Cellphone</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" style="color: rgb(249, 248, 250);" >Inicio</a></li>
+                    <li class="divider"></li>
+                    <li><a href="./agregar.html" style="color: rgb(249, 248, 250);">Nuevo Anuncio</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" style="color: rgb(249, 248, 250);">Carrito</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" style="color: rgb(249, 248, 250);">Estadisticas</a></li>
+                  </ul>
+            </li>
+              <li>
+                    <div class="container">
+                    <nav class="purple accent-2">
+                     <div class="nav-wrapper">
+                         <form>
+                           <div class="input-field">
+                             <input id="search" type="search" required>
+                             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                             <i class="material-icons">close</i>
+                           </div>
+                         </form>
+                       </div>
+                     </nav>
+                    </div>
+              </li>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li>
+                    <a href="./index.html">Inicio</a>
+              </li>
+            <li>
+                    <a href="#">Estadisticas</a>
+            </li>
+            <li>
+<!--Inicio del modal-->
+                    <a class="btn modal-trigger btn-floating btn-large waves-effect waves-light purple" href="#modal1">
+                      <i class="material-icons">add</i>
+                    </a>
+<!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                        <div class="purple modal-content">
+                          <nav class="purple accent-1">
+                            <div class="nav-wrapper">
+                              <a href="#" class="brand-logo center">NUEVO ANUNCIO</a>
+                            </div>
+                          </nav>
+
+
+
+
+                          <div class="row">
+                            <div class="col m6">
+                                <form action="#">
+                                    <div class="container section">
+                                    <div class="row">
+                                        <div class="col m2">
+                                          <h6>Estado: </h6> 
+                                        </div>
+                                        <div class="col s4">
+                                            <p>
+                                                <label>
+                                                  <input name="group1" type="radio" />
+                                                  <span>New</span>
+                                                </label>
+                                              </p>
+                                        </div>
+                                        <div class="col s4">
+                                            <p>
+                                                <label>
+                                                  <input name="group1" type="radio" />
+                                                  <span>Usado</span>
+                                                </label>
+                                              </p>
+                                        </div>
+                                    </div>
+                
+                <!--Marca-->
+                
+                                  <div class="col m12">
+                                    <div class="row">
+                                      <div class="col m4">
+                                        <h6 for="textarea1">Marca: </h6>
+                                      </div>
+                                      <div class="input-field col m8">
+                                        <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                                      </div>
+                                    </div>
+                                  </div>
+                
+                <!--Modelo-->
+                
+                <div class="col m12">
+                  <div class="row">
+                    <div class="col m4">
+                      <h6 for="textarea1">Modelo: </h6>
+                    </div>
+                    <div class="input-field col m8">
+                      <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--Pantalla-->
+                
+                <div class="col m12">
+                  <div class="row">
+                    <div class="col m4">
+                      <h6 for="textarea1">Pantalla: </h6>
+                    </div>
+                    <div class="input-field col m8">
+                      <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--Sistema-->
+                
+                                  <div class="col s4 center-align">
+                                     <h6>Sistema: </h6> 
+                                  </div>
+                                  <div class="col s8">
+                                    <a href="#" data-target="dropdown" class="btn purple accent-4 dropdown-trigger">...</a>
+                                    <ul class="dropdown-content purple" id="dropdown">
+                                        <li><a href="#" style="color: rgb(249, 248, 250);">Android</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" style="color: rgb(249, 248, 250);">Windows</a></li>
+                                        <li class="divider" style="color: rgb(249, 248, 250);"></li>
+                                        <li><a href="#" style="color: rgb(249, 248, 250);">IOS</a></li>
+                                    </ul>
+                                    </div>
+                
+                <!--ROM-->
+                                
+                <div class="col m12">
+                  <div class="row">
+                    <div class="col m4">
+                      <h6 for="textarea1">ROM: </h6>
+                    </div>
+                    <div class="input-field col m8">
+                      <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--RAM-->
+                <div class="col m12">
+                  <div class="row">
+                    <div class="col m4">
+                      <h6 for="textarea1">RAM: </h6>
+                    </div>
+                    <div class="input-field col m8">
+                      <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                    </div>
+                  </div>
+                </div>
+                
+                                  
+                                </div>
+                                </form>
+                                <br>
+                            
+                
+                            </div>
+<!--FILA DERECHA DEL MODAL-->
+                            <div class="col m6">
+                              <div class="col m12">
+                                <div class="row">
+                                  <div class="col m4">
+                                    <h6 for="textarea1">Descripcion breve del producto: </h6>
+                                  </div>
+                                  <div class="input-field col m8">
+                                    <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+            
+                            
+
+                            <div class="col m12">
+                              <div class="row">
+                                <div class="col m4">
+                                  <h6 for="textarea1">Vendedor: </h6>
+                                </div>
+                                <div class="input-field col m8">
+                                  <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="col m12">
+                              <div class="row">
+                                <div class="col m4">
+                                  <h6 for="textarea1">Teléfono: </h6>
+                                </div>
+                                <div class="input-field col m8">
+                                  <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="col m12">
+                              <div class="row">
+                                <div class="col m4">
+                                  <h6 for="textarea1">Descripción: </h6>
+                                </div>
+                                <div class="input-field col m8">
+                                  <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="col m12">
+                              <div class="row">
+                                <div class="col m4">
+                                  <h6 for="textarea1">Precio: $ </h6>
+                                </div>
+                                <div class="input-field col m8">
+                                  <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                                </div>
+                              </div>
+                            </div>
+          
+                          </div>
+
+                          
+          
+          
+                        </div><!--FIN DE LAS DOS COLUMNAS-->
+
+                        <h5 class="center-align">Imagenes</h5>
+                      <!--Mas y menos-->
+
+                        <div class="container section">
+                          <div class="row">
+                            <div class="col m6">
+                              <a class="btn-floating btn-large waves-effect waves-light purple" href="#">
+                                <i class="material-icons">add</i>
+                              </a>
+                            </div>
+                            <div class="col m6">
+                              <a class="btn-floating btn-large waves-effect waves-light purple" href="#">
+                                <i class="material-icons">remove</i>
+                              </a>
+                            </div>
+                        </div>
+                        </div>  
+<!--Tabla de imagenes-->
+                        <table>
+                          <thead>
+                            <tr>
+                                <th>N°</th>
+                                <th>Tamaño</th>
+                                <th>Tipo</th>
+                            </tr>
+                          </thead>
+                        
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>145 Kb</td>
+                              <td>jpg</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>145 Kb</td>
+                              <td>png</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>145 Kb</td>
+                              <td>png</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>145 Kb</td>
+                              <td>jpg</td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                       
+                        
+                      
+
+                        <div class="col s12">
+                          <div class="carousel" >
+                            <a class="carousel-item" href="#one!"><img src="Images/c1.jpg"></a>
+                            <a class="carousel-item" href="#two!"><img src="Images/c2.jpg"></a>
+                            <a class="carousel-item" href="#three!"><img src="Images/c3.jpg"></a>
+                            <a class="carousel-item" href="#four!"><img src="Images/c4.jpg"></a>
+                            <a class="carousel-item" href="#five!"><img src="Images/c5.jpg"></a>
+                          </div>
+                        </div>
+                     
+                        </div>
+                       <div class="purple accent-1 modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-purple btn-flat purple" style="color: rgb(249, 248, 250);">Cancelar</a>
+                      <a href="#!" class="modal-close waves-effect waves-purple btn-flat purple" style="color: rgb(249, 248, 250);">Crear</a>
+                      </div>
+                    </div>
+            </li>
+            <li>
+                    <i class="large material-icons">shopping_cart</i>
+            </li>
+              </ul>
+        </ul>
+        </div>
+      </nav>
+
+
+
+
+<div class="row purple lighten-4">
+    <div class="col m2 ">
+
+    <div class="container section">
+      <ul class="hide-on-med-and-down" id="menu-side">
+        <div class="container">
+          <div class="row">
+            <!--Primer li-->
+            <div class="col m12">
+              <li>
+                <div class="switch">
+                    <label>
+                      <input type="checkbox">
+                      <span class="lever  purple lighten-2"></span>
+                      Nuevo
+                    </label>
+                  </div>
+            </li>
+            </div>
+            <div class="col m12 z-depth-3">
+              <!--Segundo li-->
+        <li>
+      
+              <h5>Marca</h5>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Samsung</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"  />
+                <span>Huawei</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"  />
+                <span>Nokia</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input  type="checkbox" />
+                <span>Iphone</span>
+              </label>
+            </p>
+            <p>
+                <label>
+                  <input  type="checkbox" />
+                  <span>Xiomi</span>
+                </label>
+              </p>
+            
+      </li>
+            </div>
+            <div class="col m12 z-depth-3">
+              <!--Tercer li-->
+        <li>
+          <!--Sistema-->
+
+                
+      <form action="#">
+                  <h5>Sistema</h5>   
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Android</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"  />
+                <span>Windows</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"  />
+                <span>IOS</span>
+              </label>
+            </p>
+ 
+      </form>
+      </li>
+
+            </div>
+            <div class="col m12 z-depth-3">
+              <!--Cuarto li-->
+        <li>
+          <!--Pantalla-->
+      <form action="#">
+ 
+            <h5>Pantalla</h5>
+            <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>6.0</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"  />
+                  <span>5.5</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox"  />
+                  <span>5</span>
+                </label>
+              </p>
+
+      </form>         
+      </li>
+            </div>
+
+          </div>
+        </div>
+
+        
+
+
+
+    </ul>
+</div>
+
+</div>
+
+<!--Sidenav-->
+
+
+<ul class="sidenav" id="mobile-links">
+<!--Primer li-->
+    <li>
+        <div class="switch">
+            <label>
+              <input type="checkbox">
+              <span class="lever purple"></span>
+              Nuevo
+            </label>
+          </div>
+    </li>
+<!--Segundo li-->
+    <li>
+        <div class="z-depth-1 purple lighten-4">
+            <h5>Marca</h5>
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Samsung</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox"  />
+              <span>Huawei</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox"  />
+              <span>Nokia</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input  type="checkbox" />
+              <span>Iphone</span>
+            </label>
+          </p>
+          <p>
+              <label>
+                <input  type="checkbox" />
+                <span>Xiomi</span>
+              </label>
+            </p>
+          </div>
+        </form>
+    </li>
+<!--Tercer li-->
+    <li>
+        <!--Sistema-->
+
+              
+    <form action="#">
+        <div class="z-depth-1 purple lighten-4">
+                <h5>Sistema</h5>   
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>Android</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox"  />
+              <span>Windows</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox"  />
+              <span>IOS</span>
+            </label>
+          </p>
+        </div>
+    </form>
+    </li>
+<!--Cuarto li-->
+    <li>
+        <!--Pantalla-->
+    <form action="#">
+        <div class="z-depth-1 purple lighten-4">
+          <h5>Pantalla</h5>
+          <p>
+              <label>
+                <input type="checkbox" />
+                <span>6.0</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"  />
+                <span>5.5</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox"  />
+                <span>5</span>
+              </label>
+            </p>
+        </div>
+    </form>
+
+        
+    </li>
+</ul>
+
+            
+    
+    
+    
+    
+
+<div class="col m10">
+
+        <div class="row">
+<!--Filtro de precio-->
+<ul class="hide-on-med-and-down">
+    <il>
+            <div class="col s3 ">
+                    <div class="input-field col s12">
+                      <input value="$" id="first_name2" type="text" class="validate">
+                      <label class="active" for="first_name2">Precio: </label>
+                    </div>
+                  </div>
+
+
+<!--Filtro de hasta-->           
+            <div class="col s3">
+                    <div class="input-field col s12">
+                      <input value="$" id="first_name2" type="text" class="validate">
+                      <label class="active" for="first_name2">Hasta: </label>
+                    </div>
+                  </div>
+                </il>
+            
+
+            
+            
+                    <div class="section">
+            <div class="col s2">
+                    <h6>Ordenar por: </h6>
+                     </div>
+<!--Botón de ordenar por-->           
+                     <div class="col s2">
+                        <a href="#" class="btn purple">Precio</a>
+                         </div>
+<!--Botón de fecha-->
+                         <div class="col s2">
+                            <a href="#" class="btn purple">Fecha</a>
+                             </div>
+                    </div>
+                </ul>
+        </div>
+<!--Filtros vista movil-->
+<div class="hide-on-large-only">
+    <div class="container section">
+    <div class="row">
+        <div class="col s2">
+            <h6>Ordenar por: </h6>
+        </div>
+        <div class="col s6">
+          <a href="#" class="dropdown-trigger btn purple center-align" data-target="id_ordenar">...</a>
+          <ul id="id_ordenar" class="dropdown-content">
+            <li><a href="#">Precio</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Fecha</a></li>
+          </ul>
+            </div>
+            <nav class="purple">
+            <div class="col s4">
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <i class="material-icons center-align">drag_handle</i>
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>
+</div>
+
+       
+<!--Aqui inicia la parte de los productos-->
+
+<!--Producto 1-->
+<div class="section">
+    <div class="row">
+        <div class="col s6 m3">
+          <div class="card">
+            <div class="card medium">
+            <div class="card-image">
+              <img src="images/Producto1.jpg">           
+            </div>
+            <div class="card-content">
+              <span class="card-title" style="color: blueviolet;" >Redmi 9a 2g</span>
+              <p>El Xiaomi Redmi 9A cuenta con una pantalla HD+ de 6.53 pulgadas. Potenciado por un procesador Helio G25 de Mediatek,
+                   el Redmi 9A tiene 2GB de memoria RAM y 32GB de espacio de almacenamiento interno expandible vía microSD.</p>
+            </div>
+            <div class="card-action">
+              <a href="./descripcion.html" style="color: blueviolet;">Ver más detalles</a>
+            </div>
+          </div>
+          </div>
+        </div>
+
+<!--Producto 2-->
+<div class="col s6 m3">
+  <div class="card">
+    <div class="card medium">
+    <div class="card-image">
+      <img src="images/Producto1.jpg">           
+    </div>
+    <div class="card-content">
+      <span class="card-title" style="color: blueviolet;" >Redmi 9a 2g</span>
+      <p>El Xiaomi Redmi 9A cuenta con una pantalla HD+ de 6.53 pulgadas. Potenciado por un procesador Helio G25 de Mediatek,
+           el Redmi 9A tiene 2GB de memoria RAM y 32GB de espacio de almacenamiento interno expandible vía microSD.</p>
+    </div>
+    <div class="card-action">
+      <a href="./descripcion.html" style="color: blueviolet;">Ver más detalles</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--Producto 3-->
+
+<div class="col s6 m3">
+  <div class="card">
+    <div class="card medium">
+    <div class="card-image">
+      <img src="images/Producto1.jpg">           
+    </div>
+    <div class="card-content">
+      <span class="card-title" style="color: blueviolet;" >Redmi 9a 2g</span>
+      <p>El Xiaomi Redmi 9A cuenta con una pantalla HD+ de 6.53 pulgadas. Potenciado por un procesador Helio G25 de Mediatek,
+           el Redmi 9A tiene 2GB de memoria RAM y 32GB de espacio de almacenamiento interno expandible vía microSD.</p>
+    </div>
+    <div class="card-action">
+      <a href="./descripcion.html" style="color: blueviolet;">Ver más detalles</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--Producto 4-->
+
+<div class="col s6 m3">
+  <div class="card">
+    <div class="card medium">
+    <div class="card-image">
+      <img src="images/Producto1.jpg">           
+    </div>
+    <div class="card-content">
+      <span class="card-title" style="color: blueviolet;" >Redmi 9a 2g</span>
+      <p>El Xiaomi Redmi 9A cuenta con una pantalla HD+ de 6.53 pulgadas. Potenciado por un procesador Helio G25 de Mediatek,
+           el Redmi 9A tiene 2GB de memoria RAM y 32GB de espacio de almacenamiento interno expandible vía microSD.</p>
+    </div>
+    <div class="card-action">
+      <a href="./descripcion.html" style="color: blueviolet;">Ver más detalles</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+      
+</div>
+
+
+<div class="section">
+    <div class="row">
+<!--Producto 5-->
+<div class="col s6 m3">
+  <div class="card">
+    <div class="card medium">
+    <div class="card-image">
+      <img src="images/Producto1.jpg">           
+    </div>
+    <div class="card-content">
+      <span class="card-title" style="color: blueviolet;" >Redmi 9a 2g</span>
+      <p>El Xiaomi Redmi 9A cuenta con una pantalla HD+ de 6.53 pulgadas. Potenciado por un procesador Helio G25 de Mediatek,
+           el Redmi 9A tiene 2GB de memoria RAM y 32GB de espacio de almacenamiento interno expandible vía microSD.</p>
+    </div>
+    <div class="card-action">
+      <a href="./descripcion.html" style="color: blueviolet;">Ver más detalles</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<!--Producto 6-->
+<div class="col s6 m3">
+  <div class="card">
+    <div class="card medium">
+    <div class="card-image">
+      <img src="images/Producto1.jpg">           
+    </div>
+    <div class="card-content">
+      <span class="card-title" style="color: blueviolet;" >Redmi 9a 2g</span>
+      <p>El Xiaomi Redmi 9A cuenta con una pantalla HD+ de 6.53 pulgadas. Potenciado por un procesador Helio G25 de Mediatek,
+           el Redmi 9A tiene 2GB de memoria RAM y 32GB de espacio de almacenamiento interno expandible vía microSD.</p>
+    </div>
+    <div class="card-action">
+      <a href="./descripcion.html" style="color: blueviolet;">Ver más detalles</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<!--Producto 7-->
+<div class="col s6 m3">
+  <div class="card">
+    <div class="card medium">
+    <div class="card-image">
+      <img src="images/Producto1.jpg">           
+    </div>
+    <div class="card-content">
+      <span class="card-title" style="color: blueviolet;" >Redmi 9a 2g</span>
+      <p>El Xiaomi Redmi 9A cuenta con una pantalla HD+ de 6.53 pulgadas. Potenciado por un procesador Helio G25 de Mediatek,
+           el Redmi 9A tiene 2GB de memoria RAM y 32GB de espacio de almacenamiento interno expandible vía microSD.</p>
+    </div>
+    <div class="card-action">
+      <a href="./descripcion.html" style="color: blueviolet;">Ver más detalles</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!--Producto 8-->
+<div class="col s6 m3">
+  <div class="card">
+    <div class="card medium">
+    <div class="card-image">
+      <img src="images/Producto1.jpg">           
+    </div>
+    <div class="card-content">
+      <span class="card-title" style="color: blueviolet;" >Redmi 9a 2g</span>
+      <p>El Xiaomi Redmi 9A cuenta con una pantalla HD+ de 6.53 pulgadas. Potenciado por un procesador Helio G25 de Mediatek,
+           el Redmi 9A tiene 2GB de memoria RAM y 32GB de espacio de almacenamiento interno expandible vía microSD.</p>
+    </div>
+    <div class="card-action">
+      <a href="./descripcion.html" style="color: blueviolet;">Ver más detalles</a>
+    </div>
+  </div>
+  </div>
+</div>
+      </div>
+</div>
+
+
+    </div>
+
+
+        </div>
+    
+    
+        
+   
+<div class="container">
+    <div class="row">
+<!--Paginación-->
+        <div class="col s10">
+            <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active purple"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+              </ul>
+        </div>
+        <div class="col s1">
+<!--Artículos por página-->
+<div class="hide-on-med-and-down">
+         <h6>Artículos por página: </h6>
+        
+        <div class="col s1">
+            <a href="#" data-target="dropdown" class="btn purple accent-4 dropdown-trigger">8</a>
+            <ul class="dropdown-content" id="dropdown">
+                <li><a href="#">1</a></li>
+                <li class="divider"></li>
+                <li><a href="#">2</a></li>
+                <li class="divider"></li>
+                <li><a href="#">3</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+  
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems,);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+ 
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+         
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        var drop=document.querySelectorAll('.dropdown-trigger')
+        M.Dropdown.init(drop,{
+            coverTrigger:false,
+            closeOnclick:false,
+            hover:false,
+   
+        })
+    })
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems,);
+  });  
+    </script>
+
+    <script>
+      
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems,);
+  });
+    </script>
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.carousel');
+var instances = M.Carousel.init(elems);
+});
+</script>
+</body>
+
+</html>
+
+   
+
