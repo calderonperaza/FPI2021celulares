@@ -22,6 +22,7 @@ const fragment = document.createDocumentFragment();
 const brandr = ["Samsumg", "Huawei", "Nokia", "Iphone", "Xiomi"];
 const systemr = ["Android", "Windows", "Ios"];
 const displayr = ["6", "5.5", "5"];
+let carrito = {}
 
 
 
@@ -33,6 +34,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
   pintardisplay(displayr);
   pintarsystem(systemr);
   pintarsystem2(systemr)
+
+  if (localStorage.getItem('carrito')) {
+    carrito = JSON.parse(localStorage.getItem('carrito'))
+    pintarCarrito()
+}
 
 
 });
@@ -146,25 +152,26 @@ const setCarrito = item => {
 }
 
 const pintarCarrito = () => {
- items.innerHTML = ''
+  items.innerHTML = ''
 
- Object.values(carrito).forEach(producto => {
-     templateCarrito.querySelector('th').textContent = producto.id
-     templateCarrito.querySelectorAll('td')[0].textContent = producto.title
-     templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
-     templateCarrito.querySelector('span').textContent = producto.precio * producto.cantidad
-     
-     //botones
-     templateCarrito.querySelector('.btn-info').dataset.id = producto.id
-     templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
+  Object.values(carrito).forEach(producto => {
+      templateCarrito.querySelector('th').textContent = producto.id
+      templateCarrito.querySelectorAll('td')[0].textContent = producto.title
+      templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
+      templateCarrito.querySelector('span').textContent = producto.precio * producto.cantidad
+      
+      //botones
+      templateCarrito.querySelector('.btn-info').dataset.id = producto.id
+      templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
 
-     const clone = templateCarrito.cloneNode(true)
-     fragment.appendChild(clone)
- })
- items.appendChild(fragment)
+      const clone = templateCarrito.cloneNode(true)
+      fragment.appendChild(clone)
+  })
+  items.appendChild(fragment)
 
- pintarFooter()
- localStorage.setItem('carrito', JSON.stringify(carrito))
+  pintarFooter()
+
+  localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 const pintarFooter = () => {
