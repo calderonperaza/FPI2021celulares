@@ -905,6 +905,61 @@
         </div>
       </div>
     </div>
+    <!-- Modal carrito -->
+    <div
+      class="modal fade"
+      id="carrito"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #632a7e">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <i class="fas fa-cart-plus"> </i>Carrito
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="5">
+                    Carrito vacío - comience a comprar!
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="modal-footer" style="background-color: #632a7e">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <template id="templatecellphone">
       <div class="col my-2 rounded">
         <div class="card border border-danger">
