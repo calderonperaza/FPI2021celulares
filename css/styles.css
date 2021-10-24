@@ -1,0 +1,89 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* paleta de colores */
+
+.bg-01{
+  background-color: #f37848  !important;
+}
+  
+.bg-02{
+  background-color: #212529  !important;
+}
+
+.bg-03{
+  background-color: #FFFFFF   !important;
+}
+
+.text-bg-02{
+  color: #212529 !important;
+}
+
+.border-bg01{
+  border: 1px solid #f37848 !important;
+  border-radius: 5px;
+}
+
+
+/* filtros */
+
+.filter-top{
+  display: inline-flex;
+	align-items: center;
+	justify-content: center;
+  height: 60px;
+  width: 355px;
+  position: relative;
+	overflow: hidden;
+  padding: 0 10px;
+}
+
+
+
+/* iconos */
+
+.iconos i{
+  color:#FF7146;
+}
+
+
+/* otros elementos graficos */
+
+.lateral-bar{
+  overflow-x: hidden; 
+  overflow-y: auto; 
+  height: 75vh; 
+  border: 0px; 
+  padding: 10px; 
+  border-radius: 10px; 
+  width: 18rem;
+}
+
+.form-check-input:checked{
+  background-color: #FF7146;
+  border: 1px solid #FF7146;
+}
+
+.first-input{
+  border: 1px solid #3d3f41;
+  color: #3d3f41 !important;
+  text-indent: 25px;
+}
+
+
+/* media queries para tamanios de barra search y  cards */
+
+@media (min-width: 810px) { 
+  .input-bar  input {
+    width: 450px !important;
+  }
+ }
+
+ @media (min-width: 1920px) { 
+  .input-bar  input {
+    width: 600px !important;
+  }
+ }
+
+
