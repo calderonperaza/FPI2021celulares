@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <nav class="yellow">
+        <div class="nav-wrapper container">
+        <ul class="brand-logo right">
+          <li class="hide-on-large-only">
+            <a href="#" class="dropdown-trigger" data-target="id_drop">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul id="id_drop" class="dropdown-content" style="background-color: rgb(240, 240, 135);" >
+                  <li><a href="./index.html" style="color: white;">Tienda Cellphone</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./index.html" style="color: white;">Inicio</a></li>
+                  <li class="divider"></li>
+                  <li><a href="./agregar.html" style="color: white;">Nuevo Anuncio</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#" style="color: white;">Carrito</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#" style="color: white;">Estadisticas</a></li>
+                </ul>
+          
+            <li>
+                  <div class="container">
+                  <nav class="yellow accent-2">
+                   <div class="nav-wrapper">
+                       <form>
+                         <div class="input-field">
+                           <input id="search" type="search" required>
+                           <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                           <i class="material-icons">close</i>
+                         </div>
+                       </form>
+                     </div>
+                   </nav>
+                  </div>
+            </li>
+          </li>
+        </ul>
+      </div>
+      </nav>
+
+
+
+      <div class="carousel hide-on-large-only">
+        <div class="container section">
+          <div class="row">
+            <div class="col s12 center-align">
+              <a class="btn modal-trigger btn-floating btn-large waves-effect waves-light yellow" href="#modal1">
+                <i class="material-icons">add</i>
+              </a>
+            </div>
+            <div class="col s12 center-align">
+              <h6>Agregar foto</h6>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-item" href="#one!"><img src="Images/z1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="Images/z2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="Images/z3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="Images/z4.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="Images/z5.jpg"></a>
+      </div>
+
+      <div class="hide-on-large-only">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card yellow darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Título</span>
+                <p>Iphone 6 64GB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="center-align">$400.0</h4>
+        <div class="container">
+          <div class="row">
+            <div class="col s6 z-depth-2">
+              <p class="center-align">Vendedor: Juán Pérez</p>
+            </div>
+            <div class="col s6 z-depth-2">
+              <p class="center-align">Número: 2121-1212
+              </p>
+            </div>
+          </div>
+          <p class="center-align z-depth-2">
+            Estado: Nuevo<br>
+            Marca:Apple<br>
+            Modelo:Iphone 6 64GB<br>
+            Pantalla:4.7<br>
+            Sistema:Ios<br>
+            ROM:64gb<br>
+            RAM:2gb<br>
+          </p>
+          <p class="center-align z-depth-2">
+            El iPhone 6 es un teléfono inteligente de gama alta desarrollado por Apple Inc. Funciona con el sistema operativo iOS 12. 
+          Tiene una pantalla de 4.7 pulgadas, un procesador de dos núcleos a 1.4 GHz, cámara de 8 megapixeles con grabación de vídeo en 1080p/60fps, 4G LTE, conectividad Wi-Fi 
+          y soporte NFC para pagos móviles, el que la compañía ha denominado como Apple Pay.
+          </p>
+
+          <div class="container">
+            <div class="row">
+              <div class="col s6">
+                <a href="./index.html" class="btn yellow">Cancelar</a>
+                         </div>
+              
+              <div class="col s6">
+                <a href="#" class="btn yellow">Crear anuncio</a>
+                         </div>
+                        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+      $(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+  });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+        var drop=document.querySelectorAll('.dropdown-trigger')
+        M.Dropdown.init(drop,{
+            coverTrigger:false,
+            closeOnclick:false,
+            hover:false,
+   
+        })
+    })
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });
+    </script>
+
+    </body>
+  </html>
