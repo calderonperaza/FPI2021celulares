@@ -58,7 +58,8 @@
         <main class="mt-4">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
+
                         <form>
                             <div class="form-group py-2">
                                 <label for="Marca">Marca</label>
@@ -81,7 +82,7 @@
                                 </select>
                             </div>
                             <div class="form-group py-2">
-                                <label for="ROM">ROMM</label>
+                                <label for="ROM">ROM</label>
                                 <input type="text" class="form-control" id="ROM" placeholder="64 GB">
                             </div>
                             <div class="form-group py-2">
@@ -89,8 +90,50 @@
                                 <input type="text" class="form-control" id="RAM" placeholder="2 GB">
                             </div>
                         </form>
+                        <div class="d-flex justify-content-between align-items-center align-self-stretch my-5">
+                            <div class="d-none d-lg-flex flex-column align-self-stretch justify-content-around pe-3">
+                                <a class="btn btn-primary d-flex justify-content-center align-items-center rounded-circle p-2" href="#" role="button"><ion-icon class="fs-5" name="add"></ion-icon></a>
+                                <a class="btn btn-primary d-flex justify-content-center align-items-center rounded-circle p-2" href="#" role="button"><ion-icon class="fs-5" name="remove"></ion-icon></a>
+                            </div>
+                            <div class="d-none d-lg-flex px-3">
+                                <table class="table table-borderless table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Tamaño</th>
+                                            <th scope="col">Tipo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>145 Kb</td>
+                                            <td>jpg</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>145 Kb</td>
+                                            <td>png</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>145 Kb</td>
+                                            <td>png</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>145 Kb</td>
+                                            <td>jpg</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="d-flex p-0 ps-lg-3">
+                                <img src="img/fondo-3.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-4">
                         <form>
                             <div class="form-group py-2">
                                 <label for="Titulo">Titulo</label>
@@ -104,7 +147,7 @@
                                 <label for="Telefono">Telefono</label>
                                 <input type="text" class="form-control" id="Telefono" placeholder="0000-0000">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group py-2">
                                 <label for="Descripcion">Descripcion</label>
                                 <textarea class="form-control" id="Descripcion" rows="3"></textarea>
                             </div>
@@ -113,8 +156,8 @@
                                 <input type="text" class="form-control" id="Precio" placeholder="$ 0.00">
                             </div>
                             <div class="d-flex justify-content-around align-items-center my-4">
-                                <a class="btn btn-primary d-flex justify-content-center" href="#" role="button">Comprar</a>
-                                <a class="btn btn-primary d-flex justify-content-center" href="#" role="button">Comprar</a>
+                                <a class="btn btn-primary d-flex justify-content-center align-items-center" href="#" role="button"><ion-icon class="me-1 fs-5" name="close"></ion-icon>Cancelar</a>
+                                <a class="btn btn-primary d-flex justify-content-center align-items-center" href="#" role="button"><ion-icon class="me-1 fs-5" name="save"></ion-icon>Guardar</a>
                             </div>
                         </form>
                     </div>

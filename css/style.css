@@ -7,7 +7,7 @@ a {
     text-decoration: none;
 }
 
-input.form-control:focus, select.form-select:focus, input.form-check-input:focus, button.btn:focus {
+input.form-control:focus, select.form-select:focus, input.form-check-input:focus, button.btn:focus, textarea.form-control:focus {
     box-shadow: none;
 }
 
