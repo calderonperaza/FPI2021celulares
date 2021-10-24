@@ -245,6 +245,13 @@
     cursor: pointer
 }
 
+.table-hover-my:hover{
+   background-color: var(--my-info);
+   color:var(--my-primary);
+}
+
+
+
 
   
   

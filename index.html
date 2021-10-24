@@ -490,41 +490,75 @@
           </div>
         </div>
 
-        <div class="row mt-3">
-          <div class="col-4">
-            <nav aria-label="Page navigation example">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only"></span>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only"></span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+        <!-- paginador -->
+        <div class="row mt-4">
+
+          <!-- vacio-->
+          <div class="col-2">
+
           </div>
 
-          <div class="col">
-            <div class="row">
-              <div class="col-5 col-md-7 col-sm-7 col-lg-7">
-                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
-                  placeholder="Artículos por pagina" />
+          <!-- paginador y cuantos prodcutos por pagina-->
+          <div class="col-8">
+            <div class="row mx-auto">
+
+              <!-- paginador-->
+              <div class="col">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+    
+                    <!-- link atras-->
+                    <li class="page-item border-ul">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true" class="text-normal">&laquo;</span>
+                        <span class="sr-only"></span>
+                      </a>
+                    </li>
+    
+                    <!-- paginas-->
+                    <li class="page-item border-ul"><a class="page-link text-normal" href="#">1</a></li>
+                    <li class="page-item border-ul"><a class="page-link text-normal" href="#">2</a></li>
+                    <li class="page-item border-ul"><a class="page-link text-normal" href="#">3</a></li>
+    
+                    <!-- link siguiente-->
+                    <li class="page-item border-ul">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true" class="text-normal">&raquo;</span>
+                        <span class="sr-only"></span>
+                      </a>
+                    </li>
+    
+                  </ul>
+                </nav>
               </div>
 
-              <div class="col-2 col-md-3 col-sm-3 col-lg-3">
-                <input class="form-control" type="number" name="" id="" value="25" />
+              <!-- articulos por pagina-->
+              <div class="col d-none d-lg-block d-xl-block d-xxl-block">
+
+                <div class="row">
+                  <div class="col-8">
+                    <input type="text" class="form-control mb-2 mr-sm-2 input-no-input" id="inlineFormInputName2"
+                    placeholder="Artículos por pagina" />
+                  </div>
+
+                  <div class="col-4">
+                    <input class="form-control input-normal" type="number" name="" id="" value="25" />
+                  </div>
+                </div>
+
               </div>
+            
             </div>
           </div>
+
+          <!-- vacia-->
+          <div class="col-2">
+
+          </div>
+
+        
+
+
         </div>
       </div>
     </div>
@@ -857,52 +891,56 @@
                   </div>
                   
                   <div class="col-4 mt-3 p-2">
-                    <table class="table table-hover">
+                    <table class="table">
                       <thead class="text-title">
                         <tr>
                           <th scope="col">N</th>
                           <th scope="col">Tamaño</th>
                           <th scope="col">Tipo</th>
                           <th scope="col"></th>
-                        </tr>
+                        </>
                       </thead>
                       <tbody class="text-normal">
-                        <tr>
+                        <tr class="table-hover-my">
                           <th scope="row">1</th>
                           <td>145kb</td>
                           <td>jpg</td>
                           <td>
-                            <button  class="btn btn-outline-danger">
+                            <button  class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Eliminar imagen">
                               <i class="bi bi-trash h5"></i>
                             </button>
                           </td>
                         </tr>
-                        <tr>
+                        <tr class="table-hover-my">
                           <th scope="row">2</th>
                           <td>145kb</td>
                           <td>png</td>
                           <td>
-                            <button class="btn btn-outline-danger">
+                            <button class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Eliminar imagen">
                               <i class="bi bi-trash h5"></i>
                             </button>
                           </td>
                         </tr>
-                        <tr>
+                        <tr class="table-hover-my">
                           <th scope="row">3</th>
                           <td>145kb</td>
                           <td>jpg</td>
                           <td>
-                            <button  class="btn btn-outline-danger">
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Eliminar imagen">
                               <i class="bi bi-trash h5"></i>
                             </button>
                           </td>
                         </tr>
-                        <tr>
+                        <tr class="table-hover-my">
                           <th scope="row">4</th>
                           <td>145kb</td>
                           <td>png</td>
                           <td>
-                            <button  class="btn btn-outline-danger">
+                            <button  class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
+                            title="Eliminar imagen">
                               <i class="bi bi-trash h5"></i>
                             </button>
                           </td>
@@ -911,12 +949,13 @@
                     </table>
                   </div>
 
+                  <!-- carousel para subir imagenes-->
                   <div class="col-4">
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
                       <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
                       </div>
                       <div class="carousel-inner">
   
@@ -936,11 +975,11 @@
                           </div>
                         </div>
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
@@ -949,10 +988,20 @@
                   
                 </div>
               </div>
+             
+            </div>
 
-              <!-- carousel de imagenes para publicacion prodcuto-->
-              
-
+            <div class="row mx-auto d-none d-lg-block d-xl-block d-xxl-block">
+              <div class="col mx-auto text-center">
+                <button type="button" class="btn btn-home mt-3 mb-2">
+                  <i class="bi bi-house"></i>
+                  Cancelar
+                </button>
+                <button type="button" class="btn btn-comprar mt-3 mb-2">
+                  <i class="bi bi-cart-plus"></i>
+                  Crear Anuncio
+                </button>
+              </div>
             </div>
 
             <!-- botones en movil-->
