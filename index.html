@@ -15,300 +15,392 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="style.css" />
     <title>Hello, world!</title>
   </head>
   <body>
         <!--..............................................NABVAR GENERAL....................................-->
-        <nav
-        class="navbar navbar-light navbar-expand-md fixed-top"
-        style="background-color: #632a7e"
-        id="navegacion"
-      >
-        <div class="container-fluid">
-          <!-- TOGGLER BUTTON -->
-          <button
-            data-bs-toggle="offcanvas"
-            class="navbar-toggler"
-            data-bs-target="#menuNavegacion"
-            aria-controls="menuNavegacion"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+     <nav
+      class="navbar navbar-light navbar-expand-md fixed-top"
+      style="background-color: #632a7e"
+      id="navegacion"
+    >
+      <div class="container-fluid">
+        <button
+          data-bs-toggle="offcanvas"
+          class="navbar-toggler"
+          data-bs-target="#menuNavegacion"
+          aria-controls="menuNavegacion"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand d-none d-md-inline" href="index.html">
+          <i class="fas fa-store"></i>
+          <strong>Tienda CellPhone Ebay</strong>
+        </a>
+
+        <form
+          class="
+            form-inline
+            col-9 col-sm-auto col-md-3 col-lg-3 col-xl-5 col-xxl-6
+          "
+        >
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button
+                class="btn btn-outline-dark btn-lg pb-0"
+                style="border: 0px"
+                type="button"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+          </div>
+        </form>
+
+        <!-- NABVAR PANTALLAS GRANDES -->
+        <div class="collapse navbar-collapse">
+          <ul
+            class="nav navbar-nav ms-auto"
+            data-toggle="collapse"
+            data-target="#menuNavegacion"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-         
-          <a class="navbar-brand d-none d-md-inline" href="index.html">
-            <i class="fas fa-store"></i>
-            <strong>Tienda CellPhone Ebay</strong>
-          </a>
-      
-  
-       
-          <form
+            <li
+              class="nav-item"
+              style="margin-right: 2.5px; margin-left: 2.5px"
+            >
+              <a class="btn btn-dark" aria-current="page" href="index.html">
+                Inicio
+              </a>
+            </li>
+            <li
+              class="nav-item"
+              style="margin-right: 2.5px; margin-left: 2.5px"
+            >
+              <a class="btn btn-dark" href="#"> Estadisticas </a>
+            </li>
+            <li
+              class="nav-item"
+              style="margin-right: 2.5px; margin-left: 2.5px"
+            >
+              <a
+                class="nav-link btn d-none d-md-inline"
+                data-bs-target="#nuevoAnuncio"
+                data-bs-toggle="modal"
+              >
+                <i class="fa fa-plus"></i>
+              </a>
+            </li>
+            <li
+              class="nav-item"
+              style="margin-right: 2.5px; margin-left: 2.5px"
+            >
+              <a
+                class="btn btn-dark btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#carrito"
+                href="#"
+              >
+                <i class="fas fa-cart-plus"></i>
+                <span
+                  class="
+                    position-absolute
+                    mt-3
+                    me-0
+                    translate-middle
+                    badge
+                    rounded-pill
+                    bg-light
+                    text-black
+                  "
+                >
+                  <span class="visually-hidden"></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NAVBAR DISPOSITIVO MOVIL-->
+        <div
+          class="offcanvas offcanvas-start d-md-none"
+          tabindex="-1"
+          id="menuNavegacion"
+          aria-labelledby="offcanvasWithBackdropLabel"
+        >
+          <div
+            class="offcanvas-header border-bottom border-2 border-dark"
+            style="background-color: #632a7e"
+          >
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+              <i class="fas fa-store"></i> Tienda CellPhone Ebay
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
             class="
-              form-inline
-              col-9 col-sm-auto col-md-3 col-lg-3 col-xl-5 col-xxl-6
+              offcanvas-body
+              position-sticky
+              bg-gradient bg-secondary bg-opacity-10
             "
           >
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <button
-                  class="btn btn-outline-dark btn-lg pb-0"
-                  style="border: 0px"
-                  type="button"
-                >
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Search"
-              />
-            </div>
-          </form>
-        
-  
-          <!-- NABVAR PANTALLAS GRANDES -->
-          <div class="collapse navbar-collapse">
-            <ul
-              class="nav navbar-nav ms-auto"
-              data-toggle="collapse"
-              data-target="#menuNavegacion"
-            >
-              <li
-                class="nav-item"
-                style="margin-right: 2.5px; margin-left: 2.5px"
-              >
-                <a class="btn btn-dark" aria-current="page" href="index.html">
-                  Inicio
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                style="margin-right: 2.5px; margin-left: 2.5px"
-              >
-                <a class="btn btn-dark" href="#"> Estadisticas </a>
-              </li>
-              <li
-                class="nav-item"
-                style="margin-right: 2.5px; margin-left: 2.5px"
-              >
+            <ul class="nav nav-pills flex-column mb-auto ms-3">
+              <li class="nav-item">
                 <a
-                  class="nav-link btn d-none d-md-inline"
+                  href="index.html"
+                  class="nav-link text-black border-bottom border-1 border-dark"
+                  style="border-radius: 0px"
+                >
+                  Inicio</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-black border-bottom border-1 border-dark"
+                  style="border-radius: 0px"
                   data-bs-target="#nuevoAnuncio"
                   data-bs-toggle="modal"
+                  >Nuevo Anuncio</a
                 >
-                  <i class="fa fa-plus"></i>
-                </a>
               </li>
-              <li
-                class="nav-item"
-                style="margin-right: 2.5px; margin-left: 2.5px"
-              >
+
+              <li class="nav-item">
                 <a
-                  class="btn btn-dark btn-sm"
+                  href="#"
+                  class="nav-link text-black border-bottom border-1 border-dark"
                   data-bs-toggle="modal"
                   data-bs-target="#carrito"
-                  href="#"
+                  style="border-radius: 0px"
                 >
-                  <i class="fas fa-cart-plus"></i>
-                  <span
-                    class="
-                      position-absolute
-                      mt-3
-                      me-0
-                      translate-middle
-                      badge
-                      rounded-pill
-                      bg-light
-                      text-black
-                    "
-                  >
-                    <span class="visually-hidden"></span>
-                  </span>
-                </a>
+                  Carrito</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-black border-bottom border-1 border-dark"
+                  style="border-radius: 0px"
+                >
+                  Estadisticas</a
+                >
               </li>
             </ul>
           </div>
-  
-           <!-- NAVBAR DISPOSITIVO MOVIL-->
-          <div
-            class="offcanvas offcanvas-start d-md-none"
-            tabindex="-1"
-            id="menuNavegacion"
-            aria-labelledby="offcanvasWithBackdropLabel"
-          >
-            <div
-              class="offcanvas-header border-bottom border-2 border-dark"
-              style="background-color: #632a7e"
-            >
-              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
-                <i class="fas fa-store"></i> Tienda CellPhone Ebay
-              </h5>
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+        </div>
+      </div>
+    </nav>
+
+    <!---------------------------------------------- PRINCICPAL.......................................-->
+    <section class="container-fluid" id="main">
+      <div class="row col-12 mt-5 pt-4 ms-auto">
+        <div class="col col-lg-4 offset-lg-3 col-xl-5 offset-xl-2">
+          <div class="d-none d-lg-inline">
+            <div class="row my-auto">
+              <div class="col-2 my-auto">
+                <label for="price">Precio:</label>
+              </div>
+              <div class="col-4" style="margin-left: 0px">
+                <input
+                  type="number"
+                  id="price"
+                  class="
+                    form-control
+                    border border-1 border-secondary
+                    rounded-pill
+                    w-75
+                  "
+                  placeholder="$"
+                />
+              </div>
+              <div class="col-2 my-auto">
+                <label for="price">Hasta:</label>
+              </div>
+              <div class="col-4">
+                <input
+                  type="number"
+                  id="price"
+                  class="
+                    form-control
+                    border border-1 border-secondary
+                    rounded-pill
+                    w-75
+                  "
+                  placeholder="$"
+                />
+              </div>
             </div>
-            <div
-              class="
-                offcanvas-body
-                position-sticky
-                bg-gradient bg-secondary bg-opacity-10
-              "
-            >
-              <ul class="nav nav-pills flex-column mb-auto ms-3">
-                <li class="nav-item">
-                  <a
-                    href="index.html"
-                    class="nav-link text-black border-bottom border-1 border-dark"
-                    style="border-radius: 0px"
-                  >
-                    Inicio</a
-                  >
+          </div>
+          <!-- FILTRO ORDENAR DISPOSITIVOS MOVILES -->
+          <div class="d-lg-none">
+            <div class="row my-auto align-items-center">
+              <div class="col">
+                <label for="atributo">Ordenar por: </label>
+              </div>
+              <div class="col">
+                <select id="atributo" class="form-select">
+                  <option selected>Precio</option>
+                  <option value="1">Fecha</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FILTRO ORDENAR PANTALLAS GRANDES -->
+        <div class="col-5 col-lg-5 text-center">
+          <div class="d-none d-lg-inline">
+            <div class="row align-items-center">
+              <div class="col-4 my-auto">
+                <label>Ordenar por:</label>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-outline-dark d-inline" type="button">
+                  <i class="fa fa-arrow-up"></i>
+                  Precio
+                </button>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-outline-dark d-inline" type="button">
+                  Fecha
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-dark d-lg-none mt-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#filtros"
+            aria-expanded="false"
+            aria-controls="filtros"
+          >
+            <i class="fas fa-filter"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <!--.................................. FILTRO MARCA PANTALLA SISTEMA............................ -->
+        <div class="col-lg-3 col-xl-2">
+          <div id="filtros" class="collapse d-lg-block">
+            <div class="card w100">
+              <div class="card-header">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="estado"
+                  />
+                  <label class="form-check-label" for="estado">Nuevo</label>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush w-100">
+                <li
+                  class="list-group-item m-2"
+                  id="brand2"
+                  style="background-color: #632a7e; color: white"
+                >
+                  <h5 class="card-title">Marca</h5>
                 </li>
-  
-                <li class="nav-item">
-                  <a
-                    href="#"
-                    class="nav-link text-black border-bottom border-1 border-dark"
-                    style="border-radius: 0px"
-                    data-bs-target="#nuevoAnuncio"
-                    data-bs-toggle="modal"
-                    >Nuevo Anuncio</a
-                  >
+
+                <li
+                  class="list-group-item m-2"
+                  id="system"
+                  style="background-color: #632a7e; color: white"
+                >
+                  <h5 class="card-title">Sistema</h5>
                 </li>
-  
-                <li class="nav-item">
-                  <a
-                    href="#"
-                    class="nav-link text-black border-bottom border-1 border-dark"
-                    data-bs-toggle="modal"
-                    data-bs-target="#carrito"
-                    style="border-radius: 0px"
-                  >
-                    Carrito</a
-                  >
-                </li>
-  
-                <li class="nav-item">
-                  <a
-                    href="#"
-                    class="nav-link text-black border-bottom border-1 border-dark"
-                    style="border-radius: 0px"
-                  >
-                    Estadisticas</a
-                  >
+
+                <li
+                  class="list-group-item m-2"
+                  id="display"
+                  style="background-color: #632a7e; color: white"
+                >
+                  <h5 class="card-title">Pantalla</h5>
                 </li>
               </ul>
             </div>
           </div>
-        
         </div>
-      </nav>
-  
-    <section class="tienda m-0">
-      <div class="container m-0">
-        <div class="row m-0">
-          <div class="col-3 m-0" style="background-color: #280e3b">
-            <div
-              class="brand m-3 rounded"
-              id="brand"
-            >
-              Marca
-              <br />
-            </div>
-            <div class="system m-3" id="system">
-              Sistema
-              <br />
-            </div>
-            <div class="display m-3 p-2" id="display">
-              Pantalla
-              <br />
-            </div>
-          </div>
-          <div class="col m-0">
-            <div class="specific d-flex justify-content-between">
-              <div class="price d-flex">
-                <div class="mb-3 m-2 d-flex">
-                  <label for="formGroupExampleInput" class="form-label m-2"
-                    >Precio:</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="formGroupExampleInput"
-                    placeholder="$"
-                  />
-                </div>
-                <div class="mb-3 m-2 d-flex">
-                  <label for="formGroupExampleInput2" class="form-label m-2"
-                    >Hasta:</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="formGroupExampleInput2"
-                    placeholder="$"
-                  />
-                </div>
-              </div>
-              <div class="order m-0">
-                <nav class="navbar navbar-light bg-light">
-                  <form class="container-fluid justify-content-center d-flex">
-                    <button class="btn btn-outline-success me-2" type="button">
-                      Precio
-                    </button>
-                    <button
-                      class="btn btn-sm btn-outline-secondary"
-                      type="button"
-                    >
-                      Fecha
-                    </button>
-                  </form>
-                </nav>
-              </div>
-            </div>
-            <div
-              class="cellphone d-flex justify-content-center flex-wrap m-0"
-              id="cellphone"
-            ></div>
-          </div>
+
+        <!--............................................ CARD CELLPHONE............................... -->
+        <div class="col-12 col-lg-9 col-xl-10">
+          <div
+            class="row row-cols-2 row-cols-md-3 row-cols-lg-4 my-3"
+            id="cellphone"
+          ></div>
+
         </div>
       </div>
     </section>
 
     
 
+    
+
     <template id="templatecellphone">
-      <div class="card m-2 rounded border-1 bg-danger" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body text-center">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-         
-          <bottom
-          class="mt-5 mx-5 btn btn-danger "
-          type="button"
-          id="btn"
-          data-bs-toggle="modal"
-          data-bs-target="#mimodal"
-          >comprar</bottom
-        >
+      <div class="col my-2 rounded">
+        <div class="card border border-danger">
+          <a
+            href="#"
+            class=""
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img src="" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body text-center" style="background-color: #632a7e">
+            <a
+              href="#"
+              class="text-black"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h6 class="card-title"></h6>
+            </a>
+            <p class="fw-bolder" style="color: white"></p>
+
+            <button
+              class="btn btn btn-block mb-2 btn-outline-dark"
+              type="button"
+              onclick="toastAnuncio('#cartAdded')"
+            >
+              <i class="fas fa-cart-plus"></i>Agregar al carrito
+            </button>
+
+            <div class="card-footer text-muted text-center h4 bg-dark">
+              $
+              <span class="badge bg-dark"> </span>
+            </div>
+          </div>
         </div>
       </div>
     </template>
+      <!-- template carrito -->
+  
+      
+        <!-- template filtro marca pantalla  sistema -->
     <template id="templatebrand">
       <div class="form-check">
         <input
