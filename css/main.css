@@ -12,17 +12,30 @@
 .first-input{
     border: 1px solid var(--my-success);
     color: var(--my-secondary) !important;
-
+    text-indent: 25px;
 }
 
 .first-input::placeholder{
     color: var(--my-secondary);
 }
 
+.navbar-toggler-my{
+    background-color: transparent;
+    border: 1px solid var(--my-success) !important;
+    color: var(--my-secondary) in !important;
+
+}
+
+.navbar-toggler-my:focus{
+    box-shadow: 0px 1px 0px 0px rgba(180,132,108,0.77);
+-webkit-box-shadow: 0px 1px 0px 0px rgba(180,132,108,0.77);
+-moz-box-shadow: 0px 1px 0px 0px rgba(180,132,108,0.77);
+}
+
 
 .btn-my{
     border: 1px solid var(--my-success);
-    color: var(--my-secondary);
+    color: var(--my-secondary); 
 }
 
 .btn-my:hover{
@@ -127,12 +140,122 @@
 .btn-fav{
     border: none;
     font-size: 1.5rem;
+    background-color: transparent;
 }
 
 .btn-fav:focus{
     border: none;
     box-shadow: none;
 }
+
+.btn-buy{
+    border: 1px solid var(--my-primary);
+    background-color: var(--my-primary);
+    color: white;
+    
+}
+
+.btn-buy:hover{
+    border: 1px solid var(--my-primary);
+    background-color: var(--my-primary);
+    color: white !important;
+}
+
+.btn-home{
+    border: 1px solid var(--my-success);
+    background-color: var(--my-success);
+    color:white;
+}
+
+.btn-home:hover{
+    border: 1px solid var(--my-success);
+    background-color: var(--my-success);
+    color:white !important;
+}
+
+.btn-new-product{
+    border: 1px solid var(--my-secondary);
+    background-color: var(--my-secondary);
+    color: white;
+
+}
+
+.btn-new-product:hover{
+    border: 1px solid var(--my-secondary);
+    background-color: var(--my-secondary);
+    color: white;
+}
+
+
+
+.item .item-content {
+    padding: 10px;
+}
+
+.image-upload {
+    margin-top: 30px;
+    width: 70%;
+    height: 220px;
+    border: 1px solid var(--my-secondary);
+    border-radius: 5px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    background: #f8f8f9;
+    color: #666;
+    overflow: hidden
+}
+
+.item-wrapper form img {
+    margin-bottom: 40px;
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    width: auto;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.image-upload img {
+    height: 100% !important;
+    width: auto !important;
+    border-radius: 0px;
+    margin: 0 auto
+}
+
+.image-upload i {
+    font-size: 6em;
+    color: #ccc
+}
+
+.image-upload input {
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.item-wrapper input {
+    height: 43px;
+    line-height: 43px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
