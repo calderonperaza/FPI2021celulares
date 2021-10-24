@@ -22,45 +22,199 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-      <div class="container-fluid">
-        <a href=""> <span> </span> </a>
-        <a class="navbar-brand" href="#">
-           Navbar</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Tienda CellPhone</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+        <!--..............................................NABVAR GENERAL....................................-->
+        <nav
+        class="navbar navbar-light navbar-expand-md fixed-top"
+        style="background-color: #632a7e"
+        id="navegacion"
+      >
+        <div class="container-fluid">
+          <!-- TOGGLER BUTTON -->
+          <button
+            data-bs-toggle="offcanvas"
+            class="navbar-toggler"
+            data-bs-target="#menuNavegacion"
+            aria-controls="menuNavegacion"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         
+          <a class="navbar-brand d-none d-md-inline" href="index.html">
+            <i class="fas fa-store"></i>
+            <strong>Tienda CellPhone Ebay</strong>
+          </a>
+      
+  
+       
+          <form
+            class="
+              form-inline
+              col-9 col-sm-auto col-md-3 col-lg-3 col-xl-5 col-xxl-6
+            "
+          >
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button
+                  class="btn btn-outline-dark btn-lg pb-0"
+                  style="border: 0px"
+                  type="button"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+            </div>
           </form>
+        
+  
+          <!-- NABVAR PANTALLAS GRANDES -->
+          <div class="collapse navbar-collapse">
+            <ul
+              class="nav navbar-nav ms-auto"
+              data-toggle="collapse"
+              data-target="#menuNavegacion"
+            >
+              <li
+                class="nav-item"
+                style="margin-right: 2.5px; margin-left: 2.5px"
+              >
+                <a class="btn btn-dark" aria-current="page" href="index.html">
+                  Inicio
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                style="margin-right: 2.5px; margin-left: 2.5px"
+              >
+                <a class="btn btn-dark" href="#"> Estadisticas </a>
+              </li>
+              <li
+                class="nav-item"
+                style="margin-right: 2.5px; margin-left: 2.5px"
+              >
+                <a
+                  class="nav-link btn d-none d-md-inline"
+                  data-bs-target="#nuevoAnuncio"
+                  data-bs-toggle="modal"
+                >
+                  <i class="fa fa-plus"></i>
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                style="margin-right: 2.5px; margin-left: 2.5px"
+              >
+                <a
+                  class="btn btn-dark btn-sm"
+                  data-bs-toggle="modal"
+                  data-bs-target="#carrito"
+                  href="#"
+                >
+                  <i class="fas fa-cart-plus"></i>
+                  <span
+                    class="
+                      position-absolute
+                      mt-3
+                      me-0
+                      translate-middle
+                      badge
+                      rounded-pill
+                      bg-light
+                      text-black
+                    "
+                  >
+                    <span class="visually-hidden"></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+           <!-- NAVBAR DISPOSITIVO MOVIL-->
+          <div
+            class="offcanvas offcanvas-start d-md-none"
+            tabindex="-1"
+            id="menuNavegacion"
+            aria-labelledby="offcanvasWithBackdropLabel"
+          >
+            <div
+              class="offcanvas-header border-bottom border-2 border-dark"
+              style="background-color: #632a7e"
+            >
+              <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+                <i class="fas fa-store"></i> Tienda CellPhone Ebay
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="
+                offcanvas-body
+                position-sticky
+                bg-gradient bg-secondary bg-opacity-10
+              "
+            >
+              <ul class="nav nav-pills flex-column mb-auto ms-3">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link text-black border-bottom border-1 border-dark"
+                    style="border-radius: 0px"
+                  >
+                    Inicio</a
+                  >
+                </li>
+  
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link text-black border-bottom border-1 border-dark"
+                    style="border-radius: 0px"
+                    data-bs-target="#nuevoAnuncio"
+                    data-bs-toggle="modal"
+                    >Nuevo Anuncio</a
+                  >
+                </li>
+  
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link text-black border-bottom border-1 border-dark"
+                    data-bs-toggle="modal"
+                    data-bs-target="#carrito"
+                    style="border-radius: 0px"
+                  >
+                    Carrito</a
+                  >
+                </li>
+  
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link text-black border-bottom border-1 border-dark"
+                    style="border-radius: 0px"
+                  >
+                    Estadisticas</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        
         </div>
-      </div>
-    </nav>
+      </nav>
+  
     <section class="tienda m-0">
       <div class="container m-0">
         <div class="row m-0">
