@@ -46,6 +46,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 </nav>';
     
     nav.innerHTML=navbar;
+
+    /**
+     * Sidenav
+     */
+
+    var sidenav = document.getElementById('mobile-demo');
+    var sidebar='<li><a href="index.html">Inicio</a></li>\
+                  <li><a href="estadisticas.html">Estadísticas</a></li>\
+                  <li><a href="nuevo.html"><span class="material-icons">add_circle</span></a></li>\
+                  <li><a href="#"><span class="material-icons">add_shopping_cart</span></a></li>';
+    
+    sidenav.innerHTML=sidebar;
     
     /**
      * Footer
@@ -94,12 +106,8 @@ document.addEventListener('DOMContentLoaded', function() {
     /**
      * Inicializando carrusel
      */
-    // var carousel = document.querySelectorAll('carousel');
-    // if(carousel!==null){
-    //   var instancesCarousel = M.Carousel.init(carousel,{
-    //     fullWidth:true
-    //   });
-    // }
+    var elemslider = document.querySelectorAll('.slider');
+    var instancesslider = M.Slider.init(elemslider);
    
        
     /**
