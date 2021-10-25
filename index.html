@@ -28,11 +28,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Hello, world!</title>
+    <link
+      rel="shortcut icon"
+      href="icone-de-la-maison-pourpre.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tienda Cellphone</title>
   </head>
   <body>
-    <!--..............................................NABVAR GENERAL....................................-->
+    <!--........................................................NABVAR GENERAL............................................-->
+
     <nav
       class="navbar navbar-light navbar-expand-md fixed-top"
       style="background-color: #632a7e"
@@ -202,8 +208,12 @@
         </div>
       </div>
     </nav>
-
-    <!---------------------------------------------- PRINCICPAL.......................................-->
+    <!--.......................................................NABVAR GENERAL...............................................-->
+    <div class="container bg bg-dark">
+      <div class="row-6 bg bg-danger"></div>
+      <div class="row-6 bg bg-danger"></div>
+    </div>
+    <!------------------............---------------------------- PRINCICPAL......................................................-->
     <section class="container-fluid" id="main">
       <div class="row col-12 mt-5 pt-4 ms-auto">
         <div class="col col-lg-4 offset-lg-3 col-xl-5 offset-xl-2">
@@ -345,9 +355,38 @@
           ></div>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true" style="color: #632a7e;">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;"href="#">2</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;"href="#">4</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;"href="#">5</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;"href="#">6</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true" style="color: #632a7e;">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </section>
+ 
 
-    <!------------------------------------------------------- Modal-detalles----------------------------------------------->
+    <!------------------............---------------------------- PRINCICPAL......................................................-->
+
+    <!---------------------..........------------------------- MODALS.........................................................-->
+
+    <!------------------------------------------------------- MODAL DETALLES----------------------------------------------->
     <div
       class="modal fade"
       id="exampleModal"
@@ -481,7 +520,7 @@
         </div>
       </div>
     </div>
-    <!--.......................................................... MODAL CREAR ANUNCIO.............................................................. -->
+    <!--...................................................... MODAL CREAR ANUNCIO.............................................................. -->
     <div class="row modalad">
       <div class="col">
         <div
@@ -499,7 +538,7 @@
                 </h3>
               </div>
               <div class="modal-body">
-                <div class="container ">
+                <div class="container">
                   <form class="was-validated">
                     <div class="row">
                       <!-- ESPECIFICACIONES -->
@@ -528,7 +567,10 @@
                                 value="1"
                                 required
                               />
-                              <label class="form-check-label" style="color: black;" for="New"
+                              <label
+                                class="form-check-label"
+                                style="color: black"
+                                for="New"
                                 >Nuevo</label
                               >
                             </div>
@@ -542,7 +584,10 @@
                                 value="2"
                                 required
                               />
-                              <label class="form-check-label" style="color: black;" for="Old"
+                              <label
+                                class="form-check-label"
+                                style="color: black"
+                                for="Old"
                                 >Usado</label
                               >
                             </div>
@@ -887,7 +932,7 @@
         </div>
       </div>
     </div>
-    <!--........................................................... Modal carrito................................................................... -->
+    <!--....................................................... Modal carrito................................................................... -->
     <div
       class="modal fade"
       id="carrito"
@@ -941,7 +986,9 @@
         </div>
       </div>
     </div>
-    <!--........................................................TEMPLATE............................................................... -->
+    <!---------------------..........------------------------- MODALS.........................................................-->
+
+    <!--........................................................TEMPLATES............................................................... -->
     <template id="templatecellphone">
       <div class="col my-2 rounded">
         <div class="card border border-danger">
@@ -1054,8 +1101,10 @@
       <option>Samsung</option>
     </template>
 
+    <!--........................................................TEMPLATES............................................................... -->
+
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script

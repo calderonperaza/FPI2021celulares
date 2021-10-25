@@ -12,12 +12,8 @@
     "telefono": "2113-1212",
     "brand": "Huawei",
     "description": "Huawei Y9 (2019) está equipado con un chipset Hisilicon Kirin 710 (12 nm). El tamaño de la pantalla principal es de displaysize6.5 pulgadas, 103.7 cm2 con la resolución 1080 x 2340 píxeles, 19.5:9.",
-    "image": "https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0",
-    "images": [
-      "https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0",
-      "https://esenserio.com/wp-content/uploads/2019/03/Huawei-Y9-2019.jpg",
-      "https://th.bing.com/th/id/R.60f6e66c208803409b077e0df38fc1a8?rik=u7kDJJlVCJ0dFw&pid=ImgRaw&r=0"
-    ]
+    "image": "https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0"
+   
   },
   {
     "precio": 250,
@@ -32,12 +28,7 @@
     "telefono": "2113-1212",
     "brand": "Samsumg",
     "description": "El dispositivo Samsung Galaxy A10s tiene 32GB 2GB RAM de memoria incorporada. Samsung Galaxy A10s está equipado con un chipset Mediatek MT6762 Helio P22 (12 nm). El tamaño de la pantalla.",
-    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-    "images": [
-      "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-      "https://th.bing.com/th/id/OIP.txVhkWj5HPR7V0-mO3QqfwHaEe?pid=ImgDet&rs=1",
-      "https://phonesdata.com/files/models/Samsung--Galaxy-A10s-489.jpg"
-    ]
+    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0"
   },
   {
     "precio": 100,
@@ -52,12 +43,7 @@
     "telefono": "2113-1212",
     "brand": "Nokia",
     "description": "El Nokia Lumia 635 es un teléfono móvil inteligente producido por Nokia con sistema operativo Windows Phone lanzado en junio del 2014. Cuenta con pantalla Gorilla Glass, 8 GB de memoria.",
-    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-    "images": [
-      "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-      "https://th.bing.com/th/id/OIP.txVhkWj5HPR7V0-mO3QqfwHaEe?pid=ImgDet&rs=1",
-      "https://phonesdata.com/files/models/Samsung--Galaxy-A10s-489.jpg"
-    ]
+    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0"
   },
   {
     "precio": 850,
@@ -72,16 +58,12 @@
     "telefono": "2113-1212",
     "brand": "Iphone",
     "description": "Apple iPhone X - descripción y los parámetros Apple iPhone X cuenta con sistemas GSM , CDMA , HSPA , EVDO , LTE. La fecha de presentación es Septiembre 2017. Sistema operativo.",
-    "image": "https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg",
-    "images": [
-      "https://manzanarota.com/wp-content/uploads/2019/07/iphone-x-pantalla-bateria-carga-reparacion-manzana-rota.jpg",
-      "https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg",
-      "https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/2005662230909_2.jpg"
-    ]
+    "image": "https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg"
+    
   },
   {
     "precio": 500,
-    "id": 4,
+    "id": 5,
     "size": "6",
     "system": "Ios",
     "estado": "Nuevo",
@@ -92,16 +74,11 @@
     "telefono": "2113-1212",
     "brand": "Xiomi",
     "description": "El dispositivo Xiaomi Redmi Note 10 tiene 64GB 4GB RAM, 128GB 4GB RAM, 128GB 6GB RAM de memoria incorporada. Xiaomi Redmi Note 10 está equipado con un chipset Qualcomm SDM678.",
-    "image": "https://th.bing.com/th/id/OIP.c4snyFIZACsDgAj_nVbj6QHaHa?pid=ImgDet&rs=1",
-    "images": [
-      "https://th.bing.com/th/id/R.f90c4f5f7558a2f8f62b6c8debdf93a8?rik=Y7PaCvsShg4IEQ&pid=ImgRaw&r=0",
-      "https://www.jiocorp.es/wp-content/uploads/2020/01/xiaomi-mi-note-10-negro.jpg",
-      "https://th.bing.com/th/id/OIP.c4snyFIZACsDgAj_nVbj6QHaHa?pid=ImgDet&rs=1"
-    ]
+    "image": "https://th.bing.com/th/id/OIP.c4snyFIZACsDgAj_nVbj6QHaHa?pid=ImgDet&rs=1"
   },
   {
     "precio": 500,
-    "id": 1,
+    "id": 6,
     "size": "6",
     "system": "Android",
     "estado": "Nuevo",
@@ -112,16 +89,11 @@
     "telefono": "2113-1212",
     "brand": "Huawei",
     "description": "Huawei Y9 (2019) está equipado con un chipset Hisilicon Kirin 710 (12 nm). El tamaño de la pantalla principal es de displaysize6.5 pulgadas, 103.7 cm2 con la resolución 1080 x 2340 píxeles, 19.5:9.",
-    "image": "https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0",
-    "images": [
-      "https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0",
-      "https://esenserio.com/wp-content/uploads/2019/03/Huawei-Y9-2019.jpg",
-      "https://th.bing.com/th/id/R.60f6e66c208803409b077e0df38fc1a8?rik=u7kDJJlVCJ0dFw&pid=ImgRaw&r=0"
-    ]
+    "image": "https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0"
   },
   {
     "precio": 250,
-    "id": 2,
+    "id": 7,
     "size": "6",
     "system": "Android",
     "estado": "Nuevo",
@@ -132,16 +104,11 @@
     "telefono": "2113-1212",
     "brand": "Samsumg",
     "description": "El dispositivo Samsung Galaxy A10s tiene 32GB 2GB RAM de memoria incorporada. Samsung Galaxy A10s está equipado con un chipset Mediatek MT6762 Helio P22 (12 nm). El tamaño de la pantalla.",
-    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-    "images": [
-      "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-      "https://th.bing.com/th/id/OIP.txVhkWj5HPR7V0-mO3QqfwHaEe?pid=ImgDet&rs=1",
-      "https://phonesdata.com/files/models/Samsung--Galaxy-A10s-489.jpg"
-    ]
+    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0"
   },
   {
     "precio": 100,
-    "id": 3,
+    "id": 8,
     "size": "6",
     "system": "Android",
     "estado": "Nuevo",
@@ -152,16 +119,11 @@
     "telefono": "2113-1212",
     "brand": "Nokia",
     "description": "El Nokia Lumia 635 es un teléfono móvil inteligente producido por Nokia con sistema operativo Windows Phone lanzado en junio del 2014. Cuenta con pantalla Gorilla Glass, 8 GB de memoria.",
-    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-    "images": [
-      "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-      "https://th.bing.com/th/id/OIP.txVhkWj5HPR7V0-mO3QqfwHaEe?pid=ImgDet&rs=1",
-      "https://phonesdata.com/files/models/Samsung--Galaxy-A10s-489.jpg"
-    ]
+    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0"
   },
   {
     "precio": 850,
-    "id": 4,
+    "id": 9,
     "size": "6",
     "system": "Ios",
     "estado": "Nuevo",
@@ -172,16 +134,11 @@
     "telefono": "2113-1212",
     "brand": "Iphone",
     "description": "Apple iPhone X - descripción y los parámetros Apple iPhone X cuenta con sistemas GSM , CDMA , HSPA , EVDO , LTE. La fecha de presentación es Septiembre 2017. Sistema operativo.",
-    "image": "https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg",
-    "images": [
-      "https://manzanarota.com/wp-content/uploads/2019/07/iphone-x-pantalla-bateria-carga-reparacion-manzana-rota.jpg",
-      "https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg",
-      "https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/2005662230909_2.jpg"
-    ]
+    "image": "https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg"
   },
   {
     "precio": 500,
-    "id": 4,
+    "id": 10,
     "size": "6",
     "system": "Ios",
     "estado": "Nuevo",
@@ -192,17 +149,12 @@
     "telefono": "2113-1212",
     "brand": "Xiomi",
     "description": "El dispositivo Xiaomi Redmi Note 10 tiene 64GB 4GB RAM, 128GB 4GB RAM, 128GB 6GB RAM de memoria incorporada. Xiaomi Redmi Note 10 está equipado con un chipset Qualcomm SDM678.",
-    "image": "https://th.bing.com/th/id/OIP.c4snyFIZACsDgAj_nVbj6QHaHa?pid=ImgDet&rs=1",
-    "images": [
-      "https://th.bing.com/th/id/R.f90c4f5f7558a2f8f62b6c8debdf93a8?rik=Y7PaCvsShg4IEQ&pid=ImgRaw&r=0",
-      "https://www.jiocorp.es/wp-content/uploads/2020/01/xiaomi-mi-note-10-negro.jpg",
-      "https://th.bing.com/th/id/OIP.c4snyFIZACsDgAj_nVbj6QHaHa?pid=ImgDet&rs=1"
-    ]
+    "image": "https://th.bing.com/th/id/OIP.c4snyFIZACsDgAj_nVbj6QHaHa?pid=ImgDet&rs=1"
   }
   ,
   {
     "precio": 250,
-    "id": 2,
+    "id": 11,
     "size": "6",
     "system": "Android",
     "estado": "Nuevo",
@@ -213,16 +165,11 @@
     "telefono": "2113-1212",
     "brand": "Samsumg",
     "description": "El dispositivo Samsung Galaxy A10s tiene 32GB 2GB RAM de memoria incorporada. Samsung Galaxy A10s está equipado con un chipset Mediatek MT6762 Helio P22 (12 nm). El tamaño de la pantalla.",
-    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-    "images": [
-      "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-      "https://th.bing.com/th/id/OIP.txVhkWj5HPR7V0-mO3QqfwHaEe?pid=ImgDet&rs=1",
-      "https://phonesdata.com/files/models/Samsung--Galaxy-A10s-489.jpg"
-    ]
+    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0"
   },
   {
     "precio": 100,
-    "id": 3,
+    "id": 12,
     "size": "6",
     "system": "Android",
     "estado": "Nuevo",
@@ -233,12 +180,7 @@
     "telefono": "2113-1212",
     "brand": "Nokia",
     "description": "El Nokia Lumia 635 es un teléfono móvil inteligente producido por Nokia con sistema operativo Windows Phone lanzado en junio del 2014. Cuenta con pantalla Gorilla Glass, 8 GB de memoria.",
-    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-    "images": [
-      "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0",
-      "https://th.bing.com/th/id/OIP.txVhkWj5HPR7V0-mO3QqfwHaEe?pid=ImgDet&rs=1",
-      "https://phonesdata.com/files/models/Samsung--Galaxy-A10s-489.jpg"
-    ]
+    "image": "https://th.bing.com/th/id/R.658417a8214181ccc48e3fba0f6dff8f?rik=xey5t9z%2bRrUIgw&pid=ImgRaw&r=0"
   }
 ]
 
