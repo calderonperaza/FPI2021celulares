@@ -1,0 +1,514 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS-->
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+   
+    
+    
+  </head>
+      <body>
+          <!--Navbar-->
+  
+<!--Navbar-->
+
+<nav class="yellow">
+  <div class="nav-wrapper container">
+      <ul id="nav-mobile" class="hide-on-med-and-down">
+    <a href="#" class="brand-logo center-left">Cellphone</a>
+  </ul>
+  <ul class="brand-logo right">
+      <li class="hide-on-large-only">
+        <a href="#" class="dropdown-trigger" data-target="id_drop">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul id="id_drop" class="dropdown-content" style="background-color: rgb(240, 240, 135);">
+              <li><a href="./index.html" style="color: white">Tienda Cellphone</a></li>
+              <li class="divider"></li>
+              <li><a href="./index.html"style="color: white">Inicio</a></li>
+              <li class="divider"></li>
+              <li><a href="./agregar.html"style="color: white">Nuevo Anuncio</a></li>
+              <li class="divider"></li>
+              <li><a href="#"style="color: white">Carrito</a></li>
+              <li class="divider"></li>
+              <li><a href="#"style="color: white">Estadisticas</a></li>
+            </ul>
+      </li>
+        <li>
+              <div class="container">
+              <nav class="yellow accent-2">
+               <div class="nav-wrapper">
+                   <form>
+                     <div class="input-field">
+                       <input id="search" type="search" required>
+                       <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                       <i class="material-icons">close</i>
+                     </div>
+                   </form>
+                 </div>
+               </nav>
+              </div>
+        </li>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>
+              <a href="./index.html">Inicio</a>
+        </li>
+      <li>
+              <a href="Estadisticas.html">Estadisticas</a>
+      </li>
+      <li>
+<!--Inicio del modal-->
+              <a class="btn modal-trigger btn-floating btn-large waves-effect waves-light yellow" href="#modal1">
+                <i class="material-icons">add</i>
+              </a>
+<!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                  <div class="yellow modal-content">
+                    <nav class="yellow accent-1">
+                      <div class="nav-wrapper">
+                        <a href="#" class="brand-logo center">NUEVO ANUNCIO</a>
+                      </div>
+                    </nav>
+
+
+
+
+                    <div class="row">
+                      <div class="col m6">
+                          <form action="#">
+                              <div class="container section">
+                              <div class="row">
+                                  <div class="col m2">
+                                    <h6>Estado: </h6> 
+                                  </div>
+                                  <div class="col s4">
+                                      <p>
+                                          <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Nuevo</span>
+                                          </label>
+                                        </p>
+                                  </div>
+                                  <div class="col s4">
+                                      <p>
+                                          <label>
+                                            <input name="group1" type="radio" />
+                                            <span>Usado</span>
+                                          </label>
+                                        </p>
+                                  </div>
+                              </div>
+          
+          <!--Marca-->
+          
+                            <div class="col m12">
+                              <div class="row">
+                                <div class="col m4">
+                                  <h6 for="textarea1">Marca: </h6>
+                                </div>
+                                <div class="input-field col m8">
+                                  <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                                </div>
+                              </div>
+                            </div>
+          
+          <!--Modelo-->
+          
+          <div class="col m12">
+            <div class="row">
+              <div class="col m4">
+                <h6 for="textarea1">Modelo: </h6>
+              </div>
+              <div class="input-field col m8">
+                <textarea id="textarea1" class="materialize-textarea right"></textarea>
+              </div>
+            </div>
+          </div>
+          
+          <!--Pantalla-->
+          
+          <div class="col m12">
+            <div class="row">
+              <div class="col m4">
+                <h6 for="textarea1">Pantalla: </h6>
+              </div>
+              <div class="input-field col m8">
+                <textarea id="textarea1" class="materialize-textarea right"></textarea>
+              </div>
+            </div>
+          </div>
+          
+          <!--Sistema-->
+          
+                            <div class="col s4 center-align">
+                               <h6>Sistema: </h6> 
+                            </div>
+                            <div class="col s8">
+                              <a href="#" data-target="dropdown" class="btn yellow accent-4 dropdown-trigger">...</a>
+                              <ul class="dropdown-content" id="dropdown">
+                                  <li><a href="#">Android</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">Windows</a></li>
+                                  <li class="divider"></li>
+                                  <li><a href="#">IOS</a></li>
+                              </ul>
+                              </div>
+          
+          <!--ROM-->
+                          
+          <div class="col m12">
+            <div class="row">
+              <div class="col m4">
+                <h6 for="textarea1">ROM: </h6>
+              </div>
+              <div class="input-field col m8">
+                <textarea id="textarea1" class="materialize-textarea right"></textarea>
+              </div>
+            </div>
+          </div>
+          
+          <!--RAM-->
+          <div class="col m12">
+            <div class="row">
+              <div class="col m4">
+                <h6 for="textarea1">RAM: </h6>
+              </div>
+              <div class="input-field col m8">
+                <textarea id="textarea1" class="materialize-textarea right"></textarea>
+              </div>
+            </div>
+          </div>
+          
+                            
+                          </div>
+                          </form>
+                          <br>
+                      
+          
+                      </div>
+<!--FILA DERECHA DEL MODAL-->
+                      <div class="col m6">
+                        <div class="col m12">
+                          <div class="row">
+                            <div class="col m4">
+                              <h6 for="textarea1">Descripcion breve del producto: </h6>
+                            </div>
+                            <div class="input-field col m8">
+                              <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                            </div>
+                          </div>
+                        </div>
+      
+                      
+
+                      <div class="col m12">
+                        <div class="row">
+                          <div class="col m4">
+                            <h6 for="textarea1">Vendedor: </h6>
+                          </div>
+                          <div class="input-field col m8">
+                            <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col m12">
+                        <div class="row">
+                          <div class="col m4">
+                            <h6 for="textarea1">Teléfono: </h6>
+                          </div>
+                          <div class="input-field col m8">
+                            <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col m12">
+                        <div class="row">
+                          <div class="col m4">
+                            <h6 for="textarea1">Descripción: </h6>
+                          </div>
+                          <div class="input-field col m8">
+                            <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col m12">
+                        <div class="row">
+                          <div class="col m4">
+                            <h6 for="textarea1">Precio: $ </h6>
+                          </div>
+                          <div class="input-field col m8">
+                            <textarea id="textarea1" class="materialize-textarea right"></textarea>
+                          </div>
+                        </div>
+                      </div>
+    
+                    </div>
+
+                    
+    
+    
+                  </div><!--FIN DE LAS DOS COLUMNAS-->
+
+                  <h5 class="center-align">Imagenes</h5>
+                <!--Mas y menos-->
+
+                  <div class="container section">
+                    <div class="row">
+                      <div class="col m6">
+                        <a class="btn-floating btn-large waves-effect waves-light yellow" href="#">
+                          <i class="material-icons">add</i>
+                        </a>
+                      </div>
+                      <div class="col m6">
+                        <a class="btn-floating btn-large waves-effect waves-light yellow" href="#">
+                          <i class="material-icons">remove</i>
+                        </a>
+                      </div>
+                  </div>
+                  </div>  
+<!--Tabla de imagenes-->
+                  <table>
+                    <thead>
+                      <tr>
+                          <th>N°</th>
+                          <th>Tamaño</th>
+                          <th>Tipo</th>
+                      </tr>
+                    </thead>
+                  
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>145 Kb</td>
+                        <td>jpg</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>145 Kb</td>
+                        <td>png</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>145 Kb</td>
+                        <td>png</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>145 Kb</td>
+                        <td>jpg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <img class="center-align materialboxed" width="250" src="images/Producto1.jpg">
+
+
+
+
+
+
+
+                  </div>
+                 <div class="yellow accent-1 modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">Cancelar</a>
+                <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">Crear</a>
+                </div>
+              </div>
+      </li>
+      <li>
+              <i class="large material-icons">shopping_cart</i>
+      </li>
+        </ul>
+  </ul>
+  </div>
+</nav>
+
+
+
+
+<!--Primer bloque-->
+<!--Parte derecha donde va la foto-->
+<div style="width: 50%; float: left;" >
+  <div class="carousel hide-on-med-and-down" >
+    <a class="carousel-item" href="#one!"><img src="Images/z1.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="Images/z2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="Images/z3.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="Images/z4.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="Images/z5.jpg"></a>
+  </div>
+  <div class="carousel hide-on-large-only" style="width: 400px;" >
+    <a class="carousel-item" href="#one!"><img src="Images/z1.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="Images/z2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="Images/z3.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="Images/z4.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="Images/z5.jpg"></a>
+  </div>
+  
+  
+  <br>
+  <!--Carousel version mobile-->
+  
+  <!--Texto version mobile-->
+  
+  <div style="width: 400px;  text-align: left; "  class="hide-on-large-only">
+    <b>Iphone 6 pantalla de 8 pulgadas ,64gb internos,2gb de Ram ,solo banda Tigo,Nuevo</b>
+    <br>
+    <h1 style="text-align: center;">$ 235.00</h1>
+    <br>
+    
+    <br><br>
+    <fieldset style="text-align: center;width:100%;">
+      Vendedor:Juan Perez             Telefono:7374-2312
+    </fieldset>
+    <br><br>
+    </div>
+    <!--Primer cuadro mobile-->
+   
+    <fieldset style="width: 400px; text-align: center;"  class="hide-on-large-only">
+      Estado: Nuevo<br>
+      Marca: Iphone<br>
+      Modelo: 6 plus<br>
+      Pantalla: 7 pulgadas<br>
+      Sistema: Ios<br>
+      Rom: 64GB<br>
+      Ram: 2GB<br>
+    </fieldset>
+    
+  
+    <!--Segundo cuadro mobile-->
+   
+    <fieldset style="width: 400px; display: inline; text-align: center;"  class="hide-on-large-only">
+      Telefono en muy buenas condiciones, tiene <br>
+      dos cámaras, la caja esta abierta, pero con <br>
+      muy poco uso, practicamente nuevo, la <br>
+      compañia con la que estaba es Tigo, asi que el<br>
+      chip debe ser tigo, viene con su caja original y<br> 
+      con todos sus accesorios. Puedo mandar más <br>
+      fotos si desea por whatsapp<br>
+    </fieldset>
+    <!-- boton flotante-->
+    <a href="#" class="hide-on-large-only btn-flotante ">Comprar</a>
+    <a href="#" class="hide-on-large-only btn-flotante2 ">Inicio</a>
+    </div>
+    
+<!--Parte izquierda nombre y precio-->
+<div style="width: 50%; float: right; text-align: left; " id="nav-mobile" class="hide-on-med-and-down">
+<b>Iphone 6 pantalla de 8 pulgadas ,64gb internos,2gb de Ram ,solo banda Tigo,Nuevo</b>
+<br>
+<h1>$ 235.00</h1>
+<br>
+<!--BOTON COMPRAR AMARILLO-->
+<a class="waves-effect waves-light btn" style="background-color: rgb(255, 255, 43);" >Comprar</a>
+<br><br>
+<fieldset style="text-align: center;width:350px;">
+  Vendedor:Juan Perez             Telefono:7374-2312
+</fieldset>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</div>
+<!--DESCRIPCION PARTE BAJA-->
+<div style="width: 100%; text-align: center; " id="nav-mobile" class="hide-on-med-and-down">
+    <b style="float: right;" id="nav-mobile" class="hide-on-med-and-down">DESCRIPCION</b>
+    <table style="text-align: center;">
+    <tr>
+    </tr>
+    </table>
+    <fieldset style="width: 45%; float: left;display: inline;">
+      Estado: Nuevo<br>
+      Marca: Iphone<br>
+      Modelo: 6 plus<br>
+      Pantalla: 7 pulgadas<br>
+      Sistema: Ios<br>
+      Rom: 64GB<br>
+      Ram: 2GB<br>
+    </fieldset>
+    <fieldset style="width: 49%; float: right;display: inline;">
+      Telefono en muy buenas condiciones, tiene <br>
+      dos cámaras, la caja esta abierta, pero con <br>
+      muy poco uso, practicamente nuevo, la <br>
+      compañia con la que estaba es Tigo, asi que el<br>
+      chip debe ser tigo, viene con su caja original y<br> 
+      con todos sus accesorios. Puedo mandar más <br>
+      fotos si desea por whatsapp<br>
+    </fieldset>
+</div>
+
+<!--  Scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.modal');
+var instances = M.Modal.init(elems);
+});  
+</script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems,);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+ 
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+         
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        var drop=document.querySelectorAll('.dropdown-trigger')
+        M.Dropdown.init(drop,{
+            coverTrigger:false,
+            closeOnclick:false,
+            hover:false,
+   
+        })
+    })
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });  
+    </script>
+
+    <script>
+      
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, options);
+  });
+    </script>
+
+</body>
+</html>
