@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="css/styleproducto.css" rel="stylesheet" type="text/css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Cabecera-->
+    <div id="cabecera">
+        <div class="row">
+            <div class="col s12">
+
+                <nav>
+                    <div class="nav-wrapper s12 m12 l12 yellow accent-2">
+
+                        <div class="col s5 l4" style="background-color: yellow;">
+                            <a href="#" data-target="menu-responsive" class="sidenav-trigger"><i
+                                    class="material-icons black-text">menu</i></a>
+                            <ul id="nav-mobile1" class="left hide-on-small-only hide-on-med-only">
+                                <li><a href="#" class="brand-logo black-text"> <i
+                                            class="material-icons black-text">phone_android</i>Tienda
+                                        Cellphone</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col s5 l2 hide-on-small-only">
+                            <ul>
+                                <li id="search-icon">
+                                    <label class="label-icon" for="search"><i id="nombreicono"
+                                            class=" tiny material-icons">search</i></label>
+                                    <input type="search" placeholder="Search" required>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s6 show-on-small hide-on-med-and-up">
+                            <ul>
+                                <li id="search-icon">
+                                    <label class="label-icon" for="search"><i id="nombreicono"
+                                            class=" tiny material-icons">search</i></label>
+                                    <input type="search" placeholder="Search" required>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col" style="background-color: yellow;">
+                            <ul>
+                                <div id="nav-mobile1" class="right hide-on-small-only hide-on-med-only">
+                                    <li><a class="waves-effect waves-light btn teal" href="index.html">Inicio</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col" style="background-color: yellow;">
+                            <ul>
+                                <div id="nav-mobile1" class="right hide-on-small-only hide-on-med-only ">
+                                    <li><a class="waves-effect waves-light btn teal " href="#">Estadísticas</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col" style="background-color: yellow;">
+                            <ul>
+                                <div id="nav-mobile1" class="right hide-on-small-only hide-on-med-only ">
+                                    <li><a href="nuevoanauncio.html"><i
+                                                class=" tiny material-icons black-text">add_circle_outline</i></a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col l1.5" style="background-color: yellow; ">
+                            <ul>
+                                <!-- nuevoanuncio puede ser un  modal-->
+                                <div id="nav-mobile4" class="right hide-on-small-only hide-on-med-only ">
+                                    <li>
+                                        <a href="#" class="cart"><i
+                                            class="tiny material-icons black-text">add_shopping_cart</i>
+                                          <span id="cart_menu_num" data-action="cart-can" class="btn-floating btn-small waves-effect waves-light red">1</span>
+                                        </a>
+
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </nav>
+
+            </div>
+
+            <ul class="sidenav" id="menu-responsive">
+                <a href="#" class="brand-logo"> <i class="material-icons">phone_android</i>Tienda Cellphone</a>
+                <li><a class="waves-effect waves-light btn teal " href="index.html">Inicio</a></li>
+                <li><a href="nuevoanauncio.html"><i class="material-icons ">add_circle_outline</i>Nuevo Anuncio</a></li>
+                <li><a href="#"><i class="material-icons ">add_shopping_cart</i>Carrito</a></li>
+                <li><a class="waves-effect waves-light btn teal " href="#">Estadísticas</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="cuerpo">
+        <!-- oculto para Movil-->
+        <div id=parte1 class="row hide-on-small-only">
+            <div id=columnainagenes class="col s5">
+                <div class="carousel carousel-slider center-align">
+                    <div class="carousel-fixed-item fluid center clearfix" style="margin-bottom: 120px;">
+                        <div class="left">
+                            <a href="Previo"
+                                class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i
+                                    class=" medium material-icons left  middle-indicator-text white-text">chevron_left</i></a>
+                        </div>
+
+                        <div class="right">
+                            <a href="Siguiente"
+                                class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i
+                                    class=" medium material-icons right middle-indicator-text white-text">chevron_right</i></a>
+                        </div>
+                    </div>
+                    <a class="carousel-item small"><img src="images/a10.jpg" alt=""></a>
+                    <a class="carousel-item small"><img src="images/a31.jpg" alt=""></a>
+                    <a class="carousel-item small"><img src="images/s8.jpg" alt=""></a>
+                </div>
+            </div>
+            <div id=columnai class="col s7" style="height: 400px;">
+                <div id=fila1 class="row justify-align" style="margin-left: 10px;">
+                    <h5>Iphone 6 pantalla de 8 pulgadas, 64Gb internos,
+                        2Gb de Ram, Sólo Banda Tigo, Nuevo</h5>
+                    <h4>$132.00</h4>
+                </div>
+                <div id=fila2 class="row" style="margin-left: 10px; margin-bottom: 40px;">
+                    <a class=" medium waves-effect waves-light btn-large lime oscurecer-3">Comprar</a>
+                </div>
+                <div id=fila1 class="row">
+                    
+                            <div class="col s6 center">
+                                <div class="chip" >
+                                    <img src="images/vendedor.jpg" alt="Contact Person">
+                                     Juan Perez
+                                </div>
+                            </div>
+                            <div class="col s6 center">
+                                <div class="chip">
+                                    <img src="images/contacto.jpg" alt="Contact Person">
+                                    7374-2312
+                                </div>
+                            </div>
+     
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Carrusel de imagenes para movil-->
+        <div id=fila1movil class="row show-on-small hide-on-med-and-up">
+            <div class="carousel carousel-slider center-align" style="max-height: 400px;">
+
+                <div class="carousel-fixed-item center-align clearfix">
+                    <div class="left" style="margin-bottom: 100px;">
+                        <a href="Previo"
+                            class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i
+                                class=" medium material-icons left  middle-indicator-text white-text">chevron_left</i></a>
+                    </div>
+
+                    <div class="right">
+                        <a href="Siguiente"
+                            class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i
+                                class=" medium material-icons right middle-indicator-text white-text">chevron_right</i></a>
+                    </div>
+                </div>
+                <a class="carousel-item small "><img class="responsive-img" src="images/a10.jpg" alt=""></a>
+                <a class="carousel-item small "><img class="responsive-img" src="images/a31.jpg" alt=""></a>
+                <a class="carousel-item small "><img class="responsive-img" src="images/s8.jpg" alt=""></a>
+            </div>
+            <!-- caracteristicas, precio y vendedor-->
+            <div id=fila2movil class="row center show-on-small hide-on-med-and-up" style="margin-left: 10px;">
+                <h5>Iphone 6 pantalla de 8 pulgadas, 64Gb internos,
+                    2Gb de Ram, Sólo Banda Tigo, Nuevo</h5>
+                <h4>$132.00</h4>
+                <div class="col s6 center">
+                    <div class="chip" >
+                        <img src="images/vendedor.jpg" alt="Contact Person">
+                         Juan Perez
+                    </div>
+                </div>
+                <div class="col s6 center">
+                    <div class="chip">
+                        <img src="images/contacto.jpg" alt="Contact Person">
+                        7374-2312
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Cards de Descripcion y caracteristicas-->
+        <div id=parte2 class="row hide-on-small-only">
+            <h2 style="text-align: center;">Descripción</h2>
+        </div>
+        <div id=parte3 class="row hide-on-small-only" style="background-color: yellow;">
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-content">
+                        <ul>
+                            <li>Estado: Nuevo
+                            </li>
+                            <li>Marca: Iphone
+                            </li>
+                            <li>Modelo: 6 plus
+                            </li>
+                            <li>Pantalla: 7 pulgadas
+                            </li>
+                            <li>Sistema: Ios
+                            </li>
+                            <li>Rom: 64GB
+                            </li>
+                            <li>Ram: 2GB
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="card" style="height: 232px;">
+                    <div class="card-content">
+                        <p>Telefono en muy buenas condiciones, tiene
+                            dos cámaras, la caja esta abierta, pero con
+                            muy poco uso, practicamente nuevo, la
+                            compañia con la que estaba es Tigo, asi que el
+                            chip debe ser tigo, viene con su caja original y
+                            con todos sus accesorios. Puedo mandar más
+                            fotos si desea por whatsapp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards de Descripcion y caracteristicas Movil-->
+        <div id="fila3movil" class="row center show-on-small hide-on-med-and-up">
+            <div class="card" style="margin-right: 10px;margin-left: 10px;">
+                <div class="card-content">
+                    <ul>
+                        <li>Estado: Nuevo
+                        </li>
+                        <li>Marca: Iphone
+                        </li>
+                        <li>Modelo: 6 plus
+                        </li>
+                        <li>Pantalla: 7 pulgadas
+                        </li>
+                        <li>Sistema: Ios
+                        </li>
+                        <li>Rom: 64GB
+                        </li>
+                        <li>Ram: 2GB
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" style="margin-right: 10px;margin-left: 10px; height: 200px; margin-top: 10px;">
+                <div class="card-content">
+                    <p>Telefono en muy buenas condiciones, tiene
+                        dos cámaras, la caja esta abierta, pero con
+                        muy poco uso, practicamente nuevo, la
+                        compañia con la que estaba es Tigo, asi que el
+                        chip debe ser tigo, viene con su caja original y
+                        con todos sus accesorios. Puedo mandar más
+                        fotos si desea por whatsapp</p>
+                </div>
+            </div>
+        </div>
+        <!-- Botones fijos de INICIO Y COMPRAR-->
+        <div class="footer show-on-small hide-on-med-and-up">
+            <div class="row">
+                <div class="col s6 " style="text-align: right;">
+                    <a class="waves-effect waves-light btn-large  lime oscurecer-1" href="index.html">Inicio</a>
+                </div>
+                <div class="col s6 " style="text-align: left;">
+                    <a class="waves-effect waves-light btn-large  lime oscurecer-1" href="index.html" onclick="M.toast({html: 'Agregado a Carrito Satisfactoriamente!', inDuration:3000,classes: 'rounded'})">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+                edge: 'right',
+                draggable: true
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                duration: 120,
+                indicators: true,
+                fullWidth: true,
+                padding: 20
+            });
+        });
+
+        $('.moveNextCarousel').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('.carousel').carousel('next');
+        });
+
+        // move prev carousel
+        $('.movePrevCarousel').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('.carousel').carousel('prev');
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.chips');
+            var instances = M.Chips.init(elems);
+        });
+        $(document).ready(function () {
+            M.updateTextFields();
+        });
+    </script>
+</body>
+
+
+
+</html>

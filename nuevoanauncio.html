@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Anuncio</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/styleanuncio.css" rel="stylesheet" type="text/css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Cabecera-->
+    <div id="cabecera">
+        <div class="row">
+            <div class="col s12">
+
+                <nav>
+                    <div class="nav-wrapper  yellow accent-2">
+
+                        <div class="col s5 l4" style="background-color: yellow;">
+                            <a href="#" data-target="menu-responsive" class="sidenav-trigger"><i
+                                    class="material-icons black-text">menu</i></a>
+                            <ul id="nav-mobile1" class="left hide-on-small-only hide-on-med-only">
+                                <li><a href="#" class="brand-logo black-text"> <i
+                                            class="material-icons black-text">phone_android</i>Tienda
+                                        Cellphone</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col s5 l2 hide-on-small-only">
+                            <ul>
+                                <li id="search-icon">
+                                    <label class="label-icon" for="search"><i id="nombreicono"
+                                            class=" tiny material-icons">search</i></label>
+                                    <input type="search" placeholder="Search" required>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s6 show-on-small hide-on-med-and-up">
+                            <ul>
+                                <li id="search-icon">
+                                    <label class="label-icon" for="search"><i id="nombreicono"
+                                            class=" tiny material-icons">search</i></label>
+                                    <input type="search" placeholder="Search" required>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col" style="background-color: yellow;">
+                            <ul>
+                                <div id="nav-mobile2" class="right hide-on-small-only hide-on-med-only">
+                                    <li><a class="waves-effect waves-light btn teal" href="index.html">Inicio</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col" style="background-color: yellow;">
+                            <ul>
+                                <div id="nav-mobile1" class="right hide-on-small-only hide-on-med-only ">
+                                    <li><a class="waves-effect waves-light btn teal " href="#">Estadísticas</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col" style="background-color: yellow;">
+                            <ul>
+                                <div id="nav-mobile3" class="right hide-on-small-only hide-on-med-only ">
+                                    <li><a href="nuevoanauncio.html"><i
+                                                class=" tiny material-icons black-text">add_circle_outline</i></a></li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="col l1.5" style="background-color: yellow; ">
+                            <ul>
+
+                                <div id="nav-mobile4" class="right hide-on-small-only hide-on-med-only ">
+                                    <li>
+                                        <a href="#" class="cart"><i
+                                            class="tiny material-icons black-text">add_shopping_cart</i>
+                                          <span id="cart_menu_num" data-action="cart-can" class="btn-floating btn-small waves-effect waves-light red">1</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+
+            </div>
+
+            <ul class="sidenav" id="menu-responsive">
+                <a href="#" class="brand-logo"> <i class="material-icons">phone_android</i>Tienda Cellphone</a>
+                <li><a class="waves-effect waves-light btn teal " href="index.html">Inicio</a></li>
+                <li><a href="nuevoanauncio.html"><i class="material-icons ">add_circle_outline</i>Nuevo Anuncio</a></li>
+                <li><a href="#"><i class="material-icons ">add_shopping_cart</i>Carrito</a></li>
+                <li><a class="waves-effect waves-light btn teal " href="#">Estadísticas</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="cuerpoanuncio" class="cuerpo">
+        <div class="row hide-on-small-only" style="text-align: center;">
+            <h2>NUEVO ANUNCIO</h2>
+        </div>
+        <div class="row show-on-small hide-on-med-and-up">
+            <div class="carousel">
+                <div class="carousel-item center">
+                    <a class="modal-trigger btn-floating waves-effect white grey-text darken-text-2" href="#modal2"><i
+                            class="material-icons grey-text">add</i></a>
+                            <p>Agregar imagen</p>
+                </div>
+                <a class="carousel-item small" href="#one!"><img src="images/phone6.jpg"></a>
+                <a class="carousel-item small" href="#one!"><img src="images/phone62.jpg"></a>
+                <a class="carousel-item small" href="#one!"><img src="images/phone63.jpg"></a>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h6>Agregar imagenes</h6>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field col s12">
+                                <form action="#">
+                                    <div class="file-field input-field">
+                                        <div class="btn">
+                                            <span>Buscar</span>
+                                            <input type="file" multiple>
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text"
+                                                accept="image/png, .jpeg, .jpg, image/gif"
+                                                placeholder="La imagen es...">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Finalizar</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div id="primeracol" class="col s7 hide-on-small-only">
+                <div class="card">
+                    <div class="card-content">
+                            <div class="row">
+                                <!--Parte del estado-->
+                                <div class="col s4">
+                                    Estado:
+                                </div>
+                                <div class="col s8">
+                                    <form action="#">
+    
+                                        <label>
+                                            <input name="radio" type="radio" checked="checked" />
+                                            <span>Nuevo</span>
+                                        </label>
+                                        <label style="padding: 10px;">
+                                            <input name="radio" type="radio" />
+                                            <span>Usado</span>
+                                        </label>
+    
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    Marca:
+                                </div>
+                                <div class="col s8">
+                                    <form action="#">
+                                        <div class="input-field inline" style="margin-top: 4px;">
+                                            <input placeholder="IPhone" id="Precio" type="value" class="validate"
+                                                style="width: 60px;">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    Modelo:
+                                </div>
+                                <div class="col s8">
+                                    <form action="#">
+                                        <div class="input-field inline" style="margin-top: 4px;">
+                                            <input placeholder="6 Plus" id="Precio" type="value" class="validate"
+                                                style="width: 60px;">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    Pantalla:
+                                </div>
+                                <div class="col s8">
+                                    <form action="#">
+                                        <div class="input-field inline" style="margin-top: 4px;">
+                                            <input placeholder="5.5" id="Precio" type="value" class="validate"
+                                                style="width: 40px;">
+                                            <span>Pulgadas</span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    Sistema:
+                                </div>
+                                <div class="col s8">
+                                    <select class="browser-default" style="width: 80px; margin-top: 4px;">
+                                        <option value="" disabled selected>Ios</option>
+                                        <option value="2">Ios</option>
+                                        <option value="1">Windows</option>
+                                        <option value="2">Android</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                <!--PARTE DE AGREGAR IMAGENES-->
+                <div class="card hide-on-small-only">
+                    <div class="card-content">
+                        <div class="titulo">
+                            <p>Imagenes</p>
+                            <div class="row">
+                                <div class="col s3">
+                                    <div id="agregarimag" class="row center-align">
+                                        <a class="waves-effect waves-light btn-floating btn-large lime oscurecer-1 modal-trigger"
+                                            href="#modal1"><i class="material-icons white-text">add</i></a>
+
+                                        <div id="modal1" class="modal">
+                                            <div class="modal-content">
+                                                <h6>Agregar imagenes</h6>
+
+                                                <div class="row">
+                                                    <div class="col s12">
+                                                        <div class="input-field col s12">
+                                                            <form action="#">
+                                                                <div class="file-field input-field">
+                                                                    <div class="btn">
+                                                                        <span>Buscar</span>
+                                                                        <input type="file" multiple>
+                                                                    </div>
+                                                                    <div class="file-path-wrapper">
+                                                                        <input class="file-path validate" type="text"
+                                                                            placeholder="La imagen es...">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#!"
+                                                    class="modal-close waves-effect waves-green btn-flat">Finalizar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="quitarimg" class="row center-align">
+                                        <a class="waves-effect waves-light red btn-floating btn-large modal-trigger"
+                                            href="#modal3"><i class=" material-icons white-text">clear</i></a>
+                                        <div id="modal3" class="modal">
+                                            <div class="modal-content" style="height: 300px;">
+                                                <h6>Quitar imagenes</h6>
+
+                                                <div class="row center-align">
+                                                    <div class="input-field col s12">
+                                                        <select class="icons">
+                                                          <option value="" disabled selected>¿Qué imagenes quiere quitar?</option>
+                                                          <option value="" data-icon="images/phone6.jpg">¡Phone 6 1</option>
+                                                          <option value="" data-icon="images/phone62.jpg">¡Phone 6 2</option>
+                                                          <option value="" data-icon="images/phone63.jpg">¡Phone 6 3</option>
+                                                        </select>
+                                                        <label>Seleccionar 1 o más</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#!"
+                                                    class="modal-close waves-effect waves-green btn-flat">Finalizar</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col s9">
+                                    <div class="carousel" style="position: relative;">
+                                        <a class="carousel-item small" href="#one!"><img src="images/phone6.jpg"></a>
+                                        <a class="carousel-item small" href="#one!"><img src="images/phone62.jpg"></a>
+                                        <a class="carousel-item small" href="#one!"><img src="images/phone63.jpg"></a>
+                                    </div>
+                                </div>
+
+                                <!--CARRUSER ACA-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--fin de primera columna-->
+
+            <div id="titulomovil" class="row hide-on-med-and-up show-on-small">
+                <h5>Titulo:</h5>
+                <form action="#">
+                    <div class="input-field col s11 center">
+                        <input id="title_name" type="text" value="Iphone 6 pantalla de 8 pulgadas, 64Gb internos"
+                            class="validate" data-length="100"></input>
+                        <label for="title_name"></label>
+                    </div>
+                </form>
+            </div>
+            <div id="preciomovill" class="row s12 hide-on-med-and-up show-on-small">
+                <div class="col s6 center-align">
+                    <p style="margin-top: 25px; font-size: 18px;">Precio:</p>
+                </div>
+                <div class="col s6 center-align">
+                    <div class="input-field left-align">
+                        <input value="$235.00" id="precio_name" type="text" class="validate"
+                            style="width: 100px; font-size: 20px;">
+                    </div>
+                </div>
+            </div>
+            <div id="ventelmovil" class="row hide-on-med-and-up show-on-small">
+                <div class="col s2" style="margin-top: 25px;">
+                    Vendedor:
+                </div>
+                <div class="col s4">
+                    <form action="#">
+                        <div class="input-field col s12">
+                            <input id="vendedorinput" type="text" value="Juan Perez" data-length="100"
+                                class="validate"></input>
+                            <label for="vendedorinput"></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col s2" style="margin-top: 25px;">
+                    Telefono:
+                </div>
+                <div class="col s4">
+                    <form action="#">
+                        <div class="input-field col s12">
+                            <input value="21213-1212" data-length="10" id="teleinput" type="text" class="validate">
+                            <label for="teleinput"></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="titulomovil" class="row hide-on-med-and-up show-on-small">
+                <form action="#">
+                    <div class="input-field col s12 center">
+                        <textarea id="cara_name" type="text"
+                            placeholder="Estado: Nuevo Marca: Iphone Modelo: 6 plus Pantalla: 7 pulgadas Sistema: Ios Rom: 64GB Ram: 2GB"
+                            class="materialize-textarea validate" data-length="400"></textarea>
+                        <label class="active" for="des_name"></label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Escribir caracteristicas del
+                            producto</span>
+                    </div>
+                </form>
+            </div>
+            <div id="titulomovil" class="row hide-on-med-and-up show-on-small">
+                <form action="#">
+                    <div class="input-field col s12 center">
+                        <textarea id="des_name" type="text"
+                            placeholder="Telefono en muy buenas condiciones, tiene dos cámaras,la caja esta abierta, pero con muy poco uso, practicamente nuevo, la compañia con la que estaba es Tigo, asi que el chip debe ser tigo"
+                            class="materialize-textarea validate" data-length="400"></textarea>
+                        <label class="active" for="des_name"></label>
+                        <span class="helper-text" data-error="wrong" data-success="right">Escribir descripción del
+                            producto</span>
+                    </div>
+                </form>
+            </div>
+            <div class="row hide-on-med-and-up show-on-small">
+                <div class="col s6 right-align">
+                    <a class="waves-effect waves-light btn " href="index.html"><i
+                            class="material-icons left">cancel</i>Cancelar</a>
+                </div>
+                <div class="col s6 left-align">
+                    <a class="waves-effect waves-light btn"
+                        onclick="M.toast({html: 'Anuncio Nuevo Creado Satisfactoriamente!', inDuration:30000,classes: 'rounded'})"
+                        href="index.html"><i class="material-icons left">save</i>Crear</a>
+                </div>
+            </div>
+
+
+
+            <div id="segundacol" class="col s5 hide-on-small-only">
+                <div class="row">
+                    <h5>Titulo breve del anuncio</h5>
+                    <form action="#">
+                        <div class="input-field ">
+                            <input placeholder="Iphone 6 pantalla de 8 pulgadas, 64Gb internos" id="title_name"
+                                type="text" class="validate" data-length="100">
+                            <label for="title_name"></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col s3" style="margin-top: 30px;">
+                        Vendedor:
+                    </div>
+                    <div class="col s9">
+                        <form action="#">
+                            <div class="input-field ">
+                                <input placeholder="Juan Perez" id="vendedorinput" type="text" data-length="100"
+                                    class="validate">
+                                <label for="vendedorinput"></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s3" style="margin-top: 30px;">
+                        Telefono:
+                    </div>
+                    <div class="col s9">
+                        <form action="#">
+                            <div class="input-field ">
+                                <input placeholder="21213-1212" data-length="10" id="teleinput" type="text"
+                                    class="validate">
+                                <label for="teleinput"></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5 style="margin-left: 5px;">DESCRIPCION</h5>
+                    <form action="#" class="col s12">
+                        <div class="input-field col s12">
+                            <textarea id="descrip" class="materialize-textarea" data-length="400"></textarea>
+                            <label for="descrip">Escribir descripción</label>
+                        </div>
+                    </form>
+                </div>
+                <!--PARTE DE PRECIO-->
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="tituloprecio">
+                                    <p>PRECIO</p>
+                                    <form action="#" class="center-align">
+                                        <div class="input-field inline" style="margin-top: 4px;">
+                                            <input placeholder="$235.00" id="Precio" type="value" class="validate"
+                                                style="width: 60px;height: 40px;">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col s6 m6 right-align">
+                        <a class="waves-effect waves-light btn" href="index.html"><i
+                                class="material-icons left">cancel</i>Cancelar</a>
+                    </div>
+                    <div class="col s6 m6 left-align">
+                        <a class="waves-effect waves-light btn"
+                            onclick="M.toast({html: 'Anuncio Nuevo Creado Satisfactoriamente!', inDuration:3000,classes: 'rounded'})"
+                            href="index.html"><i class="material-icons left">save</i>Crear</a>
+                    </div>
+                </div>
+
+            </div>
+            <!--FINDE SEGUNDA COLUMNA-->
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+                edge: 'right',
+                draggable: true
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                indicators: true
+            });
+        });
+
+        $(document).ready(function () {
+            $('input#teleinput, textarea#des_name, textarea#cara_name, input#title_name, input#vendedorinput, textarea#descrip').characterCounter();
+        });
+
+        $(document).ready(function () {
+            M.updateTextFields();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Cabecera-->
+  <div id="cabecera">
+    <div class="row">
+      <div class="col s12">
+
+        <nav>
+          <div class="nav-wrapper  yellow accent-2">
+
+            <div class="col s5 l4" style="background-color: yellow;">
+              <a href="#" data-target="menu-responsive" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+              <ul id="nav-mobile1" class="left hide-on-small-only hide-on-med-only">
+                <li><a href="#" class="brand-logo black-text"> <i class="material-icons black-text">phone_android</i>Tienda
+                    Cellphone</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col s5 l2 hide-on-small-only">
+              <ul>
+                <li id="search-icon">
+                  <label class="label-icon" for="search"><i id="nombreicono"
+                      class=" tiny material-icons">search</i></label>
+                  <input type="search" placeholder="Search" required>
+                </li>
+              </ul>
+            </div>
+            <div class="col s6 show-on-small hide-on-med-and-up">
+              <ul>
+                <li id="search-icon">
+                  <label class="label-icon" for="search"><i id="nombreicono"
+                      class=" tiny material-icons">search</i></label>
+                  <input type="search" placeholder="Search" required>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="col" style="background-color: yellow;">
+              <ul>
+                <div id="nav-mobile1" class="right hide-on-small-only hide-on-med-only">
+                  <li><a class="waves-effect waves-light btn teal" href="index.html">Inicio</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="col" style="background-color: yellow;">
+              <ul>
+                <div id="nav-mobile1" class="right hide-on-small-only hide-on-med-only ">
+                  <li><a class="waves-effect waves-light btn teal " href="#">Estadísticas</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="col" style="background-color: yellow;">
+              <ul>
+                <div id="nav-mobile1" class="right hide-on-small-only hide-on-med-only ">
+                  <li><a href="nuevoanauncio.html"><i class=" tiny material-icons black-text">add_circle_outline</i></a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col l1.5" style="background-color: yellow; ">
+              <ul>
+                <!-- nuevoanuncio puede ser un  modal-->
+                <div id="nav-mobile4" class="right hide-on-small-only hide-on-med-only ">
+                  <li>
+                    <a href="#" class="cart"><i class="tiny material-icons black-text">add_shopping_cart</i>
+                      <span id="cart_menu_num" data-action="cart-can"
+                        class="btn-floating btn-small waves-effect waves-light red">1</span>
+                    </a>
+
+                  </li>
+                </div>
+              </ul>
+            </div>
+
+
+          </div>
+        </nav>
+
+      </div>
+
+      <ul class="sidenav" id="menu-responsive">
+        <a href="#" class="brand-logo"> <i class="material-icons">phone_android</i>Tienda Cellphone</a>
+        <li><a class="waves-effect waves-light btn teal " href="index.html">Inicio</a></li>
+        <li><a href="nuevoanauncio.html"><i class="material-icons ">add_circle_outline</i>Nuevo Anuncio</a></li>
+        <li><a href="#"><i class="material-icons ">add_shopping_cart</i>Carrito</a></li>
+        <li><a class="waves-effect waves-light btn teal " href="#">Estadísticas</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div id="cuerpo">
+
+    <div class="row">
+
+      <div id="primeracolumna" class="col s3 hide-on-small-only">
+        <!-- Grey navigation panel -->
+        <!-- OCULTO PARA MOVIL-->
+
+        <div class="parascroll">
+          <div id="switchnuevo" class="row">
+
+            <div class="containerswitch">
+              <div class="switch center">
+                <label>
+                  <input type="checkbox">
+                  <span class="lever"></span><span style="color: black;"> Nuevo </span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="partemarca" class="row">
+
+
+            <div class="card" style="height: 280px;">
+
+              <p id="x">Marca</p>
+              <form action="#" style="margin-left: 20px;">
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Samsung</span><sup style="font-size: 10px;">15</sup>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Hawuei</span><sup style="font-size: 10px;">10</sup>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Nokia</span><sup style="font-size: 10px;">56</sup>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>!Phone</span><sup style="font-size: 10px;">4</sup>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Xiomi</span><sup style="font-size: 10px;">4</sup>
+                  </label>
+                </p>
+              </form>
+
+            </div>
+
+          </div>
+          <div id="partesistema" class="row">
+
+            <div class="card" style="height: 180px;">
+
+              <p id="x">Sistema</p>
+              <form action="#" style="margin-left: 20px;">
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Android</span><sup style="font-size: 10px;">15</sup>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Windows</span><sup style="font-size: 10px;">10</sup>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Ios</span><sup style="font-size: 10px;">56</sup>
+                  </label>
+                </p>
+              </form>
+            </div>
+
+          </div>
+          <div id="partepantalla" class="row">
+
+            <div class="card" style="height: 180px;">
+              <p id="x">Pantalla</p>
+              <form action="#" style="margin-left: 20px;">
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>6.0</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>5.5</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>5</span>
+                  </label>
+                </p>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+
+
+      </div><!-- fin de primera columna-->
+
+      <div id="segundacolumna" class="col s9 hide-on-small-only">
+        <!-- principio segunda columna-->
+        <!-- OCULTO PARA MOVIL-->
+
+        <div id="filaprecioordenar" class="row hide-on-small-only">
+          <div id="columnaprecio" class="col s6 hide-on-small-only">
+            <div class="card" style="height: 120px;">
+              <div class="card-content">
+                <div class="row" style="height: 30px;">
+                  <form class="col s6">
+                    <div id="colprecio" class="col s6" style="margin-top: 4px; ">
+                      Precio:
+                    </div>
+                    <div class="input-field inline" style="margin-top: 4px;">
+                      <input placeholder="$" id="Precio" type="value" class="validate" style="width: 40px;">
+                    </div>
+                  </form>
+                  <div class="col s6">
+                    <div id="colprecio" class="col s6" style="margin-top: 4px;">
+                      Hasta:
+                    </div>
+                    <div class="input-field inline" style="margin-top: 4px;">
+                      <input placeholder="$" id="Hasta" type="value" class="validate" style="width: 40px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="columnaordenarpor" class="col s6 hide-on-small-only ">
+            <div class="card" style="height: 120px;">
+              <div class="card-content">
+                <div class="row ">
+                  <div class="col xl3.5 l3.5 m4">
+                    <div id="colordenar" class="col left-align" style="margin-top: 6px;">
+                      <p style="font-size: 12px;">Ordenar por:</p>
+                    </div>
+                  </div>
+                  <div class="col xl5">
+                    <a class="waves-effect btn-small" style="font-size: 10px;"><i
+                        class="material-icons left">arrow_upward</i>Precio</a>
+                  </div>
+                  <div class="col xl2" style=" left: 0;">
+                    <a class="waves-effect btn-small" style="font-size: 10px;">Fecha</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div> <!-- fin de fila precio y ordenar por-->
+
+        <div id="filaproductos" class="row hide-on-small-only">
+
+          <div class="col s3">
+            <div class="card ">
+              <div class="card-image center-align">
+                <a href="producto.html"><img src="images/a10.jpg"></a>
+              </div>
+              <div class="div card-content center">
+                <p>$132.00</p>
+                <p>Samsung J6, Pantalla de 5.5 64 GB, 2GB Ram,Color Rojo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card ">
+              <div class="card-image">
+                <a href="producto.html"><img src="images/a31.jpg"></a>
+              </div>
+              <div class="div card-content center">
+                <p>$132.00</p>
+                <p>Samsung A31, Pantalla de 6 64 GB, 2GB Ram,Negro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <a href="producto.html"><img src="images/note10.jpg"></a>
+              </div>
+              <div class="div card-content center">
+                <p>$132.00</p>
+                <p>Samsung Note 10, Pantalla de 6 128 GB, 2GB Ram,Color Celeste</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card ">
+              <div class="card-image">
+                <a href="producto.html"><img src="images/s8.jpg"></a>
+              </div>
+              <div class="div card-content center">
+                <p>$132.00</p>
+                <p>Samsung S8, Pantalla de 6 64 GB, 2GB Ram,Color Gris</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- fin de fila productos-->
+        <div id="filaproductos" class="row hide-on-small-only">
+
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <a href="producto.html"><img src="images/a31.jpg"></a>
+              </div>
+              <div class="div card-content center">
+                <p>$132.00</p>
+                <p>Samsung A31, Pantalla de 6 64 GB, 2GB Ram,Negro</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <a href="producto.html"><img src="images/a10.jpg"></a>
+              </div>
+              <div class="div card-content center">
+                <p>$132.00</p>
+                <p>Samsung A10, Pantalla de 5.5 64 GB, 2GB Ram,Color Rojo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <a href="producto.html"><img src="images/note10.jpg"></a>
+              </div>
+              <div class="div card-content center">
+                <p>$132.00</p>
+                <p>Samsung Note 10, Pantalla de 6 128 GB, 2GB Ram,Color Celeste</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s3">
+            <div class="card">
+              <div class="card-image">
+                <a href="producto.html"><img src="images/s8.jpg"></a>
+              </div>
+              <div class="div card-content center">
+                <p>$132.00</p>
+                <p>Samsung S8, Pantalla de 6 64 GB, 2GB Ram,Color Gris</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- fin de fila productos-->
+
+        <div id="filapaginacionx" class="row show-on-medium-and-up">
+          <ul class="pagination center">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            <li>
+              <p>Articulos por página:</p>
+            </li>
+            <li>
+              <select class="browser-default" style="width: 50px;">
+                <option value="" disabled selected>25</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </li>
+          </ul>
+        </div><!-- fin de paginacion fila-->
+
+
+      </div><!-- fin de segunda columna -->
+
+
+      <div class="contenidomovil show-on-small">
+        <!-- PARA MOVIL-->
+        <div id="filaprecioordenarmovil" class="row">
+
+
+          <div id="movilordenar" class="col s10 show-on-small hide-on-med-and-up">
+            <div class="card" style="height: 90px;">
+              <div class="card-content">
+                <div class="row show-on-small">
+                  <div class="col s6">
+                    <div id="colordenar" class="col left-align" style="font-size: 15px;">
+                      Ordenar por:
+                    </div>
+                  </div>
+                  <div class="col s6">
+                    <select class="browser-default">
+                      <option value="" disabled selected>Precio</option>
+                      <option value="1">Precio</option>
+                      <option value="2">Fecha</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="filtroparte" class="col s2 show-on-small hide-on-med-and-up" style="margin-top: 30px;">
+            <div class="card show-on-small hide-on-med-and-up" style="width: 30px;">
+              <a href="#" data-target="filtro-responsive"
+                class="modal-trigger show-on-small hide-on-med-and-up  lime oscurecer-1"><i
+                  class=" small material-icons white-text">highlight</i></a>
+            </div>
+          </div>
+
+
+          <ul class="modal" id="filtro-responsive" style="background-color: white;">
+
+            <div class="filtroprimeracolumna">
+              <div id="switchnuevo" class="row" style="margin-top: 30px;">
+
+                <div class="containerswitch">
+                  <div class="switch center">
+                    <label>
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      Nuevo
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div id="partemarca" class="row" style="margin-left: 10px;margin-right: 15px; height: 220px;">
+                <div class="card">
+                  <p id="y">Marca</p>
+                  <form action="#" style="margin-left: 20px;">
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Samsung</span><sup style="font-size: 10px;">15</sup>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Hawuei</span><sup style="font-size: 10px;">10</sup>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Nokia</span><sup style="font-size: 10px;">56</sup>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>!Phone</span><sup style="font-size: 10px;">4</sup>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Xiomi</span><sup style="font-size: 10px;">4</sup>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+              <div id="partesistema" class="row " style="margin-left: 10px;margin-right: 15px; height: 160px;">
+                <div class="card" style="height: 160px;">
+                  <p id="y">Sistema</p>
+                  <form action="#" style="margin-left: 20px;">
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Android</span><sup style="font-size: 10px;">15</sup>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Windows</span><sup style="font-size: 10px;">10</sup>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>Ios</span><sup style="font-size: 10px;">56</sup>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+              <div id="partepantalla" class="row" style="margin-left: 10px;margin-right: 15px;">
+                <div class="card" style="height: 160px;">
+                  <p id="y">Pantalla</p>
+                  <form action="#" style="margin-left: 20px;">
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>6.0</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>5.5</span>
+                      </label>
+                    </p>
+                    <p>
+                      <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span>5</span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </ul>
+
+        </div> <!-- fin de fila precio y ordenar por MOVIL-->
+
+        <div class="contenedordeproductos">
+
+          <div id="filaproductosmovil" class="row show-on-small hide-on-med-and-up">
+            <div class="col s6 ">
+              <div class="card">
+                <div class="card-image">
+                  <a href="producto.html"><img src="images/a10.jpg"></a>
+                </div>
+                <div class="div card-content center" style="font-size: 10px;">
+                  <p>$132.00</p>
+                  <p>Samsung A10, Pantalla de 6 128 GB, 2GB Ram,Color Rojo</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card">
+                <div class="card-image">
+                  <a href="producto.html"><img src="images/a31.jpg"></a>
+                </div>
+                <div class="div card-content center" style="font-size: 10px;">
+                  <p>$132.00</p>
+                  <p>Samsung A31, Pantalla de 6 64 GB, 2GB Ram, Color Negro</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- fin de fila productos-->
+          <div id="filaproductosmovil" class="row show-on-small hide-on-med-and-up">
+            <div class="col s6">
+              <div class="card">
+                <div class="card-image">
+                  <a href="producto.html"><img src="images/note10.jpg"></a>
+                </div>
+                <div class="div card-content center" style="font-size: 10px;">
+                  <p>$132.00</p>
+                  <p>Samsung Note 10, Pantalla de 6 128 GB, 2GB Ram,Color Celeste</p>
+                </div>
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card">
+                <div class="card-image">
+                  <a href="producto.html"><img src="images/s8.jpg"></a>
+                </div>
+                <div class="div card-content center" style="font-size: 10px;">
+                  <p>$132.00</p>
+                  <p>Samsung S8, Pantalla de 6 64 GB, 2GB Ram, Color Gris</p>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- fin de fila productos-->
+        </div>
+
+        <div id="filapaginacionmovil" class="row show-on-small hide-on-med-and-up">
+          <ul class="pagination center">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          </ul>
+        </div>
+
+
+      </div><!-- fin MOVIL-->
+
+    </div> <!-- fin de row o fila de contenido  -->
+  </div><!-- fin div contenido  -->
+
+
+
+  <footer class="page-footer" style="background-color: yellow;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="black-text">Contenido</h5>
+          <ul>
+            <li><a href="index.html" style="color: blue">Inicio</a></li>
+            <li><a href="nuevoanauncio.html" style="color: blue">Crear Anuncio</a></li>
+          </ul>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="black-text">Contáctanos</h5>
+          <ul>
+            <div class="chip">
+              <img src="images/contacto.jpg" alt="Contact Page"><a href="#">Tienda Cellphone</a>
+            </div>
+            <div class="chip">
+              <img src="images/WhatsApp.jpg" alt="Contact Page"><a href="https://www.whatsapp.com/?lang=es">Tienda Cellphone</a>
+            </div>
+            <div class="chip">
+              <img src="images/insta.jpg" alt="Contact Page"><a href="https://www.instagram.com/?hl=es">Tienda Cellphone</a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="grey-text text-lighten-4 right" href="#!"></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {
+        edge: 'right',
+        draggable: true
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems, {
+        inDuration: 300,
+        outDuration: 300
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems);
+    });
+  </script>
+</body>
+
+</html>
