@@ -1,0 +1,13 @@
+body{
+  font-family: 'Roboto', sans-serif;
+ }
+
+.form-check-input:checked {
+  background-color: #632a7e;
+}
+
+
+.form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked{
+  background-color: #632a7e
+}
+

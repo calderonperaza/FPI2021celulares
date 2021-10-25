@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="icone-de-la-maison-pourpre.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tienda Cellphone</title>
+  </head>
+  <body>
+    <!--........................................................NABVAR GENERAL............................................-->
+
+    <nav
+      class="navbar navbar-light navbar-expand-md fixed-top"
+      style="background-color: #632a7e"
+      id="navegacion"
+    >
+      <div class="container-fluid">
+        <button
+          data-bs-toggle="offcanvas"
+          class="navbar-toggler"
+          data-bs-target="#menuNavegacion"
+          aria-controls="menuNavegacion"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand d-none d-md-inline" href="index.html">
+          <i class="fas fa-store"></i>
+          <strong>Tienda CellPhone Ebay</strong>
+        </a>
+
+        <form
+          class="
+            form-inline
+            col-9 col-sm-auto col-md-3 col-lg-3 col-xl-5 col-xxl-6
+          "
+        >
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button
+                class="btn btn-outline-dark btn-lg pb-0"
+                style="border: 0px"
+                type="button"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <input
+              class="form-control"
+              type="search"
+              placeholder="¿Que quieres encontrar?"
+              aria-label="Search"
+            />
+          </div>
+        </form>
+
+        <!-- NABVAR PANTALLAS GRANDES -->
+        <div class="collapse navbar-collapse">
+          <ul
+            class="nav navbar-nav ms-auto"
+            data-toggle="collapse"
+            data-target="#menuNavegacion"
+          >
+            <li
+              class="nav-item"
+              style="margin-right: 2.5px; margin-left: 2.5px"
+            >
+              <a class="btn btn-dark" aria-current="page" href="index.html">
+                Inicio
+              </a>
+            </li>
+            <li
+              class="nav-item"
+              style="margin-right: 2.5px; margin-left: 2.5px"
+            >
+              <a class="btn btn-dark" href="#"> Estadisticas </a>
+            </li>
+            <li
+              class="nav-item btn-dark"
+              style="margin-right: 2.5px; margin-left: 2.5px"
+            >
+              <a
+                class="btn btn-dark btn-sm"
+                data-bs-target="#nuevoAnuncio"
+                data-bs-toggle="modal"
+              >
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </li>
+            <li
+              class="nav-item btn-dark"
+              style="margin-right: 2.5px; margin-left: 2.5px"
+            >
+              <a
+                class="btn btn-dark btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#carrito"
+                href="#"
+                style="line-height: 20px"
+              >
+                <i class="fas fa-cart-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NAVBAR DISPOSITIVO MOVIL-->
+        <div
+          class="offcanvas offcanvas-start d-md-none"
+          tabindex="-1"
+          id="menuNavegacion"
+          aria-labelledby="offcanvasWithBackdropLabel"
+        >
+          <div
+            class="offcanvas-header border-bottom border-2 border-dark"
+            style="background-color: #632a7e"
+          >
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+              <i class="fas fa-store"></i> Tienda CellPhone Ebay
+            </h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="offcanvas-body position-sticky bg-transparent bg-opacity-10"
+          >
+            <ul class="nav nav-pills flex-column mb-auto ms-3 bg-light">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="nav-link text-black border-bottom border-1 border-dark"
+                  style="border-radius: 0px; color: black"
+                >
+                  Inicio</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-black border-bottom border-1 border-dark"
+                  style="border-radius: 0px; color: black"
+                  data-bs-target="#nuevoAnuncio"
+                  data-bs-toggle="modal"
+                  >Nuevo Anuncio</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-black border-bottom border-1 border-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#carrito"
+                  style="border-radius: 0px; color: black"
+                >
+                  Carrito</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link text-black border-bottom border-1 border-dark"
+                  style="border-radius: 0px; color: black"
+                >
+                  Estadisticas</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--.......................................................NABVAR GENERAL...............................................-->
+    <div class="container bg bg-dark">
+      <div class="row-6 bg bg-danger"></div>
+      <div class="row-6 bg bg-danger"></div>
+    </div>
+    <!------------------............---------------------------- PRINCICPAL......................................................-->
+    <section class="container-fluid" id="main">
+      <div class="row col-12 mt-5 pt-4 ms-auto">
+        <div class="col col-lg-4 offset-lg-3 col-xl-5 offset-xl-2">
+          <div class="d-none d-lg-inline">
+            <div class="row my-auto">
+              <div class="col-2 my-auto">
+                <label for="price">Precio:</label>
+              </div>
+              <div class="col-4" style="margin-left: 0px">
+                <input
+                  type="number"
+                  id="price"
+                  class="
+                    form-control
+                    border border-1 border-secondary
+                    rounded-pill
+                    w-75
+                  "
+                  placeholder="$"
+                />
+              </div>
+              <div class="col-2 my-auto">
+                <label for="price">Hasta:</label>
+              </div>
+              <div class="col-4">
+                <input
+                  type="number"
+                  id="price"
+                  class="
+                    form-control
+                    border border-1 border-secondary
+                    rounded-pill
+                    w-75
+                  "
+                  placeholder="$"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- FILTRO ORDENAR DISPOSITIVOS MOVILES -->
+          <div class="d-lg-none">
+            <div class="row my-auto align-items-center">
+              <div class="col">
+                <label for="atributo">Ordenar por: </label>
+              </div>
+              <div class="col">
+                <select id="atributo" class="form-select">
+                  <option selected>Precio</option>
+                  <option value="1">Fecha</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FILTRO ORDENAR PANTALLAS GRANDES -->
+        <div class="col-5 col-lg-5 text-center">
+          <div class="d-none d-lg-inline">
+            <div class="row align-items-center">
+              <div class="col-4 my-auto">
+                <label>Ordenar por:</label>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-outline-dark d-inline" type="button">
+                  <i class="fa fa-arrow-up"></i>
+                  Precio
+                </button>
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-outline-dark d-inline" type="button">
+                  Fecha
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-dark d-lg-none mt-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#filtros"
+            aria-expanded="false"
+            aria-controls="filtros"
+          >
+            <i class="fas fa-filter"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <!--.................................. FILTRO MARCA PANTALLA SISTEMA............................ -->
+        <div class="col-lg-3 col-xl-2">
+          <div id="filtros" class="collapse d-lg-block">
+            <div class="card w100">
+              <div class="card-header">
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="estado"
+                  />
+                  <label class="form-check-label" for="estado">Nuevo</label>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush w-100">
+                <li
+                  class="list-group-item m-2"
+                  id="brand2"
+                  style="background-color: #632a7e; color: white"
+                >
+                  <h5 class="card-title">Marca</h5>
+                </li>
+
+                <li
+                  class="list-group-item m-2"
+                  id="system"
+                  style="background-color: #632a7e; color: white"
+                >
+                  <h5 class="card-title">Sistema</h5>
+                </li>
+
+                <li
+                  class="list-group-item m-2"
+                  id="display"
+                  style="background-color: #632a7e; color: white"
+                >
+                  <h5 class="card-title">Pantalla</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--............................................ CARD CELLPHONE............................... -->
+        <div class="col-12 col-lg-9 col-xl-10">
+          <div
+            class="row row-cols-2 row-cols-md-3 row-cols-lg-4 my-3"
+            id="cellphone"
+          ></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true" style="color: #632a7e;">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;"href="#">2</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;"href="#">4</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;"href="#">5</a></li>
+              <li class="page-item"><a class="page-link" style="color: #632a7e;"href="#">6</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true" style="color: #632a7e;">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+      </div>
+    </section>
+ 
+
+    <!------------------............---------------------------- PRINCICPAL......................................................-->
+
+    <!---------------------..........------------------------- MODALS.........................................................-->
+
+    <!------------------------------------------------------- MODAL DETALLES----------------------------------------------->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #632a7e">
+            <h5 class="modal-title" id="exampleModalLabel" style="color: white">
+              Detalles
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://manzanarota.com/wp-content/uploads/2019/07/iphone-x-pantalla-bateria-carga-reparacion-manzana-rota.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://www.quonty.com/img2/maxi/a/qtyapl-iphonex64gbgs_2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/2005662230909_2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev bg-dark"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next bg-dark dark"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <p>
+                  Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram,
+                  Sólo Banda Tigo, Nuevo
+                </p>
+                <span class="badge bg-dark">$ 140.00 </span>
+                <div class="d-grid gap-2 mt-3">
+                  <button
+                    class="btn btn btn-block mb-2 btn-outline-warning"
+                    type="button"
+                    onclick="toastAnuncio('#cartAdded')"
+                  >
+                    <i class="fas fa-cart-plus"></i>Agregar al carrito
+                  </button>
+                </div>
+                <div class="vendedor d-flex justify-content-center">
+                  <span class="m-2">Vendedor: Juan Perez</span>
+                  <span class="m-2">Teléfono: 7374-2312</span>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <h2 class="text-center m-2">Descripcion</h2>
+              <div class="col-12 col-md-5 m-1" style="border: 1px solid black">
+                <span>Estado : Nuevo</span>
+                <br />
+                <span>Marca: Iphone</span>
+                <br />
+                <span>Model: x</span>
+                <br />
+                <span>Pantalla: 7 Pulgadas</span>
+                <br />
+                <span>Rom: 64 Gb</span>
+                <br />
+                <span>Ram: 8 Gb</span>
+                <br />
+              </div>
+              <div class="col-12 col-md-5 m-1" style="border: 1px solid black">
+                <p>
+                  Telefono en muy buenas condiciones, tiene dos cámaras, la caja
+                  esta abierta, pero con muy poco uso, practicamente nuevo, la
+                  compañia con la que estaba es Tigo, asi que el chip debe ser
+                  tigo, viene con su caja original y con todos sus accesorios.
+                  Puedo mandar más fotos si desea por whatsap
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer" style="background-color: #632a7e">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              <i class="fas fa-save"></i> Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--...................................................... MODAL CREAR ANUNCIO.............................................................. -->
+    <div class="row modalad">
+      <div class="col">
+        <div
+          class="modal fade"
+          data-backdrop="static"
+          id="nuevoAnuncio"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color: #632a7e">
+                <h3 class="modal-title mx-auto text-white">
+                  <strong>Nuevo Anuncio</strong>
+                </h3>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <form class="was-validated">
+                    <div class="row">
+                      <!-- ESPECIFICACIONES -->
+                      <div
+                        class="
+                          col-12 col-lg-6
+                          border
+                          rounded-lg
+                          shadow-sm
+                          p-3
+                          my-2
+                          order-3 order-lg-1
+                        "
+                      >
+                        <div class="row my-2">
+                          <div class="col-4 col-lg-3">
+                            <label>Estado:</label>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="state"
+                                id="New"
+                                value="1"
+                                required
+                              />
+                              <label
+                                class="form-check-label"
+                                style="color: black"
+                                for="New"
+                                >Nuevo</label
+                              >
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="state"
+                                id="Old"
+                                value="2"
+                                required
+                              />
+                              <label
+                                class="form-check-label"
+                                style="color: black"
+                                for="Old"
+                                >Usado</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-4 col-lg-3">
+                            <label>Marca:</label>
+                          </div>
+                          <div class="col-6">
+                            <select class="form-select" id="brand" required>
+                              <option selected disabled value="">
+                                Marca...
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-4 col-lg-3">
+                            <label>Modelo:</label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="model"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-4 col-lg-3">
+                            <label>Pantalla (in):</label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="number"
+                              name="pantalla"
+                              class="form-control"
+                              step="0.1"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-4 col-lg-3">
+                            <label>Sistema:</label>
+                          </div>
+                          <div class="col-6">
+                            <select class="form-select" id="os" required>
+                              <option selected disabled value="">
+                                Sistema...
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-4 col-lg-3">
+                            <label>ROM (GB):</label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="number"
+                              name="rom"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-4 col-lg-3">
+                            <label>RAM (GB):</label>
+                          </div>
+                          <div class="col-6">
+                            <input
+                              type="number"
+                              name="ram"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!--......................................................... Especificaciones................................................... -->
+
+                      <div class="col-12 col-lg-6 p-3 my-2 order-2">
+                        <div class="row my-2">
+                          <div class="col-3">
+                            <label>Titulo:</label>
+                          </div>
+                          <div class="col-12 col-sm">
+                            <input
+                              id="title"
+                              type="text"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-3">
+                            <label>Vendedor:</label>
+                          </div>
+                          <div class="col-12 col-sm">
+                            <input
+                              id="seller"
+                              type="text"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-3">
+                            <label>Telefono:</label>
+                          </div>
+                          <div class="col-12 col-sm">
+                            <input
+                              id="tel"
+                              type="tel"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="row form-group my-2">
+                          <div class="col-3">
+                            <label>Descripcion:</label>
+                          </div>
+                          <div class="col-12 col-sm">
+                            <textarea
+                              id="descripcion"
+                              class="form-control"
+                              required
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="row my-2">
+                          <div class="col-3">
+                            <label>Precio:</label>
+                          </div>
+                          <div class="col-auto col-lg-3">
+                            <input
+                              type="number"
+                              step="0.001"
+                              required
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="
+                          col-12 col-lg-6
+                          bg-transparent  
+                          border
+                          rounded-lg
+                          shadow-sm
+                          p-3
+                          my-2
+                          order-1 order-lg-3
+                        "
+                      >
+                        <div class="row d-none d-lg-flex">
+                          <div class="col-2">
+                            <button type="button" class="btn btn-dark">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                            <br />
+                            <br />
+                            <button type="button" class="btn btn-dark">
+                              <i class="fas fa-minus"></i>
+                            </button>
+                          </div>
+                          <div class="col-6">
+                            <table
+                              class="
+                                table table-sm table-responsive table-borderless
+                              "
+                            >
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Nombre</th>
+                                  <th scope="col">Tamaño</th>
+                                  <th scope="col">Tipo</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Samsung</td>
+                                  <td>320 KB</td>
+                                  <td>.jpg</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Samsung2</td>
+                                  <td>500 KB</td>
+                                  <td>.jpg</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="col-4">
+                            <img
+                              src="https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/2005662230909_2.jpg"
+                              class="img-fluid img-thumbnail"
+                              alt="producto"
+                            />
+                          </div>
+                        </div>
+
+                        <!--.......................................CAROUSEL DISPOSITIVO MOVIL................................-->
+                        <div
+                          id="carouselExampleControls"
+                          class="carousel slide d-lg-none"
+                          data-bs-ride="carousel"
+                          data-interval="false"
+                        >
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img
+                                src="https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0"
+                                class="d-block w-100 rounded bg-transparent"
+                                alt="New Image"
+                              />
+                            </div>
+                            <div class="carousel-item" id="c1">
+                              <img
+                                src="https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0"
+                                class="d-block w-100 rounded-lg"
+                                alt="..."
+                              />
+                            </div>
+                            <div class="carousel-item">
+                              <img
+                                src="https://th.bing.com/th/id/R.caa2051ddff615e3979fd13fcae328b6?rik=idsgmeNZIdFu3A&pid=ImgRaw&r=0"
+                                class="d-block w-100 rounded-lg"
+                                alt="..."
+                              />
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <!--.....................................BUTTONS......................................-->
+                      <div
+                        class="
+                          col-12 col-lg-6
+                          mt-auto
+                          mb-auto
+                          text-center
+                          order-4
+                        "
+                      >
+                        <button
+                          type="button"
+                          class="btn-outline-danger btn-lg"
+                          data-bs-dismiss="modal"
+                        >
+                          Cancelar
+                          
+                        </button>
+                        <button
+                          type="button"
+                          class="btn-outline-dark btn-lg"
+                          data-bs-dismiss="modal"
+                          onclick="toastAnuncio('#published')"
+                          id="save"
+                        >
+                          Crear Anuncio
+                         
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--..............................TOAST AGREGAR ANUNCIO Y CARRITO................................-->
+        <div
+          style="position: fixed; top: 4rem; right: 0.5rem; z-index: 1"
+          class="col-11 col-sm-auto"
+        >
+          <div id="published" class="toast collapse" data-delay="10000">
+            <div class="toast-header" style="background-color: #632a7e">
+              <i class="fas fa-ad"></i>
+              <strong class="mr-auto text-light m-2"> Nuevo Anuncio </strong>
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              >
+                <span aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="toast-body">Articulo Agregado</div>
+          </div>
+          <div id="cartAdded" class="toast collapse" data-delay="10000">
+            <div class="toast-header" style="background-color: #632a7e">
+              <i class="fas fa-cart-plus"> </i>
+
+              <strong class="mr-auto text-light m-2"> Carrito </strong>
+              <button
+                type="button"
+                class="btn-close ms-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="toast-body">Articulo añadido al carrito.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--....................................................... Modal carrito................................................................... -->
+    <div
+      class="modal fade"
+      id="carrito"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #632a7e">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <i class="fas fa-cart-plus"> </i>Carrito
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="5">
+                    Carrito vacío - comience a comprar!
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="modal-footer" style="background-color: #632a7e">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------..........------------------------- MODALS.........................................................-->
+
+    <!--........................................................TEMPLATES............................................................... -->
+    <template id="templatecellphone">
+      <div class="col my-2 rounded">
+        <div class="card border border-danger">
+          <a
+            href="#"
+            class=""
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img src="" class="card-img-top" alt="" />
+          </a>
+          <div class="card-body text-center" style="background-color: #632a7e">
+            <a
+              href="#"
+              class="text-black"
+              style="text-decoration: none"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <h6 class="card-title" style="color: black"></h6>
+            </a>
+            <p class="fw-bolder text-center" style="color: white"></p>
+
+            <button
+              class="btn btn btn-block mb-2 btn-outline-dark"
+              type="button"
+              onclick="toastAnuncio('#cartAdded')"
+            >
+              <i class="fas fa-cart-plus"></i>Agregar al carrito
+            </button>
+
+            <div class="card-footer text-muted text-center h4 bg-dark">
+              $
+              <span class="badge bg-dark"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td>10</td>
+      <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+          vaciar todo
+        </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    <!-- template carrito -->
+    <template id="template-carrito">
+      <tr>
+        <th scope="row" class="bg-dark" style="color: white">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+          <button class="btn btn-info btn-sm aumentar">+</button>
+          <button class="btn btn-danger btn-sm disminuir">-</button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <!-- template filtro marca pantalla  sistema -->
+    <template id="templatebrand">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+    </template>
+    <template id="templatesystem">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+    </template>
+
+    <template id="templatedisplay">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+    </template>
+
+    <template id="templatebrand2">
+      <option>Samsung</option>
+    </template>
+    <template id="templatesystem2">
+      <option>Samsung</option>
+    </template>
+
+    <!--........................................................TEMPLATES............................................................... -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/app.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
