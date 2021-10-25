@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s2 m3">
+                        <a href="#" class="brand-logo hide-on-med-and-down"><i class="material-icons">store_mall_directory</i>Primo's Store</a>
+                        <a href="#" data-target="sidebar" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a>
+                    </div>
+                    <div class="col s10 m5">
+                        <form>
+                            <div class="input-field">
+                                <input class="correpcion" id="search" type="search" required placeholder="Buscar productos">
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col m4 hide-on-med-and-down">
+                        <ul class="right">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="estadistica.html">Estadisticas</a></li>
+                            <li><a href="nuevo.html"><i class="material-icons">add</i></a></li>
+                            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <ul class="sidenav" id="sidebar">
+        <li><i class="material-icons">store_mall_directory</i>Primo's Store</li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuevo.html">Nuevo anuncio</a></li>
+        <li><a href="#">Carrito</a></li>
+        <li><a href="estadistica.html">Estadisticas</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <canvas id="lineas" class="grafico"></canvas>
+        </div>
+        <div class="col s12 m6">
+            <canvas id="pie" class="grafico"></canvas>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+    <script src="graficos.js"></script>
+
+</body>
+
+</html>

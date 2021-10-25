@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Pirata</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s2 m3">
+                        <a href="#" class="brand-logo hide-on-med-and-down"><i class="material-icons">store_mall_directory</i>Primo's Store</a>
+                        <a href="#" data-target="sidebar" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a>
+                    </div>
+                    <div class="col s10 m5">
+                        <form>
+                            <div class="input-field">
+                                <input class="correpcion" id="search" type="search" required placeholder="Buscar productos">
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col m4 hide-on-med-and-down">
+                        <ul class="right">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="estadistica.html">Estadisticas</a></li>
+                            <li><a href="nuevo.html"><i class="material-icons">add</i></a></li>
+                            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <ul class="sidenav" id="sidebar">
+        <li><i class="material-icons">store_mall_directory</i>Primo's Store</li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuevo.html">Nuevo anuncio</a></li>
+        <li><a href="#">Carrito</a></li>
+        <li><a href="estadistica.html">Estadisticas</a></li>
+    </ul>
+
+    <ul class="sidenav" id="filtros">
+        <br>
+        <div class="">
+            <div class="switch">
+                <label>
+                    Nuevo
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                </label>
+            </div>
+        </div>
+        <br>
+        <div class="">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Marca</span>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>Samsung</span>
+                                </label>
+                            </p>
+                        </li>
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>Xiaomi</span>
+                                </label>
+                            </p>
+                        </li>
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>Huawei</span>
+                                </label>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-content">
+                    <span class="card-title">Sistema</span>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>Android</span>
+                                </label>
+                            </p>
+                        </li>
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>Windows 10</span>
+                                </label>
+                            </p>
+                        </li>
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>Macos</span>
+                                </label>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-content">
+                    <span class="card-title">Pantalla</span>
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>6.5"</span>
+                                </label>
+                            </p>
+                        </li>
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>7"</span>
+                                </label>
+                            </p>
+                        </li>
+                        <li class="collection-item">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>15"</span>
+                                </label>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </ul>
+    <br>
+    <!--
+        cuerpo de la pagina
+    -->
+
+    <main>
+        <div class="row">
+            <!--filtros-->
+            <div class="col s3 hide-on-med-and-down">
+                <div class="">
+                    <div class="switch">
+                        <label>
+                            Nuevo
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div class="">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Marca</span>
+                            <ul class="collection">
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>Samsung</span>
+                                        </label>
+                                    </p>
+                                </li>
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>Xiaomi</span>
+                                        </label>
+                                    </p>
+                                </li>
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>Huawei</span>
+                                        </label>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-content">
+                            <span class="card-title">Sistema</span>
+                            <ul class="collection">
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>Android</span>
+                                        </label>
+                                    </p>
+                                </li>
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>Windows 10</span>
+                                        </label>
+                                    </p>
+                                </li>
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>Macos</span>
+                                        </label>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card ">
+                        <div class="card-content">
+                            <span class="card-title">Pantalla</span>
+                            <ul class="collection">
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>6.5"</span>
+                                        </label>
+                                    </p>
+                                </li>
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>7"</span>
+                                        </label>
+                                    </p>
+                                </li>
+                                <li class="collection-item">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" class="filled-in" />
+                                            <span>15"</span>
+                                        </label>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--productos-->
+            <div class="col s12 m9">
+                <div class="row">
+                    <div class="col m6 hide-on-med-and-down">
+                        <div class="input-field col s6">
+                            <input placeholder="Desde" id="desde" type="number">
+                            <label for="desde">Desde</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input placeholder="Hasta" id="hasta" type="number">
+                            <label for="hasta">Hasta</label>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-field">
+                                    <select>
+                                        <option value="0" selected>Popular</option>
+                                        <option value="1">Precio mas bajo</option>
+                                        <option value="2">Precio mas alto</option>
+                                        <option value="3">Nombre A-Z</option>
+                                        <option value="3">Nombre Z-A</option>
+                                    </select>
+                                    <label for="">Ordenar por:</label>
+                                </div>
+                            </div>
+                            <div class="col hide-on-large-only">
+                                <a href="#" data-target="filtros" class="sidenav-trigger"><i
+                                        class="medium material-icons">filter_alt</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col s6 m4">
+                                <a href="producto.html">
+                                    <div class="card black-text">
+                                        <div class="card-image">
+                                            <img src="imagenes/y9.png" class="thumnaild">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title">Y9 2019</span>
+                                            <p>Aqui van las cosas de telefono</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col s6 m4">
+                                <a href="producto.html">
+                                    <div class="card black-text">
+                                        <div class="card-image">
+                                            <img src="imagenes/a32.png" class="thumnaild">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title">Galaxy A32</span>
+                                            <p>Aqui van las cosas de telefono</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col s6 m4">
+                                <a href="producto.html">
+                                    <div class="card black-text">
+                                        <div class="card-image">
+                                            <img src="imagenes/redminote8az_02.jpg" class="thumnaild">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title">Redmi Note 8</span>
+                                            <p>Aqui van las cosas de telefono</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col s6 m4">
+                                <a href="producto.html">
+                                    <div class="card black-text">
+                                        <div class="card-image">
+                                            <img src="imagenes/y9.png" class="thumnaild">
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title">Y9 2019</span>
+                                            <p>Aqui van las cosas de telefono</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
