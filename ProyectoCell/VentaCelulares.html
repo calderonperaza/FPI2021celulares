@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentaCelulares</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- <link href="/style.css" rel="stylesheet" type="text/css">-->
+    <LINK REL=StyleSheet HREF="style.css" TITLE="Contemporaneo">
+
+</head>
+<body >
+  <header>
+
+   <!-- BARRA DE NAVEGACION -->
+   <nav class="navbar navbar-expand-lg navbar-light w-100" style="background-color: rgb(131, 253, 131); border: 3px rgb(49, 145, 46) double; border-radius: 0px 0px 20px 20px;">
+    <div class="container-fluid">
+      
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="w-50  d-block d-lg-none"> 
+        <form class="d-flex">
+          <input id="idSearch2" class="form-control me-2 rounded-pill w-100"  style="font-family: Arial, Helvetica, sans-serif, bootstrap-icons;" type="search" placeholder="&#xf52a  Search" aria-label="Search" >
+        </form>
+      </div>
+     
+       
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+        <a class="navbar-brand " style="color: rgb(25, 116, 25); font-size: xx-large; font-family: fantasy;"><i class="bi bi-megaphone-fill"></i> Tienda CellPhone </a>
+        
+        <!--Busqueda 1-->
+        <div class="w-50 d-none d-lg-block"> 
+          <form class="d-flex">
+          
+                <input id="idSearch1" class="form-control me-2 rounded-pill w-80"  style="font-family: Arial, Helvetica, sans-serif,bootstrap-icons;" type="search" placeholder="&#xf52a  Search" aria-label="Search" >
+                
+            
+          </form>
+         
+        </div>
+       
+
+       
+       
+        <!-- menu 1-->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto  d-none d-lg-block d-inline-block">
+          <li class="nav-item d-inline-block">
+            <a class="btn  btn-outline-success me-2" href="VentaCelulares.html" style="font-weight: 900;">Inicio</a>
+          </li>
+          <li class="nav-item d-inline-block">
+            <a class="btn btn-outline-success me-2" href="#" style="font-weight: 900;">Estadísticas</a>
+          </li>
+          <li class="nav-item d-inline-block">
+            <a class="btn btn-success me-2" href="Nuevo_Anuncio.html" style="background-color:rgb(131, 253, 131); border: 0; color: rgb(25, 116, 25);" ><i class="bi bi-plus-circle-fill" style="font-size: xx-large;"></i></a>
+          </li>
+          <li class="nav-item d-inline-block">
+            <a class="btn btn-success me-2" href="#" style="background-color:rgb(131, 253, 131); border: 0; color: rgb(25, 116, 25);"><i class="bi bi-cart3" style="font-size: xx-large;"></i> 1</a>
+          </li>
+        </ul>
+
+       <!-- menu 2-->
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto d-block d-lg-none">
+        <li class="nav-item border-bottom border-top">
+          <a class="btn btn-success me-2 d-block" href="VentaCelulares.html">Inicio</a>
+        </li>
+        <li class="nav-item border-bottom">
+          <a class="btn btn-success me-2 d-block" href="Nuevo_Anuncio.html">Nuevo Anuncio</a>
+        </li>
+        <li class="nav-item border-bottom">
+          <a class="btn btn-success me-2 d-block" href="#">Carrito</a>
+        </li>
+        <li class="nav-item border-bottom">
+          <a class="btn btn-success me-2 d-block" href="#">Estadísticas</a>
+        </li>
+      </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- Contenido -->
+<div  class="container-fluid">
+
+  <main class="row">
+    
+    
+    <aside id="idFiltro" class="collapse col-3 overflow-auto d-none d-lg-block" >
+      
+      
+
+
+      <div class="contenedor">
+
+
+        <div class="form-check form-switch ">
+            <input class="form-check-input bg-success"   type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked"  style="color:rgb(25, 116, 25); font-weight: 600;">Nuevo</label>
+          </div>
+
+          
+
+        
+
+        <div class=" card card-body" id="card-example" height="80px" style="background-color: rgb(131, 253, 131);">
+            
+            <div class="card">
+                <div class="card-header" style="color:rgb(25, 116, 25); font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    Marca
+                </div> 
+
+                <div class=" card card-body">
+
+                    
+
+
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Samsung <span class="badge  rounded-pill px-2" style="background-color:rgb(122, 219, 162) ;">15</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Huawei <span class="badge rounded-pill px-2" style="background-color:rgb(122, 219, 162) ;">10</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Nokia <span class="badge rounded-pill px-2" style="background-color:rgb(122, 219, 162) ;">56</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked"  style="color:rgb(25, 116, 25); font-weight: 600;">
+                            iPhone <span class="badge  rounded-pill px-2" style="background-color:rgb(122, 219, 162) ;">4</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Xiomi <span class="badge  rounded-pill px-2" style="background-color:rgb(122, 219, 162) ;">4</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="card">
+                <div class="card-header"  style="color:rgb(25, 116, 25); font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif;" >
+                    Sistema
+                </div> 
+
+                <div class=" card card-body">
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Android <span class="badge bg-secondary rounded-pill px-2">15</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Windows <span class="badge bg-secondary rounded-pill px-2">10</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Ios <span class="badge bg-secondary rounded-pill px-2">56</span>
+                        </label>
+                    </div>
+                    
+                </div>
+            </div>
+                <br>
+            <div class="card">
+                <div class="card-header" style="color:rgb(25, 116, 25); font-weight: 800; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    Pantalla
+                </div> 
+
+                <div class=" card card-body">
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Samsung
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Huawei
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Nokia
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;"> 
+                            iPhone
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input bg-success" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked" style="color:rgb(25, 116, 25); font-weight: 600;">
+                            Xiomi
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+        
+        </div>
+        
+    
+        </div>
+      
+      
+
+    
+    </aside>
+  
+
+    <section class="col-9" style="margin-left: 0%; padding-left: 0%; ">
+      <!-- fila 1 -->
+      <div class="row">  
+        <div class="col border m-2 d-none d-lg-block" >
+          <div class="row">
+
+            <div class="col">
+              <div class="label"  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkgreen; text-align: right; margin-top: 5px;">Precio</div>
+
+              
+            </div>
+
+            <div class="col">
+              
+                <div class="input-group mb-3">
+                    <span class="input-group-text"  style="background-color: rgb(178, 230, 200);">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+  
+            </div>
+
+            <div class="col">
+                <div class="label"  style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkgreen; text-align: right; margin-top: 5px;">Hasta</div>
+
+
+
+            </div>
+            <div class="col">
+              
+                <div class="input-group mb-3">
+                    <span class="input-group-text"  style="background-color: rgb(178, 230, 200)">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+
+
+            
+
+
+            </div>
+          </div>
+
+
+
+                                           
+        
+      
+
+
+      
+        </div> 
+        
+        <div class="col border m-2 d-none d-lg-block">
+          <label class="m-2" style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkgreen;">Ordenado por: </label>
+          <button class="btn btn-outline-success m-2" type="submit"><i class="bi bi-arrow-up-circle"></i> Precio</button>
+          <button class="btn btn-outline-success m-2" type="submit" ><i class="bi bi-calendar-event"></i> Fecha</button>
+        </div>
+      </div>
+
+    <!-- fila 2 -->
+    <div class="row my-2 mx-2" >  
+      <div class="col-9 border d-flex justify-content-center d-lg-none" >
+        <label for="idOrdenar" class="d-block " style="margin-top: 5px;"> Ordenar por: </label>
+        <select id="idOrdenar" class="form-select w-auto d-flex" >
+          <option selected> Precio</option>
+          
+        </select>
+      </div> 
+
+      <div class="col-3 d-flex  d-lg-none">
+        <button class="bg-success text-white navbar-toggler w-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="bi bi-funnel-fill"></i>
+        </button>
+        <div class="offcanvas offcanvas-end  text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: rgb(122, 226, 165);">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Filtro</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body overflow-auto">
+
+            <!-- Menu de filtro -->
+            <!-- Switch -->
+            <div class="form-check form-switch m-2">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked style="background-color: darkolivegreen;">
+              <label class="form-check-label" for="flexSwitchCheckChecked">Nuevo</label>
+            </div>
+
+            
+            <!-- Marcas -->
+            <fieldset title="Marca" class="m-2 border p-2">
+             <legend>Marca</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Samsung <span class="badge bg-secondary rounded-pill px-2">15</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Huawei <span class="badge bg-secondary rounded-pill px-2">10</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Nokia <span class="badge bg-secondary rounded-pill px-2">56</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  iPhone <span class="badge bg-secondary rounded-pill px-2">4</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Xiaomi <span class="badge bg-secondary rounded-pill px-2">4</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <!--  Sistemas -->
+            <fieldset title="Marca" class="m-2 border p-2">
+              <legend class="form-label">Sistema</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Android <span class="badge bg-secondary rounded-pill px-2">15</span>
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Windows <span class="badge bg-secondary rounded-pill px-2">10</span>
+                </label>
+              </div>
+        
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Ios <span class="badge bg-secondary rounded-pill px-2">56</span>
+                </label>
+              </div>
+
+            </fieldset>
+
+            <!-- Pantallas-->
+            <fieldset title="Marca" class="m-2 border p-2">
+              <legend class="form-label">Pantalla</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  6.0
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  5.5
+                </label>
+              </div>
+      
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  5
+                </label>
+              </div>
+
+            </fieldset>
+
+            
+          </div>
+        </div>
+      </div>
+
+     
+          
+       
+      
+
+    </div>
+
+      <!-- fila3 -->
+      <div class="row d-none d-lg-flex">
+        <div class="col-6 col-lg-3 d-inline-block">
+          <div class="card w-100 h-100" style="width: 17rem;">
+            <a href="Anuncio_Celular.html">
+                 <img src="iphone-rosa-.jpg" class="card-img-top" alt="iphone-rosa">
+            </a>
+            <div class="card-body">
+              <h2 class="text-center">$132</h2>
+              <p class="card-text text-center">Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram, Sólo Banda Tigo, Nuevo</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-6 col-lg-3 d-inline-block">
+          <div class="card w-100 h-100" style="width: 17rem;">
+            <a href="Anuncio_Celular.html">
+                 <img src="iphone-rosa-.jpg" class="card-img-top" alt="iphone-rosa">
+            </a>
+            <div class="card-body">
+              <h2 class="text-center">$132</h2>
+              <p class="card-text text-center">Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram, Sólo Banda Tigo, Nuevo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 d-inline-block">
+          <div class="card w-100 h-100" style="width: 17rem;">
+            <a href="Anuncio_Celular.html">
+                 <img src="iphone-rosa-.jpg" class="card-img-top" alt="iphone-rosa">
+            </a>
+            <div class="card-body">
+              <h2 class="text-center">$132</h2>
+              <p class="card-text text-center">Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram, Sólo Banda Tigo, Nuevo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 d-inline-block">
+          <div class="card w-100 h-100" style="width: 17rem;">
+            <a href="Anuncio_Celular.html">
+                 <img src="iphone-rosa-.jpg" class="card-img-top" alt="iphone-rosa">
+            </a>
+            <div class="card-body">
+              <h2 class="text-center">$132</h2>
+              <p class="card-text text-center">Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram, Sólo Banda Tigo, Nuevo</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- fila 4 de la tabla-->
+      <div class="row d-lg-flex">
+        <div class="col-6 col-lg-3 d-inline-block" style=" margin-right: 0px;">
+          <div class="card w-100 h-100" style="width: 17rem; margin-top: 5px; ">
+            <a href="Anuncio_Celular.html">
+                 <img src="iphone-rosa-.jpg" class="card-img-top" alt="iphone-rosa">
+            </a>
+            <div class="card-body">
+              <h2 class="text-center">$800</h2>
+              <p class="card-text text-center">Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram, Sólo Banda Tigo, Nuevo</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-6 col-lg-3 d-inline-block">
+          <div class="card w-100 h-100" style="width: 17rem; margin-top: 5px;">
+            <a href="Anuncio_Celular.html">
+                 <img src="iphone-rosa-.jpg" class="card-img-top" alt="iphone-rosa">
+            </a>
+            <div class="card-body">
+              <h2 class="text-center">$132</h2>
+              <p class="card-text" style="text-align: center;">Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram, Sólo Banda Tigo, Nuevo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 d-inline-block">
+          <div class="card w-100 h-100" style="width: 17rem; margin-top: 5px;">
+            <a href="Anuncio_Celular.html">
+                 <img src="iphone-rosa-.jpg" class="card-img-top" alt="iphone-rosa">
+            </a>
+            <div class="card-body">
+              <h2 class="text-center">$132</h2>
+              <p class="card-text text-center">Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram, Sólo Banda Tigo, Nuevo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 d-inline-block">
+          <div class="card w-100 h-100" style="width: 17rem; margin-top: 5px;">
+            <a href="Anuncio_Celular.html">
+                 <img src="iphone-rosa-.jpg" class="card-img-top" alt="iphone-rosa">
+            </a>
+            <div class="card-body">
+              <h2 class="text-center">$132</h2>
+              <p class="card-text text-center">Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de Ram, Sólo Banda Tigo, Nuevo</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Paginacion Inferior-->
+      <nav aria-label="Page navigation example" class="my-4">
+        <ul class="pagination ">
+          <li class="page-item" style="width: 30px;">
+            <a class="btn btn-success" href="#" aria-label="Previous">
+              <span aria-hidden="true">&lsaquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="btn btn-outline-secondary" style="width: 30px;"  href="#">1</a></li>
+          <li class="page-item"><a class="btn btn-outline-secondary" style="width: 30px;" href="#">2</a></li>
+          <li class="page-item"><a class="btn btn-outline-secondary" style="width: 30px;" href="#">3</a></li>
+          <li class="page-item"><a class="btn btn-outline-secondary" style="width: 30px;" href="#">4</a></li>
+          <li class="page-item"><a class="btn btn-outline-secondary" style="width: 30px;" href="#">5</a></li>
+          <li class="page-item"><a class="btn btn-outline-secondary" style="width: 30px;" href="#">6</a></li>
+          <li class="page-item"><a class="btn btn-outline-secondary" style="width: 30px;" href="#">7</a></li>
+          <li class="page-item"><a class="btn btn-outline-secondary" style="width: 30px;" href="#">8</a></li>
+          <li class="page-item">
+            <a class="btn btn-success" href="#" aria-label="Next" >
+              <span aria-hidden="true">&rsaquo;</span>
+            </a>
+          </li>
+          <div class="mx-5">
+            <label for="idSelectArticulos" class="d-none d-lg-inline">Artículos por pagina:</label>
+            <select id="idSelectArticulos" class="form-select w-auto d-none d-lg-inline" >
+              <option selected>25</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+        </ul>
+
+      </nav>
+      
+    </section>
+
+  </main>
+</div>
+
+
+
+
+
+
+
+
+  
+  
+  <!-- Bootstrap JS  -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  
+  
+</body>
+</html>
