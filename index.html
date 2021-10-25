@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Estilos generales -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center w-100">
+                    <button href="#" class="btn btn-warning d-flex d-lg-none p-2 me-3" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <ion-icon class="fs-3" name="menu"></ion-icon>
+                    </button>
+                    <a class="d-none d-lg-flex me-3" href="index.html">
+                        <img src="img/logo.png" width="142" alt="Cartzilla">
+                    </a>
+                    <div class="input-group mx-lg-3">
+                        <input class="form-control rounded-end ps-3 pe-5 py-2" type="text" placeholder="Search for products">
+                        <ion-icon class="position-absolute top-50 end-0 translate-middle-y me-3" name="search"></ion-icon>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <a class="d-flex my-4 d-lg-none" href="index.html">
+                        <img src="img/logo.png" width="142" alt="Logo">
+                    </a>
+                    <div class="navbar-nav">
+                        <span class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </span>
+                        <span class="nav-item d-lg-none">
+                            <a class="nav-link" href="./nuevo-anuncio.html">Nuevo anuncio</a>
+                        </span>
+                        <span class="nav-item d-lg-none">
+                            <a class="nav-link" href="#">Carrito</a>
+                        </span>
+                        <span class="nav-item">
+                            <a class="nav-link" href="estadisticas.html">Estadísticas</a>
+                        </span>
+                    </div>
+                    <div class="navbar-tool d-none d-lg-flex ms-5">
+                        <a class="tool-link d-flex p-2 rounded-circle bg-light" href="#">
+                            <ion-icon class="fs-5" name="bag"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="mt-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <aside class="col-lg-3 px-lg-5">
+                        <div class="d-flex justify-content-end d-lg-none mb-2">
+                            <button href="#" class="btn btn-warning d-flex p-2" data-bs-toggle="collapse" data-bs-target="#categories-menu" aria-controls="categories-menu" aria-expanded="false" aria-label="Toggle navigation">
+                                <ion-icon class="fs-3" name="filter"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="widget collapse d-lg-block" id="categories-menu">
+                            <h3 class="widget-title mb-3">Brands</h3>
+                            <div class="widget-list p-0 m-0">
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Apple">
+                                        <label class="form-check-label widget-item-label" for="Apple">Apple</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">425</span>
+                                </a>
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Huawei">
+                                        <label class="form-check-label widget-item-label" for="Huawei">Huawei</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">15</span>
+                                </a>
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Nokia">
+                                        <label class="form-check-label widget-item-label" for="Nokia">Nokia</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">18</span>
+                                </a>
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Samsung">
+                                        <label class="form-check-label widget-item-label" for="Samsung">Samsung</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">103</span>
+                                </a>
+                                <a class="widget-item d-flex justify-content-between align-items-center mb-1">
+                                    <div class="form-check">
+                                        <input class="form-check-input widget-item-checkbox me-2" type="checkbox" id="Xiaomi">
+                                        <label class="form-check-label widget-item-label" for="Xiaomi">Xiaomi</label>
+                                    </div>
+                                    <span class="widget-item-text ms-3 text-muted">27</span>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="col-lg-9">
+                        <div class="row mt-4 mt-lg-0">   
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card border-0 card-product">
+                                    <img src="img/1.jpg" class="rounded" alt="Product">
+                                    <div class="card-body card-body-product">
+                                        <a class="product-category d-block mb-1" href="#">Headphones</a>
+                                        <h3 class="product-title mb-3">
+                                            <a href="anuncio.html">Wireless Bluetooth Headphones</a>
+                                        </h3>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="product-price">
+                                                <span>$198.<small>00</small></span>
+                                            </div>
+                                            <div class="product-star-rating d-flex align-items-center">
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card border-0 card-product">
+                                    <img src="img/2.jpg" class="rounded" alt="Product">
+                                    <div class="card-body card-body-product">
+                                        <a class="product-category d-block mb-1" href="#">Computers</a>
+                                        <h3 class="product-title mb-3">
+                                            <a href="#">AirPort Extreme Base Station</a>
+                                        </h3>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="product-price">
+                                                <span>$98.<small>50</small></span>
+                                            </div>
+                                            <div class="product-star-rating d-flex align-items-center">
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card border-0 card-product">
+                                    <img src="img/3.jpg" class="rounded" alt="Product">
+                                    <div class="card-body card-body-product">
+                                        <a class="product-category d-block mb-1" href="#">Wearable Electronics</a>
+                                        <h3 class="product-title mb-3">
+                                            <a href="#">Smart Watch Series 5, Aluminium</a>
+                                        </h3>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="product-price">
+                                                <span>$349.<small>99</small></span>
+                                            </div>
+                                            <div class="product-star-rating d-flex align-items-center">
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card border-0 card-product">
+                                    <img src="img/4.jpg" class="rounded" alt="Product">
+                                    <div class="card-body card-body-product">
+                                        <a class="product-category d-block mb-1" href="#">Smart Home</a>
+                                        <h3 class="product-title mb-3">
+                                            <a href="#">Smart Speaker with Voice Control</a>
+                                        </h3>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="product-price">
+                                                <span>$49.<small>99</small></span>
+                                            </div>
+                                            <div class="product-star-rating d-flex align-items-center">
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card border-0 card-product">
+                                    <img src="img/5.jpg" class="rounded" alt="Product">
+                                    <div class="card-body card-body-product">
+                                        <a class="product-category d-block mb-1" href="#">Wearable Electronics</a>
+                                        <h3 class="product-title mb-3">
+                                            <a href="#">Fitness GPS Smart Watch</a>
+                                        </h3>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="product-price">
+                                                <span>$317.<small>40</small></span>
+                                            </div>
+                                            <div class="product-star-rating d-flex align-items-center">
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star-half"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card border-0 card-product">
+                                    <img src="img/6.jpg" class="rounded" alt="Product">
+                                    <div class="card-body card-body-product">
+                                        <a class="product-category d-block mb-1" href="#">Smartphones</a>
+                                        <h3 class="product-title mb-3">
+                                            <a href="#">Popular Smartphone</a>
+                                        </h3>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="product-price">
+                                                <span>$965.<small>00</small></span>
+                                            </div>
+                                            <div class="product-star-rating d-flex align-items-center">
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card border-0 card-product">
+                                    <img src="img/7.jpg" class="rounded" alt="Product">
+                                    <div class="card-body card-body-product">
+                                        <a class="product-category d-block mb-1" href="#">TV, Audio & Video</a>
+                                        <h3 class="product-title mb-3">
+                                            <a href="#">Smart TV LED 49’’ Ultra HD</a>
+                                        </h3>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="product-price">
+                                                <span>$517.<small>75</small></span>
+                                            </div>
+                                            <div class="product-star-rating d-flex align-items-center">
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon name="star-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                                <div class="card border-0 card-product">
+                                    <img src="img/8.jpg" class="rounded" alt="Product">
+                                    <div class="card-body">
+                                        <a class="product-category mb-1" href="#">Computers</a>
+                                        <h3 class="product-title mb-3">
+                                            <a href="#">Convertible 2-in-1 Laptop</a>
+                                        </h3>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="product-price">
+                                                <span>$412.<small>00</small></span>
+                                            </div>
+                                            <div class="product-star-rating d-flex align-items-center">
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star"></ion-icon>
+                                                <ion-icon class="active" name="star-half"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <nav class="d-flex justify-content-between mt-5">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link d-flex align-items-center" href="#"><ion-icon class="me-2" name="chevron-back-outline"></ion-icon>Prev</a></li>
+                                </ul>
+                                <ul class="pagination">
+                                    <li class="page-item d-sm-none mx-1"><a class="page-link" href="#">1 / 5</a></li>
+                                    <li class="page-item d-none d-sm-flex mx-1"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item d-none d-sm-flex mx-1"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item d-none d-sm-flex mx-1"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item d-none d-sm-flex mx-1"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item d-none d-sm-flex mx-1"><a class="page-link" href="#">5</a></li>
+                                </ul>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link d-flex align-items-center" href="#">Next<ion-icon class="ms-2" name="chevron-forward-outline"></ion-icon></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        -->
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
