@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda CellPhone</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a2136c3958.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <!--Muestra el boton Responsive-->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" color="dark">
+            <i class="fas fa-bars"  ></i>
+        </label>
+               
+   
+
+        <!--Menu izquierdo (logo cellPhone )-->
+        <div class="container-izquierdo">
+            <a href="#" class="enlace"  style="text-decoration: none;"> 
+                <div class="container-logo1">
+                    <ion-icon name="id-card" class="icono_logo" color="dark"></ion-icon> 
+                    <p class="text_logo">
+                        Tienda CellPhone
+                    </p>
+                </div> 
+
+                <div class="input-group">
+                    <form class="d-flex"><!--Opcion Buscar -->
+                        <input class="form-control me-2"  type="search" placeholder="Search" aria-label="Search"></input>
+                            <button type="button" class="btn_search btn-dark">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                    </form>
+                </div>
+            </a>
+        </div>
+         <!--Menu derecho (y creacion menu desplegable)-->
+        <ul>
+            <li>
+                <br>
+            </li>
+            <li>
+                <a href="#" style="text-decoration: none;">
+                    <div class="block_logo">
+                        <ion-icon name="id-card" class="log_cell" color="light"></ion-icon> 
+                        <p class="block_text">
+                            Tienda CellPhone
+                        </p>
+                    </div>
+                </a> 
+            </li>
+            <li><a class="active" href="#" style="text-decoration: none;">Inicio</a></li>
+            <li class="cel-anuncio"><a href="#" style="text-decoration: none;">Nuevo Anuncio</a></li>
+            <li class="cel-carrito"><a href="#" style="text-decoration: none;">Carrito</a></li>
+            <li><a href="#" style="text-decoration: none;">Estadistica</a></li>
+            <li><a href="#" style="text-decoration: none;"><ion-icon name="add-circle" class="agregar" color="dark"></ion-icon></a></li>
+            <li><a href="#" style="text-decoration: none;"><ion-icon name="cart" class="carrito" color="dark" ></ion-icon></a></li>     
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="row-anuncio g-0" style="display: flex;">
+        <div class="col-sm-option col-md-8" >
+            
+            <div id="carouselImg" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <center><img src="./img/SP705-iphone_6-mul.png" class="d-block w-10" alt="25px"></center>
+                  </div>
+                  <div class="carousel-item">
+                    <center><img src="./img/iPhone6_03.jpg" class="d-block w-10" alt="12px"></center>
+                  </div>
+                  <div class="carousel-item">
+                    <center><img src="./img/iph.png" class="d-block w-10" alt="12px"></center>
+                  </div>
+                
+                </div>
+                <button class="carousel-control-prev" style="width: 55px;"  type="button" data-bs-target="#carouselImg" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" style="width: 55px;" type="button" data-bs-target="#carouselImg" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"> </span>
+                </button>
+              </div>
+            
+
+        </div>
+        <!--informacion-->
+        <div class="col-6 col-md-4">
+            <div class="card" id="card-informacion">
+                <div class="card-body">
+                    <p>
+                        iphone de 8 pulgada, 64 GB internos, 
+                        2Gb de ram, solo Banda Tigo, Nuevo
+                    </p>
+                                  
+
+                  <p style="font-size: 25px; font-style: bold;"> <br> $ 235.00</p>
+                    <center>
+                        <button type="button" class="btn btn-outline-warning">Comprar</button>
+                    </center>
+                    <br>
+                    <br>
+                  <div class="card" id="informacion">
+                    <div class="card-body-informacion" id="vendedor">
+                        <p><center>
+                            vendedor: Juan Perez &nbsp; &nbsp;Telefono: **** - ****
+                        </center>
+                        </p>
+                    </div>
+                  </div>
+            
+                </div>
+              </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <center><p style="font-size: 25px; font-style: bold;">Descripcion</p></center>
+    <div class="row-descripcion " id="descripcion" style="display: flex;">
+        <center>
+
+        <ul style="display: flex;">
+            <li>
+                <div class="card" id="descripcion-general">
+                    Estado: Nuevo<br>
+                    Marca: iphone<br>
+                    Modelo: 6 plus<br>
+                    pantalla: 7 pulgada<br>
+                    Sistema: Ios<br>
+                    Rom: 64 GB<br>
+                    Ram: 2 GB<br>
+                </div>
+            </li>
+            <li>
+                <div class="car" id="infoDesc">
+                    <div class="card" id="descripcion-general">
+                        Telefono es muy buenas condiciones, tiene dos camaras, 
+                        <br> la caja esta abierta, con muy poco uso, practicamente nuevo <br>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        </center>
+        
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script > 
+    <script  nomodule  src = "https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js " > </script >
+    
+</body>
+</html>
