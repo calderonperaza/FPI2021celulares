@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cellphone Store</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Estilo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper red darken-4">
+                    <a href="index.html" class="brand-logo hide-on-med-and-down"><i
+                            class="material-icons">store</i>Cellphone Store</a>
+                    <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="Estadisticas.html">Estadisticas</a></li>
+                        <li class="active"><a class=" red darken-4 btn modal-trigger" href="#modal1"><i
+                                    class="material-icons">add</i></a></li>
+                        <li><a href="Carrito.html"><i class="material-icons">add_shopping_cart</i></a></li>
+                    </ul>
+                    <form>
+                        <div class="input-field right">
+                            <input placeholder="Buscar" id="search" type="search">
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Contenido principal-->
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="descarga.jfif"></a>
+        <a class="carousel-item" href="#two!"><img src="descarga.jfif"></a>
+        <a class="carousel-item" href="#three!"><img src="descarga.jfif"></a>
+        <a class="carousel-item" href="#four!"><img src="descarga.jfif"></a>
+        <a class="carousel-item" href="#five!"><img src="descarga.jfif"></a>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Titulo</label>
+            </div>
+            <div class="input-field col s12">
+                <input  id="precio" type="text" class="validate">
+                <label for="precio">Precio</label>
+              </div>
+              <div class="input-field col s6">
+                <input  id="vendedor" type="text" class="validate">
+                <label for="vendedor">Vendedor</label>
+              </div>
+              <div class="input-field col s6">
+                <input  id="telefono" type="text" class="validate">
+                <label for="telefono">Telefono</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="descripcion" class="materialize-textarea"></textarea>
+                <label for="descripcion">Descripcion</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="detalles" class="materialize-textarea"></textarea>
+                <label for="detalles">Detalles</label>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <a class="btn-small red " href="index.html" id="cancelar">Cancelar</a>
+        <a class="btn-small red right" href="Carrito.html" id="crear">Crear Anuncio</a>
+    </div>
+
+
+
+    <!--sidenav pagina principal -->
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="index.html"><i class="material-icons">store</i>Cellphone Store</a> </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Nuevo_Anuncio.html">Nuevo Anuncio</a></li>
+        <li><a href="Estadisticas.html">Estadisticas</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
+    </ul>
+    <main>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s6 m6">
+                            <div class="card white">
+                                <div class="card-content white-text">
+                                    <span class="card-title">Nuevo Anuncio</span>
+                                    <form action="#">
+                                        <label>Estado:</label><br>
+                                        <label>
+                                            <input name="estado" type="radio" />
+                                            <span>Nuevo</span>
+                                        </label>
+                                        <label>
+                                            <input name="estado" type="radio" />
+                                            <span>Usado</span>
+                                        </label>
+                                        <div class="input-field">
+                                            <label for="marca">Marca</label>
+                                            <input id="marca" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="pantalla">Pantalla</label>
+                                            <input id="pantalla" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="rom">ROM</label>
+                                            <input id="rom" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field">
+                                            <label for="ram">RAM</label>
+                                            <input id="ram" type="text" class="validate">
+                                        </div>
+                                        <div class="input-field">
+                                            <select>
+                                                <option value="" disabled selected>Sistema Operativo</option>
+                                                <option value="1">IOS</option>
+                                                <option value="2">Andriod</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col s6 m6">
+                            <div class="input-field">
+                                <label for="titulo">Titulo breve</label>
+                                <input id="titulo" type="text" class="validate">
+                            </div>
+                            <div class="input-field">
+                                <label for="vendedor">Vendedor</label>
+                                <input id="vendedor" type="text" class="validate">
+                            </div>
+                            <div class="input-field">
+                                <label for="telefono">Telefono</label>
+                                <input id="telefono" type="text" class="validate">
+                            </div>
+                            <div class="input-field">
+                                <label for="descripcion">Descripcion</label>
+                                <textarea id="descripcion" class="materialize-textarea"></textarea>
+                            </div>
+                            <div class="input-field">
+                                <label for="precio">Precio</label>
+                                <input id="precio" type="text" class="validate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 xl12">
+                            <div class="card white">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Imagenes</span>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col s2 m2 left">
+                                                <a class="btn-flat"><i class="material-icons">control_point</i></a>
+                                                <a class="btn-flat"><i class="material-icons">clear</i></a>
+                                            </div>
+                                            <div class="col s2 m4 center">
+                                                <table>
+                                                    <thead>
+                                                      <tr>
+                                                          <th>N</th>
+                                                          <th>Tamaño</th>
+                                                          <th>Tipo</th>
+                                                      </tr>
+                                                    </thead>                                            
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>1</td>
+                                                        <td>145kb</td>
+                                                        <td>png</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>2</td>
+                                                        <td>145kb</td>
+                                                        <td>jpg</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>3</td>
+                                                        <td>145kb</td>
+                                                        <td>jpg</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                            <div class="col s2 m4 right">
+                                                <img class="materialboxed" width="75" height="100" src="descarga.jfif">
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+    </script>
+</body>
+
+</html>

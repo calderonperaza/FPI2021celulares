@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cellphone Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="Estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="nav-wrapper red darken-4">
+                    <a href="index.html" class="brand-logo hide-on-med-and-down"><i
+                            class="material-icons">store</i>Cellphone Store</a>
+                    <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="index.html">Inicio</a></li>
+                        <li><a href="Estadisticas.html">Estadisticas</a></li>
+                        <li><a class="red darken-4 btn modal-trigger" href="#modal1">
+                                <i class="material-icons">add</i></a></li>
+                        <li><a href="Carrito.html"><i class="material-icons">add_shopping_cart</i></a></li>
+                    </ul>
+                    <form>
+                        <div class="input-field right">
+                            <input placeholder="Buscar" id="search" type="search">
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--contenido principal-->
+    <div class="container" id="contenedor">
+        <div class="row">
+            <!--Filtros-->
+            <div class="col m4" id="filtro-sidenav">
+                <!--sidenav filtros -->
+                <ul class="sidenav" id="slide-out">
+                    <li>
+                        <!-- Switch -->
+                        <div class="switch">
+                            <label>
+                                Nuevo
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <!--Cards filtros Marca-->
+                        <div class="card white">
+                            <div class="card-content black-text">
+                                <span class="card-title">Marca</span>
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Samsung</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Huawei</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Nokia</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>IPhone</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Xiaomi</span>
+                                        </label>
+                                    </p>
+                                </form>
+                            </div>
+                            <!--Cards filtros Sistema-->
+                            <div class="card-content black-text">
+                                <span class="card-title">Sistema</span>
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Andrioid</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>Windows</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>IOS</span>
+                                        </label>
+                                    </p>
+                                </form>
+                            </div>
+                            <!--Cards filtros Pantalla-->
+                            <div class="card-content black-text">
+                                <span class="card-title">Pantalla</span>
+                                <form action="#">
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>6.0</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>5.5</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span>5</span>
+                                        </label>
+                                    </p>
+                                </form>
+                            </div>
+
+                    </li>
+                </ul>
+                <div class="hide-on-med-and-down" id="tarjetafiltro">
+                    <!-- Switch -->
+                    <div class="switch">
+                        <label>
+                            Nuevo
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                    <!--Cards filtros Marca-->
+                    <div class="card-panel black-text left">
+                        <span class="card-title">Marca</span>
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Samsung</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Huawei</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Nokia</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>IPhone</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Xiaomi</span>
+                                </label>
+                            </p>
+                        </form>
+                    </div>
+                    <!--Cards filtros Sistema-->
+                    <div class="card-panel black-text left">
+                        <span class="card-title">Sistema</span>
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Andrioid</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>Windows</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>IOS</span>
+                                </label>
+                            </p>
+                        </form>
+                    </div>
+                    <!--Cards filtros Pantalla-->
+                    <div class="card-panel black-text left">
+                        <span class="card-title">Pantalla</span>
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>6.0</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>5.5</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span>5</span>
+                                </label>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col m9">
+                <div class="container">
+                    <div class="row">
+                        <div class="input-field col hide-on-small-only">
+                            <input id="precio" type="number" class="validate small">
+                            <label for="precio">Precio:</label>
+                        </div>
+                        <div class="input-field col hide-on-small-only">
+                            <input id="hasta" type="number" class="validate small">
+                            <label for="hasta">Hasta:</label>
+                        </div>
+                        <div class="col ">
+                            <label>Ordenar por:</label>
+                            <select>
+                                <option value="0">Precio</option>
+                                <option value="1">Fecha</option>
+                            </select>
+                        </div>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger red btn hide-on-med-and-up" id="filtrosbtn">
+                            <i class="material-icons">filter_list</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col m4 s6 center">
+                        <div class="card shop-products">
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action white-text red action-2">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action red action-2  white-text">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m4 s6 center">
+                        <div class="card shop-products">
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action white-text red action-2">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action red action-2  white-text">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m4 s6 center">
+                        <div class="card shop-products">
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action white-text red action-2">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action red action-2  white-text">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m4 s6 center">
+                        <div class="card shop-products">
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action white-text red action-2">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action red action-2  white-text">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m4 s6 center">
+                        <div class="card shop-products">
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action white-text red action-2">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action red action-2  white-text">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m4 s6 center">
+                        <div class="card shop-products">
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action white-text red action-2">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                            <div class="card-image">
+                                <img src="descarga.jfif" class="shop-product-img">
+                            </div>
+                            <div class="card-content red darken-2 white-text">
+                                <p>
+                                    <span>$132.00</span>
+                                    <span>Samsung J6, Pantalla de 5.5 </span>
+                                    <span>64GB, 2GB Ram, Color Negro</span>
+                                </p>
+                            </div>
+                            <div class="card-action red action-2  white-text">
+                                <a href="Un_Anuncio.html">Ver ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 center" id="paginador">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active red"><a href="#!">1</a></li>
+                            <li class="waves-effect "><a href="#">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col m6 hide-on-small-only right">
+                        <label>
+                                Articulos por pagina:
+                        <a class='dropdown-trigger btn-small red text-accent-1 white-text' href='#' data-target='dropdown1'>12</a>
+                        </label>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">9</a></li>
+                            <li><a href="#!">6</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a href="#!">12</a></li>
+                            <li><a href="#!">15</a></li>
+                            <li><a href="#!">18</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--cierre body-->
+    <!--sidenav pagina principal -->
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="index.html"><i class="material-icons">store</i>Cellphone Store</a> </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Nuevo_Anuncio.html">
+                Nuevo Anuncio</a></li>
+        <li><a href="Estadisticas.html">Estadisticas</a>
+        </li>
+        <li><a href="Carrito.html">Carrito</a></li>
+    </ul>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m7">
+                        <div class="card white">
+                            <div class="card-content black-text">
+                                <span class="card-title">Nuevo Anuncio</span>
+                                <form action="#">
+                                    <label>Estado:</label><br>
+                                    <label>
+                                        <input name="estado" type="radio" />
+                                        <span>Nuevo</span>
+                                    </label>
+                                    <label>
+                                        <input name="estado" type="radio" />
+                                        <span>Usado</span>
+                                    </label>
+                                    <div class="input-field">
+                                        <label for="marca">Marca</label>
+                                        <input id="marca" type="text" class="validate">
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="pantalla">Pantalla</label>
+                                        <input id="pantalla" type="text" class="validate">
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="rom">ROM</label>
+                                        <input id="rom" type="text" class="validate">
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="ram">RAM</label>
+                                        <input id="ram" type="text" class="validate">
+                                    </div>
+                                    <div class="input-field">
+                                        <select>
+                                            <option value="" disabled selected>Sistema Operativo</option>
+                                            <option value="1">IOS</option>
+                                            <option value="2">Andriod</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col s12 m5">
+                        <div class="input-field">
+                            <label for="titulo">Titulo breve</label>
+                            <input id="titulo" type="text" class="validate">
+                        </div>
+                        <div class="input-field">
+                            <label for="vendedor">Vendedor</label>
+                            <input id="vendedor" type="text" class="validate">
+                        </div>
+                        <div class="input-field">
+                            <label for="telefono">Telefono</label>
+                            <input id="telefono" type="text" class="validate">
+                        </div>
+                        <div class="input-field">
+                            <label for="descripcion">Descripcion</label>
+                            <textarea id="descripcion" class="materialize-textarea"></textarea>
+                        </div>
+                        <div class="input-field">
+                            <label for="precio">Precio</label>
+                            <input id="precio" type="text" class="validate">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="card white">
+                            <div class="card-content black-text">
+                                <span class="card-title">Imagenes</span>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col s2 m2 left">
+                                            <a class="btn-flat"><i class="material-icons">control_point</i></a>
+                                            <a class="btn-flat"><i class="material-icons">clear</i></a>
+                                        </div>
+                                        <div class="col s2 m4 center">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>N</th>
+                                                        <th>Tamaño</th>
+                                                        <th>Tipo</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>145kb</td>
+                                                        <td>png</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>145kb</td>
+                                                        <td>jpg</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>145kb</td>
+                                                        <td>jpg</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col s2 m4 right">
+                                            <img class="materialboxed" width="75" height="100" src="descarga.jfif">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn modal-close red" id="cancelar"><i class="material-icons left">cancel</i>Cancelar</a>
+                <a class="btn modal-close red"><i class="material-icons right">save</i>Guardar</a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+.modal {
+   max-height: 80% !important;
+   max-width: 75%;
+
+ }
+
+#inicio {
+   position: fixed;
+   margin-bottom: 0%;
+   padding-bottom: 0%;
+   margin-left: 40%;
+   margin-right: 50%;
+}
+#comprar {
+   position: fixed;
+   margin-bottom: 0%;
+   padding-bottom: 0%;
+   margin-left: 50%;
+   margin-right: 23%;
+}
+.container {
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
+   padding-right: 0px;
+   margin-right: 0px !important;
+   width: 100%;
+}
+
+#contenedor_carrito {
+   margin-top: 200px;
+   max-height: 100%;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   text-align:center;
+}
+
+#filtro-sidenav {
+   padding: 0;
+   height: 100%;
+   margin-right: 0px;
+   width: 20%;
+}
+a.des {
+   color: black;
+   font-size: 85%;
+}
+div.card.shop-products {
+   height: 50%;    
+   margin-bottom: 0px;    
+}
+
+#contenedor {
+   padding-left: 1%;
+}
+      
+    
+img.shop-product-img {    
+   height: 25%;
+    
+}
+
+    
+div.card-action.red.action-2.white-text {
+   background-color: royalblue;
+   color: white;
+   height: 50%;
+
+}
+
+#filtrosbtn {
+   margin-top: 15px;
+   margin-left: 25px;
+}
+
+div.card-conten.red.darken-2.white-text {
+   height: 50%;
+}
+
+div.col.l2.center {
+   width: 25%;
+ }
+
+#slide-out{
+   width: 45%;
+   height: 100%;
+}
+
+div.hide-on-med-and-down {
+   width: 35%;
+   height: 100%;
+}
+
+
+[id=unanuncio] {
+   height: 200px;
+}
