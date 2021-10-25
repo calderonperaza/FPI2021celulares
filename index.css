@@ -1,0 +1,29 @@
+*{
+    border: 0%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+	margin: 0px;
+	max-width: 100%;
+    width: 100%; 
+}
+
+.thumnaild {
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height: 15rem;
+    object-fit: scale-down;
+}
+
+.correpcion{
+    display: inline !important;
+}
+
+.carrusel {
+    height: 1rem;
+}
+
+.ajustetitulo{
+    margin: 1rem;
+}

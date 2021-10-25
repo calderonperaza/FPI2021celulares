@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Nuevo</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s2 m3">
+                        <a href="#" class="brand-logo hide-on-med-and-down"><i class="material-icons">store_mall_directory</i>Primo's Store</a>
+                        <a href="#" data-target="sidebar" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a>
+                    </div>
+                    <div class="col s10 m5">
+                        <form>
+                            <div class="input-field">
+                                <input class="correpcion" id="search" type="search" required placeholder="Buscar productos">
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col m4 hide-on-med-and-down">
+                        <ul class="right">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="estadistica.html">Estadisticas</a></li>
+                            <li><a href="nuevo.html"><i class="material-icons">add</i></a></li>
+                            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <ul class="sidenav" id="sidebar">
+        <li><i class="material-icons">store_mall_directory</i>Primo's Store</li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuevo.html">Nuevo anuncio</a></li>
+        <li><a href="#">Carrito</a></li>
+        <li><a href="estadistica.html">Estadisticas</a></li>
+    </ul>
+
+    <h3 class="center">Nuevo anuncio</h3>
+    <a class="btn green"><i class="material-icons left">save</i>Guardar</a>
+    <a class="btn red"><i class="material-icons left">cancel</i>Cancelar</a>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content">
+                    <form action="#">
+                        <div class="row">
+                            <p class="col">Estado: </p>
+                            <p class="col">
+                                <label>
+                                    <input name="estado" type="radio" />
+                                    <span>Nuevo</span>
+                                </label>
+                            </p>
+                            <p class="col">
+                                <label>
+                                    <input name="estado" type="radio" />
+                                    <span>Usado</span>
+                                </label>
+                            </p>
+
+                            <div class="col s12">
+                                Marca:
+                                <div class="input-field inline">
+                                    <input id="marca" type="text" class="validate">
+                                </div>
+                            </div>
+
+
+                            <div class="col s12">
+                                Modelo:
+                                <div class="input-field inline">
+                                    <input id="modelo" type="text" class="validate">
+                                </div>
+                            </div>
+
+
+                            <div class="col s12">
+                                Pantalla:
+                                <div class="input-field inline">
+                                    <input id="pantalla" type="number" class="validate">
+                                </div>
+                            </div>
+
+
+                            <div class="col s12">
+                                Sistema:
+                                <div class="input-field inline">
+                                    <select>
+                                        <option value="1">IOS</option>
+                                        <option value="2">Android</option>
+                                        <option value="3">Windows</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="col s12 m4">
+            <div class="card">
+                <form action="#">
+                    <div class="row">
+                        <div class="col s12 center">
+                            <br>
+                            <a class="btn"><i class="material-icons left">add</i>Agregar</a>
+                            <a class="btn"><i class="material-icons left">remove</i>Quitar</a>
+                        </div>
+                        <div class="col s4">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>N</th>
+                                        <th>Tamaño</th>
+                                        <th>Tipo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>128 Kb</td>
+                                        <td>jpg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>128 Kb</td>
+                                        <td>jpg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>128 Kb</td>
+                                        <td>jpg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>128 Kb</td>
+                                        <td>jpg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col s8">
+                            <br>
+                            <img class="thumnaild" src="imagenes/a32.png" alt="Imagen">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-content">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col s12">
+                                Titulo
+                                <div class="input-field inline">
+                                    <input id="titulo" type="text" class="validate">
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                Vendedor
+                                <div class="input-field inline">
+                                    <input id="vendedor" type="text" class="validate">
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                Telefono
+                                <div class="input-field inline">
+                                    <input id="telefono" type="tel" class="validate">
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                Descripcion
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            </div>
+                            <div class="col s12">
+                                Precio
+                                <div class="input-field inline">
+                                    <input id="telefono" type="number" class="validate">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s2 m3">
+                        <a href="#" class="brand-logo hide-on-med-and-down"><i class="material-icons">store_mall_directory</i>Primo's Store</a>
+                        <a href="#" data-target="sidebar" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a>
+                    </div>
+                    <div class="col s10 m5">
+                        <form>
+                            <div class="input-field">
+                                <input class="correpcion" id="search" type="search" required placeholder="Buscar productos">
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col m4 hide-on-med-and-down">
+                        <ul class="right">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="estadistica.html">Estadisticas</a></li>
+                            <li><a href="nuevo.html"><i class="material-icons">add</i></a></li>
+                            <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <ul class="sidenav" id="sidebar">
+        <li><i class="material-icons">store_mall_directory</i>Primo's Store</li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuevo.html">Nuevo anuncio</a></li>
+        <li><a href="#">Carrito</a></li>
+        <li><a href="estadistica.html">Estadisticas</a></li>
+    </ul>
+    <br>
+    <div class="row">
+        <!--carousel-->
+        <div class="col s12 m6">
+            <div class="carousel carousel-slider center">
+                <div class="carousel-item carrusel" href="#one!">
+                    <img src="imagenes/a32.png" alt="2">
+                </div>
+                <div class="carousel-item carrusel" href="#two!">
+                    <img src="imagenes/redminote8az_02.jpg" alt="2">
+                </div>
+                <div class="carousel-item carrusel" href="#three!">
+                    <img src="imagenes/y9.png" alt="2">
+                </div>
+                <div class="carousel-item carrusel" href="#four!">
+                    <img src="imagenes/a32.png" alt="2">
+                </div>
+            </div>
+        </div>
+
+        <!--titulo-->
+        <div class="col s12 m6">
+            <h3>Nombre del producto</h3>
+            <h4>$235.00</h4>
+            <a class="btn-large">Comprar ahora</a>
+        </div>
+
+        <div class="col s12">
+            <h3 class="center">Detalles</h3>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Especificaciones</span>
+                            <ul class="collection">
+                                <li class="collection-item">Pantalla: 6'</li>
+                                <li class="collection-item">RAM: 8GB</li>
+                                <li class="collection-item">ROM: 128GB</li>
+                                <li class="collection-item">Bateria: 4500mAh </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Descripcion</span>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
