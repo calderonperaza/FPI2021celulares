@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                   class="material-icons">search</i></a>\
                               </form>\
                         </li>\
-                        <li><a href="#">Inicio</a></li>\
-                        <li><a href="#">Estadísticas</a></li>\
-                        <li> <a class="btn-floating btn-small waves-effect waves-light color5"><i class="material-icons">add</i></a></li>\
+                        <li><a href="index.html">Inicio</a></li>\
+                        <li><a href="estadisticas.html">Estadísticas</a></li>\
+                        <li> <a href="nuevo.html" class="btn-floating btn-small waves-effect waves-light color5"><i class="material-icons">add</i></a></li>\
                         <li><a href="#"><span class="material-icons">add_shopping_cart</span></a></li>\
                       </ul>\
                     </div>\
@@ -94,11 +94,14 @@ document.addEventListener('DOMContentLoaded', function() {
     /**
      * Inicializando carrusel
      */
-     $('.carousel.carousel-slider').Carousel({
-        fullWidth: true,
-        indicators: true
-      });
-
+    // var carousel = document.querySelectorAll('carousel');
+    // if(carousel!==null){
+    //   var instancesCarousel = M.Carousel.init(carousel,{
+    //     fullWidth:true
+    //   });
+    // }
+   
+       
     /**
      * imprimiento cards
      */

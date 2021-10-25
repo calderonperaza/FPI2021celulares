@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Anuncio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar-fixed" id="nav"> 
+    </div>
+
+    <div class="row center-align">
+        <h4>Nuevo anuncio</h4>
+    </div>
+
+    <div class="row">
+        
+        <div class="col s12 m6 l5" style="margin-left: 5px;">
+            <div class="row z-depth-3 rounded0 color5 white-text">
+                <br>
+                <div class="col s12">
+                    <span class="col s4">Estado</span>
+                    <label class="col s4">
+                        <input name="group1" type="radio" />
+                        <span>Nuevo</span>
+                    </label>
+                    <label class="col s4">
+                      <input name="group1" type="radio" />
+                      <span>Usado</span>
+                    </label>
+                </div>
+                <div class="input-field col s8">
+                    <span class="col s4">Marca</span>
+                    <input id="first_name2" type="text" class="validate col s8 white-text">
+                </div>
+                <div class="input-field col s8">
+                    <span class="col s4">Model</span>
+                    <input id="first_name2" type="text" class="validate col s8 white-text">
+                </div>
+                <div class="input-field col s8">
+                    <span class="col s4">Pantalla</span>
+                    <input id="first_name2" type="text" class="validate col s8 white-text">
+                </div>
+                <div class="col s8">
+                    <span class="col s3 vertical-centro">Sistema</span>
+                    <div class="input-field col s9">
+                        <select>
+                          <option value="">Seleccionar sistema</option>
+                          <option value="Android">Android</option>
+                          <option value="ios">IOS</option>
+                          <option value="windows">Windows</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="input-field col s8">
+                    <span class="col s4">Rom</span>
+                    <input id="first_name2" type="text" class="validate col s8 white-text">
+                </div>
+                <div class="input-field col s8">
+                    <span class="col s4">RAM</span>
+                    <input id="first_name2" type="text" class="validate col s8 white-text">
+                </div>
+            </div>
+            <div class="row s12 z-depth-3 rounded0 color5 white-text">
+                <div class="col s2 vertical">
+                    <br>
+                    <div class="row" style="margin-left: 2px;">
+                        <a class="btn-floating btn-small waves-effect waves-light color0"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="row" style="margin-left: 2px;">
+                        <a class="btn-floating btn-small waves-effect waves-light color0"><i class="material-icons">remove</i></a>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <p class="row"><span class="col s4"><strong>N</strong></span><span class="col s4"><strong>Tamano</strong></span> <span class="col s4"><strong></strong></span></p>
+                    <p class="row"><span class="col s4">1</span>    <span class="col s4">145kn</span>       <span class="col s4">jpg</span></p>
+                    <p class="row"><span class="col s4">2</span>    <span class="col s4">145kn</span>       <span class="col s4">jpg</span></p>
+                    <p class="row"><span class="col s4">3</span>    <span class="col s4">145kn</span>       <span class="col s4">jpg</span></p>
+                    <p class="row"><span class="col s4">4</span>    <span class="col s4">145kn</span>       <span class="col s4">jpg</span></p>
+                </div>
+                <div class="col s4">
+                    <div class="col s12 grey right-align" style="height:210px; width:125px; margin: 5px 5px; float: right;"></div>
+                </div>
+            </div>
+        </div>
+  
+        <div class="col s12 m6 l5"> 
+            Titulo breve del anuncio
+            <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+            </div>
+            <div class="input-field col s12">
+                <span class="col s4">Vendedor</span>
+                <input id="first_name2" type="text" class="validate col s8">
+            </div>
+            <div class="input-field col s12">
+                <span class="col s4">Telefono</span>
+                <input id="first_name2" type="text" class="validate col s8">
+            </div>
+            <div class="input-field col s12">
+                Descripción
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+            </div>
+            <div class="col s12 darken-1 z-depth-2 rounded1 color5">
+                <div class="col s12 input-field inline white-text">
+                  <i class="material-icons prefix">monetization_on</i>
+                  <input id="icon_price" type="text" class="validate white-text">
+                  <label for="icon_price">Precio</label>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="col s6 vertical-centro">
+                    <a class="waves-effect waves-light btn-small green"><i class="material-icons left">save</i>Guardar</a>
+                </div> 
+                <div class="col s6 vertical-centro">
+                    <a class="waves-effect waves-light btn-small red"><i class="material-icons left">clear</i>Cancelar</a>
+                </div>  
+            </div>
+            
+        </div>
+  
+    </div>
+
+
+    <footer class="page-footer color5" id="footer">  
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
