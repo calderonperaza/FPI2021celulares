@@ -4,7 +4,6 @@
     --my-success: #E5B299;
     --my-info: #FCDEC0;
  }
-
  
  .principal-icon{
     color: var(--my-secondary);
@@ -233,17 +232,20 @@
     margin-bottom: 20px
 }
 
-.card-hover:hover{
-    transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
-    cursor: pointer
+.card-hover{
+    border: var(--my-success) 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+    transform: scale(1);
+    transition: 0.2s linear;
 }
 
-.card-hover:hover::before{
-    transform: scale(1);
-    transition: all 0.5s ease-in-out;
-    cursor: pointer
+.card-hover:hover{
+   border: var(--my-success) 1px solid;
+   transform: scale(1.03);
+   box-shadow: 0 8px 16px 0  rgba(0,0,0,0.3) !important;
+   color: #442b08;
 }
+
 
 .table-hover-my:hover{
    background-color: var(--my-info);
@@ -258,6 +260,8 @@
    background-size: 45%;
    background-repeat: no-repeat;
 }
+
+
 
 
 

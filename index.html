@@ -258,7 +258,7 @@
                 mt-2
                 mb-2
               ">
-            <div class="card shadow bg-body rounded card-border" style="width: 12rem">
+            <div class="card card-hover shadow bg-body rounded card-border" style="width: 12rem">
               <img src="assets/imagen" class="card-img-top" alt="..." width="190px" height="150px" />
               <div class="card-body">
                 <h5 class="card-title text-title">{{phones}}</h5>
@@ -316,38 +316,43 @@
                         <!--carousel - modal-->
                         <div class="mt-2 col-xl-6 col-xxl-6 col-md-12 col-lg-12 col-sm-12 col-12 mb-1">
                           <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
-                      <div class="carousel-inner">
-  
-                        <div class="carousel-item active" data-bs-interval="10000">
-                          <img src="assets/imagen" class="d-block mx-auto" alt="..." style="height: 300px;">
-                          <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+
+                              <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="assets/imagen" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="assets/13pro" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/s21" class="d-block mx-auto" alt="..." style="height: 300px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
                           </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                          <img src="assets/13pro" class="d-block mx-auto" alt="..." style="height: 300px;">
-                          <div class="carousel-caption d-none d-md-block">
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <img src="assets/s21" class="d-block mx-auto" alt="..." style="height: 300px;">
-                          <div class="carousel-caption d-none d-md-block">
-                          </div>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
                         </div>
 
                         <div class="col-xl-6 col-xxl-6 col-md-12 col-lg-12 col-sm-12 col-12">
@@ -506,7 +511,7 @@
               <div class="col">
                 <nav aria-label="Page navigation example">
                   <ul class="pagination">
-    
+
                     <!-- link atras-->
                     <li class="page-item border-ul">
                       <a class="page-link" href="#" aria-label="Previous">
@@ -514,12 +519,12 @@
                         <span class="sr-only"></span>
                       </a>
                     </li>
-    
+
                     <!-- paginas-->
                     <li class="page-item border-ul"><a class="page-link text-normal" href="#">1</a></li>
                     <li class="page-item border-ul"><a class="page-link text-normal" href="#">2</a></li>
                     <li class="page-item border-ul"><a class="page-link text-normal" href="#">3</a></li>
-    
+
                     <!-- link siguiente-->
                     <li class="page-item border-ul">
                       <a class="page-link" href="#" aria-label="Next">
@@ -527,7 +532,7 @@
                         <span class="sr-only"></span>
                       </a>
                     </li>
-    
+
                   </ul>
                 </nav>
               </div>
@@ -538,7 +543,7 @@
                 <div class="row">
                   <div class="col-8">
                     <input type="text" class="form-control mb-2 mr-sm-2 input-no-input" id="inlineFormInputName2"
-                    placeholder="Artículos por pagina" />
+                      placeholder="Artículos por pagina" />
                   </div>
 
                   <div class="col-4">
@@ -547,7 +552,7 @@
                 </div>
 
               </div>
-            
+
             </div>
           </div>
 
@@ -556,7 +561,7 @@
 
           </div>
 
-        
+
 
 
         </div>
@@ -673,9 +678,101 @@
               <div class="col-xl-6">
                 <div class="container shadow p-3 card-border mb-2 p-1  form2-img">
 
-                  <div class="row">
-                    <!-- carousel movil agregar imagen-->
-                    
+
+                  <!-- add image movil-->
+
+                  <div class="row d-block d-xl-none d-xxl-none d-lg-none">
+                    <div class="col">
+
+                      <div class="row-fluid">
+                        <div id="carouselExampleDark3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark3" data-bs-slide-to="3"
+                              aria-label="Slide 4"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                              <img src="assets/Frame 1 (2).png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block d-md-block">
+                                <h5 class="h5 text-title">Agrega tu imagen aqui</h5>
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col"></div>
+                                    <button class="btn btn-my">
+                                      <i class="bi bi-cloud-arrow-up"></i>
+                                      Subir imagen
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="assets/Frame 1 (2).png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block ">
+                                <h5 class="h5 text-title">Agrega tu imagen aqui</h5>
+                                <div class="container">
+                                  <div class="row">
+                                    <button class="btn btn-my">
+                                      <i class="bi bi-cloud-arrow-up"></i>
+                                      Subir imagen
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/Frame 1 (2).png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block">
+                                <h5 class="h5 text-title">Agrega tu imagen aqui</h5>
+                                <div class="container">
+                                  <div class="row mb-1">
+                                    <button class="btn btn-my">
+                                      <i class="bi bi-cloud-arrow-up"></i>
+                                      Subir imagen
+                                    </button>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="assets/Frame 1 (2).png" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-block">
+                                <h5 class="h5 text-title">Agrega tu imagen aqui</h5>
+                                <div class="container">
+                                  <div class="row">
+                                    <button class="btn btn-my">
+                                      <i class="bi bi-cloud-arrow-up"></i>
+                                      Subir imagen
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon text-normal" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden ">Next</span>
+                          </button>
+                        </div>
+                      </div>
+
+
+                    </div>
+
                   </div>
 
                   <div class="row">
@@ -872,8 +969,8 @@
                         <form data-validation="true" action="#" method="post" enctype="multipart/form-data">
                           <div class="item-inner">
                             <div class="item-content p-2">
-                              <div class="image-upload"> <label style="cursor: pointer;" for="file_upload"> 
-                                <i class="bi bi-cloud-upload text-normal"></i>
+                              <div class="image-upload"> <label style="cursor: pointer;" for="file_upload">
+                                  <i class="bi bi-cloud-upload text-normal"></i>
                                   <div class="h-50">
                                     <div class="dplay-tbl">
                                       <div class="dplay-tbl-cell">
@@ -892,7 +989,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="col-4 mt-3 p-2">
                     <table class="table">
                       <thead class="text-title">
@@ -901,7 +998,7 @@
                           <th scope="col">Tamaño</th>
                           <th scope="col">Tipo</th>
                           <th scope="col"></th>
-                        </>
+                          </>
                       </thead>
                       <tbody class="text-normal">
                         <tr class="table-hover-my">
@@ -909,8 +1006,8 @@
                           <td>145kb</td>
                           <td>jpg</td>
                           <td>
-                            <button  class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-                            title="Eliminar imagen">
+                            <button class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
+                              title="Eliminar imagen">
                               <i class="bi bi-trash h5"></i>
                             </button>
                           </td>
@@ -921,7 +1018,7 @@
                           <td>png</td>
                           <td>
                             <button class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-                            title="Eliminar imagen">
+                              title="Eliminar imagen">
                               <i class="bi bi-trash h5"></i>
                             </button>
                           </td>
@@ -931,8 +1028,8 @@
                           <td>145kb</td>
                           <td>jpg</td>
                           <td>
-                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-                            title="Eliminar imagen">
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="tooltip"
+                              data-bs-placement="right" title="Eliminar imagen">
                               <i class="bi bi-trash h5"></i>
                             </button>
                           </td>
@@ -942,8 +1039,8 @@
                           <td>145kb</td>
                           <td>png</td>
                           <td>
-                            <button  class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
-                            title="Eliminar imagen">
+                            <button class="btn btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="right"
+                              title="Eliminar imagen">
                               <i class="bi bi-trash h5"></i>
                             </button>
                           </td>
@@ -956,12 +1053,15 @@
                   <div class="col-4">
                     <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
                       <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="0" class="active"
+                          aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark2" data-bs-slide-to="2"
+                          aria-label="Slide 3"></button>
                       </div>
                       <div class="carousel-inner">
-  
+
                         <div class="carousel-item active" data-bs-interval="10000">
                           <img src="assets/imagen" class="d-block mx-auto" alt="..." style="height: 300px;">
                           <div class="carousel-caption d-none d-md-block">
@@ -978,20 +1078,22 @@
                           </div>
                         </div>
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
                     </div>
                   </div>
-                  
+
                 </div>
               </div>
-             
+
             </div>
 
             <div class="row mx-auto d-none d-lg-block d-xl-block d-xxl-block">
