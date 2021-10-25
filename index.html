@@ -1,0 +1,835 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina1</title>
+
+    <LINK REL=StyleSheet HREF="listas.css" TITLE="Contemporaneo">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css"
+    integrity="sha512-UJqci0ZyYcQ0AOJkcIkUCxLS2L6eNcOr7ZiypuInvEhO9uqIDi349MEFrqBzoy1QlfcjfURHl+WTMjEdWcv67A==" 
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+</head>
+<body style="background-color:  #2979ff;">
+  
+          <nav>
+            <div class="blue">
+<div class="row">
+  <div class="col s6 m4 l3 ">
+<div class="green">
+  
+  <a href="#" class="brand-logo hide-on-med-and-down"><i class="fas fa-bullhorn "></i>Tienda cell phone</a>
+  
+
+  <a href="#" data-target="menu-responsive" class="sidenav-trigger  blue"><i class="material-icons">menu</i></a><!--nuevo-->
+
+</div>
+  </div>
+
+  <div class="row">
+
+    <div class="col s3 m3">
+        <input class="form-control mr-sm-2 hide-on-med-and-down" type="search" placeholder="Search" aria-label="Search" style="color:blue darken-4;" >
+
+    </div>
+    <div class="col s2 m1">
+        <button class="btn  blue darken-4 my-2 my-sm-0 hide-on-med-and-down" type="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></button>
+    </div>
+
+
+  <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+    <a class="waves-effect btn blue darken-4">Inicio</a>
+    <a class="waves-effect  btn blue darken-4">Estadisticas</a>
+
+    <i class="fas fa-shopping-cart"></i>
+
+    <!--Inici de ventana modal-->
+
+    <li><a class="btn-floating btn-large waves-effect   btn modal-trigger btn-flat blue darken-4" href="#modal1">
+      <i class="material-icons">add</i></a>
+    </li>
+   
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        
+      <strong><p style="text-align:center" style="color: black;">NUEVO ANUNCIO</p></strong>
+
+        <div class="conteiner">
+          <div class="row">
+            <div class="col s6 m6">
+              <div class="card blue darken-4">
+                <div class="card blue darken-4" > 
+                  <label for="" style="color: black;">Estado
+                    
+                           <input name="group1" type="radio" checked />
+                           <span style="color: black;">Nuevo</span>
+                       
+                           <input name="group1" type="radio" checked />
+                           <span style="color:  black;">Usado</span>
+                 
+                  </label>
+<br>
+                  Marca
+                  <div class="input-field inline">
+                     <label for="text-align" ></label>
+                   
+                    <input id="text" type="name" class="validate">
+                  </div>
+
+                        
+                  Modelo
+                  <div class="input-field inline">
+                    <label for="text-align"  ></label>
+                         
+                    <input id="text" type="name" class="validate " style="width: 225px;">
+                  </div>
+
+                        
+                        pantalla
+                        <div class="input-field inline">
+                           <label for="text-align" ></label>
+                         
+                          <input id="text" type="name" class="validate" style="width: 225px;">
+                        </div>
+
+                        Modelo
+                        <div class="input-field inline">
+                           <label for="text-align" ></label>
+                         
+                          <input id="text" type="name" class="validate" style="width: 225px;">
+                        </div>
+
+                        Sistema
+                        <div class="input-field inline" >
+                           <label for="text-align" ></label>
+                         
+                          <input id="text" type="name" class="validate"style="width: 225px;">
+                        </div>
+
+                        Rom
+                        <div class="input-field inline">
+                           <label for="text-align" ></label>
+                         
+                          <input id="text" type="name" class="validate" style="width: 245px;">
+                        </div>
+                        <br>
+
+                        RUM
+                        <div class="input-field inline">
+                           <label for="text-align" ></label>
+                         
+                          <input id="text" type="name" class="validate" style="width: 245px;">
+                        </div>
+              </div>
+  
+
+            </div>
+          </div>
+
+         
+
+          <div class="col">
+
+            <div class="card blue darken-4">
+            <strong> <p style="color: white;">Titulo breve del anuncio</p></strong>
+
+            <div class="input-field inline">
+              <label for="text-align" ></label>
+            
+             <input id="text" type="name" class="validate">
+           </div>
+           <br>
+Vendedor
+           <div class="input-field inline">
+            <label for="text-align" ></label>
+          
+           <input id="text" type="name" class="validate" style="width: 217px;">
+         </div>
+
+         <br>
+Telefono
+         <div class="input-field inline">
+          <label for="text-align" ></label>
+        
+         <input id="text" type="name" class="validate" style="width: 225px;">
+       </div>
+
+       <strong> <p style="color: white;">DESCRIPCION</p></strong>
+       <Textarea for="text-align" style="width: 200px; height: 100px; color: white;"></Textarea>
+<br>
+
+            </div>
+                        </div>
+
+                        <div class="card white right">
+                          <label for="idPrecio" class="m-2 hide-on-med-and-down white" style="color: black;">Precio:</label>
+                          <input type="text" class="m-2 hide-on-med-and-down  blue darken-4" style="width: 20%;" id="idPrecio" placeholder="$" >
+                              </div>
+
+        </div>
+      </div>
+
+
+      
+
+<div class="container left">
+      <div class="row blue darken-4" style="width: 500px;">
+        <div class="col l2">
+
+     <a class="btn-floating btn-large waves-effect waves-light ligth blue"><i class="material-icons">add</i></a>
+     <br>
+    <br>
+     <a class="btn-floating btn-large waves-effect waves-light ligth blue"><i class="fas fa-minus"></i></a>
+        </div>
+   
+     <div class="col l6"><p style="color: white;">Numero Tamaño Tipo</p></div>
+
+     <div class="col l2">
+      
+        <div class="card white" style="width: 150px; height: 200px;">
+          <div class="card-content white-text">
+            <!--<span class="card-title"></span>-->
+            <div class="card  ligth blue">
+              
+            </div>
+          </div>
+        </div>
+
+</div>
+</div>
+
+
+
+</div>
+
+        </div>
+
+       
+
+<br>
+<br>
+
+
+      <div class="modal-footer">
+
+       
+        <a href="#!" class="modal-close waves-effect blue btn-flat" style="color: white;">cerrar</a>
+        <a class="waves-effect blue btn">Guardar</a>
+      </div>
+    </div>
+  </ul>
+  </div>
+
+  
+</div>
+            </div>
+</div>
+</div>
+             
+          <ul class="sidenav blue" id="menu-responsive">
+            <i class="fas fa-bullhorn"></i>
+            <a href="#!" class="brand-logo" style="color: black;">Tienda cellphone</a><!--nuevo-->
+          
+            <li><a href="#">Inico</a></li>
+            <li><a href="#">Nuevo Anuncio</a></li>
+            <li><a href="#">Carrito</a></li>
+            <li><a href="#">Estadisticas</a></li>
+          </ul>
+
+  <div class="row ">
+    <div class="col s1 m2 " >
+     <div class="contenedor s2 m4 hide-on-med-and-down" >
+        <div class="card blue darken-4- hide-on-med-and-down"> 
+        <div class="switch hide-on-med-and-down" >
+          <label>
+            Off
+            <input type="checkbox">
+            <span class="lever"></span>
+            On
+          </label>
+        </div> 
+
+        
+      <div class="card blue darken-2" > 
+
+        <div class="card-content white-text">
+
+          
+          <span class="card-title">Marca</span>
+          
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>samsung</span>
+              </label>
+            </p>
+
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>huawei</span>
+                </label>
+              </p>
+
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Nockia</span>
+                  </label>
+                </p>
+
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span>Iphone</span>
+                    </label>
+                  </p>
+
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span>Xiomi</span>
+                      </label>
+                    </p>
+        </div> 
+      </div>
+
+
+      <div class="card blue darken-2">
+        <div class="card-content white-text">
+          <span class="card-title">Sistema</span>
+          
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>Androi 15</span>
+              </label>
+            </p>
+
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Windows 10</span>
+                </label>
+              </p>
+
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Ios 56</span>
+                  </label>
+                </p>
+
+        </div>   
+      </div>
+
+
+      <div class="card blue darken-2">
+        <div class="card-content white-text">
+          <span class="card-title">Pantalla</span>
+          
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>6.0</span>
+              </label>
+            </p>
+
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>5.5</span>
+                </label>
+              </p>
+
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>5.0</span>
+                  </label>
+                </p>
+
+        </div>
+        
+        
+      </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+  
+  <!--<div class="container">-->
+    <div class="row">
+    <div class="col s12 m12 l9  ">
+
+     <div class="container ">
+     <div class="card ">
+      <label for="idPrecio" class="m-2 hide-on-med-and-down white" style="color: black;">Precio:</label>
+      <input type="text" class="m-2 hide-on-med-and-down  blue darken-4" style="width: 20%;" id="idPrecio" placeholder="$" >
+
+      <label for="idHasta" class="m-2 hide-on-med-and-down white" style="color: black;">Hasta:</label>
+      <input type="text"  class="m-2 hide-on-med-and-down  blue darken-4" style="width: 20%; color: black;" id="idHasta" placeholder="$">
+    
+
+
+      <label class="m-2 white" style="color: black;"> Ordenar por: </label>
+      <button class="btn  blue darken-4 m-2" type="submit"><i class="fas fa-arrow-up"></i>Precio</button>
+      <button class="btn  blue darken-4 m-2" type="submit">Fecha</button>
+    
+
+      <a href="#" data-target="col2-responsive" class="sidenav-trigger   " style="padding-left: 75%; width: 200px;" ><i class="fas fa-caret-down" style="width: 200px;"></i></a>
+    
+      <ul class="sidenav blue darken-2 left" id="col2-responsive" style="width: 1000px;">
+        
+
+
+        <div class="col s1 m2 " >
+          <div class="contenedor s2 hide-on-med-and-up" >
+             <div class="card blue darken-4- hide-on-med-and-up"> 
+             <div class="switch hide-on-med-and-up" >
+               <label>
+                 Off
+                 <input type="checkbox">
+                 <span class="lever"></span>
+                 On
+               </label>
+             </div> 
+     
+             
+           <div class="card blue darken-2" > 
+     
+             <div class="card-content white-text">
+     
+               
+               <span class="card-title">Marca</span>
+               
+               <form action="#">
+                 <p>
+                   <label>
+                     <input type="checkbox" />
+                     <span>samsung</span>
+                   </label>
+                 </p>
+     
+                 <form action="#">
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>huawei</span>
+                     </label>
+                   </p>
+     
+                   <form action="#">
+                     <p>
+                       <label>
+                         <input type="checkbox" />
+                         <span>Nockia</span>
+                       </label>
+                     </p>
+     
+                     <form action="#">
+                       <p>
+                         <label>
+                           <input type="checkbox" />
+                           <span>Iphone</span>
+                         </label>
+                       </p>
+     
+                       <form action="#">
+                         <p>
+                           <label>
+                             <input type="checkbox" />
+                             <span>Xiomi</span>
+                           </label>
+                         </p>
+             </div> 
+           </div>
+     
+     
+           <div class="card blue darken-2">
+             <div class="card-content white-text">
+               <span class="card-title">Sistema</span>
+               
+               <form action="#">
+                 <p>
+                   <label>
+                     <input type="checkbox" />
+                     <span>Androi 15</span>
+                   </label>
+                 </p>
+     
+                 <form action="#">
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>Windows 10</span>
+                     </label>
+                   </p>
+     
+                   <form action="#">
+                     <p>
+                       <label>
+                         <input type="checkbox" />
+                         <span>Ios 56</span>
+                       </label>
+                     </p>
+     
+             </div>   
+           </div>
+     
+     
+           <div class="card blue darken-2">
+             <div class="card-content white-text">
+               <span class="card-title">Pantalla</span>
+               
+               <form action="#">
+                 <p>
+                   <label>
+                     <input type="checkbox" />
+                     <span>6.0</span>
+                   </label>
+                 </p>
+     
+                 <form action="#">
+                   <p>
+                     <label>
+                       <input type="checkbox" />
+                       <span>5.5</span>
+                     </label>
+                   </p>
+     
+                   <form action="#">
+                     <p>
+                       <label>
+                         <input type="checkbox" />
+                         <span>5.0</span>
+                       </label>
+                     </p>
+     
+             </div>
+             
+             
+           </div>
+     
+             </div>
+     
+         </div>
+     
+       </div>
+     
+
+
+
+      </ul>
+     </div>
+     
+
+     
+        
+      </div>
+     
+        <!--hide-on-med-and-up-->
+
+      
+
+      
+      <!--<div class="card green accent-3">-->
+        <div class="card-content white-text">
+          <span class="card-title"></span>
+    
+            <div class="col s6 m6 l3  blue darken-4">
+                <!--<div class="card green accent-3 ">-->
+                  <div class="card-content white-text">
+                   <span class="card-title " ></span>
+
+                    <div class="card">
+                      <div class="card-image" >
+
+                        <a href="samsung.html">
+                        <img src="imagenes/foto1.jpg"  width="250px" height="400px">
+                      </a>
+                      </div>
+                      <p>Samsung J6, Pantalla de 5.5
+                        64GB, 2GB Ram, Color Negro</p>
+                  
+                </div>
+        
+            </div>
+          </div>
+
+                <span class="card-title"></span>
+                <div class="row">
+                  <div class="col s6 m6 l3  blue darken-4">
+<!--<div class="card green accent-3 ">-->
+                        <div class="card-content white-text">
+                          <span class="card-title"></span>
+      
+                          <div class="card">
+
+                            <div class="card-image">
+
+                              <a href="samsung.html">
+                              <img src="imagenes/foto1.jpg" width="250px" height="400px">
+                            </a>
+                            </div>
+                            <p>Samsung J6, Pantalla de 5.5
+                              64GB, 2GB Ram, Color Negro  </p>
+                        
+                            </div>
+                      
+              </div>
+        </div>
+        
+
+        <span class="card-title"></span>
+                
+                
+      <div class="row">
+        <div class="col s6 m3 l3  blue darken-4" >
+         
+
+            <!--<div class="card green accent-3 ">-->
+              <div class="card-content white-text">
+                <span class="card-title"></span>
+
+                <div class="card">
+                  <div class="card-image">
+                    <a href="samsung.html">
+                    <img src="imagenes/foto1.jpg" width="250px" height="400px">
+                  </a>
+                  </div>
+                  <p>Samsung J6, Pantalla de 5.5
+                    64GB, 2GB Ram, Color Negro</p>
+    </div>        
+    </div>
+</div>
+
+
+<span class="card-title"></span>
+                
+                
+<div class="row">
+  <div class="col s6 m3 l3  blue darken-4">
+   
+
+<!--<div class="card green accent-3 ">-->
+<div class="card-content white-text">
+          <span class="card-title"></span>
+
+          <div class="card">
+            <div class="card-image">
+              <a href="samsung.html">
+              <img src="imagenes/foto1.jpg" width="250px" height="400px">
+            </a>
+            </div>
+            <p>Samsung J6, Pantalla de 5.5
+              64GB, 2GB Ram, Color Negro</p>
+        
+            </div>
+</div>        
+</div>
+</div>
+
+
+</div> 
+      </div>
+    </div>
+
+      <span class="card-title"></span>
+                
+                
+      <div class="row">
+        <div class="col s6 m3 l3  blue darken-4">
+         
+
+<!--<div class="card green accent-3 ">-->
+              <div class="card-content white-text">
+                <span class="card-title"></span>
+
+                <div class="card">
+                  <div class="card-image">
+                    <a href="samsung.html">
+                    <img src="imagenes/foto1.jpg" width="250px" height="400px">
+                  </a>
+                  </div>
+                  <p>Samsung J6, Pantalla de 5.5
+                    64GB, 2GB Ram, Color Negro</p>
+              
+                  </div>
+    </div>        
+    </div>
+
+
+<span class="card-title"></span>
+                
+                
+                <div class="row">
+                  <div class="col s6 m3 l3  blue darken-4">
+                   
+      
+<!--<div class="card green accent-3 ">-->
+                        <div class="card-content white-text">
+                          <span class="card-title"></span>
+      
+                          <div class="card">
+                            <div class="card-image">
+                              <a href="samsung.html">
+                              <img src="imagenes/foto1.jpg" width="250px" height="400px">
+                            </a>
+                            </div>
+                            <p>Samsung J6, Pantalla de 5.5
+                              64GB, 2GB Ram, Color Negro</p>
+                        
+                            </div>
+              </div>        
+              </div>
+        
+
+        <span class="card-title"></span>
+                
+                
+                <div class="row">
+                  <div class="col s6 m3 l3  blue darken-4">
+                   
+      
+                     <!-- <div class="card green accent-3 ">-->
+                        <div class="card-content white-text">
+                          <span class="card-title"></span>
+      
+                          <div class="card">
+                            <div class="card-image">
+                              <a href="samsung.html">
+                              <img src="imagenes/foto1.jpg" width="250px" height="400px">
+                            </a>
+                            </div>
+                            <p>Samsung J6, Pantalla de 5.5
+                              64GB, 2GB Ram, Color Negro</p>
+                        
+                            </div>
+              </div>        
+              </div>
+        
+        
+        <span class="card-title"></span>
+                
+                
+        <div class="row">
+          <div class="col s6 m3 l3  blue darken-4">
+           
+
+              <!--<div class="card green accent-3 ">-->
+                <div class="card-content white-text">
+                  <span class="card-title"></span>
+
+                  <div class="card">
+                    <a href="samsung.html">
+                    <div class="card-image">
+                      <img src="imagenes/foto1.jpg" width="250px" height="400px">
+                    </a>
+                    </div>
+                    <p>Samsung J6, Pantalla de 5.5
+                      64GB, 2GB Ram, Color Negro</p>
+                
+                    </div>
+      </div>        
+      </div>
+
+
+        </div>
+
+        
+      </div>
+
+</div>
+
+
+    </div>
+
+
+    <footer>
+    
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        
+        <li class="disabled"><a href="#!" ><h6 style="color:black">1</h6></a></li>
+        <li class="disabled"><a href="#!"><h6 style="color:black">2</h6></a></li>
+        <li class="disabled "><a href="#!"><h6 style="color:black">3</h6></a></li>
+        <li class="disabled"><a href="#!"><h6 style="color:black">4</h6></a></li>
+        <li class="disabled"><a href="#!"><h6 style="color:black">5</h6></a></li>
+        <li class="disabled"><a href="#!"><h6 style="color:black">6</h6></a></li>
+        <li class="disabled"><a href="#!"><h6 style="color:black">7</h6></a></li>
+        <li class="disabled"><a href="#!"><h6 style="color:black">8</h6></a></li>
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+
+    </footer>
+
+
+    </div>
+    
+  </div>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  var instances = M.Dropdown.init(elems);
+});
+  </script>
+
+
+ <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+ </script>
+
+<script>
+  M.AutoInit();
+
+  document.addEventListener('DOMContentLoaded', function() {
+ var elems = document.querySelectorAll('.sidenav');
+ var instances = M.Sidenav.init(elems);
+});
+
+</script>
+  </body>
+</html>
+
+
+    
+    
+  
+    
+   
