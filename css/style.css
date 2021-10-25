@@ -5,10 +5,25 @@ body {
 
 a {
     text-decoration: none;
+    color: black !important;
+}
+
+a:hover {
+    color: #ffc107 !important;
+}
+
+.btn:hover {
+    color: #000000 !important;
 }
 
 input.form-control:focus, select.form-select:focus, input.form-check-input:focus, button.btn:focus, textarea.form-control:focus {
     box-shadow: none;
+    border-color: #ffc107;
+}
+
+input.form-check-input:checked {
+    background-color: #ffc107;
+    border-color: #ffc107;
 }
 
 .card-product .product-category {
@@ -20,7 +35,7 @@ input.form-control:focus, select.form-select:focus, input.form-check-input:focus
 }
 
 .card-product .product-star-rating ion-icon.active {
-    color: #fea569;
+    color: #ffc107;
 }
 
 .widget .widget-title {
@@ -33,4 +48,13 @@ input.form-control:focus, select.form-select:focus, input.form-check-input:focus
 
 .widget-list .widget-item .widget-item-text {
     font-size: 12px;
+}
+
+.page-link:hover {
+    background-color: #ffc107;
+    color: black !important;
+}
+
+.product-price {
+    color: #f2ab39;
 }
