@@ -1,0 +1,166 @@
+
+body > header {
+	display: flex;
+}
+
+#Contenedor {
+	display: flex;
+	padding-top: 20px;
+}
+
+#Menus {
+	display: flex;
+}
+
+#Footer-contenedor {
+	display: flex;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+#Footer-container {
+	height: 50px;
+	display: flex;
+}
+
+#Buscador {
+	height: 100%;
+	overflow: hidden;
+	margin-top: 5px;
+	padding-right: 10px;
+	border-radius: 25px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#Buscador-Name {
+	padding-bottom: 10px;
+}
+
+#Barra {
+	height: 75px;
+}
+
+#Information-footer {
+	padding-top: 10px;
+	display: flex;
+}
+
+#Logo-Nombre {
+	padding-left: 10px;
+	display: flex;
+}
+
+#Img-tienda{
+	vertical-align: middle;
+	height: 40px;
+}
+
+#Productos {
+	margin-left: 20px;
+}
+
+.input-field .prefix.active {
+     color: red;
+   }
+
+#Enlace {
+	text-decoration-color: red;
+}
+
+#Con-izquierda {
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+#Cont-filter {
+	border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+#formulario {
+	height: 45px;
+}
+
+#Nuevo {
+	padding-top: 10px;
+}
+
+#Desplegable {
+	padding-top: 30px;
+	padding-left: 90px;
+}
+
+#BarraNav {
+	display: flex;
+}
+
+/*descripcion*/
+
+#idModal {
+}
+
+#Cont-cell {
+	display: flex;
+}
+
+#Description-item {
+	display: flex;
+}
+
+#Description-name {
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+#Estado {
+	display: flex;
+}
+
+#Butt-radio {
+	display: flex;
+}
+
+/* CSS de la descripción del anuncio */
+
+#Description-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+#Description-user {
+	padding-bottom: 20px;
+}
+
+#Comprar-name {
+	border-radius: 50px;
+}
+
+#Description-content {
+	display: flex;
+}
+
+#Description-celular {
+	display: flex;
+	justify-content: space-between;
+}
+
+#Description-valor {
+	padding-left: 10px;
+	padding-right: 10px;
+}

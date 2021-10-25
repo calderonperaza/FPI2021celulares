@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!--Import Estilos CSS-->
+	<link rel="stylesheet" href="./style.css">
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+	<!--Barra de navegación-->
+
+	<div class="navbar-fixed">
+		<nav id="Barra" class="nav-wrapper red">
+			<div class="container">
+				<div class="row">
+					<div id="Numeros" class="col xl3 l3 m3 s3">
+						<div class="col xl12 l12 m12 s12 valign-wrapper">
+							<div class="col xl12 l12 m12 s12 center">
+								<div class="container">
+									<div id="Logo-Nombre" class="col xl3 l3 m3 s3">
+										<a href="#" class="logo">
+											<img id="Img-tienda" src="img/diseno-de-logo.png">
+										</a>
+										<h6 id="Logo-Nombre" class="valign-wrapper">Tienda</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col xl9 l9 m9 s9">
+						<div class="col xl6 l6 m12 s12 valign-wrapper">
+							<div class="col xl12 l12 m12 s12 center">
+								<div class="row">
+									<form id="Form-buscador" class="col xl12 l12 m12 s12">
+										<div class="row">
+											<div id="Buscador" class="input-field col s12">
+												<i class="material-icons prefix">search</i>
+										        <input id="icon_prefix" type="text" class="validate">
+										        <label id="Buscador-Name" for="icon_prefix">Buscar producto</label>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div> 
+						</div>
+						<div class="col xl6 l6 m6 s6 valign-wrapper hide-on-med-and-down">
+							<div class="col xl12 l12 m12 s12 center">
+								<ul id="nav-mobile" class="right">
+							    	<li><a id="Barra" href="index.html">Inicio</a></li>
+							        <li><a id="Barra" href="#">Estadisticas</a></li>
+							        <li><a id="Barra" href="#idModal" class="modal-trigger red">Anuncio</a></li>
+							    </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</nav>
+	</div>
+
+	<!-- Desplegable -->
+
+	<div id="Menus">
+		<div id="Desplegable" class="col s6 m6 hide-on-large-only">
+			<ul id="slide-out" class="sidenav">
+			    <div class="col xl12 l12 m12 s12 valign-wrapper">
+					<div class="col xl12 l12 m12 s12 center">
+						<div id="Nuevo">
+							<h6>Nuevo</h6>
+						</div>
+						<form id="formulario">
+							<div class="switch">
+							    <label>
+							    	<input type="checkbox" class="red">
+							    	<span class="lever red lighten-2"></span>
+								</label>
+							</div>
+						</form>
+						<div class="divider red lighten-2"></div>
+						<form>
+							<h6>Marcas</h6>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+						</form>
+						<div class="divider red lighten-2"></div>
+						<form>
+							<h6>Sistema</h6>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Android</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Android</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Android</span>
+								</label>
+							</p>
+						</form>
+						<div class="divider red lighten-2"></div>
+						<form>
+							<h6>Pantalla</h6>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>6.5 pulg.</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>6.5 pulg.</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>6.5 pulg.</span>
+								</label>
+							</p>
+						</form>
+					</div>
+				</div>
+			</ul>
+			<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+		</div>
+		<div id="Desplegable" class="col s6 m6 hide-on-large-only">
+			<ul id="slide-out" class="sidenav">
+			    <li><a id="Barra" href="index.html">Inicio</a></li>
+		        <li><a id="Barra" href="#">Estadisticas</a></li>
+		        <li><a id="Barra" href="#">Carrito</a></li>
+			</ul>
+			<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+		</div>
+	</div>
+
+	<!--Cuerpo de la pagina-->
+
+	<div class="container">
+		<div id="Contenedor" class="row">
+			<div id="Con-izquierda" class="col xl3 l3 m3 s3 hide-on-med-and-down">
+				<div class="col xl12 l12 m12 s12 valign-wrapper">
+					<div class="col xl12 l12 m12 s12 center">
+						<div id="Nuevo">
+							<h6>Nuevo</h6>
+						</div>
+						<form id="formulario">
+							<div class="switch">
+							    <label>
+							    	<input type="checkbox" class="red">
+							    	<span class="lever red lighten-2"></span>
+								</label>
+							</div>
+						</form>
+						<div class="divider red lighten-2"></div>
+						<form>
+							<h6>Marcas</h6>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Samsung</span>
+								</label>
+							</p>
+						</form>
+						<div class="divider red lighten-2"></div>
+						<form>
+							<h6>Sistema</h6>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Android</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Android</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>Android</span>
+								</label>
+							</p>
+						</form>
+						<div class="divider red lighten-2"></div>
+						<form>
+							<h6>Pantalla</h6>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>6.5 pulg.</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>6.5 pulg.</span>
+								</label>
+							</p>
+							<p>
+								<label>
+									<input type="checkbox">
+									<span>6.5 pulg.</span>
+								</label>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="Con-derecha" class="col xl9 l9 m12 s12">
+				<div>
+					<div class="col xl12 l12 m12 s12">
+						<div id="Cont-filter">
+							<div id="Filter" class="valign-wrapper">
+								<div class="col xl3 l3 m3 s3 center">
+									<h6>Precio:</h6>
+								</div>
+								<div class="col xl9 l9 m9 s9">
+									<div id="" class="col xl6 l6 m6 s6">
+								    	<form class="col xl12 l12 m12 s12">
+								        	<div class="">
+								          		<div class="input-field col xl12 l12 m12 s12">
+								            		<input id="input_text" type="text" data-length="50">
+								            		<label for="input_text">Desde</label>
+								          		</div>
+								        	</div>
+								      	</form>
+								    </div>
+								    <div id="" class="col xl6 l6 m6 s6">
+								    	<form class="col xl12 l12 m12 s12">
+								        	<div class="">
+								          		<div class="input-field col xl12 l12 m12 s12">
+								            		<input id="input_text" type="text" data-length="50">
+								            		<label for="input_text">Hasta</label>
+								          		</div>
+								        	</div>
+								      	</form>
+								    </div>
+								</div>
+							</div>
+							<div id="Filter" class="valign-wrapper">
+								<div class="col xl3 l3 m3 s3 center">
+									<h6>Ordenar:</h6>
+								</div>
+								<div class="col xl9 l9 m9 s9">
+									<div class="col xl6 l6 m6 s6">
+										<div class="input-field col s12">
+											<select>
+												<option value="" selected disabled>Fecha</option>
+												<option id="Opciones" value="1">Option 1</option>
+												<option id="Opciones" value="2">Option 2</option>
+												<option id="Opciones" value="3">Option 3</option>
+											</select>
+										</div>
+									</div>
+								    <div class="col xl6 l6 m6 s6">
+										<div class="input-field col s12">
+											<select>
+												<option value="" selected disabled>Precio</option>
+												<option value="1">Option 1</option>
+												<option value="2">Option 2</option>
+												<option value="3">Option 3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<table>
+					<tr>
+						<td>
+							<div class="card small red lighten-4">
+								<div id="Card-borde" class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="https://www.65ymas.com/uploads/s1/31/00/99/los-tele-fonos-mo-viles-ma-s-innovadores-de-este-2020-samsung-galaxy-s20-y-s20.jpeg">
+								</div>
+								<div id="Card-borde" class="card-content">
+									<span class="card-title activator grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">more_vert</i>
+									</span>
+									<p>
+										<a href="anuncio.html" id="Enlace">Ver celular</a>
+									</p>
+								</div>
+								<div id="Card-borde" class="card-reveal">
+									<span class="card-title grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">close</i>
+									</span>
+									<p>
+										Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica.
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="card small red lighten-4">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="https://www.65ymas.com/uploads/s1/31/00/99/los-tele-fonos-mo-viles-ma-s-innovadores-de-este-2020-samsung-galaxy-s20-y-s20.jpeg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">more_vert</i>
+									</span>
+									<p>
+										<a href="anuncio.html" id="Enlace">Ver celular</a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">close</i>
+									</span>
+									<p>
+										Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica.
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="card small red lighten-4">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="https://www.65ymas.com/uploads/s1/31/00/99/los-tele-fonos-mo-viles-ma-s-innovadores-de-este-2020-samsung-galaxy-s20-y-s20.jpeg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">more_vert</i>
+									</span>
+									<p>
+										<a href="anuncio.html" id="Enlace">Ver celular</a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">close</i>
+									</span>
+									<p>
+										Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica.
+									</p>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="card small red lighten-4">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="https://www.65ymas.com/uploads/s1/31/00/99/los-tele-fonos-mo-viles-ma-s-innovadores-de-este-2020-samsung-galaxy-s20-y-s20.jpeg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">more_vert</i>
+									</span>
+									<p>
+										<a href="anuncio.html" id="Enlace">Ver celular</a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">close</i>
+									</span>
+									<p>
+										Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica.
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="card small red lighten-4">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="https://www.65ymas.com/uploads/s1/31/00/99/los-tele-fonos-mo-viles-ma-s-innovadores-de-este-2020-samsung-galaxy-s20-y-s20.jpeg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">more_vert</i>
+									</span>
+									<p>
+										<a href="anuncio.html" id="Enlace">Ver celular</a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">close</i>
+									</span>
+									<p>
+										Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica.
+									</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="card small red lighten-4">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="https://www.65ymas.com/uploads/s1/31/00/99/los-tele-fonos-mo-viles-ma-s-innovadores-de-este-2020-samsung-galaxy-s20-y-s20.jpeg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">more_vert</i>
+									</span>
+									<p>
+										<a href="anuncio.html" id="Enlace">Ver celular</a>
+									</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">
+										Celular
+										<i class="material-icons right">close</i>
+									</span>
+									<p>
+										Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica.
+									</p>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!--Comienzo del Footer de la pagina-->
+
+	<div class="container">
+		<div id="Footer-contenedor" class="row">
+			<div id="Numeros" class="col xl3 l3 m3 s3">
+				<div class="col xl12 l12 m12 s12 valign-wrapper">
+					<div id="Information-footer" class="col xl12 l12 m12 s12 center">
+						<h6>Articulos:</h6>
+						<div id="Productos" class="chip red lighten-4">
+							25
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Numeros" class="col xl9 l9 m9 s9">
+				<div class="col xl12 l12 m12 s12 valign-wrapper">
+					<div class="col xl12 l12 m12 s12 center">
+						<ul class="pagination">
+						    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+						    <li class="active"><a href="#!">1</a></li>
+						    <li class="waves-effect"><a href="#!">2</a></li>
+						    <li class="waves-effect"><a href="#!">3</a></li>
+						    <li class="waves-effect"><a href="#!">4</a></li>
+						    <li class="waves-effect"><a href="#!">5</a></li>
+							<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+						</ul>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Comienzo del modal de Nuevo anuncio -->
+
+	<div id="idModal" class="modal">
+		<div class="row">
+			<div class="col xl12 l12 m12 s12 valign-wrapper">
+				<div class="col xl12 l12 m12 s12 center">
+					<h5>Nuevo anuncio</h5>
+				</div>
+			</div>
+			<div class="modal-content col xl12 l12 m12 s12">
+				<div class="col xl12 l12 m12 s12">
+					<div id="Cont-cell col xl12 l12 m12 s12">
+						<div id="Description-cel" class="col xl6 l6 m6 s6 xl6">
+							<div id="Description-item" class="col xl12 l12 m12 s12">
+								<div id="Description-name" class="col xl3 l3 m3 s3">
+									<h6>Estado:</h6>
+								</div>
+								<div id="Description-text" class="col xl9 l9 m9 s9">
+									<form id="Butt-radio" action="#">
+										<p>
+									    	<label>
+									    		<input type="radio" name="group1" checked>
+									    		<span>Nuevo</span>
+									    	</label>
+									    </p>
+									    <p>
+									    	<label>
+									    		<input type="radio" name="group1" checked>
+									    		<span>Usado</span>
+									    	</label>
+									    </p>
+									</form>
+								</div>
+							</div>
+							<div class="divider"></div>
+							<div id="Description-item" class="col xl12 l12 m12 s12">
+								<div id="Description-name" class="col xl3 l3 m3 s3" >
+									<h6>Marca:</h6>
+								</div>
+								<div id="Description-text" class="col xl9 l9 m9 s9">
+							    	<form class="col s12">
+							        	<div class="">
+							          		<div class="input-field col s12">
+							            		<input id="input_text" type="text" data-length="50">
+							            		<label for="input_text">Ingresar.</label>
+							          		</div>
+							        	</div>
+							      	</form>
+							    </div>
+							</div>
+							<div class="divider"></div>
+							<div id="Description-item" class="col xl12 l12 m12 s12">
+								<div id="Description-name" class="col xl3 l3 m3 s3">
+									<h6>Modelo:</h6>
+								</div>
+								<div id="Description-text" class="col xl9 l9 m9 s9">
+							    	<form class="col s12">
+							        	<div class="">
+							          		<div class="input-field col s12">
+							            		<input id="input_text" type="text" data-length="50">
+							            		<label for="input_text">Ingresar.</label>
+							          		</div>
+							        	</div>
+							      	</form>
+							    </div>
+							</div>
+							<div class="divider"></div>
+							<div id="Description-item" class="col xl12 l12 m12 s12">
+								<div id="Description-name" class="col xl3 l3 m3 s3">
+									<h6>Pantalla:</h6>
+								</div>
+								<div id="Description-text" class="col xl9 l9 m9 s9">
+							    	<form class="col s12">
+							        	<div class="">
+							          		<div class="input-field col s12">
+							            		<input id="input_text" type="text" data-length="50">
+							            		<label for="input_text">Ingresar.</label>
+							          		</div>
+							        	</div>
+							      	</form>
+							    </div>
+							</div>
+							<div class="divider"></div>
+							<div id="Description-item" class="col xl12 l12 m12 s12">
+								<div id="Description-name" class="col xl3 l3 m3 s3">
+									<h6>Sistema:</h6>
+								</div>
+								<div id="Description-text" class="col xl9 l9 m9 s9">
+									<div class="input-field col s12">
+										<select>
+											<option value="" selected disabled>Elige SO.</option>
+											<option value="1">Option 1</option>
+											<option value="2">Option 2</option>
+											<option value="3">Option 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="divider"></div>
+							<div id="Description-item" class="col xl12 l12 m12 s12">
+								<div id="Description-name" class="col xl3 l3 m3 s3">
+									<h6>ROM:</h6>
+								</div>
+								<div id="Description-text" class="col xl9 l9 m9 s9">
+							    	<form class="col s12">
+							        	<div class="">
+							          		<div class="input-field col s12">
+							            		<input id="input_text" type="text" data-length="50">
+							            		<label for="input_text">Ingresar.</label>
+							          		</div>
+							        	</div>
+							      	</form>
+							    </div>
+							</div>
+							<div class="divider"></div>
+							<div id="Description-item" class="col xl12 l12 m12 s12">
+								<div id="Description-name" class="col xl3 l3 m3 s3">
+									<h6>RAM:</h6>
+								</div>
+								<div id="Description-text" class="col xl9 l9 m9 s9">
+							    	<form class="col s12">
+							        	<div class="">
+							          		<div class="input-field col s12">
+							            		<input id="input_text" type="text" data-length="50">
+							            		<label for="input_text">Ingresar.</label>
+							          		</div>
+							        	</div>
+							      	</form>
+							    </div>
+							</div>
+						</div>
+						<div class="col xl6 l6 m6 s6">
+							<div>
+								<div id="Description-item">
+									<div id="Description-name">
+										<h6>Vendedor:</h6>
+									</div>
+									<div id="Description-text" class="col l9 m9 s9">
+								    	<form class="col s12">
+								        	<div class="">
+								          		<div class="input-field col s12">
+								            		<input id="input_text" type="text" data-length="50">
+								            		<label for="input_text">Ingresar.</label>
+								          		</div>
+								        	</div>
+								      	</form>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="col xl6 l6 m6 s6">
+							<div>
+								<div id="Description-item">
+									<div id="Description-name">
+										<h6>Telefono:</h6>
+									</div>
+									<div id="Description-text" class="col l9 m9 s9">
+								    	<form class="col s12">
+								        	<div class="">
+								          		<div class="input-field col s12">
+								            		<input id="input_text" type="text" data-length="50">
+								            		<label for="input_text">Ingresar.</label>
+								          		</div>
+								        	</div>
+								      	</form>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="col xl6 l6 m6 s6">
+							<div>
+								<div id="Description-item">
+									<div id="Description-name">
+										<h6>Precio:</h6>
+									</div>
+									<div id="Description-text" class="col l9 m9 s9">
+								    	<form class="col s12">
+								        	<div class="">
+								          		<div class="input-field col s12">
+								            		<input id="input_text" type="text" data-length="50">
+								            		<label for="input_text">Ingresar.</label>
+								          		</div>
+								        	</div>
+								      	</form>
+								    </div>
+								</div>
+							</div>
+						</div>
+						<div class="col xl6 l6 m6 s6 center-align">
+							<h6>Descripción</h6>
+						</div>
+						<div class="col xl6 l6 m6 s6">
+							<form class="col l12 m12 s12">
+								<div class="row">
+									<div class="input-field col xl12 l12 m12 s12">
+										<textarea id="textarea1" class="materialize-textarea"></textarea>
+										<label for="textarea1">TextArea</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<a class="waves-effect waves-light btn-large red">Guardar</a>
+						<a class="waves-effect waves-light btn-large red">Cancelar</a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer col l12 m12 s12 valign-wrapper">
+				<a href="" class="btn-modal-close center col xl12 l12 m12 s12">Cerrar</a>
+			</div>
+		</div>
+	</div>
+
+	<!--Compiled and minified JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    	document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.modal');
+			var instances = M.Modal.init(elems);
+		});
+    </script>
+    <script>
+		document.addEventListener('DOMContentLoaded', function() {
+		    var elems = document.querySelectorAll('select');
+		    var instances = M.FormSelect.init(elems);
+		});
+	</script>
+	<script>
+		$('#textarea1').val('New Text');
+  		M.textareaAutoResize($('#textarea1'));
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		    var elems = document.querySelectorAll('.sidenav');
+		    var instances = M.Sidenav.init(elems);
+		});
+	</script>
+</body>
+</html>
