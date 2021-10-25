@@ -1,0 +1,64 @@
+.switch.purpl label .lever {
+    background-color: #e1bee7;
+ }
+ .switch.purpl label input[type=checkbox]:checked+.lever {
+    background-color: #ce93d8;
+ }
+ .switch.purpl label input[type=checkbox]:checked+.lever:after {
+    background-color: #9c27b0;
+ }
+
+.switch.purpl {
+    padding: 10px;
+}
+
+.checkbox-purple[type="checkbox"].filled-in:checked+span:not(.lever):after {
+    border: 2px solid #9c27b0;
+    background-color: #9c27b0;
+}
+
+.bord{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.fix{
+    position: fixed;
+    top: 90%;
+}
+
+[type="radio"]:checked + span:after,[type="radio"].with-gap:checked + span:before,[type="radio"].with-gap:checked + span:after {
+    border: 2px solid #ab47bc;
+}
+    
+[type="radio"]:checked + span:after,[type="radio"].with-gap:checked + span:after {
+    background-color: #ab47bc;
+}
+
+.input-field input:focus + label {
+    color: #ab47bc !important;
+}
+
+.input-field input:focus {
+    border-bottom: 1px solid #ab47bc !important;
+    box-shadow: 0 1px 0 0 #ab47bc !important;
+}
+
+.input-field textarea:focus + label {
+    color: #ab47bc !important;
+}
+
+.input-field textarea:focus {
+    border-bottom: 1px solid #ab47bc !important;
+    box-shadow: 0 1px 0 0 #ab47bc !important;
+}
+
+@media screen and (min-width: 992px) {
+    div.row.escond div a{
+        visibility: hidden !important;
+    }
+}
+body, select, ul{
+    font-family: 'Roboto';
+}

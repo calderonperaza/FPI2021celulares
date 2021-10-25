@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ventascelulares</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="miEstilo.css" rel="stylesheet">
+    </head>
+    <body class="purple lighten-5">
+        <div class="container">
+            <!-- Menu principal -->
+            <div class="row">
+                <nav>
+                    <div class="nav-wrapper  purple col s12">
+                        <a href="#!" class="brand-logo col l3 show-on-large hide-on-med-and-down black-text"><i class=" medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+                        <form class="col l4 push-l3 s9">
+                            <div class="input-field">
+                                <input id="search" type="search" placeholder="search" required>
+                                <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                            </div>
+                        </form>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a class="black-text purple lighten-4 btn" href="inicio.html">Inicio</a></li>
+                            <li><a class="black-text purple lighten-4 btn" href="estadisticas.html">Estadisticas</a></li>
+                            <li><a href="agregar.html"><i class="medium material-icons btn-flat">add_circle_outline</i></a></li>
+                            <li><a href="carrito.html"><i class="medium material-icons btn-flat">local_grocery_store</i></a></li>
+                        </ul>
+                    </div>
+                </nav> 
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="#!"><i class="medium material-icons">campaign</i><h5>Tienda CellPhone</h5></a></li><hr width="75%"/>
+                    <li><a class="center-align" href="inicio.html">Inicio</a></li><hr width="75%"/>
+                    <li><a class="center-align" href="nuevoAnuncio.html">Nuevo anuncio</a></li><hr width="75%"/>
+                    <li><a class="center-align">Carrito</a></li><hr width="75%"/>
+                    <li><a class="center-align">Estadisticas</a></li><hr width="75%"/>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="carousel col l6 m12">
+                    <a class="carousel-item" href="#one!"><img src="imagenes/Samsung_carru1.jpg" style="width: 125%; height: 125%;"></a>
+                    <a class="carousel-item" href="#two!"><img src="imagenes/Samsung_carru2.jpg" style="width: 125%; height: 125%;"></a>
+                    <a class="carousel-item" href="#three!"><img src="imagenes/Samsung_carru3.jpg" style="width: 125%; height: 125%;"></a>
+                    <a class="carousel-item" href="#four!"><img src="imagenes/Samsung_carru4.jpg" style="width: 125%; height: 125%;"></a>
+                </div>
+                <div class="col l6 m12">
+                    <div class="hide-on-med-and-down" style="margin-left: 35px;">
+                        <div style="margin-top: 50px;">
+                            <h6>Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de RAM, Solo Banda Tigo, Nuevo</h6>
+                            <h4>$ 235.00</h4>
+                        </div>
+                        <a class="black-text purple lighten-4 btn-large">Comprar</a>
+                        <div style="margin-top: 20px;">
+                            <p class="inline col l6 purple lighten-4" style="padding: 5%;">Vendedor: Juan Perez</p>
+                            <p class="inline col l6 purple lighten-4" style="padding: 5%;">Telefono: 7374-2312</p>
+                        </div>
+                    </div>
+                    <div class="hide-on-large-only center-align">
+                        <div>
+                            <h6>Iphone 6 pantalla de 8 pulgadas, 64Gb internos, 2Gb de RAM, Solo Banda Tigo, Nuevo</h6>
+                            <h4>$ 235.00</h4>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <p class="inline col m6">Vendedor: Juan Perez</p>
+                            <p class="inline col m6">Telefono: 7374-2312</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 center-align">
+                    <h4 class="hide-on-med-and-down">DESCRIPCION</h4>
+                    <div class="col l5 s12 push-l1 bord purple lighten-4 left-align" style="height: 225px;">
+                        <p>
+                            Estado: Nuevo <br>Marca: Iphone<br>Modelo: 6 plus<br>Pantalla: 7 pulgadas<br>Sistema: Ios<br>Rom: 64GB<br>Ram: 2GB
+                        </p>
+                    </div>
+                    <div class="col l5 s12 push-l1 bord purple lighten-4 left-align" style="height: 225px;">
+                        <p>
+                            Telefono en muy buenas condiciones, tiene dos camaras, la caja esta abierta, pero con muy poco uso, practicamente nuevo, la compañia con la que estaba es Tigo, asi que el chip debe ser Tigo, viene con su caja original y con todos sus accesorios. Puedo mandar mas fotos si desea por whatsapp
+                        </p>
+                    </div>
+                </div>
+                <div class="hide-on-large-only col s12 fix">
+                    <a class="btn-large purple black-text col s6" href="inicio.html">Inicio</a>
+                    <a class="btn-large purple black-text col s6">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <!-- Materialize JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(elems);
+            });
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.carousel');
+                var instances = M.Carousel.init(elems);
+              });
+        </script>
+    </body>
+</html>
