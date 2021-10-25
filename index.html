@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas de Celulares</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+
+<body style="background-color: #ffd954;">
+
+    <!-- NavBar-->
+    <nav style="padding: 0px 10px; background-color: #e4b660;">
+        <div class="nav-wrapper">
+
+            <a href="#" class="sidenav-trigger" data-target="nav-mobile">
+                <i class="material-icons black-text text-darken-2">menu</i>
+            </a>
+
+            <a id="logo-container" href="#" class="brand-logo black-text text-darken-2">
+                CellPhone
+                <i class="material-icons black-text text-darken-2">phone_android</i>
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <div class="input-field col s5 black-text">
+                        <i class="material-icons prefix">search</i>
+                        <input type="text" id="buscar" class="autocomplete">
+                        <label for="buscar" class="black-text">Buscar...</label>
+                    </div>
+                </li>
+                <li><a href="#" class="black-text text-darken-2">Home</a></li>
+                <li><a href="#" class="black-text text-darken-2">Estadisticas</a></li>
+                <li><a href="#" class="material-icons black-text text-darken-2"> <i
+                            class="large material-icons">local_grocery_store</i></a></li>
+                <li><a href="#nuevoAnuncio" class="modal-trigger black-text text-darken-2"><i
+                            class="large material-icons">add_circle_outline</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- SideNAv mobile responsive -->
+    <ul id="nav-mobile" class="sidenav" style="background-color: #e4b660;">
+        <li><a href="#" class="sidenav-close black-text text-darken-2" style="background-color: #f2ab39;">Home</a></li>
+        <li><a href="#" class="black-text text-darken-2" style="background-color: #ffd954;">Estadisticas</a></li>
+        <li><a href="#" class="material-icons black-text text-darken-2" style="background-color: #f2ab39;"> <i
+                    class="material-icons black-text">local_grocery_store</i></a></li>
+        <li><a href="#nuevoAnuncio" class="modal-trigger black-text text-darken-2" style="background-color: #ffd954;"><i
+                    class="material-icons black-text">add_circle_outline</i></a></li>
+    </ul>
+    <br>
+    <ul id="filtro" class="sidenav" style="background-color: #69491a;">
+        <li>
+            <div class="card-panel center" style="background-color: #e4b660;">
+                <div class="switch black-text text-darken-2">
+                    <label class="black-text">
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        Nuevo
+                    </label>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="card" style="background-color: #e4b660;">
+                <div class="card-content black-text">
+                    <span class="card-title">Marca </span>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>Samsung</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>Nokia</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>Iphone</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>Xiaomi</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="card" style="background-color: #e4b660;">
+                <div class="card-content black-text">
+                    <span class="card-title">Sistema</span>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>Android</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>Windows</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>Ios</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="card" style="background-color: #e4b660;">
+                <div class="card-content black-text">
+                    <span class="card-title">Pantalla</span>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>6.0</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>5.5</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="black-text">
+                            <input type="checkbox" class="filled-in" /><span>5</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <a href="#" class="sidenav-close black-text text-darken-2 btn waves-effect waves-light"
+            style="background-color: #f2ab39;">Cerrar</a>
+        <a href="#" class="sidenav-close black-text text-darken-2 btn waves-effect waves-light"
+            style="background-color: #f2ab39;">Filtrar<i class="material-icons right">send</i></a>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+            <!--filtro-->
+            <div class="col l3 m3 hide-on-small-only">
+                <div class="card-panel" style="background-color: #e4b660;">
+                    <div class="switch text text-darken-2">
+                        <label class="black-text">
+                            <input type="checkbox">
+                            <span class="lever"></span>
+                            Nuevo
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card" style="background-color: #e4b660;">
+                            <div class="card-content black-text">
+                                <span class="card-title">Marca </span>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>Samsung</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>Nokia</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>Iphone</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>Xiaomi</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card" style="background-color: #e4b660;">
+                            <div class="card-content black-text">
+                                <span class="card-title">Sistema</span>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>Android</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>Windows</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>Ios</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card" style="background-color: #e4b660;">
+                            <div class="card-content black-text">
+                                <span class="card-title">Pantalla</span>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>6.0</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>5.5</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="black-text">
+                                        <input type="checkbox" class="filled-in" /><span>5</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- elementos del home(Celulares en venta) -->
+            <div class="col l9 m9 s12">
+                <div class="row">
+                    <div class="col l6 m6 hide-on-small-only">
+                        <div class="card-panel col s12" style="background-color: #f2ab39;">
+                            <span class="black-text center">
+                                <h6>Precio:</h6>
+                            </span>
+                            <div class="input-field col s6">
+                                <input id="desde" type="number" class="validate">
+                                <label for="desde" class="black-text">Desde:</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="hasta" type="number" class="validate">
+                                <label for="hasta" class="black-text">Hasta:</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vista Mobil de filtro Icono-->
+                    <div class="col l4 m4 s4 show-on-small-only hide-on-med-and-up">
+                        <div class="card-panel col s12" style="background-color: #ffd954;">
+                            <span class="black-text center">
+                                <h6>Filtrar:</h6>
+                            </span>
+                            <div class="col s12">
+                                <a href="#" class="sidenav-trigger black-text text-darken-2 col s12 center"
+                                    data-target="filtro" style="background-color: #ffd954"><i
+                                        class="medium material-icons black-text">filter_alt</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l6 m6 s8">
+                        <div class="card-panel col s12" style="background-color: #f2ab39;">
+                            <span class="black-text center">
+                                <h6>Ordenar:</h6>
+                            </span>
+                            <div class="col s12 ">
+                                <div class="input-field col s6">
+                                    <select>
+                                        <option value="1">Precio</option>
+                                        <option value="2">Marca</option>
+                                        <option value="3">Sistema</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="date" id="fecha">
+                                    <label for="fecha" class="black-text">fecha</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col  l4 m4 s6">
+                        <div class="card  l4 m4 s6" style="background-color: #f2ab39;">
+                            <div class="card-image l6 m6 s12">
+                                <img src="/imagenesCelulares/samsungA51.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <h6>$199.00</h6>
+                                <p>Celular SamsungA51 con sistema android 64GB,4 RAM,color rojo.</p>
+                            </div>
+                            <div class="card-action col l12 m12 s12">
+                                <a href="#idModal" class="btn modal-trigger col l12 m12 s12"
+                                    style="background-color: #69491a;">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l4 m4 s6">
+                        <div class="card 4 m4 s6" style="background-color: #f2ab39;">
+                            <div class="card-image l12 m12 s12">
+                                <img src="/imagenesCelulares/samsungS12.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <h6>$199.00</h6>
+                                <p>Celular SamsungA51 con sistema android 64GB,4 RAM,color rojo.</p>
+                            </div>
+                            <div class="card-action col l612m12 s12">
+                                <a href="#idModal" class="btn modal-trigger col s12"
+                                    style="background-color: #69491a;">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l4 m4 s6">
+                        <div class="card  l4 m4 s6" style="background-color: #f2ab39;">
+                            <div class="card-image">
+                                <img src="/imagenesCelulares/huawei.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <h6>$199.00</h6>
+                                <p>Celular SamsungA51 con sistema android 64GB,4 RAM,color rojo.</p>
+                            </div>
+                            <div class="card-action col s12">
+                                <a href="#idModal" class="btn modal-trigger col s12"
+                                    style="background-color: #69491a;">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col l4 m4 s6">
+                        <div class="card  l4 m4 s6" style="background-color: #f2ab39;">
+                            <div class="card-image">
+                                <img src="/imagenesCelulares/huawei.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <h6>$199.00</h6>
+                                <p>Celular SamsungA51 con sistema android 64GB,4 RAM,color rojo.</p>
+                            </div>
+                            <div class="card-action col s12">
+                                <a href="#idModal" class="btn modal-trigger col s12"
+                                    style="background-color: #69491a;">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l4 m4 s6">
+                        <div class="card  l4 m4 s6" style="background-color: #f2ab39;">
+                            <div class="card-image">
+                                <img src="/imagenesCelulares/huawei.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <h6>$199.00</h6>
+                                <p>Celular SamsungA51 con sistema android 64GB,4 RAM,color rojo.</p>
+                            </div>
+                            <div class="card-action col s12">
+                                <a href="#idModal" class="btn modal-trigger col s12"
+                                    style="background-color: #69491a;">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l4 m4 s6">
+                        <div class="card  l4 m4 s6" style="background-color: #f2ab39;">
+                            <div class="card-image">
+                                <img src="/imagenesCelulares/huawei.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <h6>$199.00</h6>
+                                <p>Celular SamsungA51 con sistema android 64GB,4 RAM,color rojo.</p>
+                            </div>
+                            <div class="card-action col s12">
+                                <a href="#idModal" class="btn modal-trigger col s12"
+                                    style="background-color: #69491a;">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Modal VER MAS-->
+    <div id="idModal" class="modal modal-fixed-footer">
+        <div class="modal-content" style="background-color: #e5bb4b;">
+            <div class=" container-section" style="background-color: #69491a;">
+                <div class="row">
+                    <div class="col s12 white-text center">
+                        <h3>INFORMACION DEL PRODUCTO</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col l5 m5 s12">
+                        <!-- Slider de imagenes -->
+                        <div class="slider">
+                            <ul class="slides">
+                                <li>
+                                    <img class="responsive-img" src="imagenesCelulares/samsungA51.jpeg">
+                                </li>
+                                <li>
+                                    <img class="responsive-img" src="/imagenesCelulares/Celular_pope.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img class="responsive-img" src="imagenesCelulares/samsungA51.jpeg" alt="">
+                                </li>
+                                <li>
+                                    <img class="responsive-img" src="/imagenesCelulares/Celular_pope.jpg" alt="">
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col l7 m7 s12">
+                        <div class="card-panel col s12" style="background-color: #f2ab39;">
+                            <p>Celular samsung A 51 con 63gb de memoria interna, 4 de memoria RAM, Liberado de
+                                fabrica, nuevo</p>
+                            <h5>$199.00</h5>
+                            <br>
+                            <a class="waves-effect waves-light btn-large center col s12"
+                                style="background-color: #69491a;">
+                                <i class="material-icons left">mood</i>COMPRAR</a>
+                            <div class="card-panel black-text text-darken-2 col s12" style="background-color: #ffd954;">
+                                <span>Vendedor: Juan Perez Telefono:7374-2312</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col l12 m12 s12">
+                        <div class="card-panel center" style="background-color: #f2ab39;">
+                            <span class="center black-text text-darken-2">DESCRIPCION</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l6 m6 s12">
+                            <div class="card-panel col s12" style="background-color: #e4b660;">
+                                <span class="black-text text-darken-2 col s12">
+                                    Estado:Nuevo <br>
+                                    Marca: Samsung <br>
+                                    Modelo: A21 <br>
+                                    Pantalla: 5.5 pulgadas <br>
+                                    Sistema: Android 10.0 <br>
+                                    Rom: 64GB <br>
+                                    Ram: 4GB <br><br><br><br>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col l6 m6 s12">
+                            <div class="card-panel col s12" style="background-color: #e4b660;">
+                                <span class="black-text text-darken-2 col s12">
+                                    Galaxy A21s está disponible en variantes de 3GB de memoria RAM con 32GB de
+                                    almacenamiento interno, 4GB de RAM con 64GB
+                                    de almacenamiento y 6GB de RAM con 64GB de almacenamiento interno.
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="modal-footer" style="background-color: #ffd954;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text"
+                style="background-color: #69491a;"
+                onclick="M.toast({html: 'Excelente eleccion!  :)', classes: 'rounded', displayLength:'2000'})">
+                <i class="material-icons left">mood</i>Comprar</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text col s12"
+                style="background-color: #69491a;"
+                onclick="M.toast({html: 'Ups!! Cancelado!', classes: 'rounded', displayLength:'2000'})"><i
+                    class="material-icons left">close</i>Cerrar</a>
+        </div>
+
+    </div>
+
+    <!-- Modal Agregar Nuevo Anuncio -->
+    <div id="nuevoAnuncio" class="modal modal-fixed-footer"
+        style="background-color: #f2ab39; width: 80%; height: 100%;">
+
+        <div class="modal-content">
+            <div class=" container-section" style="background-color: #69491a;">
+                <div class="row">
+                    <div class="col s12 white-text center">
+                        <h3>NUEVO ANUNCIO</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col s12">
+                        <div class="card">
+                            <div class="card-content col s12" style="background-color: #ffd954">
+                                <!-- Formulario izquiero del modal -->
+                                <div class="col l6 m6 s12" style="padding: 5% 0%;">
+                                    <div class="row">
+                                        <!-- formulario -->
+                                        <form class="col s12 black-text text-darken-2">
+
+                                            <div class="row">
+                                                <div class="col s12" style="height: 100%;">
+                                                    Estado:
+                                                    <label>
+                                                        <input type="radio" name="estado" class="with-gap" checked />
+                                                        <span class="black-text text-darken-2">Nuevo</span>
+                                                    </label>
+
+                                                    <label class="black-text">
+                                                        <input type="radio" name="estado" class="with-gap" />
+                                                        <span class="black-text text-darken-2">Usado</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="input-field inline">
+                                                        <i class="material-icons prefix">phonelink_setup</i>
+                                                        <input id="marca_inline" type="text" class="validate">
+                                                        <label for="marca_inline" class="grey-text text-darken-3">Marca
+                                                            de su telefono</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="input-field inline">
+                                                        <i class="material-icons prefix">phone_android</i>
+                                                        <input id="modelo_inline" type="text" class="validate">
+                                                        <label for="modelo_inline"
+                                                            class="grey-text text-darken-3">Modelo del telefono</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="input-field inline">
+                                                        <i class="material-icons prefix">smartphone</i>
+                                                        <input id="pantalla_inline" type="number" class="validate">
+                                                        <label for="pantalla_inline"
+                                                            class="grey-text text-darken-3">Pantalla en pulgadas</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col s12 ">
+                                                    <div class="input-field inline">
+                                                        <i class="material-icons prefix">adb</i>
+                                                        <select>
+                                                            <option value="" disabled selected>Selecciona una sistema
+                                                            </option>
+                                                            <option value="1">Ios</option>
+                                                            <option value="2">Android</option>
+                                                            <option value="3">Windows</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Formulario derecho del modal -->
+                                <div class="col l6 m6 s12" style="padding: 5% 5%;">
+                                    <div class="row">
+                                        <form class="col s12 black-text text-darken-2">
+
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="input-field inline">
+                                                        <i class="material-icons prefix">title</i>
+                                                        <input id="titulo_inline" type="text" class="validate">
+                                                        <label for="titulo_inline"
+                                                            class="grey-text text-darken-3">Titulo breve del
+                                                            anuncio</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="input-field inline">
+                                                        <i class="material-icons prefix">person_pin</i>
+                                                        <input id="vendedor_inline" type="text" class="validate"
+                                                            required>
+                                                        <label for="vendedor_inline"
+                                                            class="grey-text text-darken-3">Nombre del vendedor</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="input-field inline">
+                                                        <i class="material-icons prefix">phone</i>
+                                                        <input id="telefono_inline" type="text" class="validate"
+                                                            required>
+                                                        <label for="telefono_inline"
+                                                            class="grey-text text-darken-3">Numero telefonico</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="input-field inline">
+                                                        <i class="material-icons prefix">list</i>
+                                                        <textarea id="descripcion_inline"
+                                                            class="materialize-textarea"></textarea>
+                                                        <label for="descripcion_inline"
+                                                            class="grey-text text-darken-3">Describa el producto</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- card del panel para agregar imagenes -->
+                <div class="row">
+                    <div class="col l6 m6 s12">
+                        <div class="card medium col s12">
+                            <div class="card-title black-text center" style="background-color: #ffd954;">
+                                <h6>Agregar imagenes</h6>
+                            </div>
+                            <div class="card-image">
+                                <img src="imagenesCelulares/samsungS12.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <span class="col s4 black-text">N</span>
+                                <span class="col s4 black-text">Tamaño</span>
+                                <span class="col s4 black-text">Tipo</span>
+                            </div>
+                            <div class="card-action" style="background-color: #f2ab39;">
+                                <a class="btn-floating btn-large waves-effect waves-light"
+                                    style="background-color: #69491a;"><i class="material-icons">add</i></a>
+                                <a class="btn-floating btn-large waves-effect waves-light"
+                                    style="background-color: #69491a;"><i class="material-icons">cancel</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col  l6 m6 s12">
+                        <div class="row">
+                            <div class="col l12 m12 s12">
+                                <div class="card-panel col l12 m12 s12" style="background-color: #ffd954;">
+                                    <div class="card-title black-text center">
+                                        <h5>Precio:</h5>
+                                    </div>
+                                    <div class="input-field col l12 m12 s12">
+                                        <i class="material-icons prefix">attach_money</i>
+                                        <input id="precio_inline" type="number" class="validate" required>
+                                        <label for="precio_inline" class="grey-text text-darken-3">Precio de
+                                            su producto</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="modal-footer" style="background-color: #ffd954">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text"
+                style="background-color: #69491a;"
+                onclick="M.toast({html: 'Se a creado satisfactoriamente!', classes: 'rounded', displayLength:'2000'})">
+                <i class="material-icons left">save</i>Crear</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat white-text"
+                style="background-color: #69491a;"
+                onclick="M.toast({html: 'Nuevo anuncio cancelado!', classes: 'rounded', displayLength:'2000'})"><i
+                    class="material-icons left">close</i>Cerrar</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            /* Para el sideNav Responsive */
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+            /* para el modal */
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, {
+                dismissible: false,
+                opacity: 0.8,
+            });
+
+            //para el slider de la imagen
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, {
+                height: 300,
+                interval: 3000,
+            });
+
+            //Para agrandar la imagen
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
+
+            //Para el select del modal
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+
+        /* Para el panel de buscar */
+        document.addEventListener('DOMContentLoaded', function () {
+            var options = {
+                data: {
+                    "Samsung": null,
+                    "Huawei": null,
+                    "Nokia": null
+                }
+            }
+            var elems = document.querySelectorAll('.autocomplete');
+            var instances = M.Autocomplete.init(elems, options);
+        });
+
+    </script>
+</body>
+
+</html>
