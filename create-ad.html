@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+
+
+    <title>Create Ad</title>
+
+    <!--CSS MOVER MAS AL RATO-->
+    <style>
+        body {
+            
+            background-color: #EADCA6;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+
+        h3 {
+            display: inline-block;
+        }
+
+        .bordemenu {
+            border: 2 px solid #096BF9;
+            border-radius: 4%;
+
+
+        }
+
+        .card {
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            transition: all linear 200ms;
+        }
+
+
+
+        .centrador {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        @media (hover: hover) {
+            .carousel:hover {
+                transform: scale(1.05);
+                transition: all linear 200ms;
+                z-index: 1;
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+                cursor: pointer;
+            }
+
+        }
+
+
+
+        .carousel {
+            height: 100%;
+            transition: all linear 200ms;
+        }
+
+        .carousel-item,
+        .carousel-inner,
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-item {
+            text-align: center;
+        }
+
+        /*************** MOBILE *************/
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        div.blue {
+            order: 1;
+            width: 100%;
+        }
+
+        div.orange {
+            order: 2;
+            width: 100%;
+        }
+
+        div.green {
+            order: 3;
+            width: 100%;
+
+        }
+
+        /***************************/
+        @media screen and (min-width:1200px) {
+            .container {
+                justify-content: space-between;
+            }
+
+            div.blue {
+                order: 1;
+                width: 46%;
+            }
+
+            div.orange {
+                order: 2;
+                width: 50%;
+            }
+
+            div.green {
+                order: 3;
+                width: 46%;
+            }
+        }
+
+
+        .txtcolor {
+
+            color: #420516;
+        }
+
+        .card {
+
+            background-color: #fbeee0;
+        }
+
+        .button-74 {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 4px 4px 0 0;
+            color: #422800;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 0 18px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-74:hover {
+            background-color: #fff;
+        }
+
+        .button-74:active {
+            box-shadow: #422800 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        @media (min-width: 768px) {
+            .button-74 {
+                min-width: 120px;
+                padding: 0 25px;
+            }
+
+            nav {
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            }
+        }
+
+        /* FIN NUEVO CSS */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="width: 30%;">
+                <a class="navbar-brand" href="index.html"><i class="fas fa-mobile-alt"></i> Mobile Store SV</a>
+            </div>
+
+            <!--search box-->
+            <form class="navbar-brand d-flex ">
+                <input class="form-control me-2 w-100" type="search" placeholder="Buscar" aria-label="Search">
+                <!--
+              <button class="btn btn-outline-success" type="submit">Search</button> 
+              -->
+            </form>
+
+            <!--search box end-->
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a href="index.html">
+                        <button class="button-74" role="button"
+                            style="height: 90%; margin-left: 5%;margin-right: 5%;">Inicio</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="button-74" role="button"
+                            style="height: 90%; margin-left: 5%;margin-right: 5%;">Estadisticas</button>
+                    </li>
+                    <li class="nav-item">
+                       <a href="create-ad.html">
+                        <button class="button-74 w-25" role="button"
+                            style="height: 90%;margin-left: 5%;margin-right: 5%;"><i
+                                class="fas fa-plus-circle"></i></button>
+                            </a> 
+                    </li>
+                    <li class="nav-item ">
+                        <button class="button-74 " role="button"
+                            style="height: 90%;margin-left: 5%;margin-right: 5%;"><i
+                                class="fas fa-shopping-cart"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid">
+
+        <div class="container">
+            <div class="blue">
+                <div class="card w-100" style="margin: 1%;">
+                    <div class="card-body">
+
+
+
+                        <label style="margin: 2%;">Estado: </label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Nuevo</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Usado</label>
+                        </div>
+                        <form>
+                            <div class="form-group">
+
+
+                                <div class="form-group row" style="margin: 2%; margin-top: 0%;">
+                                    <label for="inputName" class="col-lg-3 col-form-label">Marca:</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control m-lg-0" id="inputName"
+                                            placeholder="Apple">
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="margin: 2%; margin-top: 0%;">
+                                    <label for="inputPhone" class="col-lg-3 col-form-label">Modelo:</label>
+                                    <div class="col-sm-5">
+                                        <input type="text" class="form-control m-lg-0" id="inputPhone"
+                                            placeholder="iPhone 8" st>
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="margin: 2%; margin-top: 0%;">
+                                    <label for="inputPhone" class="col-lg-3 col-form-label">Pantalla:</label>
+                                    <div class="col-sm-2">
+                                        <input type="text" class="form-control m-lg-0" id="inputPhone"
+                                            placeholder="5.5">
+                                    </div>
+                                    <div class="col-lg-3 col-form-label">
+                                        Pulgadas
+                                    </div>
+
+                                </div>
+                                <div class="form-group row" style="margin: 2%; margin-top: 0%;">
+                                    <label for="inputPhone" class="col-lg-3 col-form-label">Pantalla:</label>
+                                    <div class="col-sm-5">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Seleccionar </option>
+                                            <option value="1">Android</option>
+                                            <option value="2">IOS</option>
+                                            <option value="3">Harmony</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="margin: 2%; margin-top: 0%;">
+                                    <label for="inputPhone" class="col-lg-3 col-form-label">ROM:</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control m-lg-0" id="inputPhone"
+                                            placeholder="128GB">
+                                    </div>
+                                    <div class="col-sm-4 col-form-label">
+                                        Almacenamiento
+                                    </div>
+
+
+                                </div>
+                                <div class="form-group row" style="margin: 2%; margin-top: 0%;">
+                                    <label for="inputPhone" class="col-lg-3 col-form-label">RAM:</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control m-lg-0" id="inputPhone"
+                                            placeholder="8GB">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+
+                <div class="adj">
+                    <div class="card w-100" style="margin: 1%; margin-top: 0%;">
+                        <div class="card-header">
+                            Imagenes
+                        </div>
+                        <div class="card-body centrador">
+                            <div class="form-group " style="margin: 2%;">
+                                <div class="row">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlFile1">Subir archivo</label>
+                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="row" style="margin: 1%;">
+                                    <table class="table ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Tamaño</th>
+                                                <th scope="col">Tipo</th>
+                                                <th scope="col" style="text-align: center;">Accción</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>1.3mb</td>
+                                                <td>.png</td>
+                                                <td class="text-center"><button type="button" class="btn btn-primary"><i
+                                                            class="fas fa-trash-alt "></i></button></td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>2.5mb</td>
+                                                <td>.jpg</td>
+                                                <td class="text-center"><button type="button" class="btn btn-primary"><i
+                                                            class="fas fa-trash-alt "></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>743.1kb</td>
+                                                <td>.jpeg</td>
+                                                <td class="text-center"><button type="button" class="btn btn-primary"><i
+                                                            class="fas fa-trash-alt "></i></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="orange">
+                <div class="card w-100" style="margin: 1%;">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Titulo breve del anuncio</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Digite el titulo ..."
+                                    style="margin:2%;width: 86%;">
+
+                                <div class="form-group row" style="margin: 2%; margin-top: 0%;">
+                                    <label for="inputName" class="col-lg-3 col-form-label">Vendedor:</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control m-lg-0" id="inputName"
+                                            placeholder="Nombre ..." st>
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="margin: 2%; margin-top: 0%;">
+                                    <label for="inputPhone" class="col-lg-3 col-form-label">Teléfono:</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control m-lg-0" id="inputPhone"
+                                            placeholder="8 digitos ..." st>
+                                    </div>
+                                </div>
+                                <label for="txtDescription">Descripción</label>
+                                <textarea class="form-control" id="txtDescription" rows="3"
+                                    placeholder="280 caracteres maximo"
+                                    style=" resize: none; margin: 2%;width: 86%;"></textarea>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="centrador">
+                        <div class="card w-75" style="margin: 3%; margin-top: 0%;">
+                            <div class="card-header centrador">
+                                Precio
+                            </div>
+                            <div class="card-body centrador">
+                                <div class="form-group row centrador" style="margin: 2%;">
+
+                                    <input type="digit" class="form-control " id="inputPrice" placeholder="$0.00"
+                                        style="width: 40%;">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centrador" style="padding: 2%;">
+                        <div class="row w-100">
+                            <div class="col w-50 centrador">
+
+                                <button type="button" class="btn btn-primary w-75">Crear</button>
+                            </div>
+                            <div class="col w-50 centrador">
+                                <button type="button " class="btn btn-primary w-75">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--footer here-->
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

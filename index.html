@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Required meta tags -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+
+
+
+  <title>Inicio</title>
+
+  <!--CSS MOVER MAS AL RATO-->
+  <style>
+    body {
+      background-color: #EADCA6;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .bgcolor {
+      background-color: #EADCA6;
+    }
+
+    .headcardcolor {
+      background-color: #E2C275;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    p {
+      color: red;
+    }
+
+    .smallCurrency {
+      width: 8%;
+    }
+
+    .card2 {
+      border: 2 px solid #096BF9;
+      border-radius: 4%;
+
+    }
+
+    .bordemenu {
+      border: 2 px solid #096BF9;
+      border-radius: 4%;
+
+
+    }
+
+    .card-text {
+      text-align: center;
+      color: #222831;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .card {
+      border-radius: 4%;
+      border: 1px solid #FBFBFB;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      transition: all linear 200ms;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      transition: all linear 200ms;
+      z-index: 1;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+      cursor: pointer;
+    }
+
+
+
+    .centrador {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .list-group-item {
+
+      background-color: #fbeee0;
+    }
+
+    .card-img-top {
+      border-radius: 4%;
+    }
+
+    .cardcontent {
+      background-color: #911F27
+    }
+
+    .pagination a {
+      border-radius: 5px;
+    }
+
+    .pagination a.active {
+      border-radius: 5px;
+    }
+
+
+
+
+    /* CSS */
+    .button-74 {
+      background-color: #fbeee0;
+      border: 2px solid #422800;
+      border-radius: 30px;
+      box-shadow: #422800 4px 4px 0 0;
+      color: #422800;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 0 18px;
+      line-height: 50px;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    .button-74:hover {
+      background-color: #fff;
+    }
+
+    .button-74:active {
+      box-shadow: #422800 2px 2px 0 0;
+      transform: translate(2px, 2px);
+    }
+
+    @media (min-width: 768px) {
+      .button-74 {
+        min-width: 120px;
+        padding: 0 25px;
+      }
+
+      nav {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+      }
+    }
+
+    /* FIN NUEVO CSS */
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="width: 30%;">
+        <a class="navbar-brand" href="#"><i class="fas fa-mobile-alt"></i> Mobile Store SV</a>
+      </div>
+
+      <!--search box-->
+      <form class="navbar-brand d-flex ">
+        <input class="form-control me-2 w-100" type="search" placeholder="Buscar" aria-label="Search">
+        <!--
+          <button class="btn btn-outline-success" type="submit">Search</button> 
+          -->
+      </form>
+
+      <!--search box end-->
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+
+          <li class="nav-item">
+            <a href="#">
+              <button class="button-74" role="button"
+                style="height: 90%; margin-left: 5%;margin-right: 5%;">Inicio</button></a>
+          </li>
+          <li class="nav-item">
+            <button class="button-74" role="button"
+              style="height: 90%; margin-left: 5%;margin-right: 5%;">Estadisticas</button>
+          </li>
+
+          <li class="nav-item">
+            <a href="create-ad.html">
+              <button class="button-74 w-25" role="button" style="height: 90%;margin-left: 5%;margin-right: 5%;"><i
+                  class="fas fa-plus-circle"></i></button>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <button class="button-74 " role="button" style="height: 90%;margin-left: 5%;margin-right: 5%;"><i
+                class="fas fa-shopping-cart"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <!--SIDEBAR-->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bgcolor sidebar collapse">
+        <li class="list-group-item bgcolor">
+          <div class="card border-dark mb-3 " style="max-width: 18rem;">
+            <div class="card-header headcardcolor">
+              Fabricante
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item ">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Xperia
+                    <span class="badge bg-success">3</span>
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Xiaomi
+                    <span class="badge bg-success">2</span>
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Apple
+                    <span class="badge bg-success">7</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!--sistema-->
+        <li class="list-group-item bgcolor">
+          <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header  headcardcolor">
+              Sistema
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Android
+                    <span class="badge bg-danger">0</span>
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    IOS
+                    <span class="badge bg-success">99+</span>
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Windows
+                    <span class="badge bg-danger">0</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!--Screen size-->
+        <li class="list-group-item bgcolor">
+          <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header  headcardcolor">
+              Pantalla
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    5.5"
+                    <span class="badge bg-danger">0</span>
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    6.0"
+                    <span class="badge bg-danger">1</span>
+                  </label>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    6.8"
+                    <span class="badge bg-success">99+</span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </nav>
+
+      <!--FIN SIDEBAR-->
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 ">
+        <div class="container-fluid d-lg-none" style="margin: 3%">
+          <div class="row">
+            <div class="col centrador" style="width: 90%; flex-wrap: wrap;">
+              <div class="input-info centrador">
+                <label class="info-label" style="width: 90%;">Ordenar por: </label>
+                <select class="form-select" style="width:auto; margin: 3%;">
+                  <option value="1">Precio</option>
+                  <option value="2">Fecha</option>
+
+                </select>
+              </div>
+            </div>
+
+            <div class="col centrador" style="width: 10%; flex-wrap: wrap;">
+              <div class="dropdown" style="width: 20%;">
+
+                <!--      MENU DROPDOWN       -->
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown">
+                  <i class="fas fa-filter"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div class="border bordemenu">
+                    <li class="list-group-item bordemenu " style="border-style: dotted;">
+                      <div class="card2 border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header border-bottom">
+                          Fabricante
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Xperia
+                                <span class="badge bg-success">3</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Xiaomi
+                                <span class="badge bg-success">2</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Apple
+                                <span class="badge bg-success">7</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </div>
+                  <!--sistema-->
+                  <li class="list-group-item" >
+                    <div class="card2 border-dark mb-3" style="max-width: 18rem;">
+                      <div class="card-header">
+                        Sistema
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Android
+                              
+                            </label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              IOS
+                            </label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Windows
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!--Screen size-->
+                  <li class="list-group-item">
+                    <div class="card2 border-dark mb-3" style="max-width: 18rem;">
+                      <div class="card-header">
+                        Pantalla
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              5.5"
+                            </label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              6.0"
+                            </label>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              6.8"
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                </ul>
+
+                <!--FIN DEL DROPDOWN-->
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="d-none d-lg-block">
+          <!--estos son los textbox-->
+          <div class="d-flex">
+            <div class="d-flex mx-auto centrador"
+              style="padding:1%;margin:1%; border-radius: 5px; background-color: #fbeee0;  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+              <div class="input-info centrador">
+                <label class="info-label">Desde $</label>
+                <input type="text" style="width:25% ; margin: 3%;" placeholder="0.00">
+              </div>
+
+              <div class="input-info centrador">
+                <label class="info-label">Hasta $</label>
+                <input type="text" style="width:25%; margin: 3%;"placeholder="0.00">
+              </div>
+            </div>
+            <div class="d-flex  mx-auto"
+              style="padding:1%;margin:1%; border-radius: 5px; background-color: #fbeee0; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+              <label>Ordenar por</label>
+              <button type="button" class="btn btn-sm btn-outline-secondary" style="margin: 3%;">Precio</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary " style="margin: 3%;">Fecha</button>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="div mx-auto" style="display: flex;justify-content: center;align-items: center; margin: 1%;">
+          <div class="container">
+
+            <div class="container">
+              <div class="row equal">
+
+                <div class="col-sm-4 d-flex pb-3">
+                  <a href="published-ad.html">
+                  <div class="card card-block">
+                    <img class="card-img-top"
+                      src="https://isenacode.com/wp-content/uploads/2021/09/iphone-13-nuevos-dispositivos-apple-d.jpeg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Iphone 13 Pro Max
+                        256GB Factory Unlocked</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+
+                <div class="col-sm-4 d-flex pb-3">
+                  <a href="published-ad.html">
+                  <div class="card card-block">
+                    <img class="card-img-top"
+                      src="https://isenacode.com/wp-content/uploads/2021/09/iphone-13-nuevos-dispositivos-apple-d.jpeg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Iphone 13 Pro Max
+                        256GB Factory Unlocked</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+
+                <div class="col-sm-4 d-flex pb-3">
+                  <a href="published-ad.html">
+                  <div class="card card-block">
+                    <img class="card-img-top"
+                      src="https://isenacode.com/wp-content/uploads/2021/09/iphone-13-nuevos-dispositivos-apple-d.jpeg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Iphone 13 Pro Max
+                        256GB Factory Unlocked</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+
+                <div class="col-sm-4 d-flex pb-3">
+                  <a href="published-ad.html">
+                  <div class="card card-block">
+                    <img class="card-img-top"
+                      src="https://isenacode.com/wp-content/uploads/2021/09/iphone-13-nuevos-dispositivos-apple-d.jpeg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Iphone 13 Pro Max
+                        256GB Factory Unlocked</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+
+                <div class="col-sm-4 d-flex pb-3">
+                  <a href="published-ad.html">
+                  <div class="card card-block">
+                    <img class="card-img-top"
+                      src="https://isenacode.com/wp-content/uploads/2021/09/iphone-13-nuevos-dispositivos-apple-d.jpeg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Iphone 13 Pro Max
+                        256GB Factory Unlocked</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+
+
+                <div class="col-sm-4 d-flex pb-3">
+                  <a href="published-ad.html">
+                  <div class="card card-block">
+                    <img class="card-img-top"
+                      src="https://isenacode.com/wp-content/uploads/2021/09/iphone-13-nuevos-dispositivos-apple-d.jpeg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Iphone 13 Pro Max
+                        256GB Factory Unlocked</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="container centrador">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

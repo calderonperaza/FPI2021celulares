@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <title>published ad</title>
+
+    <!--CSS MOVER MAS AL RATO-->
+    <style>
+        body {
+            background-color: #EADCA6;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+
+        h3 {
+            display: inline-block;
+        }
+
+        .bordemenu {
+            border: 2 px solid #096BF9;
+            border-radius: 4%;
+
+
+        }
+
+        .card {
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            transition: all linear 200ms;
+        }
+
+
+
+        .centrador {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        @media (hover: hover) {
+            .carousel:hover {
+                transform: scale(1.05);
+                transition: all linear 200ms;
+                z-index: 1;
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+                cursor: pointer;
+            }
+
+        }
+
+
+
+        .carousel {
+            height: 100%;
+            transition: all linear 200ms;
+        }
+
+        .carousel-item,
+        .carousel-inner,
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-item {
+            text-align: center;
+        }
+
+
+        /* CSS */
+
+        .txtcolor {
+
+            color: #420516;
+        }
+
+        .card {
+
+            background-color: #fbeee0;
+        }
+
+        .button-74 {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 4px 4px 0 0;
+            color: #422800;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 0 18px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-74:hover {
+            background-color: #fff;
+        }
+
+        .button-74:active {
+            box-shadow: #422800 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        @media (min-width: 768px) {
+            .button-74 {
+                min-width: 120px;
+                padding: 0 25px;
+            }
+
+            nav {
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            }
+        }
+        /* FIN NUEVO CSS */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="width: 30%;">
+                <a class="navbar-brand" href="index.html"><i class="fas fa-mobile-alt"></i> Mobile Store SV</a>
+            </div>
+
+            <!--search box-->
+            <form class="navbar-brand d-flex ">
+                <input class="form-control me-2 w-100" type="search" placeholder="Buscar" aria-label="Search">
+                <!--
+              <button class="btn btn-outline-success" type="submit">Search</button> 
+              -->
+            </form>
+
+            <!--search box end-->
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a href="index.html">
+                        <button class="button-74" role="button"
+                            style="height: 90%; margin-left: 5%;margin-right: 5%;">Inicio</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="button-74" role="button"
+                            style="height: 90%; margin-left: 5%;margin-right: 5%;">Estadisticas</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="create-ad.html">
+                        <button class="button-74 w-25" role="button"
+                            style="height: 90%;margin-left: 5%;margin-right: 5%;"><i
+                                class="fas fa-plus-circle"></i></button>
+                            </a>
+                    </li>
+                    <li class="nav-item ">
+                        <button class="button-74 " role="button"
+                            style="height: 90%;margin-left: 5%;margin-right: 5%;"><i
+                                class="fas fa-shopping-cart"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row " style="margin: 1%;">
+            <div class="col-md-6 ms-sm-auto col-lg-6 px-md-4 centrador">
+                <div class="container-fluid " style="object-fit:cover">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                        style="object-fit:cover">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-fluid" style="width:740px;height:460px"
+                                    src="https://i2.wp.com/www.pdevice.com/wp-content/uploads/2014/08/apple-iphone-4-600x600.jpg"
+                                    alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" style="width:740px;height:460px"
+                                    src="https://i.ebayimg.com/images/g/hJcAAOSwvg9XVkfP/s-l640.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid " style="width:840px;height:460px"
+                                    src="https://www.islabit.com/wp-content/imagenes/eduardo/4679159271_089fe4db68_b.jpg"
+                                    alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ms-sm-auto col-lg-6 px-md-4 centrador">
+
+                <div class="container-fluid">
+                    <div class="row" style="margin-top: 3%;">
+
+                        <h2 class="txtcolor">
+                            Iphone 6s Plus Factory Unlocked (128GB)
+                        </h2>
+
+                    </div>
+                    <div class="row" style="margin-top: 3%;">
+
+                        <h1 class="txtcolor">
+                            $125.99
+                        </h1>
+
+                    </div>
+                    <div class="row " style="width: auto;margin-top: 3%;">
+                        <button class="button-74 w-50" role="button"
+                            style="height: 80%; margin-left: 5%;margin-right: 5%;">Comprar</button>
+
+
+                    </div>
+                    <div class="row" style="margin-top: 3%;">
+                        <div class="col">
+                            <h3 class="txtcolor">Vendido por: </h3>
+                        </div>
+                        <div class="col">
+                            <h3 class="txtcolor"> Juan Perez</h3>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row " style="margin: 3%,3%,0%,3%;">
+                <p class="description_title centrador" style="font-size: 175%; color:#852747;">
+                    Descripción
+                </p>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-stretch" style="margin-top: 1%; margin-bottom: 2%;">
+                        <div class="card">
+                            <div class="card-body roboto">
+                                xx Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita voluptas
+                                quod
+                                adipisci, atque veritatis molestias possimus illum sequi. Dolor dicta placeat delectus
+                                earum reiciendis blanditiis aliquam laudantium quidem tempore.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita voluptas quod
+                                adipisci, atque veritatis molestias possimus illum sequi. Dolor dicta placeat delectus
+                                earum reiciendis blanditiis aliquam laudantium quidem tempore.
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch" style="margin-top: 1%; margin-bottom: 2%;">
+                        <div class="card">
+                            <div class="card-body roboto">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita voluptas quod
+                                adipisci, atque veritatis molestias possimus illum sequi. Dolor dicta placeat delectus
+                                earum reiciendis blanditiis aliquam laudantium quidem tempore.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta expedita voluptas quod
+                                adipisci, atque veritatis molestias possimus illum sequi. Dolor dicta placeat delectus
+                                earum reiciendis blanditiis aliquam laudantium quidem tempore.
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <!--footer here-->
+    <div class="d-lg-none">
+        <footer class="footer fixed-bottom ">
+            <div class="row">
+                <div class="col centrador" style="width: 50%; margin: 2% 0 2% 2%; ">
+                    <button type="button" class="btn btn-primary w-100">Inicio</button>
+                </div>
+                <div class="col centrador" style="width: 50%; margin:2%  2% 2% 0;">
+                    <button type="button " class="btn btn-primary w-100">Comprar</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
