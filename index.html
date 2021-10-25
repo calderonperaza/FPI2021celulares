@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+   <!--CSS para paleta de colores-->
+    <style>
+    ion-icon {
+  color: #d5d2c1;
+   }
+
+   .primario{
+     background-color: #370d00;
+   }
+
+   .secundario{
+     background-color: #a46843;
+   }
+
+   .exito{
+     background-color: #bd8e62;
+     
+   }
+
+   .advertencia{
+     background-color: #d5d2c1;
+   }
+   .altura-img {
+    width:100%;
+    height: 230px;
+   }
+    </style>
+
+    <title>ventas celulares</title>
+  </head>
+  <body>
+
+<!--navbar-->
+  <nav class="navbar navbar-light border-bottom border-5 border-dark" style='background-color: #dfbf9f;'>
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold text-uppercase fs-3 text-dark d-none d-lg-block d-xl-block d-sm-none d-md-none" href="#">
+      <ion-icon name="home"></ion-icon>
+     Tienda Cellphone FPI
+    </a>
+     <button class="navbar-toggler d-lg-none secundario" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false">
+        <ion-icon name="menu" size="large"></ion-icon>
+      </button>
+     <form class="d-flex">
+      <input class="form-control me-2 d-block" type="search" placeholder="Buscar" aria-label="Search">
+    </form>
+    <form class='d-flex'><form class='d-flex'>
+    <button type="button" class="btn rounded-pill text-light secundario btn-sm d-none d-lg-block d-xl-block d-sm-none d-md-none">Inicio</button>
+    </form>
+    <form class='d-flex'>
+    <button type="button" class="btn rounded-pill text-light secundario btn-sm d-none d-lg-block d-xl-block d-sm-none d-md-none">
+    Estadisticas</button>
+    </form>
+    <button type="button" class="btn secundario d-none d-lg-block d-xl-block d-sm-none d-md-none" data-bs-toggle="modal" data-bs-target="#modalNuevoAnuncio">
+    <ion-icon name="add-circle" size="large"></ion-icon>  
+    </button>
+     <button type="button" class="btn secundario d-none d-lg-block d-xl-block d-sm-none d-md-none" >
+    <ion-icon name="cart" size="large"></ion-icon>
+    <span class="badge bg-danger">+3</span>
+     </span>
+
+    </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+      <a class="navbar-brand fw-bold text-uppercase fs-3 text-dark " href="#">
+      <ion-icon name="home"></ion-icon>
+         Tienda Cellphone FPI
+      </a>
+       <ul class="navbar-nav me-auto mb-2 d-lg-block d-xl-block d-sm-none d-md-none">
+          <li class="nav-item border">
+         <a class="nav-link text-dark" href="#">Inicio</a>
+          </li>
+          <li class="nav-item border">
+            <a class="nav-link text-dark" href="#" data-bs-toggle="modal" data-bs-target="#modalNuevoAnuncio">Nuevo Anuncio</a>
+          </li>
+          <li class="nav-item border">
+            <a class="nav-link text-dark" href="#">Carrito</a>
+          </li>
+          <li class="nav-item border">
+            <a class="nav-link text-dark" href="#">Estadisticas</a>
+          </li>
+          </ul>
+      
+      </div>
+
+  </div>
+
+  <!-- Modal nuevo Anuncio-->
+<div class="modal fade" id="modalNuevoAnuncio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content advertencia">
+      <div class="modal-header secundario">
+        <h5 class="modal-title" id="exampleModalLabel">Nuevo Anuncio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h6>Estado:</h6>
+              <div class="form-check ">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Nuevo
+                </label>                
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                Usado
+                </label>
+              </div>
+              <div class="mb-3">
+                <label for="marca" class="form-label">Marca</label>
+                <input type="text" class="form-control" id="marca">
+                <label for="modelo" class="form-label">Modelo</label>
+                <input type="text" class="form-control" id="modelo">
+                <label for="pantalla" class="form-label">Pantalla(pulgadas)</label>
+                <input type="number" class="form-control" id="pantalla">
+                <label for="sistema" class="form-label">Sistema</label>
+                <select id='sistema' class="form-select" aria-label="Default select example">
+                  <option value="1">IOS</option>
+                  <option value="2">Android</option>
+                  <option value="3">HarmonyOS</option>
+                </select>
+                <label for="rom" class="form-label">ROM</label>
+                <input type="text" class="form-control" id="rom">
+                <label for="ram" class="form-label">RAM</label>
+                <input type="text" class="form-control" id="ram">
+              </div>
+            </div>
+            <div class="col">
+                <label for="titulo" class="form-label">Titulo breve del anuncio</label>
+                <input type="text" class="form-control" id="titulo">
+                <label for="vendedor" class="form-label">Vendedor</label>
+                <input type="text" class="form-control" id="vendedor">
+                <label for="telcel" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="telcel">
+                <label for="descripcion" class="form-label">Descripcion</label>
+                <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                <label for="Precio" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="Precio">
+            </div>
+          </div>
+          <div class="row bg-light">
+             <div class="col">
+             <label for="formFile" class="form-label">Agregar imagen</label>
+             <input class="form-control" type="file" id="formFile">
+             <table class="table table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">N</th>
+                    <th scope="col">Tamaño</th>
+                    <th scope="col">Tipo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>  
+                    <th scope="row">1</th>
+                    <td>145 kb</td>
+                    <td>jpg</td>
+                    
+                  </tr>
+                  <tr>
+                  <th scope="row">2</th>
+                    <td>145 kb</td>
+                    <td>jpg</td>
+                   
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>145 kb</td>
+                    <td>png</td>
+                  </tr>
+              </tbody>
+            </table>
+              
+             </div>
+             <div class='col'>
+             <br><br><br>
+             <img src="cell2.png" class="img-thumbnail" alt="anuncio">
+             </div>         
+        </div>
+
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn secundario" data-bs-dismiss="modal">
+        <ion-icon name="close-circle"></ion-icon>Cancelar</button>
+        <button id='crearbtn' type="button" class="btn secundario" data-bs-dismiss="modal">
+        <ion-icon name="save"></ion-icon>Crear</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</nav>
+
+<!--Live Toast Crear Anuncio-->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header exito">
+      <ion-icon name="happy"></ion-icon>
+      <strong class="me-auto">Nuevo Anuncio Creado</strong>
+      <small>Ahora</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Usted ha creado un nuevo anuncio.
+    </div>
+  </div>
+</div>
+
+
+<!--Cuerpo principal-->
+
+<div class="container-fluid ">
+  <div class="row">
+  <!--sidebar-->
+  
+    <div class="col-3 d-none d-lg-block d-xl-block d-sm-none d-md-none">
+    <div class="border border-light exito overflow-auto" id="sidebar-wrapper">
+
+                <div class="list-group list-group-flush">
+                <div class="list-group-item exito p-3 border-light">
+                <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Nuevo</label>
+                </div>
+                </div>
+
+
+                <div class="list-group-item exito p-3 border-light">
+                    <h4>Marca</h4>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="samsung">
+                     <label class="form-check-label" for="samsung">Samsung</label>
+                     </div>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="huawei">
+                     <label class="form-check-label" for="huawei">Huawei</label>
+                     </div>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="nokia">
+                     <label class="form-check-label" for="nokia">Nokia</label>
+                     </div>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="iphone">
+                     <label class="form-check-label" for="iphone">Iphone</label>
+                     </div>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="xiaomi">
+                     <label class="form-check-label" for="samsung">Samsung</label>
+                     </div>
+                     </div>
+                    </div>
+                    
+                    <div class="list-group-item exito p-3 border-light">
+                    <h4>Sistema</h4>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="android">
+                     <label class="form-check-label" for="android">Android</label>
+                     </div>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="windows">
+                     <label class="form-check-label" for="windows">Windows</label>
+                     </div>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="ios">
+                     <label class="form-check-label" for="ios">IOS</label>
+                     </div>
+                     </div>
+                     <div class="list-group-item exito p-3 border-light">
+                    <h4>Pantalla</h4>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="seis">
+                     <label class="form-check-label" for="seis">6.0</label>
+                     </div>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="cincopuntocinco">
+                     <label class="form-check-label" for="cincopuntocinco">5.5</label>
+                     </div>
+                     <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="cinco">
+                     <label class="form-check-label" for="cinco">5.0</label>
+                     </div>
+
+
+                </div>
+
+    </div>
+    </div>
+   
+<!--Principal-->
+    <div class="col-9">
+      <div class="container">
+      <div class="row">
+       <div class="col d-none  d-lg-block d-xl-block d-sm-none d-md-none  w-25 p-1 justify-content-start align-items-center border border-light">
+      
+      <label for="ex1" >Precio: </label>
+       <input id='ex1' type="text" class="form-control w-25 d-inline" placeholder="$" aria-label="First name">
+       <label for="ex2">Hasta:</label>
+        <input id='ex2' type="text" class="form-control w-25 d-inline" placeholder="$" aria-label="Last name">
+    </div>
+    <div class="col  w-25 p-1 justify-content-start align-items-center border border-light">
+      <label for="sprecio">Ordenar por:</label>
+      <select id='sprecio' class="form-select d-inline d-lg-inline d-xl-inline d-sm-inline d-md-inline w-25 secundario" aria-label="Default select example">
+          <option selected>Precio</option>
+         <option value="1">$60</option>
+         <option value="2">$70</option>
+         <option value="3">$80</option>
+      </select>
+      <select class="form-select d-none d-lg-inline d-xl-inline d-sm-none d-md-none w-25 secundario" aria-label="Default select example">
+        <option selected>Fecha</option>
+        <option value="1">ultimas 24 horas</option>
+        <option value="2">ultimos 2 dias</option>
+        <option value="3">la ultima semana</option>
+      </select>
+      <button class="btn navbar-toggler secundario d-lg-none" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+       <ion-icon name="funnel" size='small'></ion-icon>
+      </button>
+
+
+      <div class="collapse navbar-collapse d-lg-none" id="navbarsExample02">
+       <ul class="navbar-nav me-auto mb-2 d-lg-block d-xl-block d-sm-none d-md-none">
+          <li class="nav-item advertencia border-dark">
+             <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1">
+                <label class="form-check-label" for="flexSwitchCheckDefault1">Nuevo</label>
+             </div>
+          </li>
+          <li class="nav-item advertencia border-dark">
+            <h5>Marca</h5>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="samsung1">
+                     <label class="form-check-label" for="samsung1">Samsung</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="Iphone1">
+                     <label class="form-check-label" for="Iphone1">Iphone</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="huawei1">
+                     <label class="form-check-label" for="huawei1">Huawei</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="xiaomi1">
+                     <label class="form-check-label" for="xiaomi1">Xiaomi</label>
+             </div>
+          </li>
+          <li class="nav-item advertencia border-dark">
+            <h5>Sistema</h5>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="Android1">
+                     <label class="form-check-label" for="Android1">Android</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="IOS1">
+                     <label class="form-check-label" for="IOS1">IOS</label>
+             </div>
+             <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="Windows1">
+                     <label class="form-check-label" for="Windows1">Windows</label>
+             </div>
+          </li>
+          <li class="nav-item advertencia border-dark">
+            <h5>pantalla</h5>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="6.01">
+                     <label class="form-check-label" for="6.01">6.0</label>
+             </div>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="5.51">
+                     <label class="form-check-label" for="5.51">5.5</label>
+             </div>
+            <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="5.01">
+                     <label class="form-check-label" for="5.01">5.0</label>
+             </div>
+          </li>
+          </ul>
+      
+      </div>
+
+    </div>
+    
+      </div>
+  <div class="row border border-1 border-ligth">
+    <div class="col p-3">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <button type="button" class="btn rounded-pill text-light secundario" data-bs-toggle="modal" data-bs-target="#modalVerMas">
+    Ver Mas 
+    </button>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <button type="button" class="btn rounded-pill text-light secundario" data-bs-toggle="modal" data-bs-target="#modalVerMas">
+    Ver Mas 
+    </button>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text text-center">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <button type="button" class="btn rounded-pill text-light secundario" data-bs-toggle="modal" data-bs-target="#modalVerMas">
+    Ver Mas 
+    </button>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <button type="button" class="btn rounded-pill text-light secundario" data-bs-toggle="modal" data-bs-target="#modalVerMas">
+    Ver Mas 
+    </button>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <button type="button" class="btn rounded-pill text-light secundario" data-bs-toggle="modal" data-bs-target="#modalVerMas">
+    Ver Mas 
+    </button>
+  </div>
+</div>
+    </div>
+    <div class="col p-3">
+      <div class="card advertencia" style="width: 18rem;">
+  <img src="cell2.png" class="card-img-top altura-img" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">$132.00</h5>
+    <p class="card-text">Samsung J6, Pantalla 5.5, 64 GB, 2 GB RAM, color negro</p>
+    <button type="button" class="btn rounded-pill text-light secundario" data-bs-toggle="modal" data-bs-target="#modalVerMas">
+    Ver Mas 
+    </button>
+  </div>
+</div>
+    </div>
+
+
+  </div>
+
+  <!-- Modal Ver Mas-->
+<div class="modal fade" id="modalVerMas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content advertencia">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Samsung J6</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <img src="cell.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="cell2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="cell3.png" class="d-block w-100" alt="...">
+                          </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                      </button>
+                      </div>
+               </div>
+            <div class="col">
+                 <p class="text-center fs-6">Samsung J6 Pantalla de 5.5 pulgadas, 64 GB internos, 2 GB de RAM, color negro, doble chip, liberado.</p>
+                 <p class="text-start fs-3">$132.00</p>
+                 <button type="button" class="btn secundario" id='cartToastBtn' data-bs-dismiss="modal">COMPRAR</button>
+                 <p class="text-start fs-6">Vendedor: Juan Perez   Telefono: 24356784</p>
+             </div>
+          </div>
+          <div class='row'>
+          <p class="text-center fs-4">Descripcion</p>
+              <div class='col'>
+               <p class="text-start fs-6">El telefono esta nuevo, tiene dos camaras, acepta todas las companias telefonicas,
+               tigo, movistar, digicel. Acepta 5G.</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn secundario" data-bs-dismiss="modal">
+        <ion-icon name="close-circle"></ion-icon>Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Toast anadir al carrito-->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="cartToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header secundario">
+      <ion-icon name="star-half-outline"></ion-icon>
+      <strong class="me-auto text-light">Añadido al carrito</strong>
+      <small class='text-light'>Ahora</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      El producto ha sido añadido al carrito.
+    </div>
+  </div>
+</div>
+
+
+  <!--Paginacion-->
+  <div class='row p-3'>
+  <div class='col'>
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+</div>
+<div class='col d-none d-lg-block d-xl-block d-sm-none d-md-none'>
+<select class="form-select secundario text-light" aria-label="Default select example">
+  <option selected>Articulos por pagina</option>
+  <option value="1">5</option>
+  <option value="2">10</option>
+  <option value="3">15</option>
+</select>
+</div>
+</div>
+  </div>
+
+</div>
+
+    </div>
+  <!--footer-->
+  <div class='row exito'>
+    <div class='gap-2 d-md-block text-center p-3'>
+     <a href='#' class='d-sm-inline'> <ion-icon name="logo-facebook" size='large'></ion-icon></a>
+     <a href='#' class='d-sm-inline'> <ion-icon name="logo-instagram" size='large'></ion-icon></ion-icon></a>
+     <a href='#' class='d-sm-inline'> <ion-icon name="logo-twitter" size='large'></ion-icon></a>
+     <a href='#' class='d-sm-inline'> <ion-icon name="logo-whatsapp" size='large'></ion-icon></a>
+      <p class='fs-6 fw-light text-black-50 text-opacity-50'>Tienda Cellphone FPI S.A de C.V.<br>Blvd de Los Próceres y Calle 1, Col. San Francisco.<br>Centro Comercial Florencia, San Salvador, El Salvador.</p>
+     <div class='border-top border-secondary'>
+     <p class='text-start fs-6 fw-light text-black-50 text-opacity-50'>© Tienda Cellphone FPI-2021. Todos los derechos reservados.</p>
+    </div>
+    </div>
+  </div>  
+  </div>
+</div>
+
+
+ 
+<!--libreria ionicon para los iconos -->
+<script  type= "module"  src= "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script> 
+<script  nomodule  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+
+<!-- javaScript de Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+  <!--javaScript para hacer funcionar algunos elementos-->
+  <script>
+  var toastTriggerCrear = document.getElementById('crearbtn')
+var toastLiveCrear = document.getElementById('liveToast')
+if (toastTriggerCrear) {
+  toastTriggerCrear.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveCrear)
+
+    toast.show()
+  })
+}
+
+var toastTrigger = document.getElementById('cartToastBtn')
+var toastLiveExample = document.getElementById('cartToast')
+if (toastTrigger) {
+  toastTrigger.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample)
+
+    toast.show()
+  })
+}
+
+  
+  </script>
+  
+  </body>
+</html>
