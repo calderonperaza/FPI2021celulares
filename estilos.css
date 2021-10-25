@@ -1,0 +1,48 @@
+/* Este es para cambiar el color de la línea del campo cuando lo seleccionas */
+.input-field input[type=text] {
+    border-bottom: 1px solid rgb(0, 0, 0) !important; 
+    box-shadow: #69491a !important;
+    }
+
+.input-field input[type=number] {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.input-field input[type=date] {
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+}
+
+.input-field textarea {
+  border-bottom: 1px solid rgb(0, 0, 0); 
+}
+.row .input-field textarea:focus {
+    border-bottom: 1px solid #69491a !important;
+   box-shadow: 0 1px 0 0 #69491a  !important
+}
+
+/*Color de la línea al validar, será este */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+/*color en el caso que se tome como inválido */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid rgb(255, 0, 0);
+  box-shadow: 0 1px 0 0 rgb(255, 8, 8);
+}
+
+/* Cambia el color al ícono cuando entras a un campo */
+.input-field .prefix.active {
+  color: rgb(0, 0, 0); 
+}
+
+.row .input-field input:focus {
+   border-bottom: 1px solid #69491a !important;
+   box-shadow: 0 1px 0 0 #69491a  !important;
+ }
+ .input-field input[type=text]:focus {
+    border-bottom: 1px solid #69491a !important; 
+    box-shadow: #69491a !important;
+    }
+ 
