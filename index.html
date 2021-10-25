@@ -7,244 +7,268 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <!--###################################Navbar#####################################-->
-    <div class="navbar-fixed">
-      <nav class="color0">
-          <div class="nav-wrapper">
-            <a href="#" class="brand-logo truncate hide-on-med-and-down" style="padding: 1px 1.5px;"><span class="material-icons">smartphone</span> Tienda Cellphone</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-            <!----------------------------------------Search para movil----------------------------------------->
-            <div class="container hide-on-large-only">
-              <form class="row">
-                <div class="input-field col s9">
-                  <input id="search-movil" class="header-search-input lighten-2 white" id="search" type="text" class="validate"
-                    placeholder="Search..." />
-                </div>
-                <a class=" btn-floating btn-small waves-effect waves-light color5"><i
-                  class="material-icons">search</i></a>
-                
-              </form>
-            </div>
-            
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-            
-              <!----------------------------------------Search----------------------------------------->
-
-              <li>
-                  <form class="row">
-                      <div class="input-field col s10">
-                        <input id="search" class="header-search-input lighten-2 white" id="search" type="text" class="validate"
-                          placeholder="Search..." />
-                      </div>
-                      <a class=" btn-floating btn-medium waves-effect waves-light color5"><i
-                        class="material-icons">search</i></a>
-                      
-                    </form>
-              </li>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Estadísticas</a></li>
-              <li><a href="#"><span class="material-icons">add_circle</span></a></li>
-              <li><a href="#"><span class="material-icons">add_shopping_cart</span></a></li>
-            </ul>
-          </div>
-      </nav>
+    <div class="navbar-fixed" id="nav"> 
     </div>
     <!----------------------------------Menú para movil y tablet--------------------------------------- -->
       <ul class="sidenav grey lighten-2" id="mobile-demo">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Estadísticas</a></li>
-        <li><a href="#"><span class="material-icons">add_circle</span></a></li>
-        <li><a href="#"><span class="material-icons">add_shopping_cart</span></a></li>
       </ul>
 
       <!------------------------------------------ Grid---------------------------------------------->
-  <div class="section">
-    <div class="row">
-      <!--------------------------------------Filtros------------------------------------------------>
-      <div class="col s2 hide-on-med-and-down darken-1 z-depth-4 blanco rounded" id="filtro">
-        <div class="row">
-          <div class="col" >
-            <br>
-                <div class="switch">
-                  <label>
-                    <input type="checkbox">
-                    <span class="lever"></span>
-                    Nuevo
-                  </label>
-                </div>
-                <span class="card-title">Marca</span>
-                <div class="card-content dark-text">
-                  <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>Samsung</span>
-                    </label>
-                    <br>
-                    <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>Iphone</span>
-                    </label>
-                    <br>
-                    <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>Huawei</span>
-                    </label>
-                    <br>
-                    <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>xiaomi</span>
-                    </label>
-                    <br>
-                    <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>Nokia</span>
-                    </label>
-                </div>
-                <hr>
-
-                <span class="card-title">Sistema</span>
-                <div class="card-content dark-text">
-                  <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>Android</span>
-                    </label>
-                    <br>
-                    <label>
-                      <input type="checkbox" class="filled-in"  />
-                      <span>Windows</span>
-                    </label>
-                    <br>
-                    <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>IOS</span>
-                    </label>
-                </div>
-                <hr>
-                <span class="card-title">Pantalla</span>
-                <div class="card-content dark-text">
-                  <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>6.0'</span>
-                    </label>
-                    <br>
-                    <label>
-                      <input type="checkbox" class="filled-in"  />
-                      <span>5.5'</span>
-                    </label>
-                    <br>
-                    <label>
-                      <input type="checkbox" class="filled-in"/>
-                      <span>5.0'</span>
-                    </label>
-                </div>
-
-          </div>
-        </div>
-      </div>
-      <!-------------------------------------------Contenido Desktop----------------------------------------->
-      <div class="col s9 contenido">
-        <div class="container grey lighten-2 col s10 hide-on-small-only rounded hide-on-med-and-down" style="width: 110%;">
+      <div class="row" id="main-content" style="height:100%;">
+        <!--------------------------------------Filtros------------------------------------------------>
+        <div class="col m4 l3 blanco z-depth-2 hide-on-med-and-down" id="filtro">
           <div class="row">
-            <br>
-      <!-------------------------------------Filtro Precio------------------------------------------>
-            <div class="col s4 darken-1 z-depth-4 offset-s1 rounded1 color5">
-              <div class="col s5 input-field inline white-text">
-                <i class="material-icons prefix">monetization_on</i>
-                <input id="icon_price" type="text" class="validate white-text">
-                <label for="icon_price">Precio</label>
-              </div>
-              <div class="col s5 input-field inline white-text">
-                <i class="material-icons prefix">monetization_on</i>
-                <input id="icon_dollar" type="text" class="validate white-text">
-                <label for="icon_dollar">Hasta</label>
-              </div>
-            </div>
-
-      <!-------------------------------------Btn Ordenar por------------------------------------------>
-            <div class="col s5 darken-1 z-depth-4 offset-s1 rounded1 color5 vertical-centro">
-              <div class="col s2 white-text ">
-                <span>Ordenar por:</span>
-              </div>
-              <div class="col s3 white-text">
-                <a class="waves-effect waves-light btn-small grey darken-2">
-                  Precio
-                </a>
-              </div>
-              <div class="col s3 white-text">
-                <a class="waves-effect waves-light btn-small green darken-3">
-                  Fecha
-                </a>
-              </div>
-            </div>
-          </div>
-          <!----------------------------------------Cards--------------------------------------------->
-          <div class="row col s12" id="phones">            
-          </div>
-          <div class="row col s12">
-            <div class="col s6 vertical-centro">
-              <ul class="pagination">
-                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                <li class="active blue accent-3"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-              </ul>
-            </div>
-            <div class="col s6 vertical-centro">
-              <div class="input-field col s3 left">
-                <select>
-                  <option value="9" disabled selected>9</option>
-                  <option value="18">18</option>
-                  <option value="27">27</option>
-                  <option value="36">36</option>
-                </select>
-                <label>Articulos por página</label>
-              </div>
+            <div class="col" >
+              <br>
+                  <div class="switch">
+                    <label>
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      Nuevo
+                    </label>
+                  </div>
+                  <span class="card-title">Marca</span>
+                  <div class="card-content dark-text">
+                    <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Samsung</span>
+                      </label>
+                      <br>
+                      <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Iphone</span>
+                      </label>
+                      <br>
+                      <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Huawei</span>
+                      </label>
+                      <br>
+                      <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>xiaomi</span>
+                      </label>
+                      <br>
+                      <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Nokia</span>
+                      </label>
+                  </div>
+                  <hr>
+  
+                  <span class="card-title">Sistema</span>
+                  <div class="card-content dark-text">
+                    <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>Android</span>
+                      </label>
+                      <br>
+                      <label>
+                        <input type="checkbox" class="filled-in"  />
+                        <span>Windows</span>
+                      </label>
+                      <br>
+                      <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>IOS</span>
+                      </label>
+                  </div>
+                  <hr>
+                  <span class="card-title">Pantalla</span>
+                  <div class="card-content dark-text">
+                    <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>6.0'</span>
+                      </label>
+                      <br>
+                      <label>
+                        <input type="checkbox" class="filled-in"  />
+                        <span>5.5'</span>
+                      </label>
+                      <br>
+                      <label>
+                        <input type="checkbox" class="filled-in"/>
+                        <span>5.0'</span>
+                      </label>
+                  </div>
+  
             </div>
           </div>
         </div>
-      <!-------------------------------------------Contenido para movil------------------------------>
-        <div class="container grey lighten-2 col s12 hide-on-med-and-up rounded" style="width: 120%;">
-          hola
+        <!-------------------------------------------Contenido Desktop----------------------------------------->
+        <div class="col s12 m8 l9 contenido movil-align">
+          
+            <div class="row">
+              <br>
+        <!-------------------------------------Filtro Precio------------------------------------------>
+              <div class="col s4 darken-1 z-depth-2 offset-s1 rounded1 color5 hide-on-med-and-down">
+                <div class="col s5 input-field inline white-text">
+                  <i class="material-icons prefix">monetization_on</i>
+                  <input id="icon_price" type="text" class="validate white-text">
+                  <label for="icon_price">Precio</label>
+                </div>
+                <div class="col s5 input-field inline white-text">
+                  <i class="material-icons prefix">monetization_on</i>
+                  <input id="icon_dollar" type="text" class="validate white-text">
+                  <label for="icon_dollar">Hasta</label>
+                </div>
+              </div>
+  
+        <!-------------------------------------Btn Ordenar por------------------------------------------>
+              <div class="col s5 darken-1 z-depth-4 offset-s1 rounded1 color5 vertical-centro hide-on-med-and-down">
+                <div class="col s2 white-text ">
+                  <span>Ordenar por:</span>
+                </div>
+                <div class="col s3 white-text">
+                  <a class="waves-effect waves-light btn-small grey darken-2">
+                    Precio
+                  </a>
+                </div>
+                <div class="col s3 white-text">
+                  <a class="waves-effect waves-light btn-small green darken-3">
+                    Fecha
+                  </a>
+                </div>
+              </div>
+              <div class="col s9 darken-1 white-text z-depth-4 rounded1 color5 vertical-centro hide-on-large-only" style="margin-left: 2px;;">
+                <div class="col s4">
+                  Ordenar por:
+                </div>
+                <div class="input-field col s8">
+                  <select>
+                    <option value="Precio" disabled selected>Precio</option>
+                    <option value="Fecha">Fecha</option>
+                  </select>
+                </div>
+              </div>
+              <!--Filtro movil-------------------------------------------------------------------------------->
+              <div class="col s2 hide-on-large-only vertical-centro">
+                <a class="btn-floating btn-small green darken-2 material-icons modal-trigger" href="#modal1">
+                  filter_alt
+                </a>
+                <!-- MODAL -->
+                <div id="modal1" class="modal">
+                  <div class="modal-content">
+                    <div class="col" >
+                      <br>
+                          <div class="switch">
+                            <label>
+                              <input type="checkbox">
+                              <span class="lever"></span>
+                              Nuevo
+                            </label>
+                          </div>
+                          <span class="card-title">Marca</span>
+                          <div class="card-content dark-text">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>Samsung</span>
+                              </label>
+                              <br>
+                              <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>Iphone</span>
+                              </label>
+                              <br>
+                              <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>Huawei</span>
+                              </label>
+                              <br>
+                              <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>xiaomi</span>
+                              </label>
+                              <br>
+                              <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>Nokia</span>
+                              </label>
+                          </div>
+                          <hr>
+          
+                          <span class="card-title">Sistema</span>
+                          <div class="card-content dark-text">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>Android</span>
+                              </label>
+                              <br>
+                              <label>
+                                <input type="checkbox" class="filled-in"  />
+                                <span>Windows</span>
+                              </label>
+                              <br>
+                              <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>IOS</span>
+                              </label>
+                          </div>
+                          <hr>
+                          <span class="card-title">Pantalla</span>
+                          <div class="card-content dark-text">
+                            <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>6.0'</span>
+                              </label>
+                              <br>
+                              <label>
+                                <input type="checkbox" class="filled-in"  />
+                                <span>5.5'</span>
+                              </label>
+                              <br>
+                              <label>
+                                <input type="checkbox" class="filled-in"/>
+                                <span>5.0'</span>
+                              </label>
+                          </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!----------------------------------------Cards--------------------------------------------->
+            <div class="row col s12 m12 l12" id="phones">            
+            </div>
+            <div class="row col s12 m12 l12">
+              <div class="col s12 m9 l9 vertical-centro">
+                <ul class="pagination">
+                  <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                  <li class="active blue accent-3"><a href="#!">1</a></li>
+                  <li class="waves-effect"><a href="#!">2</a></li>
+                  <li class="waves-effect"><a href="#!">3</a></li>
+                  <li class="waves-effect"><a href="#!">4</a></li>
+                  <li class="waves-effect"><a href="#!">5</a></li>
+                  <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+              </div>
+              <div class="col m3 l3 vertical-centro">
+                <div class="input-field col s12 hide-on-med-and-down">
+                  <select>
+                    <option value="9" disabled selected>9</option>
+                    <option value="18">18</option>
+                    <option value="27">27</option>
+                    <option value="36">36</option>
+                  </select>
+                  <label>Articulos por página</label>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
-    </div>
-  </div>
 <!--------------------------------------------------Footer---------------------------------------------->
-  <footer class="page-footer color5">
-    <div class="container ">
-      <div class="row ">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container ">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-      </div>
-    </div>
+  <footer class="page-footer color5" id="footer">  
   </footer>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
