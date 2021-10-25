@@ -1,0 +1,58 @@
+
+.contenedor {
+position: fixed;
+	width: 210px;
+	height: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background:lightblue;
+	overflow: auto;
+	font-family: 'Open Sans';
+	border-radius: 4px;
+	display: block;
+}
+
+.contenedor::-webkit-scrollbar {
+	width: 15px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+	background:blue;
+	border-radius: 5px;
+	height: 10px;
+}
+
+
+
+
+
+
+
+
+p {
+	margin-bottom: 20px;
+	line-height: 28px;
+	font-size: 16px;
+	color: #414141;
+}
+
+/* Scroll Personalizado */
+
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	
+}
+
+
+
+
+
+
+
+
+
+
