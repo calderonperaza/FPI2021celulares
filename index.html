@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Cellphone</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-success">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <a><img alt="anuncio" src="img/inicioo.png" width="50px" /></a>
+        </div>
+        <a  class="navbar-brand d-none d-md-block navbar-text" style="color: white;" href="#">Tienda Cellphone</a>
+        <span class=""></span>
+        <form class="form-inline my-2 my-lg-0 d-md-none">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        </form>
+
+        <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent" >
+            <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            </form>
+            <ul class="navbar-nav mr-auto ml-md-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a type="button" class="nav-link "  href="#nuevoModal" style="color: white;"data-toggle="modal">Nuevo anuncio<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a class="nav-link navbar-text" style="color: white;" href="">Carrito<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-text" style="color: white" href="estadisticas.html">Estadísticas</a>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-outline-dark d-none d-md-block mr-2" data-toggle="modal"
+                data-target="#nuevoModal">
+                +
+            </button>
+            <button class="btn btn-outline-dark my-2 my-sm-0 d-none d-md-block">
+                <i class="fas fa-plus"></i>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    <path fill-rule="evenodd"
+                        d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z" />
+                </svg></button>
+        </div>
+    </nav>
+    <main class="conteiner">
+
+        <div class="row mt-3 justify-content-around">
+            <!--filtros-->
+            <nav class="col col-md-12 col-lg-2 mt-5 p-3 ml-3 d-none d-lg-block" style="position: fixed; left: 0;">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="nuevoSwitch1">
+                    <label class="custom-control-label" for="nuevoSwitch1">Nuevo</label>
+                </div>
+                <div class="mt-2 p-3  border rounded bg-primary">
+                    <p class="text-card">Marca</p>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="marca1">
+                        <label class="custom-control-label" for="marca1">Samsung</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="marca2">
+                        <label class="custom-control-label" for="marca2">Huawei</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="marca3">
+                        <label class="custom-control-label" for="marca3">Nokia</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="marca4">
+                        <label class="custom-control-label" for="marca4">iPhone</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="marca5">
+                        <label class="custom-control-label" for="marca5">Xiaomi</label>
+                    </div>
+                </div>
+                <div class="mt-2 p-3  border rounded bg-primary">
+                    <p class="text-card">Sistema</p>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="sistema1">
+                        <label class="custom-control-label" for="sistema1">Android</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="sistema2">
+                        <label class="custom-control-label" for="sistema2">Windows</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="sistema3">
+                        <label class="custom-control-label" for="sistema3">ios</label>
+                    </div>
+                </div>
+                <div class="mt-2 p-3  border rounded bg-primary">
+                    <p class="text-card">Pantalla</p>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="pantalla1">
+                        <label class="custom-control-label" for="pantalla1">6.0</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="pantalla2">
+                        <label class="custom-control-label" for="pantalla2">5.5</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="pantalla3">
+                        <label class="custom-control-label" for="pantalla3">5.0</label>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Cuerpo de la pagina-->
+            <main class="col-lg-9 mt-5 pt-3 offset-lg-2">
+                <div class="row justify-content-around">
+                    <div class="col-4 d-none d-md-block">
+                        <form>
+                            <div class="form-row">
+                                <div class="col text-card ">
+                                    <p class="text-center align-bottom">Precio:</p>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Desde $">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Hasta">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-3 col-md-5 order-last ">
+                        <div class="form-row">
+                            <div class="col text-card d-none d-md-block">
+                                <p class="text-center align-bottom">Ordenar por:</p>
+                            </div>
+                            <div class="dropdown d-md-none">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ordenar por
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Precio</button>
+                                    <button class="dropdown-item" type="button">Fecha</button>
+                                </div>
+                            </div>
+                            <div class="col d-none d-md-block">
+                                <button type="button" class="btn btn-outline-dark">Precio</button>
+                            </div>
+                            <div class="col d-none d-md-block">
+                                <button type="button" class="btn btn-outline-dark">Fecha</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-md-2 order-first order-md-last d-lg-none">
+                        <p>
+                            <a class="btn btn-secondary offset-md-1" data-toggle="collapse" href="#collapseExample"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Filtros
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-12 mt-md-4 order-last d-lg-none">
+                        <div class="collapse" id="collapseExample">
+                            <div class="row justify-content-center">
+                                <div class="col-md-3">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="nuevoSwitch2">
+                                        <label class="custom-control-label" for="nuevoSwitch2">Nuevo</label>
+                                    </div>
+                                    <div class="p-3 mt-2 mt-md-0 border rounded bg-primary">
+                                        <p class="text-card">Marca</p>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="marca21">
+                                            <label class="custom-control-label" for="marca21">Samsung</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="marca22">
+                                            <label class="custom-control-label" for="marca22">Huawei</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="marca23">
+                                            <label class="custom-control-label" for="marca23">Nokia</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="marca24">
+                                            <label class="custom-control-label" for="marca24">iPhone</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="marca25">
+                                            <label class="custom-control-label" for="marca25">Xiaomi</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mt-4 p-3 pb-5 border rounded bg-primary">
+                                        <p class="text-card">Sistema</p>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="sistema21">
+                                            <label class="custom-control-label" for="sistema21">Android</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="sistema22">
+                                            <label class="custom-control-label" for="sistema22">Windows</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="sistema23">
+                                            <label class="custom-control-label" for="sistema23">ios</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="mt-4 p-3 pb-5 border rounded bg-primary">
+                                        <p class="text-card">Pantalla</p>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="pantalla21">
+                                            <label class="custom-control-label" for="pantalla21">6.0</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="pantalla22">
+                                            <label class="custom-control-label" for="pantalla22">5.5</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="pantalla23">
+                                            <label class="custom-control-label" for="pantalla23">5.0</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 justify-content-around">
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card" >
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="justify-content-center">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                <h5 class="card-title">XIAOMI REDMI NOTE 9</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card" >
+                            <img src="img/10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                <h5 class="card-title">XIAOMI REDMI 11 </h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                                        <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                <h5 class="card-title">Xiaomi REDMI NOTE 9</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card" >
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                
+                                <h5 class="card-title">Xiaomi REDMI NOTE 9</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2 justify-content-around">
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                <h5 class="card-title">Xiaomi REDMI NOTE 9</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                <h5 class="card-title">Xiaomi REDMI NOTE 10S</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 220.00
+                                <h5 class="card-title">Xiaomi REDMI NOTE 8S</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/IPHONE.jpg" class="card-img-top" alt="...">
+                            <div class="card-body"><h5 class="text-center">
+                                $ 535.00
+                                <h5 class="card-title">IPHONE 6S</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2 justify-content-around">
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 121.00
+                                <h5 class="card-title">Xiaomi REDMI NOTE 7 pro</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                <h5 class="card-title">Xiaomi REDMI Note 10 pro</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                <h5 class="card-title">Xiaomi REDMI NOTE 9</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 col-md-5 col-lg-3 offset-md-1 offset-lg-0">
+                        <div class="card">
+                            <img src="img/samsung.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="text-center">
+                                    $ 235.00
+                                <h5 class="card-title">Xiaomi REDMI NOTE 9</h5>
+                                <p class="card-text">Pantalla: 6.2", 1440 x 3200 pixels
+                                    Procesador: Snapdragon 865 2.84GHz / Exynos 990 2.73GHz
+                                    RAM: 8GB/12GB
+                                    Almacenamiento: 128GB
+                                    Expansión: microSD
+                                <p>
+                                    <a href="detalles-celular.html" class="card-link">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+
+    </main>
+
+    <div class="modal fade" id="nuevoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="row justify-content-around bg-success" style="margin-left: 0px; margin-right: 0px;">
+                    <div class="col col-12 mt-4">
+                        <h1 class="text-center">Nuevo anuncio</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                        <div class="row my-4 justify-content-around">
+                            <div class="col-10 d-lg-none">
+                                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/fondo.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption ">
+                                                <input type="file" class="form-control-file" id="subirImagenes2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10 col-lg-5 order-last order-lg-first">
+
+                                <div class="">
+                                    <form class="p-3" name="formularioNuevo">
+                                        <div class="form-group row">
+                                            <label for="inlineRadio1" class="col-sm-2 col-form-label">Estado
+                                            </label>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="estadoTelefono"
+                                                    id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Nuevo</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="estadoTelefono"
+                                                    id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Usado</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputMarca" class=" col-sm-2 col-form-label">Marca</label>
+                                            <div class="col-sm-5">
+                                                <input type="text" class="form-control" id="inputMarca">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputModelo" class="col-sm-2 col-form-label">Modelo</label>
+                                            <div class="col-sm-5">
+                                                <input type="text" class="form-control" id="inputModelo">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPantalla" class="col-sm-2 col-form-label">Pantallla</label>
+                                            <div class="col-sm-5">
+                                                <input type="number" class="form-control" id="inputPantalla">
+                                            </div>
+                                            <label class="col-sm-2 col-form-label">Pulgadas</label>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="sistemaFormControlSelect"
+                                                class="col-sm-2 col-form-label">Sistema</label>
+                                            <div class="col-sm-5">
+                                                <select class="form-control" id="sistemaFormControlSelect">
+                                                    <option>ios</option>
+                                                    <option>Android</option>
+                                                    <option>Windows</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputRom" class="col-sm-2 col-form-label">Rom</label>
+                                            <div class="col-sm-5">
+                                                <input type="number" class="form-control" id="inputRom">
+                                            </div>
+                                            <label class="col-sm-2 col-form-label">almacenamiento
+                                                interno</label>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputRam" class="col-sm-2 col-form-label">RAM</label>
+                                            <div class="col-sm-5">
+                                                <input type="number" class="form-control" id="inputRam">
+                                            </div>
+                                        </div>
+                                        <div class="form-group  d-md-none">
+                                            <label for="textAreaDescripcion">Descripción</label>
+                                            <div class="col-sm-12 p-0">
+                                                <textarea class="form-control" id="textAreaDescripcion"
+                                                    rows="6"></textarea>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                    <button onclick="cancelar();"
+                                        class="btn btn-secondary mt-5 d-lg-none">Cancelar</button>
+                                    <button onclick="formulario();"
+                                        class="btn btn-secondary mt-5 d-lg-none">Enviar</button>
+                                </div>
+                                <div class="row mt-3 d-none d-lg-block">
+                                    <div class=" col col-lg-12 ">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlFile1">Subir imagenes</label>
+                                                <input type="file" class="form-control-file" id="subirImagenes">
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-10  col-lg-5 mt-4 mt-md-0">
+                                <form class="p-3">
+                                    <div class="form-group">
+                                        <label for="tituloAnuncio">Título breve del anuncio</label>
+                                        <div class="col-12 p-0">
+                                            <input type="text" class="form-control" id="tituloAnuncio">
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputVendedor" class="col-sm-2 col-form-label">Vendedor</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" class="form-control" id="inputVendedor">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputTelefono" class="col-sm-2 col-form-label">Teléfono</label>
+                                        <div class="col-sm-5">
+                                            <input type="text" class="form-control" id="inputTelefono">
+                                        </div>
+                                    </div>
+                                    <div class="form-group d-none d-md-block">
+                                        <label for="textAreaDescripcion2">Descripción</label>
+                                        <div class="col-sm-12 p-0">
+                                            <textarea class="form-control" id="textAreaDescripcion2"
+                                                rows="6"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputPrecio" class="col-sm-2 col-form-label">Precio</label>
+                                        <div class="col-sm-5">
+                                            <input type="number" class="form-control" id="inputPrecio">
+                                        </div>
+                                    </div>
+                                </form>
+                                <button onclick="cancelar();"
+                                    class="btn btn-secondary mt-5 d-none d-lg-inline">Cancelar</button>
+                                <button onclick="formulario();"
+                                    class="btn btn-secondary mt-5 d-none d-lg-inline">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4 justify-content-around">
+        <div class="col-md-4 col-lg-4 offset-lg-4">
+            <nav aria-label="Page navigation example my-2">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-4 col-lg-4 d-none d-md-block">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Articulos por página
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">10</button>
+                    <button class="dropdown-item" type="button">15</button>
+                    <button class="dropdown-item" type="button">25</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </main>
+
+
+    <!-- javascript -->
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/formulario.js"></script>
+ 
+
+
+</body>
+
+</html>
