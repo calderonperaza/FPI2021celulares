@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aformat_size%3A" />
+  <link href="../css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="light-blue darken-4" role="navigation">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo hide-on-small-only">
+        &nbsp;
+        CellPhone Store
+        <i class="right large material-icons">phone_android</i>
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="large material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <div class="input-field">
+            <i class="material-icons prefix">search</i>
+            <input type="text" id="icon_prefix" class="colorInput" placeholder="Buscar">
+          </div>
+        </li>
+        <li>
+          <a href="../" class="waves-effect waves-light btn green darken-1">
+            <i class="material-icons left">house</i>
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="sass.html" class="waves-effect waves-light btn blue darken-1">
+            <i class="material-icons left">show_chart</i>
+            Estadisticas
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating waves-effect waves-light blue darken-1">
+            <i class="material-icons">add</i>
+          </a>
+        </li>
+        <li>
+          <a class="btn-floating btn-large waves-effect waves-light red darken-3">
+            <i class=" medium material-icons">add_shopping_cart</i>
+          </a>
+        </li>
+      </ul>
+      <div class="right hide-on-large-only input-field">
+        <i class="material-icons prefix">search</i>
+        <input type="text"" id=" icon_prefix" class="colorInput" placeholder="Buscar">
+      </div>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="sass.html" class="waves-effect waves-light btn btn-large dark darken-1 disabled">
+          Lista de Menu
+        </a>
+      </li>
+      <li>
+        <a href="sass.html" class="waves-effect waves-light btn btn-large green darken-1">
+          <i class="large material-icons left">house</i>
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-large waves-effect waves-light blue darken-1" href="./news.html">
+          <i class="large material-icons">add</i>
+          Nuevo Anuncio
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-large waves-effect waves-light red darken-3">
+          <i class="large material-icons">add_shopping_cart</i>
+          Carrito
+        </a>
+      </li>
+      <li>
+        <a href="sass.html" class="waves-effect waves-light btn btn-largeblue darken-1">
+          <i class="large material-icons left">show_chart</i>
+          Estadisticas
+        </a>
+      </li>
+    </ul>
+
+    </div>
+  </nav>
+  <div class="section no-pad-bot">
+    <div class="container">
+      <div class="row">
+        <h3 class="center-align">NUEVO ANUNCIO</h3>
+        <div class="row">
+          <div class="col s12 m5 l5 lx5">
+            <div class="card withe darken-1">
+              <div class="card-action">
+                <form action="#">
+                  <div class="row">
+                    <div class="col s4">
+                      <label for="">Estado:</label>
+                    </div>
+                    <div class="col s4">
+                      <label>
+                        <input name="group1" type="radio" checked />
+                        <span>Red</span>
+                      </label>
+                    </div>
+                    <div class="col s4">
+                      <label>
+                        <input name="group1" type="radio" />
+                        <span>Yellow</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="marca" type="text" class="validate">
+                      <label for="marca">Marca</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="modelo" type="text" class="validate">
+                      <label for="modelo">Modelo</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="pantalla" type="number" step="any" class="validate">
+                      <label for="pantalla">Pantalla</label><span>Pulgadas</span>
+                    </div>
+                    <div class="input-field col s6">
+                      <select>
+                        <option value="">Elige un sistema</option>
+                        <option value="1">IPhone</option>
+                        <option value="2">Android</option>
+                        <option value="3">Android AOSP</option>
+                      </select>
+                      <label>OS</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="rom" type="number" step="any" min="1" class="validate"><span>Almacenamiento
+                        Interno</span>
+                      <label for="rom">Rom</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="ram" type="number" step="any" min="1" class="validate"><span>Memoria</span>
+                      <label for="RAM">Rom</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <fieldset>
+                <legend>Imagenes</legend>
+              <div class="row">
+                <div class="col s2">
+                  <div class="row">
+                    <div class="col s12 center-align">
+                      <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s2 l2">
+                      <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">remove</i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s10 l4">
+                  <table class="responsive-table center-align">
+                    <thead>
+                      <tr>
+                          <th>N</th>
+                          <th>Tamano</th>
+                          <th>Tipo</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>145 kb</td>
+                        <td>jpg</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>145 kb</td>
+                        <td>png</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>145 kb</td>
+                        <td>png</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>145 kb</td>
+                        <td>png</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col l4 center-align">
+                  <img class="materialboxed anuncio" src="../img/telefonos.png">
+                </div>
+              </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="col s12 m7 l7 xl7 ">
+            <div class="card  darken-1 alturaAnuncio">
+              <div class="card-action ">
+                <h4 class="center-align">Informacion del anuncio</h4>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="titulo" type="text" class="validate">
+                    <label for="titulo">Titulo breve del Anuncio</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="vendedor" type="text" class="validate">
+                    <label for="vendedor">Vendedor</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s4">
+                    <input id="telefono" type="text" class="validate">
+                    <label for="telefono">Telefono</label>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Descripcion</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col l4"></div>
+                  <div class="input-field col s12 l4">
+                    <input id="precio" type="number" class="validate">
+                    <label for="precio">Precio</label>
+                  </div>
+                  <div class="col l4"></div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6 l6 right-align">
+                    <a class="waves-effect waves-light btn-large red darken-1"><i
+                        class="material-icons left">cancel</i>Cancelr</a>
+                  </div>
+                  <div class="input-field col s6 l6 left-align">
+                    <a class="waves-effect waves-light btn-large green darken-4" id="crear"><i
+                        class="material-icons left">save</i>Guardar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
