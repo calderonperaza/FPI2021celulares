@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellphone Shop</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="nav-wrapper yellow darken-4 z-depth-3">
+        <div class="container">
+
+            <a href="#" class="brand-logo black-text"><i class="material-icons">phone_android</i>Cellphone Shop</a>
+
+            <a href="#" data-target="menu-responsive" class="sidenav-trigger right">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+
+                <li>
+                    
+                    <div class="input-field col s12 black-text waves-effect">
+                        <i class="material-icons prefix">search</i>
+                            <input type="text" id="buscar">
+                            <label for="buscar" ></label>
+                    </div>
+                    
+                </li>
+
+                <li><a href="#" class="waves-effect yellow lighten-3 btn black-text">INICIO</a></li>
+                <li><a href="#" class="waves-effect yellow lighten-3 btn black-text">ESTADISTICAS</a></li>
+                <li><a href="#"><i class="material-icons black-text">add_box</i></a></li>
+                <li><a href="#"><i class="material-icons black-text">local_grocery_store</i></a></li>
+            </ul>
+
+        </div>
+
+        <div class="row">
+
+    </nav>
+
+
+        <!-- Page Layout here -->
+        <div class="row">
+        
+            <div class="col s12 m4 l3">
+                <!-- Note that "m4 l3" was added -->
+        
+                <!-- Panel de la izquierda-->
+                <div class="row">
+                    <div class="col s5 m11">
+                        <div class="card-panel yellow darken-4 z-depth-3">
+        
+                            <!--Cuadro switch-->
+                            <div class="card-panel switch center-align yellow lighten-3">
+                                <label>
+                                    <a class="black-text">USADO</a>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                    <a class="black-text">NUEVO</a>
+                                </label>
+                            </div>
+        
+                            <!--Cuadro Marca-->
+                            <div class="card-panel yellow lighten-3">
+                                <h6>Marca</h6>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>Galaxy</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>Moto</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>Huawei</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>Iphone</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>Xiomi</span>
+                                    </label>
+                                </p>
+                            </div>
+        
+                            <!--Cuadro Sistema-->
+                            <div class="card-panel yellow lighten-3">
+                                <h6>Sistema</h6>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>Android</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>Windows</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>IOS</span>
+                                    </label>
+                                </p>
+                            </div>
+        
+                            <!--Cuadro Pantalla-->
+                            <div class="card-panel yellow lighten-3">
+                                <h6>Panatalla</h6>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>6.7</span>
+                                    </label>
+                                </p>
+        
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>6.5</span>
+                                    </label>
+                                </p>
+        
+                                <p>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" />
+                                        <span>5.5</span>
+                                    </label>
+                                </p>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- card con filtro -->
+<div class="col s6 m3 l4">
+    <div class="">
+        <div class="container">
+            <div class="card-panel yellow lighten-3">
+                <ul>
+                    <li>
+                        <div class="nav-wrapper">
+                            Precio:
+                            <div class="input-field inline">
+                                <input id="input_text" type="text" class="validate">
+                                <label for="input_text">$</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-wrapper">
+                            Hasta:
+                            <div class="input-field inline">
+                                <input id="input_text" type="text" class="validate">
+                                <label for="input_text">$</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- card con botones filtros -->
+<div class="col s6 m3 l4">
+    <div class="">
+        <div class="container">
+            <div class="card-panel yellow lighten-3 z-depth-3">
+                <ul>
+                    <h5>Ordenado por:</h5>
+                    <li>
+                        <a href="#" class="container waves-effect yellow darken-4 z-depth-3 btn black-text">
+                            <i class="material-icons black-text left">arrow_upward</i>PRECIO</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="#" class="container waves-effect yellow darken-4 btn black-text">FECHA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Targetas con celulares -->
+<div class="col s12 m8 l9">
+    <!-- Note that "m8 l9" was added -->
+
+    <div class="row">
+
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="" src="galaxy-a30s.jpeg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Galaxy A30s<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><h6>$279</h6></p>
+                </div>
+                <div class="card-reveal yellow lighten-3">
+                    <span class="card-title grey-text text-darken-4">Galaxy A30s<i
+                            class="material-icons right">close</i></span>
+                    <br>
+                    <li>Pantalla: 6.4 pul</li>
+                    <li>Memoria: 64 gb</li>
+                    <li>RAM: 4 gb</li>
+                    <li>Camara: 32 mp</li>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="" src="samsung-galaxy-a52.jpeg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Galaxy A52<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><h6>$549</h6></p>
+                </div>
+                <div class="card-reveal yellow lighten-3">
+                    <span class="card-title grey-text text-darken-4">Galaxy A52<i
+                            class="material-icons right">close</i></span>
+                    <br>
+                    <li>Pantalla: 6.5 pul</li>
+                    <li>Memoria: 128 gb</li>
+                    <li>RAM: 6 gb</li>
+                    <li>Camara: 52 mp</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="" src="Samsung-Galaxy-A70.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Galaxy A70<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><h6>$540</h6></p>
+                </div>
+                <div class="card-reveal yellow lighten-3">
+                    <span class="card-title grey-text text-darken-4">Galaxy A70<i
+                            class="material-icons right">close</i></span>
+                    <br>
+                    <li>Pantalla: 6.7 pul</li>
+                    <li>Memoria: 128 gb</li>
+                    <li>RAM: 6 gb</li>
+                    <li>Camara: 48 mp</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="" src="moto e4 plus.jpeg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Moto E4 Plus<i
+                            class="material-icons right">more_vert</i></span>
+                    <p><h6 class="">$180</h6></p>
+                </div>
+                <div class="card-reveal yellow lighten-3">
+                    <span class="card-title grey-text text-darken-4">Moto E4 Plus<i
+                            class="material-icons right">close</i></span>
+                    <br>
+                    <li>Pantalla: 5.5 pul</li>
+                    <li>Memoria: 32 gb</li>
+                    <li>RAM: 4 gb</li>
+                    <li>Camara: 16 mp</li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+    <!--Burguer Nav-->
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">ESTADISTICAS</a></li>
+        <li><a href="#"><i class="material-icons black-text">add_box</i>Vender</a></li>
+        <li><a href="#"><i class="material-icons black-text">local_grocery_store</i>Carrito</a></li>
+    </ul>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instance = M.Sidenav.init(elems)
+            //M.AutoInit();
+        });
+    </script>
+
+</body>
+</html>

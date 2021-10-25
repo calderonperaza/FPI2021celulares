@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio</title>
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+    
+<nav class="nav-wrapper yellow darken-4 z-depth-3">
+    <div class="container">
+
+        <a href="#" class="brand-logo black-text"><i class="material-icons">phone_android</i>Cellphone Shop</a>
+
+        <a href="#" data-target="menu-responsive" class="sidenav-trigger right">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+
+            <li>
+
+                <div class="input-field col s12 black-text waves-effect">
+                    <i class="material-icons prefix">search</i>
+                    <input type="text" id="buscar">
+                    <label for="buscar"></label>
+                </div>
+
+            </li>
+
+            <li><a href="Materialize-yellow.html" class="waves-effect yellow lighten-3 btn black-text">INICIO</a></li>
+            <li><a href="#" class="waves-effect yellow lighten-3 btn black-text">ESTADISTICAS</a></li>
+            <li><a href="#"><i class="material-icons black-text">add_box</i></a></li>
+            <li><a href="#"><i class="material-icons black-text">local_grocery_store</i></a></li>
+        </ul>
+
+    </div>
+
+    <div class="row">
+
+</nav>
+
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s7">
+
+                <div class="carousel carousel-slider">
+
+                    <a href="" class="carousel-item">
+                        <img src="galaxy-a30s.jpeg" alt="">
+                    </a>
+
+                    <a href="" class="carousel-item">
+                        <img src="moto e4 plus.jpeg" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <div>
+                <p>Samsung Galaxy A30s, Pantalla de 6.5, RAM de 4 GB, Camara de 40 mp</p>
+
+                <h4>$ 279</h4>
+                <br>
+                <a href=""><i class="waves-effect yellow darken-4 btn black-text">COMPRAR</i></a>
+                <br><br>
+                <div class="card-panel col s4">
+                    <h6>Vendedor: Peter Parker</h6><h6>TEL: 503 765321</h6>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="container center">
+            <h2>DESCRIPCION</h2>
+
+            <div class="row">
+
+                <div class="col s6">
+
+                    <div class="card">
+
+                        <div class="card-content left-align yellow darken-4">
+                            <ul>
+                                <li>Estado:</li>
+                                <li>Marca:</li>
+                                <li>Modelo:</li>
+                                <li>Pantalla:</li>
+                                <li>Sistema:</li>
+                                <li>ROM:</li>
+                                <li>RAM:</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col s6">
+                    <div class="card">
+                    
+                        <div class="card-content yellow darken-4">
+                            <p>Telefono en muy buenas condiciones, tiene
+                            dos cámaras, la caja esta abierta, pero con
+                            muy poco uso, practicamente nuevo, la
+                            compañia con la que estaba es Tigo, asi que el
+                            chip debe ser tigo, viene con su caja original y
+                            con todos sus accesorios. Puedo mandar más
+                            fotos si desea por whatsapp</p>
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+<!--Burguer Nav-->
+<ul class="sidenav" id="menu-responsive">
+    <li><a href="#">INICIO</a></li>
+    <li><a href="#">ESTADISTICAS</a></li>
+    <li><a href="#"><i class="material-icons black-text">add_box</i>Vender</a></li>
+    <li><a href="#"><i class="material-icons black-text">local_grocery_store</i>Carrito</a></li>
+</ul>
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instance = M.Carousel.init(elems,{
+        indicators: true
+        });
+        //M.AutoInit();
+    });
+</script>
+
+</body>
+</html>
