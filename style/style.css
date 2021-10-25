@@ -1,0 +1,184 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: rgba(67, 112, 67, 0.185);
+}
+
+.col {
+    max-width: 270px;
+}
+
+.card {
+    max-height: 460px;
+}
+
+.card-body {
+    font-size: 78%;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.list-group-item {
+    background: rgba(31, 136, 31, 0.452);
+}
+
+.columna-right,
+.columna-lefth {
+    overflow: auto;
+    height: 100% !important;
+}
+
+.contenido-right {
+    height: auto;
+}
+
+.contenedor {
+    margin-top: 1% !important;
+    width: 95%;
+    margin: auto;
+    height: 95%;
+}
+
+.row {
+    height: auto;
+}
+
+.footer {
+    height: 8%;
+}
+
+.contenido-footer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding: 0 30%;
+}
+
+.select-cantidad {
+    width: 90px;
+    margin-top: 5px;
+}
+
+.btn-footer {
+    margin-top: 10px;
+    display: block;
+}
+
+.carousel {
+    width: 40%;
+    min-width: 450px;
+    float: left;
+}
+
+@media screen and (max-width: 960px) {
+    .carousel-inner {
+        left: -25px;
+    }
+}
+
+.detalles {
+    float: left;
+    margin: 30px 0;
+}
+
+.carousel-item {
+    width: max-content !important;
+}
+
+.container {
+    background: rgba(206, 238, 173, 0.877);
+    height: 60%;
+    margin-top: 20px;
+}
+
+.descripcion {
+    width: 100%;
+    float: left;
+    padding: 6% 10%;
+}
+
+.desc1 {
+    width: 45%;
+    float: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+.desc1,
+.desc2 {
+    border: solid darkgreen;
+    padding: 5px;
+}
+
+.desc2 {
+    width: 45%;
+    float: left;
+    margin-left: 20px;
+}
+
+.vendedor {
+    padding: 30px;
+    border: solid darkgreen;
+}
+
+.btn-comprar {
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.detalle-cell {
+    font-weight: bold;
+}
+
+canvas {
+    width: 45% !important;
+    height: 300px !important;
+    display: inline-block !important;
+    margin: 30px;
+}
+
+.conteiner-charts {
+    height: 90%;
+}
+
+.contenido {
+    height: 85%;
+}
+
+.form-switch {
+    margin: 50px 30px 10px !important;
+}
+
+.header-content {
+    display: flex;
+    margin: auto;
+    height: 40%;
+    position: relative;
+    top: 30%;
+    margin-left: 10%;
+}
+
+.col-12 {
+    height: 100px !important;
+}
+
+.buscador {
+    width: 30%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.comprar {
+    position: relative;
+    bottom: 20px;
+    font-size: 50px;
+    margin-left: 50px;
+}
