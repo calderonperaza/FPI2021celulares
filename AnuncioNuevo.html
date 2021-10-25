@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <nav >
+        <div class="row nav-wrapper purple lighten-3">
+          <div class="col hide-on-small-only"><a href="#" class="brand-logo direction-left">Logo</a></div>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Inicio</a></li>
+            <li><a href="badges.html">Estadisticas</a></li>
+            
+    
+            <li><a class="btn-floating btn-large waves-effect waves-light purple lighten-4"href="AnuncioNuevo.html"><i
+                  class="material-icons">add</i></a></li>
+    
+    
+            <li><a class="btn-floating btn-large waves-effect waves-light purple lighten-4"><i
+                  class="material-icons">add_shopping_cart</i></a></li>
+    
+          </ul>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger hide-on-large-only left"><i
+              class="material-icons">menu</i></a>
+    
+          <div class="col m4 input-field right">
+            <input id="search" type="search" placeholder="Buscar">
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </div>
+    
+        <ul class="col s1 sidenav" id="mobile-demo">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="AnuncioNuevo.html">Nuevo anuncio</a></li>
+          <li><a href="#">Carrito</a></li>
+          <li><a href="#">Estadisticas</a></li>
+        </ul>
+      </nav>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row hide-on-small-only">
+            <div class="col l5">
+                <div class="row ">
+                    <div class="col s12 l12">
+                        <div class="card-panel l1">
+                            <form action="#">
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Nuevo</span>
+                                    </label>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Usado</span>
+                                    </label>
+                                </p>
+                            </form>
+
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+
+                                        <div class="input-field col s4">
+                                            <input id="text-marca" type="text" class="validate">
+                                            <label for="text-marca">Marca:</label>
+                                        </div>
+
+
+                                        <div class="input-field col s4">
+                                            <input id="text-modelo" type="text" class="validate">
+                                            <label for="text-modelo">Modelo:</label>
+                                        </div>
+
+                                        <div class="col s4">
+                                            <label>Sistema:</label>
+
+                                            <select>
+                                                <option value="0">Android</option>
+                                                <option value="1">Ios</option>
+                                                <option value="2">Windows</option>
+
+                                            </select>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input id="text-rom" type="text" class="validate">
+                                            <label for="text-rom">Rom:</label>
+                                        </div>
+
+                                        <div class="input-field col s6">
+                                            <input id="text-ram" type="text" class="validate">
+                                            <label for="text-ram">Ram:</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row ">
+                    <div class="col l12">
+                        <div class="card-panel cad large">
+                            <div class="row">
+                                <div class="col l1">
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect waves-teal purple lighten-5">
+                                            <i class="material-icons">add</i>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a class="btn-floating waves-effect waves-teal purple lighten-5">
+                                            <i class="material-icons">remove</i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col s1 l1">
+                                    N
+                                    1
+                                    2
+                                    3
+                                </div>
+                                <div class="col s1 l2">
+                                    Tamano
+                                    100 kb
+                                    200 kb
+                                    300 kb
+                                </div>
+                                <div class="col s1 l1">
+                                    Tipo
+                                    jpg
+                                    npg
+                                    jpg
+                                </div>
+                                <div class="col s7 l7">
+                                    <img src="/imagenes/y92.jpg"
+                                        style="width: 100%; height: 15rem; object-fit: scale-down;">
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col l6">
+
+
+                <div class="row ">
+                    <form class="col s12">
+                        <div class="row ">
+
+                            <div class="input-field col s12">
+                                <input id="text-marca" type="text" class="validate">
+                                <label for="text-marca">Titulo Del Anucio:</label>
+                            </div>
+
+
+                            <div class="input-field col s4">
+                                <input id="text-modelo" type="text" class="validate">
+                                <label for="text-modelo">Vendedor:</label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6 ">
+                                <input id="text-rom" type="text" class="validate">
+                                <label for="text-rom">Telefono:</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Descripcion</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="text-ram" type="number" class="validate">
+                                        <label for="text-ram">precio:</label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="row">
+
+
+                            <a class="waves-effect waves-light btn"><i
+                                    class="material-icons left">cancel</i>Cancelar</a>
+                            <a class="waves-effect waves-light btn"><i class="material-icons right">save</i>Guardar</a>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row hide-on-med-and-up">
+
+            <div class="col s12">
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+                </div>
+
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s8">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Titulo</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="$" id="precio" type="number" class="validate">
+                                <label for="precio">precio</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="Vendedor" type="text" class="validate">
+                                <label for="Vendedor">Vendedor</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="numero" type="text" class="validate">
+                                <label for="numero">numero</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row ">
+                    <div class="col s12 l12">
+                        <div class="card-panel l1">
+                            <form action="#">
+                                <p>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Nuevo</span>
+                                    </label>
+                                    <label>
+                                        <input name="group1" type="radio" />
+                                        <span>Usado</span>
+                                    </label>
+                                </p>
+                            </form>
+
+                            <div class="row">
+                                <form class="col s12">
+                                    <div class="row">
+
+                                        <div class="input-field col s4">
+                                            <input id="text-marca" type="text" class="validate">
+                                            <label for="text-marca">Marca:</label>
+                                        </div>
+
+
+                                        <div class="input-field col s4">
+                                            <input id="text-modelo" type="text" class="validate">
+                                            <label for="text-modelo">Modelo:</label>
+                                        </div>
+
+                                        <div class="col s4">
+                                            <label>Sistema:</label>
+
+                                            <select>
+                                                <option value="0">Android</option>
+                                                <option value="1">Ios</option>
+                                                <option value="2">Windows</option>
+
+                                            </select>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input id="text-rom" type="text" class="validate">
+                                            <label for="text-rom">Rom:</label>
+                                        </div>
+
+                                        <div class="input-field col s6">
+                                            <input id="text-ram" type="text" class="validate">
+                                            <label for="text-ram">Ram:</label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col s12 m5">
+                      <div class="card-panel ">
+                        <div class="row">
+                            <form class="col s12">
+                              <div class="row">
+                                <div class="input-field col s12">
+                                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                  <label for="textarea1">Descripcion</label>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                                
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-top: 40px;">
+
+
+                    <a class="waves-effect waves-light btn"><i
+                            class="material-icons left">cancel</i>Cancelar</a>
+                    <a class="waves-effect waves-light btn"><i class="material-icons right">save</i>Guardar</a>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>
