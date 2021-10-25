@@ -1,0 +1,30 @@
+.navbar{
+    text-align: center;
+    border: 10px groove #E26A2C;
+}
+.cuerpo{
+    background-color: #FDA65D;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.navbar a{
+    color: white;
+}
+#numero {
+    color:black;
+}
+[hr]{
+    color:black;
+}
+#menuizq{
+    overflow-y: scroll;
+}
+.card {
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px;
+    background-color: #F9D5A7;
+}
+.card1{
+    background-color: #F9F3DF;
+}
