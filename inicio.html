@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CELULARES EBAY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="estilo.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagenes/shopping-cart.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="nav-wrapper">
+        <div class="container-fluid">
+            <div id="logito" class=" hide-on-small-only">
+                <a href="inicio.html" class="brand-logo">
+                    <i class="large material-icons">phone_iphone</i>TIENDA IBAYPHONE</a>
+            </div>
+
+
+            <div class="container hide-on-med-and-up">
+                <div class="row">
+                    <div class="col s2">
+                        <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                    </div>
+                    <div class="col s3">
+                        <div class="hide-on-med-and-up">
+                            <label id="texto" for="search">Busqueda:</label>
+                        </div>
+                    </div>
+                    <div class="col s6">
+                        <div class="hide-on-med-and-up">
+
+                            <div class="input-field inline">
+                                <input id="search" type="search" required>
+                                <label for="search"><i class="large material-icons">search</i></label>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <ul id="navbarcont" class="right hide-on-med-and-down">
+
+                <li><i class="material-icons">search</i></li>
+                <li><input id="search" type="search" required><label class="label-icon" for="search">
+                    </label></li>
+                <li>
+                    <div id="btnbar"><a href="inicio.html"
+                            class="waves-effect waves-light deep-purple accent-1 btn">Inicio</a></div>
+                </li>
+                <li><a href="estadistica.html" class="waves-effect waves-light deep-purple accent-1 btn">Estadistica</a>
+                </li>
+                <li>
+                    <div id="iconsbar"><a href="nuevo anuncio.html"><i class="large material-icons">add_box</i></a>
+                    </div>
+                </li>
+                <li>
+                    <div id="iconsbar"><a href="inicio.html"><i class="large material-icons">shopping_cart</i></a></div>
+                </li>
+                <li>
+                    <div id="spanbar"><span class="new badge purple" data-badge-caption="">1</span></div>
+                </li>
+            </ul>
+
+
+
+        </div>
+    </nav>
+
+
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="inicio.html" class="brand-logo">
+                <i class="small material-icons">phone_iphone</i>TIENDA IBAYPHONE</a></li>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="estadistica.html">Estadistica</a></li>
+        <li><a href="nuevo anuncio.html">Agregar anuncio</a></li>
+        <li><a href="inicio.html">Carrito <span class="new badge purple" data-badge-caption="">1</span></a></li>
+    </ul>
+
+    <style media="screen">
+        @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
+
+        #shiw {
+            width: 100%;
+            padding-top: 0%;
+
+        }
+
+        #preciosss {
+            color: rgb(255, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+            padding-top: 5%;
+        }
+
+        #preciopad {
+            padding-top: 2%;
+        }
+
+        #price {
+            padding-top: 6%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: white;
+        }
+
+        #spanbarra {
+            padding-top: 2%;
+        }
+
+        #sw {
+            padding-top: 2%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding-bottom: 4%;
+
+        }
+
+        #filtross {
+            padding-top: 1.6%;
+            padding-left: 10%;
+        }
+
+        #textff {
+            color: white;
+            font-size: 16px;
+            font-family: Arial;
+            padding-top: 12%;
+        }
+
+        #btf {
+            padding: 3%;
+        }
+
+        #filter {
+            padding-top: 2%;
+            color: rgb(255, 255, 255);
+            padding-right: 14%;
+        }
+
+        #celfil {
+            margin-left: 1%;
+            border-style: solid;
+            border-color: rgb(58, 58, 58);
+        }
+
+        #desde {
+            padding-left: 1%;
+        }
+
+        #hasta {
+            padding-left: 1%;
+        }
+
+        #btfill {
+            padding: 3%;
+            padding-left: 16%;
+        }
+
+        #btfil {
+            color: white;
+            background-color: #9575cd;
+            border-style: solid;
+            border-color: rgb(58, 58, 58);
+
+        }
+    </style>
+
+    <div id="shiw" class="container-fluid hide-on-med-and-down">
+        <div class="row ">
+            <div id="filtross" class="col s6 ">
+                <div id="preciosss" class="col s2">
+                    Precios:
+                </div>
+                <div id="desde" class="input-field col s2">
+                    <input id="last_name" type="text" class="validate">
+                    <label id="color4" for="last_name">desde $</label>
+                </div>
+                <div id="filter" class="col s1 ">
+                    <i class="medium material-icons inline">arrow_right</i>
+                </div>
+                <div id="hasta" class="input-field col s2">
+                    <input id="last_name2" type="text" class="validate">
+                    <label id="color4" for="last_name2">hasta $</label>
+                </div>
+            </div>
+            <div id="filter" class="col s6 container center">
+                <div class="input-field col s5 ">
+                    <select>
+                        <option value="" disabled selected>Selecciona aquí</option>
+                        <option value="1">Precio mayor a menor</option>
+                        <option value="2">Precio menor a mayor</option>
+                    </select>
+                    <label id="color4">Filtrar precios</label>
+                </div>
+
+                <div class="input-field col s5">
+                    <select>
+                        <option value="" disabled selected>Selecciona aquí</option>
+                        <option value="1">Más recientes</option>
+                        <option value="2">Menos recientes</option>
+                    </select>
+                    <label id="color4">Filtrar por fecha</label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contenido" class="container-fluid hide-on-med-and-down">
+        <div id="izqcon" class=" container-fluid row">
+            <div id="izquierdo" class=" container-fluid col s3">
+                <!-- Grey navigation panel -->
+                <ul>
+                    <li>
+                        <div id="marca1" class="col s12">Más filtros</div>
+                    </li>
+                    <li>
+                        <div id="sw" class="col s12">
+                            <div class="switch">
+                                <label id='switchfont'>
+                                    Usado
+                                    <input type="checkbox">
+                                    <span class="lever deep-purple accent-1"></span>
+                                    Nuevo
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="marca2" class="col s12">MARCA</div>
+                    </li>
+                    <li>
+                        <ul>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7 ">Samsung</span>
+                                    <span id="noti4" class="new badge s2" data-badge-caption="">1</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Huawei</span>
+                                    <span id="noti4" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Nokia</span>
+                                    <span id="noti4" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">iPhone</span>
+                                    <span id="noti4" class="new badge s4" data-badge-caption="">3</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Xiaomi</span>
+                                    <span id="noti4" class="new badge s4" data-badge-caption="">1</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div id="marca2" class="col s12">SISTEMA</div>
+                    </li>
+                    <li>
+                        <ul>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7 ">Android</span>
+                                    <span id="noti" class="new badge s2" data-badge-caption="">1</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Windows</span>
+                                    <span id="noti" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">Ios</span>
+                                    <span id="noti" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div id="marca2" class="col s12">PANTALLA</div>
+                    </li>
+                    <li>
+                        <ul>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7 ">6.0</span>
+                                    <span id="noti3" class="new badge s2" data-badge-caption="">1</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">5.5</span>
+                                    <span id="noti3" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                            <li id="labi" class="col s11">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span id="letrafiller" class="col s7">5.0</span>
+                                    <span id="noti3" class="new badge s4" data-badge-caption="">2</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="derecho" class="col s9">
+                <div class="row">
+                    <div class="col s3 ">
+                        <div id="colorcard" class="card">
+                            <div class="card-image">
+                                <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                                <div id="titulocard">
+                                    <p>$132.00</p>
+                                </div>
+                                <p>Samsung J6, Pantalla de 5.5
+                                    64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="anuncio.html">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3">
+                        <div id="colorcard" class="card">
+                            <div class="card-image">
+                                <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                                <div id="titulocard">
+                                    <p>$132.00</p>
+                                </div>
+                                <p>Samsung J6, Pantalla de 5.5
+                                    64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="anuncio.html">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3">
+                        <div id="colorcard" class="card">
+                            <div class="card-image">
+                                <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                                <div id="titulocard">
+                                    <p>$132.00</p>
+                                </div>
+                                <p>Samsung J6, Pantalla de 5.5
+                                    64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="anuncio.html">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 ">
+                        <div id="colorcard" class="card">
+                            <div class="card-image">
+                                <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                                <div id="titulocard">
+                                    <p>$132.00</p>
+                                </div>
+                                <p>Samsung J6, Pantalla de 5.5
+                                    64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="anuncio.html">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s3 ">
+                        <div id="colorcard" class="card">
+                            <div class="card-image">
+                                <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                                <div id="titulocard">
+                                    <p>$132.00</p>
+                                </div>
+                                <p>Samsung J6, Pantalla de 5.5
+                                    64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="anuncio.html">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3">
+                        <div id="colorcard" class="card">
+                            <div class="card-image">
+                                <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                                <div id="titulocard">
+                                    <p>$132.00</p>
+                                </div>
+                                <p>Samsung J6, Pantalla de 5.5
+                                    64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="anuncio.html">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3">
+                        <div id="colorcard" class="card">
+                            <div class="card-image">
+                                <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                                <div id="titulocard">
+                                    <p>$132.00</p>
+                                </div>
+                                <p>Samsung J6, Pantalla de 5.5
+                                    64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="anuncio.html">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s3 ">
+                        <div id="colorcard" class="card">
+                            <div class="card-image">
+                                <img src="imagenes/celular.PNG">
+                            </div>
+                            <div class="card-content ">
+                                <div id="titulocard">
+                                    <p>$132.00</p>
+                                </div>
+                                <p>Samsung J6, Pantalla de 5.5
+                                    64GB, 2GB Ram, Color Negro</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="anuncio.html">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer id="fot" class="page-footer">
+                    <div id="fotie" class="container-fluid">
+                        <div class="row ">
+                            <div id="pagina" class="col">
+                                <ul class="pagination">
+                                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a>
+                                    </li>
+                                    <li class="active" id="flechasfoter"><a href="inicio.html">1</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">2</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">3</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">4</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">5</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">6</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">7</a></li>
+                                    <li class="waves-effect white"><a href="inicio.html">8</a></li>
+                                    <li class="waves-effect"><a href="#!"><i
+                                                class="material-icons">chevron_right</i></a></li>
+                                </ul>
+                            </div>
+                            <div id="pagina2" class="col">
+                                <label>Artículos por pagina</label>
+                                <select class="browser-default">
+                                    <option value="1">10</option>
+                                    <option value="2">15</option>
+                                    <option value="3">20</option>
+                                    <option value="3">25</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div id="filpho" class="container-fluid hide-on-med-and-up">
+        <div class="row">
+            <div id="celfil" class="col s7 deep-purple lighten-2">
+                <div id="texf" class="col s7">
+                    <label id="textff" class="col auto">Ordenar por:</label>
+                </div>
+                <div class="col s5">
+                    <select>
+                        <option value="" disabled selected>elige aquí</option>
+                        <option value="1">Mayor a menor precio</option>
+                        <option value="2">Menor a mayor precio</option>
+                        <option value="3">Más recientes</option>
+                        <option value="4">Menos recientes</option>
+                    </select>
+                </div>
+            </div>
+            <div id="btfill" class="col s4 ">
+                <a href="#" data-target="menu-responsive2" class="sidenav-trigger">
+                    <i id="btfil" class="small material-icons">filter_alt</i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <ul class="sidenav deep-purple accent-1" id="menu-responsive2">
+        <li>
+            <div id="padswifill" class="switch">
+                <label id='switchfont2'>
+                    USADO
+                    <input type="checkbox">
+                    <span class="lever deep-purple accent-3"></span>
+                    NUEVO
+                </label>
+            </div>
+        </li>
+        <li>
+            <div id="marca" class="col auto disabled">MARCA</div>
+        </li>
+        <li>
+            <ul id="filler">
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Samsung</span>
+                        <span id="noti" class="new badge" data-badge-caption="">1</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Huawei</span>
+                        <span id="noti" class="new badge" data-badge-caption="">2</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Nokia</span>
+                        <span id="noti" class="new badge" data-badge-caption="">2</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Iphone</span>
+                        <span id="noti" class="new badge" data-badge-caption="">3</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Xiaomi</span>
+                        <span id="noti" class="new badge" data-badge-caption="">1</span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <div id="marca" class="col auto disabled">SISTEMA</div>
+        </li>
+        <li>
+            <ul id="filler">
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Android</span>
+                        <span id="noti2" class="new badge" data-badge-caption="">4</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Windows</span>
+                        <span id="noti2" class="new badge" data-badge-caption="">2</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">Ios</span>
+                        <span id="noti2" class="new badge" data-badge-caption="">3</span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+        <li></li>
+        <li>
+            <div id="marca" class="col auto disabled">PANTALLA</div>
+        </li>
+        <li>
+            <ul id="filler">
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">6.0</span>
+                        <span id="noti3" class="new badge" data-badge-caption="">3</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">5.5</span>
+                        <span id="noti3" class="new badge" data-badge-caption="">4</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="filled-in" />
+                        <span id="letrafiller" class="col">5.0</span>
+                        <span id="noti3" class="new badge" data-badge-caption="">2</span>
+                    </label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="container-fluid hide-on-med-and-up">
+        <div class="row">
+            <div class="col s6">
+                <div id="colorcard" class="card">
+                    <div class="card-image">
+                        <img src="imagenes/celular.PNG">
+                    </div>
+                    <div class="card-content ">
+                        <div id="titulocard">
+                            <p>$132.00</p>
+                        </div>
+                        <p>Samsung J6, Pantalla de 5.5
+                            64GB, 2GB Ram, Color Negro</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="anuncio.html">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div id="colorcard" class="card">
+                    <div class="card-image">
+                        <img src="imagenes/celular.PNG">
+                    </div>
+                    <div class="card-content ">
+                        <div id="titulocard">
+                            <p>$132.00</p>
+                        </div>
+                        <p>Samsung J6, Pantalla de 5.5
+                            64GB, 2GB Ram, Color Negro</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="anuncio.html">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <div id="colorcard" class="card">
+                    <div class="card-image">
+                        <img src="imagenes/celular.PNG">
+                    </div>
+                    <div class="card-content ">
+                        <div id="titulocard">
+                            <p>$132.00</p>
+                        </div>
+                        <p>Samsung J6, Pantalla de 5.5
+                            64GB, 2GB Ram, Color Negro</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="anuncio.html">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div id="colorcard" class="card">
+                    <div class="card-image">
+                        <img src="imagenes/celular.PNG">
+                    </div>
+                    <div class="card-content ">
+                        <div id="titulocard">
+                            <p>$132.00</p>
+                        </div>
+                        <p>Samsung J6, Pantalla de 5.5
+                            64GB, 2GB Ram, Color Negro</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="anuncio.html">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <footer id="fot" class="page-footer">
+                <div id="fotie" class="container-fluid">
+                    <div class="row ">
+                        <div id="pagina3" class="col">
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a>
+                                </li>
+                                <li class="active" id="flechasfoter"><a href="inicio.html">1</a></li>
+                                <li class="waves-effect white"><a href="inicio.html">2</a></li>
+                                <li class="waves-effect white"><a href="inicio.html">3</a></li>
+                                <li class="waves-effect white"><a href="inicio.html">4</a></li>
+                                <li class="waves-effect white"><a href="inicio.html">5</a></li>
+                                <li class="waves-effect white"><a href="inicio.html">6</a></li>
+                                <li class="waves-effect white"><a href="inicio.html">7</a></li>
+                                <li class="waves-effect white"><a href="inicio.html">8</a></li>
+                                <li class="waves-effect"><a href="#!"><i
+                                            class="material-icons">chevron_right</i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems);
+        });
+    </script>
+
+</body>
+
+</html>
