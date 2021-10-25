@@ -1,0 +1,56 @@
+.miContenedor{
+    width: 100%;
+     margin: 0 auto;
+
+}
+.labelBtn{
+    color: black;
+    font-weight: bold;
+    
+
+}
+.ellaNoteAma{
+    padding-top: 1rem;
+}
+.card-panel{
+    padding: 24px; 
+    margin: 1rem 1rem -1rem 0rem;
+}
+.imgStyle{ width: 240px; height: auto;
+    
+}
+
+
+#cartaDescripcion{
+    font-family: cursive;
+    border-top-color: black;
+    border-color: aqua
+    background-color  rgb(47, 239, 253);
+    
+}
+#descripcionNuevoA{
+    font-family: cursive;
+    
+}
+#DescripcionIzquierda{
+    font-family: cursive;
+    
+}
+#DescripcionDerecha{
+    font-family: cursive;
+    
+}
+#removeBtn{
+    width: 50px; height: auto;
+}
+#addBTN{
+    width: 50px; height: auto;
+}
+.imgStyle{
+    margin: 0;
+    padding :0;
+}
+
+
+  
+ 
