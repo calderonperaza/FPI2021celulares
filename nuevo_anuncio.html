@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Iconos de google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--CDN de materialize css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Nuevo Anuncio</title>
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+        <!--Contenido del centro-->
+    <div class="row">
+        <div class="col s12" style="text-align:center">
+            <h5><b>NUEVO ANUNCIO</b></h5>
+        </div> 
+    </div> 
+    <div class="row">
+        <!--lado derecho en pantallas grandes-->
+        <div class="col s12 m6 l6 push-l6">
+            <!--Slider para las imagenes de los dispositivos-->
+            <div class="slider hide-on-large-only col s12">
+                <ul class="slides">
+                  <li>
+                    <img src="https://hablando-de-manzanas.s3-eu-west-1.amazonaws.com/s3fs-public/Apple-iPhone-6-desempaquetado-unboxing-4%2C7-pulgadas-8.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <img src="https://i.blogs.es/04338b/iphone-s-portada/1366_2000.jpg"> <!-- random image -->
+                    <div class="caption left-align">
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <img src="https://www.muycomputer.com/wp-content/uploads/2015/10/iphone6sPlus5.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <img src="https://i.blogs.es/0e4fd2/iphone-6-analisis/450_1000.png"> <!-- random image -->
+                    <div class="caption center-align">
+                     
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            <!--Fin carousel para las imagenes de los dispositivos-->
+            <!--detalles del producto-->
+            <div class="col s12 m12 l10 card-panel">
+                <form action="#">
+                    <div class="row">
+                        <!--titulo anuncio-->
+                        <div class="input-field col s12">
+                            <textarea id="titulo" class="materialize-textarea"></textarea>
+                            <label for="titulo">Título del Anuncio</label>
+                        </div>
+                        <!--fin titulo-->
+                        <!--vendedor-->
+                        <div class="input-field col s12 l6">
+                            <input id="vendedor" type="text" class="validate">
+                            <label for="vendedor">Vendedor</label>
+                        </div>
+                        <!--Fin vendedor-->
+                        <!--telefono-->
+                        <div class="input-field col s12 l6">
+                            <input id="telefono" type="text" class="validate">
+                            <label for="telefono">Teléfono</label>
+                        </div>
+                        <!--Fin telefono-->
+                        <!--descripcion-->
+                        <div class="input-field col s12">
+                            <textarea id="descripcion" class="materialize-textarea"></textarea>
+                            <label for="descripcion">Descripción</label>
+                        </div>
+                        <!--fin descripcion-->
+                        <!--precio-->
+                        <div class="input-field col s12 l6">
+                            <input id="precio" type="number" class="validate">
+                            <label for="precio">Precio ($)</label>
+                        </div>
+                        <!--Fin precio-->
+                    </div>
+                </form>
+            </div>
+            <!--fin detalles del producto-->
+        </div>
+        
+        <!--lado izquierdo para pantallas grandes-->
+        <div class="col s12 m6 l6 pull-l6">
+            <!--informacion del producto-->
+            <div class="row">
+                <div class="col s12 m12 l10 offset-m1 offset-l1 card-panel">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row"></div>
+                            <div class="row">
+                                <!--Estado-->
+                                <div class="col s6 push-s2">
+                                    <label>
+                                        <input name="estado" type="radio" />
+                                        <span>Nuevo</span>
+                                    </label>
+                                </div>
+                                <div class="col s6">
+                                    <label>
+                                        <input name="estado" type="radio" />
+                                        <span>Usado</span>
+                                    </label>
+                                </div>
+                                <!--Fin estado-->
+                            </div>
+                            <div class="row">
+                                <!--Marca-->
+                                <div class="input-field col s12 l6">
+                                    <input id="marca" type="text" class="validate">
+                                    <label for="marca">Marca</label>
+                                </div>
+                                <!--Fin marca-->
+                                <!--Modelo-->
+                                <div class="input-field col s12 l6">
+                                    <input id="modelo" type="text" class="validate">
+                                    <label for="modelo">Modelo</label>
+                                </div>
+                                <!--fin modelo-->
+                            </div>
+                            <div class="row">
+                                <!--Pantalla-->
+                                <div class="input-field col s12 l6">
+                                    <input id="pantalla" type="number" class="validate">
+                                    <label for="pantalla">Pantalla (Pulgadas)</label>
+                                </div>
+                                <!--Fin Pantalla-->
+
+                                <!--Sistema-->
+                                <div class="input-field col s12 l6">
+                                    <select>
+                                        <option value="" disabled selected>Seleccione una Opción</option>
+                                        <option value="1">Ios</option>
+                                        <option value="2">Android</option>
+                                        <option value="3">Windows</option>
+                                    </select>
+                                    <label>Sistema</label>
+                                </div>
+                                <!--Fin sistema-->
+                            </div>
+                            <div class="row">
+                                <!--ROM-->
+                                <div class="input-field col s12 l6">
+                                    <input id="rom" type="text" class="validate">
+                                    <label for="rom">ROM (Almacenamiento Interno)</label>
+                                </div>
+                                <!--Fin ROM-->
+                                <!--RAM-->
+                                <div class="input-field col s12 l6">
+                                    <input id="ram" type="text" class="validate">
+                                    <label for="ram">RAM</label>
+                                </div>
+                                <!--Fin RAM-->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--imagenes del producto-->
+            <div class="row">
+                <div class="col l10 offset-m1 offset-l1 hide-on-med-and-down card-panel">
+                    <h6>Imágenes</h6>
+                    <div class="divider"></div>
+                    <div class="col m2">
+                        <form action="#">
+                                <!--Subir imagenes-->
+                                <div class="col s12">
+                                    <div class="file-field input-field">
+                                        <div class="btn-floating waves-effect waves-light red">
+                                            <i class="material-icons">add</i>
+                                            <input type="file" multiple>
+                                        </div>
+                                        <div class="file-path-wrapper hide">
+                                            <input class="file-path validate" type="text" placeholder="Subir imágenes">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Fin subir imagenes-->
+                                <!--Eliminar imagenes-->
+                                <div class="col s12">
+                                    <a class="btn-floating waves-effect waves-light red"><i class="material-icons">remove</i></a>
+                                </div>
+                                <!--Fin eliminar imagenes-->
+                        </form>
+                    </div>
+                    <!--detalle imagenes cargadas-->
+                    <div class="col m4">
+                        <div class="col m3">
+                            <p><b>N</b></p>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>4</p>
+                        </div>
+                        <div class="col m6">
+                            <p><b>Tamaño</b></p>
+                            <p>145 kb</p>
+                            <p>145 kb</p>
+                            <p>145 kb</p>
+                            <p>145 kb</p>
+                        </div>
+                        <div class="col m3">
+                            <p><b>Tipo</b></p>
+                            <p>jpg</p>
+                            <p>png</p>
+                            <p>png</p>
+                            <p>jpg</p>
+                        </div>
+                    </div>
+                    <!--fin detalle imagenes cargadas-->
+                    <!--imagenes cargadas-->
+                    <div class="col m5 offset-m1 card">
+                        <div class="card-image">
+                          <img src="src/images/Iphone6.jpg">
+                        </div>
+                    </div>
+                    <!--fin imagenes-->
+                </div>
+            </div>
+            <!--fin imagenes del producto-->
+        </div>
+
+        <!--botones-->
+        <div class="col s12 m6 l6 offset-s2">
+            <form action="#">
+                <div class="row">
+                    <!--cancelar-->
+                    <div class="row"></div>
+                    <div class="input-field col s5 offset-m2">
+                        <a onclick="M.toast({html: 'Anuncio cancelado!'})" class="waves-effect waves-light btn"><i class="material-icons left">cancel</i>Cancelar</a>
+                    </div>
+                    <!--fin cancelar-->
+                    <!--crear-->
+                    <div class="input-field col s5">
+                        <a onclick="M.toast({html: 'Anuncio creado!'})" class="waves-effect waves-light btn"><i class="material-icons left">save</i>Crear</a>
+                       
+
+                    </div>
+                    <!--fin crear-->
+                </div>
+            </form>
+        </div>
+        <!--fin botones-->
+    </div>
+    <!--Javascript materialize css-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+
+        });
+
+        /* document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems);
+        }); */
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems);
+        });
+
+    </script>
+</body>
+
+</html>
