@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda CellPhone</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a2136c3958.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <!--Muestra el boton Responsive-->
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn" color="dark">
+            <i class="fas fa-bars"  ></i>
+        </label>
+               
+   
+
+        <!--Menu izquierdo (logo cellPhone )-->
+        <div class="container-izquierdo">
+            <a href="#" class="enlace"  style="text-decoration: none;"> 
+                <div class="container-logo1">
+                    <ion-icon name="id-card" class="icono_logo" color="dark"></ion-icon> 
+                    <p class="text_logo">
+                        Tienda CellPhone
+                    </p>
+                </div> 
+
+                <div class="input-group">
+                    <form class="d-flex"><!--Opcion Buscar -->
+                        <input class="form-control me-2"  type="search" placeholder="Search" aria-label="Search"></input>
+                            <button type="button" class="btn_search btn-dark">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                    </form>
+                </div>
+            </a>
+        </div>
+
+       
+
+        <!--Menu derecho (y creacion menu desplegable)-->
+        <ul>
+            <li>
+                <br>
+            </li>
+            <li>
+                <a href="#" style="text-decoration: none;">
+                    <div class="block_logo">
+                        <ion-icon name="id-card" class="log_cell" color="light"></ion-icon> 
+                        <p class="block_text">
+                            Tienda CellPhone
+                        </p>
+                    </div>
+                </a> 
+            </li>
+            <li><a class="active" href="#" style="text-decoration: none;">Inicio</a></li>
+            <li class="cel-anuncio"><a href="#" style="text-decoration: none;">Nuevo Anuncio</a></li>
+            <li class="cel-carrito"><a href="#" style="text-decoration: none;">Carrito</a></li>
+            <li><a href="#" style="text-decoration: none;">Estadistica</a></li>
+            <li><a href="#" style="text-decoration: none;"><ion-icon name="add-circle" class="agregar" color="dark"></ion-icon></a></li>
+            <li><a href="#" style="text-decoration: none;"><ion-icon name="cart" class="carrito" color="dark" ></ion-icon></a></li>     
+        </ul>
+    </nav>
+    <!--filtrado de la parte superior-->
+    <div class="row">
+        <!--Desplegue de menu izquierdo-->
+        <div class="switch_container">
+            <input type="checkbox" class="switch" id="switch">
+            <label for="switch" class="lbl"></label>
+        </div>
+        
+        <div class="card-fondo mb-3">
+            <div class="row_card_filtrar_superior">
+                <div class="filtrarprecio">
+                    <p style="font-style: bold; margin-right: 10px;">Precio: </p>
+                    <input type="text" class="form-control-precio me2" placeholder=" $ " aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+                <div class="filtrarPrecioHasta">
+                    <p style="font-style: bold; margin-right: 10px;" >Hasta: </p>
+                    <input type="text" class="form-control-precio-hasta me2" placeholder=" $ " aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+            </div>
+        </div>
+
+        <!--ORdenar de la parte superior-->
+        <div class="card-fondo-ordenar mb-3">
+            <div class="row_card_ordenar_superior">
+               <p style="font-style: bold; margin-right: 10px;">Ordenar por: </p>
+               <!--inico de boton desplegable-->
+               <div class="dropdown">
+                <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Elegir opcion...
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action Go</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+               <!--Fin de boton desplegable-->
+            </div>
+        </div>   
+        
+        
+    </div>
+    <div class="row g-0">
+        <!--panel izquierdo-->
+        <div class="col-sm col-md-2" >
+
+            <!--card marca-->
+            <div class="card">
+                <div class="card-body">
+                    <p>Marca</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Samsung
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Huawei
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          nokia
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          iphone
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          xiomi
+                        </label>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+
+            <!--card de Sistemas -->
+            <div class="card">
+                <p>Sistema</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Android 15
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      windows 10
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      los 56
+                    </label>
+                </div>
+
+
+            </div>
+
+            <!--Card de pantalla-->
+            <div class="card">
+                <p>Pantalla</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      6.0
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      5.5
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      5
+                    </label>
+                </div>
+
+
+            </div>
+
+
+        </div><!--panel central body-->
+        <div class="col-6 col-md-9">
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+           
+              
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="paginador">
+        <ul class="pagination">
+            <li class="page-item disabled">
+              <span class="page-link">Previous</span>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item" aria-current="page">
+              <span class="page-link">2</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+    </div>
+    
+    <!--Paginador-->
+
+
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" > </script > 
+    <script  nomodule  src = "https: // unpkg .com / ionicons @ 5.5.2 / dist / ionicons / ionicons.js " > </script >
+</body>
+</html>

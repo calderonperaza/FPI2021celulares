@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: orange;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    box-shadow: 5px 0 10px rgb(0, 0, 0);
+    display: flex;
+    text-decoration: none;
+}
+.icono_logo{/*Ajustando el tamano del logo*/
+    font-size: 40px;
+}
+.text_logo{/*Ajustando el tamanio del logo*/
+    font-size: 25px;
+    text-decoration: none;
+    color: #414141;
+    height: 80px;
+    width: max-content;
+    margin-right: 20px;
+}
+.container-logo1{/*Contenedor del logo*/
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.container-izquierdo{
+    padding: 20px 50px;
+    display: inline-flex;
+}
+.enlace{
+    display: flex;
+    text-decoration: none;
+}
+
+.input-group{/*contenedor del buscar*/
+    display: flex;
+    text-decoration: none;
+   
+}
+
+.btn_search{/*Boton buscar*/
+    width: 50px;
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;  
+}
+.cel-anuncio{
+    display: none;
+    text-decoration: none;
+}
+.cel-carrito{
+    display: none;
+}
+.cel-inicio{
+    display: none;
+}
+nav ul li{
+    display: inline-block;
+    height: 40px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #000000;
+    font-size: 18px;
+    padding: 10px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li a.actives, li a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    font-style: bold;
+    color: black;
+    transition: .5s;
+}
+.agregar{/*Dimensionando el boton +*/
+    font-size: 40px; 
+}
+
+.carrito{/*Dimensionando el carro*/
+    font-size: 40px;    
+    
+}
+.block_logo{
+    display: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+/*Body*/
+.tarjeta{
+    display: flex;
+}
+.card-fondo{
+    margin: 10px auto;
+    background-color: #414141;
+    
+}
+.row_card_filtrar_superior{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 5px 5px;
+    width: 42rem; 
+    margin: 1px 1px;
+
+}
+.filtrarprecio{
+    display: flex;
+    margin-right: 20px;
+}
+.filtrarPrecioHasta{
+    display: flex;
+}
+.card-fondo-ordenar{
+    margin: 10px auto;
+    background-color: #414141;
+}
+
+.row_card_ordenar_superior{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 5px 5px;
+    width: 25rem; 
+    margin: 1px 1px;
+}
+
+/*switch desplefabel*/
+.lbl{
+    display: inline-block;
+    width: 42px;
+    height: 25px;
+    background: orange;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+
+}
+.lbl:after{
+content: '';
+display: block;
+width: 18px;
+height: 18px;
+background: white;
+border-radius: 100px;
+position: absolute;
+top: 4px;
+left: 4px;
+transition: .2s;
+}
+
+#switch:checked + .lbl:after{
+    left: 20px;
+}
+.switch_container{
+    margin: 10px auto;
+}
+#switch:checked + .lbl{
+    background: black;
+}
+#switch{
+    display: none;
+}
+
+.card{
+    margin:  10px 20px;
+    height: auto;
+}
+.card-sistema{
+    margin: 30px 20px;
+}
+.col-6{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    grid-gap: 15px;
+}
+.pagination{
+   padding: 8px 8px;
+   margin: 25px 100px;
+   
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 5px;
+    }
+    .container-izquierdo{
+        padding: 10px;
+        display: inline-flex;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+        
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        color: #000000;
+        display: block;
+        margin-right: 50px;
+        margin-left: 40px;
+        cursor: pointer;  
+    }
+   
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #15191d;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+        line-height: 30px;
+        color: white;
+    }
+    .carrito{
+        display: none;
+    }
+    .agregar{
+        display: none;
+    }
+    .cel-anuncio{
+        display: block;
+    }
+    .cel-carrito{
+        display: block;
+    }
+    .container-logo1{
+        display: none;
+    }
+    
+    .cel-inicio{
+        display: block;
+    }
+    
+    .block_logo{
+        display: inline-flex;
+    }
+    .log_cell{
+        font-size: 25px;
+    }
+    
+    .btn_search{
+        width: 40px;
+        height: 38px;
+    }
+    .d-flex{
+        width: 200px;
+        padding: 10px;
+        display: flex;
+    }
+    
+    nav ul li a{
+        font-size: 16px;
+        color: white;        
+    }
+  
+    li a.actives, li a:hover{
+        background-color: rgba(235, 211, 211, 0.3);
+        font-style: bold;
+        color: rgb(255, 255, 255);
+        transition: .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+   
+}
+
+/*Estilo de Venta de celulares*/
+#card-informacion{
+    width: 400px;
+}
+#vendedor{
+    text-align: center;
+}
+.carousel-inner{
+    height: 450px;
+    width: min-content;
+}
+.carousel-control-next{
+    background-color: black;
+}
+.carousel-control-prev{
+    background-color: black;
+}
+#descripcion-general{
+    text-align: center;
+    height: 250px;
+    width: 250px;
+}
+#descripcion{
+    padding: 2px 350px;
+}
